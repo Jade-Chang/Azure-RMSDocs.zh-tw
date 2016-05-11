@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2d14ac4c2c7fa905cdbaeb71659f6ab798ff2d4e/Azure-RMSDocs/index.html) | InSyncHandedBackSuccess | [Details](#ea3d788a0b31ae119fc6de1aca0b1949d059a865163)
 
 ## Item Details
-##### <a name='ea3d788a0b31ae119fc6de1aca0b1949d059a865163'></a> Source: [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/2d14ac4c2c7fa905cdbaeb71659f6ab798ff2d4e/Azure-RMSDocs/index.html)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\index.html](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/47480331de50854463019256b2e46329662004f5/Azure-RMSDocs/index.html)
-* Handoff File: [ea3d788a0b31ae119fc6de1aca0b1949d059a865.html](https://github.com/Microsoft/EM.handoff/blob/4f6a74fb2671880748cb7ce4ba29f7af3c4ac6a0/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/ea3d788a0b31ae119fc6de1aca0b1949d059a865.html)
-* Handoff Datetime: 2016-04-15 09:00:27
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [ea3d788a0b31ae119fc6de1aca0b1949d059a865.html](https://github.com/Microsoft/EM.handback/blob/e53379bec360297546ed54e9215e7880734b5ae3/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/ea3d788a0b31ae119fc6de1aca0b1949d059a865.html)
-* Handback Datetime: 2016-05-11 09:52:36
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
