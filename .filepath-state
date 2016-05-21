@@ -398,15 +398,6 @@
   "218a13617c6e595ca6654358bca9043538f4e2ff": [
     "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
   ],
-  "482a4fdf47624e36569e07a6993672564e44764a": [
-    "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
-  ],
-  "8c36804bf788fe31a4b4ba8bbd996903172b7601": [
-    "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
-  ],
-  "a856d9f0ac323bd213c8c9954b6477a4e8e4fd7c": [
-    "Azure-RMSDocs\\develop\\active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md"
-  ],
   "8c186a71befdce2d9671d32aabdeb8d1fe57ee35": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
@@ -542,9 +533,6 @@
   "04ebc0db58eb8967016ee188bb57e027986271b1": [
     "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md"
   ],
-  "9a8a37b4e0f731c8be88a4ef6342b2104f49bca3": [
-    "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md"
-  ],
   "b46c9eae435dda222606e9bfe7b45b0cb4b1e821": [
     "Azure-RMSDocs\\develop\\code-examples.md"
   ],
@@ -593,12 +581,6 @@
   "57d1c27b50b4cab19d9110cd7b25faf34187eadb": [
     "Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md"
   ],
-  "6a0eb6584291d5e0c7fcc96febf1fc4e71c54cc1": [
-    "Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md"
-  ],
-  "034079578d657d4438e388e8f452773bfd3bb27d": [
-    "Azure-RMSDocs\\develop\\create-your-first-rights-aware-application.md"
-  ],
   "1dff81897c6fda95a248b18cf71f3dc9e0e03cd0": [
     "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md"
   ],
@@ -636,9 +618,6 @@
     "Azure-RMSDocs\\develop\\differences-between-ad-rms-and-ad-rms-2-0.md"
   ],
   "e73799d698a4fd6bca5f7e366296633d3f99cbae": [
-    "Azure-RMSDocs\\develop\\differences-between-ad-rms-and-ad-rms-2-0.md"
-  ],
-  "0b251098a43112803e9214bb0a306c342a9fa4c7": [
     "Azure-RMSDocs\\develop\\differences-between-ad-rms-and-ad-rms-2-0.md"
   ],
   "5faea360de8aa9ecb82abf25b5c1392d52d0afad": [
@@ -707,12 +686,6 @@
   "6f633d2e7b4850c1985a50c6b3a7a03bbbe8a027": [
     "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
   ],
-  "cadef4f0459786507cd7faad22da8d21ebae6e36": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
-  "7df7759fb727a40e5e55584873f426a49b5ec8d9": [
-    "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md"
-  ],
   "b62f18a5d58a63bd20eae8e12ea17b9938f32805": [
     "Azure-RMSDocs\\develop\\how-to-configure-the-ad-rms-client-2-0.md"
   ],
@@ -746,12 +719,6 @@
   "c9ce38c316cef967f989621a33c2b4c425fbeb1c": [
     "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
   ],
-  "1593a4196015cc041cfc014c9407bdd96da6b11c": [
-    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
-  ],
-  "f8bafa0490b36b5f37d481c4208031bdfd8fd7c8": [
-    "Azure-RMSDocs\\develop\\how-to-install-and-configure-an-rms-server.md"
-  ],
   "8335fcb1402ea4a15af9c67d26fa7e2498108f0a": [
     "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
   ],
@@ -762,15 +729,6 @@
     "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
   ],
   "9d4d7e6e3e87f17517b9d60429f908e2edeb03d9": [
-    "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
-  ],
-  "3070966ce8255fc302cba8be4e8596335679d12c": [
-    "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
-  ],
-  "6e817c3536e3c22babc5dccace0f71eaf9fd2a0f": [
-    "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
-  ],
-  "546322e58352573188e0d8a5928182968a8d34e8": [
     "Azure-RMSDocs\\develop\\how-to-set-up-the-pre-production-development-environment.md"
   ],
   "c8f9dbb6579fa029d650f5be254c6bffd9c3eecd": [
@@ -893,18 +851,6 @@
   "6c6e6ba4ce772ff58ca5a2650eecc812e06a5553": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
-  "50258d7c340846707bbe1e7def10c10ef007821b": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
-  "a021bf059057104fbb03ed2948998eac86713b10": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
-  "af7e4e10f5c2eb4c3b325075eee3e2da0d71b5a3": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
-  "bc53cf4290a5cc0794151f5d90a2757e701a43ac": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
   "4d66c3fdbb7f21ddb8f21b07cd14c6ad1483610e": [
     "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
   ],
@@ -1004,9 +950,6 @@
   "6276b460d151834c7b806eb78cad59810e58a500": [
     "Azure-RMSDocs\\develop\\signing-your-application-for-production.md"
   ],
-  "6286d7aa1e085622bfe95cd05bbaba7a58fe3634": [
-    "Azure-RMSDocs\\develop\\signing-your-application-for-production.md"
-  ],
   "906ca8a8bb04400d74b5e7b48924300756cd630b": [
     "Azure-RMSDocs\\develop\\supported-file-formats.md"
   ],
@@ -1038,12 +981,6 @@
     "Azure-RMSDocs\\develop\\switching-to-the-production-environment.md"
   ],
   "5b543e6733a8a7ffdf9ff3f2d4e5261b3bea4189": [
-    "Azure-RMSDocs\\develop\\switching-to-the-production-environment.md"
-  ],
-  "c5813539a709da95254a06da2bf5fa6a75c58866": [
-    "Azure-RMSDocs\\develop\\switching-to-the-production-environment.md"
-  ],
-  "521f4e235a15a90b60ccd570d5c3d89d92564685": [
     "Azure-RMSDocs\\develop\\switching-to-the-production-environment.md"
   ],
   "cb8c91db044eb8cee39661994191c261bdbdb8ce": [
