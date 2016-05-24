@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 58051d42-5a0a-4b65-9e02-bcdbf17d3262
-
+ms.assetid: 74C342BF-0F79-486D-AED7-C53230DE5FA7
 # optional metadata
 
 #ROBOTS:
@@ -25,12 +24,11 @@ ms.suite: ems
 
 ---
 
-﻿
 # 設定用戶端
 
 本主題包含如何設定 Active Directory Rights Management Services Client 2.1 的相關指示。
 
-重要：如果您要透過在 RMS ISV 整合環境上執行應用程式來測試它，您不需要設定 AD RMS Client 2.1。 如需詳細資訊，請參閱[測試具備權限的應用程式](running-your-first-application.md)。
+**重要**：如果您要透過在 RMS ISV 整合環境上執行應用程式來測試它，您不需要設定 AD RMS Client 2.1。 如需詳細資訊，請參閱[測試具備權限的應用程式](running-your-first-application.md)。
 
  
 
@@ -43,7 +41,7 @@ ms.suite: ems
         如需如何安裝 RMS SDK 2.1 的資訊，請參閱[安裝 SDK](create-your-first-rights-aware-application.md)。
 
     -   如果您要在開發電腦以外的其他電腦上測試應用程式，您可以在該電腦上從 [AD RMS Client 2.1 下載頁面](http://www.microsoft.com/en-us/download/details.aspx?id=38396)安裝 AD RMS Client 2.1。
-        注意：如果應用程式使用伺服器 API 模式 (IPC\_API\_MODE\_SERVER)，您不需要使用應用程式資訊清單。 您可以對生產 RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
+        **注意**：如果應用程式使用伺服器 API 模式 (**IPC\_API\_MODE\_SERVER**)，您不需要使用應用程式資訊清單。 您可以對生產 RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
 
          
 
@@ -57,11 +55,11 @@ ms.suite: ems
 
 1.  從 %MSIPCSDKDIR%\\bin\\x86 (適用於 32 位元版 Windows) 或 %MSIPCSDKDIR\\bin\\x64 (適用於 64 位元版 Windows) 將開發人員執行階段 Ipcsecproc\_isv.dll 複製到 C:\\Program Files\\Active Directory Rights Management Services Client 2.1。
 
-    重要  如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須從 %MSIPCSDKDIR%\\bin\\x86 將 Ipcsecproc\_isv.dll 複製到 C:\\Program Files(x86)\\Active Directory Rights Management Services Client 2.1。
+    **重要**  如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須從 %MSIPCSDKDIR%\\bin\\x86 將 Ipcsecproc\_isv.dll 複製到 C:\\Program Files(x86)\\Active Directory Rights Management Services Client 2.1。
 
      
 
-2.  藉由將階層 登錄機碼值設為 1，來設定 AD RMS Client 2.1 以使用 ISV 憑證 (生產前環境) 階層。
+2.  藉由將**階層** 登錄機碼值設為 1，來設定 AD RMS Client 2.1 以使用 ISV 憑證 (生產前環境) 階層。
 
     ```
     HKEY_LOCAL_MACHINE
@@ -73,10 +71,10 @@ ms.suite: ems
                 DWORD
     ```
 
-    注意  登錄中沒有出現階層值，在功能上等於它的值設為 0 (零)，表示 RMS SDK 2.1 將會以運作模式運作。 如需金鑰和憑證鏈結的詳細資訊，請參閱[了解憑證鏈結](understanding-certificate-chains.md)。
+    **注意**  登錄中沒有出現**階層**值，在功能上等於它的值設為 0 (零)，表示 RMS SDK 2.1 將會以運作模式運作。 如需金鑰和憑證鏈結的詳細資訊，請參閱[了解憑證鏈結](understanding-certificate-chains.md)。
 
     **重要**  
-    如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須在下列機碼位置中設定階層值︰
+    如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須在下列機碼位置中設定**階層**值︰
 
     ```
     HKEY_LOCAL_MACHINE
@@ -96,11 +94,11 @@ ms.suite: ems
 
 |金鑰|值|
 |---|-----|
-|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterpriseCertification`|(預設)：<br><br> [http&#124;https]:// RMSClusterName /_wmcs/Certification|
-|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterprisePublishing`|(預設)：<br><br> [http&#124;https]:// RMSClusterName /_wmcs/Licensing|
+|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterpriseCertification`|(預設)：<br><br> [**http**&#124;**https**]**://** *RMSClusterName* **/_wmcs/Certification**|
+|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterprisePublishing`|(預設)：<br><br> [**http**&#124;**https**]**://** *RMSClusterName* **/_wmcs/Licensing**|
 
 
-注意   根據預設，這些機碼不存在登錄中，必須加以建立。
+**注意**   根據預設，這些機碼不存在登錄中，必須加以建立。
      
 **重要**  
     如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須在下列機碼位置中設定這些機碼︰
@@ -117,7 +115,7 @@ ms.suite: ems
 
 本主題中的指引並不完整。 如需如何設定 AD RMS Client 2.1 的詳細資訊，請參閱 [RMS Client 2.0 部署注意事項](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)。
 
-### 相關主題
+## 相關主題
 
 
 * [如何使用](how-to-use-msipc.md)
@@ -131,6 +129,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

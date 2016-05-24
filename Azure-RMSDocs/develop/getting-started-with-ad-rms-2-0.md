@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23e80932-9883-41f3-833d-b263fb419a62
-
+ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 使用者入門
+# 使用者入門
 
 Rights Management Services SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。 平台處理複雜的安全性作法，例如金鑰管理、加密和解密處理，並提供一個簡化的 API 以輕鬆開發應用程式。
 
@@ -58,11 +57,11 @@ RMS SDK 2.1 支援重要的用戶端和伺服器平台範圍。 如需詳細資�
 
 ## 核心原則
 
-簡化—AD RMS SDK 1.0 的意見反應和使用模式會加以分析，而資料會用來簡化或自動化最困難的程式設計工作。 使用 RMS SDK 2.1 所撰寫的 RMS 應用程式需要的 RMS 程式碼列數通常比使用 AD RMS SDK 1.0 所撰寫的 RMS 應用程式還要少 5-10 倍。
-一次撰寫—RMS SDK 2.1 應用程式不需要變更程式碼或重新編譯就能使用最新的 RMS 功能。 新的 RMS 功能會在新增至 RMS 伺服器時立即可供現有的應用程式使用。
-一致性—RMS SDK 2.1 可協助您輕鬆撰寫應用程式，它們會一致採用不同的 RMS 組態。 它也會大幅減少您身為應用程式開發人員所需撰寫的 RMS 使用者介面數量，鼓勵一致的外觀及操作，並減少使用者教育的需求。
+**簡化**—AD RMS SDK 1.0 的意見反應和使用模式會加以分析，而資料會用來簡化或自動化最困難的程式設計工作。 使用 RMS SDK 2.1 所撰寫的 RMS 應用程式需要的 RMS 程式碼列數通常比使用 AD RMS SDK 1.0 所撰寫的 RMS 應用程式還要少 5-10 倍。
+**一次撰寫**—RMS SDK 2.1 應用程式不需要變更程式碼或重新編譯就能使用最新的 RMS 功能。 新的 RMS 功能會在新增至 RMS 伺服器時立即可供現有的應用程式使用。
+**一致性**—RMS SDK 2.1 可協助您輕鬆撰寫應用程式，它們會一致採用不同的 RMS 組態。 它也會大幅減少您身為應用程式開發人員所需撰寫的 RMS 使用者介面數量，鼓勵一致的外觀及操作，並減少使用者教育的需求。
 
-### 相關主題
+## 相關主題
 
 * [AD RMS 範例](samples.md)
 * [AD RMS 開發人員的專屬部落格](http://blogs.msdn.com/b/rms/)
@@ -79,6 +78,6 @@ RMS SDK 2.1 支援重要的用戶端和伺服器平台範圍。 如需詳細資�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

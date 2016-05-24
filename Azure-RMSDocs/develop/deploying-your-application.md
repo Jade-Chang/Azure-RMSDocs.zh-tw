@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 08cb33e0-7df5-4855-a05b-159e6532f3ca
-
+ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 部署您的應用程式
 
 
@@ -76,11 +74,11 @@ AD RMS Client 2.1 不是 Windows 作業系統元件。 AD RMS Client 2.1 隨附�
 > [!NOTE]
 > 如果您已移轉至新的 ADAL 模型進行驗證，您不需要安裝 SIA。 如需詳細資訊，請參閱您的 RMS 啟用應用程式的 ADAL 驗證。
 
-- 為 Windows 10 認證您的應用程式︰藉由更新應用程式來使用 ADAL 驗證而不是 Microsoft Online 登入小幫手，您和您的客戶將能夠︰
+- **為 Windows 10 認證您的應用程式**︰藉由更新應用程式來使用 ADAL 驗證而不是 Microsoft Online 登入小幫手，您和您的客戶將能夠︰
   - 利用多重要素驗證
   - 安裝 RMS 2.1 用戶端，而不需要電腦的系統管理權限
  
-  為了讓您的使用者利用 Azure Rights Management 服務，您必須部署 Online Services 登入小幫手。 身為應用程式開發人員，您不知道使用者要使用 RMS (內部部署) 或 Azure Rights Management 服務 (雲端服務)。
+  為了讓您的使用者利用 Azure Rights Management 服務，您必須部署 *Online Services 登入小幫手*。 身為應用程式開發人員，您不知道使用者要使用 RMS (內部部署) 或 Azure Rights Management 服務 (雲端服務)。
 
 > [!IMPORTANT]
 > 若要使用 Azure RMS 執行 RMS SDK 2.1 用戶端應用程式，您需要申請 Azure RMS 租用戶。 透過租用戶要求傳送郵件給 <rmcstbeta@microsoft.com>。
@@ -105,6 +103,6 @@ AD RMS Client 2.1 不是 Windows 作業系統元件。 AD RMS Client 2.1 隨附�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
