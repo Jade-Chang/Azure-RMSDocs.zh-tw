@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c73fde39-6e16-470c-800e-59ab04c78f5f
-
+ms.assetid: 09BA148C-7D1E-43C8-92EA-24BBB6EFDB19
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 針對生產簽署應用程式
 
 本主題將引導您完成針對運作模式簽署應用程式的程序。
@@ -40,7 +38,7 @@ ms.suite: ems
 -   YourPublicKey.dat
 -   ProductionCertificate.xml
 
-將它們放在與 GenManifest.exe 和您的應用程式二進位檔 (.exe) 的相同目錄。
+將它們放在與 *GenManifest.exe* 和您的應用程式二進位檔 (.exe) 的相同目錄。
 
 -   下列程序將逐步引導您完成使用生產憑證來建立新 MCF 檔案的程序︰
 
@@ -59,15 +57,15 @@ ms.suite: ems
 
     -   執行下列命令來簽署應用程式︰
 
-        genmanifest.exe -chain ProductionCertificate.xml YourAppName.mcf YourAppName.exe.man
+        **genmanifest.exe -chain ProductionCertificate.xml** *YourAppName***.mcf** *YourAppName***.exe.man**
 
         如果 Genmanifest 成功，您只會看到下列文字︰
 
         如果 Genmanifest 失敗，您會看到錯誤訊息。
 
-    -   您的 YourAppName.exe.man 應該一律放在與 YourAppName.exe 相同的目錄。
+    -   您的 *YourAppName*.exe.man 應該一律放在與 *YourAppName*.exe 相同的目錄。
 
-### 相關主題
+## 相關主題
 
 * [如何使用](how-to-use-msipc.md)
 * [測試具備權限的應用程式](running-your-first-application.md)
@@ -79,6 +77,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

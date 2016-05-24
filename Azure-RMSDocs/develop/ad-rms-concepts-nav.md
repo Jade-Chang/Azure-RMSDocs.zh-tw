@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 20d3d9a4-f66e-4dfa-8c76-29e18f49eb0d
-
+ms.assetid: FF11DB55-3FBF-4044-B155-858E95398300
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 開發人員概念
 
 本節的主題涵蓋 RMS 的重要概念。
@@ -48,6 +46,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 013f9d75-0b66-44a8-9b01-d05b44a5ea0c
-
+ms.assetid: 6749817E-FF34-4384-BF63-39AEA5C372CA
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 取得生產授權
 
 在您可以釋出使用 Rights Management Services SDK 2.1 開發的應用程式之前，您必須套用生產授權合約以取得生產憑證。
@@ -43,8 +41,6 @@ ms.suite: ems
 您可以藉由套用生產授權合約來取得憑證。
 
 ## 要求生產授權合約
-
-![](../media/wedge.gif)
 
 -   傳送電子郵件訊息至 [RMLA@microsoft.com](mailto:rmla@microsoft.com) 並包含下列資訊︰
 
@@ -93,6 +89,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

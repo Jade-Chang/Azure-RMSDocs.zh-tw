@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: a7f11e25-9d27-4083-b604-a2d437671d91
-
+ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 # optional metadata
 
 #ROBOTS:
@@ -35,19 +34,19 @@ Rights Management Services (RMS) 的伺服器元件是由一組執行 [Microsoft
 
 在安裝的許多 Web 服務之中，以下幾個對應用程式開發很重要。
 
-管理 - 裝載可讓您管理 RMS 的系統管理網站。 服務會在根憑證伺服器和授權伺服器上執行。 您可以使用 [Active Directory Rights Management Services Scripting API](https://msdn.microsoft.com/library/Bb968797) 撰寫系統管理指令碼。
+**管理** - 裝載可讓您管理 RMS 的系統管理網站。 服務會在根憑證伺服器和授權伺服器上執行。 您可以使用 [Active Directory Rights Management Services Scripting API](https://msdn.microsoft.com/library/Bb968797) 撰寫系統管理指令碼。
 
-帳戶憑證 - 建立的機器憑證可用來從 RMS 憑證階層和權限帳戶憑證中，識別與特定電腦關聯的使用者的電腦。 如需詳細資訊，請參閱[啟用使用者](https://msdn.microsoft.com/library/Cc530378)。
+**帳戶憑證** - 建立的機器憑證可用來從 RMS 憑證階層和權限帳戶憑證中，識別與特定電腦關聯的使用者的電腦。 如需詳細資訊，請參閱[啟用使用者](https://msdn.microsoft.com/library/Cc530378)。
 
 此服務會在根憑證伺服器上執行。
 
-授權 - 發出的使用者授權讓使用者可以使用受保護的內容。 服務會在根憑證伺服器和授權伺服器上執行。
+**授權** - 發出的使用者授權讓使用者可以使用受保護的內容。 服務會在根憑證伺服器和授權伺服器上執行。
 
-發佈 - 建立[建立發行授權](https://msdn.microsoft.com/library/Aa362355)。 服務會在根憑證伺服器和授權伺服器上執行。
+**發佈** - 建立[建立發行授權](https://msdn.microsoft.com/library/Aa362355)。 服務會在根憑證伺服器和授權伺服器上執行。
 
-預先憑證 - 讓伺服器可以代表使用者要求權限帳戶憑證 (RAC)。 RAC 使用來自 RMS 啟用的電腦憑證將使用者帳戶繫結至特定電腦或電腦群組，RAC 是用來讓取用者使用受保護的內容。 服務會在根憑證伺服器和授權伺服器上執行。
+**預先憑證** - 讓伺服器可以代表使用者要求權限帳戶憑證 (RAC)。 RAC 使用來自 RMS 啟用的電腦憑證將使用者帳戶繫結至特定電腦或電腦群組，RAC 是用來讓取用者使用受保護的內容。 服務會在根憑證伺服器和授權伺服器上執行。
 
-Service Locator - 將帳戶憑證、授權以及發佈服務的 URL 提供給 Active Directory，讓 RMS 用戶端可以找到它們。 服務會在根憑證伺服器和授權伺服器上執行。
+**Service Locator** - 將帳戶憑證、授權以及發佈服務的 URL 提供給 Active Directory，讓 RMS 用戶端可以找到它們。 服務會在根憑證伺服器和授權伺服器上執行。
 
  
 
@@ -66,6 +65,6 @@ Service Locator - 將帳戶憑證、授權以及發佈服務的 URL 提供給 Ac
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

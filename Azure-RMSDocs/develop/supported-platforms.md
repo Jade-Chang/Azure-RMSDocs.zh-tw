@@ -12,8 +12,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 5b0c32e3-9685-4863-bd9f-e8f342825e90
-
+ms.assetid: 4E46521F-8C2F-401A-A481-113CE130ACF0
 # optional metadata
 
 #ROBOTS:
@@ -26,7 +25,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 支援的平台
 
 本主題說明支援 Rights Management Services SDK 2.1 的用戶端和伺服器平台。
@@ -40,7 +38,7 @@ ms.suite: ems
 -   Windows Server 2008 R2 SP1
 -   Windows 7 + SP1
 
-注意：Windows Server 2008 開始支援使用範本功能。
+**注意**：Windows Server 2008 開始支援使用範本功能。
 
  
 
@@ -52,6 +50,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

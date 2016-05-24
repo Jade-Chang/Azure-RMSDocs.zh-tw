@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 1a2ae9f2-709f-47fe-b16c-76140dd27740
-
+ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 # optional metadata
 
 #ROBOTS:
@@ -25,12 +24,11 @@ ms.suite: ems
 
 ---
 
-﻿
 # 開始使用
 
 針對此 Microsoft Rights Management SDK 4.2 版本，第一個應用程式的快速入門方法是透過每個作業系統 / 平台的開發環境設定指南。 開始根據下列項目建立具備權限的應用程式︰
 
-1. 下載 SDK 套件至使用下列連結表的目標作業系統。
+1. **下載 SDK 套件**至使用下列連結表的目標作業系統。
 
   |RMS SDK 4.2|
   |---------------|
@@ -41,7 +39,7 @@ ms.suite: ems
   |[Windows Phone](http://go.microsoft.com/fwlink/p/?LinkId=524758)|
   |[Windows 市集應用程式](http://go.microsoft.com/fwlink/p/?LinkID=526163)|
 
-2. 作業系統的繼續進行安裝指南。
+2. 作業系統的**繼續進行安裝指南**。
 
   安裝指南會引導您設定開發環境以建立您自己的基礎應用程式。
   - [Android 設定](android-sdk.md)
@@ -51,7 +49,7 @@ ms.suite: ems
   - [Windows 市集應用程式](winrt-sdk.md)
 
 3. 參閱 [SDK 概觀圖](api-reference-4-2.md)。
-4. 如需了解重要的版本資訊和開發人員指引，請參閱[最新消息](release-notes.md)主題。
+4. 如需了解重要的**版本資訊**和**開發人員指引**，請參閱[最新消息](release-notes.md)主題。
 
   |主題|說明|
   |-----|-----------|
@@ -61,6 +59,6 @@ ms.suite: ems
   |[社群資源](community-resources.md)|多個平台上逐漸成長的開發人員社群為 Active Directory Rights Management Services 提供良好的支援。|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

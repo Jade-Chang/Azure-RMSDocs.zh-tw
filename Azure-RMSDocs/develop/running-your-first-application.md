@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 43b611a8-2cc0-49a8-9db9-e81321c38f7a
-
+ms.assetid: 834B7242-31D3-4275-A892-CFE95A61E29E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 測試具備權限的應用程式
 
 本主題描述完成 Rights Management Services SDK 2.1 具備權限的應用程式測試所需的步驟。
@@ -57,7 +55,7 @@ ms.suite: ems
 
 執行之前，您必須為應用程式產生資訊清單。
 
-注意：如果應用程式使用伺服器 API 模式 (IPC\_API\_MODE\_SERVER)，您不需要使用應用程式資訊清單。 您可以對生產 AD RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
+**注意**：如果應用程式使用伺服器 API 模式 (**IPC\_API\_MODE\_SERVER**)，您不需要使用應用程式資訊清單。 您可以對生產 AD RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
 
  
 
@@ -107,7 +105,7 @@ ms.suite: ems
 
     如需有關如何在電腦上設定用戶端的資訊，請參閱[設定用戶端](how-to-configure-the-ad-rms-client-2-0.md)。 如需安裝 RMS 伺服器的相關資訊，請參閱[安裝並設定伺服器](how-to-install-and-configure-an-rms-server.md)。
 
-### 相關主題
+## 相關主題
 
 * [如何使用](how-to-use-msipc.md)
 * [設定用戶端](how-to-configure-the-ad-rms-client-2-0.md)
@@ -125,6 +123,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

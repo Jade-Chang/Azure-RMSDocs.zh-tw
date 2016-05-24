@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ec4661b0-e2d6-49f4-b819-ef624271ccc1
-
+ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # IPCHelloWorld - 範例應用程式
 
 本主題包含建立具備權限的應用程式範例的指示。
@@ -34,14 +32,14 @@ ms.suite: ems
 
 從 Microsoft Connect 下載範例應用程式 [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)。 網站上剩餘的可下載項目在此整合以便供您使用。
 
-注意  已為 Rights Management Services SDK 2.1 設定 IPCHelloWorld 專案。 如需如何設定新的專案以使用 RMS SDK 2.1 的資訊，請參閱[設定 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
+**注意**  已為 Rights Management Services SDK 2.1 設定 IPCHelloWorld 專案。 如需如何設定新的專案以使用 RMS SDK 2.1 的資訊，請參閱[設定 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)。
 
  
 下列各節包含重要的應用程式步驟和所需了解內容。
 
 ## 載入 MSIPC.dll
 
-在您呼叫任何 RMS SDK 2.1 函式之前，您必須先呼叫 [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函式以載入 MSIPC.dll。
+在您呼叫任何 RMS SDK 2.1 函式之前，您必須先呼叫 [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函式以載入 MSIPC.dll。
 
 
 
@@ -73,7 +71,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 
 
 
-這個呼叫會擷取安裝在預設伺服器上的 RMS 範本，並將結果載入 pcTil 變數指向的 [IPC\_TIL](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 結構，然後顯示範本。
+這個呼叫會擷取安裝在預設伺服器上的 RMS 範本，並將結果載入 *pcTil* 變數指向的 [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 結構，然後顯示範本。
 
 
 
@@ -97,9 +95,9 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 
 ## 序列化授權
 
-在您可以保護任何資料之前，您需要序列化授權並取得內容金鑰。 內容金鑰可用來加密機密資料。 序列化的授權通常會附加至加密的資料，並且供受保護資料的取用者使用。 取用者必須使用序列化授權呼叫 [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函式，以取得內容金鑰來解密內容，並取得與內容相關聯的原則。
+在您可以保護任何資料之前，您需要序列化授權並取得內容金鑰。 內容金鑰可用來加密機密資料。 序列化的授權通常會附加至加密的資料，並且供受保護資料的取用者使用。 取用者必須使用序列化授權呼叫 [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函式，以取得內容金鑰來解密內容，並取得與內容相關聯的原則。
 
-為了簡單起見，請使用 [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 所傳回的第一個 RMS 範本來序列化授權。
+為了簡單起見，請使用 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 所傳回的第一個 RMS 範本來序列化授權。
 
 通常，您會使用使用者介面對話方塊來允許使用者選取所需的範本。
 
@@ -116,11 +114,11 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 
 
 
-執行此動作之後，您具備您需要附加至受保護資料的內容金鑰 hContentKey 和序列化的授權 pSerializedLicense。
+執行此動作之後，您具備您需要附加至受保護資料的內容金鑰 *hContentKey* 和序列化的授權 *pSerializedLicense*。
 
 ## 保護資料
 
-現在您已準備好使用 [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式加密機密資料。 首先，您必須詢問 IpcEncrypt 函式加密資料的大小。
+現在您已準備好使用 [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式加密機密資料。 首先，您必須詢問 **IpcEncrypt** 函式加密資料的大小。
 
 
 
@@ -135,7 +133,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 
 
 
-這裡的 wszText 包含您要保護的純文字。 [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式會在 cbEncrypted 參數中傳回加密資料的大小。
+這裡的 *wszText* 包含您要保護的純文字。 [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式會在 *cbEncrypted* 參數中傳回加密資料的大小。
 
 現在可配置記憶體給加密的資料。
 
@@ -162,11 +160,11 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
     }
 
 
-在這個步驟之後，您具備可供取用者用來解密資料的加密資料 pbEncrypted 及序列化授權 pSerializedLicense。
+在這個步驟之後，您具備可供取用者用來解密資料的加密資料 *pbEncrypted* 及序列化授權 *pSerializedLicense*。
 
 ## 錯誤處理
 
-在整個範例應用程式中，DisplayError 函式可用來處理錯誤。
+在整個範例應用程式中，**DisplayError** 函式可用來處理錯誤。
 
 
 
@@ -183,7 +181,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
     }   
 
 
-DisplayError 函式使用 [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函式，從對應的錯誤程式碼收到錯誤訊息，並將它列印至標準輸出。
+**DisplayError** 函式使用 [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函式，從對應的錯誤程式碼收到錯誤訊息，並將它列印至標準輸出。
 
 ## 清除
 
@@ -224,6 +222,6 @@ DisplayError 函式使用 [IpcGetErrorMessageText](/rights-management/sdk/2.1/ap
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c1eb27e1-1d58-4899-9c6d-6e53bc92889e
-
+ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 安裝 SDK
 
 本主題會引導您安裝開發人員工具。
@@ -43,7 +41,7 @@ ms.suite: ems
 
 如需 "setup\_sdk.exe" 在您的系統上安裝之檔案的詳細資訊，請參閱[開發環境檔案](sdk-elements.md)
 
-### 相關主題
+## 相關主題
 
 * [如何使用](how-to-use-msipc.md)
 * [開發環境檔案](sdk-elements.md)
@@ -55,6 +53,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

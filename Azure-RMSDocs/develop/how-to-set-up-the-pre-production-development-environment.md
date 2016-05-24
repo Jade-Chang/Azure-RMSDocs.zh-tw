@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: bdb24446-d69f-435b-be39-a036540f7378
-
+ms.assetid: 4629ACAA-2A83-4697-B769-D649114D35E1
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 設定生產前開發環境
 
 本節將引導您在測試 / 生產前環境中完成具備權限應用程式的設定和執行程序。 下列主題討論如何設定您的生產前開發環境，以及如何列出，使它們建議您可以執行工作的順序。
@@ -41,7 +39,7 @@ ms.suite: ems
 |[偵錯具備權限的應用程式](debugging-applications-that-use-ad-rms.md)|下列主題說明如何偵錯應用程式及使用 Windows 事件記錄檔。|
 
 
-### 相關主題
+## 相關主題
 
 * [概觀](ad-rms-overview.md)
 * [如何使用](how-to-use-msipc.md)
@@ -50,6 +48,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

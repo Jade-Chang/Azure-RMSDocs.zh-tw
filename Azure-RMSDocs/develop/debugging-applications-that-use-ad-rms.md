@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: caf031ca-4876-4d42-9fbc-8638f579fb38
-
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 偵錯具備權限的應用程式
 
 下列主題說明如何偵錯應用程式及使用 Windows 事件記錄檔。
@@ -50,7 +48,7 @@ HKEY_LOCAL_MACHINE
 
 事件記錄檔的名稱是 "Microsoft-RMS-MSIPC/Debug"。 這表示在 Windows 事件檢視器中，您的記錄檔會顯示為 "Application and Services Logs\\Microsoft\\RMS\\MSIPC\\Debug"。
 
-注意：記錄檔預設會啟用並設為詳細層級 3。
+**注意**：記錄檔預設會啟用並設為詳細層級 3。
 
  
 
@@ -68,11 +66,11 @@ HKEY_LOCAL_MACHINE
 
 **wevtutil sl Microsoft-RMS-MSIPC/Debug /e:true /l:4**
 
-注意：在 Windows 事件檢視器的 [檢視] 功能表上，選取 [顯示分析和偵錯記錄檔] 以顯示 MSIPC 偵錯記錄檔。
+**注意**：在 Windows 事件檢視器的 [檢視] 功能表上，選取 [顯示分析和偵錯記錄檔] 以顯示 MSIPC 偵錯記錄檔。
 
  
 
-### 相關主題
+## 相關主題
 
 * [如何使用](how-to-use-msipc.md)
  
@@ -83,6 +81,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

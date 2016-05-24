@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 03d4fa22-0de4-400f-935d-e347d5890680
-
+ms.assetid: 186A9740-D812-4440-B28A-6968B2D8898C
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 如何使用
 
 下列主題將引導您完成使用 Rights Management Services SDK 2.1 實作應用程式的資訊保護之主要工作。
@@ -38,7 +36,7 @@ ms.suite: ems
   本節將引導您完成將經測試應用程式釋出至生產環境的程序。
  
 
-### 相關主題
+## 相關主題
 
 * [概觀](ad-rms-overview.md)
 * [如何使用](how-to-use-msipc.md)
@@ -47,6 +45,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
