@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 94697eb5-1fab-4591-bd40-b5646daac8a3
-
+ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 # optional metadata
 
 #ROBOTS:
@@ -25,25 +24,24 @@ ms.suite: ems
 
 ---
 
-﻿
 # 作法：將驗證新增至您的應用程式
 
 本主題描述 RMS 啟用應用程式的使用者驗證基本概念。
 
 ## 什麼是使用者驗證
-使用者驗證是在裝置應用程式與 RMS 基礎結構之間建立通訊的必要步驟。 此驗證程序使用標準 OAuth 2.0 通訊協定，需要下列與目前使用者及其驗證要求相關的資訊；授權、資源和 userId。
+使用者驗證是在裝置應用程式與 RMS 基礎結構之間建立通訊的必要步驟。 此驗證程序使用標準 OAuth 2.0 通訊協定，需要下列與目前使用者及其驗證要求相關的資訊；**授權**、**資源**和 **userId**。
 
-注意  目前未使用範圍，但可能會也因此會保留供日後使用。
+**注意**  目前未使用範圍，但可能會也因此會保留供日後使用。
 
  
 
-使用者驗證回呼 - Microsoft Rights Management SDK 4.2 會在您未提供存取權杖時、您的存取權杖需要重新整理時、或存取權杖已過期時，使用您的驗證回呼實作。
+**使用者驗證回呼** - Microsoft Rights Management SDK 4.2 會在您未提供存取權杖時、您的存取權杖需要重新整理時、或存取權杖已過期時，使用您的驗證回呼實作。
 
 每個平台的 RMS API 都有必須實作才能啟用使用者驗證的回呼。
 
--   Android API 會使用 [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 和 [AuthenticationCompletionCallback](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 介面。
--   iOS OS X API 會使用 [MSAuthenticationCallback](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 通訊協定。
--   WinPhone API 會使用 [IAuthenticationCallback](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 介面。
+-   Android API 會使用 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 和 [**AuthenticationCompletionCallback**](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 介面。
+-   iOS OS X API 會使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 通訊協定。
+-   WinPhone API 會使用 [**IAuthenticationCallback**](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 介面。
 -   Linux API 會使用 [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 介面。
 
 ## 哪個程式庫用於驗證
@@ -56,7 +54,7 @@ ms.suite: ems
 -   [dotnet 適用的 Windows Azure Active Directory 驗證程式庫 (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   若為 Linux SDK，ADAL 程式庫會利用 SDK 來源封裝，可透過 [Github](https://github.com/AzureAD/rms-sdk-for-cpp) 使用。
 
-注意  雖然您可能會使用其他驗證程式庫，但仍建議您使用上述其中一個 Active Directory 驗證程式庫 (ADAL)。
+**注意**  雖然您可能會使用其他驗證程式庫，但仍建議您使用上述其中一個 Active Directory 驗證程式庫 (ADAL)。
 
 ## 內含 Azure Active Director 驗證程式庫 (ADAL) 的驗證輸入
 
@@ -64,23 +62,23 @@ ADAL 需要數個參數才能成功驗證使用者至 Azure RMS (或 AD RMS)。 
 
 這些參數和指導方針都是 RMS 工作流程的必要項目︰
 
--   授權單位 – 驗證端點的 URL，通常是 AAD 或 ADFS。 這個參數由 RMS SDK 驗證回呼提供給您的應用程式。
--   資源 - 您嘗試存取的服務應用程式 URL/URI，通常是 Azure RMS 或 AD RMS。 這個參數由 RMS SDK 驗證回呼提供給您的應用程式。
--   使用者識別碼 – 想要存取應用程式的使用者 UPN，通常是電子郵件地址。 如果使用者仍未知，而且也用來快取使用者權杖，或從快取要求權杖，這個參數可以是空的。 這通常也會用來做為使用者提示的「提示」。
--   用戶端識別碼 – 用戶端應用程式的識別碼。 這必須是有效的 Azure AD 應用程式識別碼。 如需詳細資訊，請參閱作法：取得 Azure 應用程式識別碼。
--   重新導向 Uri – 提供內含 URI 目標的驗證程式庫給驗證碼。 請注意，iOS 和 Android 需要特定的格式，這些格式會在 ADAL 的相對應 GitHub 儲存機制之 README 檔案中說明。
+-   **授權單位** – 驗證端點的 URL，通常是 AAD 或 ADFS。 這個參數由 RMS SDK 驗證回呼提供給您的應用程式。
+-   **資源** - 您嘗試存取的服務應用程式 URL/URI，通常是 Azure RMS 或 AD RMS。 這個參數由 RMS SDK 驗證回呼提供給您的應用程式。
+-   **使用者識別碼** – 想要存取應用程式的使用者 UPN，通常是電子郵件地址。 如果使用者仍未知，而且也用來快取使用者權杖，或從快取要求權杖，這個參數可以是空的。 這通常也會用來做為使用者提示的「提示」。
+-   **用戶端識別碼** – 用戶端應用程式的識別碼。 這必須是有效的 Azure AD 應用程式識別碼。 如需詳細資訊，請參閱作法：取得 Azure 應用程式識別碼。
+-   **重新導向 Uri** – 提供內含 URI 目標的驗證程式庫給驗證碼。 請注意，iOS 和 Android 需要特定的格式，這些格式會在 ADAL 的相對應 GitHub 儲存機制之 README 檔案中說明。
 
     Android： `msauth://packagename/Base64UrlencodedSignature`
 
     iOS： `<app-scheme>://<bundle-id>`
 
-注意  如果您的應用程式未遵循這些指導方針，Azure RMS 和 Azure AD 工作流程可能會失敗，而且不受 Microsoft.com 支援。 此外，如果在生產應用程式中使用無效的用戶端識別碼，可能會違反 Rights Management 授權合約 (RMLA)。
+**注意**  如果您的應用程式未遵循這些指導方針，Azure RMS 和 Azure AD 工作流程可能會失敗，而且不受 Microsoft.com 支援。 此外，如果在生產應用程式中使用無效的用戶端識別碼，可能會違反 Rights Management 授權合約 (RMLA)。
 
 ## 驗證回呼實作的外觀為何
 
-驗證碼範例 - 此 SDK 有範例程式碼示範驗證回呼的使用。 為了方便起見，這些程式碼範例會在這裡以及後續的每個連結主題出現。
+**驗證碼範例** - 此 SDK 有範例程式碼示範驗證回呼的使用。 為了方便起見，這些程式碼範例會在這裡以及後續的每個連結主題出現。
 
-Android 使用者驗證 - 如需詳細資訊，請參閱 [Android 程式碼範例](android-code.md)，第一個案例的步驟 2，「取用 RMS 受保護檔案」。
+**Android 使用者驗證** - 如需詳細資訊，請參閱 [Android 程式碼範例](android-code.md)，第一個案例的**步驟 2**，「取用 RMS 受保護檔案」。
 
 
     class MsipcAuthenticationCallback implements AuthenticationRequestCallback
@@ -155,9 +153,9 @@ Android 使用者驗證 - 如需詳細資訊，請參閱 [Android 程式碼範�
                          }
 
 
-iOS/OS X 使用者驗證 - 如需詳細資訊，請參閱 [iOS/OS X 程式碼範例](ios-os-x-code-examples.md)，
+**iOS/OS X 使用者驗證** - 如需詳細資訊，請參閱 [iOS/OS X 程式碼範例](ios-os-x-code-examples.md)，
 
-第一個案例的步驟 2，「取用 RMS 受保護檔案」。
+第一個案例的**步驟 2**，「取用 RMS 受保護檔案」。
 
 
     // AuthenticationCallback holds the necessary information to retrieve an access token.
@@ -205,7 +203,7 @@ iOS/OS X 使用者驗證 - 如需詳細資訊，請參閱 [iOS/OS X 程式碼範
 
 
 
-Linux / C++ 使用者驗證 - 如需詳細資訊，請參閱 [Linux 程式碼範例](linux-c-code-examples.md)。
+**Linux / C++ 使用者驗證** - 如需詳細資訊，請參閱 [Linux 程式碼範例](linux-c-code-examples.md)。
 
 
 
@@ -276,6 +274,6 @@ Linux / C++ 使用者驗證 - 如需詳細資訊，請參閱 [Linux 程式碼範
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: a58894d5-3271-46d7-bb1c-fbd22eae8530
-
+ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 概觀
 
 Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。 透過具備權限的應用程式，內容擁有者將能夠定義誰可以開啟、修改、列印、轉送內容，或採取其他動作。
@@ -64,6 +62,6 @@ AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

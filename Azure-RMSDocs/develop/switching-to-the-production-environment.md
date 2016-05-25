@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 376c08d9-51e8-46c9-b2d2-426f648f7e4d
-
+ms.assetid: F5CD72F6-D49A-4121-866F-3182CD980875
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 切換至生產環境
 
 本節將引導您完成將經測試應用程式釋出至生產環境的程序。
@@ -53,7 +51,7 @@ ms.suite: ems
   本主題概要說明並引導您完成啟用權限的應用程式的部署選項。
  
 
-### 相關主題
+## 相關主題
 
 * [概觀](ad-rms-overview.md)
 * [如何使用](how-to-use-msipc.md)
@@ -62,6 +60,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

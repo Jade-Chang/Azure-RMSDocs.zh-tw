@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 749146d4-a49d-47dc-a43a-d37d96310e18
-
+ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 應用程式類型
 
 
@@ -40,9 +38,9 @@ Rights Management Services SDK 2.1 目前支援下列應用程式類型
 ### 伺服器模式應用程式
 
 
-伺服器模式的目標為取用、保護或處理 RMS 保護內容的非互動式應用程式。 其中一個範例是資料外洩防護應用程式，執行做為檔案伺服器上的服務，並且自動保護機密文件。 如需此應用程式類型的範例，請參閱 [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)。
+*伺服器模式*的目標為取用、保護或處理 RMS 保護內容的非互動式應用程式。 其中一個範例是*資料外洩防護*應用程式，執行做為檔案伺服器上的服務，並且自動保護機密文件。 如需此應用程式類型的範例，請參閱 [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)。
 
-如果您的應用程式使用伺服器模式，它應該以無訊息方式向 RMS 伺服器驗證。 不同於用戶端模式，RMS SDK 2.1 在無法以無訊息模式驗證時，它將不會開啟認證提示。 此外，以伺服器模式執行時，不需要任何應用程式資訊清單。
+如果您的應用程式使用*伺服器模式*，它應該以無訊息方式向 RMS 伺服器驗證。 不同於*用戶端模式*，RMS SDK 2.1 在無法以無訊息模式驗證時，它將不會開啟認證提示。 此外，以*伺服器模式*執行時，不需要任何應用程式資訊清單。
 
 如需設定 API 安全性模式的詳細資訊，請參閱[設定 API 安全性模式](setting-the-api-security-mode-api-mode.md)。
 
@@ -60,7 +58,7 @@ Microsoft 記事本是一個簡單的豐富用戶端應用程式。 Microsoft Of
 
 如需保護應用程式的詳細資訊，請參閱[了解使用限制](understanding-usage-restrictions.md)。
 
-### 相關主題
+## 相關主題
 
 * [開發人員概念](ad-rms-concepts-nav.md)
 * [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
@@ -75,6 +73,6 @@ Microsoft 記事本是一個簡單的豐富用戶端應用程式。 Microsoft Of
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

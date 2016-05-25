@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b2cd9dd4-6590-488e-9efb-27bdab41eff6
-
+ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 # optional metadata
 
 #ROBOTS:
@@ -25,28 +24,27 @@ ms.suite: ems
 
 ---
 
-﻿
 # 新增明確的擁有者權限
 
-從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限 ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
+從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限 ([**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
 
 ## 先決條件
 
-當您的應用程式正在使用 [IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立授權控制代碼時，它也必須明確授與擁有者完整權限 (權限)。
+當您的應用程式正在使用 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立授權控制代碼時，它也必須明確授與擁有者完整權限 (權限)。
 
-注意  使用內含 IPC\_LI\_OWNER 屬性的 [IpcSetLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 將使用者設定為「擁有者」，並不會授與擁有者完整權限。
+**注意**  使用內含 **IPC\_LI\_OWNER** 屬性的 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 將使用者設定為「擁有者」，並不會授與擁有者完整權限。
 
  
 ## 案例 - 指定權限給授權
 
-在此 C++ 範例中，所需的權限會新增至以 [IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立的授權。 此範例顯示透過權限清單建立權限並指派給授權。
+在此 C++ 範例中，所需的權限會新增至以 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立的授權。 此範例顯示透過權限清單建立權限並指派給授權。
 
 下列兩個權限會新增給這些使用者︰
 
--   指派給 joe@contoso.com 的讀取權限
--   指派給 mary\_kay@contoso.com 的完整權限
+-   指派給 joe@contoso.com 的*讀取*權限
+-   指派給 mary\_kay@contoso.com 的*完整*權限
 
-注意 - 此程式碼範例只顯示涉及建立特定權限並新增至指定授權的步驟。
+**注意** - 此程式碼範例只顯示涉及建立特定權限並新增至指定授權的步驟。
 
     // Create User Rights structure
     IPC_USER_RIGHTS ownerRightForOwner = {0};
@@ -119,6 +117,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

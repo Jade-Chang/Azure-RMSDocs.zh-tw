@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 10e3bee0-aaa4-4cbc-912f-f1ac50e117d5
-
+ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 開發人員指引和詞彙
 Microsoft Rights Management SDK 4.2 的重點是協助您建置 AD RMS 啟用應用程式，以盡可能簡單地利用 Active Directory Right Management Services (AD RMS)。
 
@@ -45,6 +43,6 @@ Microsoft Rights Management SDK 4.2 的重點是協助您建置 AD RMS 啟用應
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

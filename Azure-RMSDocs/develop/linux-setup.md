@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ff448158-2826-49e7-ae7f-ca0d8bd2e554
-
+ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Linux 設定
 
 
@@ -41,7 +39,7 @@ ms.suite: ems
 Ubuntu 14.04
 OpenSUSE 13.2
 CentOS 7
-注意  程式庫和範例已成功在 Windows 和 OSX 上編譯，但目前尚未完全受支援。
+**注意**  程式庫和範例已成功在 Windows 和 OSX 上編譯，但目前尚未完全受支援。
 
  
 
@@ -68,6 +66,6 @@ CentOS 7
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
