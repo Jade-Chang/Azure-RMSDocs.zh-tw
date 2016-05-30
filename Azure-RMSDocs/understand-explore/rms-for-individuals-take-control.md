@@ -29,15 +29,18 @@ ms.suite: ems
 
 # 系統管理員如何控制個人版 RMS 建立的帳戶
 
+*適用於：Azure Rights Management*
+
+
 如果您不想將組織的個人版 RMS 訂閱轉換成付費訂閱，您仍可使用下列方法，控制您組織所建立之 Azure 目錄中的使用者帳戶：
 
 -   為 Azure Active Directory 和 Active Directory 網域服務基礎結構實作目錄整合方案。 您可同步帳戶和密碼，讓該使用者不必建立新帳戶來使用 Rights Management，且您的內部部署密碼原則將套用至新 Azure 使用者帳戶。 您也可同步密碼，讓使用者不必記憶不同的密碼來使用 Rights Management。
 
 -   您可防止使用者註冊並搭配使用 Azure Rights Management 與個人版 RMS 訂用帳戶。 這麼做在大多數情況下有一些好處，因為使用者將共用沒有保護的檔案 (可能讓您的公司處於風險中)，或將使用其他檔案保護機制，IT 部門將無法運用這種機制存取資料。 不過，若要防止使用者註冊並使用個人版 RMS，請在 Azure 中取得組織之目錄的擁有權後執行下列其中一個動作：
 
-    -   防止所有使用者註冊自助訂用帳戶，其中包括個人版 RMS。  您目前無法設定此服務。此設定會套用至所有使用自助程序的 Azure 訂用帳戶。 若要進行此動作，請將 AllowAdHocSubscriptions 參數設為 false，加上來自 Azure Active Directory 之 Windows PowerShell 模組的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) Cmdlet。 例如：Set-MsolCompanySettings -AllowAdHocSubscriptions $false
+    -   防止所有使用者註冊自助訂用帳戶，其中包括個人版 RMS。  您目前無法設定此服務。此設定會套用至所有使用自助程序的 Azure 訂用帳戶。 若要進行此動作，請將 **AllowAdHocSubscriptions** 參數設為 false，加上來自 Azure Active Directory 之 Windows PowerShell 模組的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) Cmdlet。 例如：**Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
 
-    -   防止使用者在 Azure 建立新帳戶，代表只有已經在 Azure 擁有帳戶的使用者才能註冊包含個人版 RMS 的自助訂用帳戶。  若要進行此動作，請將 AllowEmailVerifiedUsers 參數設為 false，加上來自 Azure Active Directory 之 Windows PowerShell 模組的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) Cmdlet。 例如：Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true
+    -   防止使用者在 Azure 建立新帳戶，代表只有已經在 Azure 擁有帳戶的使用者才能註冊包含個人版 RMS 的自助訂用帳戶。  若要進行此動作，請將 **AllowEmailVerifiedUsers** 參數設為 false，加上來自 Azure Active Directory 之 Windows PowerShell 模組的 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) Cmdlet。 例如：**Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
 
     -   同步您的 Active Directory 網域服務基礎結構與 Azure Active Directory。 此動作可防止使用者在註冊個人版 RMS 等自助訂用帳戶時建立新帳戶，且您可刪除或停用先前在 Azure 目錄中建立的帳戶。
 
@@ -46,9 +49,9 @@ ms.suite: ems
 
 ## 後續步驟
 
-如果使用者 (而不是系統管理員) 可以在 Azure Active Directory 中，針對個人版 RMS 建立自己的帳戶，要如何瞭解已這麼做？  請參閱[如何找出您的使用者是否已註冊個人版 RMS](rms-for-individuals-identify-sign-up.md)。
+如果使用者 (而不是系統管理員) 可以在 Azure Active Directory 中，針對個人版 RMS 建立自己的帳戶，要如何瞭解已這麼做？  請參閱 [如何找出您的使用者是否已註冊個人版 RMS](rms-for-individuals-identify-sign-up.md)。.
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

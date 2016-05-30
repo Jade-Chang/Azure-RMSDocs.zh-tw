@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,31 +27,34 @@ ms.suite: ems
 
 
 # Azure RMS 需求：支援 Azure RMS 的用戶端裝置
+
+*適用於︰Azure Rights Management、Office 365*
+
 請使用下列各節來識別支援 Azure Rights Management 的裝置 (Azure RMS)。
 
 ## 電腦
 下列電腦作業系統支援 Azure Rights Management：
 
--   Windows 7 (x86、x64)
+-   **Windows 7** (x86、x64)
 
--   Windows 8 (x86、x64)
+-   **Windows 8** (x86、x64)
 
--   Windows 8.1 (x86、x64)
+-   **Windows 8.1** (x86、x64)
 
--   Windows 10 (x86、x64)
+-   **Windows 10** (x86、x64)
 
--   Mac OS X：Mac OS X 10.8 的最低版本 (Mountain Lion)
+-   **Mac OS X**：Mac OS X 10.8 的最低版本 (Mountain Lion)
 
 ## 行動裝置
 下列行動裝置作業系統支援 Azure Rights Management：
 
--   Windows Phone：Windows Phone 8.1
+-   **Windows Phone**：Windows Phone 8.1
 
--   Android 手機和平板電腦：Android 4.0.3 的最低版本
+-   **Android 手機和平板電腦**：Android 4.0.3 的最低版本
 
--   iPhone 和 iPad：iOS 7.0 的最低版本
+-   **iPhone 和 iPad**：iOS 7.0 的最低版本
 
--   Windows 平板電腦：Windows 10 Mobile 和 Windows 8.1 RT
+-   **Windows 平板電腦**：Windows 10 Mobile 和 Windows 8.1 RT
 
 
 ## 後續步驟
@@ -59,6 +62,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

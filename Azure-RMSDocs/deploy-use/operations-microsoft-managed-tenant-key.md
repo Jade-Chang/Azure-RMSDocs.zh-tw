@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Microsoft 管理：租用戶金鑰生命週期作業
+
+*適用於︰Azure Rights Management、Office 365*
+
 如果 Microsoft 為您管理 Azure Rights Management 的租用戶金鑰 (預設)，請參閱下列各節，以了解與此拓撲有關的生命週期作業的詳細資訊。
 
 ## 撤銷租用戶金鑰
@@ -64,9 +67,9 @@ Microsoft 會負責備份您的租用戶金鑰，您不必採取任何動作。
     ```
     AadrmTpd.exe -createkey
     ```
-    這樣會產生 RSA 金鑰組，並以檔案分成公開和私密兩部分，儲存在目前的資料夾中。 例如︰PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt 和 PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt。
+    這樣會產生 RSA 金鑰組，並以檔案分成公開和私密兩部分，儲存在目前的資料夾中。 例如：**PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 和 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**.
 
-    回覆 CSS 寄來的電子郵件，並附上檔名開頭為 PublicKey 的檔案。 之後，CSS 會傳送 TPD 檔案給您做為以 RSA 金鑰加密的 .xml 檔案。 將這個檔案複製到您一開始執行 AadrmTpd 工具時的相同資料夾，並使用以 PrivateKey 開頭的檔案以及來自 CSS 的檔案，再次執行工具。 例如：
+    回覆 CSS 寄來的電子郵件，並附上檔名開頭為 **PublicKey** 的檔案。 之後，CSS 會傳送 TPD 檔案給您做為以 RSA 金鑰加密的 .xml 檔案。 將這個檔案複製到您一開始執行 AadrmTpd 工具時的相同資料夾，並使用以 **PrivateKey** 開頭的檔案以及來自 CSS 的檔案，再次執行工具。 例如：
 
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
@@ -77,13 +80,13 @@ Microsoft 會負責備份您的租用戶金鑰，您不必採取任何動作。
 
     -   ExportedTPD-FA29D0FE-5049-4C8E-931B-96C6152B0441.xml
 
-    請備份這些檔案並妥善保管，以確保您能夠繼續解密以這個租用戶金鑰所保護的內容。 此外，如果是要移轉至 AD RMS，您可以將此 TPD 檔案 (以 ExportedTDP 開頭的檔案) 匯入到 AD RMS 伺服器。
+    請備份這些檔案並妥善保管，以確保您能夠繼續解密以這個租用戶金鑰所保護的內容。 此外，如果是要移轉至 AD RMS，您可以將此 TPD 檔案 (以 **ExportedTDP** 開頭的檔案) 匯入到 AD RMS 伺服器。
 
 ### 步驟 4：繼續：保護租用戶金鑰
 
 -   收到租用戶金鑰之後，請安全地保管，因為如果某人取得金鑰，他就可以將所有使用此金鑰保護的文件解密。
 
-    如果您因為不想再使用 Azure RMS 而匯出租用戶金鑰，則最佳做法就是立即停用 RMS 租用戶。 收到租用戶金鑰之後，請立即這樣做，切勿拖延，因為這項預防措施可將租用戶金鑰誤入他人之手的後果降到最低。 如需指示，請參閱[解除委任並停用 Azure Rights Management](decommission-deactivate.md)。
+    如果您因為不想再使用 Azure RMS 而匯出租用戶金鑰，則最佳做法就是立即停用 RMS 租用戶。 收到租用戶金鑰之後，請立即這樣做，切勿拖延，因為這項預防措施可將租用戶金鑰誤入他人之手的後果降到最低。 如需指示，請參閱 [解除委任並停用 Azure Rights Management](decommission-deactivate.md)。.
 
 ## 漏洞應變
 安全性系統不論多麼堅固，不可能完美到沒有任何漏洞應變程序。 租用戶金鑰可能已外洩或遭竊。 即使受到嚴密保護，最新一代 HSM 技術或目前的金鑰長度和演算法仍可能有弱點。
@@ -101,6 +104,6 @@ Microsoft 有專屬團隊負責對產品與服務中的安全性事件做出應�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

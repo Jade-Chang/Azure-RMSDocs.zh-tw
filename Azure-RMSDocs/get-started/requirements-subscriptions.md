@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Azure RMS 需求：支援 Azure RMS 的雲端訂閱
+
+*適用於︰Azure Rights Management、Office 365*
+
 若要使用 Azure Rights Management (Azure RMS)，您的組織必須至少有一個下列訂閱，且訂閱需具有可保護檔案和電子郵件訊息的足夠使用者和服務授權數目。 如果您有服務將對使用者 (檔案或電子郵件訊息的擁有者) 套用保護，這些使用者需要這些授權的其中一個。 只會使用 (例如讀取及編輯) 此受保護資料的使用者不需要授權。
 
 -   Office 365
@@ -41,7 +44,7 @@ ms.suite: ems
 
 如需授權的付費訂用帳戶之 Azure RMS 功能比較，請參閱 [Rights Management Services (RMS) 產品項目的比較](http://technet.microsoft.com/dn858608)。
 
-有關於 Azure RMS 授權的其他問題嗎？ 從 [Azure Rights Management 購買](https://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/Purchasing.aspx)頁面下載 Azure Rights Management 的授權常見問題集。 
+有關於 Azure RMS 授權的其他問題嗎？ 從 [Azure Rights Management 購買](https://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/Purchasing.aspx)頁面下載 **Azure Rights Management 的授權常見問題集**。 
 
 ## Office 365 訂閱
 [免費 30 天試用︰企業版 E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
@@ -94,6 +97,6 @@ Exchange Online 方案 1 <br /><br /> Exchange Online 方案 2|否 <br /><br /> 
 ## 後續步驟
 若要檢查其他需求，請參閱 [Azure Rights Management 的需求](requirements-azure-rms.md)。
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

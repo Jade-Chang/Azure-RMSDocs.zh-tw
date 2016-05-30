@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # 檢視並使用 Rights Management 保護的檔案
+
+*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+
 當[您的電腦上安裝 Rights Management (RMS) 共用應用程式](install-sharing-app.md)之後，您只要按兩下受保護的檔案即可檢視它。 檔案可能是電子郵件郵件的附件，您也可能在使用 [檔案總管] 時看見它。
 
 > [!NOTE]
 > RMS 必須先確認您有權檢視受保護的檔案 (檢查您的使用者名稱和密碼)，您才可以檢視檔案。 在某些情況下，這可能已快取，所以不會提示您提供認證。 在其他情況下會提示您提供認證。
-> 
+>
 > 如果您的組織不使用 Azure Rights Management (Azure RMS) 或 AD RMS，您可以申請免費帳戶，在接受您的認證後，您就可以開啟使用 RMS 保護的檔案：
-> 
-> -   若要申請此帳戶，請按一下連結來申請 [個人版 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
-> 
+>
+> -   若要申請這個帳戶，請按一下連結來申請 [個人版 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。.
+>
 >     當您註冊時，使用您的公司電子郵件地址而不是個人的電子郵件地址。 如果您是因為在電子郵件中收到受保護的附加檔案而註冊，請使用電子郵件訊息寄給您時所使用的相同電子郵件地址。
-> -   如需詳細資訊，請參閱[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
+> -   如需詳細資訊，請參閱 [個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。.
 
 ## 檢視受保護的檔案
 使用檔案總管或含有附件的電子郵件訊息，按兩下受保護的檔案，然後輸入您的認證 (如果提示您這樣做)。
@@ -46,17 +49,17 @@ ms.suite: ems
 > [!NOTE]
 > 如需詳細資訊，請參閱[自動建立的 .ppdf 檔案是什麼？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)
 
-如何開啟檔案取決於它受保護的方式，從副檔名就可以判斷。 在各種情況下，開啟檔案時可能經過稽核，而且只要檔案受到保護，就會持續稽核。 此外，如果檔案是以電子郵件附件的形式傳送，則您每次開啟檔案時，寄件者就可能收到電子郵件通知。 
+如何開啟檔案取決於它受保護的方式，從副檔名就可以判斷。 在各種情況下，開啟檔案時可能經過稽核，而且只要檔案受到保護，就會持續稽核。 此外，如果檔案是以電子郵件附件的形式傳送，則您每次開啟檔案時，寄件者就可能收到電子郵件通知。
 
-- **此檔案副檔名為 .pfile 。**
+- **此檔案副檔名為 *.pfile*。
 
     檔案受到一般保護。
 
     當您開啟檔案時，您會看到共用應用程式的 [受保護的檔案] 對話方塊，告知您檔案是由誰保護檔案，並提醒您遵守共同擁有者權限。 按一下 [開啟]  讀取檔案。
 
-    ![](../media/ADRMS_MSRMSApp_PfilePermission.png)
+    ![使用 RMS 共用應用程式時，透過電子郵件共用的 pfile 對話方塊](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **檔案的副檔名為 .ppdf，也可能是受保護的文字或影像檔 (例如 .ptxt 或 .pjpg)。**
+- **檔案的副檔名為 *.ppdf*，也可能是受保護的文字或影像檔 (例如 *.ptxt* 或* .pjpg*)。)**
 
     檔案已受到原生保護成為唯讀複本。
 
@@ -66,9 +69,9 @@ ms.suite: ems
 
     檔案已受到原生保護。
 
-    檔案是使用原始副檔名相關聯的應用程式來開啟，而且檔案頂端會顯示限制橫幅。 此橫幅可能顯示套用至檔案的權限，也可能提供連結來顯示權限。 例如，您可能會看到下列訊息，您必須按一下 目前權限限制 ，查看套用到該檔案的實際權限，以及可存取它的人員：
+    檔案是使用原始副檔名相關聯的應用程式來開啟，而且檔案頂端會顯示限制橫幅。 此橫幅可能顯示套用至檔案的權限，也可能提供連結來顯示權限。 例如，您可能會看到下列訊息，您必須按一下 **目前權限限制** ，查看套用到該檔案的實際權限，以及可存取它的人員：
 
-    ![](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
+    ![檔案受保護時的限制存取橫幅](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
 
 
 
@@ -80,15 +83,15 @@ ms.suite: ems
 ## 使用已受保護的檔案 (例如編輯和列印檔案)
 如果在開啟受保護的檔案之後，您不只想要讀取該檔案而已 (例如，編輯、複製和列印)，請依副檔名遵循相關指示：
 
-- **此檔案副檔名為 .pfile 。**
+- **此檔案副檔名為 *.pfile*。
 
     儲存已開啟的檔案，並提供新的副檔名 (與您想要使用的應用程式相關聯)。
 
     比方說，如果檔案是以檔案名稱 document.vsdx.pfile 而受保護，請檔案總管中檢視檔案，並將檔案儲存為 document.vsdx。
 
-    新的檔案不再受到保護。 如果您想要保護檔案，則必須手動進行。 如需指示，請參閱[使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](sharing-app-protect-in-place.md)。
+    新的檔案不再受到保護。 如果您想要保護檔案，則必須手動進行。 如需指示，請參閱 [使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](sharing-app-protect-in-place.md)。.
 
-- **檔案的副檔名為 .ppdf，也可能是受保護的文字或影像檔 (例如 .ptxt 或 .pjpg)。**
+- **檔案的副檔名為 *.ppdf*，也可能是受保護的文字或影像檔 (例如 *.ptxt* 或* .pjpg*)。)**
 
     您只能檢視檔案，如果您重新命名或移動它，檔案仍然是受到保護。
 
@@ -104,13 +107,12 @@ ms.suite: ems
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

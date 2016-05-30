@@ -26,9 +26,12 @@ ms.suite: ems
 ---
 
 # Azure Rights Management 租用戶金鑰的作業
+
+*適用於︰Azure Rights Management、Office 365*
+
 根據租用戶金鑰拓撲而定 (由 Microsoft 管理或客戶管理)，您對實作之後的 Microsoft Azure Rights Management (Azure RMS) 租用戶金鑰會有不同程度的控制與責任。
 
-當您管理自己的租用戶金鑰時，這通常稱為整合您自己的金鑰 (BYOK)。 如需此案例及如何在這兩種租用戶金鑰拓撲之中做選擇的詳細資訊，請參閱[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)。
+當您管理自己的租用戶金鑰時，這通常稱為整合您自己的金鑰 (BYOK)。 如需此案例及如何在這兩種租用戶金鑰拓撲之中做選擇的詳細資訊，請參閱 [規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)。.
 
 下表視您為 Azure RMS 租用戶金鑰選擇的拓撲而定，指出您可以執行的作業。
 
@@ -51,6 +54,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

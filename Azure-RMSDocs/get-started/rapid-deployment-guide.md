@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,7 +26,10 @@ ms.suite: ems
 ---
 
 # Azure Rights Management 的快速部署指南
-使用此指南以及部署與使用一節中的組態資訊，協助您藉由從要實作的特定案例清單中選擇，以快速部署與使用 Azure Rights Management (Azure RMS)。
+
+*適用於︰Azure Rights Management、Office 365*
+
+使用此指南以及**部署與使用**一節中的組態資訊，協助您藉由從要實作的特定案例清單中選擇，以快速部署與使用 Azure Rights Management (Azure RMS)。
 
 這些案例包含系統管理員指示和隨附的使用者文件。 將文件 (指示或公告) 提供給使用者之前，您必須先針對業務需求和現有工作流程自訂文件。 一組指示或公告範例顯示最終使用者文件看起來應該如何。
 
@@ -36,8 +39,7 @@ ms.suite: ems
 
 在您制定這些解決方案之前，您可能會想要傳送廣泛的公告給使用者，讓他們知道某些變更即將推出，以協助保護公司資料，並且可能需要使用者進行一些變更。 範例通訊會包含在下表之後。
 
-> [!NOTE]
-> 如果您有關於本指南的問題或意見，請使用本頁面上的意見反應機制，或將電子郵件訊息傳送至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
+> [!NOTE] 如果您有關於本指南的問題或意見，請使用本頁面上的意見反應機制，或將電子郵件訊息傳送至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
 
 ## Azure RMS 的案例
 為了協助您更快速部署 Azure RMS 來解決特定商務問題，請選擇最緊密符合商務目標的案例，並在必要時採用它們。
@@ -130,7 +132,7 @@ ms.suite: ems
 ## 首度發行之前對使用者的宣告
 您可以使用下列範例通訊訊息，讓使用者知道，部署 Azure RMS 表示有些變更正在進行。 複製並貼上下列文字，要從貴組織領導小組的某個人，最好是您的執行長，透過電子郵件傳送給所有使用者。 請考慮對這段文字進行任何變更，讓訊息與使用者和組織更有相關性。
 
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 快速部署的範例使用者文件橫幅](../media/AzRMS_ExampleBanner.png)
 
 ### 我們正在進行變更以保護資料
 您是否曾經想要針對您不小心傳送給夥伴的文件封鎖其存取權？ 您想要知道是否有辦法知道哪些客戶已閱讀您所傳送的最新產品新聞嗎？ 您需要共用機密的產品資訊，而不需擔心資訊可能會傳送給不應該看到的人嗎？
@@ -139,7 +141,7 @@ ms.suite: ems
 
 例如，若要追蹤 (和必要時撤銷) 您共用的文件，您將使用文件追蹤網站︰
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![Azure RMS 文件追蹤螢幕擷取畫面](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 若要查看其運作方式，請觀看這部 2 分鐘的影片︰[Azure RMS 文件追蹤和撤銷](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
 
@@ -149,6 +151,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

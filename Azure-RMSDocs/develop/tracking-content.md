@@ -2,7 +2,7 @@
 # required metadata
 
 title: 追蹤內容 |Azure RMS
-description:
+description: 實作文件追蹤的基本指導方針
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ca08e01f-690d-46f4-ae0f-a880cc29dabc
-
+ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 # optional metadata
 
 #ROBOTS:
@@ -25,9 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 追蹤內容
-
-\[部分與搶鮮版產品相關的資訊，可能會在正式發行之前大幅修改。 Microsoft 不會對此處提供之資訊提供任何明示、默示或法定之擔保。\]
+# 追蹤內容
 
 本主題涵蓋了追蹤 Rights Management Services SDK 2.1 所保護之內容文件的基本實作指導方針。
 
@@ -40,7 +37,7 @@ ms.suite: ems
 
     我們希望您設定所有的中繼資料屬性。 以下就是這些屬性，依類型排列。
 
-    如需詳細資訊，請參閱[授權中繼資料屬性類型](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)。
+    如需詳細資訊，請參閱[**授權中繼資料屬性類型**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)。
 
     -   **IPC\_MD\_CONTENT\_PATH**
 
@@ -52,11 +49,11 @@ ms.suite: ems
 
     -   **IPC\_MD\_NOTIFICATION\_TYPE**
 
-        使用這個屬性來指定何時要傳送通知。 如需詳細資訊，請參閱[通知類型](/rights-management/sdk/2.1/api/win/notification%20type#msipc_notification_type)。
+        使用這個屬性來指定何時要傳送通知。 如需詳細資訊，請參閱[**通知類型**](/rights-management/sdk/2.1/api/win/notification%20type#msipc_notification_type)。
 
     -   **IPC\_MD\_NOTIFICATION\_PREFERENCE**
 
-        使用這個屬性來指定通知類型。 如需詳細資訊，請參閱[通知的喜好設定](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)。
+        使用這個屬性來指定通知類型。 如需詳細資訊，請參閱[**通知的喜好設定**](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)。
 
     -   **IPC\_MD\_DATE\_MODIFIED**
 
@@ -120,7 +117,7 @@ ms.suite: ems
                               sendLicenseRegistrationNotificationEmail);
 
 
-### 相關主題
+## 相關主題
 
 
 * [**授權中繼資料屬性類型**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)
@@ -137,6 +134,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

@@ -27,7 +27,10 @@ ms.reviewer: mbaldwin
 
 # Azure RMS 用戶端
 
+*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
-<!--HONumber=Apr16_HO3-->
+
+
+<!--HONumber=Apr16_HO4-->
 
 

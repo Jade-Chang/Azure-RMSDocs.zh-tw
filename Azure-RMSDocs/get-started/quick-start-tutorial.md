@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure Rights Management 快速入門教學課程
+
+*適用於︰Azure Rights Management、Office 365*
+
 跳至︰ 
 > [!div class="op_single_selector"]
 - [步驟 1︰啟用 Azure RMS](tutorial-step1.md)
@@ -36,7 +39,7 @@ ms.suite: ems
 
 透過本教學課程所提供的 5 個步驟，您將能夠快速為組織試用 Microsoft Azure Rights Management (也稱為 Azure RMS)，所需時間不超過 15 分鐘。 您會啟動服務、透過電子郵件安全傳送機密文件給別的組織的人員，接著還能夠在文件被開啟時加以追蹤。 透過電子郵件送出的機密文件會在傳輸過程中加密，並且只有其收件者才能使用寄件者設定的權限加以讀取。
 
-![](../media/AzRMS_QuickStartStepsAll.PNG)
+![Azure RMS 快速入門教學課程全部步驟](../media/AzRMS_QuickStartStepsAll.PNG)
 
 本教學課程的目標對象是 IT 系統管理員和顧問，目的是協助他們評估 Azure Rights Management 是否能夠做為組織的資訊保護解決方案。 在生產環境中，啟動服務的指示由系統管理員來執行，傳送文件的指示則由一般使用者執行。 本教學課程囊括這兩項指示，以示範將機密文件安全傳送給別的組織的人員的端對端案例。 如果您在完成本教學課程時遇到任何問題，請寄送電子郵件到 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) ，我們會助您一臂之力。
 
@@ -52,13 +55,12 @@ ms.suite: ems
 
 讓我們開始這次的教學。
 
->[!div class="step-by-step"]
-[步驟 1 »](tutorial-step1.md)
+>[!div class="逐步"] [步驟 1 »](tutorial-step1.md)
 
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

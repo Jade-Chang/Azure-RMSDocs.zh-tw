@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Microsoft Rights Management 共用應用程式技術概觀
+
+*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+
 
 Microsoft Rights Management 共用應用程式是可選擇性下載的應用程式，適用於 Microsoft Windows 和其他提供下列功能的平台：
 
@@ -53,18 +56,17 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 |----------------------|----------|-----------|
 |說明|針對文字、影像、Microsoft Office (Word、Excel、PowerPoint) 檔案、.pdf 檔案及其他支援 AD RMS 的應用程式檔案類型，原生保護提供了包含加密和增強權利 (權限) 的強力層級保護。|針對所有其他應用程式和檔案類型，一般保護提供包含檔案封裝 (使用 .pfile 檔案類型) 和驗證 (確認使用者是否獲得開啟檔案授權) 的保護層級。|
 |保護|完整加密檔案並以下列方式強制執行保護：<br /><br />受保護的內容轉譯之前，透過電子郵件收到檔案或是透過檔案或共用權限存取檔案的人，必須成功通過驗證。<br /><br />此外，當檔案受到保護時，若要在 IP 檢視器中 (適用於受保護的文字和影像檔) 或相關聯的應用程式中 (適用於所有其他支援的檔案類型) 轉譯內容時，將完全強制執行內容擁有者所設定的使用權限與原則。|以下列方式強制執行檔案保護：<br /><br />受保護的內容轉譯之前，獲得開啟檔案授權和獲得檔案存取權的人，必須成功通過驗證。 如果授權失敗，檔案不會開啟。<br /><br />系統會顯示內容擁有者所設定的使用權限與原則，以通知授權使用者其預定使用原則。<br /><br />不過，稽核授權的使用者開啟並存取檔案的記錄時，非支援應用程式不會強制執行使用權限。|
-|預設檔案類型|這是下列檔案類型的預設保護層級：<br /><br />文字和影像檔案<br /><br />Microsoft Office (Word, Excel, PowerPoint) 檔案<br /><br />可攜式文件格式 (.pdf)<br /><br />如需詳細資訊，請參閱下一節的[支援的檔案類型與副檔名](#supported-file-types-and-file-name-extensions)。|這是完整保護不支援的所有其他檔案類型 (如 .vsdx、.rtf 等等) 的預設保護。|
+|預設檔案類型|這是下列檔案類型的預設保護層級：<br /><br />- 文字和影像檔案<br /><br />- Microsoft Office (Word、Excel、PowerPoint) 檔案<br /><br />- 可攜式文件格式 (.pdf)<br /><br />如需詳細資訊，請參閱下一節的[支援的檔案類型與副檔名](#supported-file-types-and-file-name-extensions)。|這是完整保護不支援的所有其他檔案類型 (如 .vsdx、.rtf 等等) 的預設保護。|
 您可以變更 RMS 共用應用程式套用的預設保護層級。 您可以將預設的原生層級變更為一般、從一般變更為原生，甚至阻止 RMS 共用應用程式套用保護。 如需詳細資訊，請參閱本文章中的[變更檔案的預設保護層級](#changing-the-default-protection-level-of-files)一節。
 
 ## 支援的檔案類型與副檔名
 下表列出 Microsoft Rights Management 共用應用程式原生支援的檔案類型。 當套用原生保護時，這些類型檔案的原始副檔名會變更，且這些檔案會變成唯讀。
 
-此外，當 RMS 共用應用程式原生保護使用者藉由共用保護的 Word、Excel 或 PowerPoint 檔案，這個動作會自動建立第二個檔案，它是原始檔案的副本，具有相同的檔名，但副檔名為 .ppdf ¹。 這個版本的檔案可確保安裝了 RMS 共用應用程式的收件者可以隨時開啟已套用原生保護的檔案。
+此外，當 RMS 共用應用程式原生保護使用者藉由共用保護的 Word、Excel 或 PowerPoint 檔案，這個動作會自動建立第二個檔案，它是原始檔案的副本，具有相同的檔名，但副檔名為 **.ppdf** ¹。 這個版本的檔案可確保安裝了 RMS 共用應用程式的收件者可以隨時開啟已套用原生保護的檔案。
 
 受到一般保護的檔案，原始檔案的副檔名一律會變更為 .pfile。
 
-> [!WARNING]
-> 如果您有防火牆、Web proxy 或會檢查並根據副檔名採取動作的安全性軟體，您可能需要重新設定這些安全性功能以支援這些新的副檔名。
+> [!WARNING] 如果您有防火牆、Web proxy 或會檢查並根據副檔名採取動作的安全性軟體，您可能需要重新設定這些安全性功能以支援這些新的副檔名。
 
 |原始副檔名|受 RMS 保護的副檔名|
 |--------------------------------|-------------------------------------|
@@ -107,41 +109,41 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 若要設定 RMS 共用應用程式對預設會套用原生保護的檔案套用一般保護，請進行以下登錄編輯：
 
-1.  HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection：建立名為 &#42; 的新金鑰。
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**：建立名為 * 的新金鑰。
 
     此設定表示具有任何副檔名的檔案。
 
-2.  在新加入的機碼 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\&#42; 中，建立 (REG_SZ) 名為 Encryption 的新字串值，且其資料值為 Pfile。
+2.  在新增的金鑰 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\* 中，建立 (REG_SZ) 名為 **Encryption** 的新字串值，且其資料值為 **Pfile**。
 
     這項設定會導致 RMS 共用應用程式套用一般保護。
 
 這兩項設定會導致 RMS 共用應用程式對所有有副檔名的檔案套用一般保護。 如果這是您的目標，則不需要進一步的設定。 不過，您可以定義特定檔案類型的例外狀況，讓它們仍然受到原生保護。 若要這樣做，您必須為每種檔案類型進行三個額外的登錄編輯：
 
-1.  HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection：加入包含該檔案副檔名 (不含前面的點) 的新機碼。
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**：加入包含該檔案副檔名 (不含前面的點) 的新機碼。
 
-    例如，為副檔名為 .docx 的檔案建立 DOCX機碼。
+    例如，為副檔名為 .docx 的檔案建立 **DOCX**機碼。
 
-2.  在新加入的檔案類型機碼中 (例如，HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX)，建立名為 AllowPFILEEncryption 的新 DWORD 值，且設定其值為 0。
+2.  在新加入的檔案類型機碼中 (例如，**HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**)，建立名為 **AllowPFILEEncryption** 的新 DWORD 值，且設定其值為 **0**。
 
-3.  在新加入的檔案類型機碼中 (例如，HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX)，建立名為 Encryption 的新字串值，且設定其值為 Native。
+3.  在新加入的檔案類型機碼中 (例如，**HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**)，建立名為 **Encryption** 的新字串值，且設定其值為 **Native**。
 
 進行這些設定後，所有檔案會受到一般保護，但 .docx 副檔名的檔案除外，後者會受到 RMS 共用應用程式的原生保護。
 
 針對您想要定義為例外狀況的其他檔案類型重複這三個步驟，因為它們支援原生保護，而您不要它們受 RMS 共用應用程式的一般保護。
 
-您可以變更 Encryption 字串的值，為其他案例進行類似登錄編輯，此字串支援下列值：
+您可以變更 **Encryption** 字串的值，為其他案例進行類似登錄編輯，此字串支援下列值：
 
--   Pfile：一般保護
+-   **Pfile**：一般保護
 
--   Native：原生保護
+-   **Native**：原生保護
 
--   Off：封鎖保護
+-   **Off**：封鎖保護
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

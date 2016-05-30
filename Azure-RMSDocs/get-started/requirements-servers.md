@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,9 +27,12 @@ ms.suite: ems
 
 
 # Azure RMS 需求：支援 Azure RMS 的內部部署伺服器
+
+*適用於︰Azure Rights Management、Office 365*
+
 當您使用 Azure RMS 連接器時可搭配使用下列內部部署伺服器產品與 Azure RMS，其作為內部部署伺服器與 Azure RMS 之間的通訊介面 (轉送)。 此外，此設定需要您在 Active Directory 樹系與 Azure Active Directory 之間設定目錄同步。
 
--   Exchange Server：
+-   **Exchange Server**：
 
     -   Exchange Server 2016
 
@@ -37,13 +40,15 @@ ms.suite: ems
 
     -   Exchange Server 2010
 
--   Office SharePoint Server：
+-   **Office SharePoint Server**：
+
+    -   Office SharePoint Server 2016
 
     -   Office SharePoint Server 2013
 
     -   Office SharePoint Server 2010
 
--   執行 Windows Server 並使用檔案分類基礎結構 (FCI) 的檔案伺服器：
+-   **執行 Windows Server 並使用檔案分類基礎結構 (FCI) 的檔案伺服器**：
 
     -   Windows Server 2012 R2
 
@@ -62,6 +67,6 @@ RMS 連接器在 Windows Server 2012 R2、Windows Server 2012 和 Windows Server
 若要檢查其他需求，請參閱 [Azure Rights Management 的需求](requirements-azure-rms.md)。
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

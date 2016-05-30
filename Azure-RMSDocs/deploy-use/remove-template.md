@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # 移除 (封存) 範本
+
+*適用於︰Azure Rights Management、Office 365*
+
 無法刪除預設範本，但是可以封存它們，這樣使用者就看不到它們。
 
 同樣地，如果您已經發佈一個自訂範本但是不想再要讓使用者看見它，則可以從 [設定]  頁面編輯該範本，然後選擇 [封存]  和 [儲存]  。 或者您也可以從 [範本]  頁面選取它，然後選取 [封存] 。
@@ -44,6 +47,6 @@ ms.suite: ems
 ## 另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 
