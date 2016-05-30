@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 記錄和分析 Azure Rights Management 使用情況
+
+*適用於︰Azure Rights Management、Office 365*
+
 請參閱本主題的資訊來協助您了解如何使用 Azure Rights Management (Azure RMS) 的使用情況記錄功能。 Azure Rights Management 服務可以記錄它對您的組織所做的每一個要求，包括來自使用者的要求、由組織中的 Rights Management 系統管理員所執行的動作，以及 Microsoft 操作員為了支援 Azure Rights Management 部署而執行的動作。
 
 然後，您可以利用這些 Azure Rights Management 記錄來支援下列商務案例：
@@ -44,18 +47,16 @@ ms.suite: ems
 
     如果發生資訊外洩，您可能會被問及誰最近存取特定的文件，以及可疑人士最近存取什麼資訊。 只要有使用 Azure Rights Management 和記錄，您就能夠回答這幾種問題，因為使用受保護內容的人一定要取得 Azure Rights Management 授權才能開啟 Azure Rights Management 所保護的文件和圖片，即使這些檔案由電子郵件移動，或複製到 USB 磁碟機或其他存放裝置也一樣。 這表示當您使用 Azure Rights Management 來保護資料時，Azure Rights Management 記錄可當做可靠的資訊來源以進行蒐證分析。
 
-> [!NOTE]
-> 如果您只對記錄 Azure Rights Management 的管理工作有興趣，並且不想要追蹤使用者使用 Rights Management 的方式，您可以針對 Azure Rights Management 使用 Windows PowerShell Cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx)。
+> [!NOTE] 如果您只對記錄 Azure Rights Management 的管理工作有興趣，並且不想要追蹤使用者使用 Rights Management 的方式，您可以針對 Azure Rights Management 使用 Windows PowerShell Cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx)。
 > 
-> 您也可以使用 Azure 傳統入口網站，取得高階使用情況報告，其中包含 RMS 摘要、RMS 活躍的使用者、RMS 裝置平台，以及 RMS 應用程式使用情況。 若要從 Azure 傳統入口網站存取這些報告，請按一下 [Active Directory]、選取並開啟目錄，然後按一下 [報告]。
+> 您也可以使用 Azure 傳統入口網站，取得高階使用情況報告，其中包含 **RMS 摘要**、**RMS 活躍的使用者**、**RMS 裝置平台**，以及 **RMS 應用程式使用情況**。 若要從 Azure 傳統入口網站存取這些報告，請按一下 [Active Directory]、選取並開啟目錄，然後按一下 [報告]。
 
 如需 Azure Rights Management 使用情況記錄的詳細資訊，請參閱下列幾節。
 
 ## 如何啟用 Azure Rights Management 使用量記錄
 從 2016 年 2 月開始，Azure Rights Management 使用量記錄預設為所有客戶啟用。 這適用於在 2016 年 2 月之前啟動他們的 Azure RMS 服務的客戶，和在 2016 年 2 月之後啟動服務的客戶。 
 
-> [!NOTE]
-> 記錄儲存體或記錄功能不需要額外成本。
+> [!NOTE] 記錄儲存體或記錄功能不需要額外成本。
 > 
 > 如果您使用的 Azure RMS 的使用量記錄是在 2016年 2 月之前，您需要 Azure 的訂用帳戶以及 Azure 上足夠的儲存體，這已超出上述的情況。
 
@@ -66,7 +67,7 @@ Azure Rights Management 會以一連串 Blob 將記錄寫入 Azure 儲存體帳�
 
 發生 Azure Rights Management 動作之後需要一些時間，記錄才會出現在儲存體帳戶中。 大多數記錄會在 15 分鐘內出現。 建議您將記錄下載到本機儲存體，例如本機資料夾、資料庫或 map-reduce 儲存機制。
 
-若要下載您的使用量記錄，您將會使用適用於 Windows PowerShell 的 Azure RMS 管理模組。 如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](install-powershell.md)。 如果您先前已下載此 Windows PowerShell 模組，請執行下列命令來檢查版本號碼至少為 2.4.0.0： `(Get-Module aadrm -ListAvailable).Version` 
+若要下載您的使用量記錄，您將會使用適用於 Windows PowerShell 的 Azure RMS 管理模組。 如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](install-powershell.md)。 如果您先前已下載此 Windows PowerShell 模組，請執行下列命令來檢查版本號碼至少為 **2.4.0.0**： `(Get-Module aadrm -ListAvailable).Version` 
 
 ### 使用 PowerShell 下載使用情況記錄
 
@@ -151,7 +152,7 @@ Azure Rights Management 會以一連串 Blob 來寫入記錄。
 |owner-email|字串|文件擁有者的電子郵件地址。|alice@contoso.com|
 |issuer|字串|文件簽發者的電子郵件地址。|alice@contoso.com (或) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |Template-id|字串|用來保護文件的範本 ID。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|字串|受保護的文件的檔案名稱。|TopSecretDocument.docx|
+|File-name|字串|受保護的文件的檔案名稱。 <br /><br />目前，某些檔案 (例如 Office 文件) 顯示為 GUID，而不是實際檔案名稱。|TopSecretDocument.docx|
 |Date-published|日期|文件受保護的日期。|2015-10-15T21:37:00|
 |c-info|字串|提出要求的用戶端平台的相關資訊。<br /><br />具體字串隨著應用程式而不同 (例如，作業系統或瀏覽器)。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|位址|提出要求的用戶端的 IP 位址。|64.51.202.144|
@@ -159,9 +160,9 @@ Azure Rights Management 會以一連串 Blob 來寫入記錄。
 #### user-id 欄位的例外狀況
 雖然 user-id 欄位通常指出提出要求的使用者，但有兩種例外狀況，值不會對應至真正的使用者：
 
--   值 'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'。
+-   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
 
-    這指出 Office 365 服務 (例如 Exchange Online 或 SharePoint Online) 正提出要求。 在字串中， &lt;YourTenantID&gt; 是租用戶的 GUID， region&gt; 是租用戶註冊的地區。 例如， na 代表北美洲、 eu 代表歐洲， ap 代表亞洲。
+    這指出 Office 365 服務 (例如 Exchange Online 或 SharePoint Online) 正提出要求。 在字串中，*&lt;YourTenantID&gt;* 是租用戶的 GUID，*&lt;region&gt;* 是租用戶註冊的地區。 例如， **na** 代表北美洲、 **eu** 代表歐洲， **ap** 代表亞洲。
 
 -   如果您使用 RMS 連接器，
 
@@ -228,6 +229,6 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

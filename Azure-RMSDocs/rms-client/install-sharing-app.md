@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # 下載及安裝 Rights Management 共用應用程式
+
+*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+
 您不需要是本機系統管理員也能安裝 RMS 共用應用程式。 然而，如果你不是本機系統系統管理員，且使用 Office 2010，則會有一些限制。 如需詳細資訊，請參閱本頁面上的[如果您不是本機系統管理員並使用 Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) 一節。
 
 ## 下載及安裝 Rights Management 共用應用程式
 
 1.  移至 Microsoft 網站上的 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 頁面。
 
-2.  在 [電腦]  區段中，按一下 [適用於 Windows 的 RMS 應用程式]  的圖示並儲存 Setup.exe 檔案，以安裝 Microsoft Rights Management 共用應用程式。
+2.  在 [電腦]  區段中，按一下 [適用於 Windows 的 RMS 應用程式]  的圖示並儲存 **Setup.exe** 檔案，以安裝 Microsoft Rights Management 共用應用程式。
 
-3.  按兩下下載的 Setup.exe 檔案。 如果您收到繼續進行的提示，請按一下 [ 是]。
+3.  按兩下下載的 Setup.exe 檔案。 如果系統提示您繼續進行，請按一下 **[是]**.
 
-4.  在 [安裝 Microsoft RMS]  頁面上，按 [下一步] ，並等候安裝完成。
+4.  在 [安裝 Microsoft RMS]  頁面上按 [下一步] ，並等候安裝完成。
 
     > [!NOTE]
     > RMS 共用應用程式需要至少 Microsoft.NET Framework 4.0 版。 安裝程式會檢查是否已安裝，如果尚未安裝，您會看到訊息，具有安裝的連結。
@@ -50,7 +53,7 @@ ms.suite: ems
 
 -   如果您的組織使用 Azure RMS，而不是內部部署版本的 RMS：
 
-    -   將無法使用 Office 的資訊版權管理 (IRM) 功能。 例如，電子郵件的不要轉發選項、可以從 Word 和 Excel 的 [檔案] 功能表設定的限制存取許可權。 您可以使用功能區上的 [保護的共用] 選項，以及 [檔案總管] 中的按右鍵選項。
+    -   將無法使用 Office 的資訊版權管理 (IRM) 功能。 例如，電子郵件的**不要轉發**選項、可以從 Word 和 Excel 的 [檔案] 功能表設定的**限制存取**許可權。 您可以使用功能區上的 [保護的共用] 選項，以及 [檔案總管] 中的按右鍵選項。
 
 -   如果您的組織使用內部部署的 RMS，而不是 Azure RMS：
 
@@ -65,13 +68,13 @@ ms.suite: ems
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

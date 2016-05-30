@@ -26,7 +26,10 @@ ms.suite: ems
 
 ---
 # 移轉階段 2 - 用戶端組態
-針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 2 使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 的步驟 5。
+
+*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+
+針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 2 使用下列資訊。 這些程序涵蓋 [從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 的步驟 5.
 
 
 ## 步驟 5： 重新設定用戶端使用 Azure RMS
@@ -46,7 +49,7 @@ ms.suite: ems
 
 對於行動裝置用戶端和 Mac 電腦：
 
--   移除部署 [AD RMS 的行動裝置延伸模組](http://technet.microsoft.com/library/dn673574.aspx)時所建立的 DNS SRV 記錄。
+-   移除部署 [AD RMS mobile device extension](http://technet.microsoft.com/library/dn673574.aspx) (AD RMS 的行動裝置擴充功能) 時所建立的 DNS SRV 記錄.
 
 #### 移轉指令碼所進行的變更
 本節記載移轉指令碼所進行的變更。 此資訊僅供參考或進行疑難排解，或者，您可能會想要自己進行這些變更。
@@ -91,19 +94,19 @@ Redirect_OnPrem.cmd：
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    每個項目都有 https://OldRMSserverURL/_wmcs/licensing 的 REG_SZ 值，而其資料格式如下：https://&lt;YourTenantURL&gt;/_wmcs/licensing。
+    每個項目都有 **https://舊 RMS 伺服器 URL/_wmcs/licensing** 的 REG_SZ 值，而其資料格式如下：**https://&lt;您的租用戶 URL&gt;/_wmcs/licensing**.
 
     > [!NOTE]
-    > &lt;YourTenantURL&gt; 具有下列格式：{GUID}.rms.[Region].aadrm.com。
+    > *&lt;您的租用戶 URL&gt;* 具有下列格式：**{GUID}.rms.[區域].aadrm.com**.
     > 
     > 例如：5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com
     > 
-    > 在針對 Azure RMS 執行 Get-AadrmConfiguration Cmdlet 時，您可以藉由辨識 [RightsManagementServiceId](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) 值來找出該值。
+    > 在針對 Azure RMS 執行 **Get-AadrmConfiguration** Cmdlet 時，您可以藉由辨識 [RightsManagementServiceId](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) 值來找出該值。
 
 
 ## 後續步驟
-若要繼續移轉，請移至[第 3 階段 - 支援服務組態](migrate-from-ad-rms-phase3.md)。
+若要繼續移轉，請移至 [階段 3 - 支援服務組態](migrate-from-ad-rms-phase3.md).
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

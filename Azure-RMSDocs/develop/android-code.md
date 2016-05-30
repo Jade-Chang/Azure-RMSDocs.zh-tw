@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: afe062d5-a507-45e5-a4ec-613f9c46772e
-
+ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 # optional metadata
 
 #ROBOTS:
@@ -25,12 +24,11 @@ ms.suite: ems
 
 ---
 
-﻿
 # Android 程式碼範例
 
 本主題將介紹 Android 版本的 RMS SDK 的重要程式碼元素。
 
-注意：在範例程式碼和後續的說明中，我們使用詞彙 MSIPC (Microsoft 資訊保護與控制) 來參考用戶端程序。
+**注意**：在範例程式碼和後續的說明中，我們使用詞彙 MSIPC (Microsoft 資訊保護與控制) 來參考用戶端程序。
 
 
 ## 使用 Microsoft Rights Management SDK 4.2 - 重要案例
@@ -39,15 +37,15 @@ ms.suite: ems
 
 
 
-範例應用程式 MSIPCSampleApp 可搭配 SDK 用於 Android 作業系統。 請參閱 GitHub 上的 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) 以存取此範例應用程式。
+範例應用程式 *MSIPCSampleApp* 可搭配 SDK 用於 Android 作業系統。 請參閱 GitHub 上的 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) 以存取此範例應用程式。
 
 ### 案例︰取用 RMS 受保護的檔案
 
--   步驟 1︰建立 [ProtectedFileInputStream](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
+-   **步驟 1**︰建立 [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java)
 
-    來源︰MsipcAuthenticationCallback.java
+    **來源**︰*MsipcAuthenticationCallback.java*
 
-    描述︰透過其建立方法 (使用 [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 實作服務驗證以取得權杖) 來具現化 [ProtectedFileInputStream](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 物件，方法是將 AuthenticationRequestCallback 的執行個體做為參數 mRmsAuthCallback 傳給 MSIPC API。 請參閱下列範例程式碼一節結尾附近的 [ProtectedFileInputStream.create](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 呼叫。
+    **描述**︰透過其建立方法 (使用 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 實作服務驗證以取得權杖) 來具現化 [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 物件，方法是將 **AuthenticationRequestCallback** 的執行個體作為參數 *mRmsAuthCallback* 傳遞給 MSIPC API。 請參閱下列範例程式碼一節結尾附近的 [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 呼叫。
 
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
         {
@@ -108,11 +106,11 @@ ms.suite: ems
         }
 
 
--   步驟 2︰使用 Active Directory 驗證程式庫 (ADAL) 的安裝程式驗證。
+-   **步驟 2**︰使用 Active Directory 驗證程式庫 (ADAL) 的安裝程式驗證。
 
-    來源︰MsipcAuthenticationCallback.java。
+    **來源**︰*MsipcAuthenticationCallback.java*。
 
-    描述︰在此步驟中，您會看到用來實作 [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 與範例驗證參數的 ADAL。 如需有關如何使用 ADAL 的詳細資訊，請參閱 [Azure AD 驗證程式庫 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。
+    **描述**︰在此步驟中，您會看到用來實作 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 與範例驗證參數的 ADAL。 如需有關如何使用 ADAL 的詳細資訊，請參閱 [Azure AD 驗證程式庫 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。
 
 
         class MsipcAuthenticationCallback implements AuthenticationRequestCallback
@@ -188,9 +186,9 @@ ms.suite: ems
                       }
 
 
--   步驟 3︰透過 [UserPolicy](/rights-management/sdk/4.2/api/android/userpolicy) 的 [accessCheck](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_accesscheck_method_java) 方法，檢查此使用者是否存在此內容的編輯權限。
+-   **步驟 3**︰透過 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) 的 [**accessCheck**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_accesscheck_method_java) 方法，檢查此使用者是否存在此內容的**編輯**權限。
 
-    來源︰TextEditorFragment.java
+    **來源**︰*TextEditorFragment.java*
 
 
          //check if user has edit rights and apply enforcements
@@ -207,9 +205,9 @@ ms.suite: ems
 
 此案例一開始會取得範本清單，選取第一個範本以建立原則，然後建立並寫入至新的受保護檔案。
 
--   步驟 1︰透過 [TemplateDescriptor](/rights-management/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_class_java) 物件取得範本清單。
+-   **步驟 1**︰透過 [**TemplateDescriptor**](/rights-management/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_class_java) 物件取得範本清單。
 
-    來源︰MsipcTaskFragment.java
+    **來源**︰*MsipcTaskFragment.java*
 
 
 
@@ -250,7 +248,7 @@ ms.suite: ems
       }
 
 
--    步驟 2︰使用清單中的第一個範本來建立 [UserPolicy](/rights-management/sdk/4.2/api/android/userpolicy)。
+-    **步驟 2**︰使用清單中的第一個範本來建立 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -295,7 +293,7 @@ ms.suite: ems
       }
 
 
--    步驟 3︰建立 [ProtectedFileOutputStream](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) 並寫入內容。
+-    **步驟 3**︰建立 [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java) 並寫入內容。
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -361,9 +359,9 @@ ms.suite: ems
 
 ### 案例︰開啟自訂受保護的檔案
 
--   步驟 1︰從 serializedContentPolicy 建立 [UserPolicy](/rights-management/sdk/4.2/api/android/userpolicy)。
+-   **步驟 1**︰從 *serializedContentPolicy* 建立 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
 
-    來源︰MsipcTaskFragment.java
+    **來源**︰*MsipcTaskFragment.java*
 
 
     CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>()
@@ -421,7 +419,7 @@ ms.suite: ems
 
 
 
--    步驟 2︰使用步驟 1 的 [UserPolicy](/rights-management/sdk/4.2/api/android/userpolicy) 建立 [CustomProtectedInputStream](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java)。
+-    **步驟 2**︰使用**步驟 1** 的 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) 建立 [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java)。
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -493,7 +491,7 @@ ms.suite: ems
     }
 
 
--    步驟 3︰從 [CustomProtectedInputStream](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) 讀取內容到 mDecryptedContent，然後關閉。
+-    **步驟 3**︰從 [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java) 讀取內容到 *mDecryptedContent*，然後關閉。
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -530,11 +528,11 @@ ms.suite: ems
 
 ### 案例︰使用自訂 (臨機操作) 原則建立自訂受保護的檔案
 
--   步驟 1︰使用使用者所提供的電子郵件地址來建立原則描述元。
+-   **步驟 1**︰使用使用者所提供的電子郵件地址來建立原則描述元。
 
-    來源︰MsipcTaskFragment.java
+    **來源**︰*MsipcTaskFragment.java*
 
-    描述︰實際上會使用裝置介面的使用者輸入來建立下列物件；[UserRights](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 和 [PolicyDescriptor](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)。
+    **描述**︰實際上會使用裝置介面的使用者輸入來建立下列物件；[**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 和 [**PolicyDescriptor**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)。
 
 
 
@@ -552,7 +550,7 @@ ms.suite: ems
 
 
 
--    步驟 2︰從原則描述元 selectedDescriptor 建立自訂 [UserPolicy](/rights-management/sdk/4.2/api/android/userpolicy)。
+-    **步驟 2**︰從原則描述元 *selectedDescriptor* 建立自訂 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)。
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -564,9 +562,9 @@ ms.suite: ems
 
 
 
--   步驟 3︰建立內容並將其寫入到 [CustomProtectedOutputStream](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_class_java)，然後關閉。
+-   **步驟 3**︰建立內容並將其寫入到 [**CustomProtectedOutputStream**](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_class_java)，然後關閉。
 
-    來源︰MsipcTaskFragment.java
+    **來源**︰*MsipcTaskFragment.java*
 
 
     File file = new File(filePath);
@@ -639,6 +637,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

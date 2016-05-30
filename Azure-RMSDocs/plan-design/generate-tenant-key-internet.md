@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # 產生並傳輸您的租用戶金鑰 – 透過網際網路
+
+*適用於︰Azure Rights Management、Office 365*
+
 若您決定要[管理您自己的租用戶金鑰](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)，並透過網際網路傳輸金鑰，而非至 Microsoft 機構親自轉交租用戶金鑰，請使用下列程序：
 
 
@@ -45,10 +48,10 @@ ms.suite: ems
 > [!NOTE]
 > 如果您先前已下載此 Windows PowerShell 模組，請執行下列命令來檢查版本號碼至少為 2.1.0.0： `(Get-Module aadrm -ListAvailable).Version`
 
-如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md)。
+如需安裝指示，請參閱 [安裝 Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md)。.
 
 ### 步驟 2：取得您的 Azure Active Directory 租用戶識別碼
-使用 [ 以系統管理員身分執行 ] 選項啟動 Windows PowerShell，然後執行下列命令：
+使用 [ **以系統管理員身分執行** ] 選項啟動 Windows PowerShell，然後執行下列命令：
 
 -   使用 [Connect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629415.aspx) 指令程式來連線 Azure RMS 服務：
 
@@ -82,15 +85,15 @@ ms.suite: ems
 |亞洲|AzureRMS-BYOK-tools-AsiaPacific.zip|
 工具組包含下列組件：
 
--   名稱開頭為 BYOK-KEK-pkg- 的金鑰互換 (KEK) 封裝。
+-   名稱開頭為 **BYOK-KEK-pkg-** 的金鑰互換 (KEK) 封裝.
 
--   名稱開頭為 BYOK-SecurityWorld-pkg- 的安全園地封裝。
+-   名稱開頭為 **BYOK-SecurityWorld-pkg-** 的安全園地封裝.
 
--   名為 verifykeypackage.py的 Python 指令碼。
+-   名為 **verifykeypackage.py** 的 Python 指令碼.
 
--   名為 KeyTransferRemote.exe 的命令列可執行檔、名為 KeyTransferRemote.exe.config 的中繼資料檔案，以及相關聯的 DLL。
+-   名為 **KeyTransferRemote.exe** 的命令列可執行檔、名為 **KeyTransferRemote.exe.config** 的中繼資料檔案，以及相關聯的 DLL。
 
--   名為 vcredist_x64.exe 的 Visual C++ 可轉散發套件。
+-   名為 **vcredist_x64.exe** 的 Visual C++ 可轉散發套件.
 
 將封裝複製到 USB 磁碟機或其他可攜式儲存裝置。
 
@@ -104,12 +107,12 @@ ms.suite: ems
 ### 步驟 1：使用 Thales HSM 準備中斷連線的工作站
 在中斷連線的工作站，於 Windows 電腦上安裝 nCipher (Thales) 支援軟體，然後將 Thales HSM 連接至該電腦。
 
-確定 Thales 工具位於您的路徑 (%nfast_home%\bin 和 %nfast_home%\python\bin) 中。 例如，鍵入下列命令：
+確定 Thales 工具位於您的路徑 **(%nfast_home%\bin** 和 **%nfast_home%\python\bin**) 中。 例如，鍵入下列命令：
 
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
-如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)。
+如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
 ### 步驟 2：在中斷連線的工作站上安裝 BYOK 工具組
 從 USB 磁碟機或其他可攜式儲存裝置中複製 BYOK 工具組封裝，然後執行下列動作：
@@ -135,7 +138,7 @@ set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
 new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-quorum=2/3
 ```
-此程式會在 %NFAST_KMDATA%\local\world 中建立與 C:\ProgramData\nCipher\Key Management Data\local 資料夾對應的安全園地檔案。 您可為仲裁使用不同值，但在我們的範例中，系統會提示您為每個值輸入三張卡片和 Pin 碼。 然後，任兩張卡片必須具有系統管理權限來存取安全園地 (您指定的仲裁)。  這些卡片將成為新安全園地的 系統管理員卡組 。 在這個階段，您可以為每一張 ACS 卡片指定密碼或 PIN，或稍後以命令來新增。
+此程式會在 %NFAST_KMDATA%\local\world 中建立與 C:\ProgramData\nCipher\Key Management Data\local 資料夾對應的**安全園地**檔案。 您可為仲裁使用不同值，但在我們的範例中，系統會提示您為每個值輸入三張卡片和 Pin 碼。 然後，任兩張卡片必須具有系統管理權限來存取安全園地 (您指定的仲裁)。  這些卡片將成為新安全園地的 **系統管理員卡組** 。 在這個階段，您可以為每一張 ACS 卡片指定密碼或 PIN，或稍後以命令來新增。
 
 > [!TIP]
 > 您可以使用 `nkminfo` 命令，確認您 HSM 的目前組態狀態。
@@ -144,7 +147,7 @@ new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-
 
 1.  依照 Thales 文件的說明安裝 Thales CNG 提供者，並進行設定以使用新安全園地。
 
-2.  備份 %nfast_kmdata%\local 中的園地檔案。 保護園地檔案、系統管理員卡及其 Pin 碼，並確定沒有一個人可存取多張卡。
+2.  備份 **%nfast_kmdata%\local** 中的園地檔案。 保護園地檔案、系統管理員卡及其 Pin 碼，並確定沒有一個人可存取多張卡。
 
 ### 步驟 2：驗證下載的封裝
 這是選用性步驟，但建議您使用以驗證下列情況：
@@ -183,14 +186,14 @@ new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-
     > [!TIP]
     > Thales 軟體包含 Python 解釋器，位於 %NFAST_HOME%\python\bin
 
-2.  確認看到下列表示成功驗證的結果： 結果：成功
+2.  確認看到下列表示成功驗證的結果： **結果：成功**
 
-此指令碼會驗證簽章者鏈結，最高至 Thales 根金鑰。 此根金鑰的雜湊內嵌於指令碼中，且其值必須為 59178a47 de508c3f 291277ee 184f46c4 f1d9c639。 您亦可造訪 [Thales 網站](http://www.thalesesec.com/)，個別確認此值。
+此指令碼會驗證簽章者鏈結，最高至 Thales 根金鑰。 此根金鑰的雜湊內嵌於指令碼中，且其值必須為 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**。 您亦可造訪 [Thales 網站](http://www.thalesesec.com/)，個別確認此值.
 
 您現在準備建立新金鑰，它將是您的 RMS 租用戶金鑰。
 
 ### 步驟 3：建立新金鑰
-使用 Thales generatekey 和 cngimport 程式來產生 CNG 金鑰。
+使用 Thales **generatekey** 和 **cngimport** 程式來產生 CNG 金鑰。
 
 執行下列命令以產生金鑰：
 
@@ -199,11 +202,11 @@ generatekey --generate simple type=RSA size=2048 protect=module ident=contosokey
 ```
 執行此命令時，請使用下列指示：
 
--   參數 protect 必須設定為值 module，如此處所示。 這會建立模組保護的金鑰。 BYOK 工具組不支援 OCS 保護的金鑰。
+-   參數 **protect** 必須設定為值 **module**，如此處所示。 這會建立模組保護的金鑰。 BYOK 工具組不支援 OCS 保護的金鑰。
 
 -   對於金鑰大小，我們建議設為 2048，但對於擁有此類金鑰並正在移轉至 Azure RMS 的現有 AD RMS 客戶，也支援 1024 位元 RSA 金鑰。
 
--   以任何字串值取代 ident 和 plainname 的 contosokey 值。 為了盡可能降低系統管理負擔並降低錯誤風險．我們建議您對二者使用相同值，並全部使用小寫字元。
+-   以任何字串值取代 *ident* 和 **plainname** 的 **contosokey** 值。 為了盡可能降低系統管理負擔並降低錯誤風險．我們建議您對二者使用相同值，並全部使用小寫字元。
 
 -   此範例中的 pubexp 保留空白 (預設值)，但您可以指定特定值。 如需詳細資訊，請參閱 Thales 文件。
 
@@ -214,13 +217,13 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
 ```
 執行此命令時，請使用下列指示：
 
--   以產生您的租用戶金鑰一節的[步驟 1：建立安全園地](#step-1-create-a-security-world)中指定的相同值來取代 contosokey。
+-   以*產生您的租用戶金鑰*一節的[步驟 1：建立安全園地](#step-1-create-a-security-world)中指定的相同值來取代 *contosokey*。
 
--   使用 -M 選項，使金鑰適用於此案例。 若未執行此動作，導出的金鑰將是目前使用者的使用者特定金鑰。
+-   使用 **-M** 選項，使金鑰適用於此案例。 若未執行此動作，導出的金鑰將是目前使用者的使用者特定金鑰。
 
--   appname 選項是金鑰檔中報告的應用程式名稱。 如果您使用這些指示來建立新的金鑰，我們會使用命令中所示的簡單值。 不過，如果您要將 AD RMS 移轉的現有受 HSM 保護金鑰移轉到 Azure RMS，請在此命令中指定您的現有名稱，若後續命令也使用 appname 選項，也請指定現有名稱。
+-   **appname** 選項是金鑰檔中報告的應用程式名稱。 如果您使用這些指示來建立新的金鑰，我們會使用命令中所示的簡單值。 不過，如果您要將 AD RMS 移轉的現有受 HSM 保護金鑰移轉到 Azure RMS，請在此命令中指定您的現有名稱，若後續命令也使用 appname 選項，也請指定現有名稱。
 
-此命令會在您的 %NFAST_KMDATA%\local 資料夾中建立信號化金鑰檔案，檔案名稱的開頭為 key_caping_`_`，後面接著 SID。 例如：key_caping_machine--801c1a878c925fd9df4d62ba001b94701c039e2fb。 此檔案包含加密的金鑰。
+此命令會在您的 %NFAST_KMDATA%\local 資料夾中建立信號化金鑰檔案，檔案名稱的開頭為 **key_caping_`_`**，後面接著 SID。 例如：**key_caping_machine--801c1a878c925fd9df4d62ba001b94701c039e2fb**。 此檔案包含加密的金鑰。
 
 > [!TIP]
 > 您可以使用 `nkminfo –k` 命令，查看您金鑰的目前組態狀態。
@@ -266,11 +269,11 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-當您執行此命令時，以產生您的租用戶金鑰一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中指定的相同值來取代 contosokey。
+當您執行此命令時，以*產生您的租用戶金鑰*一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中指定的相同值來取代 *contosokey*。
 
 系統會要求您插入安全園地 ACS 卡片，並詢問其密碼或 PIN (如果指定的話)。
 
-命令完成時，您會看到結果：成功，並將在名為 key_xferacId_&lt;contosokey&gt; 的檔案中看到降低權限的租用戶金鑰複本。
+命令完成時，您會看到 **[結果: 成功]**，並將在名為 key_xferacId_*&lt;contosokey&gt;* 的檔案中看到降低權限的租用戶金鑰複本.
 
 ### 步驟 2：檢查金鑰的新複本
 選擇性執行 Thales 公用程式來確認新租用戶金鑰上的最低權限：
@@ -287,7 +290,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-當您執行這些命令時，以產生您的租用戶金鑰一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中指定的相同值來取代 contosokey。
+當您執行這些命令時，以*產生您的租用戶金鑰*一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中指定的相同值來取代 *contosokey*。
 
 ### 步驟 3：使用 Microsoft 的金鑰互換來加密您的金鑰
 視您的地區而定，執行下列其中一個命令：
@@ -312,16 +315,16 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
 
 執行此命令時，請使用下列指示：
 
--   以產生您的租用戶金鑰一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中用來產生金鑰的識別碼來取代 contosokey。
+-   以*產生您的租用戶金鑰*一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中用來產生金鑰的識別碼來取代 *contosokey*。
 
--   以您在準備連線網際網路的工作站一節的[步驟 2：取得您的 Azure Active Directory 租用戶識別碼](#step-2-get-your-azure-active-directory-tenant-id)中所擷取 Azure Active Directory 租用戶識別碼來取代 GUID。
+-   以您在*準備連線網際網路的工作站*一節的[步驟 2：取得您的 Azure Active Directory 租用戶識別碼](#step-2-get-your-azure-active-directory-tenant-id)中所擷取 Azure Active Directory 租用戶識別碼來取代 *GUID*。
 
--   以將用於輸出檔案名稱的標籤來取代 ContosoFirstKey 。
+-   以將用於輸出檔案名稱的標籤來取代 *ContosoFirstKey* 。
 
-成功完成時會顯示結果︰成功，而且在目前資料夾中會有下列名稱的新檔案︰TransferPackage-ContosoFirstkey.byok。
+成功完成時會顯示**結果︰成功**，而且在目前資料夾中會有下列名稱的新檔案︰TransferPackage-*ContosoFirstkey*.byok。
 
 ### 步驟 4：將您的金鑰傳輸封裝複製至連線網際網路的工作站
-使用 USB 磁碟機或其他可攜式儲存裝置，將輸出檔案從上一個步驟 (KeyTransferPackage-ContosoFirstkey.byok) 複製到連線網際網路的工作站。
+使用 USB 磁碟機或其他可攜式儲存裝置，將輸出檔案從上一個步驟 (KeyTransferPackage-*ContosoFirstkey*.byok) 複製到連線網際網路的工作站。
 
 > [!NOTE]
 > 安全性作法可用來保護檔案，因為其中包含您的私密金鑰。
@@ -359,7 +362,7 @@ Add-AadrmKey –KeyFile <PathToPackageFile> -Verbose
 > [!WARNING]
 > 系統會提示您確認此動作。 請務必瞭解此動作是無法還原的。 當您上傳租用戶金鑰時，它會自動成為您組織的主要租用戶金鑰，且使用者在保護文件和檔案時將開始使用此租用戶金鑰。
 
-若上傳成功，您會看到下列訊息： Rights Management 服務已成功新增金鑰。
+若上傳成功，您會看到下列訊息： **Rights Management 服務已成功新增金鑰。**
 
 將變更傳播到所有 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 資料中心時預期會發生複寫延遲。
 
@@ -369,7 +372,7 @@ Add-AadrmKey –KeyFile <PathToPackageFile> -Verbose
 ```
 Get-AadrmKeys
 ```
-標示為 [ 作用中 ] 的租用戶金鑰是您組織目前用來保護文件和檔案的金鑰。
+標示為 [ **作用中** ] 的租用戶金鑰是您組織目前用來保護文件和檔案的金鑰。
 
 您現在已完成透過網際網路整合您自己金鑰的所有必要步驟，可移至後續步驟開始規劃及實作您的租用戶金鑰。
 
@@ -380,6 +383,6 @@ Get-AadrmKeys
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # 設定 Azure Rights Management 的自訂範本
+
+*適用於︰Azure Rights Management、Office 365*
+
 在您[啟用 Azure Rights Managementt](activate-service.md) (Azure RMS) 之後，使用者自動能夠使用兩個預設範本，讓他們可以輕鬆將原則套用至敏感性檔案，以限制僅供貴組織內已獲授權的使用者存取。 這兩個範本具有下列權限原則限制：
 
 -   受保護內容的唯讀檢視
 
-    -   顯示名稱：&lt;組織名稱&gt; - 僅限機密檢視
+    -   顯示名稱：**&lt;組織名稱&gt; - 僅限機密檢視**
 
     -   特定權限：檢視內容
 
 -   受保護內容的讀取或修改權限
 
-    -   顯示名稱：&lt;組織名稱&gt; - 機密
+    -   顯示名稱：**&lt;組織名稱&gt; - 機密**
 
     -   特定權限：檢視內容、儲存檔案、編輯內容、檢視指派的權限、允許巨集、轉寄、回覆、全部回覆
 
@@ -69,6 +72,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

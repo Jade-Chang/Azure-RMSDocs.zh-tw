@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 9728c135-0e7f-4f5c-95ba-1db79e418080
-
+ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Android 設定
+# Android 設定
 
 Android 應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 
@@ -55,7 +54,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
     如需詳細資訊，請參閱 [Android 適用的 ADAL](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)。
 
-    注意  如果您的應用程式將不會使用 ADAL 程式庫做為 OAuth 2.0 驗證程式庫，您應該檢閱這個 Android 指引，[某些 SecureRandom 想法](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)。
+    **注意**  如果您的應用程式將不會使用 ADAL 程式庫做為 OAuth 2.0 驗證程式庫，您應該檢閱這個 Android 指引，[某些 SecureRandom 想法](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)。
 
      
 
@@ -67,80 +66,80 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 ## 設定您的開發環境
 
-注意  MS RMS SDK 4.2 預覽版本︰在此預覽版本中，尚未更新螢幕擷取畫面來顯示從 com/microsoft/protection 到 com/microsoft/rightsmanagment 之路徑名稱中的變更。 不過已更新文字。
+**注意**  MS RMS SDK 4.2 預覽版本︰在此預覽版本中，尚未更新螢幕擷取畫面來顯示從 com/microsoft/protection 到 com/microsoft/rightsmanagment 之路徑名稱中的變更。 不過已更新文字。
 
  
 -   開啟 Eclipse 開發環境。
 -   若要建立新的 Android 應用程式專案，請在 [檔案] 功能表上，按一下 [新增]，按一下 [專案]，然後選取 [Android 應用程式專案]。
 
-    ![](../media/Android-setup-01c.png)
+    ![建立新的 Android 應用程式](../media/Android-setup-01c.png)
 
 -   輸入應用程式名稱。 專案名稱和套件名稱會根據應用程式名稱填入。
 -   按 [下一步]，然後選取您想要建立工作區的地方。
 
-    ![](../media/Android-setup-02a.jpg)
+    ![輸入應用程式名稱](../media/Android-setup-02a.jpg)
 
 -   按 [下一步]，然後選取應用程式的圖示。
 
-    ![](../media/Android-setup-03.png)
+    ![選取應用程式的圖示](../media/Android-setup-03.png)
 
 -   按 [下一步]，然後選取 [空白活動] 以建立活動。
 
-    ![](../media/Android-setup-04.png)
+    ![建立活動](../media/Android-setup-04.png)
 
--   按 [下一步]，並提供名稱給活動。 您可以將 MainActivity 保留為預設名稱，內含配置名稱 activity\_main。
+-   按 [下一步]，並提供名稱給活動。 您可以將 *MainActivity* 保留為預設名稱，內含配置名稱 *activity\_main*。
 
-    ![](../media/Android-setup-05a.jpg)
+    ![提供活動的名稱](../media/Android-setup-05a.jpg)
 
 -   按一下 [完成] 。
 
-    ![](../media/Android-setup-06.jpg)
+    ![完成建立](../media/Android-setup-06.jpg)
 
--   已建立您的專案，以及主要活動類別 MainActivity.java。
+-   已建立您的專案，以及主要活動類別 *MainActivity.java*。
 
 **參考 SDK**
 
--   瀏覽至您在其中解壓縮 adrms\_android\_sdk.zip 的資料夾。 在「SDK > com > microsoft > rightsmanagement」資料夾中，請確定 .classpath、.project 和 project.properties 等檔案未標示為唯讀。
+-   瀏覽至您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 在「SDK > com > microsoft > rightsmanagement」資料夾中，請確定 *.classpath*、*.project* 和 *project.properties* 等檔案未標示為唯讀。
 -   若要參考 SDK，您必須將它匯入工作區。
 
     在 Eclipse 中，按一下 [檔案]。 在 [檔案] 功能表上，按一下 [匯入]。 在 [匯入] 對話方塊中，選取 [Android / 現有 Android 程式碼至工作區]。
 
-    ![](../media/Android-setup-07.png)
+    ![將它匯入至工作區](../media/Android-setup-07.png)
 
--   按一下 [下一步] 。 瀏覽以選取您在其中解壓縮 adrms\_android\_sdk.zip 的資料夾。 SDK 應該會以 com.microsoft.rightsmanagement 出現在清單中。
+-   按一下 [下一步] 。 瀏覽以選取您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 SDK 應該會以 **com.microsoft.rightsmanagement** 出現在清單中。
 
-    ![](../media/Android-setup-08c.jpg)
+    ![巡覽以選取資料夾](../media/Android-setup-08c.jpg)
 
 -   當您按一下 [完成]，SDK 專案會顯示為您先前建立之應用程式的同層級。
 
-    ![](../media/Android-setup-09.jpg)
+    ![SDK 專案會顯示為您應用程式的同層級](../media/Android-setup-09.jpg)
 
 -   以滑鼠右鍵按一下 [專案] 圖示，並檢視專案屬性。
 -   瀏覽至 [Android] 索引標籤。
--   按一下 [新增]，然後選取工作區中的 com.microsoft.rightsmanagement 程式庫。
+-   按一下 [新增]，然後選取工作區中的 *com.microsoft.rightsmanagement* 程式庫。
 
-    ![](../media/Android-setup-10b.jpg)
+    ![新增程式庫](../media/Android-setup-10b.jpg)
 
--   按一下 [ 確定]。
+-   按一下 [ **確定**]。
 
-    由於 MS RMS SDK 4.2 會連接 AAD RM，所以必須授與應用程式 INTERNET 和 ACCESS\_NETWORK\_STATE。 若要這樣做，請在專案的根目錄中開啟 AndroidManifest.xml 檔案。
+    由於 MS RMS SDK 4.2 會連接 AAD RM，所以必須授與應用程式 **INTERNET** 和 **ACCESS\_NETWORK\_STATE**。 若要這樣做，請在專案的根目錄中開啟 *AndroidManifest.xml* 檔案。
 
     若要新增權限，請按一下 [新增]，然後選取 [使用權限]。
 
-    ![](../media/Android-setup-11d.jpg)
+    ![新增權限](../media/Android-setup-11d.jpg)
 
 -   您可以藉由在文字編輯器檢視中檢視資訊清單，以確認資訊清單步驟。 請確定出現下列幾行︰
 
 
     <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission/>
 
 
-注意  SDK 會使用 android.support.v4
+**注意**  SDK 會使用 *android.support.v4*
 
 -   您現在已準備好建立您自己的新 Android 應用程式。
 
@@ -152,13 +151,13 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 [開發人員詞彙和概念](core-concepts.md)
 
-[Android API 參考](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement)
+[Android API 參考](android-namespaces.md)
 
  
 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

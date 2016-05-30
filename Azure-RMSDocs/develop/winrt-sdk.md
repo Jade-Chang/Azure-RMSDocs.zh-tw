@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows 市集設定 | Azure RMS
-description:
+description: Windows 市集應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c2684152-7d52-4636-916d-15720f4e3346
-
+ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Windows 市集設定
 
 Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
@@ -34,8 +32,8 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 -   [先決條件](#prerequisites)
 -   [選用](#optional)
--   [設定您的開發環境](#configuring_your_development_environment)
--   [另請參閱](#see_also)
+-   [設定您的開發環境](#configuring-your-development-environment)
+-   [另請參閱](#see-also)
 
 ## 先決條件
 
@@ -61,18 +59,18 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 -   依序按一下 [檔案]、[新增]，然後按一下 [專案]。
 -   在 [新增專案] 對話方塊中，按一下 [Visual C\#]，選取 [空白應用程式 (Windows)]，然後按一下 [確定]。
 
-    ![](../media/winrtsetup-newproj.png)
+    ![建立新專案](../media/winrtsetup-newproj.png)
 
 -   在 [方案總管] 中，以滑鼠右鍵按一下您的專案，然後選取 [新增參考] 以開啟 [新增參考] 對話方塊。
 
-    ![](../media/winrtsetup-addref.png)
+    ![新增參考](../media/winrtsetup-addref.png)
 
--   在 [新增參考] 對話方塊中，按一下 [瀏覽]，選取位於您解壓縮 SDK 封裝的資料夾中的 Microsoft.RightsManagement.dll 檔案。
--   受管理應用程式 - 若要建置受管理應用程式，您必須新增此參考；選取 [Windows 8.1] -> [延伸模組] 以及 [適用於 Windows 的 Windows Visual C++ 執行階段封裝] 核取方塊。
+-   在 [新增參考] 對話方塊中，按一下 [瀏覽]，選取位於您解壓縮 SDK 封裝的資料夾中的 *Microsoft.RightsManagement.dll* 檔案。
+-   **受管理應用程式** - 若要建置受管理應用程式，您必須新增此參考；選取 **[Windows 8.1]**-&gt;**[擴充功能]** 以及 **[適用於 Windows 的 Windows Visual C++ 執行階段封裝]** 核取方塊。
 
-    ![](../media/winrtsetup-refmngr.png)
+    ![新增擴充功能](../media/winrtsetup-refmngr.png)
 
--   新增功能 - 您的應用程式將需要使用 SDK 的「網際網路 (用戶端和伺服器)」功能。 若要將這項功能加入您的應用程式，請開啟專案中的 Package.appxmanifest 檔案，瀏覽至 [功能] 索引標籤以新增功能。
+-   **新增功能** - 您的應用程式將需要使用 SDK 的「網際網路 (用戶端和伺服器)」功能。 若要將這項功能加入您的應用程式，請開啟專案中的 *Package.appxmanifest* 檔案，瀏覽至 [功能] 索引標籤以新增功能。
 
 您現在已準備好建立您自己的新 Windows 市集應用程式。
 
@@ -91,6 +89,6 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 [Windows API 參考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

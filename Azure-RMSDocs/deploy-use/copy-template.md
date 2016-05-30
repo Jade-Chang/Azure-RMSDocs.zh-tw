@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # 複製範本
+
+*適用於︰Azure Rights Management、Office 365*
+
 如果您想要建立一個與現有範本的設定非常相似的新範本，請在 [範本]  頁面上選取原始範本、按一下 [複製] 、指定一個唯一名稱，然後進行您所需的變更。
 
 > [!IMPORTANT]
@@ -39,6 +42,6 @@ ms.suite: ems
 ## 另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

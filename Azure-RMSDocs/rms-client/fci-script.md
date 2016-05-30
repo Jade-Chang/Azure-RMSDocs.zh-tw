@@ -26,7 +26,10 @@ ms.suite: ems
 ---
 
 # 使用檔案伺服器資源管理員 FCI 的 Windows PowerShell Script for Azure RMS 保護
-此頁面包含複製和編輯的指令碼範例，如[具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md)所示。
+
+*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+
+此頁面包含複製和編輯的指令碼範例，如 [具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md) 所示.
 
 *&#42;&#42;免責聲明&#42;&#42;：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 此*
 *指令碼範例依現狀提供，不含任何種類的擔保。*
@@ -174,9 +177,9 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-返回[具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md)。
+返回 [具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md).
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

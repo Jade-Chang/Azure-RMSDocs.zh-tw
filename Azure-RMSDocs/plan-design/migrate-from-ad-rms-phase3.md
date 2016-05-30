@@ -28,18 +28,21 @@ ms.suite: ems
 
 # 移轉階段 3︰支援服務組態
 
-針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 3 使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 的步驟 6 到 7。
+*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+
+
+針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 3 使用下列資訊。 這些程序涵蓋 [從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 的步驟 6 到 7.
 
 
 ## 步驟 6： 設定 Exchange Online 的 IRM 整合
 
 如果先前已將 TPD 從 AD RMS 匯入至 Exchange Online，您必須移除此 TDP，才能在移轉至 Azure RMS 之後避免衝突的範本和原則。 若要這樣做，請使用 Exchange Online 中的 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/en-us/library/jj200720%28v=exchg.150%29.aspx) Cmdlet。
 
-如果您選擇 Microsoft 管理的Azure RMS 租用戶金鑰拓撲：
+如果您選擇 **Microsoft 管理的**Azure RMS 租用戶金鑰拓撲：
 
 -   請參閱 [Office 365︰用戶端和線上服務的組態](../deploy-use/configure-office365.md)一文中的 [Exchange Online：IRM 組態](../deploy-use/configure-office365.md#exchange-online-irm-configuration)一節。 本節包含一般執行的命令，可連接至 Exchange Online 服務、從 Azure RMS 匯入租用戶金鑰，以及啟用Exchange online 的 IRM 功能。 完成這些步驟之後，您將有完整的 RMS 功能與 Exchange Online 搭配。
 
-如果您選擇客戶管理 (BYOK) 的 Azure RMS 租用戶金鑰拓撲：
+如果您選擇**客戶管理 (BYOK) 的** Azure RMS 租用戶金鑰拓撲：
 
 -   您將有精簡的 RMS 功能與 Exchange Online，如 [BYOK 定價和限制](byok-price-restrictions.md)一文所述。
 
@@ -49,7 +52,7 @@ ms.suite: ems
 最後，在這個步驟中，如果您已將用來保護電子郵件訊息的多個 TPD 匯入至 Azure RMS，則必須手動編輯 Exchange Server 電腦上的登錄，以將所有 TPD URL 重新導向至 RMS 連接器。
 
 > [!NOTE]
-> 在您開始之前，請從[支援 Azure RMS 的內部部署伺服器](../get-started/requirements-servers.md)檢查 Azure RMS 支援的內部部署伺服器版本。
+> 在您開始之前，請從 [支援 Azure RMS 的內部部署伺服器](../get-started/requirements-servers.md) 檢查 Azure RMS 支援的內部部署伺服器版本.
 
 ### 停用 Exchange Server 上的 IRM 並移除 AD RMS 組態
 
@@ -79,19 +82,19 @@ ms.suite: ems
     Set-IRMConfiguration -RefreshServerCertificates
     ```
 
-6.  在每個 Exchange Server 上，現在請重設 IIS，例如，以系統管理員身分執行命令提示字元，並輸入 iisreset。
+6.  在每個 Exchange Server 上，現在請重設 IIS，例如，以系統管理員身分執行命令提示字元，並輸入 **iisreset**.
 
 ### 停用 SharePoint Server 上的 IRM 並移除 AD RMS 組態
 
 1.  確定未從 RMS 保護的文件庫中簽出文件。 如果有，則它們在這個程序結束時會變成無法存取。
 
-2.  在 SharePoint 管理中心網站的 [ 快速啟動 ] 區段中，按一下 [ 安全性]。
+2.  在 SharePoint 管理中心網站的 **[快速啟動]** 區段中，按一下 **[安全性]**.
 
-3.  在 [ 安全性 ] 頁面的 [ 資訊原則 ] 區段中，按一下 [ 設定資訊版權管理]。
+3.  在 **[安全性]** 頁面的 **[資訊原則]** 區段中，按一下 **[設定資訊版權管理]**.
 
-4.  在 [ 資訊版權管理 ] 頁面的 [ 資訊版權管理 ] 區段中，選取 [ 不要在此伺服器使用 IRM]，然後按一下 [ 確定]。
+4.  在 **[資訊版權管理]** 頁面的 **[資訊版權管理]** 區段中，選取 **[不要在此伺服器使用 IRM]**，然後按一下 **[確定]**.
 
-5.  在每個 SharePoint Server 電腦上，刪除 \ProgramData\Microsoft\MSIPC\Server\*&lt;執行 SharePoint Serve之帳戶的 SID&gt;* 資料夾的內容。
+5.  在每個 SharePoint Server 電腦上，刪除下列資料夾的內容：\ProgramData\Microsoft\MSIPC\Server\*&lt;執行 SharePoint Server 之帳戶的 SID&gt;*.
 
 #### 安裝和設定 RMS 連接器
 
@@ -103,7 +106,7 @@ ms.suite: ems
 
     進行這些登錄編輯時，請使用下列指示：
 
-    -   將 ConnectorFQDN 取代為您在 DNS 中為連接器所定義的名稱。 例如， rmsconnector.contoso.com。
+    -   將 *ConnectorFQDN* 取代為您在 DNS 中為連接器所定義的名稱。 例如，**rmsconnector.contoso.com**。.
 
     -   連接器 URL 使用 HTTP 或 HTTPS 前置碼，是取決於設定連接器使用 HTTP 還是 HTTPS 與內部部署伺服器進行通訊。
 
@@ -213,11 +216,11 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 
 ---
 
-完成這些程序之後，您已準備好閱讀[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)一文中的後續步驟一節。
+完成這些程序之後，您已準備好閱讀[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)一文中的**後續步驟**一節。
 
 ## 後續步驟
-若要繼續移轉，請移至 [階段 4 - 移轉後工作](migrate-from-ad-rms-phase4.md)。
+若要繼續移轉，請移至 [階段 4 - 移轉後工作](migrate-from-ad-rms-phase4.md).
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

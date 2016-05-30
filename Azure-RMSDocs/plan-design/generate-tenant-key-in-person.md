@@ -27,6 +27,9 @@ ms.suite: ems
 
 # 產生和傳輸您的租用戶金鑰 – 親自轉交
 
+*適用於︰Azure Rights Management、Office 365*
+
+
 若您決定[管理自己的租用戶金鑰](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)而且不想透過網際網路傳輸它，而是要親自轉交您的租用戶金鑰，請使用下列程序。
 
 ## 產生您的租用戶金鑰
@@ -39,7 +42,7 @@ ms.suite: ems
 -   [步驟 3：建立新金鑰](#step-3-create-a-new-key)
 
 ### 步驟 1：使用 Thales HSM 準備工作站
-在 Windows 電腦上安裝 nCipher (Thales) 支援軟體。 將 Thales HSM 附加至該電腦。 確定 Thales 工具位於您的路徑。 如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)。
+在 Windows 電腦上安裝 nCipher (Thales) 支援軟體。 將 Thales HSM 附加至該電腦。 確定 Thales 工具位於您的路徑。 如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
 
 ### 步驟 2：建立安全園地
 啟動命令提示字元並執行 Thales new-world 程式。
@@ -47,7 +50,7 @@ ms.suite: ems
 ```
 new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-quorum=2/3
 ```
-此程式會在 %NFAST_KMDATA%\local\world 中建立與 C:\ProgramData\nCipher\Key Management Data\local 資料夾對應的安全園地檔案。 您可為仲裁使用不同值，但在我們的範例中，系統會提示您為每個值輸入三張卡片和 Pin 碼。 接著，會將安全園地的完整存取權授予任兩張卡片。  這些卡片將成為新安全園地的 系統管理員卡組 。
+此程式會在 %NFAST_KMDATA%\local\world 中建立與 C:\ProgramData\nCipher\Key Management Data\local 資料夾對應的**安全園地**檔案。 您可為仲裁使用不同值，但在我們的範例中，系統會提示您為每個值輸入三張卡片和 Pin 碼。 接著，會將安全園地的完整存取權授予任兩張卡片。  這些卡片將成為新安全園地的 **系統管理員卡組** 。
 
 然後執行下列動作：
 
@@ -58,7 +61,7 @@ new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-
 您現在準備建立新金鑰，它將是您的 RMS 租用戶金鑰。
 
 ### 步驟 3：建立新金鑰
-使用 Thales generatekey 和 cngimport 程式來產生 CNG 金鑰。
+使用 Thales **generatekey** 和 **cngimport** 程式來產生 CNG 金鑰。
 
 執行下列命令以產生金鑰：
 
@@ -67,11 +70,11 @@ generatekey --generate simple type=RSA size=2048 protect=module ident=contosokey
 ```
 執行此命令時，請使用下列指示：
 
--   參數 protect 必須設定為值 module，如此處所示。 這會建立模組保護的金鑰。 BYOK 工具組不支援 OCS 保護的金鑰。
+-   參數 **protect** 必須設定為值 **module**，如此處所示。 這會建立模組保護的金鑰。 BYOK 工具組不支援 OCS 保護的金鑰。
 
 -   對於金鑰大小，我們建議設為 2048，但對於擁有此類金鑰並正在移轉至 Azure RMS 的現有 AD RMS 客戶，也支援 1024 位元 RSA 金鑰。
 
--   以任何字串值取代 ident 和 plainname 的 contosokey 值。 為了盡可能降低系統管理負擔並降低錯誤風險．我們建議您對二者使用相同值，並全部使用小寫字元。
+-   以任何字串值取代 *ident* 和 **plainname** 的 **contosokey** 值。 為了盡可能降低系統管理負擔並降低錯誤風險．我們建議您對二者使用相同值，並全部使用小寫字元。
 
 -   此範例中的 pubexp 保留空白 (預設值)，但您可以指定特定值。 如需詳細資訊，請參閱 Thales 文件。
 
@@ -82,11 +85,11 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 ```
 執行此命令時，請使用下列指示：
 
--   以指定於步驟 1 中的相同值取代 contosokey 。
+-   以指定於步驟 1 中的相同值取代 *contosokey* 。
 
--   使用 -M 選項，使金鑰適用於此案例。 若未執行此動作，導出的金鑰將是目前使用者的使用者特定金鑰。
+-   使用 **-M** 選項，使金鑰適用於此案例。 若未執行此動作，導出的金鑰將是目前使用者的使用者特定金鑰。
 
-此命令會在您的 %NFAST_KMDATA%\local 資料夾中建立信號化金鑰檔案，檔案名稱的開頭為 key_caping_`_`，後面接著 SID。 例如：key_caping_machine--801c1a878c925fd9df4d62ba001b94701c039e2fb。 此檔案包含加密的金鑰。
+此命令會在您的 %NFAST_KMDATA%\local 資料夾中建立信號化金鑰檔案，檔案名稱的開頭為 **key_caping_`_`**，後面接著 SID。 例如：**key_caping_machine--801c1a878c925fd9df4d62ba001b94701c039e2fb**。 此檔案包含加密的金鑰。
 
 在安全的位置備份此信號化金鑰檔案。
 
@@ -153,6 +156,6 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

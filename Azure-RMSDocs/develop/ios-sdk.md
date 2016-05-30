@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23f64fc8-d0f3-49ee-8d8a-b34ef26878a7
-
+ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 # optional metadata
 
 #ROBOTS:
@@ -25,13 +24,13 @@ ms.suite: ems
 
 ---
 
-﻿# iOS 和 OS X 設定
+# iOS 和 OS X 設定
 
 iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 
 本主題將引導您設定您的環境，以建立您自己的新應用程式。
 
-注意  這個 SDK 不支援 iPod Touch。
+**注意**  這個 SDK 不支援 iPod Touch。
 
 
 -   [先決條件](#prerequisites)
@@ -67,41 +66,41 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Manage
 -   若要建立新專案，請在 [檔案] 功能表上按一下 [新增]，然後按一下 [專案]。
 -   選取 [單一檢視應用程式]。
 
-    ![](../media/iOS-Project.png)
+    ![建立新的專案](../media/iOS-Project.png)
 
 -   輸入新專案的名稱和識別碼。
 
-    ![](../media/iOS-project-options.png)
+    ![命名您的專案](../media/iOS-project-options.png)
 
 -   按 [下一步]，然後選取專案的位置。
--   若要新增 iOS 架構的 MSRightsManagement，請從 SDK 安裝資料夾拖曳 .framework 資料夾到 [專案導覽器] 的 [架構] 區段。
+-   若要新增 iOS 架構的 **MSRightsManagement**，請從 SDK 安裝資料夾拖曳 .framework 資料夾到 [專案導覽器] 的 [架構] 區段。
 
-    ![](../media/ios-add-dependencies-01a.png)
+    ![設定位置](../media/ios-add-dependencies-01a.png)
 
 -   選取 [建立任何新增資料夾的群組] 選項按鈕，然後清除 [將項目複製到目的地群組資料夾 (如果必要)] 核取方塊。
 
     這個動作會維護參考至 SDK 安裝資料夾，而不是建立複本。
 
-    ![](../media/iOS-create-groups.png)
+    ![設定 SDK 安裝資料夾的參考](../media/iOS-create-groups.png)
 
 -   若要新增 MS RMS SDK 4.2 至資源配套，請從 MSRightsManagement.framework/Resources 資料夾將 MSRightsManagementResources.bundle 檔案拖曳到 [專案導覽器] 的 [架構] 區段。
 
-    ![](../media/iOS-add-resource-bundle-02a.png)
+    ![新增資源配套](../media/iOS-add-resource-bundle-02a.png)
 
 -   如同您在複製架構時的執行內容，請選取 [建立任何新增資料夾的群組] 選項按鈕，然後清除 [將項目複製到目的地群組資料夾 (如果必要)] 核取方塊。
--   SDK 會依賴其他架構，包括︰CoreData、MessageUI、SystemConfiguration、Libresolv 和 Security。 若要新增這些架構，請瀏覽至目標之 [摘要] 窗格的 [連結架構與程式庫] 區段中，並展開該區段以將其新增。
+-   SDK 會依賴其他架構，包括︰**CoreData**、**MessageUI**、**SystemConfiguration**、**Libresolv** 和 **Security**。 若要新增這些架構，請瀏覽至目標之 [摘要] 窗格的 [連結架構與程式庫] 區段中，並展開該區段以將其新增。
 
-    UIKit 和 Foundation 架構是必要項，而且根據預設通常會出現。
+    **UIKit** 和 **Foundation** 架構是必要項，而且根據預設通常會出現。
 
-    ![](../media/iOS-add-libraries.png)
+    ![新增資源](../media/iOS-add-libraries.png)
 
--   新增 -ObjC 旗標至目標 [建置設定] 中的 [其他連結器旗標]。
+-   新增 **-ObjC** 旗標至目標 [建置設定] 中的 [其他連結器旗標]。
 
-    ![](../media/iOS-linker-flags.png)
+    ![新增組建設定](../media/iOS-linker-flags.png)
 
 -   現在您的 [專案導覽器] 應該如此樹狀結構所示。
 
-    ![](../media/iOS-verify-setup-01a.png)
+    ![檢閱專案](../media/iOS-verify-setup-01a.png)
 
 -   您現在已準備好建立您自己的新 iOS/OS X 應用程式。
 
@@ -123,6 +122,6 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Manage
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

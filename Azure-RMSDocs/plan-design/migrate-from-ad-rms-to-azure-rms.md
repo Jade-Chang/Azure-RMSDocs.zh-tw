@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,13 +26,16 @@ ms.suite: ems
 ---
 
 # 從 AD RMS 移轉至 Azure Rights Management
+
+*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+
 使用下列一組指令來將您的 Active Directory Rights Management Services (AD RMS) 部署移轉至 Azure Rights Management (Azure RMS)。 移轉之後，使用者仍然可以存取您組織使用 AD RMS 保護的文件及電子郵件訊息，而之後將使用 Azure RMS 重新保護內容。
 
 不確定您的組織是否適合 AD RMS 移轉？
 
 -   如需關於 Azure RMS 的介紹、Azure RMS 可解決的業務問題、系統管理員和使用者使用時的呈現方式，以及運作方式﹐請參閱[什麼是 Azure Rights Management？](../understand-explore/what-is-azure-rms.md)
 
--   如需 Azure RMS 與 AD RMS 的比較，請參閱[比較 Azure Rights Management 與 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
+-   如需 Azure RMS 與 AD RMS 的比較，請參閱 [比較 Azure Rights Management 與 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
 
 ## 從 AD RMS 移轉至 Azure RMS 的必要條件
 請確定您符合下列必要條件且了解任何限制，再開始移轉至 Azure RMS。
@@ -58,12 +61,12 @@ ms.suite: ems
 
     - 多個樹系、多個 RMS 叢集
 
-    注意：多個 RMS 叢集預設會移轉至單一 Azure RMS 租用戶。 如果您想要不同的 RMS 租用戶，則必須將它們視為不同的移轉。 一個 RMS 叢集的金鑰不能匯入至多個 Azure RMS 租用戶。
+    **注意**：多個 RMS 叢集預設會移轉至單一 Azure RMS 租用戶。 如果您想要不同的 RMS 租用戶，則必須將它們視為不同的移轉。 一個 RMS 叢集的金鑰不能匯入至多個 Azure RMS 租用戶。
 
 
 - **執行 Azure RMS 的所有需求 (包括 Azure RMS 租用戶) (未啟動)**
 
-    請參閱 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md)。
+    請參閱 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md).
 
     雖然您必須有 Azure RMS 租用戶，才能從 AD RMS 進行移轉，但是我們建議在移轉之前，請先不要啟動 Rights Management Service。 從 AD RMS 匯出金鑰和範本並將它們匯入至 Azure RMS 之後，移轉程序即會包括此步驟。 不過，如果已啟用 Azure RMS，仍然可以從 AD RMS 移轉。
 
@@ -74,10 +77,10 @@ ms.suite: ems
 
     - Azure Active Directory 中擁有郵件功能的群組
 
-    請參閱[準備 Azure Rights Management](prepare.md)。
+    請參閱 [準備 Azure Rights Management](prepare.md).
 
 
-- 如果您曾使用 Exchange Server 的資訊版權管理 (IRM) 功能 (如傳輸規則和 Outlook Web Access) 或 SharePoint Server 來搭配 AD RMS：
+- **如果您曾使用 Exchange Server 的資訊版權管理 (IRM) 功能** (如傳輸規則和 Outlook Web Access) 或 SharePoint Server 來搭配 AD RMS：
 
     - 規劃 IRM 無法在這些伺服器上使用的一段短期間
  
@@ -115,15 +118,15 @@ ms.suite: ems
 
     您可以將組態資料 (金鑰、範本、URL) 從 AD RMS 匯出至 XML 檔案，然後再使用 Import-AadrmTpd Windows PowerShell Cmdlet 將該檔案上傳至 Azure RMS。 可能還需要額外的步驟 (視 AD RMS 金鑰組態而定)：
 
-    - 軟體保護的金鑰移轉至軟體保護的金鑰：
+    - **軟體保護的金鑰移轉至軟體保護的金鑰**：
 
         AD RMS 中集中管理的密碼金鑰到 Microsoft 管理的 Azure RMS 租用戶金鑰。 這是最簡單的移轉路徑，而且不需要任何額外的步驟。
 
-    - HSM 保護的金鑰移轉至 HSM 保護的金鑰：
+    - **HSM 保護的金鑰移轉至 HSM 保護的金鑰**：
 
         HSM for AD RMS儲存的金鑰到客戶管理的 Azure RMS 租用戶金鑰 (「整合您自己的金鑰」或 BYOK 案例)。 這需要額外的步驟，才能將金鑰從內部部署 Thales HSM 傳輸至 Azure RMS HSM。 您現有的 HSM 保護金鑰必須是模組保護的；BYOK 工具集不支援 OCS 保護的金鑰。
 
-    - 軟體保護的金鑰移轉至 HSM 保護的金鑰：
+    - **軟體保護的金鑰移轉至 HSM 保護的金鑰**：
 
         AD RMS 中集中管理的密碼金鑰到客戶管理的 Azure RMS 租用戶金鑰 (「自備您自己的金鑰」或 BYOK 案例)。 這需要進行最多的組態，因為您必須先擷取您的軟體金鑰並將它匯入至內部部署 HSM，然後再執行其他步驟，將金鑰從內部部署 Thales HSM 傳輸至 Azure RMS HSM。
 
@@ -167,7 +170,7 @@ ms.suite: ems
 
 [**階段 4︰移轉後工作**](migrate-from-ad-rms-phase4.md )
 
-- **步驟：解除委任 AD RMS**
+- **步驟 8. 解除委任 AD RMS**
 
     確認所有用戶端都使用 Azure RMS 而且不再存取 AD RMS 伺服器時，即可解除委任 AD RMS 部署。
 
@@ -178,10 +181,10 @@ ms.suite: ems
 
 
 ## 後續步驟
-若要啟動移轉，請移至[階段 1-伺服器端設定](migrate-from-ad-rms-phase1.md)。
+若要啟動移轉，請移至 [階段 1 - 伺服器端組態](migrate-from-ad-rms-phase1.md).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

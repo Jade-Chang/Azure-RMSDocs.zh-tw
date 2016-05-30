@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 834c5943-a724-4322-9035-060c1112fe22
-
+ms.assetid: 0fe9dc-bc91-4018-b28d-2db293a3eaa2
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 作法：取得 Azure 應用程式識別碼
 
 使用 Microsoft Rights Management SDK 4.2 建立 RMS 啟用應用程式需要與 RMS 小組建立協議。
@@ -39,9 +37,9 @@ ms.suite: ems
 使用下列步驟來建立您的應用程式識別碼並簽署您與 RMS 小組的使用合約。
 
 -   遵循[如何在 Azure 上建立應用程式識別碼](https://msdn.microsoft.com/en-us/library/azure/dn132599.aspx)主題中的指引來建立您的應用程式識別碼。
--   寫入至 RMS 小組以起始 RMLA 程序，傳送您的「應用程式識別碼」至 <askipteam@microsoft.com>。
+-   寫入至 RMS 小組以起始 RMLA 程序，以將您的「應用程式識別碼」傳送至 <askipteam@microsoft.com>。.
 -   簽署 RMLA 並將它傳回至 RMS 小組。
--   簽署 RMLA 之後，您應該在透過 clientID 參數呼叫驗證程式庫時傳遞應用程式識別碼。
+-   簽署 RMLA 之後，您應該在透過 *clientID* 參數呼叫驗證程式庫時傳遞應用程式識別碼。
 
     這是驗證呼叫在 [iOS/OS X 程式碼範例](ios-os-x-code-examples.md)主題中的外觀。
 
@@ -55,7 +53,7 @@ ms.suite: ems
 
 
 
-注意  如果 RMS 小組在 60 天內未收到您簽署的 RMLA，您的應用程式將會封鎖，無法驗證 Azure 驗證系統。
+**注意**  如果 RMS 小組在 60 天內未收到您簽署的 RMLA，您的應用程式將會封鎖，無法驗證 Azure 驗證系統。
 
  
 
@@ -64,6 +62,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

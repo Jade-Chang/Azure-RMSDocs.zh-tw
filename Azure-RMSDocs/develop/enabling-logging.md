@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b0aafe75-19c9-47dc-bbba-cf4287399c6e
-
+ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 作法：啟用錯誤和效能記錄
 Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和效能記錄檔上傳。
 
@@ -34,8 +32,8 @@ Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和�
 
 您將會透過兩個屬性來管理記錄控制。
 
--   透過 IpcCustomerExperienceDataCollectionEnabled 屬性啟用記錄。 這是跨裝置重設的持續性設定。
--   使用下列設定，透過 IpcLogLevel 屬性控制記錄層級。
+-   透過 **IpcCustomerExperienceDataCollectionEnabled** 屬性啟用記錄。 這是跨裝置重設的持續性設定。
+-   使用下列設定，透過 **IpcLogLevel** 屬性控制記錄層級。
 
     * 1 - 詳細資訊
     * 2 - 資訊
@@ -85,22 +83,22 @@ Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和�
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-如需選用設定的詳細資訊，請參閱 [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptionss)。
+如需選用設定的詳細資訊，請參閱 [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions)。
 
 取得目前的記錄控制旗標設定
 
     CustomerExperienceOptions loggingOption = CustomerExperienceConfiguration::Option;
 
 
-注意 - 上述是 C++ 中的 Windows 程式碼片段。 對於 C\#，請將 ‘::’ 取代為 ‘.’ 以更新語法 。
+**注意** - 上述是 C++ 中的 Windows 程式碼片段。 對於 C\#，請將 ‘::’ 取代為 ‘.’ 以更新語法 。
 
-Linux / C++ - 此 SDK 有一些基本記錄，不如其他平台廣泛。 如需詳細資訊，請參閱[可攜 C++ 的 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) 上 "README.md" 的疑難排解一節。
-
- 
+**Linux / C++** - 此 SDK 有一些基本記錄，不如其他平台廣泛。 如需詳細資訊，請參閱[可攜 C++ 的 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) 上 "README.md" 的**疑難排解**一節。
 
  
 
+ 
 
-<!--HONumber=Apr16_HO3-->
+
+<!--HONumber=Apr16_HO4-->
 
 

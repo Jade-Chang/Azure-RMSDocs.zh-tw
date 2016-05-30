@@ -12,7 +12,6 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
-
 # optional metadata
 
 #ROBOTS:
@@ -28,9 +27,11 @@ ms.suite: ems
 # 開發人員指南
 
 ## 概觀 ##
-現已提供三個層代的 Rights Management SDK：Microsoft Rights Management SDK 4.2 (適用於 Android、iOS/OS X、Windows 裝置和 Linux)、Microsoft Rights Management SDK 2.1 (適用於 Windows 桌面用戶端) 和已取代的 AD RMS SDK。
+本指南概述 Rights Management SDK 套件以及跨所有支援平台之不斷增加的工具組和程式碼範例。 
 
 ## 軟體開發套件 ##
+現在已提供三代的 RMS SDK (如下表所概述)。
+
 | SDK | 說明 |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | 提供輕量級開發經驗之簡化、下一代工具組，可讓您的 Android、iOS、Mac OS X、Windows Phone/RT 及 Linux/C++ 裝置應用程式透過 Microsoft Rights Management 服務保護資訊 |
@@ -53,7 +54,7 @@ ms.suite: ems
 [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 和更新版 4.x SDK 支援 iOS / OS X 上執行的下列元件。
 
 - Objective C 中的 [iOS/OS X 使用案例](https://msdn.microsoft.com/en-us/library/dn758307(v=vs.85).aspx)代表重要的開發案例，讓您習慣使用 RMS SDK。 範例包括使用 Microsoft 受保護的檔案格式、自訂受保護的檔案格式，以及自訂 UI 控制項。
-- GitHub 上的 [UI 程式庫和範例應用程式](https://github.com/AzureAD/rms-sdk-ui-for-ios)，因此您可以快速地開始，並在您的應用程式中重複使用我們的標準 UI。 僅在 iOS 上支援。
+- GitHub 上的 [UI 程式庫和範例應用程式](https://github.com/AzureAD/rms-sdk-ui-for-ios)，因此您可以快速地開始，並在您的應用程式中重複使用我們的標準 UI。 **僅在 iOS** 上支援。
 
 ### Windows 桌面
 
@@ -76,6 +77,6 @@ ms.suite: ems
 - [應用程式範例](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore) - Windows 市集應用程式的 Microsoft RMS SDK v4.1 範例為平台提供基本文件的使用範例。
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

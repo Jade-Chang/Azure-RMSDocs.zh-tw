@@ -27,7 +27,10 @@ ms.reviewer: mbaldwin
 
 # 部署與使用 Azure Rights Management
 
+*適用於︰Azure Rights Management、Office 365*
 
-<!--HONumber=Apr16_HO3-->
+
+
+<!--HONumber=Apr16_HO4-->
 
 
