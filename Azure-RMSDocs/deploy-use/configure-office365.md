@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Office 365：用戶端和線上服務的設定 | Azure RMS
+title: Office 365：用戶端和線上服務的組態 | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,21 +26,24 @@ ms.suite: ems
 ---
 
 # Office 365：用戶端和線上服務的設定
+
+*適用於︰Azure Rights Management、Office 365*
+
 由於 Office 365 原生支援 Azure RMS，因此無需用戶端電腦設定，便能支援 Word、Excel、PowerPoint、Outlook 和 Outlook Web App 等應用程式的資訊版權管理 (IRM) 功能。 所有使用者唯一要做的便是使用其 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 認證登入其 Office 應用程式，並可保護檔案和電子郵件，及使用已接受他人保護的檔案和電子郵件。
 
-不過，我們建議您使用 Rights Management 共用應用程式補充這些應用程式，讓使用者獲得 Office 增益集的好處。 如需詳細資訊，請參閱 [Rights Management 共用應用程式：用戶端的安裝和設定](configure-sharing-app.md)。
+不過，我們建議您使用 Rights Management 共用應用程式補充這些應用程式，讓使用者獲得 Office 增益集的好處。 如需詳細資訊，請參閱 [Rights Management 共用應用程式：用戶端的安裝和組態](configure-sharing-app.md).
 
 ## Exchange Online：IRM 設定
-若要設定 Exchange Online 來支援 Azure RMS，您必須為 Exchange Online 設定資訊版權管理 (IRM) 服務。 若要這樣做，請使用 Windows PowerShell (不需要安裝個別模組)，並執行 [Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx)。
+若要設定 Exchange Online 來支援 Azure RMS，您必須為 Exchange Online 設定資訊版權管理 (IRM) 服務。 若要這樣做，請使用 Windows PowerShell (不需要安裝個別模組)，並執行 [Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx).
 
 > [!NOTE]
-> 如果您對 Azure RMS 使用客戶管理的租用戶金鑰 (BYOK)，而不是 Microsoft 管理的租用戶金鑰的預設組態，則目前無法將 Exchange Online 設定為支援 Azure RMS 如需詳細資訊，請參閱 [BYOK 定價和限制](../plan-design/byok-price-restrictions.md)。
+> 如果您對 Azure RMS 使用客戶管理的租用戶金鑰 (BYOK)，而不是 Microsoft 管理的租用戶金鑰的預設組態，則目前無法將 Exchange Online 設定為支援 Azure RMS 如需詳細資訊，請參閱 [BYOK 定價和限制](../plan-design/byok-price-restrictions.md).
 >
-> 如果您嘗試在 Azure RMS 使用 BYOK 時設定 Exchange Online，則匯入金鑰 (下列程序中的步驟 5) 的命令會失敗，並出現錯誤訊息 [FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]。
+> 如果您嘗試在 Azure RMS 使用 BYOK 時設定 Exchange Online，則匯入金鑰 (下列程序中的步驟 5) 的命令會失敗，並出現錯誤訊息 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**。.
 
 下列步驟提供一組典型命令，您將執行這些命令，讓 Exchange Online 可以使用 Azure RMS：
 
-1.  如果這是您第一次在電腦上使用 Windows PowerShell for Exchange Online，則必須將 Windows PowerShell 設定為執行已簽署的指令碼。 使用 [ 以系統管理員身分執行 ] 選項來啟動 Windows PowerShell 工作階段，然後輸入：
+1.  如果這是您第一次在電腦上使用 Windows PowerShell for Exchange Online，則必須將 Windows PowerShell 設定為執行已簽署的指令碼。 使用 [ **以系統管理員身分執行** ] 選項來啟動 Windows PowerShell 工作階段，然後輸入：
 
     ```
     Set-ExecutionPolicy RemoteSigned
@@ -53,7 +56,7 @@ ms.suite: ems
     ```
     $Cred = Get-Credential
     ```
-    在 [ Windows PowerShell 認證要求 ] 對話方塊中，提供您的 Office 365 使用者名稱和密碼。
+    在 [ **Windows PowerShell 認證要求** ] 對話方塊中，提供您的 Office 365 使用者名稱和密碼。
 
 3.  執行下列兩個命令連線到 Exchange Online 服務：
 
@@ -93,7 +96,7 @@ ms.suite: ems
     ```
     Import-RMSTrustedPublishingDomain -RMSOnline -name "RMS Online"
     ```
-    在這個命令中，我們已使用 RMS Online 的名稱，代表 Exchange Online 中 Azure RMS 的 TPD 基本名稱。 在匯入 TPD 之後，它會在 Exchange Online 中命名為 RMS Online - 1。
+    在這個命令中，我們已使用 **RMS Online** 的名稱，代表 Exchange Online 中 Azure RMS 的 TPD 基本名稱。 在匯入 TPD 之後，它會在 Exchange Online 中命名為 **RMS Online - 1**。
 
 6.  啟用 IRM 功能，如此 Azure RMS 功能可供 Exchange Online 使用：
 
@@ -107,9 +110,9 @@ ms.suite: ems
     ```
     Test-IRMConfiguration -Sender <user email address>
     ```
-    例如：Test-IRMConfiguration -Sender  adams@contoso.com
+    例如：**Test-IRMConfiguration -Sender  adams@contoso.com**
 
-    此命令會執行一系列檢查，包含驗證服務的連線、擷取組態、擷取 Uri、授權，以及任何範本。 在 Windows PowerShell 工作階段中，您會在結束時看到每一項的結果，如果所有項目都通過這些檢查的話： 整體結果：通過
+    此命令會執行一系列檢查，包含驗證服務的連線、擷取組態、擷取 Uri、授權，以及任何範本。 在 Windows PowerShell 工作階段中，您會在結束時看到每一項的結果，如果所有項目都通過這些檢查的話： **整體結果：通過**
 
 8.  中斷遠端 PowerShell 工作階段的連線：
 
@@ -117,7 +120,7 @@ ms.suite: ems
     Remove-PSSession $Session
     ```
 
-現在使用者可以使用 Azure RMS 來保護其電子郵件訊息。 例如，在 Outlook Web 應用程式中，從擴充的功能表 ( ... ) 選取 [設定權限]，然後選擇 [ 不可轉寄 ] 或其中一個可用的範本，將資訊保護套用至電子郵件訊息和任何附件。 不過，因為 Outlook Web App 會快取一天的 UI，所以請在嘗試將資訊保護套用至電子郵件訊息之前，以及執行這些組態命令之後，等待這段時間過去。 在 UI 更新以反映新的組態之前，您不會看到任何選項來自 [ 設定權限 ] 功能表。
+現在使用者可以使用 Azure RMS 來保護其電子郵件訊息。 例如，在 Outlook Web 應用程式中，從擴充的功能表 (**...**) 選取 **[設定權限]**，然後選擇 **[不可轉寄]** 或其中一個可用的範本，將資訊保護套用至電子郵件訊息和任何附件。 不過，因為 Outlook Web App 會快取一天的 UI，所以請在嘗試將資訊保護套用至電子郵件訊息之前，以及執行這些組態命令之後，等待這段時間過去。 在 UI 更新以反映新的組態之前，您不會看到任何選項來自 [ **設定權限** ] 功能表。
 
 > [!IMPORTANT]
 > 如果您為 Azure RMS 建立新的[自訂範本](configure-custom-templates.md)，或更新範本，則每次您必須執行下列 Exchange Online PowerShell 命令 (如有必要，首先執行步驟 2 和 3)，將這些變更同步至 Exchange Online： `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
@@ -133,7 +136,7 @@ ms.suite: ems
 ### Office 365 訊息加密
 執行上一節所述的相同步驟，但是如果您不想要顯示範本，請在步驟 6 之前，執行下列命令，以防止可在 Outlook Web App 和 Outlook 用戶端中使用 IRM 範本： `Set-IRMConfiguration -ClientAccessServerEnabled $false`
 
-然後，您準備好將 [傳輸規則](https://technet.microsoft.com/library/dd302432.aspx) 設定為當收件者位於組織外部時自動修改訊息安全性，然後選取 [ 套用 Office 365 訊息加密 ] 選項。
+然後，您準備好將 [傳輸規則](https://technet.microsoft.com/library/dd302432.aspx) 設定為當收件者位於組織外部時自動修改訊息安全性，然後選取 [ **套用 Office 365 訊息加密** ] 選項。
 
 如需訊息加密的詳細資訊，請在 Exchange 文件庫中參閱 [Office 365 中的加密](https://technet.microsoft.com/library/dn569286.aspx) 。
 
@@ -154,21 +157,21 @@ SharePoint 的 IRM 服務啟用後，網站擁有者可以使用 IRM 保護其 S
 此組態是由 SharePoint 網站系統管理員完成。
 
 ### 設定商務用 OneDrive 的 IRM
-SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDrive 文件庫設定 Rights Management 保護了。  使用者可以使用其 OneDrive 中的 [設定] 圖示，自行設定此作業。 雖然管理員無法使用 SharePoint 管理中心，為使用者的商務用 OneDrive 設定 Rights Management，但是可以使用 Windows PowerShell 來執行此設定。
+SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDrive 文件庫設定 Rights Management 保護了。  使用者可以使用其 OneDrive 中的 [設定]**** 圖示，自行設定此作業。 雖然管理員無法使用 SharePoint 管理中心，為使用者的商務用 OneDrive 設定 Rights Management，但是可以使用 Windows PowerShell 來執行此設定。
 
 > [!NOTE]
-> 如需設定商務用 OneDrive 的詳細資訊，請參閱 Office 文件[在 Office 365 中設定商務用 OneDrive](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb)。
+> 如需設定商務用 OneDrive 的詳細資訊，請參閱 Office 文件 [在 Office 365 中設定商務用 OneDrive](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
 
 #### 使用者的組態
 給與使用者下列指示，讓他們可以設定其商務用 OneDrive，並使用 IRM 保護他們的商務檔案。
 
-1.  在 OneDrive，按一下 [ 設定 ] 圖示開啟 [設定] 功能表，然後按一下 [ 網站內容]。
+1.  在 OneDrive，按一下**設定** 圖示開啟 [設定] 功能表，然後按一下 **[網站內容]**.
 
-2.  將滑鼠停留在 [ 文件 ] 磚上，選擇省略符號 (...)，然後按一下 [ 設定]。
+2.  將滑鼠停留在 **[文件]** 圖格上，選擇省略符號 (**...**)，然後按一下 **[設定]**。
 
-3.  在 [ 設定 ] 頁面的 [ 權限與管理 ] 區段中，按一下 [ 資訊版權管理]。
+3.  在 **[設定]** 頁面的 **[權限與管理]** 區段中，按一下 **[資訊版權管理]**.
 
-4.  在 [ 資訊權限管理設定 ] 頁面上，選取 [ 限制在此文件庫下載的權限 ] 核取方塊、指定您為權限選擇的名稱和描述，然後選擇性地按一下 [ 顯示選項 ] 以設定選用組態，然後按一下 [ 確定]。
+4.  在 **[資訊權限管理設定]** 頁面上，選取 **[限制在此文件庫下載的權限]** 核取方塊、指定您為權限選擇的名稱和描述，然後選擇性地按一下 **[顯示選項]** 以設定選用組態，然後按一下 **[確定]**.
 
     如需有關組態選項的詳細資訊，請參閱 Office 文件所提供之＜ [將資訊版權管理套用至清單或文件庫](https://support.office.com/article/Apply-Information-Rights-Management-to-a-list-or-library-3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1) ＞中的指示。
 
@@ -177,13 +180,13 @@ SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDr
 #### 系統管理員的組態
 雖然您無法使用 SharePoint 管理中心，為使用者的商務用 OneDrive 設定 IRM，但是可以使用 Windows PowerShell 來執行此設定。 若要對這些文件庫啟用 IRM，請遵循下列步驟：
 
-1.  下載並安裝 [SharePoint t Online 用戶端元件 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)。
+1.  下載並安裝 [SharePoint Online 用戶端元件 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
 
-2.  下載並安裝 [SharePoint Online 管理命令介面](http://www.microsoft.com/en-us/download/details.aspx?id=35588)。
+2.  下載並安裝 [SharePoint Online 管理命令介面](http://www.microsoft.com/en-us/download/details.aspx?id=35588).
 
 3.  複製下列指令碼的內容，並在電腦上將檔案命名為 Set-IRMOnOneDriveForBusiness.ps1。
 
-    &#42;&#42;免責聲明&#42;&#42;：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 這個範例指令碼是依現狀提供，不含任何種類的擔保。
+    *&#42;&#42;免責聲明&#42;&#42;*：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 這個範例指令碼是依現狀提供，不含任何種類的擔保。
 
     ```
     # Requires Windows PowerShell version 3
@@ -550,38 +553,38 @@ SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDr
 
     1.  搜索 `$sharepointAdminCenterUrl`，並將範例值取代為自己的 SharePoint 管理員中心 URL。
 
-        當你進入 SharePoint 管理員中心時，你會發現此值作為基本 URL，而且它具有以下格式：https://&lt;tenant_name&gt;-admin.sharepoint.com
+        當您進入 SharePoint 系統管理中心時，會發現此值作為基本 URL，而且它具有以下格式：https://*&lt;租用戶名稱&gt;*-admin.sharepoint.com
 
-        例如，如果租用戶名稱為 "contoso"，您將指定：https://contoso-admin.sharepoint.com
+        例如，如果租用戶名稱為 "contoso"，您將指定：**https://contoso-admin.sharepoint.com**
 
     2.  搜索 `$tenantAdmin`，並將範例值取代為您對 Office 365 擁有的完整全域管理員帳戶。
 
-        此值與你用來以全域管理員身分登入 Office 365 管理入口網站的值相同，而且具有以下格式：user_name@&lt;tenant domain name&gt;.com
+        此值與你用來以全域管理員身分登入 Office 365 系統管理入口網站的值相同，而且具有以下格式：使用者名稱@*&lt;租用戶網域名稱&gt;*.com
 
-        例如，如果 "contoso.com" 租用戶網域的Office 365 全域管理員使用者名稱為 "admin"，您將指定：admin@contoso.com
+        例如，如果 "contoso.com" 租用戶網域的Office 365 全域管理員使用者名稱為 "admin"，您將指定：**admin@contoso.com**
 
     3.  搜索 `$webUrls`，並將範例值取代為您使用者的商務用 OneDrive 網站 URL，然後視需要新增或刪除多個項目。
 
         或者，請參閱指令碼中關於如何匯入 CSV 檔案來取代此陣列的註解，而此 CSV 檔案包含所有您需要設定的 URL。  我們提供了另一個範例指令碼，自動搜索和擷取 URL 來填入此。CSV 檔案。 當你準備好這樣做時，請展開緊跟在這些步驟後面的[其他要將所有商務用 OneDrive URL 輸出至 CSV 檔案的指令碼](#BKMK_Script_OD4B_URLS)一節。
 
-        使用者的商務用 OneDrive 的 Web URL 具有以下格式：https://&lt;tenant name&gt;-my.sharepoint.com/personal/&lt;user_name&gt;_&lt;tenant name&gt;_com
+        使用者的商務用 OneDrive 的 Web URL 具有以下格式：https://*&lt;租用戶名稱&gt;*-my.sharepoint.com/personal/*&lt;使用者名稱&gt;*_*&lt;租用戶名稱&gt;*_com
 
-        例如，如果 contoso 租用戶中的使用者具有 "rsimone"的使用者名稱，您將指定：https://contoso-my.sharepoint.com/personal/rsimone_contoso_com
+        例如，如果 contoso 租用戶中的使用者具有 "rsimone"的使用者名稱，您將指定：**https://contoso-my.sharepoint.com/personal/rsimone_contoso_com**
 
-    4.  因為我們是使用指令碼來設定商務用 OneDrive，所以請不要變更 `$listTitle` 變數的 Documents 值。
+    4.  因為我們是使用指令碼來設定商務用 OneDrive，所以請不要變更 `$listTitle` 變數的 **Documents** 值。
 
     5.  搜尋 `ADMIN INSTRUCTIONS`。 如果您沒有對此區段進行任何變更，將對 IRM 設定使用者的商務用 OneDrive"，原則標題為「受保護的檔案」，而描述為「此原則會限制授權使用者的存取」。  將不設定任何其他 IRM 選項，這可能適用於大多數環境。 然而，你可以變更建議的原則標題和描述，而且也可新增任何適合於您環境的任何 IRM 選項。 請參閱註解中的範例指令碼，以協助您為 IrmConfiguration 命令構建一組專屬的參數。
 
-5.  儲存指令碼並簽署它。 如果您未簽署指令碼 (更安全)，Windows PowerShell 必須在您的電腦設定為執行未簽署的指令碼。 若要這麼做，使用 [以系統管理員身分執行] 選項來執行 Windows PowerShell 工作階段，然後輸入：Set-ExecutionPolicy Unrestricted。 不過，這種組態會讓所有未簽署的指令碼執行 (較不安全)。
+5.  儲存指令碼並簽署它。 如果您未簽署指令碼 (更安全)，Windows PowerShell 必須在您的電腦設定為執行未簽署的指令碼。 若要這麼做，使用 [以系統管理員身分執行]**** 選項來執行 Windows PowerShell 工作階段，然後輸入：**Set-ExecutionPolicy Unrestricted**。 不過，這種組態會讓所有未簽署的指令碼執行 (較不安全)。
 
     如需有關簽署 Windows PowerShell 指令碼的詳細資訊，請參閱 PowerShell 文件庫中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
 6.  執行指令碼，如果出現提示，請提供 Office 365 管理員帳戶的密碼。 如果你修改指令碼，並在同一個 Windows PowerShell 工作階段中執行，則不會提示您輸入憑證。
 
 > [!TIP]
-> 你也可以使用此指令碼，設定 SharePoint Online 文件庫的 IRM。 對於此組態，您可能希望啟用其他選項 [不允許使用者上載不支援 IRM 的文件]，以確保文件庫只包含受保護的文件。    若要這樣做，請將 `-IrmReject` 參數新增至指令碼中的 Set-IrmConfiguration 命令。
+> 你也可以使用此指令碼，設定 SharePoint Online 文件庫的 IRM。 對於此組態，您可能希望啟用其他選項 [不允許使用者上載不支援 IRM 的文件]****，以確保文件庫只包含受保護的文件。    若要這樣做，請將 `-IrmReject` 參數新增至指令碼中的 Set-IrmConfiguration 命令。
 >
-> 你還需要修改 `$webUrls` 變數 (例如，https://contoso.sharepoint.com) 和 `$listTitle` 變數 (例如，$Reports)。
+> 您還需要修改 `$webUrls` 變數 (例如，**https://contoso.sharepoint.com**) 和 `$listTitle` 變數 (例如，**$Reports**).
 
 如果您需要對使用者的商務用 OneDrive 程式庫停用 IRM，請參閱[要對商務用 OneDrive 停用 IRM 的指令碼](#script-to-disable-irm-for-onedrive-for-business)一節。
 
@@ -590,7 +593,7 @@ SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDr
 
 此指令碼也需要 [SharePoint Online 用戶端元件 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038) 和 [SharePoint Online 管理命令介面](http://www.microsoft.com/en-us/download/details.aspx?id=35588)。 按照相同的指示來複製並貼上它，在本機儲存檔案 (例如，"Report-OneDriveForBusinessSiteInfo.ps1")，如同之前修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值，然後執行指令碼。
 
-&#42;&#42;免責聲明&#42;&#42;：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 這個範例指令碼是依現狀提供，不含任何種類的擔保。
+*&#42;&#42;免責聲明&#42;&#42;*：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 這個範例指令碼是依現狀提供，不含任何種類的擔保。
 
 ```
 # Requires Windows PowerShell version 3
@@ -815,7 +818,7 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 
 此指令碼也需要 [SharePoint Online 用戶端元件 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038) 和 [SharePoint Online 管理命令介面](http://www.microsoft.com/en-us/download/details.aspx?id=35588)。 複製並貼上內容，在本機儲存檔案 (例如，"Disable-IRMOnOneDriveForBusiness.ps1")，並修改 `$sharepointAdminCenterUrl` 和 `$tenantAdmin` 值。 手動指定商務用 OneDrive URL，或使用前一個區段中的指令碼，讓您可以匯入這些 URL，然後執行指令碼。
 
-&#42;&#42;免責聲明&#42;&#42;：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 這個範例指令碼是依現狀提供，不含任何種類的擔保。
+*&#42;&#42;免責聲明&#42;&#42;*：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 這個範例指令碼是依現狀提供，不含任何種類的擔保。
 
 ```
 # Requires Windows PowerShell version 3
@@ -1108,6 +1111,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

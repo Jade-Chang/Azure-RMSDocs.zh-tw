@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 步驟 2：軟體保護的金鑰移轉至軟體保護的金鑰 | Azure RMS
+title: 步驟 2：受軟體保護的金鑰移轉至受軟體保護的金鑰 | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -28,6 +28,9 @@ ms.suite: ems
 
 # 步驟 2：軟體保護的金鑰移轉至軟體保護的金鑰
 
+*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+
+
 這些指示是屬於[將路徑從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md)，且只有在您的 AD RMS 金鑰是軟體保護，而且您想要使用受軟體保護的租用戶金鑰移轉至 Azure Rights Management 時才適用。 
 
 如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出組態資料，並將它匯入至 Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 並選擇不同的組態。
@@ -41,9 +44,9 @@ ms.suite: ems
     > [!TIP]
     > 如果您先前已下載及安裝此模組，請執行下列命令來檢查版本號碼： `(Get-Module aadrm -ListAvailable).Version`
 
-    如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md)。
+    如需安裝指示，請參閱 [安裝 Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md)。.
 
-2.  使用 [ 以系統管理員身分執行 ] 選項啟動 Windows PowerShell，然後使用 [Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx) Cmdlet 來連接 Azure RMS 服務：
+2.  使用 [ **以系統管理員身分執行** ] 選項啟動 Windows PowerShell，然後使用 [Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx) Cmdlet 來連接 Azure RMS 服務：
 
     ```
     Connect-AadrmService
@@ -55,11 +58,11 @@ ms.suite: ems
     ```
     Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword -Active $True -Verbose
     ```
-    例如：Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword -Active $true -Verbose
+    例如：**Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword -Active $true -Verbose**
 
     系統提示時，請輸入您稍早指定的密碼，並確認您想要執行此動作。
 
-4.  當命令完成時，針對匯出信任發行網域而建立的每個 .xml 檔案重複步驟 3。 但為這些檔案執行匯入命令時，請將 -Active 設為 false。 例如：Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose
+4.  當命令完成時，針對匯出信任發行網域而建立的每個 .xml 檔案重複步驟 3。 但為這些檔案執行匯入命令時，請將 **-Active** 設為 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
 
 5.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) Cmdlet 來中斷 Azure RMS 服務的連線：
 
@@ -67,10 +70,10 @@ ms.suite: ems
     Disconnect-AadrmService
     ```
 
-您現在可以繼續進行[步驟 3：啟動您的 RMS 租用戶](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)。
+您現在可以繼續進行[步驟 3：啟用您的 RMS 租用戶 ](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
