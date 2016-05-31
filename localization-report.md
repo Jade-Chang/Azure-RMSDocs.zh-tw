@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 7
-[ In Sync Handback Files ](#insync-handback-success-list)| 206
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 3
+[ In Sync Handback Files ](#insync-handback-success-list)| 210
 [ Ignored Files ](#ignored-list)| 66
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -153,12 +153,8 @@
 ## <a name='outofsync-handback-success-list'></a> Out Of Sync Handback Success File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\deploy-use\configure-office365.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-office365.md) | OutofSyncHandedBackSuccess | [Details](#7a2436a6ebb17e4336f1321b8f3742e34ea5968913)
- [Azure-RMSDocs\deploy-use\configure-sharing-app.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-sharing-app.md) | OutofSyncHandedBackSuccess | [Details](#d3f923cf6f140c2caa75b7b0c8ac90a42be962a715)
  [Azure-RMSDocs\index.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/dfacc169483c24cce4dfd02a582b325214243a04/Azure-RMSDocs/index.md) | OutofSyncHandedBackSuccess | [Details](#6360c91fe95537d3c3780f4c5564d2efc83c547f163)
- [Azure-RMSDocs\plan-design\migrate-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-hsmkey-to-hsmkey.md) | OutofSyncHandedBackSuccess | [Details](#054fe56d85a4259513eea98364ebdf8977164de4349)
  [Azure-RMSDocs\plan-design\migrate-softwarekey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-softwarekey-to-hsmkey.md) | OutofSyncHandedBackSuccess | [Details](#78c301287ff0b54c193f0657c9490289a54d26b9350)
- [Azure-RMSDocs\plan-design\migrate-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-softwarekey-to-softwarekey.md) | OutofSyncHandedBackSuccess | [Details](#a38b93a3a32cc9f1b217fa8ae3df79977473ddb3351)
  [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/4aa72824efd231285a1941ff1335437d24c83233/Azure-RMSDocs/scratch.md) | OutofSyncHandedBackSuccess | [Details](#47e2d48aeba95aba232a1c8a7f02df31d2604a6e379)
 
 ## <a name='insync-handback-success-list'></a> In Sync Handback File Success List
@@ -171,8 +167,10 @@
  [Azure-RMSDocs\deploy-use\administer-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/administer-powershell.md) | InSyncHandedBackSuccess | [Details](#bf1f684bc394ec3a1025f8c9ed3e57d07c5981259)
  [Azure-RMSDocs\deploy-use\configure-applications.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-applications.md) | InSyncHandedBackSuccess | [Details](#8fe934c51e852791d19fbb336deaf9cd7be9817b10)
  [Azure-RMSDocs\deploy-use\configure-custom-templates.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-custom-templates.md) | InSyncHandedBackSuccess | [Details](#149100dd0abbf84bb012060f20b34b02bcd912ba11)
+ [Azure-RMSDocs\deploy-use\configure-office365.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-office365.md) | InSyncHandedBackSuccess | [Details](#7a2436a6ebb17e4336f1321b8f3742e34ea5968913)
  [Azure-RMSDocs\deploy-use\configure-office-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-office-apps.md) | InSyncHandedBackSuccess | [Details](#607de5e4699d654a4b7895bacde8f18a9707f8a112)
  [Azure-RMSDocs\deploy-use\configure-servers-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-servers-rms-connector.md) | InSyncHandedBackSuccess | [Details](#e0f90105bf168f4a3334a042acadc0b72052b60114)
+ [Azure-RMSDocs\deploy-use\configure-sharing-app.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-sharing-app.md) | InSyncHandedBackSuccess | [Details](#d3f923cf6f140c2caa75b7b0c8ac90a42be962a715)
  [Azure-RMSDocs\deploy-use\configure-super-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-super-users.md) | InSyncHandedBackSuccess | [Details](#0ca9b8d9643f5489c100fa3aa614e89cd396df5216)
  [Azure-RMSDocs\deploy-use\configure-templates-with-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/deploy-use/configure-templates-with-powershell.md) | InSyncHandedBackSuccess | [Details](#645f9ed4080e3b38fcda9afe148923c02104672417)
  [Azure-RMSDocs\deploy-use\configure-usage-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/9624c8e5fc050a045c6eb1effa956d49b66c52e2/Azure-RMSDocs/deploy-use/configure-usage-rights.md) | InSyncHandedBackSuccess | [Details](#0c24d253e3f1ab3a87852c69c15c5211d17b433318)
@@ -324,6 +322,8 @@
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase3.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase3.md) | InSyncHandedBackSuccess | [Details](#8c2ebdbdfec2465475f6ce7daa2dafd35b874329346)
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md) | InSyncHandedBackSuccess | [Details](#590825c8d180604426482a55f7edcd5e3c6d0243347)
  [Azure-RMSDocs\plan-design\migrate-from-ad-rms-to-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5a849633972b24d8854c0bf23899911e44c98cf2/Azure-RMSDocs/plan-design/migrate-from-ad-rms-to-azure-rms.md) | InSyncHandedBackSuccess | [Details](#44241219d6d699d1c6ac208bf753fe6cad35b36a348)
+ [Azure-RMSDocs\plan-design\migrate-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-hsmkey-to-hsmkey.md) | InSyncHandedBackSuccess | [Details](#054fe56d85a4259513eea98364ebdf8977164de4349)
+ [Azure-RMSDocs\plan-design\migrate-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-softwarekey-to-softwarekey.md) | InSyncHandedBackSuccess | [Details](#a38b93a3a32cc9f1b217fa8ae3df79977473ddb3351)
  [Azure-RMSDocs\plan-design\plan-design.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/plan-design.md) | InSyncHandedBackSuccess | [Details](#dd2b565a175bcd7e1f240e5abf724a45da0a502c352)
  [Azure-RMSDocs\plan-design\plan-implement-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/332e102cb27854314b93a71bfeae82a95c9a7812/Azure-RMSDocs/plan-design/plan-implement-tenant-key.md) | InSyncHandedBackSuccess | [Details](#c0e0cacdb1d335f076f41ffb51bed85a62bd3b86353)
  [Azure-RMSDocs\plan-design\prepare.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/prepare.md) | InSyncHandedBackSuccess | [Details](#55f092ede1f003c700cb58359bab264772702c39354)
@@ -587,18 +587,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='7a2436a6ebb17e4336f1321b8f3742e34ea5968913'></a> Source: [Azure-RMSDocs\deploy-use\configure-office365.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-office365.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\deploy-use\configure-office365.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/b5a68822e3281a399f405967a1b7a0d5fed9b538/Azure-RMSDocs/deploy-use/configure-office365.md)
 * Handoff File: [configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/834262b42edc286c736f9669754bdc8afcef6a4a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf)
 * Handoff Datetime: 2016-04-27 21:43:30
 * Handoff Reason: Include
 * Archive File: [configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/2fb2411e5cb6a0011d9d341bc76da5b7df5b2f20/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf)
 * Archive Datetime: 2016-05-21 18:49:32
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\configure-office365.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/31517a5e5bbdd34dd206786e00a506810ad626e1/Azure-RMSDocs/deploy-use/configure-office365.md)
-* Current Handback File: [configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/8d8c8d3adf37cfc9f4844fbf4a2c1b7f0416191b/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-11 10:46:15
+* Handback File: [configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/6acfd11b5fd746cefc1fcbdeba12c71973e397ff/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/configure-office365.71a21cc23b06c35c2dcfe30a8e6f125069eb8233.zh-tw.xlf)
+* Handback Datetime: 2016-05-31 10:41:48
 * [Back to Top](#report-top)
 
 ##### <a name='607de5e4699d654a4b7895bacde8f18a9707f8a112'></a> Source: [Azure-RMSDocs\deploy-use\configure-office-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-office-apps.md)
@@ -626,18 +623,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='d3f923cf6f140c2caa75b7b0c8ac90a42be962a715'></a> Source: [Azure-RMSDocs\deploy-use\configure-sharing-app.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-sharing-app.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\deploy-use\configure-sharing-app.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/b5a68822e3281a399f405967a1b7a0d5fed9b538/Azure-RMSDocs/deploy-use/configure-sharing-app.md)
 * Handoff File: [configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/834262b42edc286c736f9669754bdc8afcef6a4a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf)
 * Handoff Datetime: 2016-04-27 21:43:30
 * Handoff Reason: Include
 * Archive File: [configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/2fb2411e5cb6a0011d9d341bc76da5b7df5b2f20/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf)
 * Archive Datetime: 2016-05-21 18:49:32
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\configure-sharing-app.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/31517a5e5bbdd34dd206786e00a506810ad626e1/Azure-RMSDocs/deploy-use/configure-sharing-app.md)
-* Current Handback File: [configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/8d8c8d3adf37cfc9f4844fbf4a2c1b7f0416191b/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-11 10:46:15
+* Handback File: [configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/6acfd11b5fd746cefc1fcbdeba12c71973e397ff/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/configure-sharing-app.3c0d07cea5b40ea0144c4bc50d2036a1b3166ec3.zh-tw.xlf)
+* Handback Datetime: 2016-05-31 10:41:48
 * [Back to Top](#report-top)
 
 ##### <a name='0ca9b8d9643f5489c100fa3aa614e89cd396df5216'></a> Source: [Azure-RMSDocs\deploy-use\configure-super-users.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/configure-super-users.md)
@@ -4765,18 +4759,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='054fe56d85a4259513eea98364ebdf8977164de4349'></a> Source: [Azure-RMSDocs\plan-design\migrate-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-hsmkey-to-hsmkey.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\plan-design\migrate-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/b5a68822e3281a399f405967a1b7a0d5fed9b538/Azure-RMSDocs/plan-design/migrate-hsmkey-to-hsmkey.md)
 * Handoff File: [migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/834262b42edc286c736f9669754bdc8afcef6a4a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf)
 * Handoff Datetime: 2016-04-27 21:43:30
 * Handoff Reason: Include
 * Archive File: [migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/2fb2411e5cb6a0011d9d341bc76da5b7df5b2f20/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf)
 * Archive Datetime: 2016-05-21 18:49:32
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\plan-design\migrate-hsmkey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/31517a5e5bbdd34dd206786e00a506810ad626e1/Azure-RMSDocs/plan-design/migrate-hsmkey-to-hsmkey.md)
-* Current Handback File: [migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/8d8c8d3adf37cfc9f4844fbf4a2c1b7f0416191b/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-11 10:46:15
+* Handback File: [migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/6acfd11b5fd746cefc1fcbdeba12c71973e397ff/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/migrate-hsmkey-to-hsmkey.4d24c5f02703d816a96b2e335a5499f6e206f0e7.zh-tw.xlf)
+* Handback Datetime: 2016-05-31 10:41:48
 * [Back to Top](#report-top)
 
 ##### <a name='78c301287ff0b54c193f0657c9490289a54d26b9350'></a> Source: [Azure-RMSDocs\plan-design\migrate-softwarekey-to-hsmkey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-softwarekey-to-hsmkey.md)
@@ -4795,18 +4786,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='a38b93a3a32cc9f1b217fa8ae3df79977473ddb3351'></a> Source: [Azure-RMSDocs\plan-design\migrate-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/migrate-softwarekey-to-softwarekey.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\plan-design\migrate-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/b5a68822e3281a399f405967a1b7a0d5fed9b538/Azure-RMSDocs/plan-design/migrate-softwarekey-to-softwarekey.md)
 * Handoff File: [migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/834262b42edc286c736f9669754bdc8afcef6a4a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf)
 * Handoff Datetime: 2016-04-27 21:43:30
 * Handoff Reason: Include
 * Archive File: [migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/2fb2411e5cb6a0011d9d341bc76da5b7df5b2f20/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf)
 * Archive Datetime: 2016-05-21 18:49:32
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\plan-design\migrate-softwarekey-to-softwarekey.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/31517a5e5bbdd34dd206786e00a506810ad626e1/Azure-RMSDocs/plan-design/migrate-softwarekey-to-softwarekey.md)
-* Current Handback File: [migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/8d8c8d3adf37cfc9f4844fbf4a2c1b7f0416191b/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-11 10:46:15
+* Handback File: [migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/6acfd11b5fd746cefc1fcbdeba12c71973e397ff/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/migrate-softwarekey-to-softwarekey.71145a3a3e56b2f776fedc1230e4c793f6e74e52.zh-tw.xlf)
+* Handback Datetime: 2016-05-31 10:41:48
 * [Back to Top](#report-top)
 
 ##### <a name='dd2b565a175bcd7e1f240e5abf724a45da0a502c352'></a> Source: [Azure-RMSDocs\plan-design\plan-design.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/plan-design/plan-design.md)

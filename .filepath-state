@@ -410,9 +410,6 @@
   "7a2436a6ebb17e4336f1321b8f3742e34ea59689": [
     "Azure-RMSDocs\\deploy-use\\configure-office365.md"
   ],
-  "645bdb65531bf4c2809e02dd0aeffe19e1de49f3": [
-    "Azure-RMSDocs\\deploy-use\\configure-office365.md"
-  ],
   "607de5e4699d654a4b7895bacde8f18a9707f8a1": [
     "Azure-RMSDocs\\deploy-use\\configure-office-apps.md"
   ],
@@ -420,9 +417,6 @@
     "Azure-RMSDocs\\deploy-use\\configure-servers-rms-connector.md"
   ],
   "d3f923cf6f140c2caa75b7b0c8ac90a42be962a7": [
-    "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md"
-  ],
-  "b263e26a88f899baf52e5f520d45b856ed1b44a7": [
     "Azure-RMSDocs\\deploy-use\\configure-sharing-app.md"
   ],
   "0ca9b8d9643f5489c100fa3aa614e89cd396df52": [
@@ -557,9 +551,6 @@
   "054fe56d85a4259513eea98364ebdf8977164de4": [
     "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
   ],
-  "e991eaa1f580c484afdd02cb8fc2436b85854180": [
-    "Azure-RMSDocs\\plan-design\\migrate-hsmkey-to-hsmkey.md"
-  ],
   "78c301287ff0b54c193f0657c9490289a54d26b9": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
   ],
@@ -567,9 +558,6 @@
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-hsmkey.md"
   ],
   "a38b93a3a32cc9f1b217fa8ae3df79977473ddb3": [
-    "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
-  ],
-  "d6c97af97be6e9cb56fb53143149fc3cb947c421": [
     "Azure-RMSDocs\\plan-design\\migrate-softwarekey-to-softwarekey.md"
   ],
   "c0e0cacdb1d335f076f41ffb51bed85a62bd3b86": [
