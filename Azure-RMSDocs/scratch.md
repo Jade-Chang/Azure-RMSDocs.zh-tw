@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 第一個層級的標題
 
-請參閱 [Github 中](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md)此檔案的 Markdown；請參閱 [EM 試驗樣式指南](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931)中的 Markdown 參考。 
+請參閱 [Github 中](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md) 此檔案的 Markdown；請參閱 [EM 試驗樣式指南](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931) 中的 Markdown 參考。. 
 
 ## 第二個層級的標題
 ### 第三個層級的標題
@@ -118,7 +118,7 @@ Is this a real thing?
 
 ### 內嵌程式碼
 
-這是 `in-line code` 的範例。
+這是下列的範例： `in-line code`.
 
 ## 區塊引述
 
@@ -165,6 +165,18 @@ Is this a real thing?
 [按鈕連結](/azure-rms/index.html)
 
 ### 選取器
+
+簡介文字：[!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [bar](./develop/developer-notes.md)
+
+簡介文字：> [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [bar](./develop/developer-notes.md)
+
+
+
+
 > [!div class="op_single_selector"]
 - [foo](./develop/developers-guide.md)
 - [bar](./develop/developer-notes.md)
@@ -179,6 +191,6 @@ Is this a real thing?
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 
