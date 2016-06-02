@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "3e96bf95d07a07b72f41853d6674180c45844e54",
+  "LastProcessedCommit": "bed0495b232fbe21453ebae9eddb4cbee14f1d24",
   "LastTranslatedCommit": "d0e721ce5f20706d9b7fcdc1ee7f0f58102b803e",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -64779,6 +64779,36 @@
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-tw\\master\\archive\\working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.zh-tw.xlf",
       "ArchiveFileCommit": "0c8e903ebe60f9bea452206d112ebc5efd6be549",
       "ArchiveFileDateTime": "2016-06-02T03:20:03.8897245Z",
+      "ArchiveException": null
+    },
+    "2863c98390b8fda528c4fe3a1b2ebce3510763b4": {
+      "FileHash": "2863c98390b8fda528c4fe3a1b2ebce3510763b4",
+      "SourceFileCommit": "e84de6afd80196d4237499718af45c64788c408d",
+      "SourceFilePath": "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\understand-explore\\azure-rms-problems-it-solves.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-tw\\master\\azure-rms-problems-it-solves.ca9dbc7494fd2f1e29c7421a5150d86e7a9d14e2.zh-tw.xlf",
+      "HandoffFileCommit": "64fde76ee9dd42994c5a40c29000048671d5f9a1",
+      "HandoffDateTime": "2016-06-02T19:19:31.4937633Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
       "ArchiveException": null
     }
   }
