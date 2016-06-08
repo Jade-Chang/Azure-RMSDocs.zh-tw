@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # IPCHelloWorld - 範例應用程式
 
 本主題包含建立具備權限的應用程式範例的指示。
@@ -222,6 +222,6 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

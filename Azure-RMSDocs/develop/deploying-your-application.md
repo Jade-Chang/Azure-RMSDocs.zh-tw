@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 部署您的應用程式
 
 
@@ -44,8 +44,7 @@ AD RMS Client 2.1 是專為您的用戶端電腦設計的軟體，可透過使�
 
 AD RMS Client 2.1 不是 Windows 作業系統元件。 AD RMS Client 2.1 隨附為選擇性的下載，可以透過確認並接受其授權合約，與協力廠商軟體一起自由發佈，以啟用透過在環境中使用與部署 RMS 伺服器保護權限的用戶端存取內容。
 
-> [!IMPORTANT]
-> AD RMS Client 2.1 是特定的架構，而且必須符合目標作業系統的架構。
+> [!IMPORTANT] AD RMS Client 2.1 為架構限定，必須符合目標作業系統的架構。
 
 
 ## AD RMS Client 2.1 安裝選項
@@ -103,6 +102,6 @@ AD RMS Client 2.1 不是 Windows 作業系統元件。 AD RMS Client 2.1 隨附�
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

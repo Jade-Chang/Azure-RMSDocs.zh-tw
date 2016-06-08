@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 使用加密
 
 本主題會將您導向我們的加密套件，並顯示其部分程式碼使用片段。
@@ -44,13 +44,13 @@ ms.suite: ems
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (也就是已過時的演算法)
 
-加密封裝旗標 (請參閱[**偏好的加密**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption))，可搭配我們新授權屬性旗標 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 使用。
+加密封裝旗標 (請參閱[**慣用的加密**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)) 可搭配我們新的授權內容旗標 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 使用。
 
 以下是一些簡單的程式碼片段，示範如何使用新的授權屬性。
 
 ## 已過時的演算法
 
-我們不再於我們的 API 中公開 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已使用它建置的應用程式仍將繼續運作，因為我們將會私下在 API 程式碼中採用旗標。
+我們將不再於 API 公開 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已使用它建置的應用程式仍將繼續運作，因為我們將會私下在 API 程式碼中採用旗標。
 
 我們仍然可以藉由變更一個旗標來達成取得已被取代之舊加密演算法旗標的優點。 如需範例，請參閱下列程式碼片段。
 
@@ -106,6 +106,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 設定用戶端
 
 本主題包含如何設定 Active Directory Rights Management Services Client 2.1 的相關指示。
@@ -41,7 +41,7 @@ ms.suite: ems
         如需如何安裝 RMS SDK 2.1 的資訊，請參閱[安裝 SDK](create-your-first-rights-aware-application.md)。
 
     -   如果您要在開發電腦以外的其他電腦上測試應用程式，您可以在該電腦上從 [AD RMS Client 2.1 下載頁面](http://www.microsoft.com/en-us/download/details.aspx?id=38396)安裝 AD RMS Client 2.1。
-        **注意**：如果應用程式使用伺服器 API 模式 (**IPC\_API\_MODE\_SERVER**)，您不需要使用應用程式資訊清單。 您可以對生產 RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
+        **注意**：如果應用程式使用伺服器 API 模式 (**IPC\_API\_MODE\_SERVER**)，您就不需要使用應用程式資訊清單。 您可以對生產 RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
 
          
 
@@ -55,7 +55,7 @@ ms.suite: ems
 
 1.  從 %MSIPCSDKDIR%\\bin\\x86 (適用於 32 位元版 Windows) 或 %MSIPCSDKDIR\\bin\\x64 (適用於 64 位元版 Windows) 將開發人員執行階段 Ipcsecproc\_isv.dll 複製到 C:\\Program Files\\Active Directory Rights Management Services Client 2.1。
 
-    **重要**  如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須從 %MSIPCSDKDIR%\\bin\\x86 將 Ipcsecproc\_isv.dll 複製到 C:\\Program Files(x86)\\Active Directory Rights Management Services Client 2.1。
+    **重要**：如果您在 64 位元版 Windows 上執行 32 位元應用程式，必須從 %MSIPCSDKDIR%\\bin\\x86 將 Ipcsecproc\_isv.dll 複製到 C:\\Program Files(x86)\\Active Directory Rights Management Services Client 2.1。
 
      
 
@@ -129,6 +129,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

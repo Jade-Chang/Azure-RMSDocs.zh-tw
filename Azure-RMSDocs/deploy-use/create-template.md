@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -41,16 +41,16 @@ ms.suite: ems
 
     -   從 [Office 365 系統管理中心](https://portal.office.com/)：
 
-        1.  在左窗格中，按一下 **[服務設定]**.
+        1.  按一下左窗格中的 [服務設定] 。
 
-        2.  從 **[服務設定]** 頁面中，按一下 **[版權管理]**.
+        2.  從 [服務設定]  頁面中，按一下 [Rights Management] 。
 
-        3.  在 **[保護您的資訊]** 區段中，按一下 **[管理]**.
+        3.  在 [保護您的資訊]  區段中，按一下 [管理] 。
 
-        4.  在 **[版權管理]** 區段中，按一下 **[進階功能]**.
+        4.  在 [Rights Management]  區段中，按一下 [進階功能] 。
 
             > [!NOTE]
-            > 如果您尚未啟用 Rights Management，請先按一下 [啟用]，然後確認您的動作。 如需詳細資訊，請參閱 [啟用 Azure Rights Management](activate-service.md)。.
+            > 如果您尚未啟用 Rights Management，請先按一下 [啟用]，然後確認您的動作。 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
             > 
             > 如果您之前沒有按一下 [進階功能]，則在 Rights Management 啟用之後，請依照畫面指示取得存取 Azure 傳統入口網站所需的免費 Azure 訂閱。
 
@@ -58,20 +58,19 @@ ms.suite: ems
 
     -   登入 [Azure 傳統入口網站](http://go.microsoft.com/fwlink/p/?LinkID=275081)：
 
-        1.  在左窗格中，按一下 **[ACTIVE DIRECTORY]**。.
+        1.  在左窗格中，按一下 **[ACTIVE DIRECTORY]**。
 
-        2.  從 **[Active Directory]** 頁面中，按一下 **[RIGHTS MANAGEMENT]**.
+        2.  從 **[active directory]** 頁面中，按一下 **[RIGHTS MANAGEMENT]**。
 
         3.  為 Rights Management 選取要管理的目錄。
 
         4.  如果您尚未啟用 Rights Management，請按一下 [啟用]  ，然後確認您的動作。
 
-            > [!NOTE]
-            > 如需詳細資訊，請參閱 [啟用 Azure Rights Management](activate-service.md)。.
+            > [!NOTE] 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
 
 2.  建立新的範本：
 
-    -   在 Azure 傳統入口網站中，從 **[開始使用 Rights Management]** 快速入門頁面，按一下 **[建立新的權限原則範本]**.
+    -   在 Azure 傳統入口網站中，從 [開始使用 Rights Management] 快速入門頁面，按一下 [建立新的權限原則範本]。
 
         如果在遵循 Office 365 的指示後未立即看到此頁面，請使用上述的 Azure 傳統入口網站導覽指示。
 
@@ -88,13 +87,15 @@ ms.suite: ems
     > [!NOTE]
     > 您所選取的使用者或群組必須有電子郵件地址。 在生產環境中，幾乎一律是這樣的情況，但是在簡單的測試環境中，您可能需要為使用者帳戶或群組新增電子郵件地址。
 
-    最佳做法是選取群組而非使用者，這樣可簡化範本的管理。 如果您有 Active Directory 內部部署且正在同步處理至 Azure AD，您可以使用屬於安全性群組或通訊群組之已啟用郵件功能的群組。 不過，如果您想要將權限授與組織中的所有使用者，則更有效率的方式是複製其中一個預設範本，而不是指定多個群組。 如需詳細資訊，請參閱 [如何複製範本](copy-template.md).
+    最佳做法是選取群組而非使用者，這樣可簡化範本的管理。 如果您有 Active Directory 內部部署且正在同步處理至 Azure AD，您可以使用屬於安全性群組或通訊群組之已啟用郵件功能的群組。 不過，如果您想要將權限授與組織中的所有使用者，則更有效率的方式是複製其中一個預設範本，而不是指定多個群組。 如需詳細資訊，請參閱[如何複製範本](copy-template.md)。
 
     > [!TIP]
-    > 您稍後可以使用[適用於 Azure Rights Management 的 Windows PowerShell 模組](install-powershell.md)並使用下列其中一種方法，將組織外部的使用者新增到範本：
+    > 您可以選取包含 Office 365 或 Exchange Online 連絡人且擁有郵件功能的群組，以將組織外部使用者 (「外部使用者」) 加入範本中。 這可讓您將權限指派給這些使用者，方法與將權限指派給組織使用者相同。 例如，您可以防止客戶編輯您傳送給他們的價目表。 如果組織外部使用者將使用 Outlook Web App 讀取受保護電子郵件，請不要使用此範本設定來保護電子郵件。
     > 
-    > -   **使用權限定義物件來更新範本**：在您接著用來更新範本的權限定義物件中，指定外部電子郵件地址及其權限。 使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) Cmdlet 來建立變數，然後將此變數提供給具備 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) Cmdlet (用以修改現有的範本) 的 -RightsDefinition 參數，即可指定權限定義物件。 不過，如果您要將這些使用者新增到現有的範本，您也必須為範本中的現有群組 (而不只是新的、外部使用者) 定義權限定義物件。
-    > -   **匯出、編輯、匯入更新後的範本**：使用 [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) Cmdlet，將範本匯出到您可以編輯的檔案，以將這些使用者的外部電子郵件地址及其權限新增至現有的群組和權限。 然後使用 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) Cmdlet 將此變更匯回到 Azure RMS 中。
+    > 此外，您稍後可以使用[適用於 Azure Rights Management 的 Windows PowerShell 模組](install-powershell.md)並使用下列其中一種方法，將組織外部的使用者加入範本中：
+    > 
+    > -  **使用權限定義物件來更新範本**：在您接著用來更新範本的權限定義物件中，指定外部電子郵件地址及其權限。 使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) Cmdlet 來建立變數，然後將此變數提供給具備 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) Cmdlet (用以修改現有的範本) 的 -RightsDefinition 參數，即可指定權限定義物件。 不過，如果您要將這些使用者新增到現有的範本，您也必須為範本中的現有群組 (而不只是新的、外部使用者) 定義權限定義物件。
+    > -  **匯出、編輯、匯入更新後的範本**：使用 [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) Cmdlet，將範本匯出成您可以編輯的檔案，以將這些使用者的外部電子郵件地址及其權限加入現有的群組和權限中。 然後使用 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) Cmdlet 將此變更匯回到 Azure RMS 中。
 
 3.  按 [下一步] 按鈕，然後將其中一個列出的權限指派給您所選取的使用者和群組。
 
@@ -117,25 +118,25 @@ ms.suite: ems
 
 7.  在 [範本可見性] 頁面上選取使用者和群組，讓他們可以從啟用 RMS 的應用程式中看見和選取範本。 如前所述，最佳的作法是使用群組而不是使用者，且您選取的群組或使用者必須擁有電子郵件地址。
 
-8.  按 [下一步] 按鈕，並決定是否需要為部門範本設定應用程式相容性。 如果需要，請按一下 **[應用程式相容性]**，並選取核取方塊，然後按一下 **[完成]**.
+8.  按 [下一步] 按鈕，並決定是否需要為部門範本設定應用程式相容性。 如果需要，請按一下 [應用程式相容性] ，選取核取方塊，然後按一下 [完成] 。
 
     為什麼您可能需要設定應用程式相容性？ 並非所有應用程式都可以支援部門範本。 若要這樣做，應用程式必須先通過 RMS 服務驗證才能下載範本。 如果未發生驗證程序，則預設不會下載任何部門範本。 您可以覆寫此行為，方法是指定應該下載所有部門範本，或設定應用程式相容性並選取 [當應用程式不支援使用者身分識別時，向所有使用者顯示這個範本]  核取方塊。
 
     例如，如果您未在人力資源部範例中設定部門範本的應用程式相容性，則在使用 RMS 共用應用程式時，只有人力資源部的使用者會看到部門範本，但所有使用者在從 Exchange Server 2013 使用 Outlook Web Access (OWA) 時都看不到部門範本，因為 Exchange OWA 及 Exchange ActiveSync 目前不支援部門範本。 如果您設定應用程式相容性來覆寫此預設行為，則在使用 RMS 共用應用程式時，只有人力資源部的使用者會看到部門範本，但所有使用者在使用 Outlook Web Access (OWA) 時都會看到部門範本。 如果使用者使用 OWA 或從 Exchange Online 使用 Exchange ActiveSync，則不是所有使用者都看到部門範本，就是所有使用者都看不到部門範本，這要視 Exchange Online 中的範本狀態 (保存或已發行) 而定。
 
-    Office 2016 原本就支援部門範本，從 2015 年 6 月發行的 15.0.4727.1000 版本開始的 Office 2013 也是如此 ([KB 3054853](https://support.microsoft.com/kb/3054853)).
+    Office 2016 本身就支援部門範本，Office 2013 從 15.0.4727.1000 版開始 (隨 [KB 3054853](https://support.microsoft.com/kb/3054853) 發行於 2015 年 6 月) 也是如此。
 
     > [!NOTE]
     > 如果您的應用程式原本就不支援部門範本，可以使用自訂 RMS 範本下載指令碼或其他工具，將這些範本部署到本機的 RMS 用戶端資料夾。 然後，便會正確地只向您針對範本範圍所選取的使用者和群組顯示部門範本：
     > 
-    > -   若為 Office 2010，用戶端資料夾是 **%localappdata%\Microsoft\DRM\Templates**.
+    > -   若為 Office 2010，用戶端資料夾是 **%localappdata%\Microsoft\DRM\Templates**。
     > -   從已下載所有範本的用戶端電腦中，您可以複製範本檔案，然後將檔案貼到其他電腦。
     > 
-    > 您可以[從 Microsoft Connect 網站下載自訂 RMS 範本指令碼](http://go.microsoft.com/fwlink/?LinkId=524506)。 若您按下此連結後看到錯誤，你可能尚未在 Microsoft Connect 註冊。   註冊：
+    > 您可以[從 Microsoft Connect 網站下載自訂 RMS 範本指令碼](http://go.microsoft.com/fwlink/?LinkId=524506)。 若您按下此連結後看到錯誤，你可能尚未在 Microsoft Connect 註冊。 註冊：
     > 
     > 1.  請前往 [Microsoft Connect 網站](http://www.connect.microsoft.com)，並以您的 Microsoft 帳戶登入。
     > 2.  按一下 [目錄]，選擇 [檢視目前不接受回饋意見的 Connect 產品] 分類。
-    > 3.  搜尋 **Rights Management Services**，在 **[Microsoft RMS 企業功能]** 方案上按一下 **[加入]**.
+    > 3.  搜尋 **Rights Management Services**，在 [Microsoft RMS 企業功能] 方案上按一下 [加入]。
 
 9. 按一下 [設定]  並新增使用者使用的其他語言，同時以該語言新增這個範本的名稱和描述。 當您有多語言使用者時，請務必新增他們使用的每一種語言，並以該語言提供名稱和描述。 那麼，使用者就會看見與他們的用戶端作業系統使用相同語言的範本名稱和描述，這樣可確保他們了解在文件或電子郵件訊息上套用的原則。 如果沒有與他們的用戶端作業系統相符的語言，他們所看見的名稱和描述就會切換回您最初建立範本時所定義的語言和描述。
 
@@ -146,28 +147,28 @@ ms.suite: ems
     |**內容到期**|為這個範本定義一個期限一到範本所保護的檔案便不應開啟的日期或天數。 您可以指定一個日期，或是指定從在檔案上套用保護的時間算起的天數。<br /><br />當您指定日期時，它會在您目前時區中的午夜生效。|
     |**離線存取**|使用這項設定可針對使用者必須能夠在沒有網際網路連線時開啟受保護檔案的需求，進行任何安全性需求的平衡。<br /><br />如果您指定沒有網際網路連線即無法使用內容，或是只有在指定的天數內可以使用內容，則當達到臨界值時，就必須重新驗證使用者和記錄其存取。 發生這種情況時，如果沒有快取他們的認證，系統就會提示使用者登入後才能開啟檔案。<br /><br />除了重新驗證之外，也會重新評估原則和使用者群組成員資格。 這表示如果自使用者上次存取檔案之後，原則或群組成員資格發生變更，使用者在同一個檔案就可能經歷不同的存取結果。|
 
-10. 確信已經為您的使用者適當設定範本之後，請按一下 **[發佈]** 讓使用者可以看見範本，然後按一下 **[儲存]**.
+10. 確信已經為您的使用者適當設定範本之後，請按一下 [發佈]  讓使用者可以看見範本，然後按一下 [儲存] 。
 
-11. 在傳統入口網站中，按一下 [上一頁] 按鈕返回 **[範本]** 頁面，頁面中會顯示範本現在的狀態已更新為 **[已發佈]**.
+11. 在傳統入口網站中，按一下 [上一頁] 按鈕返回 [範本] 頁面，頁面中會顯示範本現在的狀態已更新為 [已發佈]。
 
 若要對範本進行任何變更，請選取它，然後再次使用快速入門步驟。 或是選取下列其中一個選項：
 
--   若要新增其他使用者和群組，並定義那些使用者和群組的權限：按一下 **[權限]**，然後按一下 **[新增]**.
+-   若要新增其他使用者和群組，並定義那些使用者和群組的權限：按一下 [權限] ，然後按一下 [新增] 。
 
--   若要移除您先前選取的使用者或群組：按一下 **[權限]**，並從清單中選取使用者或群組，然後按一下 **[刪除]**.
+-   若要移除您先前選取的使用者或群組：按一下 [權限] ，從清單中選取使用者或群組，然後按一下 [刪除] 。
 
--   若要變更可看到範本的使用者，請從應用程式選取：按一下 **[範圍]**，然後按一下 **[新增]**、**[刪除]** 或 **[應用程式相容性]**.
+-   若要變更可看到範本的使用者，請從應用程式選取：按一下 [範圍] ，再按一下 [新增]  、[刪除] 或 [應用程式相容性] 。
 
--   若要讓範本不再被所有使用者看見：依序按一下 **[設定]**、**[封存]** 和 **[儲存]**.
+-   若要讓範本不再被所有使用者看見：依序按一下 [設定] 、[封存] ，然後按一下 [儲存] 。
 
--   若要進行其他組態變更：按一下 **[設定]**，並進行變更，然後按一下 **[儲存]**.
+-   若要進行其他組態變更：按一下 [設定] ，進行變更，然後按一下 [儲存] 。
 
 > [!WARNING]
-> 當您對先前儲存的範本進行變更時，用戶端必須等到他們電腦上的範本重新整理之後，才會看到您對範本所做的那些變更。 如需詳細資訊，請參閱 [重新整理使用者的範本](refresh-templates.md).
+> 當您對先前儲存的範本進行變更時，用戶端必須等到他們電腦上的範本重新整理之後，才會看到您對範本所做的那些變更。 如需詳細資訊，請參閱[重新整理使用者的範本](refresh-templates.md)。
 
 ## 另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO5-->
 
 

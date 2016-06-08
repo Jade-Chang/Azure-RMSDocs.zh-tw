@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 啟用您的服務應用程式以使用以雲端為基礎的 RMS
 
 本主題概述設定服務應用程式以使用 Azure Rights Management 的步驟。 如需詳細資訊，請參閱[開始使用 Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)。
@@ -44,16 +44,15 @@ ms.suite: ems
 -   設定 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)。
 
 
-    int mode = IPC_API_MODE_SERVER;
-    IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
+    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
 
 **注意**  如需詳細資訊，請參閱[設定 API 安全性模式](setting-the-api-security-mode-api-mode.md)
 
      
 
--   下列步驟為建立 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 結構以及利用來自 Azure Rights Management 服務之連線資訊填入的 **pcCredential** ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 成員的執行個體設定。
--   在您建立 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 結構的執行個體時，使用對稱金鑰服務身分識別建立的資訊 (請參閱本主題稍早所列的必要條件) 來設定 **wszServicePrincipal**、**wszBposTenantId** 和 **cbKey** 參數。
+-   下列步驟為建立 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 結構執行個體的設定，其中以來自 Azure Rights Management Service 的連線資訊填入 **pcCredential** ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 成員。
+-   在您建立 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 結構的執行個體時，請使用對稱金鑰服務身分識別建立的資訊 (參閱本主題稍早所列的必要條件) 設定 **wszServicePrincipal**、**wszBposTenantId** 和 **cbKey** 參數。
 
 **注意**   由於現有的條件與我們的探索服務，如果您不在北美，不接受其他地區的對稱金鑰認證，因此您必須直接指定您的租用戶 URL。 這可透過 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 或 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist) 的 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 參數完成。
 
@@ -67,21 +66,15 @@ ms.suite: ems
 **注意**  您必須是租用戶系統管理員才能使用 Powershell 指令程式。
 
 
--   啟動 Powershell 並執行下列命令來產生金鑰
-            `Import-Module MSOnline`
-            `Connect-MsolService` (輸入您的系統管理員認證)
-            `New-MsolServicePrincipal` (輸入顯示名稱)
+-   啟動 Powershell 並執行下列命令以產生金鑰         `Import-Module MSOnline`
+            `Connect-MsolService` (輸入您的系統管理員認證)         `New-MsolServicePrincipal` (輸入顯示名稱)
 -   在它產生對稱金鑰之後，它會輸出金鑰相關資訊，包含金鑰本身和 **AppPrincipalId**。
 
 
 
-    The following symmetric key was created as one was not supplied
-    ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+    因為未提供對稱金鑰，所以已建立下列對稱金鑰：ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
-    DisplayName : RMSTestApp
-    ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963}
-    ObjectId : 0ee53770-ec86-409e-8939-6d8239880518
-    AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
+    DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
 
@@ -97,20 +90,18 @@ ms.suite: ems
     `Get-AadrmConfiguration`
 
 
--   建立 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 的執行個體並設定一些成員。
+-   建立 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 的執行個體，並設定一些成員。
 
     // 建立金鑰結構。
     IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
 
     // 利用服務建立的資訊設定每個成員。
-    symKey.wszBase64Key = "您的服務主體金鑰";
-    symKey.wszAppPrincipalId ="您的應用程式主體識別碼";
-    symKey.wszBposTenantId ="您的租用戶識別碼";
+    symKey.wszBase64Key = "您的服務主體金鑰"; symKey.wszAppPrincipalId = "您的應用程式主體識別碼"; symKey.wszBposTenantId = "您的租用戶識別碼";
 
 
 如需詳細資訊，請參閱 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)。
 
--   建立 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 結構的執行個體，包含您的 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 執行個體。
+-   建立 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 結構的執行個體，其中包含您的 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 執行個體。
 
 **注意**  *conectionInfo* 成員會利用來自前一次對 `Get-AadrmConfiguration` 呼叫的 URL 設定，並且利用那些欄位名稱在此註明。
 
@@ -138,21 +129,15 @@ ms.suite: ems
 ### 找出範本，然後加密
 
 -   選取用於加密的範本
-    在相同的 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 執行個體中呼叫 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 傳遞。
+    呼叫傳入相同 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 執行個體的 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)。
 
 
-    PCIPC_TIL pTemplates = NULL;
-    IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
+    PCIPC_TIL pTemplates = NULL; IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
 
-    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),
-           IPC_GTL_FLAG_FORCE_DOWNLOAD,
-           0,
-           &promptCtx,
-           NULL,
-           &pTemplates);
+    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),        IPC_GTL_FLAG_FORCE_DOWNLOAD,        0,        &promptCtx,        NULL,        &pTemplates);
 
 
--   利用本主題稍早的範本，呼叫 [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)，並在相同的 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 執行個體中傳遞。
+-   利用本主題稍早的範本，呼叫傳入相同 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 執行個體的 [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)。
 
 使用 [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile) 的範例：
 
@@ -197,6 +182,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

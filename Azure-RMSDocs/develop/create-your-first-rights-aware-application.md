@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 安裝 SDK
 
 本主題會引導您安裝開發人員工具。
@@ -37,7 +37,7 @@ ms.suite: ems
 
     **...\\setup\_sdk.exe**
 
-    Setup\_sdk.exe 檔案會安裝在 RMS SDK 2.1 和 Active Directory Rights Management Services Client 2.1。
+    Setup\_sdk.exe 檔案會同時安裝在 RMS SDK 2.1 和 Active Directory Rights Management Services Client 2.1。
 
 如需 "setup\_sdk.exe" 在您的系統上安裝之檔案的詳細資訊，請參閱[開發環境檔案](sdk-elements.md)
 
@@ -53,6 +53,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 設定 Visual Studio
 
 本主題包含如何設定 Visual Studio 專案以使用 Rights Management Services SDK 2.1 的相關指示。
@@ -42,7 +42,7 @@ ms.suite: ems
 
 1.  新增 RMS SDK 2.1 包含 Visual Studio 2010 專案的目錄。
 
-    在 [組態屬性] 下，選取 [VC++ 目錄] 並新增 RMS SDK 2.1，將目錄 **$(MSIPCSDKDIR)\\inc** 納入 [包含目錄] 欄位。
+    在 **[組態屬性]** 下，選取 **[VC++ 目錄]** 並將 RMS SDK 2.1 包含目錄 **$(MSIPCSDKDIR)\\inc** 加入 **[包含目錄]** 欄位中。
 
     ![組態屬性包含目錄欄位](../media/include_directories.png)
 
@@ -57,7 +57,7 @@ ms.suite: ems
 
 3.  新增 RMS SDK 2.1 程式庫檔案做為 Visual Studio 2010 相依性。
 
-    在 [連結器] 下，選取 [輸入] 並將 RMS SDK 2.1 程式庫檔案 **Msipc.lib** 和 **Msipc\_s.lib** 新增至 [其他相依性] 欄位。
+    在 **[連結器]** 下，選取 **[輸入]** 並將 RMS SDK 2.1 程式庫檔 **Msipc.lib** 和 **Msipc\_s.lib** 加入 **[其他相依性]** 欄位中。
 
     ![連結器程式庫相依性欄位](../media/additional_dependencies.png)
 
@@ -85,6 +85,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

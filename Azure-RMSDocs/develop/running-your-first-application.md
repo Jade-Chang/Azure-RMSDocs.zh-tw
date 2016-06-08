@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 測試具備權限的應用程式
 
 本主題描述完成 Rights Management Services SDK 2.1 具備權限的應用程式測試所需的步驟。
@@ -55,7 +55,7 @@ ms.suite: ems
 
 執行之前，您必須為應用程式產生資訊清單。
 
-**注意**：如果應用程式使用伺服器 API 模式 (**IPC\_API\_MODE\_SERVER**)，您不需要使用應用程式資訊清單。 您可以對生產 AD RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
+**注意**：如果應用程式使用伺服器 API 模式 (**IPC\_API\_MODE\_SERVER**)，您就不需要使用應用程式資訊清單。 您可以對生產 AD RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
 
  
 
@@ -81,7 +81,7 @@ ms.suite: ems
 
 2.  在應用程式資料夾中，將資訊清單組態檔 YourAppName.isv.mcf 重新命名為您的應用程式名稱 (包含 .mcf 副檔名)。 例如，若應用程式稱為 MyApp.exe，請將 YourAppName.isv.mcf 重新命名為 MyApp.exe.mcf。
 
-3.  使用文字編輯器，將您的應用程式新增至資訊清單組態檔。 若要這樣做，請以您的應用程式名稱取代 .mcf 檔案內模組清單中的 &lt;YourAppName&gt;.exe 預留位置文字，例如，MyApp.exe。
+3.  使用文字編輯器，將您的應用程式新增至資訊清單組態檔。 若要這樣做，請以您的應用程式名稱取代 .mcf 檔案內模組清單中的 &lt;YourAppName&gt;.exe 預留位置文字，例如 MyApp.exe。
 
     如果不修改使用 .mcf 檔案，簽署程序會產生錯誤。
 
@@ -123,6 +123,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

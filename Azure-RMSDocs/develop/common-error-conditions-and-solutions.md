@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 常見的錯誤狀況和解決方案
 本主題包括使用 Rights Management Services SDK 2.1 開發人員工具時可能遭遇到的常見錯誤訊息。 它也提供建議的動作，在適用的情況下修正錯誤。
 
@@ -34,7 +34,7 @@ ms.suite: ems
 ## 錯誤和動作 ##
 下列清單包含一份錯誤常數、其相關聯的說明和建議動作，以解決錯誤狀況。
 
-**錯誤** - *IPCERROR_DEBUGGER_DETECTED* - RMS SDK 2.1 偵測到的偵錯工具
+**錯誤** - *IPCERROR_DEBUGGER_DETECTED* - RMS SDK 2.1 偵測到偵錯工具
 
 **動作** - RMS SDK 2.1 的開發人員版本不會檢查是否有任何偵錯工具。 可能的話，請使用這個版本 (RMS SDK 2.1) 來偵錯應用程式。
 如果您必須偵錯 RMS SDK 2.1 的生產版本，請使用下列指導方針。
@@ -45,16 +45,16 @@ ms.suite: ems
 - [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
 
 若要遵循這些函式呼叫來偵錯程式碼，您必須中斷處理序，並在函式呼叫完成後附加偵錯工具。 其中一個方法是使用 assert 陳述式來中斷至偵錯工具。 ASSERTE 巨集包含在 *Crtdbg.h* 標頭中。
-如需 \_ASSERTE 的詳細資訊，請參閱 [\_ASSERT，\_ASSERTE 巨集](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
+如需 \_ASSERTE 的詳細資訊，請參閱 [\_ASSERT、\_ASSERTE 巨集](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
 
-**錯誤** - *IPCERROR_BROKEN_CERT_CHAIN* - 憑證鏈結不相符。
+**錯誤** - *IPCERROR_BROKEN_CERT_CHAIN* - 憑證鏈結不符。
 
 **動作** - 根據您用來簽署 AD RMS 應用程式資訊清單的金鑰，確定階層金鑰包含正確值。
 這些是簽署金鑰及其關聯值 (階層 **DWORD**)：
 - ISV—1
 - Production—0 或不存在
 
-**錯誤** - *IPCERROR_MACHINE_CERT_NOT_TRUSTED* - 您正在使用 ISV 簽署金鑰簽署的應用程式，但它正在嘗試與生產 AD RMS 伺服器進行通訊，反之亦然。
+**錯誤** - *IPCERROR_MACHINE_CERT_NOT_TRUSTED* - 您正在使用以 ISV 簽署金鑰簽署的應用程式，但其嘗試與生產 AD RMS 伺服器通訊，或情形相反。
 
 - 如果您使用 AD RMS 伺服器的開發人員版本，請確定您使用 ISV 簽署金鑰來簽署應用程式。
 - 如果您使用 AD RMS 伺服器的生產版本，請確定您使用生產簽署金鑰來簽署應用程式。
@@ -68,12 +68,12 @@ ms.suite: ems
 * [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
 * [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 * [IpcGetTemplateIssuerList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
-* [\_ASSERT，\_ASSERTE 巨集](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
+* [\_ASSERT、\_ASSERTE 巨集](https://msdn.microsoft.com/en-us/library/ezb1wyez.aspx)
  
 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

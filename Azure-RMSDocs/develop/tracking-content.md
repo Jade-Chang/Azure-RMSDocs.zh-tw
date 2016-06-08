@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 追蹤內容
 
 本主題涵蓋了追蹤 Rights Management Services SDK 2.1 所保護之內容文件的基本實作指導方針。
@@ -134,6 +134,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

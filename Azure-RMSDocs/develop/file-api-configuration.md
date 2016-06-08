@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 檔案 API 組態
 
 
@@ -75,7 +75,7 @@ ms.suite: ems
 - *Pfile*︰使用 PFile 加密。 加密的檔案會有附加到原始副檔名的 .pfile。 例如，加密後，.txt 檔案將具有 txt.pfile 副檔名。
 
 
-> [AZURE.NOTE] 此設定對 Office 檔案格式並無任何影響。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值設為 &quot;Pfile"，.docx 檔案仍會利用原生保護加密，且加密的檔案仍會具有副檔名 .docx。
+> [AZURE.NOTE] 此設定對 Office 檔案格式並無任何影響。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值設為 &quot;Pfile”，.docx 檔案仍會利用原生保護加密，且加密的檔案仍會具有副檔名 .docx。
 
 設定任何其他值，或不設定值以執行預設行為。
 
@@ -89,7 +89,7 @@ ms.suite: ems
 
 ### 檔案 API- 檔案支援詳細資料
 
-可為任何檔案類型 (副檔名) 新增原生支援。 比方說，對於任何副檔名 &lt;ext&gt; (非 office)，如果該副檔名的系統管理員組態為 "NATIVE"，則會使用 \*.p&lt;ext&gt;。
+可為任何檔案類型 (副檔名) 新增原生支援。 例如，如果副檔名 &lt;ext&gt; (非 office) 的管理設定為 "NATIVE"，任何這類副檔名都會使用 \*.p&lt;ext&gt;。
 
 **Office 檔案**
 
@@ -161,6 +161,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

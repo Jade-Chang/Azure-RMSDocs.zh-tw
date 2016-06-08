@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 設定生產前開發環境
 
 本節將引導您在測試 / 生產前環境中完成具備權限應用程式的設定和執行程序。 下列主題討論如何設定您的生產前開發環境，以及如何列出，使它們建議您可以執行工作的順序。
@@ -48,6 +48,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

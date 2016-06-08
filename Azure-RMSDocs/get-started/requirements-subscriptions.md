@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -86,17 +86,18 @@ Exchange Online 方案 1 <br /><br /> Exchange Online 方案 2|否 <br /><br /> 
 ## Enterprise Mobility Suite 訂閱
 [免費 30 天試用](http://go.microsoft.com/fwlink/?LinkId=615385)
 
-此訂用帳戶是對想要使用 Azure Active Directory Premium、Windows Intune 和 Azure Rights Management 組合的組織所設計。 支援使用 Azure Rights Management 與 Office 和使用 Azure Rights Management Premium 訂用帳戶一樣。 
-如需 Enterprise Mobility Suite 訂閱的詳細資訊，請參閱 [Microsoft 企業行動化概觀](http://go.microsoft.com/fwlink/?LinkId=615386)。
+此訂用帳戶是對想要使用 Azure Active Directory Premium、Windows Intune 和 Azure Rights Management 組合的組織所設計。 支援使用 Azure Rights Management 與 Office 和使用 Azure Rights Management Premium 訂用帳戶一樣。 如需 Enterprise Mobility Suite 訂閱的詳細資訊，請參閱 [Microsoft 企業行動化概觀](http://go.microsoft.com/fwlink/?LinkId=615386)。
 
 ## 個人版 RMS 訂閱
 這是對尚未部署 Azure RMS 或 AD RMS 的組織中個人所設計的訂閱。 此可讓這些人員閱讀正在使用 Azure RMS 的組織所保護的內容，而他們也能保護其本身的內容。
+
+您可能會看到這個項目在 Office 365 管理入口網站中列為 **Rights Management Adhoc**，並已自動指派給使用者。 請勿將這個授權手動指派給使用者，也不要使用這個授權管理您組織的 Azure RMS。 
 
 如需詳細資訊，請參閱[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
 ## 後續步驟
 若要檢查其他需求，請參閱 [Azure Rights Management 的需求](requirements-azure-rms.md)。
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO5-->
 
 

@@ -23,12 +23,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 設定 API 安全性模式
 
 您可以使用 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函式選擇檔案 API 應用程式執行的安全性模式。
 
-若要啟動您的應用程式並在*伺服器模式*中執行，呼叫 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函式，並將安全性模式設為 [**IPC\_API\_MODE\_SERVER**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)。 根據預設，應用程式會以*用戶端模式* 執行(**IPC\_API\_MODE\_CLIENT**)。
+若要將您的應用程式初始化，以在*伺服器模式*中執行，請呼叫 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函式，並將安全性模式設為 [**IPC\_API\_MODE\_SERVER**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)。 根據預設，應用程式會以*用戶端模式*執行 (**IPC\_API\_MODE\_CLIENT**)。
 
 如需*伺服器模式*的詳細資訊，請參閱[應用程式類型](application-types.md)。
 
@@ -50,6 +50,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

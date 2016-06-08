@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 使用者入門
 
 Rights Management Services SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。 平台處理複雜的安全性作法，例如金鑰管理、加密和解密處理，並提供一個簡化的 API 以輕鬆開發應用程式。
@@ -78,6 +78,6 @@ RMS SDK 2.1 支援重要的用戶端和伺服器平台範圍。 如需詳細資�
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
