@@ -23,9 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # Rights Management Services SDK 2.1
-
 
 ## 目的
 
@@ -67,6 +66,6 @@ RMS SDK 2.1 可從 Microsoft 下載中心的 [RMS SDK 2.1 下載頁面](http://w
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
