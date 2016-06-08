@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 了解憑證鏈結
 
 開發具備權限的應用程式需要公開金鑰組，以及可回到根信任的 Microsoft 憑證的憑證鏈結。
@@ -57,6 +57,6 @@ Rights Management Services (RMS) 環境中使用的每個授權和憑證包含�
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 
