@@ -1,11 +1,26 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/developer-notes.md) | InSyncHandedBackSuccess | [Details](#d3a8f5f2a97920f35e261bf6f444a1ecce4c530261)
 
 ## Item Details
+##### <a name='d3a8f5f2a97920f35e261bf6f444a1ecce4c530261'></a> Source: [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/developer-notes.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/9bfde4920d65dc933e1c29a5f111f66f176a31ec/Azure-RMSDocs/develop/developer-notes.md)
+* Handoff File: [developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/0ec56b8ffa23ab40c4d81c65a19c5ca38fe15775/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf)
+* Handoff Datetime: 2016-06-02 02:23:17
+* Handoff Reason: Include
+* Archive File: [developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/0c8e903ebe60f9bea452206d112ebc5efd6be549/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf)
+* Archive Datetime: 2016-06-02 03:20:03
+* Handback File: [developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/6358e6c3530e121dbe766793b3c42eb8b66d835a/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf)
+* Handback Datetime: 2016-06-08 10:08:42
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
