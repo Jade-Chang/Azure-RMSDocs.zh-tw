@@ -23,12 +23,12 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 開發人員注意事項
 
 本節涵蓋數個重要開發案例的特定指引。 本節中的案例僅適用此版 Rights Management Services SDK 2.1，後續版本可能會改變。
 
-- [新增明確的擁有者權限](add-explicit-owner-rights.md) - 從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限 ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
+- [新增明確的擁有者權限](add-explicit-owner-rights.md) - 從頭開始建立授權時，您的應用程式應該明確新增「擁有者」權限 ([IpcCreateLicenseFromScratch](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
 - [常見的錯誤狀況和解決方案](common-error-conditions-and-solutions.md) - 本主題包括使用 RMS SDK 2.1 開發人員工具時可能遭遇到的常見錯誤訊息。
 - [啟用電子郵件通知](how-to-enable-email-notification.md) - 可存取受保護的內容時，用來通知其擁有者的電子郵件。
 - [檔案 API 組態](file-api-configuration.md) - 可透過登錄中設定進行設定的檔案 API 的行為。
@@ -48,6 +48,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 
