@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/understanding-certificate-chains.md) | InSyncHandedBackSuccess | [Details](#8838b6165e8d8929ee8ecb5cae4a921a20653265103)
 
 ## Item Details
-##### <a name='8838b6165e8d8929ee8ecb5cae4a921a20653265103'></a> Source: [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/understanding-certificate-chains.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/e67ccc3112e586dff157d8a2cef05156b8e4767f/Azure-RMSDocs/develop/understanding-certificate-chains.md)
-* Handoff File: [understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/0ec56b8ffa23ab40c4d81c65a19c5ca38fe15775/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf)
-* Handoff Datetime: 2016-06-02 02:23:17
-* Handoff Reason: Include
-* Archive File: [understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/0c8e903ebe60f9bea452206d112ebc5efd6be549/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf)
-* Archive Datetime: 2016-06-02 03:20:03
-* Handback File: [understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/1eb4ad0f9542cc32a19f1e4d43554605cf8bd977/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf)
-* Handback Datetime: 2016-06-08 08:35:40
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
