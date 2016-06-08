@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "0e4ab8853d889d8a03cd5220ef966d9f843d2aa5",
-  "LastTranslatedCommit": "e59d4656bf99aff7d409d8c9ad2c814ea3adc2e0",
+  "LastTranslatedCommit": "e67ccc3112e586dff157d8a2cef05156b8e4767f",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -73020,14 +73020,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "e67ccc3112e586dff157d8a2cef05156b8e4767f",
+      "TargetFilePath": "Azure-RMSDocs\\develop\\understanding-certificate-chains.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.zh-tw\\master\\understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf",
+      "HandbackFileCommit": "1eb4ad0f9542cc32a19f1e4d43554605cf8bd977",
+      "HandbackDateTime": "2016-06-08T08:35:40.645086Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-08T08:35:40.645086Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-tw\\master\\archive\\understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf",
       "ArchiveFileCommit": "0c8e903ebe60f9bea452206d112ebc5efd6be549",
       "ArchiveFileDateTime": "2016-06-02T03:20:03.8897245Z",

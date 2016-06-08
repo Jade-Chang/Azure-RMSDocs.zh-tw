@@ -9,8 +9,8 @@
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 0
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 8
-[ In Sync Handback Files ](#insync-handback-success-list)| 205
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 7
+[ In Sync Handback Files ](#insync-handback-success-list)| 206
 [ Ignored Files ](#ignored-list)| 66
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -157,7 +157,6 @@
  [Azure-RMSDocs\deploy-use\configure-usage-rights.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8e72b68c03ee7da58adaff96f3f4611a227214b0/Azure-RMSDocs/deploy-use/configure-usage-rights.md) | OutofSyncHandedBackSuccess | [Details](#a48cc696447f76127d5433ac5691ceb8790c1c8918)
  [Azure-RMSDocs\deploy-use\operations-microsoft-managed-tenant-key.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f517c66dde0f686e3a74d7abc76a7c4f5d2252f8/Azure-RMSDocs/deploy-use/operations-microsoft-managed-tenant-key.md) | OutofSyncHandedBackSuccess | [Details](#00db0afb2e5d872162f7ac4e361f517623530ae231)
  [Azure-RMSDocs\develop\developer-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/developer-notes.md) | OutofSyncHandedBackSuccess | [Details](#d3a8f5f2a97920f35e261bf6f444a1ecce4c530261)
- [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/understanding-certificate-chains.md) | OutofSyncHandedBackSuccess | [Details](#8838b6165e8d8929ee8ecb5cae4a921a20653265103)
  [Azure-RMSDocs\get-started\faqs.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/8e72b68c03ee7da58adaff96f3f4611a227214b0/Azure-RMSDocs/get-started/faqs.md) | OutofSyncHandedBackSuccess | [Details](#f7c946f6d20805f4cfe7385fa6eedbf3a1f7e097110)
  [Azure-RMSDocs\understand-explore\azure-rms-problems-it-solves.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/e84de6afd80196d4237499718af45c64788c408d/Azure-RMSDocs/understand-explore/azure-rms-problems-it-solves.md) | OutofSyncHandedBackSuccess | [Details](#2863c98390b8fda528c4fe3a1b2ebce3510763b4386)
  [Azure-RMSDocs\understand-explore\how-does-it-work.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562/Azure-RMSDocs/understand-explore/how-does-it-work.md) | OutofSyncHandedBackSuccess | [Details](#505f2c94bb4fd056b4d2f51c147c6b0b84efac00389)
@@ -255,6 +254,7 @@
  [Azure-RMSDocs\develop\terms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6b5bc9612ac17a2d6905200383d9b8df4c504efe/Azure-RMSDocs/develop/terms.md) | InSyncHandedBackSuccess | [Details](#cb8c91db044eb8cee39661994191c261bdbdb8ce100)
  [Azure-RMSDocs\develop\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/77b14101d610f207e6502146605e713267825214/Azure-RMSDocs/develop/TOC.md) | InSyncHandedBackSuccess | [Details](#0053e83abdbd6fa2dd2397d81d69fe7811a22f25101)
  [Azure-RMSDocs\develop\tracking-content.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/tracking-content.md) | InSyncHandedBackSuccess | [Details](#b05708694e669f9d1bd28038643d4bf34729a239102)
+ [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/understanding-certificate-chains.md) | InSyncHandedBackSuccess | [Details](#8838b6165e8d8929ee8ecb5cae4a921a20653265103)
  [Azure-RMSDocs\develop\understanding-usage-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/understanding-usage-restrictions.md) | InSyncHandedBackSuccess | [Details](#9a13a1e5a9102bd968d7dbd326f370c679952798104)
  [Azure-RMSDocs\develop\usage-restriction-reference.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/usage-restriction-reference.md) | InSyncHandedBackSuccess | [Details](#3227bba7b43e6200ed9214d22ce265f02b8d216e105)
  [Azure-RMSDocs\develop\windows-phone-apps.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/90552435666b8f25c893fcffe8c8cf3355a5942d/Azure-RMSDocs/develop/windows-phone-apps.md) | InSyncHandedBackSuccess | [Details](#136d6e9d0c45a9779f87e32eed8288fe8ee3a622106)
@@ -1691,18 +1691,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='8838b6165e8d8929ee8ecb5cae4a921a20653265103'></a> Source: [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/understanding-certificate-chains.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/e67ccc3112e586dff157d8a2cef05156b8e4767f/Azure-RMSDocs/develop/understanding-certificate-chains.md)
 * Handoff File: [understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/0ec56b8ffa23ab40c4d81c65a19c5ca38fe15775/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf)
 * Handoff Datetime: 2016-06-02 02:23:17
 * Handoff Reason: Include
 * Archive File: [understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/0c8e903ebe60f9bea452206d112ebc5efd6be549/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf)
 * Archive Datetime: 2016-06-02 03:20:03
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\develop\understanding-certificate-chains.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/0cd179166c32fe78e3ec74c19c189162ed8ee1ca/Azure-RMSDocs/develop/understanding-certificate-chains.md)
-* Current Handback File: [understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/98a31d8498b6863f74571f6ea804c0e38755b694/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf)
-* Current Handback Datetime: 2016-05-30 11:09:03
+* Handback File: [understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/1eb4ad0f9542cc32a19f1e4d43554605cf8bd977/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/understanding-certificate-chains.afd6fe122a10f48924e03c0f1c9e4eb8d07a39af.zh-tw.xlf)
+* Handback Datetime: 2016-06-08 08:35:40
 * [Back to Top](#report-top)
 
 ##### <a name='9a13a1e5a9102bd968d7dbd326f370c679952798104'></a> Source: [Azure-RMSDocs\develop\understanding-usage-restrictions.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/understanding-usage-restrictions.md)
