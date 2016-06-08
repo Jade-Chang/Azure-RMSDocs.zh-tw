@@ -188,13 +188,7 @@
   "beeb394fbd5972168a76fc9836278fb315ceea78": [
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
-  "8471f0f2682a721d839a18bf1bbc3b937c2d113e": [
-    "Azure-RMSDocs\\develop\\ad-rms-overview.md"
-  ],
   "52c2ec7f89a72e375a3431ec5cb5b638cfb10a94": [
-    "Azure-RMSDocs\\develop\\ad-rms-server.md"
-  ],
-  "906c83731188838ca516b8159581b64c60a4a42e": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "acd0692102c43baff0a92360e0ddbe1259ad9b4f": [
@@ -311,9 +305,6 @@
   "04129978c02ae2463c3c2ed28aacc657c399340e": [
     "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
   ],
-  "4ec214203fa6e27ec75cdc0c2b2d46b1e0ab58df": [
-    "Azure-RMSDocs\\develop\\microsoft-information-protection-and-control-client-portal.md"
-  ],
   "013bf970ed3692432538ed8b3209a29517b73df4": [
     "Azure-RMSDocs\\develop\\obtaining-a-production-license.md"
   ],
@@ -327,9 +318,6 @@
     "Azure-RMSDocs\\develop\\running-your-first-application.md"
   ],
   "9c1eb2122e2237a895ed931561ead754c3287244": [
-    "Azure-RMSDocs\\develop\\samples.md"
-  ],
-  "ede4fb74ee6d564fcc91fe1781c47631c45e8812": [
     "Azure-RMSDocs\\develop\\samples.md"
   ],
   "3d6e7c2b40ba80988e93186fd68a12e6216b477d": [
