@@ -5098,14 +5098,14 @@
 
 ##### <a name='e6106b0b5a5aa1039f7cbf5a35589216c5e540f3370'></a> Source: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/template.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/31517a5e5bbdd34dd206786e00a506810ad626e1/Azure-RMSDocs/template.md)
+* Target File: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/647d3d75ce22a6823ffff46670e0b61a33f040d5/Azure-RMSDocs/template.md)
 * Handoff File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/9f102f7d972326e2f6541b7d52b73bd00996fecc/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
 * Handoff Datetime: 2016-04-20 22:57:56
 * Handoff Reason: Include
 * Archive File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/704dcdf5944429078ab5236080da79b313a6774e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
 * Archive Datetime: 2016-04-26 06:25:07
-* Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/8d8c8d3adf37cfc9f4844fbf4a2c1b7f0416191b/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
-* Handback Datetime: 2016-05-11 10:46:15
+* Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/77b85ab7adba8fe9b60bf35c07bd2de12871ed23/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
+* Handback Datetime: 2016-06-10 13:56:19
 * [Back to Top](#report-top)
 
 ##### <a name='6cb49518dbeef7122e355cd9b2edfb83722e1dba371'></a> Source: [Azure-RMSDocs\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5141bfecf0a9cd895980a647b91239848769d9e5/Azure-RMSDocs/TOC.md)
@@ -5371,14 +5371,14 @@
 
 ##### <a name='e6106b0b5a5aa1039f7cbf5a35589216c5e540f3392'></a> Source: [template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/274b07a6ada30217dcfe8232a8bab0fd707cad3c/template.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/31517a5e5bbdd34dd206786e00a506810ad626e1/Azure-RMSDocs/template.md)
+* Target File: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/647d3d75ce22a6823ffff46670e0b61a33f040d5/Azure-RMSDocs/template.md)
 * Handoff File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/9f102f7d972326e2f6541b7d52b73bd00996fecc/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
 * Handoff Datetime: 2016-04-20 22:57:56
 * Handoff Reason: Include
 * Archive File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/704dcdf5944429078ab5236080da79b313a6774e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
 * Archive Datetime: 2016-04-26 06:25:07
-* Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/8d8c8d3adf37cfc9f4844fbf4a2c1b7f0416191b/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
-* Handback Datetime: 2016-05-11 10:46:15
+* Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/77b85ab7adba8fe9b60bf35c07bd2de12871ed23/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.zh-tw.xlf)
+* Handback Datetime: 2016-06-10 13:56:19
 * [Back to Top](#report-top)
 
 ##### <a name='42442e5f8d7f09fba90a865e184aacc3f8489143393'></a> Source: [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/274b07a6ada30217dcfe8232a8bab0fd707cad3c/UpdateSubmodule.ps1)
