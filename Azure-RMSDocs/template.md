@@ -37,13 +37,13 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 上方是完整的中繼資料區塊，分成必要的欄位和選用的欄位；如需詳細資訊，請參閱 [OPS 中繼資料速查表](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data)。 一些重點︰
 
-- 在冒號 (:) 和中繼資料元素的值之間必須有一個空格。
+- 在冒號 (:) 和中繼資料元素的值之間**必須**有一個空格。
 - 如果選用的中繼資料元素沒有值，請以 # 將元元素註解化 (請勿保留空白或者使用 "na")；如果您要對已註解化的元素加入值都，請務必移除 #。
 - 值 (例如標題) 中的冒號會將中繼資料剖析器中斷。 在其位置中，使用以下的 HTML 編碼&#58; (例如："title: Azure Rights Management&#58; 的基本概念 | Azure RMS")。
-- 標題︰這個標題會出現在搜尋引擎結果中。 標題結尾應該是垂直線 (|) 後面加上服務的名稱 (請參閱以上的範例)。 標題不需要 (且可能不應) 等於 H1 標題中的標題。 它應該是大約 65 個字元 (包括 | 服務名稱)
-- 作者、管理員、檢閱者︰作者欄位應包含作者的 Github 使用者名稱，而非其別名。  相反地，「管理員」和「檢閱者」欄位則應包含別名。 ms.reviewer 會指定與文章或服務相關聯的 PM 名稱。
-- ms.assetid︰這是來自 CAPS 的文章的 GUID。 建立新的 Markdown 檔案時，請從 [https://www.guidgenerator.com](https://www.guidgenerator.com) 取得 GUID。 
-- ms.prod、ms.service、ms.technology、ms.devlang、ms.topic、ms.tgt_pltfrm︰這些元素的可能值可以在[這裡](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)找到。
+- **標題**︰這個標題會出現在搜尋引擎結果中。 標題結尾應該是垂直線 (|) 後面加上服務的名稱 (請參閱以上的範例)。 標題不需要 (且可能不應) 等於 H1 標題中的標題。 它應該是大約 65 個字元 (包括 | 服務名稱)
+- **作者**、**管理員**、**檢閱者**︰作者欄位應包含作者的 **Github 使用者名稱**，而非其別名。  相反地，「管理員」和「檢閱者」欄位則應包含別名。 ms.reviewer 會指定與文章或服務相關聯的 PM 名稱。
+- **ms.assetid**︰這是來自 CAPS 的文章的 GUID。 建立新的 Markdown 檔案時，請從 [https://www.guidgenerator.com](https://www.guidgenerator.com) 取得 GUID。 
+- **ms.prod**、**ms.service**、**ms.technology**、**ms.devlang**、**ms.topic**、**ms.tgt_pltfrm**︰這些元素的可能值可以在[這裡](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)找到。
 
 ## 基本 Markdown 和 GFM
 
@@ -56,7 +56,7 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 以上是第一和第二個層級標題的範例。 
 
-主題中必須只有一個第一層標題，它會顯示為頁面的標題。  
+主題中**必須**只有一個第一層標題，它會顯示為頁面的標題。  
 
 第二層標題將會產生頁面上的目錄，它會顯示在頁面標題的「本文內容」區段下。
 
@@ -182,7 +182,7 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 ### 連結的影像
 
-[![a[連結影像的替代文字](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
+[![a連結影像的替代文字](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
 
 ### 動畫 GIF
 
