@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
+
 # 應用程式類型
 
 
@@ -36,7 +36,6 @@ Rights Management Services SDK 2.1 目前支援下列應用程式類型
 簡單的應用程式可能是建置來加密提供之檔案的命令列工具。 如需簡單具備權限應用程式的範例，請參閱 [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)。
 
 ### 伺服器模式應用程式
-
 
 *伺服器模式*的目標為取用、保護或處理 RMS 保護內容的非互動式應用程式。 其中一個範例是*資料外洩防護*應用程式，執行做為檔案伺服器上的服務，並且自動保護機密文件。 如需此應用程式類型的範例，請參閱 [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)。
 
@@ -60,19 +59,12 @@ Microsoft 記事本是一個簡單的豐富用戶端應用程式。 Microsoft Of
 
 ## 相關主題
 
-* [開發人員概念](ad-rms-concepts-nav.md)
 * [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)
 * [設定 API 安全性模式](setting-the-api-security-mode-api-mode.md)
 * [了解使用限制](understanding-usage-restrictions.md)
- 
-
- 
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

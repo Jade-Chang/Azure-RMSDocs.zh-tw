@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
+
 # Rights Management Services SDK 2.1
 
 ## 目的
@@ -49,10 +49,8 @@ RMS SDK 2.1 可從 Microsoft 下載中心的 [RMS SDK 2.1 下載頁面](http://w
 |[使用者入門](getting-started-with-ad-rms-2-0.md)|RMS SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。|
 |[版本資訊](release-notes-rtm.md)|本主題包含此版和舊版 RMS SDK 2.1 的相關重要資訊。|
 |[程式碼範例](samples.md)|本主題列出一組使用 RMS SDK 2.1 的範例，可從 MSDN 下載中心取得。|
-|[如何使用](how-to-use-msipc.md)|使用 RMS SDK 2.1 的案例和工作的逐步指引。|
 |[開發人員注意事項](developer-notes.md)|本節涵蓋數個重要開發案例的特定指引。|
-|[開發人員概念](ad-rms-concepts-nav.md)|本節的主題涵蓋 RMS 的重要概念。|
-|[API 參考資料](/rights-management/sdk/2.1/api/win/constants)|本節包含所有 API 元素的參考資料主題。|
+|[API 參考資料](api-reference-2-1.md)|本節包含所有 API 元素的參考資料主題。|
 
  
 
@@ -66,6 +64,6 @@ RMS SDK 2.1 可從 Microsoft 下載中心的 [RMS SDK 2.1 下載頁面](http://w
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

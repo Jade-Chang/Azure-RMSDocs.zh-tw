@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
+
 # 了解使用限制
 
 RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種情況，會在使用者嘗試執行某個動作 (例如， 列印文件)，但該文件的 RMS 原則沒有授予他們執行該動作的權限 (例如 「列印」權限) 時發生。
@@ -52,7 +52,6 @@ RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種
 
 ## 相關主題
 
-* [開發人員概念](ad-rms-concepts-nav.md)
 * [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
 * [使用限制參考](usage-restriction-reference.md)
  
@@ -60,9 +59,6 @@ RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
