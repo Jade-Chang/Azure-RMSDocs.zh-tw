@@ -53,7 +53,7 @@ ms.suite: ems
 
 3.  在要安裝 RMS 連接器的電腦上，使用系統管理員權限執行 **RMSConnectorSetup.exe** 。
 
-4.  在 Microsoft Rights Management [連接器設定] 頁面的 [歡迎] 頁面上，選取 **[Install Microsoft Rights Management connector on the computer] (在電腦上安裝 Microsoft Rights Management 連接器)**，然後按一下 **[下一步]**.
+4.  在 Microsoft Rights Management [連接器設定] 頁面的 [歡迎] 頁面上，選取 **[Install Microsoft Rights Management connector on the computer (在電腦上安裝 Microsoft Rights Management 連接器)]**，然後按一下 **[下一步]**.
 
 5.  閱讀並同意 RMS 連接器授權條款，然後按一下 **[下一步]**.
 
