@@ -1,12 +1,28 @@
 ---
-# 必要的中繼資料
+# required metadata
 
-標題：Azure RMS 快速入門教學課程 - 步驟 4 | Azure RMS 說明：教學課程的第四個步驟，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。
-keywords: author: cabailey manager: mbaldwin ms.date: 04/28/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
+title: "Azure RMS 快速入門教學課程 - 步驟 4 | AZURE RMS"
+description: "教學課程的第四個步驟，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。"
+keywords:
+author: cabailey
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
 
-# 選擇性中繼資料
+# optional metadata
 
-ROBOTS: audience: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
+ROBOTS:
+audience:
+ms.devlang:
+ms.reviewer: esaggese
+ms.suite: ems
+ms.tgt_pltfrm:
+ms.technology:
+ms.custom:
 
 ---
 
