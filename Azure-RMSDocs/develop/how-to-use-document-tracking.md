@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 作法：使用文件追蹤 | Azure RMS
+title: 如何使用文件追蹤 | Azure RMS
 description: 文件追蹤功能需要稍微了解如何管理相關聯的中繼資料並註冊服務。
 keywords:
 author: bruceperlerms
@@ -67,9 +67,6 @@ ms.suite: ems
  
 
 
-
-
-
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

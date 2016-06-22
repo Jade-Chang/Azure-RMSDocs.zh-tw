@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -70,9 +70,9 @@ Azure RMS 一律使用 Azure Active Directory 帳戶和相關聯的電子郵件�
 這些帳戶的驗證方法可能會不同，取決於其他組織中的系統管理員對 Azure Active Directory 帳戶的設定方式。 比方說，他們可以使用為這些帳戶、多因素驗證 (MFA)、聯盟所建立的密碼，或是在 Active Directory 網域服務中建立並同步處理至 Azure Active Directory 的密碼。
 
 ## 我可以從公司外部將使用者新增至自訂範本嗎？
-可以。  建立使用者 (和系統管理員) 可以從應用程式中選取的自訂範本，可讓使用者快速並輕鬆地使用您指定的預先定義原則套用資訊保護。 範本中的其中一個設定是誰能夠存取內容，而且您可以從組織內指定使用者和群組，從組織外指定使用者。
+可以。 建立使用者 (和系統管理員) 可以從應用程式中選取的自訂範本，可讓使用者快速並輕鬆地使用您指定的預先定義原則套用資訊保護。 範本中的其中一個設定是誰能夠存取內容，而且您可以從組織內指定使用者和群組，從組織外指定使用者。
 
-若要指定您組織外部的使用者，請使用 [Azure Rights Management 的 Windows PowerShell 模組](../deploy-use/install-powershell.md)：
+若要指定來自組織外的使用者，請在設定範本時將他們以連絡人的身分加入您在 Azure 傳統入口網站選取的群組中。 或使用[適用於 Azure Rights Management 的 Windows PowerShell 模組](../deploy-use/install-powershell.md)：
 
 -   **使用權限定義物件來建立或更新範本**。    在您接著用來建立或更新範本的權限定義物件中，指定外部電子郵件地址及其權限。 使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) Cmdlet 來建立變數，然後將此變數提供給具備 [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) Cmdlet (適用於新的範本) 或 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) Cmdlet (用以修改現有的範本) 的 -RightsDefinition 參數，可指定權限定義物件。 不過，如果您要將這些使用者新增到現有的範本，您必須為範本中的現有群組 (而不只是外部使用者) 定義權限定義物件。
 
@@ -140,6 +140,11 @@ Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS)
 
 如這些範例所示，即使支援 Rights Management API 的所有平台和所有軟體阻止擷取螢幕畫面，技術本身無法永遠阻止使用者分享他們不該分享的資料。 Rights Management 可利用授權和使用原則協助保護您的重要資料，但這套企業級權限管理解決方案應搭配其他控制使用。 例如，實作實體安全性，仔細篩選和監督獲得授權存取您的組織資料的人員，以及投入使用者教育，讓使用者瞭解哪些資料不應該分享。
 
+## 使用者以 [不要轉寄] 與不包含 [轉寄] 權限的範本來保護電子郵件，有什麼不同？
+
+除了名稱和外觀以外，**[不要轉寄]** 既不是 [轉寄] 權限的相反，也不是範本。 它其實是一組權限，包括限制複製、列印及儲存附件，以及限制轉寄電子郵件。 這些權限會透過選擇的收件者以動態方式套用到使用者，而不是由管理員以靜態方式指派。 如需詳細資訊，請參閱 [Configuring usage rights for Azure Rights Management](../deploy-use/configure-usage-rights.md) (設定 Azure Rights Management 的使用權限) 中[電子郵件的 [不要轉寄] 選項](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)一節。
+
+
 ## 哪邊可以找到法律、規範和 SLA 等方面的 Azure RMS 支援資訊？
 Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋找的資訊與 Azure RMS 有關，但與如何使用 Azure RMS 服務無關，請查看下列資源：
 
@@ -191,6 +196,6 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

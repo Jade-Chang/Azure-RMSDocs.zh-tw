@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ ms.suite: ems
 
     -   特定權限：檢視內容、儲存檔案、編輯內容、檢視指派的權限、允許巨集、轉寄、回覆、全部回覆
 
-此外，[RMS 共用應用程式](../rms-client/sharing-app-windows.md)可讓使用者定義自己的權限集。 並且，在 Outlook 用戶端和 Outlook Web Access，使用者還可以針對電子郵件訊息選取 [不可轉寄]  選項。
+此外，[RMS 共用應用程式](../rms-client/sharing-app-windows.md)可讓使用者定義自己的權限集。 而且在 Outlook 用戶端和 Outlook Web Access，使用者還可以選取 [不可轉寄](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 選項。
 
 對許多組織來說，預設範本可能就已經夠用。 但是，如果您想要建立自己的自訂權限原則範本，您也可以那麼做。 建立自訂範本的原因包括下列各項：
 
@@ -72,6 +72,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO1-->
 
 

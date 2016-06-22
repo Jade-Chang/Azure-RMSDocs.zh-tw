@@ -23,34 +23,29 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
+
 # 用戶端
 
-本主題說明 Active Directory Rights Management Services Client 2.1 的用途和功能。
+本主題說明 Rights Management Service Client 2.1 的用途和功能。
 
-AD RMS Client 2.1 是專為您的用戶端電腦設計的軟體，可透過使用 RMS 的應用程式協助保護資訊流通的存取和使用 (不論是安裝在內部部署或 Microsoft 資料中心)。
+RMS Client 2.1 是專為您的用戶端電腦設計的軟體，可透過使用 RMS 的應用程式協助保護資訊流通的存取和使用，不論是安裝在內部部署或 Microsoft 資料中心皆然。 它隨附為選擇性的下載，可以透過確認並接受其授權合約，與協力廠商軟體一起自由發佈，以啟用透過在環境中使用與部署 RMS 伺服器保護權限的用戶端存取內容。
 
-AD RMS Client 2.1 不是 Windows 作業系統元件。 它隨附為選擇性的下載，可以透過確認並接受其授權合約，與協力廠商軟體一起自由發佈，以啟用透過在環境中使用與部署 RMS 伺服器保護權限的用戶端存取內容。
+RMS Client 2.1 推出了可讓使用者建立、發行和取用受保護 (加密) 內容的功能。 具體來說，RMS 啟用應用程式會利用安裝在使用者電腦上的用戶端，執行它內建在版權管理內容中所要執行的工作。
 
-AD RMS Client 2.1 會公開可讓使用者建立、發行和取用受保護 (加密) 內容的功能。 具體來說，RMS 啟用應用程式會利用安裝在使用者電腦上的用戶端，執行它內建在版權管理內容中所要執行的工作。
+Rights Management Services SDK 2.1 與 RMS Client 2.1 搭配使用。 RMS SDK 2.1 內建的已啟用權限應用程式必須使用 AD RMS Client 2.1。
 
-Rights Management Services SDK 2.1 使用 AD RMS Client 2.1。 內建在 RMS SDK 2.1 上的權限啟用應用程式必須使用 AD RMS Client 2.1。
-
-如需詳細資訊，請參閱 [RMS Client 2.0 上的 TechNet 文件](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)。
+如需詳細資訊，請參閱[有關 RMS Client 2.1 的 TechNet 文件](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)。
 
 ## 相關主題
 
 * [概觀](ad-rms-overview.md)
 * [啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
-* [RMS Client 2.0 上的 TechNet 文件](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)
+* [有關 RMS Client 2.1 的 TechNet 文件](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -32,12 +32,11 @@ ms.suite: ems
 
 本文顯示系統管理員和使用者所見內容，以及使用 Azure Rights Management (Azure RMS) 保護敏感或機密資訊的一些常見例子。
 
-> [!NOTE]
-> 在 Azure RMS 保護資料的所有這些例子中，內容擁有者持續擁有資料 (檔案或電子郵件) 的完整存取權，即使套用的保護授與權限給擁有者未隸屬的群組，或套用的保護包含到期日也一樣。
+> [!NOTE] 在這所有 Azure RMS 保護資料的例子中，內容擁有者持續擁有資料 (檔案或電子郵件) 的完整存取權，即使套用的保護將權限授與擁有者未隸屬的群組，或套用的保護包含到期日也一樣。
 >
 > 同樣地，利用 Rights Management 的進階使用者功能，將委派存取權授與您指定的獲授權使用者或服務，IT 即可毫無限制地存取受保護的資料。 此外，IT 可以追蹤和監視受保護資料的使用情況 - 例如，誰在存取資料和何時存取。
 
-如需顯示作用中 RMS 的其他螢幕擷取畫面和影片，請參閱 [Microsoft Rights Management Services 入口網站](http://www.microsoft.com/rms)和 [Microsoft Rights Management (RMS) 小組部落格](http://blogs.technet.com/b/rms)。.
+如需顯示作用中 RMS 的其他螢幕擷取畫面和影片，請參閱 [Microsoft Rights Management Services 入口網站](http://www.microsoft.com/rms)和 [Microsoft Rights Management (RMS) 小組部落格](http://blogs.technet.com/b/rms)。
 
 ## 啟用及設定 Rights Management
 雖然您可以使用 Windows PowerShell 來啟用及設定 Azure RMS，但從管理入口網站來做最簡單。 啟用此服務之後，隨即就有兩個預設範本供系統管理員和使用者選擇，可快速又輕鬆地將資訊保護套用至檔案。 但是，您也可以建立自己的自訂範本以進行其他選項和設定。
@@ -51,7 +50,7 @@ ms.suite: ems
 
 ![系統管理員在步驟 2 中看到的內容](../media/AzRMS_TemplatesPortal_small.png)
 
-**系統管理員在步驟 2 看到的內容：**啟用之後，自動就有兩個權限原則範本可供組織使用。 其中一個範本用於唯讀存取權 (名稱中包含 **[僅限機密檢視]**)，另一個用於讀取和修改存取權 (**[機密]**)。).
+**系統管理員在步驟 2 看到的內容：**啟用之後，自動就有兩個權限原則範本可供組織使用。 其中一個範本用於唯讀存取權 (名稱中包含 [僅限機密檢視])，另一個用於讀取和修改存取權 ([機密])。
 
 將這些範本套用至檔案或電子郵件，就可限制只有組織中的使用者才能存取。 這是防止公司資料洩漏給組織外部人士最快速又輕鬆的方法。
 
@@ -80,9 +79,9 @@ ms.suite: ems
 
 **如需此案例的詳細資訊：**
 
-- 如需逐步指示，請參閱 [啟用 Azure Rights Management](../deploy-use/activate-service.md) 和 [設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。.
+- 如需逐步指示，請參閱[啟用 Azure Rights Management](../deploy-use/activate-service.md) 和[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。
 
-- 若要協助使用者保護重要的公司檔案，請參閱 [協助使用者使用 Azure Rights Management 來保護檔案](../deploy-use/help-users.md)。.
+- 若要協助使用者保護重要的公司檔案，請參閱[協助使用者使用 Azure Rights Management 來保護檔案](../deploy-use/help-users.md)。
 
 接下來，請參閱系統管理員如何套用範本來自動為檔案和電子郵件設定資訊保護的一些範例。
 
@@ -102,7 +101,7 @@ ms.suite: ems
 
 **系統管理員在步驟 2 看到的內容：**在檔案伺服器上，系統管理員設定分類規則和工作，以自動將 [促銷] 資料夾中的所有使用者檔案分類為 [行銷]，並以 RMS 加密來保護。
 
-她選取我們在第一個範例中建立的自訂 RMS 範本，限制只有銷售和行銷部門的成員才能存取：**銷售和行銷 - 僅限讀取和列印**。.
+她選取我們在第一個範例中建立的自訂 RMS 範本，限制只有銷售和行銷部門的成員才能存取： **銷售和行銷 - 僅限讀取和列印**。
 
 因此，該資料夾中的所有文件都自動設定為 [行銷] 分類，並以 [銷售和行銷] RMS 範本來保護。
 
@@ -119,7 +118,7 @@ ms.suite: ems
 
 **如需此案例的詳細資訊：**
 
-- 如需逐步指示，請參閱 [部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)。.
+- 如需逐步指示，請參閱[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)。
 
 ## 使用 Exchange Online 和資料外洩防護原則來自動保護電子郵件
 
@@ -134,6 +133,9 @@ ms.suite: ems
 對於包含這項資訊和傳送到組織外部的電子郵件訊息，設定的規則會利用 RMS 範本來自動套用權限保護，以限制只有公司員工才能存取。
 
 在這裡，規則設定為使用我們第一個範例的其中一個預設範本：[VanArsdel, Ltd – 機密] 。 此外，您也可以看到可供選擇的範本中包含您已建立的任何自訂範本，以及 Exchange 專用的 [禁止轉寄]  選項。
+
+> [!NOTE]
+> 如果您看到的設定選項與圖片有些許差異，在您設定規則時，可能需要先選取 **[其他選項]**。 然後您可以依序選取 **[修改郵件安全性]** > 、**[套用權限保護]**，然後選取 RMS 範本。
 
 ---
 
@@ -153,9 +155,9 @@ ms.suite: ems
 
 **如需此案例的詳細資訊：**
 
--   如需 Azure RMS 與 Exchange Online 如何搭配運作的詳細資訊，請參閱 [應用程式如何支援 Azure Rights Management](applications-support.md) 中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 一節。.
+-   如需 Azure RMS 與 Exchange Online 如何搭配運作的詳細資訊，請參閱[應用程式如何支援 Azure Rights Management](applications-support.md) 中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 一節。
 
--   如需 Exchange Online for Azure RMS 的設定逐步指示，請參閱 [設定 Azure Rights Management 的應用程式](../deploy-use/configure-applications.md) 中的 [Exchange Online：IRM 設定](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。.
+-   如需 Exchange Online for Azure RMS 的設定逐步指示，請參閱[設定 Azure Rights Management 的應用程式](../deploy-use/configure-applications.md)中的 [Exchange Online：IRM 設定](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。
 
 ## 使用 SharePoint Online 和受保護的文件庫自動保護檔案
 
@@ -187,9 +189,9 @@ ms.suite: ems
 
 **如需此案例的詳細資訊：**
 
--   如需 Azure RMS 與 SharePoint 如何搭配運作的詳細資訊，請參閱 [應用程式如何支援 Azure Rights Management](applications-support.md) 中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 一節。.
+-   如需 Azure RMS 與 SharePoint 如何搭配運作的詳細資訊，請參閱[應用程式如何支援 Azure Rights Management](applications-support.md) 中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 一節。
 
--   如需 SharePoint for Azure RMS 的設定逐步指示，請參閱 [設定 Azure Rights Management 的應用程式](../deploy-use/configure-applications.md) 中的 [SharePoint Online 和 OneDrive for Business：IRM 設定](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)。.
+-   如需 SharePoint for Azure RMS 的設定逐步指示，請參閱[設定 Azure Rights Management 的應用程式](../deploy-use/configure-applications.md)中的 [SharePoint Online 和 OneDrive for Business：IRM 設定](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)。
 
 ## 使用者安全地與行動使用者共用附件
 
@@ -235,7 +237,7 @@ Alice 想要限制 Bob 只能檢視和編輯此文件，而不希望他複製或
 
 **如需此案例的詳細資訊：**
 
-- 如需逐步指示，請參閱 [Rights Management 共用應用程式使用者指南](../rms-client/sharing-app-user-guide.md) 中的[保護您以電子郵件共用的檔案](../rms-client/sharing-app-protect-by-email.md) 和 [檢視及使用已保護的檔案](../rms-client/sharing-app-view-use-files.md)。.
+- 如需逐步指示，請參閱《[Rights Management 共用應用程式使用者指南](../rms-client/sharing-app-user-guide.md)》中的[保護您以電子郵件共用的檔案](../rms-client/sharing-app-protect-by-email.md)和[檢視及使用已保護的檔案](../rms-client/sharing-app-view-use-files.md)。
 
 - [Azure Rights Management 快速入門教學課程](../get-started/quick-start-tutorial.md)包含此案例的逐步指示。
 
@@ -244,6 +246,6 @@ Alice 想要限制 Bob 只能檢視和編輯此文件，而不希望他複製或
 現在您已看過 Azure RMS 用途的一些範例，您可能想要了解其運作方式。 如需 Azure RMS 運作方式的技術資訊，請參閱 [Azure RMS 如何運作？](how-does-it-work.md)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

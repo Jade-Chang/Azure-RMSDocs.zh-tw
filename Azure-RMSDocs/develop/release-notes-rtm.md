@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
+
 # 版本資訊
 
 本主題包含此版和舊版 RMS SDK 2.1 的相關重要資訊。
@@ -32,7 +32,8 @@ ms.suite: ems
 
 >[!Note]  本節中的功能文件更新適用於 2015 年 12 月 11 日的 SDK 下載。
 
-- **改良驗證流程**：透過 [Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) 使用 OAuth2 權杖型驗證。 如需這項處理序及其 API 擴充的詳細資訊，請參閱 [ADAL authentication for your RMS enabled application](https://msdn.microsoft.com/en-us/library/windows/desktop/mt661865(v=vs.85).aspx) (RMS 相容應用程式的 ADAL 驗證)。
+- **改良驗證流程**：透過 [Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) 使用 OAuth2 權杖型驗證。 如需這項處理序及其 API 擴充的詳細資訊，請參閱 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md) (已啟用 RMS 應用程式的 ADAL 驗證)。
+
 - **更新至 ADAL**︰藉由更新應用程式來使用 ADAL 驗證而不是 Microsoft Online 登入小幫手，您和您的客戶將能夠︰
 
  - 利用多重要素驗證
@@ -44,14 +45,13 @@ ms.suite: ems
 
 ## 2015 年 12 月更新
 
--   效能改進已在數個區域內實作，包含︰
+- 效能改進已在數個區域內實作，包含︰
+    - 使用僅限授權伺服器時，從主要授權伺服器發行。
+    - 沒有網路連線時，RMS SDK 2.1 會更快失敗。
 
-    使用僅限授權伺服器時，從主要授權伺服器發行。
-
-    沒有網路連線時，RMS SDK 2.1 會更快失敗。
-
--   改善錯誤訊息和疑難排解體驗的許多更新。
--   也請注意，[支援的平台](supported-platforms.md)清單也會更新。
+- 改善錯誤訊息和疑難排解體驗的許多更新。
+- 也請注意，[支援的平台](supported-platforms.md)清單也會更新。
+- RMS SDK 2.1 已不需要預先生產環境，且不再使用應用程式資訊清單。 此開發人員文件集中的這些章節已經移除，整份文件也經過簡化及重新安排。
 
 ## 2015 年 5 月更新
 
@@ -64,15 +64,13 @@ ms.suite: ems
 
     **注意**：我們將不再於 API 公開 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已建置的應用程式仍將繼續運作，因為我們將會私下以 API 程式碼採用旗標。 我們仍然可以藉由變更旗標來達成取得已被取代之舊加密演算法旗標的優點。 如需詳細資訊，請參閱[使用加密](working-with-encryption.md)。
 
-     
-
 -   **伺服器模式應用程式**使用 **IPC\_API\_MODE\_SERVER** 的 [**API 模式值**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)，不再需要應用程式資訊清單。 您可以對生產 RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
 -   **記錄**目前透過檔案和 Windows 的事件追蹤等方法實作。
 -   如果您在 **Windows 7 SP1 或 Windows Server 2008 R2 機器**上執行，請參閱「重要的開發人員注意事項」後面的注意事項。
 
 ## 2015 年 1 月更新
 
--   **支援的受保護檔案 (pfile) 大小增加** - 現在可支援大於 1 GB 的 pfile 大小。 如需 pfiles 的詳細資訊，請參閱[支援檔案格式](supported-file-formats.md)。
+-   **支援的受保護檔案 (pfile) 大小增加** - 現在可支援大於 1 GB 的 pfile 大小。 如需 pfile 的詳細資訊，請參閱[支援的檔案格式](supported-file-formats.md)。
 -   **為了更佳診斷而改善的記錄** - 記錄層級會顯示**錯誤**或**警告**做為應檢閱的訊息。 所有其他訊息，包括仍然顯示的例外狀況，將會記錄為**資訊**。
 
     我們選擇這個方法，讓您不會遺失任何詳細資料。 現在，只有重要訊息會顯示為警告層級。
@@ -96,8 +94,6 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 
     **注意**  進一步支援的資料類型和結構 (未列在這裡) 已新增至檔案 API 擴充功能。 已更新為此版本的所有主題都標示為**初步主題而且可能變更**。
 
-     
-
     -   [**IpcfOpenFileOnHandle**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonhandle)
     -   [**IpcfOpenFileOnILockBytes**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonilockbytes)
     -   [**IpcfGetFileProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetfileproperty)
@@ -112,8 +108,6 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 -   **內容識別碼** 現在可透過 **IPC\_LI\_CONTENT\_ID** 屬性寫入。 如需詳細資訊，請參閱[**授權屬性類型**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)。
 -   **生產資訊清單需求** - 當 RMS 啟用的應用程式/服務正在以伺服器模式執行時，我們將不再需要資訊清單。 如需詳細資訊，請參閱[應用程式類型](application-types.md)。
 -   **文件更新**
-
-    **已重新組織 ** - [如何使用](how-to-use-msipc.md) 以釐清環境設定和應用程式測試的步驟順序。
 
     **測試最佳作法** - 利用 Azure RMS 測試之前為使用內部部署伺服器而新增的指引。 如需詳細資訊，請參閱[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
@@ -135,11 +129,15 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 
     內含檔案 API 新增內容的 Active Directory Rights Management Services 提供下列優點和功能。
 
-    您可以自動化方式保護機密資料，而不需要知道各種檔案格式所使用之資訊版權管理 (IRM) 實作的詳細資料。
+      - 您可以自動化方式保護機密資料，而不需要知道各種檔案格式所使用之資訊版權管理 (IRM) 實作的詳細資料。
 
-    Microsoft Office 檔案、可攜式文件格式 (PDF) 檔案，以及選取的其他檔案類型可以使用原生保護來保護。 如需可利用原生保護加以保護的檔案類型完整清單，請參閱[檔案 API 組態](file-api-configuration.md)。
+      - Microsoft Office 檔案、可攜式文件格式 (PDF) 檔案，以及選取的其他檔案類型可以使用原生保護來保護。 如需可利用原生保護加以保護的檔案類型完整清單，請參閱[檔案 API 組態](file-api-configuration.md)。
 
-    除了系統檔案和 Office 檔案之外，所有檔案都可以使用 RMS 保護的檔案格式 (PFile) 加以保護。
+      - 除了系統檔案和 Office 檔案之外，所有檔案都可以使用 RMS 保護的檔案格式 (PFile) 加以保護。
+
+    檔案 API 透過下列四個新函數實作︰[IpcfDecryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)、[IpcfEncryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)、[IpcfGetSerializedLicenseFromFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile) 和 [IpcfIsFileEncrypted](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)。
+
+    必須在用戶端電腦上安裝 Rights Management Service Client 2.1，且該電腦必須能連接至 RMS 伺服器，才可使用檔案 API。 如需 RMS 伺服器、RMS 用戶端及其功能的詳細資訊，請參閱 TechNet 內容以取得 [RMS 的 IT 專業人員文件](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx)。
 
 -   **問題**︰從頭開始建立授權時，必須明確授與擁有權。
 
@@ -159,9 +157,10 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 
 **答**︰使用 0 做為預設地區。 在此情況下，AD RMS Client 2.1 會以下列順序查閱名稱和描述，並擷取可用的第一項︰
 
-1 - 使用者偏好的 LCID。
-2 - 系統地區設定 LCID。
-3 - 在 Rights Management Server (RMS) 範本中指定的第一個可用語言。
+    1 - User preferred LCID.
+    2 - System locale LCID.
+    3 - The first available language specified in the Rights Management Server (RMS) template.
+
 如果無法擷取任何名稱和描述，則會傳回錯誤。 一個特定的 LCID 可能只有一個名稱和描述。
 
 ## 相關主題
@@ -181,6 +180,6 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -33,10 +33,9 @@ ms.suite: ems
 
 這個解決方案可讓您自動保護執行 Windows Server 的檔案伺服器上的資料夾中的所有檔案，或自動保護符合特定準則的檔案。 例如，已分類為包含機密或敏感資訊的檔案。 這個解決方案會使用 Azure Rights Management (Azure RMS) 來保護檔案，所以您必須在組織中部署這項技術。
 
-> [!NOTE]
-> 雖然 Azure RMS 包含支援檔案分類基礎結構的[連接器](../deploy-use/deploy-rms-connector.md)，但是該解決方案僅支援原生保護 — 例如 Office 檔案。
+> [!NOTE] 雖然 Azure RMS 包含支援檔案分類基礎結構的[連接器](../deploy-use/deploy-rms-connector.md)，但是該解決方案僅支援原生保護，例如 Office 檔案。
 > 
-> 若要支援具有檔案分類基礎結構的所有檔案類型，您必須使用 Windows PowerShell **RMS 保護** 模組，如本文所述。 RMS 保護 Cmdlet，像是 RMS 共用應用程式，支援一般保護以及原生保護，這表示可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md) 中的 [保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節.
+> 若要支援具有檔案分類基礎結構的所有檔案類型，您必須使用 Windows PowerShell **RMS 保護** 模組，如本文所述。 RMS 保護 Cmdlet，像是 RMS 共用應用程式，支援一般保護以及原生保護，這表示可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
 
 接下來的指示適用於 Windows Server 2012 R2 或 Windows Server 2012。 如果您執行其他支援的 Windows 版本，您可能需要針對您的作業系統版本和本文所述版本之間的差異，調整一些步驟。
 
@@ -49,7 +48,7 @@ ms.suite: ems
 
     -   您已識別包含要使用 Rights Management 保護的檔案的本機資料夾。 例如，C:\FileShare。
 
-    -   您已安裝 RMS 保護工具，包括工具 (例如 RMS 用戶端) 和 Azure RMS (例如服務主體帳戶) 的必要條件。 如需詳細資訊，請參閱 [Azure Rights Management Protection Cmdlets](https://msdn.microsoft.com/library/azure/mt433195.aspx) (Azure RMS 保護 Cmdlet).
+    -   您已安裝 RMS 保護工具，包括工具 (例如 RMS 用戶端) 和 Azure RMS (例如服務主體帳戶) 的必要條件。 如需詳細資訊，請參閱 [RMS 保護 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
 
     -   如果您想要針對特定副檔名變更 RMS 保護的預設層級 (原生或一般)，則編輯登錄，如[檔案 API 組態](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx)頁面所述。
 
@@ -63,7 +62,7 @@ ms.suite: ems
 
     -   對稱金鑰
 
--   您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 所有使用者都需要此項，才能存取受到 FCI 和 Azure RMS 保護的檔案。 如果你未執行此步驟 (例如，在測試環境中)，使用者可能會被阻止存取這些檔案。 如果您需要此帳戶組態的詳細資訊，請參閱 [準備 Azure Rights Management](../plan-design/prepare.md).
+-   您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 所有使用者都需要此項，才能存取受到 FCI 和 Azure RMS 保護的檔案。 如果你未執行此步驟 (例如，在測試環境中)，使用者可能會被阻止存取這些檔案。 如果您需要此帳戶組態的詳細資訊，請參閱[準備 Azure Rights Management](../plan-design/prepare.md)。
 
 -   您已識別要使用的 Rights Management 範本，它會保護檔案。 請確定您知道此範本的識別碼，方法是使用 [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) Cmdlet。
 
@@ -129,7 +128,7 @@ ms.suite: ems
         Import-Module "C:\Program Files\WindowsPowerShell\Modules\RMSProtection\RMSProtection.dll"
         ```
 
-3.  簽署指令碼。 如果您未簽署指令碼 (較安全)，您必須在執行它的伺服器上設定 Windows PowerShell。 例如，使用 [以系統管理員身分執行] 選項來執行 Windows PowerShell 工作階段，然後輸入：**Set-ExecutionPolicy Unrestricted**。 不過，這種組態會讓所有未簽署的指令碼執行 (較不安全)。
+3.  簽署指令碼。 如果您未簽署指令碼 (較安全)，您必須在執行它的伺服器上設定 Windows PowerShell。 例如，使用 **[以系統管理員身分執行]** 選項來執行 Windows PowerShell 工作階段，然後輸入：**Set-ExecutionPolicy RemoteSigned**。 不過，這種設定會讓所有未簽署的指令碼在儲存於此伺服器時執行 (較不安全)。
 
     如需有關簽署 Windows PowerShell 指令碼的詳細資訊，請參閱 PowerShell 文件庫中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
@@ -161,11 +160,11 @@ ms.suite: ems
 
         -   **[已啟用]**：保留預設值，預設值為選取此核取方塊。
 
-        -   **描述**：輸入**針對 Rights Management 分類 &lt;資料夾名稱&gt; 資料夾中的所有檔案**.
+        -   **描述**：輸入**針對 Rights Management 分類 &lt;資料夾名稱&gt; 資料夾中的所有檔案**。
 
             將 *&lt;資料夾名稱&gt;* 取代為您選擇的資料夾名稱。 例如，**針對 Rights Management 分類 C:\FileShare 資料夾中的所有檔案**
 
-        -   **範圍**：新增您選擇的資料夾。 例如，**C:\FileShare**.
+        -   **範圍**：新增您選擇的資料夾。 例如，**C:\FileShare**。
 
             請不要選取任何核取方塊。
 
@@ -207,7 +206,7 @@ ms.suite: ems
 
             將 *&lt;資料夾名稱&gt;* 取代為您選擇的資料夾名稱。 例如，**藉由使用 Windows PowerShell 指令碼，以 Rights Management 和範本保護 C:\FileShare 中的檔案**
 
-        -   **範圍**：選取您選擇的資料夾。 例如，**C:\FileShare**.
+        -   **範圍**：選取您選擇的資料夾。 例如，**C:\FileShare**。
 
             請不要選取任何核取方塊。
 
@@ -264,23 +263,22 @@ ms.suite: ems
 
     1.  按一下 **[分類規則]** &gt; **[以所有規則立即執行分類]**
 
-    2.  按一下 **[等候分類完成]**，然後按一下 **[確定]**.
+    2.  按一下 [等待分類完成] ，然後按一下 [確定] 。
 
-2.  等候 [正在執行分類]  對話方塊關閉，然後再檢視自動顯示報告中的結果。 您應該會在 [屬性]  欄位和資料夾中的檔案數目看到 **1** 。 使用 [檔案總管] 進行確認，並且檢查您所選擇的資料夾中的檔案屬性。 在 **[分類]** 索引標籤上，您應該會看到屬性名稱為 **[RMS]**，其 **[值]** 為 **[是]**.
+2.  等候 [正在執行分類]  對話方塊關閉，然後再檢視自動顯示報告中的結果。 您應該會在 [屬性]  欄位和資料夾中的檔案數目看到 **1** 。 使用 [檔案總管] 進行確認，並且檢查您所選擇的資料夾中的檔案屬性。 在 [分類]  索引標籤上，您應該會看到屬性名稱為 [RMS]  ，其 [值]  為 [是] 。
 
 3.  執行檔案管理工作：
 
-    1.  按一下 **[檔案管理工作]** &gt; **[Protect files with RMS] (以 RMS 保護檔案)** &gt; **[立即執行檔案管理工作]**
+    1.  按一下 **[檔案管理工作]** &gt; **[Protect files with RMS]** [以 RMS 保護檔案] &gt; **[Run File Management Task Now]** [立即執行檔案管理工作]
 
-    2.  按一下 **[等候工作執行完成]**，然後按一下 **[確定]**.
+    2.  按一下 [等待工作完成] ，然後按一下 [確定] 。
 
 4.  等候 [正在執行檔案管理工作]  對話方塊關閉，然後再檢視自動顯示報告中的結果。 您應該會在 [檔案]  欄位中看到您所選擇的資料夾中的檔案數目。 確認您所選擇的資料夾中的檔案現在受到 RMS 保護。 例如，如果您選擇的資料夾是 C:\FileShare，在 Windows PowerShell 工作階段中輸入下列項目，並確認沒有任何檔案具有 [未受保護] 狀態：
 
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP]
-    > 疑難排解秘訣：
+    > [!TIP] 疑難排解秘訣：
     > 
     > -   如果您在報告中看到 **0** ，而不是資料夾中的檔案數目，這表示指令碼並未執行。 首先，檢查指令碼本身，方法是在 Windows PowerShell ISE 中載入指令碼以驗證指令碼內容，並嘗試執行以查看是否顯示任何錯誤。 不指定任何引數時，指令碼會嘗試連接和驗證至 Azure RMS。
     > 
@@ -302,12 +300,12 @@ ms.suite: ems
 ## 修改指示以選擇性保護檔案
 當前述的指示運作時，很容易就能加以修改，以便設定更複雜的組態。 例如，使用相同指令碼但是只針對包含個人識別資訊的檔案來保護檔案，並且也許選取具有更嚴格權限的範本。
 
-若要這樣做，請使用其中一個內建分類屬性 (例如，**個人識別資訊**) 或建立您自己的新屬性。 然後建立使用這個屬性的新規則。 例如，您可能會選取 **[內容分類器]**，並選擇值為 **[高]** 的 **[個人識別資訊]** 屬性，然後設定字串或運算式模式，識別要針對此屬性設定的檔案 (例如 **[出生日期]** 字串").
+若要這樣做，請使用其中一個內建分類屬性 (例如，**個人識別資訊**) 或建立您自己的新屬性。 然後建立使用這個屬性的新規則。 例如，您可能會選取 [內容分類器] ，選擇 [個人識別資訊]  屬性，其值是 [高] ，並且設定字串或運算式模式，識別要針對此屬性設定的檔案 (例如字串「**出生日期**」)。
 
-現在您只需要建立新的檔案管理工作，它會使用相同指令碼但是或許會使用不同的範本，以及設定您剛才設定的分類屬性的條件。 例如，不是我們先前設定的條件 (**[RMS]** 屬性、**[等於]**、**[是]**)，選取 **[個人識別資訊]** 屬性，**[運算子]** 值設為 **[等於]** 且 **[值]** 為 **[高]**.
+現在您只需要建立新的檔案管理工作，它會使用相同指令碼但是或許會使用不同的範本，以及設定您剛才設定的分類屬性的條件。 例如，不是我們先前設定的條件 ([RMS] 屬性、[等於] 、[是] )，選取 [個人識別資訊]  屬性，[運算子]  值設為 [等於]  且 [值]  為 [高] 。
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

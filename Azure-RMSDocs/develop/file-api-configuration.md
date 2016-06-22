@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
+
 # 檔案 API 組態
 
 
@@ -40,46 +40,45 @@ ms.suite: ems
 
 下列章節說明用於控制加密的機碼和機碼值。
 
-
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-*類型*︰機碼
+**類型**︰機碼
 
-*描述*︰包含檔案 API 的一般組態。
+**描述**︰包含檔案 API 的一般設定。
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
-*類型︰機碼
+**類型**︰機碼
 
-*描述︰指定特定副檔名的組態資訊；例如，TXT、JPG 等等。
+**描述**︰指定特定副檔名的設定資訊；例如，TXT、JPG 等等。
 
 - 允許萬用字元 '*'；不過，特定副檔名的設定優先於萬用字元設定。 萬用字元不會影響 Microsoft Office 檔案的設定；必須依檔案類型明確停用這些設定。
 - 若要指定沒有副檔名的檔案，請使用 '.'
 - 指定特定副檔名的機碼時，不指定 '' 字元；例如使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` 來指定 .txt 檔案的設定。 (請勿使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`)。
 
-設定機碼中的 *Encryption* 值來指定保護行為。 若未設定 *Encryption* 值，則會執行檔案類型的預設行為。
+設定機碼中的 **Encryption** 值來指定保護行為。 若未設定 **Encryption** 值，則會執行檔案類型的預設行為。
 
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
-*Type: REG_SZ*
+**類型**：REG_SZ
 
-*描述︰包含三個值之一：
+**描述**：包含三個值之一：
 
-- *Off*︰已停用加密。
+- **Off**︰已停用加密。
 
-> [AZURE.NOTE] 這項設定對解密並無任何影響。 只要使用者擁有 EXTRACT 權限，即可解密任何加密的檔案 (不論是使用原生或 Pfile 保護予以加密)。
+> [!Note] 這項設定對解密並無任何影響。 只要使用者擁有 **EXTRACT** 權限，無論加密的檔案是使用原生或 Pfile 保護加密，都能予以解密。
 
-- *Native*︰使用原生加密。 對於 Office 檔案，加密的檔案將具有原始檔案的相同副檔名。 例如，.docx 副檔名的檔案將會加密到副檔名為.docx 的檔案。 對於其他可能已套用原生保護的檔案，會將檔案加密成格式為 p**zzz** 之副檔名的檔案，其中 **zzz** 是原始副檔名。 例如，.txt 檔案會加密為副檔名為 .ptxt 的檔案。 以下包含可能已套用原生保護的副檔名清單。
+- **Native**︰使用原生加密。 對於 Office 檔案，加密的檔案將具有原始檔案的相同副檔名。 例如，.docx 副檔名的檔案將會加密到副檔名為.docx 的檔案。 對於其他可能已套用原生保護的檔案，會將檔案加密成副檔名格式為 p*zzz* 的檔案，其中 *zzz* 是原始副檔名。 例如，.txt 檔案會加密為副檔名為 .ptxt 的檔案。 以下包含可能已套用原生保護的副檔名清單。
 
-- *Pfile*︰使用 PFile 加密。 加密的檔案會有附加到原始副檔名的 .pfile。 例如，加密後，.txt 檔案將具有 txt.pfile 副檔名。
+- **Pfile**︰使用 PFile 加密。 加密的檔案會有附加到原始副檔名的 .pfile。 例如，加密後，.txt 檔案將具有 txt.pfile 副檔名。
 
 
-> [AZURE.NOTE] 此設定對 Office 檔案格式並無任何影響。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值設為 &quot;Pfile”，.docx 檔案仍會利用原生保護加密，且加密的檔案仍會具有副檔名 .docx。
+> [!Note] 此設定對 Office 檔案格式並無任何影響。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值設為 &quot;Pfile”，.docx 檔案仍會利用原生保護加密，且加密的檔案仍會具有副檔名 .docx。
 
 設定任何其他值，或不設定值以執行預設行為。
 
-## 不同檔案格式的預設行為**
+## 不同檔案格式的預設行為
 
 -   **Office 檔案** 啟用原生加密。
 -   **txt、xml、jpg、jpeg、pdf、png、tiff、bmp、gif、giff、jpe、jfif、jif 檔案** 啟用原生加密 (xxx 變成 pxxx)
@@ -106,7 +105,7 @@ ms.suite: ems
 
 **所有其他檔案格式**
 
--   保護類型 = Pfile：sample.*zzz* 會加密並命名為 sample.*zzz*.pfile；其中 zzz 是原始副檔名。
+-   保護類型 = Pfile：sample.*zzz* 會加密並命名為 sample.*zzz*.pfile；其中 *zzz* 是原始副檔名。
 -   Off︰停用加密。
 
 ### 範例
@@ -158,9 +157,6 @@ HKEY_LOCAL_MACHINE
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

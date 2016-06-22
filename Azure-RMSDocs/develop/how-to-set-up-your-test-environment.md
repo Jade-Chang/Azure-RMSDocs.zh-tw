@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 設定測試環境 | Azure RMS
-description: 具備權限的應用程式可以使用不同的伺服器選項進行測試。
+title: 測試您的應用程式 | Azure RMS
+description: 有關如何設定應用程式以供測試的指示。
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -23,48 +23,42 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
-# 設定測試環境
 
-具備權限的應用程式可以使用不同的伺服器選項進行測試。
+# 測試您的應用程式
 
-**重要**  建議的最佳作法是先針對 AD RMS 伺服器，使用 AD RMS 生產前環境來測試 Rights Management Services SDK 2.1 應用程式。 然後，如果您希望客戶能夠搭配使用您的應用程式與 Azure RMS 服務，請移至測試該環境。 如需詳細資訊，請參閱[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
+本主題包含如何設定以進行應用程式測試的指示。
 
- 
+## 指示
 
-### 先決條件
+### 步驟 1︰安裝以進行測試
 
--   [安裝 SDK](create-your-first-rights-aware-application.md)
+您可以使用在 Windows Server 上執行的 Azure RMS 或 RMS 伺服器進行測試，建議您先在 Azure RMS 上進行測試，若您的部署需要 RMS 伺服器，才使用 RMS 伺服器進行測試。
 
-指示
+1. 若要使用 Azure RMS 進行測試，請參閱[如何：使用 ADAL 驗證](how-to-use-adal-authentication.md)。
+2. 若要使用 RMS 伺服器進行測試，請參閱[如何︰安裝和設定 RMS 伺服器](how-to-install-and-configure-an-rms-server.md)。
+3. 以下說明如何安裝開發人員執行階段。
 
-### 步驟 1︰設定您的測試環境
+   您必須在將要測試應用程式的電腦上安裝 Rights Management Service Client 2.1。
+   - 如果您要在開發電腦以外的其他電腦上測試應用程式，可以從 [AD RMS Client 下載頁面](http://www.microsoft.com/en-us/download/details.aspx?id=38396)在該電腦上安裝 RMS Client 2.1。
+   - 如果您將在開發電腦上測試您的應用程式，您應該已安裝 Rights Management Services SDK 2.1。 RMS Client 2.1 此時會以無訊息模式安裝。
 
-若要測試具備權限的應用程式，您必須對專為生產前設定的 RMS 伺服器執行應用程式。 生產前 RMS 伺服器使用生產前/ISV 憑證階層來加密和解密檔案。
+    如需如何安裝 RMS SDK 2.1 的資訊，請參閱[安裝 SDK](create-your-first-rights-aware-application.md)。
 
-如需 AD RMS 憑證階層的詳細資訊，請參閱[了解憑證鏈結](understanding-certificate-chains.md)。
+## 備註
 
-有兩個選項可用來針對 RMS 伺服器測試您的應用程式︰
+本主題中的指引並不完整。 如需如何設定 RMS Client 2.1 的詳細資訊，請參閱 [RMS Client 2.1 Deployment Notes](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) (RMS Client 2.1 部署注意事項)。
 
--   **您可以在 AD RMS ISV 整合環境上執行您的應用程式**。 如果您正在執行 Windows Server 2012、Windows Server 2008 R2 或 Windows Server 2008，且已安裝 Hyper-V，您可以藉由建置使用 AD RMS 整合 VHD 的虛擬機器來部署 AD RMS ISV 整合環境。 AD RMS ISV 整合環境提供專為生產前設定的 RMS 伺服器，而且也安裝了 Active Directory Rights Management Services Client 2.1。 已設定 RMS 伺服器和用戶端的登錄設定。 若要測試您的應用程式，您要在部署整合環境的虛擬機器上執行應用程式。
--   **您可以針對專為生產前設定且部署在網路上的 RMS 伺服器執行您的應用程式**。 在此情況下，您也必須在執行應用程式的電腦上安裝並設定您 AD RMS Client 2.1。 如需如何完成此動作的資訊，請參閱[設定用戶端](how-to-configure-the-ad-rms-client-2-0.md)。 如需如何部署 RMS 伺服器，並針對生產前設定它的資訊，請參閱[安裝並設定伺服器](how-to-install-and-configure-an-rms-server.md)。
+### 相關主題
 
-## 相關主題
-
-* [如何使用](how-to-use-msipc.md)
-* [AD RMS SDK 網路研討會附屬下載頁面](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
-* [設定用戶端](how-to-configure-the-ad-rms-client-2-0.md)
+* [如何安裝和設定 RMS 伺服器](how-to-install-and-configure-an-rms-server.md)
+* [如何︰使用 ADAL 驗證](how-to-use-adal-authentication,md)
 * [安裝 SDK](create-your-first-rights-aware-application.md)
-* [安裝及設定伺服器](how-to-install-and-configure-an-rms-server.md)
-* [了解憑證鏈結](understanding-certificate-chains.md)
+* [RMS Client 2.1 部署注意事項](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

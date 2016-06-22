@@ -23,14 +23,16 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
+
 # 概觀
 
 Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。 透過具備權限的應用程式，內容擁有者將能夠定義誰可以開啟、修改、列印、轉送內容，或採取其他動作。
 
 ## 概觀
 
-AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件。 伺服器元件包含多個在 Windows Server 上執行的 web 服務，例如 Windows Server 2008 R2 或透過雲端通過 Azure 中的 RMS web 服務。 用戶端元件可以在用戶端或伺服器作業系統上執行，並且包含可讓應用程式加密和解密內容、擷取範本和撤銷清單，從伺服器取得授權和憑證，以及其他相關權限管理工作的功能。
+AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件。 執行於 Azure 或 Windows Server 的伺服器是由多個 Web 服務組成。
+
+[用戶端](ad-rms-client.md)元件可以在用戶端或伺服器作業系統上執行，並且包含可讓應用程式將內容加密和解密、擷取範本和撤銷清單，從伺服器取得授權和憑證，以及其他相關權限管理工作的功能。
 
 如需詳細資訊，請參閱[應用程式類型](application-types.md)。
 
@@ -44,24 +46,26 @@ AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件
 
 如需 AD RMS 伺服器、AD RMS 用戶端和其功能的詳細資訊，請參閱 [AD RMS 的 IT 專業人員文件](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)的 TechNet 內容。
 
-若要開始使用，請參閱[開始使用](getting-started-with-ad-rms-2-0.md)。
+本節中的其他主題涵蓋 RMS 架構及其實作。
+
+## 本節內容
+
+| 主題 | 說明 |
+|-------|-------------|
+|[用戶端](ad-rms-client.md) |本主題說明 Rights Management Service Client 2.1 的用途和功能 |
+|[Server](ad-rms-server.md) | 本主題說明 RMS 伺服器的目的和功能，適用於 Azure 及 Windows Server。|
+
 
 ## 相關主題
 
-* [AD RMS 概念](application-types.md)
-* [AD RMS 與 AD RMS 2.1 之間的差異](differences-between-ad-rms-and-ad-rms-2-0.md)
-* [使用者入門](getting-started-with-ad-rms-2-0.md)
+* [RMS 概念](application-types.md)
+* [開始使用](getting-started-with-ad-rms-2-0.md)
 * [AD RMS 的 IT 專業人員文件](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
-* [伺服器](ad-rms-server.md)
-* [用戶端](ad-rms-client.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

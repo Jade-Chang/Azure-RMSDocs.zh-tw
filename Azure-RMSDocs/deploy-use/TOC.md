@@ -22,6 +22,7 @@
 ### [安裝和設定連接器](install-configure-rms-connector.md)
 ### [設定伺服器](configure-servers-rms-connector.md)
 #### [登錄設定](rms-connector-registry-settings.md)
+### [監視連接器](monitor-rms-connector.md)
 ## [驗證 Azure RMS](verify.md)
 ## [協助使用者保護檔案](help-users.md)
 ## [記錄和分析使用方式](log-analyze-usage.md)
@@ -35,6 +36,6 @@
 # [開發和自訂應用程式](/rights-management/develop/developers-guide)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

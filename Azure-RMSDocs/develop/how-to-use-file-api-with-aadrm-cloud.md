@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 啟用您的服務應用程式以使用以雲端為基礎的 RMS | Azure RMS
+title: 如何允許您的服務應用程式使用雲端式 RMS | Azure RMS
 description: 本主題概述設定服務應用程式以使用 Azure Rights Management 的步驟。
 keywords:
 author: bruceperlerms
@@ -23,15 +23,13 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
-# 啟用您的服務應用程式以使用以雲端為基礎的 RMS
+
+# 如何允許您的服務應用程式使用雲端式 RMS
 
 本主題概述設定服務應用程式以使用 Azure Rights Management 的步驟。 如需詳細資訊，請參閱[開始使用 Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)。
 
 **重要**  
-建議的最佳作法是先針對 RMS 伺服器，使用 RMS 生產前環境來測試 Rights Management Services SDK 2.1 應用程式。 然後，如果您希望客戶能夠搭配使用您的應用程式與 Azure RMS 服務，請移至測試該環境。
-
-若要使用 RMS SDK 2.1 服務應用程式搭配 Azure RMS，如果您沒有 Azure RMS 租用戶，您必須要求一個。 透過租用戶要求傳送郵件給 <rmcstbeta@microsoft.com>。
+若要搭配 Azure RMS 使用 Rights Management Services SDK 2.1 服務應用程式，您必須建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](/rights-management/get-started/requirements-subscriptions.md) (Azure RMS 需求：支援 Azure RMS 的雲端訂閱)
 
 ## 先決條件
 
@@ -43,18 +41,18 @@ ms.suite: ems
 -   呼叫 [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)。
 -   設定 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)。
 
+        C++
+        int mode = IPC_API_MODE_SERVER;
+        IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-
-**注意**  如需詳細資訊，請參閱[設定 API 安全性模式](setting-the-api-security-mode-api-mode.md)
+  **注意**  如需詳細資訊，請參閱[設定 API 安全性模式](setting-the-api-security-mode-api-mode.md)
 
      
-
 -   下列步驟為建立 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 結構執行個體的設定，其中以來自 Azure Rights Management Service 的連線資訊填入 **pcCredential** ([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 成員。
 -   在您建立 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 結構的執行個體時，請使用對稱金鑰服務身分識別建立的資訊 (參閱本主題稍早所列的必要條件) 設定 **wszServicePrincipal**、**wszBposTenantId** 和 **cbKey** 參數。
 
-**注意**   由於現有的條件與我們的探索服務，如果您不在北美，不接受其他地區的對稱金鑰認證，因此您必須直接指定您的租用戶 URL。 這可透過 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 或 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist) 的 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 參數完成。
+**注意** 由於探索服務的現有條件，如果您不在北美洲，因為不接受其他地區的對稱金鑰認證，所以您必須直接指定您的租用戶 URL。 這可透過 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 或 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist) 的 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 參數完成。
 
 ## 產生對稱金鑰，並收集所需的資訊
 
@@ -65,17 +63,14 @@ ms.suite: ems
 
 **注意**  您必須是租用戶系統管理員才能使用 Powershell 指令程式。
 
-
 -   啟動 Powershell 並執行下列命令以產生金鑰         `Import-Module MSOnline`
             `Connect-MsolService` (輸入您的系統管理員認證)         `New-MsolServicePrincipal` (輸入顯示名稱)
 -   在它產生對稱金鑰之後，它會輸出金鑰相關資訊，包含金鑰本身和 **AppPrincipalId**。
 
 
-
     因為未提供對稱金鑰，所以已建立下列對稱金鑰：ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
     DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
-
 
 
 ### 找出 **TenantBposId** 和 **Urls** 的指示
@@ -103,7 +98,7 @@ ms.suite: ems
 
 -   建立 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 結構的執行個體，其中包含您的 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 執行個體。
 
-**注意**  *conectionInfo* 成員會利用來自前一次對 `Get-AadrmConfiguration` 呼叫的 URL 設定，並且利用那些欄位名稱在此註明。
+**注意**  *conectionInfo* 成員會利用來自前一次 `Get-AadrmConfiguration` 呼叫的 URL 進行設定，並且利用那些欄位名稱在此註明。
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -162,7 +157,6 @@ ms.suite: ems
 
 ## 相關主題
 
-* [開發人員概念](ad-rms-concepts-nav.md)
 * [開始使用 Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [開始使用 RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)
 * [透過 ACS 建立服務身分識別](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
@@ -182,6 +176,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

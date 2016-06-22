@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2016
+ms.date: 06/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,6 +49,8 @@ ms.suite: ems
 ## Office 365 訂閱
 [免費 30 天試用︰企業版 E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
 
+[免費 30 天試用︰企業版 E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+
 此訂閱是對想要使用 Office 線上服務及使用其資訊版權管理功能 (IRM) (使用 Azure RMS) 的組織所設計。 不過，並非所有 Office 365 訂用帳戶皆包括 Azure RMS。
 
 訂用帳戶  |包括 IRM 
@@ -84,7 +86,7 @@ Exchange Online 方案 1 <br /><br /> Exchange Online 方案 2|否 <br /><br /> 
 例外情況是如果在您取得試用訂用帳戶之前，組織就已使用 Azure RMS 與個人版 RMS 訂用帳戶，則不會在過期時喪失存取權。 所以，即使試用訂閱過期，仍然可以存取先前保護的內容。
 
 ## Enterprise Mobility Suite 訂閱
-[免費 30 天試用](http://go.microsoft.com/fwlink/?LinkId=615385)
+[免費 30 天試用](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
 
 此訂用帳戶是對想要使用 Azure Active Directory Premium、Windows Intune 和 Azure Rights Management 組合的組織所設計。 支援使用 Azure Rights Management 與 Office 和使用 Azure Rights Management Premium 訂用帳戶一樣。 如需 Enterprise Mobility Suite 訂閱的詳細資訊，請參閱 [Microsoft 企業行動化概觀](http://go.microsoft.com/fwlink/?LinkId=615386)。
 
@@ -98,6 +100,6 @@ Exchange Online 方案 1 <br /><br /> Exchange Online 方案 2|否 <br /><br /> 
 ## 後續步驟
 若要檢查其他需求，請參閱 [Azure Rights Management 的需求](requirements-azure-rms.md)。
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

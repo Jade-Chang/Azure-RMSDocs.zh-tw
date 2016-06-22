@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 偵錯具備權限的應用程式 | Azure RMS
+title: 如何對已啟用權限的應用程式偵錯 | Azure RMS
 description: 下列主題說明如何偵錯應用程式及使用 Windows 事件記錄檔。
 keywords:
 author: bruceperlerms
@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
-# 偵錯具備權限的應用程式
+
+# 如何：對已啟用權限的應用程式偵錯
 
 下列主題說明如何偵錯應用程式及使用 Windows 事件記錄檔。
 
@@ -33,6 +33,7 @@ ms.suite: ems
 在 Rights Management Services SDK 2.1 中，會停用我們的執行階段的開發人員版本中的反偵錯檢查。
 
 您可以使用下列登錄機碼來開啟偵錯追蹤。 (若要關閉偵錯追蹤，請將此值變更為 0。)不需要為此版本中的偵錯採取任何行動。
+
 
 ```
 HKEY_LOCAL_MACHINE
@@ -72,15 +73,11 @@ HKEY_LOCAL_MACHINE
 
 ## 相關主題
 
-* [如何使用](how-to-use-msipc.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

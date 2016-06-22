@@ -23,25 +23,33 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
 # 使用者入門
 
-Rights Management Services SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。 平台處理複雜的安全性作法，例如金鑰管理、加密和解密處理，並提供一個簡化的 API 以輕鬆開發應用程式。
+Rights Management Services SDK 2.1 平台可讓開發人員建置透過 RMS Server 或 Azure RMS 運用 RMS 資訊保護的應用程式。 平台處理複雜的安全性作法，例如金鑰管理、加密和解密處理，並提供一個簡化的 API 以輕鬆開發應用程式。
 
 ## 開始使用 RMS SDK 2.1
 
-閱讀這些章節 (下方)︰
+本主題會引導您在測試環境中完成已啟用權限應用程式的設定和執行程序。 下列主題討論如何設定您的開發環境，並依據建議的工作執行順序列出。
 
--   為何要使用 RMS SDK 2.1 保護您的內容
--   核心原則
+## 本節內容
+
+| 主題 | 說明 |
+|-------|-------------|
+| [版本資訊](release-notes-rtm.md) | 本主題包含此版和舊版 RMS SDK 2.1 的相關重要資訊。|
+| [安裝 SDK](install-the-rms-sdk.md) | 本主題會引導您安裝開發人員工具。|
+| [設定 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | 本主題包含如何設定 Visual Studio 專案以使用 RMS SDK 2.1 的指示。|
+| [開發您的應用程式](developing-your-application.md) | 本主題包含已啟用 RMS 應用程式的核心層面基本指導，可以當作您的專屬應用程式開發基礎。|
+| [測試您的應用程式](running-your-first-application.md) |本主題包含如何設定以進行應用程式測試的指示。|
+| [部署到生產環境](deploying-your-application.md) |本主題引導您完成已啟用權限應用程式的部署選項。|
+
+一旦您開始使用，請查看我們的一些其他 [RMS 範例](samples.md)。 然後，隨時注意我們的 [RMS 開發人員的專屬部落格](http://blogs.msdn.com/b/rms/)。
+
 
 請藉由遵循下列主題中的指引來嘗試使用 RMS SDK 2.1︰
 
--   [安裝 SDK](create-your-first-rights-aware-application.md)
+-   [安裝 SDK](install-the-rms-sdk.md)
 -   [測試具備權限的應用程式](running-your-first-application.md)
 -   [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)
-
-一旦您開始使用，請查看我們的一些其他 [RMS 範例](samples.md)。 然後，隨時注意我們的 [RMS 開發人員的專屬部落格](http://blogs.msdn.com/b/rms/)。
 
 ### 為何要使用 RMS SDK 2.1 保護您的內容
 
@@ -65,19 +73,15 @@ RMS SDK 2.1 支援重要的用戶端和伺服器平台範圍。 如需詳細資�
 
 * [AD RMS 範例](samples.md)
 * [AD RMS 開發人員的專屬部落格](http://blogs.msdn.com/b/rms/)
-* [安裝 SDK](create-your-first-rights-aware-application.md)
+* [安裝 SDK](install-the-rms-sdk.md)
 * [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)
 * [概觀](ad-rms-overview.md)
 * [支援的平台](supported-platforms.md)
-* [測試具備權限的應用程式](running-your-first-application.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

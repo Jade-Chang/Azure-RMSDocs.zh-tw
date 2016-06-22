@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 設定 API 安全性模式 | Azure RMS
+title: 如何設定 API 安全性模式 | Azure RMS
 description: 選擇檔案 API 應用程式執行的安全性模式。
 keywords:
 author: bruceperlerms
@@ -23,8 +23,8 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
-# 設定 API 安全性模式
+
+# 如何：設定 API 安全性模式
 
 您可以使用 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函式選擇檔案 API 應用程式執行的安全性模式。
 
@@ -34,12 +34,9 @@ ms.suite: ems
 
 **重要**  應該先設定安全性模式，再呼叫其他Rights Management Services SDK 2.1 函式。 設定安全性模式之後，便無法在目前的處理程序中變更。
 
- 
-
 ## 相關主題
 
 * [應用程式類型](application-types.md)
-* [開發人員概念](ad-rms-concepts-nav.md)
 * [**API 模式值**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
 * [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
  
@@ -47,9 +44,6 @@ ms.suite: ems
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

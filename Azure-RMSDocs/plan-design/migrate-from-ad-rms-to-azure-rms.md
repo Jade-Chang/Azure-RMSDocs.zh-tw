@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,7 +35,7 @@ ms.suite: ems
 
 -   如需關於 Azure RMS 的介紹、Azure RMS 可解決的業務問題、系統管理員和使用者使用時的呈現方式，以及運作方式﹐請參閱[什麼是 Azure Rights Management？](../understand-explore/what-is-azure-rms.md)
 
--   如需 Azure RMS 與 AD RMS 的比較，請參閱 [比較 Azure Rights Management 與 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md).
+-   如需 Azure RMS 與 AD RMS 的比較，請參閱[比較 Azure Rights Management 與 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。
 
 ## 從 AD RMS 移轉至 Azure RMS 的必要條件
 請確定您符合下列必要條件且了解任何限制，再開始移轉至 Azure RMS。
@@ -66,7 +66,7 @@ ms.suite: ems
 
 - **執行 Azure RMS 的所有需求 (包括 Azure RMS 租用戶) (未啟動)**
 
-    請參閱 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md).
+    請參閱 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md)。
 
     雖然您必須有 Azure RMS 租用戶，才能從 AD RMS 進行移轉，但是我們建議在移轉之前，請先不要啟動 Rights Management Service。 從 AD RMS 匯出金鑰和範本並將它們匯入至 Azure RMS 之後，移轉程序即會包括此步驟。 不過，如果已啟用 Azure RMS，仍然可以從 AD RMS 移轉。
 
@@ -77,7 +77,7 @@ ms.suite: ems
 
     - Azure Active Directory 中擁有郵件功能的群組
 
-    請參閱 [準備 Azure Rights Management](prepare.md).
+    請參閱[準備 Azure Rights Management](prepare.md)。
 
 
 - **如果您曾使用 Exchange Server 的資訊版權管理 (IRM) 功能** (如傳輸規則和 Outlook Web Access) 或 SharePoint Server 來搭配 AD RMS：
@@ -101,7 +101,7 @@ ms.suite: ems
 
 -   如果您與外部合作夥伴合作 (如藉由使用信任的使用者網域或同盟)，他們也必須在您移轉至 Azure RMS 時同時移轉，抑或是在您移轉後儘快移轉。 若要繼續存取組織先前使用 AD RMS 保護的內容，他們必須進行用戶端組態變更 (類似您所做的變更)，並包括在這份文件內。
 
-    由於合作夥伴之間的組態可能不盡相同，因此本文件不探討本次重新組態的確切指示。 如需協助，請連絡 Microsoft 客戶支援服務 (CSS)。
+    由於合作夥伴之間的組態可能不盡相同，因此本文件不探討本次重新組態的確切指示。 如需說明，請[連絡 Microsoft 支援服務](../get-started/information-support#support-options-and-community-resources)。
 
 ## 從 AD RMS 移轉至 Azure RMS 的步驟概觀
 
@@ -181,10 +181,10 @@ ms.suite: ems
 
 
 ## 後續步驟
-若要啟動移轉，請移至 [階段 1 - 伺服器端組態](migrate-from-ad-rms-phase1.md).
+若要啟動移轉，請移至[階段 1-伺服器端設定](migrate-from-ad-rms-phase1.md)。
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
