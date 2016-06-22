@@ -800,8 +800,8 @@
 * Archive Datetime: 2016-05-21 18:49:32
 * Handback File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/225dbc66d1524200e0fa657edcca8cad1431f104/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-tw.xlf)
 * Handback Datetime: 2016-06-22 20:58:16
-* Bilingual File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/98a31d8498b6863f74571f6ea804c0e38755b694/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-tw.xlf)
-* Bilingual Datetime: 2016-06-16 10:22:00
+* Bilingual File: [install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/225dbc66d1524200e0fa657edcca8cad1431f104/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/install-configure-rms-connector.c9e952e8e10978fb2e7261d60fa4b885fd8afce2.zh-tw.xlf)
+* Bilingual Datetime: 2016-06-22 21:05:42
 * [Back to Top](#report-top)
 
 ##### <a name='590148218fdd10e88ba764b2dc523a2213e2c8bb27'></a> Source: [Azure-RMSDocs\deploy-use\install-powershell.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/deploy-use/install-powershell.md)
