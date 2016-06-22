@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "ff7d9fb177488f956a2b408aa6612d229bd2f7dd",
-  "LastTranslatedCommit": "1747ecf690d28971ed4c9e3246d01064ccc0deb5",
+  "LastTranslatedCommit": "fe72bc25c17137e4665484e6015b3e6b3cd32dba",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -73706,14 +73706,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "fe72bc25c17137e4665484e6015b3e6b3cd32dba",
+      "TargetFilePath": "Azure-RMSDocs\\develop\\developer-notes.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.zh-tw\\master\\developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf",
+      "HandbackFileCommit": "027e1d9f7849a355ac90a0099486297449e33a5e",
+      "HandbackDateTime": "2016-06-22T16:38:41.8499746Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-06-22T16:38:41.8499746Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.zh-tw\\master\\archive\\developer-notes.ea2fa661b8042fcb35d82351408f0e24b8841d69.zh-tw.xlf",
       "ArchiveFileCommit": "e05e69b27b3c0f8517a4d7acae75b9112b31f7b2",
       "ArchiveFileDateTime": "2016-06-16T13:13:39.028213Z",
