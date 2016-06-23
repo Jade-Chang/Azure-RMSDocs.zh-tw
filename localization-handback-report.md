@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/4aa72824efd231285a1941ff1335437d24c83233/Azure-RMSDocs/scratch.md) | InSyncHandedBackSuccess | [Details](#47e2d48aeba95aba232a1c8a7f02df31d2604a6e372)
 
 ## Item Details
+##### <a name='47e2d48aeba95aba232a1c8a7f02df31d2604a6e372'></a> Source: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/4aa72824efd231285a1941ff1335437d24c83233/Azure-RMSDocs/scratch.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [Azure-RMSDocs\scratch.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/cd856b90b81e4275d7391a4b1cc088a39c1a609d/Azure-RMSDocs/scratch.md)
+* Handoff File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/834262b42edc286c736f9669754bdc8afcef6a4a/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf)
+* Handoff Datetime: 2016-04-27 21:43:30
+* Handoff Reason: Include
+* Archive File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/2fb2411e5cb6a0011d9d341bc76da5b7df5b2f20/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf)
+* Archive Datetime: 2016-05-21 18:49:32
+* Handback File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/c9cf02c196ce483cfa6a28c09fef4f1ced504da6/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf)
+* Handback Datetime: 2016-06-23 10:10:43
+* Bilingual File: [scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/114e80330046ab99889eaee9f870c2b8c9fd37be/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/scratch.fa4cad53100d924953d6bbe13ddd392558d629de.zh-tw.xlf)
+* Bilingual Datetime: 2016-06-16 10:22:00
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
