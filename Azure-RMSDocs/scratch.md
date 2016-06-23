@@ -120,7 +120,7 @@ Is this a real thing?
 
 這是下列的範例： `in-line code`.
 
-## 區塊引述
+## Blockquote
 
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
@@ -131,7 +131,7 @@ Is this a real thing?
 
 ### 連結的影像
 
-[![a[連結影像的替代文字](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
+[![a連結影像的替代文字](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
 
 ### 動畫 GIF
 ![動畫 GIF](./media/hololens.gif)
