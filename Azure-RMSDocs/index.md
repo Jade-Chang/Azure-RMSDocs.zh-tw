@@ -21,7 +21,7 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
     <section id="hero-content">
       <h1>Azure Rights Management 文件</h1>
       <h2>了解如何部署和使用 Azure Rights Management (Azure RMS)。 快速開始使用 Rights Management，以將資訊保護套用至電子郵件、文件和其他機密性資料。</h2>
-      <h3>Azure RMS 新手？ <a href="http://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/" target="_blank">請瀏覽我們的產品網站 &rarr;</a></h3>
+      <h3>Azure RMS 新手？ <a href="http://go.microsoft.com/fwlink/?LinkId=816857" target="_blank">請瀏覽我們的產品網站 &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>準備好實際操作了嗎？</p>
@@ -224,6 +224,6 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 </article>
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 
