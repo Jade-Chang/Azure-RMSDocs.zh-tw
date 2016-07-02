@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 下載並安裝 Rights Management 共用應用程式 | Azure RMS
-description:
-keywords:
+title: "下載並安裝 Rights Management 共用應用程式 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+
 
 ---
 
@@ -37,9 +31,9 @@ ms.suite: ems
 
 2.  在 [電腦]  區段中，按一下 [適用於 Windows 的 RMS 應用程式]  的圖示並儲存 **Setup.exe** 檔案，以安裝 Microsoft Rights Management 共用應用程式。
 
-3.  按兩下下載的 Setup.exe 檔案。 如果系統提示您繼續進行，請按一下 **[是]**.
+3.  按兩下下載的 Setup.exe 檔案。 如果您收到繼續進行的提示，請按一下 [ **是**]。
 
-4.  在 [安裝 Microsoft RMS]  頁面上按 [下一步] ，並等候安裝完成。
+4.  在 [安裝 Microsoft RMS]  頁面上，按 [下一步] ，並等候安裝完成。
 
     > [!NOTE]
     > RMS 共用應用程式需要至少 Microsoft.NET Framework 4.0 版。 安裝程式會檢查是否已安裝，如果尚未安裝，您會看到訊息，具有安裝的連結。
@@ -75,6 +69,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

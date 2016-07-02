@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 自訂範本的 PowerShell 參考 | Azure RMS
-description:
-keywords:
+title: "自訂範本的 PowerShell 參考 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
+
 
 ---
 
@@ -35,7 +29,8 @@ ms.suite: ems
 
 您可以也使用匯出和匯入來備份和還原您的自訂範本。最佳做法是定期備份您的自訂範本，而如果您進行意外的變更，即可輕易地復原為前一版。
 
-> [!IMPORTANT] 若要使用 Windows PowerShell 建立和管理 Azure RMS 權限原則範本，您必須至少擁有 2.0.0.0 版的[適用於 Azure RMS 的 Windows PowerShell 模組](http://go.microsoft.com/fwlink/?LinkId=257721)。
+> [!IMPORTANT]
+> 若要使用 Windows PowerShell 建立和管理 Azure RMS 權限原則範本，您必須至少擁有 2.0.0.0 版的 [Windows PowerShell module for Azure RMS](http://go.microsoft.com/fwlink/?LinkId=257721)。
 > 
 > 如果您先前已安裝此 PowerShell 模組，請在 PowerShell 視窗中執行下列命令來檢查版本號碼： `(Get-Module aadrm -ListAvailable).Version`
 
@@ -64,6 +59,7 @@ ms.suite: ems
 ## 另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: BYOK 定價和限制 | Azure RMS
-description:
-keywords:
+title: "BYOK 定價和限制 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+
 
 ---
 
@@ -34,7 +28,7 @@ ms.suite: ems
 
 
 > [!NOTE]
-> 如需個人版 RMS 的詳細資訊，請參閱 [個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md).
+> 如需個人適用的 RMS 的詳細資訊，請參閱[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
 ![BYOK 不支援 Exchange Online](../media/RMS_BYOK_noExchange.png)
 
@@ -60,12 +54,13 @@ BYOK 和記錄與整合 Azure RMS 的每個應用程式皆能完美合作。 這
 
 ## 後續步驟
 
-如果您已擬定決策來管理您自己的金鑰，請移至 [實作 Azure Rights Management 租用戶金鑰](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key).
+如果您已擬定決策來管理您自己的金鑰，請移至[實作 Azure Rights Management 租用戶金鑰](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key)。
 
 如果您決定要繼續使用 Microsoft 用來管理您的租用戶金鑰的預設組態，請參閱＜規劃及實作 Azure Rights Management 租用戶金鑰＞文章的[後續步驟](plan-implement-tenant-key.md#next-steps)一節。
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

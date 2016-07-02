@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 版本資訊 | Azure RMS
-description:
-keywords:
+title: "版本資訊 | Azure RMS"
+description: 
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+
 
 ---
 
@@ -30,7 +26,8 @@ ms.suite: ems
 
 ## 2016 年 2 月新消息 - SDK 文件更新
 
->[!Note]  本節中的功能文件更新適用於 2015 年 12 月 11 日的 SDK 下載。
+>[!Note]
+> 本節中的功能文件更新適用於 2015 年 12 月 11 日的 SDK 下載。
 
 - **改良驗證流程**：透過 [Azure Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) 使用 OAuth2 權杖型驗證。 如需這項處理序及其 API 擴充的詳細資訊，請參閱 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md) (已啟用 RMS 應用程式的 ADAL 驗證)。
 
@@ -180,6 +177,7 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

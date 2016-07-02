@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 共用應用程式的對話方塊選項 | Azure RMS
-description:
-keywords:
+title: "Rights Management 共用應用程式的對話方塊選項 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+
 
 ---
 
@@ -57,11 +51,11 @@ ms.suite: ems
 -   當您 **對檔案施以一般保護**時，未經授權的人員無法開啟檔案。 但在獲得授權的人員開啟檔案之後，他們可以將檔案以未受保護的方式轉寄給其他人，或儲存在其他人可以存取的位置。 不過，他們會看到訊息，指出他們對檔案擁有的權限，並要求他們遵守，但無法強制執行這項保護。 此外，當您對檔案施以一般保護時，您無法超越授權來限制權限。 比方說，您不能將內容限制為僅檢視或不可列印。
 
     > [!NOTE]
-    > 受一般保護的檔案一律具有副檔名 **.pfile**。.
+    > 受一般保護的檔案一律具有副檔名 **.pfile**。
 
 -   相較之下，當您使用 Rights Management 的**內建 (原生) 保護**來保護支援此選項的應用程式時 (例如 Office 檔案)，檔案保護即生效，即使檔案後來傳送給別人或另存他處也一樣。 當您保護這些檔案時，您可以使用嚴格的權限，例如唯讀，或可編輯但不可列印或複製的權限。 例如，您可以選取 [檢閱者 - 僅檢視] ，以禁止編輯、列印或複製內容。
 
-如需其他技術資訊，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md) 中的 [保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 一節。.
+如需其他技術資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)》中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
 
 ## 自動建立的 .ppdf 檔案是什麼？
 
@@ -84,6 +78,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

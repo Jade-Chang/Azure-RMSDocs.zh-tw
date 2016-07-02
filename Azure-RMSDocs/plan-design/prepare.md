@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 準備 Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "準備 Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 55f092ede1f003c700cb58359bab264772702c39
+
 
 ---
 
@@ -42,12 +36,13 @@ ms.suite: ems
     如果您有 Exchange Online，您可以使用 Exchange 系統管理中心，建立和使用擁有郵件功能的群組。 如果您有 AD DS 且正在同步處理至 Azure AD，您可以建立和使用屬於安全性群組或通訊群組之擁有郵件功能的群組。
 
 ## 啟用 Rights Management
-依預設，當您申請 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 或 Azure AD 帳戶時會停用 [!INCLUDE[o365_2](../includes/o365_2_md.md)] 。 若要啟用組織的 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]，則您必須啟動服務。 如需詳細資訊，請參閱 [啟用 Azure Rights Management](../deploy-use/activate-service.md)。.
+依預設，當您申請 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 或 Azure AD 帳戶時會停用 [!INCLUDE[o365_2](../includes/o365_2_md.md)] 。 若要啟用組織的 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]，則您必須啟動服務。 如需詳細資訊，請參閱[啟用 Azure Rights Management](../deploy-use/activate-service.md)。
 
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

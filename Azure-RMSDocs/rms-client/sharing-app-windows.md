@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 適用於 Windows 的 Rights Management 共用應用程式 | Azure RMS
-description:
-keywords:
+title: "適用於 Windows 的 Rights Management 共用應用程式 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 39eebe7e99fce0eae612f87726764c6810351b77
+
 
 ---
 
@@ -38,13 +32,14 @@ ms.suite: ems
 -   [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 > [!TIP]
-> 另外，還有適用於 Mac 電腦和行動裝置的 Rights Management 共用應用程式。 如需詳細資訊，請參閱 [FAQ for Rights Management Sharing Application for Mobile and Mac Platforms](http://technet.microsoft.com/dn451248) (適用於行動和 Mac 平台之 Rights Management 共用應用程式的常見問題集)。.
+> 另外，還有適用於 Mac 電腦和行動裝置的 Rights Management 共用應用程式。 如需詳細資訊，請參閱 [適用於行動和 Mac 平台之 Rights Management 共用應用程式的常見問題集](http://technet.microsoft.com/dn451248)。
 
 ## 另請參閱
 [適用於 Windows 的 Rights Management 共用應用程式的常見問題集](http://technet.microsoft.com/dn467883)
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

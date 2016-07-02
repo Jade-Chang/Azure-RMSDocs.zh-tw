@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 設定 Azure Rights Management 連接器的伺服器 | Azure RMS
-description:
-keywords:
+title: "設定 Azure Rights Management 連接器的伺服器 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/08/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0b07ecc88b1d2d344f0984d4a805cc033996cc4d
+ms.openlocfilehash: 79171b5931b69ca18d2a2cbe321d5d5887903da2
+
 
 ---
 
@@ -83,7 +77,8 @@ ms.suite: ems
 
 ---
 
-> [!IMPORTANT] 在這兩種情況下，您都必須手動安裝任何必要條件，並設定 Exchange、SharePoint 和檔案分類基礎結構來使用 Rights Management。
+> [!IMPORTANT]
+> 在這兩種情況下，您都必須手動安裝任何必要條件，並設定 Exchange、SharePoint 和檔案分類基礎結構來使用 Rights Management。
 
 對大多數組織而言，使用 Microsoft RMS 連接器的伺服器設定工具以自動設定是較好的選項，因為相較於手動設定，自動設定提供更好的效率和可靠性。
 
@@ -114,7 +109,8 @@ ms.suite: ems
 
 當執行指令碼時，您必須為組織輸入 RMS 連接器的 URL。 輸入通訊協定首碼 (HTTP:// 或 HTTPS://)，及您在 DNS 中為連接器的負載平衡位址所定義的連接器名稱。 例如，https://connector.contoso.com。 工具接著會使用該 URL 來連線執行 RMS 連接器的伺服器，並取得用來建立必要設定的其他參數。
 
-> [!IMPORTANT] 當您執行這項工具時，請確定您指定的是貴組織之負載平衡型 RMS 連接器的名稱，而不是執行 RMS 連接器服務之單一伺服器的名稱。
+> [!IMPORTANT]
+> 當您執行這項工具時，請確定您指定的是貴組織之負載平衡型 RMS 連接器的名稱，而不是執行 RMS 連接器服務之單一伺服器的名稱。
 
 如需每種服務類型的特定資訊，請使用下列各節：
 
@@ -188,7 +184,8 @@ ms.suite: ems
 
 執行 SharePoint 2016 或 SharePoint 2013 的伺服器也必須執行支援 RMS 連接器的 MSIPC 用戶端 2.1 版本。 若要確保您具有受支援的版本，請從 [Microsoft 下載中心](http://www.microsoft.com/download/details.aspx?id=38396)下載最新的用戶端。
 
-> [!WARNING] MSIPC 2.1 用戶端有多個版本，因此請確定您具有 1.0.2004.0 版本或更新版本。
+> [!WARNING]
+> 有多個 MSIPC 2.1 用戶端版本，因此請確定您具有 1.0.2004.0 版本或更新版本。
 >
 > 您可以檢查位於 **\Program Files\Active Directory Rights Management Services Client 2.1** 中 MSIPC.dll 的版本號碼來確認用戶端版本。 屬性對話方塊中會顯示 MSIPC 2.1 用戶端的版本號碼。
 
@@ -252,6 +249,7 @@ ms.suite: ems
 若要監視 RMS 連接器，請參閱 [Monitor the Azure Rights Management connector](monitor-rms-connector.md) (監視 Azure Rights Management 連接器)。 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
