@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 如何向 Azure AD 註冊應用程式並為其啟用 RMS | Azure RMS
-description: 描述 RMS 啟用應用程式的使用者驗證基本概念。
-keywords:
+title: "如何向 Azure AD 註冊應用程式並為其啟用 RMS | Azure RMS"
+description: "描述 RMS 啟用應用程式的使用者驗證基本概念。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/15/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+
 
 ---
 
@@ -53,7 +49,8 @@ ms.suite: ems
 -   [dotnet 適用的 Windows Azure Active Directory 驗證程式庫 (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   若為 Linux SDK，ADAL 程式庫會利用 SDK 來源封裝，可透過 [Github](https://github.com/AzureAD/rms-sdk-for-cpp) 使用。
 
->[!NOTE]  雖然您可能會使用其他驗證程式庫，但仍建議您使用上述其中一個 ADAL。
+>[!NOTE]  
+> 雖然您可能會使用其他驗證程式庫，但仍建議您使用上述其中一個 ADAL。
 
 ### 驗證參數
 
@@ -66,13 +63,15 @@ ADAL 需要數個資訊片段，才能成功向 Azure RMS (或 AD RMS) 驗證使
 而且來自前一個透過 Azure 入口網站註冊的步驟。
 - **重新導向 Uri** – 提供內含 URI 目標的驗證程式庫給驗證碼。 iOS 及 Android 需要特定格式。 ADAL 對應的 GitHub 儲存機制中的讀我檔案說明了這些格式。 此值來自前一個透過 Azure 入口網站註冊的步驟。
 
->[!NOTE] 目前未使用**範圍**，但可能會也因此會保留供日後使用。
+>[!NOTE] 
+> 目前未使用**範圍**，但可能會也因此會保留供日後使用。
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 如果您的應用程式未遵循這些指導方針，Azure RMS 和 Azure AD 工作流程可能會失敗，而且不受 Microsoft.com 支援。 此外，如果在生產應用程式中使用無效的用戶端識別碼，可能會違反 Rights Management 授權合約 (RMLA)。
+>[!NOTE] 
+> 如果您的應用程式未遵循這些指導方針，Azure RMS 和 Azure AD 工作流程可能會失敗，而且不受 Microsoft.com 支援。 此外，如果在生產應用程式中使用無效的用戶端識別碼，可能會違反 Rights Management 授權合約 (RMLA)。
 
 ### 驗證回呼實作的外觀為何
 **驗證碼範例** - 此 SDK 有範例程式碼示範驗證回呼的使用。 為了方便起見，這些程式碼範例會在這裡以及後續的每個連結主題出現。
@@ -271,6 +270,7 @@ ADAL 需要數個資訊片段，才能成功向 Azure RMS (或 AD RMS) 驗證使
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

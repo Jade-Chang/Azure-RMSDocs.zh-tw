@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 建立、設定及發佈自訂範本 | Azure RMS
-description:
-keywords:
+title: "建立、設定及發佈自訂範本 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/30/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
+ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+
 
 ---
 
@@ -66,7 +60,8 @@ ms.suite: ems
 
         4.  如果您尚未啟用 Rights Management，請按一下 [啟用]  ，然後確認您的動作。
 
-            > [!NOTE] 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
+            > [!NOTE]
+            > 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
 
 2.  建立新的範本：
 
@@ -169,6 +164,7 @@ ms.suite: ems
 ## 另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 

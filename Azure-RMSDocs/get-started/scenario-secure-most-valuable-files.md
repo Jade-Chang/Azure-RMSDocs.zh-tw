@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 案例 - 保護您最重要的 (幾個)檔案 | Azure RMS
-description:
-keywords:
+title: "案例 - 保護您最重要的 (幾個)檔案 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+
 
 ---
 
@@ -94,7 +88,8 @@ ms.suite: ems
 
 如需就地保護檔案的詳細資訊，請參閱[使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
 
-> [!TIP]如果要保護的檔案數目對此手動程序而言過多，請考慮使用 [RMS Protection tool](https://www.microsoft.com/en-us/download/details.aspx?id=47256) (RMS 保護工具) 來以範本進行大量保護。
+> [!TIP]
+> 如果要保護的檔案數目對此手動程序而言過多，請考慮使用 [RMS 保護工具](https://www.microsoft.com/en-us/download/details.aspx?id=47256)利用範本來大量保護。
 
 ### 必要時若要監視，請撤銷檔案的存取
 
@@ -152,6 +147,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 
