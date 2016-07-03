@@ -20,6 +20,6 @@
 # [部署與使用用戶端](/rights-management/rms-client/use-client)
 # [開發和自訂應用程式](/rights-management/develop/developers-guide)
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO4-->
 
 

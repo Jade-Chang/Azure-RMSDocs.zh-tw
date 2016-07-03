@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS 開發人員指南 | Azure RMS
-description: 現在提供三個層代的 Rights Management SDK。
-keywords:
+title: "RMS 開發人員指南 | Azure RMS"
+description: "現在提供三個層代的 Rights Management SDK。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 6f8a475907347e545eb3ea46fecc04013fa74c5e
+
 
 ---
 
@@ -49,12 +44,13 @@ ms.suite: ems
 | [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms) | Windows 桌面|[RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 和更新版本的 2.x SDK|**IpcAzureApp** 是示範如何在 Azure 應用程式中使用 RMS SDK，以保護 Azure Blob 儲存體中資料的範例。|
 | [RmsDocumentInspector](https://github.com/Azure-Samples/active-directory-dotnet-rms) | Windows 桌面|[RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 和更新版本的 2.x SDK|**RmsDocumentInspector** 是可提供任何 RMS 保護檔案相關資訊的工具，例如內容識別碼或使用者權限。|
 | [RmsFileWatcher](https://github.com/Azure-Samples/active-directory-dotnet-rms) | Windows 桌面|[RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 和更新版本的 2.x SDK|**RmsFileWatcher** 是範例，示範如何建置 Windows 應用程式，在檔案系統中監看目錄，並在每次變更 RMS 保護原則，例如新增檔案或修改檔案。|
-| [iOS/OS X 使用案例](https://msdn.microsoft.com/en-us/library/dn758307(v=vs.85).aspx) |iOS / OS X|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 和更新版本的 4.x SDK|**Objective C** 程式碼範例代表重要的開發案例，讓您習慣使用 RMS SDK。 範例包括使用 Microsoft 受保護的檔案格式、自訂受保護的檔案格式，以及自訂 UI 控制項。|
+| [iOS/OS X 使用案例](https://msdn.microsoft.com/library/dn758307(v=vs.85).aspx) |iOS / OS X|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 和更新版本的 4.x SDK|**Objective C** 程式碼範例代表重要的開發案例，讓您習慣使用 RMS SDK。 範例包括使用 Microsoft 受保護的檔案格式、自訂受保護的檔案格式，以及自訂 UI 控制項。|
 | [UI 程式庫和範例應用程式](https://github.com/AzureAD/rms-sdk-ui-for-ios) |iOS|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 和更新版本的 4.x SDK|GitHub 上的 **iOS 的 UI 程式庫和範例應用程式**，因此您可以快速地開始，並在您的應用程式中重複使用我們的標準 UI。|
 | [UI 程式庫和範例應用程式](https://github.com/AzureAD/rms-sdk-ui-for-android) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 和更新版本的 4.x SDK|GitHub 上的 **Android 的 UI 程式庫和範例應用程式**，因此您可以快速地開始，並在您的應用程式中重複使用我們的標準 UI。|
 | [Android 使用案例](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 和更新版本的 4.x SDK|**Java 程式碼範例**代表重要的開發案例，讓您習慣使用 RMS SDK。 範例包括使用 Microsoft 受保護的檔案格式、自訂受保護的檔案格式，以及自訂 UI 控制項。|
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

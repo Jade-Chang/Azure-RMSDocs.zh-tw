@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 啟用 RMS 的應用程式中的 Microsoft Rights Management 隱私權聲明 | Azure RMS
-description:
-keywords:
+title: "啟用 RMS 的應用程式中的 Microsoft Rights Management 隱私權聲明 | Azure RMS"
+description: 
+keywords: 
 author: msmbaldwin
 manager: msmbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 751e5e05-fbe2-4769-a5df-1362c0db2108
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e8b1dabe3ba2894bec9a87e6d34123d833c699b
+ms.openlocfilehash: 500701acb03aa9f049cc995f14e544e07556bc4f
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 適用於：內嵌在應用程式中的 Microsoft Rights Management 功能
 
 > [!NOTE]
-> 本隱私權聲明提供其他語言版本，可於 [Microsoft 下載中心](http://www.microsoft.com/download/details.aspx?id=41668) 取得。.
+> 本隱私權聲明提供其他語言版本，可於 [Microsoft 下載中心](http://www.microsoft.com/download/details.aspx?id=41668)取得。
 
 Microsoft 在提供軟體以為　貴用戶帶來個人電腦運算所需之效能、強大功能及便利性的同時，亦致力於保護　貴用戶的隱私權。 本隱私權聲明說明 Microsoft Rights Management 用戶端軟體或服務和任何其他 Microsoft 產品或服務 (顯示或連結至此通知) 的許多資料收集和使用方式。
 
@@ -53,7 +47,7 @@ Rights Management 功能是針對用戶端電腦與行動裝置設計，協助�
 由 Microsoft 收集或透過已啟用 Microsoft Rights Management 的應用程式傳送至 Microsoft 的資訊，可能會在美國或在 Microsoft 或其關係企業、子公司或服務提供者維護設備所在的任何其他國家/地區儲存並處理。 Microsoft 遵守美國商業部有關徵收、使用和持有從歐盟、歐洲經濟區及瑞士接收的數據的 Safe Harbor 體制。
 
 ## Microsoft Update
-當您使用 Microsoft Rights Management 啟用的應用程式與 Windows 時，您可以選擇參加 Microsoft Update。 Microsoft Update (MU) 是提供 Microsoft 軟體更新的服務，包括適用於 Windows 的 Microsoft Rights Management 用戶端。 如需已收集之資訊、使用方式以及如何變更設定的詳細資訊，請參閱 [更新服務隱私權聲明](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142)).
+當您使用 Microsoft Rights Management 啟用的應用程式與 Windows 時，您可以選擇參加 Microsoft Update。 Microsoft Update (MU) 是提供 Microsoft 軟體更新的服務，包括適用於 Windows 的 Microsoft Rights Management 用戶端。 如需已收集資訊、使用方式以及如何變更設定的詳細資訊，請參閱 [更新服務隱私權聲明](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142))。
 
 選擇/控制：針對無訊息安裝，已啟用 Microsoft Rights Management 的應用程式必須遵循適用於 Windows 桌面的相同 MU 設定。 針對使用者安裝，如果 MU 未開啟，您可能會在安裝期間收到提示允許您開啟 MU。 如果您選擇這樣做，這些 MU 設定將套用到所有的 Windows 應用程式。
 
@@ -65,6 +59,7 @@ Microsoft 致力於保護　貴用戶資訊安全。 我們運用各種安全性
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
