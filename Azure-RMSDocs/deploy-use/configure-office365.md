@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Office 365：用戶端和線上服務的組態 | Azure RMS
-description:
-keywords:
+title: "Office 365：用戶端和線上服務的組態 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+
 
 ---
 
@@ -31,15 +25,15 @@ ms.suite: ems
 
 由於 Office 365 原生支援 Azure RMS，因此無需用戶端電腦設定，便能支援 Word、Excel、PowerPoint、Outlook 和 Outlook Web App 等應用程式的資訊版權管理 (IRM) 功能。 所有使用者唯一要做的便是使用其 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 認證登入其 Office 應用程式，並可保護檔案和電子郵件，及使用已接受他人保護的檔案和電子郵件。
 
-不過，我們建議您使用 Rights Management 共用應用程式補充這些應用程式，讓使用者獲得 Office 增益集的好處。 如需詳細資訊，請參閱 [Rights Management 共用應用程式：用戶端的安裝和組態](configure-sharing-app.md).
+不過，我們建議您使用 Rights Management 共用應用程式補充這些應用程式，讓使用者獲得 Office 增益集的好處。 如需詳細資訊，請參閱 [Rights Management 共用應用程式：用戶端的安裝和設定](configure-sharing-app.md)。
 
 ## Exchange Online：IRM 設定
-若要設定 Exchange Online 來支援 Azure RMS，您必須為 Exchange Online 設定資訊版權管理 (IRM) 服務。 若要這樣做，請使用 Windows PowerShell (不需要安裝個別模組)，並執行 [Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx).
+若要設定 Exchange Online 來支援 Azure RMS，您必須為 Exchange Online 設定資訊版權管理 (IRM) 服務。 若要這樣做，請使用 Windows PowerShell (不需要安裝個別模組)，並執行 [Exchange Online 的 PowerShell 命令](https://technet.microsoft.com/library/jj200677.aspx)。
 
 > [!NOTE]
-> 如果您對 Azure RMS 使用客戶管理的租用戶金鑰 (BYOK)，而不是 Microsoft 管理的租用戶金鑰的預設組態，則目前無法將 Exchange Online 設定為支援 Azure RMS 如需詳細資訊，請參閱 [BYOK 定價和限制](../plan-design/byok-price-restrictions.md).
+> 如果您對 Azure RMS 使用客戶管理的租用戶金鑰 (BYOK)，而不是 Microsoft 管理的租用戶金鑰的預設組態，則目前無法將 Exchange Online 設定為支援 Azure RMS 如需詳細資訊，請參閱 [BYOK 定價和限制](../plan-design/byok-price-restrictions.md)。
 >
-> 如果您嘗試在 Azure RMS 使用 BYOK 時設定 Exchange Online，則匯入金鑰 (下列程序中的步驟 5) 的命令會失敗，並出現錯誤訊息 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**。.
+> 如果您嘗試在 Azure RMS 使用 BYOK 時設定 Exchange Online，則匯入金鑰 (下列程序中的步驟 5) 的命令會失敗，並出現錯誤訊息 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]**。
 
 下列步驟提供一組典型命令，您將執行這些命令，讓 Exchange Online 可以使用 Azure RMS：
 
@@ -120,7 +114,7 @@ ms.suite: ems
     Remove-PSSession $Session
     ```
 
-現在使用者可以使用 Azure RMS 來保護其電子郵件訊息。 例如，在 Outlook Web 應用程式中，從擴充的功能表 (**...**) 選取 **[設定權限]**，然後選擇 **[不可轉寄]** 或其中一個可用的範本，將資訊保護套用至電子郵件訊息和任何附件。 不過，因為 Outlook Web App 會快取一天的 UI，所以請在嘗試將資訊保護套用至電子郵件訊息之前，以及執行這些組態命令之後，等待這段時間過去。 在 UI 更新以反映新的組態之前，您不會看到任何選項來自 [ **設定權限** ] 功能表。
+現在使用者可以使用 Azure RMS 來保護其電子郵件訊息。 例如，在 Outlook Web 應用程式中，從擴充的功能表 ( **...** ) 選取 [**設定權限**]，然後選擇 [ **不可轉寄** ] 或其中一個可用的範本，將資訊保護套用至電子郵件訊息和任何附件。 不過，因為 Outlook Web App 會快取一天的 UI，所以請在嘗試將資訊保護套用至電子郵件訊息之前，以及執行這些組態命令之後，等待這段時間過去。 在 UI 更新以反映新的組態之前，您不會看到任何選項來自 [ **設定權限** ] 功能表。
 
 > [!IMPORTANT]
 > 如果您為 Azure RMS 建立新的[自訂範本](configure-custom-templates.md)，或更新範本，則每次您必須執行下列 Exchange Online PowerShell 命令 (如有必要，首先執行步驟 2 和 3)，將這些變更同步至 Exchange Online： `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
@@ -160,18 +154,18 @@ SharePoint 的 IRM 服務啟用後，網站擁有者可以使用 IRM 保護其 S
 SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDrive 文件庫設定 Rights Management 保護了。  使用者可以使用其 OneDrive 中的 [設定]**** 圖示，自行設定此作業。 雖然管理員無法使用 SharePoint 管理中心，為使用者的商務用 OneDrive 設定 Rights Management，但是可以使用 Windows PowerShell 來執行此設定。
 
 > [!NOTE]
-> 如需設定商務用 OneDrive 的詳細資訊，請參閱 Office 文件 [在 Office 365 中設定商務用 OneDrive](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb).
+> 如需設定商務用 OneDrive 的詳細資訊，請參閱 Office 文件[在 Office 365 中設定商務用 OneDrive](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb)。
 
 #### 使用者的組態
 給與使用者下列指示，讓他們可以設定其商務用 OneDrive，並使用 IRM 保護他們的商務檔案。
 
-1.  在 OneDrive，按一下**設定** 圖示開啟 [設定] 功能表，然後按一下 **[網站內容]**.
+1.  在 OneDrive，按一下 [ **設定** ] 圖示開啟 [設定] 功能表，然後按一下 [ **網站內容**]。
 
-2.  將滑鼠停留在 **[文件]** 圖格上，選擇省略符號 (**...**)，然後按一下 **[設定]**。
+2.  將滑鼠停留在 [ **文件** ] 磚上，選擇省略符號 (**...**)，然後按一下 [ **設定**]。
 
-3.  在 **[設定]** 頁面的 **[權限與管理]** 區段中，按一下 **[資訊版權管理]**.
+3.  在 [ **設定** ] 頁面的 [ **權限與管理** ] 區段中，按一下 [ **資訊版權管理**]。
 
-4.  在 **[資訊權限管理設定]** 頁面上，選取 **[限制在此文件庫下載的權限]** 核取方塊、指定您為權限選擇的名稱和描述，然後選擇性地按一下 **[顯示選項]** 以設定選用組態，然後按一下 **[確定]**.
+4.  在 [ **資訊權限管理設定** ] 頁面上，選取 [ **限制在此文件庫下載的權限** ] 核取方塊、指定您為權限選擇的名稱和描述，然後選擇性地按一下 [ **顯示選項** ] 以設定選用組態，然後按一下 [ **確定**]。
 
     如需有關組態選項的詳細資訊，請參閱 Office 文件所提供之＜ [將資訊版權管理套用至清單或文件庫](https://support.office.com/article/Apply-Information-Rights-Management-to-a-list-or-library-3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1) ＞中的指示。
 
@@ -180,9 +174,9 @@ SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDr
 #### 系統管理員的組態
 雖然您無法使用 SharePoint 管理中心，為使用者的商務用 OneDrive 設定 IRM，但是可以使用 Windows PowerShell 來執行此設定。 若要對這些文件庫啟用 IRM，請遵循下列步驟：
 
-1.  下載並安裝 [SharePoint Online 用戶端元件 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038).
+1.  下載並安裝 [SharePoint t Online 用戶端元件 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)。
 
-2.  下載並安裝 [SharePoint Online 管理命令介面](http://www.microsoft.com/en-us/download/details.aspx?id=35588).
+2.  下載並安裝 [SharePoint Online 管理命令介面](http://www.microsoft.com/en-us/download/details.aspx?id=35588)。
 
 3.  複製下列指令碼的內容，並在電腦上將檔案命名為 Set-IRMOnOneDriveForBusiness.ps1。
 
@@ -584,7 +578,7 @@ SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDr
 > [!TIP]
 > 你也可以使用此指令碼，設定 SharePoint Online 文件庫的 IRM。 對於此組態，您可能希望啟用其他選項 [不允許使用者上載不支援 IRM 的文件]****，以確保文件庫只包含受保護的文件。    若要這樣做，請將 `-IrmReject` 參數新增至指令碼中的 Set-IrmConfiguration 命令。
 >
-> 您還需要修改 `$webUrls` 變數 (例如，**https://contoso.sharepoint.com**) 和 `$listTitle` 變數 (例如，**$Reports**).
+> 你還需要修改 `$webUrls` 變數 (例如，**https://contoso.sharepoint.com**) 和 `$listTitle` 變數 (例如，**$Reports**)。
 
 如果您需要對使用者的商務用 OneDrive 程式庫停用 IRM，請參閱[要對商務用 OneDrive 停用 IRM 的指令碼](#script-to-disable-irm-for-onedrive-for-business)一節。
 
@@ -1111,6 +1105,7 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
