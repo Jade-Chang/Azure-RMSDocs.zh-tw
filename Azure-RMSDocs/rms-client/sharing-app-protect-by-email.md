@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案 | Azure RMS
-description:
-keywords:
+title: "保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+
 
 ---
 
@@ -37,7 +31,7 @@ ms.suite: ems
 
 -   選取一個選項，以在有人嘗試開啟這些受保護的附件時收到電子郵件。 每次有人存取檔案時，您都會收到通知，了解誰在嘗試開啟檔案、何時嘗試以及是否成功 (他們是否成功通過驗證)。
 
--   使用文件追蹤網站。 您甚至可以藉由在文件追蹤網站中撤銷檔案的存取權以停止共用檔案。 如需詳細資訊，請參閱 [當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。.
+-   使用文件追蹤網站。 您甚至可以藉由在文件追蹤網站中撤銷檔案的存取權以停止共用檔案。 如需詳細資訊，請參閱[當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。
 
 ## 使用 Outlook：保護您以電子郵件共用的檔案
 
@@ -45,9 +39,9 @@ ms.suite: ems
 
     ![適用於 RMS 共用應用程式的 Outlook 增益集](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    如果看不到這個按鈕，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱 [下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。.
+    如果看不到這個按鈕，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱[下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。
 
-2.  在 [[共用保護的檔案]](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 **[立即傳送]**。.
+2.  在 [共用保護][](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 [立即傳送]。
 
 ### 保護您透過電子郵件共用之檔案的其他方式
 除了使用 Outlook 共用受保護的檔案，您也可以使用這些替代方案：
@@ -68,9 +62,9 @@ ms.suite: ems
 
         ![Office 工具列增益集](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    如果看不到保護的這些選項，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱 [下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。.
+    如果看不到保護的這些選項，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱[下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。
 
-2.  在 [[共用受保護的檔案]](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 **[傳送]**。.
+2.  在 [共用保護][](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 [ 傳送]。
 
 3.  您可能會快速看到一個對話方塊，告訴您檔案已受保護，然後您會看到為您建立的電子郵件訊息，告知您受到 Microsoft RMS 保護之附件的收件者，以及他們必須登入。 當使用者按一下連結以登入時，他們會看到指示與連結，以確保他們可以開啟您的受保護附件。
 
@@ -98,6 +92,7 @@ ms.suite: ems
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
