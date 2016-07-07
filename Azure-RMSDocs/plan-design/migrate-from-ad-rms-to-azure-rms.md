@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 從 AD RMS 移轉至 Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "從 AD RMS 移轉至 Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+
 
 ---
 
@@ -101,7 +95,7 @@ ms.suite: ems
 
 -   如果您與外部合作夥伴合作 (如藉由使用信任的使用者網域或同盟)，他們也必須在您移轉至 Azure RMS 時同時移轉，抑或是在您移轉後儘快移轉。 若要繼續存取組織先前使用 AD RMS 保護的內容，他們必須進行用戶端組態變更 (類似您所做的變更)，並包括在這份文件內。
 
-    由於合作夥伴之間的組態可能不盡相同，因此本文件不探討本次重新組態的確切指示。 如需說明，請[連絡 Microsoft 支援服務](../get-started/information-support#support-options-and-community-resources)。
+    由於合作夥伴之間的組態可能不盡相同，因此本文件不探討本次重新組態的確切指示。 如需說明，請[連絡 Microsoft 支援服務](../get-started/information-support.md#support-options-and-community-resources)。
 
 ## 從 AD RMS 移轉至 Azure RMS 的步驟概觀
 
@@ -185,6 +179,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: iOS 和 OS X 設定 | Azure RMS
-description: iOS 和 OS X 應用程式可以藉由使用 AAD RM，以使用 RMS SDK 4.2 在其應用程式中啟用整合的資訊保護。
-keywords:
+title: "iOS 和 OS X 設定 | Azure RMS"
+description: "iOS 和 OS X 應用程式可以藉由使用 AAD RM，以使用 RMS SDK 4.2 在其應用程式中啟用整合的資訊保護。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+
 
 ---
 
@@ -51,7 +46,7 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Manage
 
     此 SDK 可以用來開發 iOS 7.0 和 OS X 10.8 及更新版本。
 
--   驗證程式庫︰建議您使用 [Azure AD 驗證程式庫 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。 不過，也可以使用其他支援 OAuth 2.0 的驗證程式庫。
+-   驗證程式庫︰建議您使用 [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 不過，也可以使用其他支援 OAuth 2.0 的驗證程式庫。
 
     如需詳細資訊，請參閱 [ADAL for iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) 或 [ADAL for OS X](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)
 
@@ -122,6 +117,7 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Manage
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

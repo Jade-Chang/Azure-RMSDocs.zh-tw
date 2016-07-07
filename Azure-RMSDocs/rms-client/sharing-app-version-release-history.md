@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Rights Management 共用應用程式&colon; 版本發行記錄 | Azure RMS
-description:
-keywords:
+title: "Rights Management 共用應用程式&colon; 版本發行記錄 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
+ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+
 
 ---
 
@@ -33,8 +26,21 @@ Rights Management 小組會定期更新 Rights Management 共用應用程式以�
 
 不會列出 2015 年 1 月 1 日之前的版本。
 
-> [!NOTE]
-> 如果您有任何與 RMS 共用應用程式相關的意見反應或疑問，請將電子郵件訊息傳送至 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。.
+> [!NOTE] 如果您有任何 RMS 共用應用程式的相關意見反應或問題，請將電子郵件訊息傳送給 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。
+
+## 1.0.2191.0 版
+**發行日期**：2016 年 6 月 16 日
+
+**修正**：
+
+- 文件追蹤網站現在會顯示每份追蹤文件的正確檢視數量。
+
+- 現在，所有地區設定的範本皆會顯示為可供使用者使用。
+
+- 針對 PowerPoint 檔案使用 [共用保護] 之後，現可正確儲存本機版本檔案的變更。
+
+- 錯誤訊息的少量輕微錯誤與改進。
+
 
 ## 版本 1.0.2004.0
 **發行日期**：2015 年 12 月 11 日
@@ -62,7 +68,7 @@ Rights Management 小組會定期更新 Rights Management 共用應用程式以�
 
 -   支援 Azure RMS 的多因素驗證 (MFA)，該驗證也會移除使用新式驗證之應用程式對 Microsoft 登入小幫手的相依性。
 
-    如需詳細資訊，請參閱 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md) 主題中的 [Multi-Factor Authentication (MFA) 和 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 一節。.
+    如需詳細資訊，請參閱 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md)主題中的[多因素驗證 (MFA) 與 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 一節。
 
 ## 1.0.1784.0 版
 **發行日期**：2015 年 7 月 30 日
@@ -84,7 +90,7 @@ Rights Management 小組會定期更新 Rights Management 共用應用程式以�
 
 **新功能**：
 
--   支援文件追蹤和撤銷。 如需詳細資訊，請參閱 [當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。.
+-   支援文件追蹤和撤銷。 如需詳細資訊，請參閱[當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。
 
 -   當您選擇 [共用保護] 時的範本支援：
 
@@ -94,7 +100,7 @@ Rights Management 小組會定期更新 Rights Management 共用應用程式以�
 
     -   您不會再看見 **允許在所有裝置上使用** 和 **強制使用限制**的選項。 根據檔案類型，會改為自動選取 [一般保護]  。
 
-    如需詳細資訊，請參閱 [Rights Management 共用應用程式的對話方塊選項](sharing-app-dialog-box.md)。.
+    如需詳細資訊，請參閱 [Rights Management 共用應用程式的對話方塊選項](sharing-app-dialog-box.md)。
 
 ## 1.0.1667.0 版
 **發行日期**：2015 年 1 月 19 日
@@ -109,10 +115,11 @@ Rights Management 小組會定期更新 Rights Management 共用應用程式以�
 
 **新功能**：
 
--   **支援組織內有多個電子郵件網域**：如果您使用 AD RMS 且組織中的使用者有多個電子郵件網域，這項更新可讓您的使用者取用受組織中使用者在其他網域中所保護的內容。 如需詳細資訊，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md) 的 [僅限 AD RMS：支援組織內有多個電子郵件網域](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 一節。.
+-   **支援組織內有多個電子郵件網域**：如果您使用 AD RMS 且組織中的使用者有多個電子郵件網域，這項更新可讓您的使用者取用受組織中使用者在其他網域中所保護的內容。 如需詳細資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)》的[僅限 AD RMS：支援組織內有多個電子郵件網域](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization)一節。
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

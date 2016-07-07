@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 步驟 2：受軟體保護的金鑰移轉至受 HSM 保護的金鑰 | Azure RMS
-description:
-keywords:
+title: "步驟 2：受軟體保護的金鑰移轉至受 HSM 保護的金鑰 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 這些指示是屬於[將路徑從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md)，且只有在您的 AD RMS 金鑰是軟體保護，而且您想要使用受 HSM 保護的租用戶金鑰移轉至 Azure Rights Management 時才適用。 
 
-如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出組態資料，並將它匯入至 Azure RMS](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms) 並選擇不同的組態。
+如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出設定資料，並將它匯入 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)，然後選擇不同的設定。
 
 它是三部分的程序，可將 AD RMS 組態匯入至 Azure RMS，以產生由您管理 (BYOK) 的 Azure RMS 租用戶金鑰。
 
@@ -40,7 +34,7 @@ ms.suite: ems
 
 ## 第 1 篇：從組態資料中擷取 SLC，並將金鑰匯入至內部部署 HSM
 
-1.  使用[規劃及實作 Azure Rights Management 租用戶金鑰](plan-implement-tenant-key.md)主題中[實作整合您自己的金鑰 (BYOK)](plan-implement-tenant-key.md#BKMK_ImplementBYOK) 一節中的下列步驟：
+1.  遵循[規劃及實作 Azure Rights Management 租用戶金鑰](plan-implement-tenant-key.md)的[實作整合您自己的金鑰 (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 一節中的步驟，使用**產生並傳輸您的租用戶金鑰 – 透過網際網路**程序，但以下部分除外：
 
     -   **產生並傳輸您的租用戶金鑰 – 透過網際網路**：**準備連線網際網路的工作站**
 
@@ -79,7 +73,7 @@ ms.suite: ems
 
 ## 第 2 篇：將 HSM 金鑰封裝並傳輸至 Azure RMS
 
-1.  使用[規劃及實作 Azure Rights Management 租用戶金鑰](plan-implement-tenant-key.md)的[實作整合您自己的金鑰 (BYOK)](plan-implement-tenant-key.md#BKMK_ImplementBYOK) 一節中的下列步驟：
+1.  使用[規劃及實作 Azure Rights Management 租用戶金鑰](plan-implement-tenant-key.md)的[實作整合您自己的金鑰 (BYOK)](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 一節中的下列步驟：
 
     -   **產生並傳輸您的租用戶金鑰 – 透過網際網路**： **準備您的租用戶金鑰進行傳輸**
 
@@ -108,11 +102,12 @@ ms.suite: ems
     Disconnect-AadrmService
     ```
 
-您現在可以繼續進行[步驟 3：啟用您的 RMS 租用戶 ](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+您現在可以繼續進行[步驟 3：啟動您的 RMS 租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

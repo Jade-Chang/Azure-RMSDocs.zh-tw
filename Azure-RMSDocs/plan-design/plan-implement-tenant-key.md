@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 規劃及實作 Azure Rights Management 租用戶金鑰 | Azure RMS
-description:
-keywords:
+title: "規劃及實作 Azure Rights Management 租用戶金鑰 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
+ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+
 
 ---
 
@@ -81,9 +75,9 @@ ms.suite: ems
 
 
 > [!IMPORTANT]
-> 若已開始使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (服務已啟動)，且具執行 Office 2010 的使用者，請先[連絡 Microsoft 支援服務](../get-started/information-support#to-contact-microsoft-support)，再執行這些程序。 依據您的案例和需求，您仍可使用 BYOK，但會有一些限制或其他步驟。
+> 若已開始使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (服務已啟動)，且具執行 Office 2010 的使用者，請先[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)，再執行這些程序。 依據您的案例和需求，您仍可使用 BYOK，但會有一些限制或其他步驟。
 > 
-> 如果您的組織具有處理金鑰的特殊原則，亦請[連絡 Microsoft 支援服務](../get-started/information-support#to-contact-microsoft-support)。
+> 如果您的組織具有處理金鑰的特殊原則，亦請[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)。
 
 ### BYOK 的必要條件
 請參閱下表以取得「整合您自己的金鑰 (BYOK)」的必要條件清單。
@@ -114,7 +108,7 @@ ms.suite: ems
     > [!NOTE]
     > 您的租用戶金鑰可在不受信任的電腦和網路之間安全地移動，因為金鑰經過加密，並以存取控制層級權限保護，確保僅可在您 HSM 及 Microsoft 的 Azure RMS HSM 中使用。 您可使用工具組提供的指令碼來確認安全性措施，並從 Thales 閱讀這項工作的詳細資訊： [RMS 雲端中的硬體金鑰管理](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud)(英文)。
 
--   **親自：**您需要[連絡 Microsoft 支援服務](../get-started/information-support#to-contact-microsoft-support)來安排 Azure RMS 金鑰移轉事宜。 您必須到美國華盛頓州雷德蒙德的 Microsoft 辦事處，將您的租用戶金鑰轉交給 Azure RMS 安全園地。
+-   **親自：**您需要[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)來安排 Azure RMS 金鑰移轉事宜。 您必須到美國華盛頓州雷德蒙德的 Microsoft 辦事處，將您的租用戶金鑰轉交給 Azure RMS 安全園地。
 
 如需作法指示，選取要透過網際網路或親自產生和傳輸租用戶金鑰︰ 
 
@@ -136,9 +130,9 @@ ms.suite: ems
 
 2.  請考慮使用使用記錄，它會記錄 RMS 執行的每筆交易。
 
-    如果您決定管理您自己的租用戶金鑰，記錄將包含您租用戶金鑰的相關使用資訊。 請參閱 Excel 中顯示的下列記錄檔範例，其中 **Decrypt** 和 **SignDigest** 要求類型會顯示正在使用的租用戶金鑰。
+    如果您決定管理您自己的租用戶金鑰，記錄將包含您租用戶金鑰的相關使用資訊。 請參閱 Excel 中顯示的下列記錄檔程式碼片段，其中 **KMSPDecrypt** 和 **KMSPSignDigest** 要求類型會顯示正在使用的租用戶金鑰。
 
-    ![使用租用戶金鑰的 Excel 記錄檔](../media/RMS_Logging.gif)
+    ![使用租用戶金鑰的 Excel 記錄檔](../media/RMS_Logging.png)
 
     如需使用記錄的詳細資訊，請參閱[記錄和分析 Azure Rights Management 使用情況](../deploy-use/log-analyze-usage.md)。
 
@@ -148,6 +142,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

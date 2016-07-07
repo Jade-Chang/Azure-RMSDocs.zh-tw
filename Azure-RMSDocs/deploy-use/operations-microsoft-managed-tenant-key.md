@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Microsoft 管理 - 租用戶金鑰生命週期作業 |Azure RMS
-description:
-keywords:
+title: "Microsoft 管理 - 租用戶金鑰生命週期作業 |Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 
 -   您認為租用戶金鑰的正本 (您擁有的副本) 被盜。
 
-您可[連絡 Microsoft 支援服務](../get-started/information-support#to-contact-microsoft-support)以重設您的租用戶金鑰，然後**使用重設 Azure RMS 租用戶金鑰的要求開啟 Azure Rights Management 支援案例**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；重設租用戶金鑰並非免費的支援服務。
+若要重設您的租用戶金鑰，您可以[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)以開啟 **Azure Rights Management 支援案例，並要求重設您的 Azure RMS 租用戶金鑰**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；重設租用戶金鑰並非免費的支援服務。
 
 當您更換租用戶金鑰時，新的內容會以新的租用戶金鑰來保護。 這是分階段逐步進行，所以在一段期間內，有些新的內容會持續以舊的租用戶金鑰來保護。 先前保護的內容仍然是以舊的租用戶金鑰來保護。 為了支援此案例，Azure RMS 會保留舊的租用戶金鑰，所以可以為舊的內容發出授權。
 
@@ -54,7 +48,7 @@ Microsoft 會負責備份您的租用戶金鑰，您不必採取任何動作。
 
 ### 步驟 1：起始匯出
 
--   若要這樣做，請[連絡 Microsoft 支援服務](../get-started/information-support#to-contact-microsoft-support)以**使用 Azure RMS 金鑰匯出的要求開啟 Azure Rights Management 支援案例**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；匯出租用戶金鑰並非免費的支援服務。
+-   若要這樣做，請[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)以開啟 **Azure Rights Management 支援案例，並要求匯出您的 Azure RMS 租用戶金鑰**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；匯出租用戶金鑰並非免費的支援服務。
 
 ### 步驟 2：等待驗證
 
@@ -97,13 +91,14 @@ Microsoft 有專屬團隊負責對產品與服務中的安全性事件做出應�
 
 |事件描述|可能的反應|
 |------------------------|-------------------|
-|租用戶金鑰外洩。|更換租用戶金鑰。 請參閱本文中[重設租用戶金鑰](operations-tenant-key#re-key-your-tenant-key)一節。|
+|租用戶金鑰外洩。|更換租用戶金鑰。 請參閱本文中的[更換租用戶金鑰](operations-microsoft-managed-tenant-key.md#re-key-your-tenant-key)一節。|
 |未獲授權的人或惡意程式碼可能取得權限來使用您的租用戶金鑰，但金鑰本身並未外洩。|更換租用戶金鑰在此無濟於事，必須分析根本原因。 如果是程序或軟體的錯誤導致未獲授權的人取得存取權，則必須解決這種情況。|
 |經由運算可找出 RSA 演算法、金鑰長度或暴力密碼破解攻擊的弱點。|Microsoft 必須更新 Azure RMS 來支援更強韌的新演算法和更長的金鑰長度，並指示所有客戶更新其租用戶金鑰。|
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

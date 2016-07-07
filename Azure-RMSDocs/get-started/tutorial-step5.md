@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Azure RMS 快速入門教學課程 - 步驟 5 | AZURE RMS"
+title: "Azure RMS 快速入門教學課程 - 步驟 5 | Azure RMS"
 description: "教學課程的最後一個步驟，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。"
-keywords:
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+
 
 ---
 
@@ -83,7 +81,8 @@ ms.custom:
 
 或者，如需特定案例與相關聯設定步驟和使用者文件的清單，請參閱 [Azure Rights Management 快速部署指南](../get-started/rapid-deployment-guide.md)。
 
->[!div class="逐步"] [簡介](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[簡介](quick-start-tutorial.md)
 [步驟 1](tutorial-step1.md)
 [步驟 2](tutorial-step2.md)
 [步驟 3](tutorial-step3.md)
@@ -91,6 +90,7 @@ ms.custom:
 *步驟 5*
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

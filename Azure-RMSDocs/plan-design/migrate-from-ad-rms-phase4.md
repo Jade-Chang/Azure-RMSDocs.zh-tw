@@ -1,28 +1,21 @@
 ---
-# required metadata
-
-title: 從 AD RMS 移轉至 Azure Rights Management - 階段 4 | Azure RMS
-description:
-keywords:
+title: "從 AD RMS 移轉至 Azure Rights Management - 階段 4 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ ms.suite: ems
 
 重新設定 Azure RMS 租用戶金鑰：
 
--   如果您的 Azure RMS 租用戶金鑰由 Microsoft 管理︰若要這樣做，請[連絡 Microsoft 支援服務](../get-started/information-support#to-contact-microsoft-support)以**使用重設您 Azure RMS 租用戶金鑰的要求開啟 Azure Rights Management 支援案例**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；重設租用戶金鑰並非免費的支援服務。
+-   如果您的 Azure RMS 租用戶金鑰由 Microsoft 管理︰若要這樣做，請[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)，以**開啟 Azure Rights Management 支援案例，並要求重設您的 Azure RMS 租用戶金鑰**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；重設租用戶金鑰並非免費的支援服務。
 
 -   如果您的 Azure RMS 租用戶金鑰是由您所管理 (BYOK)：重複 BYOK 程序，以透過網際網路或親自產生及建立新的金鑰。
 
@@ -61,6 +54,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

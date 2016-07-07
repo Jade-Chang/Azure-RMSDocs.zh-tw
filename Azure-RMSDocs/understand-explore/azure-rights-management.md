@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure Rights Management 的概觀 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 的概觀 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
+ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+
 
 ---
 
@@ -35,16 +29,17 @@ Rights Management 使用加密、身分識別及授權原則來協助保護您�
 
 例如，您可以設定讓檔案僅供貴組織中的人員存取，或是控制檔案是否可供編輯、限制成唯讀或防止列印。 您也可以使用類似方式設定電子郵件，此外，還可以防止它們被轉寄或防止使用 [全部回覆] 選項。 只要使用標準化原則範本，即可簡化這些保護工作並使工作變得有效率。
 
-知道 Azure Rights Management 的其他名稱嗎？ 請參閱 [服務的替代詞彙清單](azure-rms-aka.md).
+知道 Azure Rights Management 的其他名稱嗎？ 請參閱[服務的替代詞彙清單](azure-rms-aka.md)。
 
 # 後續步驟
 如需更深入的了解和範例，請參閱[什麼是 Azure Rights Management？](what-is-azure-rms.md)
 
-如果您準備好部署組織的 Azure RMS，請使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md).
+如果您準備好部署組織的 Azure RMS，請使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)。
 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

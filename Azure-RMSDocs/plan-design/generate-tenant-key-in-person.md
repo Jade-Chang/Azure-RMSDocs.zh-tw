@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 產生和傳輸您的租用戶金鑰 – 親自轉交 | Azure RMS
-description:
-keywords:
+title: "產生和傳輸您的租用戶金鑰 – 親自轉交 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 -   [步驟 3：建立新金鑰](#step-3-create-a-new-key)
 
 ### 步驟 1：使用 Thales HSM 準備工作站
-在 Windows 電腦上安裝 nCipher (Thales) 支援軟體。 將 Thales HSM 附加至該電腦。 確定 Thales 工具位於您的路徑。 如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
+在 Windows 電腦上安裝 nCipher (Thales) 支援軟體。 將 Thales HSM 附加至該電腦。 確定 Thales 工具位於您的路徑。 如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)。
 
 ### 步驟 2：建立安全園地
 啟動命令提示字元並執行 Thales new-world 程式。
@@ -156,6 +150,7 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

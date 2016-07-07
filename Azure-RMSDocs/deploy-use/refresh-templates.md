@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 重新整理範本 | Azure RMS
-description:
-keywords:
+title: "重新整理範本 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/06/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
+ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+
 
 ---
 
@@ -34,17 +28,17 @@ ms.suite: ems
 
 |應用程式或服務|變更範本後如何重新整理範本|
 |--------------------------|---------------------------------------------|
-|Exchange Online|需要手動設定組態來重新整理範本。<br /><br />如需設定步驟，請參閱下列章節：[僅適用於 Exchange Online：如何設定 Exchange 下載已變更的自訂範本](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)。.|
+|Exchange Online|需要手動設定組態來重新整理範本。<br /><br />如需設定步驟，請參閱下列章節，[僅適用於 Exchange Online：如何設定 Exchange 下載已變更的自訂範本](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)。|
 |Office 365|自動重新整理 - 不需要其他步驟。|
-|Office 2016 和 Office 2013<br /><br />適用於 Windows 的 RMS 共用應用程式|自動重新整理 - 透過排程：<br /><br />若為這些更新版本的 Office︰預設重新整理間隔是每 7 天。<br /><br />若為適用於 Windows 的 RMS 共用應用程式：從 1.0.1784.0 版開始，預設重新整理間隔是每 1 天。 舊版的預設值重新整理間隔是每 7 天。<br /><br />若要強制進行比這個排程更快的重新整理，請參閱下列章節：[適用於 Windows 的 Office 2016、Office 2013 及 RMS 共用應用程式︰如何強制重新整理已變更的自訂範本](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。.|
-|Office 2010|在使用者登入時重新整理。<br /><br />若要強制重新整理，請要求或強制使用者登出後再重新登入。 或者，請參閱下列章節：[僅適用於 Office 2010：如何強制重新整理已變更的自訂範本](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)。.|
+|Office 2016 和 Office 2013<br /><br />適用於 Windows 的 RMS 共用應用程式|自動重新整理 - 透過排程：<br /><br />若為這些更新版本的 Office︰預設重新整理間隔是每 7 天。<br /><br />若為適用於 Windows 的 RMS 共用應用程式：從 1.0.1784.0 版開始，預設重新整理間隔是每 1 天。 舊版的預設值重新整理間隔是每 7 天。<br /><br />若要強制進行比這個排程更快的重新整理，請參閱下列章節，[適用於 Windows 的 Office 2016、Office 2013 及 RMS 共用應用程式︰如何強制重新整理已變更的自訂範本](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。|
+|Office 2010|在使用者登入時重新整理。<br /><br />若要強制重新整理，請要求或強制使用者登出後再重新登入。 或者，請參閱下一節：[僅適用於 Office 2010：如何強制重新整理已變更的自訂範本](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)。|
 對於使用 RMS 共用應用程式的行動裝置，不需要設定其他組態，系統就會自動下載範本 (並在必要時重新整理)。
 
 ## 僅適用於 Exchange Online：如何設定 Exchange 下載已變更的自訂範本
 如果您已經為 Exchange Online 設定資訊版權管理 (IRM)，在您於 Exchange Online 中使用 Windows PowerShell 進行下列變更之前，系統將不會為使用者下載自訂範本。
 
 > [!NOTE]
-> 如需如何在 Exchange Online 中使用 Windows PowerShell 的詳細資訊，請參閱 [搭配 Exchange Online 使用 PowerShell](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)。.
+> 如需關於如何在 Exchange Online 中使用 Windows PowerShell 的詳細資訊，請參閱[搭配 Exchange Online 使用 PowerShell](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)。
 
 您必須在每次變更範本時都執行這個程序。
 
@@ -135,7 +129,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 
 1.  使用登錄編輯程式，刪除 **LastUpdatedTime** 值的資料。 例如，資料可能會顯示 **2015-04-20T15:52**，請刪除 2015-04-20T15:52，就不會顯示任何資料。 使用下列資訊來尋找登錄路徑以刪除這個登錄值資料。
 
-    **登錄路徑︰**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
+    **登錄路徑︰** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
 
     **類型：**REG_SZ
 
@@ -144,7 +138,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
     > [!TIP]
         > 在登錄路徑中，<*MicrosoftRMS_FQDN*> 指的是您的 Microsoft RMS 服務 FQDN。 如果您想要確認此值：
 
-    > 1.  執行 Azure RMS 的 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) Cmdlet。 如果您尚未針對 Azure RMS 安裝 Windows PowerShell 模組，請參閱 [針對 Azure Rights Management 安裝 Windows PowerShell](install-powershell.md)。.
+    > 1.  執行 Azure RMS 的 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) Cmdlet。 如果您尚未針對 Azure RMS 安裝 Windows PowerShell 模組，請參閱[針對 Azure Rights Management 安裝 Windows PowerShell](install-powershell.md)。
     > 2.  從輸出中找出 **LicensingIntranetDistributionPointUrl** 值。
     > 
     >     例如：**LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -192,6 +186,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ## 另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

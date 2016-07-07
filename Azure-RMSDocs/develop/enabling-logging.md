@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 作法：啟用錯誤和效能記錄 | Azure RMS
-description: Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和效能記錄檔上傳。
-keywords:
+title: "作法：啟用錯誤和效能記錄 | Azure RMS"
+description: "Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和效能記錄檔上傳。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: 5faea360de8aa9ecb82abf25b5c1392d52d0afad
+
 
 ---
 
@@ -90,7 +86,7 @@ Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和�
     CustomerExperienceOptions loggingOption = CustomerExperienceConfiguration::Option;
 
 
-**注意** - 上述是 C++ 中的 Windows 程式碼片段。 對於 C\#，請將 ‘::’ 取代為 ‘.’ 以更新語法 。
+**注意** - 上述是 C++ 中的 Windows 程式碼片段。 若是 C\#，請將 ‘::’ 取代為 ‘.’ 以更新語法 。
 
 **Linux / C++** - 此 SDK 有一些基本記錄，不如其他平台廣泛。 如需詳細資訊，請參閱[可攜 C++ 的 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) 上 "README.md" 的**疑難排解**一節。
 
@@ -99,6 +95,7 @@ Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和�
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

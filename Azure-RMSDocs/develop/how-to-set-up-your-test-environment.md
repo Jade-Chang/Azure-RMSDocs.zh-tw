@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 測試您的應用程式 | Azure RMS
-description: 有關如何設定應用程式以供測試的指示。
-keywords:
+title: "測試您的應用程式 | Azure RMS"
+description: "有關如何設定應用程式以供測試的指示。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,21 +10,19 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b01f009ec3dffbb3fe671da8a19929e53c67fb79
+ms.openlocfilehash: cf86b07ba057d8999a156ae397ff7200b12a3f5e
+
 
 ---
 
 # 測試您的應用程式
 
-本主題包含如何設定以進行應用程式測試的指示。
+本主題包含如何進行應用程式測試設定的指示。
 
 ## 指示
 
@@ -42,7 +38,7 @@ ms.suite: ems
    - 如果您要在開發電腦以外的其他電腦上測試應用程式，可以從 [AD RMS Client 下載頁面](http://www.microsoft.com/en-us/download/details.aspx?id=38396)在該電腦上安裝 RMS Client 2.1。
    - 如果您將在開發電腦上測試您的應用程式，您應該已安裝 Rights Management Services SDK 2.1。 RMS Client 2.1 此時會以無訊息模式安裝。
 
-    如需如何安裝 RMS SDK 2.1 的資訊，請參閱[安裝 SDK](create-your-first-rights-aware-application.md)。
+    如需如何安裝 RMS SDK 2.1 的資訊，請參閱[安裝 SDK](install-the-rms-sdk.md)。
 
 ## 備註
 
@@ -51,14 +47,15 @@ ms.suite: ems
 ### 相關主題
 
 * [如何安裝和設定 RMS 伺服器](how-to-install-and-configure-an-rms-server.md)
-* [如何︰使用 ADAL 驗證](how-to-use-adal-authentication,md)
-* [安裝 SDK](create-your-first-rights-aware-application.md)
+* [如何︰使用 ADAL 驗證](how-to-use-adal-authentication.md)
+* [安裝 SDK](install-the-rms-sdk.md)
 * [RMS Client 2.1 部署注意事項](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS 用戶端部署注意事項 | Azure RMS
-description:
-keywords:
+title: "RMS 用戶端部署注意事項 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2bd8aba91b9b65777c2319baea848e8313cbccda
+ms.openlocfilehash: ffddda9a144b23b64b54df4fe4d25ec62600599d
+
 
 ---
 
@@ -42,7 +36,8 @@ RMS 用戶端可以免費轉散發，並與其他應用程式和 IT 解決方案
 ## 安裝 RMS 用戶端
 RMS 用戶端包含在名為 **setup_msipc_***<arch>***.exe** 的安裝程式可執行檔中，其中 *<arch>* 是 **x86** (針對 32 位元用戶端電腦) 或 **x64** (針對 64 位元用戶端電腦)。 64 位元 (x64) 安裝程式套件會同時安裝 32 位元執行階段可執行檔，以與 64 位元作業系統安裝上執行的 32 位元應用程式相容，以及安裝 64 位元執行階段，支援原生 64 位元應用程式。 32 位元 (x86) 安裝程式不會在 64 位元 Windows 安裝上執行。
 
-> [!NOTE] 您需要提高權限，才能安裝 RMS 用戶端，例如本機電腦上的 Administrators 群組成員。
+> [!NOTE]
+> 您需要提高權限，才能安裝 RMS 用戶端，例如本機電腦上的 Administrators 群組成員。
 
 您可以使用下列其中一 種安裝方法來安裝 RMS 用戶端：
 
@@ -192,7 +187,8 @@ RMS 服務探索可讓 RMS 用戶端在保護內容之前檢查哪一個 RMS 伺
 
 2.  在登錄編輯器中，瀏覽至 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**。
 
-    > [!IMPORTANT] 如果您是在 64 位元電腦上執行 32 位元應用程式，路徑會如下：**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT]
+    > 如果您是在 64 位元電腦上執行 32 位元應用程式，路徑會如下：**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
 3.  若要建立 ServiceLocation 子機碼，請以滑鼠右鍵按一下 [MSIPC]、指向 [新增]、按一下 [機碼]，然後輸入 [ServiceLocation]。
 
@@ -233,7 +229,8 @@ RMS 服務探索可讓 RMS 用戶端在保護內容之前檢查哪一個 RMS 伺
 
     **值：** https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE] 如果舊授權伺服器同時指定內部網路和外部網路 URL，則必須在 LicensingRedirection 機碼下，對這兩個 URL 設定新的名稱和值對應。
+    > [!NOTE]
+    > 如果舊授權伺服器同時指定了內部網路和外部網路 URL，則必須在 LicensingRedirection 機碼下，對這兩個 URL 設定新的名稱和值對應。
 
 5.  針對需要重新導向的所有伺服器重複前一個步驟。
 
@@ -241,6 +238,7 @@ RMS 服務探索可讓 RMS 用戶端在保護內容之前檢查哪一個 RMS 伺
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

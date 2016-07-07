@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 產生並傳輸您的租用戶金鑰 – 透過網際網路 | Azure RMS
-description:
-keywords:
+title: "產生並傳輸您的租用戶金鑰 – 透過網際網路 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -48,7 +42,7 @@ ms.suite: ems
 > [!NOTE]
 > 如果您先前已下載此 Windows PowerShell 模組，請執行下列命令來檢查版本號碼至少為 2.1.0.0： `(Get-Module aadrm -ListAvailable).Version`
 
-如需安裝指示，請參閱 [安裝 Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md)。.
+如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md)。
 
 ### 步驟 2：取得您的 Azure Active Directory 租用戶識別碼
 使用 [ **以系統管理員身分執行** ] 選項啟動 Windows PowerShell，然後執行下列命令：
@@ -85,15 +79,15 @@ ms.suite: ems
 |亞洲|AzureRMS-BYOK-tools-AsiaPacific.zip|
 工具組包含下列組件：
 
--   名稱開頭為 **BYOK-KEK-pkg-** 的金鑰互換 (KEK) 封裝.
+-   名稱開頭為 **BYOK-KEK-pkg-** 的金鑰互換 (KEK) 封裝。
 
--   名稱開頭為 **BYOK-SecurityWorld-pkg-** 的安全園地封裝.
+-   名稱開頭為 **BYOK-SecurityWorld-pkg-** 的安全園地封裝。
 
--   名為 **verifykeypackage.py** 的 Python 指令碼.
+-   名為 **verifykeypackage.py**的 Python 指令碼。
 
 -   名為 **KeyTransferRemote.exe** 的命令列可執行檔、名為 **KeyTransferRemote.exe.config** 的中繼資料檔案，以及相關聯的 DLL。
 
--   名為 **vcredist_x64.exe** 的 Visual C++ 可轉散發套件.
+-   名為 **vcredist_x64.exe** 的 Visual C++ 可轉散發套件。
 
 將封裝複製到 USB 磁碟機或其他可攜式儲存裝置。
 
@@ -112,7 +106,7 @@ ms.suite: ems
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
-如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud).
+如需詳細資訊，請參閱 Thales HSM 隨附的使用者指南，或造訪 Azure RMS 的 Thales 網站，網址為 [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud)。
 
 ### 步驟 2：在中斷連線的工作站上安裝 BYOK 工具組
 從 USB 磁碟機或其他可攜式儲存裝置中複製 BYOK 工具組封裝，然後執行下列動作：
@@ -188,7 +182,7 @@ new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-
 
 2.  確認看到下列表示成功驗證的結果： **結果：成功**
 
-此指令碼會驗證簽章者鏈結，最高至 Thales 根金鑰。 此根金鑰的雜湊內嵌於指令碼中，且其值必須為 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**。 您亦可造訪 [Thales 網站](http://www.thalesesec.com/)，個別確認此值.
+此指令碼會驗證簽章者鏈結，最高至 Thales 根金鑰。 此根金鑰的雜湊內嵌於指令碼中，且其值必須為 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**。 您亦可造訪 [Thales 網站](http://www.thalesesec.com/)，個別確認此值。
 
 您現在準備建立新金鑰，它將是您的 RMS 租用戶金鑰。
 
@@ -269,11 +263,11 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-當您執行此命令時，以*產生您的租用戶金鑰*一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中指定的相同值來取代 *contosokey*。
+當您執行此命令時，請遵循＜產生您的租用戶金鑰＞一節的[步驟 1：建立安全園地](#step-1-create-a-security-world)中指定的相同值來取代 *contosokey*。
 
 系統會要求您插入安全園地 ACS 卡片，並詢問其密碼或 PIN (如果指定的話)。
 
-命令完成時，您會看到 **[結果: 成功]**，並將在名為 key_xferacId_*&lt;contosokey&gt;* 的檔案中看到降低權限的租用戶金鑰複本.
+命令完成時，您會看到 [結果: 成功]，並可在名為 key_xferacId_*&lt;contosokey&gt;* 的檔案中看到降低權限的租用戶金鑰複本。
 
 ### 步驟 2：檢查金鑰的新複本
 選擇性執行 Thales 公用程式來確認新租用戶金鑰上的最低權限：
@@ -290,7 +284,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-當您執行這些命令時，以*產生您的租用戶金鑰*一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中指定的相同值來取代 *contosokey*。
+當您執行此命令時，請遵循＜產生您的租用戶金鑰＞一節的[步驟 1：建立安全園地](#step-1-create-a-security-world)中指定的相同值來取代 *contosokey*。
 
 ### 步驟 3：使用 Microsoft 的金鑰互換來加密您的金鑰
 視您的地區而定，執行下列其中一個命令：
@@ -315,7 +309,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
 
 執行此命令時，請使用下列指示：
 
--   以*產生您的租用戶金鑰*一節的[步驟 1：建立安全園地](##step-1-create-a-security-world)中用來產生金鑰的識別碼來取代 *contosokey*。
+-   遵循＜產生您的租用戶金鑰＞一節的[步驟 1：建立安全園地](#step-1-create-a-security-world)中用來產生金鑰的識別碼來取代 *contosokey*。
 
 -   以您在*準備連線網際網路的工作站*一節的[步驟 2：取得您的 Azure Active Directory 租用戶識別碼](#step-2-get-your-azure-active-directory-tenant-id)中所擷取 Azure Active Directory 租用戶識別碼來取代 *GUID*。
 
@@ -383,6 +377,7 @@ Get-AadrmKeys
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

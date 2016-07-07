@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 使用檔案伺服器資源管理員 FCI 的 Windows PowerShell Script for Azure RMS 保護 | Azure RMS
-description:
-keywords:
+title: "使用檔案伺服器資源管理員 FCI 的 Windows PowerShell Script for Azure RMS 保護 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: a1771c37bffa2af60773a5befdd35c14f684c942
+
 
 ---
 
@@ -29,10 +23,10 @@ ms.suite: ems
 
 *適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
-此頁面包含複製和編輯的指令碼範例，如 [具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md) 所示.
+此頁面包含複製和編輯的指令碼範例，如[具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md)所示。
 
-*&#42;&#42;免責聲明&#42;&#42;：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。 此*
-*指令碼範例依現狀提供，不含任何種類的擔保。*
+*&#42;&#42;免責聲明&#42;&#42;：這個範例指令碼不受任何 Microsoft 標準支援計劃或服務的支援。這個範例指令碼是*
+*依現狀提供，不含任何種類的擔保。*
 
 ```
 <#
@@ -177,9 +171,10 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-返回 [具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md).
+返回[具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md)。
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

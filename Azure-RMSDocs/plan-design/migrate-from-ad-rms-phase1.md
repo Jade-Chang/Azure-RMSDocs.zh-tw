@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 從 AD RMS 移轉至 Azure Rights Management - 階段 1 | Azure RMS
-description:
-keywords:
+title: "從 AD RMS 移轉至 Azure Rights Management - 階段 1 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 06/23/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: defe008a9b78026ccac584bb06762228456a2916
+
 
 ---
 
@@ -47,7 +40,8 @@ ms.suite: ems
 ### 從 AD RMS 匯出組態資料
 針對具有您組織受保護內容的所有信任的發佈網域，在所有 AD RMS 叢集上執行下列程序。 您不需要在僅授權叢集上執行此程序。
 
-> [!NOTE] 如果您使用 Windows Server 2003 Rights Management 而非這些指示，請遵循 [Migrating from Windows RMS to AD RMS in a Different Infrastructure](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (在不同的基礎結構中從 Windows RMS 移轉至 AD RMS) 一文中的 [Export SLC, TUD, TPD and RMS private key](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) (匯出 SLC、TUD、TPD 和 RMS 私密金鑰) 程序。
+> [!NOTE]
+> 如果您使用 Windows Server 2003 Rights Management 而非這些指示，請依照[在不同的基礎結構中從 Windows RMS 移轉至 AD RMS](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) 文章的[匯出 SLC、TUD、TPD 和 RMS 私密金鑰](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx)程序。
 
 #### 匯出組態資料 (信任的發佈網域資訊)
 
@@ -80,7 +74,8 @@ ms.suite: ems
 
 -   使用外部加密提供者所保護的密碼。
 
-> [!NOTE] 如需搭配使用硬體安全性模組與 AD RMS 的詳細資訊，請參閱 [Using AD RMS with Hardware Security Modules](http://technet.microsoft.com/library/jj651024.aspx) (搭配使用 AD RMS 與硬體安全性模組)。
+> [!NOTE]
+> 如需搭配使用硬體安全性模組與 AD RMS 的詳細資訊，請參閱 [搭配使用 AD RMS 與硬體安全性模組](http://technet.microsoft.com/library/jj651024.aspx)。
 
 兩個 Azure RMS 租用戶金鑰拓撲選項如下︰Microsoft 管理您的租用戶金鑰 (**由 Microsoft 管理**) 或您管理您的租用戶金鑰 (**由客戶管理**)。 管理您自己的 Azure RMS 租用戶金鑰時，有時稱為「整合您自己的金鑰」(BYOK)，而且需要 Thales 的硬體安全性模組 (HSM)。 如需詳細資訊，請參閱 [規劃及實作 Azure Rights Management 租用戶金鑰](plan-implement-tenant-key.md)文件。
 
@@ -98,7 +93,8 @@ ms.suite: ems
 |使用外部加密提供者所保護的密碼|由客戶管理 (BYOK)|如需如何將金鑰傳輸至 Thales nShield 硬體安全性模組 (HSM)的指示，請連絡加密提供者的供應商。 然後，遵循這個資料表後面的 **HSM 保護的金鑰移轉至 HSM 保護的金鑰**程序的指示。|
 啟動這些程序之前，請確定您可以存取先前在匯出信任的發佈網域時所建立的 .xml 檔案。 例如，這些檔案可能儲存至您從 AD RMS 伺服器移至連線網際網路之工作站的 USB 隨身碟。
 
-> [!NOTE] 不論您儲存這些檔案的方法為何，由於這些資料含有私密金鑰，因此請使用最佳的安全措施來加以保護。
+> [!NOTE]
+> 不論您儲存這些檔案的方法為何，由於這些資料含有私密金鑰，因此請使用最佳的安全措施來加以保護。
 
 
 若要完成步驟 2，請選擇您的移轉路徑的指示︰ 
@@ -120,27 +116,51 @@ ms.suite: ems
 
 如果已啟動 Azure RMS 租用戶，而且您可以識別這些電腦，請確定您在這些電腦上執行 CleanUpRMS_RUN_Elevated.cmd 指令碼，如步驟 5 中所述。 執行這個指令碼會強制它們重新初始化使用者環境，使他們可以下載更新的租用戶金鑰和匯入的範本。
 
+此外，如果您已建立想要在移轉之後使用的自訂範本，就必須匯出並匯入這些範本。 下一個步驟說明此程序。 
+
 ## 步驟 4： 設定匯入的範本
 因為所匯入範本的預設狀態為 [ **已封存**]，所以如果您想要使用者能夠搭配使用這些範本與 Azure RMS，則必須將此狀態變更為 [ **已發佈** ]。
 
-此外，如果 AD RMS 中的範本使用 **ANYONE** 群組，此群組會在您將範本匯入到 Azure RMS 時自動刪除；您必須將對等的群組或使用者和相同的權限，手動新增到已匯入的範本。 Azure RMS 的對等群組稱為 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**。 例如，Contoso 的此群組看起來可能如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。
+從 AD RMS 匯入之範本的外觀和行為就像您可以在 Azure 傳統入口網站中建立的自訂範本一樣。 若要將匯入的範本變更為發佈，以讓使用者看到這些範本並從應用程式中加以選取，請參閱[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。
 
-如果不確定您的 AD RMS 範本是否包括 ANYONE 群組，您可以和使用範例 Windows PowerShell 指令碼來識別這些範本。 如需使用 Windows PowerShell with AD RMS 的詳細資訊，請參閱[使用 Windows PowerShell 來管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
+除了發佈新匯入的範本，您可能還需要進行兩個重要的範本變更，才能繼續移轉。 為了讓使用者在移轉程序期間具有更一致的體驗，請不要對匯入的範本進行其他變更；亦不要發佈 Azure RMS 隨附的兩個預設範本，或在此時建立新的範本。 相反地，請等到完成移轉程序並解除委任 AD RMS 伺服器。
+
+針對此步驟，您可能需要進行的範本變更如下：
+
+- 如果您在移轉之前已於 Azure RMS 中建立自訂範本，則必須手動匯出並匯入這些範本。
+
+- 如果您的 AD RMS 範本有使用 **ANYONE** 群組，就必須手動新增對等的群組和權限。
+
+## 如果您在移轉之前已建立自訂範本，程序如下：
+
+如果您在移轉之前已建立自訂範本，則在移轉之後及啟動 Azure RMS 之前或之後，使用者將無法使用範本，即使這些範本已設為 [已發佈] 亦同。 您必須先執行下列作業，使用者才可以使用範本︰ 
+
+1. 執行 [Get-AadrmTemplate](https://msdn.microsoft.com/library/dn727079.aspx)，以找出這些範本，並記下其範本識別碼。 
+
+2. 使用 [Export-AadrmTemplate](https://msdn.microsoft.com/library/dn727078.aspx) 這個 Azure RMS PowerShell Cmdlet，以匯出範本。
+
+3. 使用 [Import-AadrmTemplate](https://msdn.microsoft.com/library/dn727077.aspx) 這個 Azure RMS PowerShell Cmdlet，以匯入範本。
+
+然後，您可以發佈或封存這些範本，如同在移轉之後建立的任何其他範本一樣。
+
+
+## 如果您的 AD RMS 範本有使用 **ANYONE** 群組，程序如下：
+
+如果您的 AD RMS 範本有使用 **ANYONE** 群組，在您將範本匯入到 Azure RMS 時，系統會自動移除此群組；您必須手動將對等群組或使用者以及相同的權限新增到已匯入的範本。 Azure RMS 的對等群組稱為 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**。 例如，Contoso 的此群組看起來可能如下所示：**AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**。
+
+如果您不確定 AD RMS 範本是否包含 ANYONE 群組，可以使用下列 Windows PowerShell 範例指令碼來識別這些範本。 如需使用 Windows PowerShell with AD RMS 的詳細資訊，請參閱[使用 Windows PowerShell 來管理 AD RMS](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)。
 
 如果您在 Azure 傳統入口網站中複製其中一個預設權限原則範本，就可以看到您的組織自動建立的群組，然後在 [權限] 頁面上識別 [使用者名稱]。 不過，您無法使用 Azure 傳統入口網站將此群組新增至手動建立或匯入的範本，而必須改用下列其中一個 Azure RMS PowerShell 選項：
 
--   使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) PowerShell Cmdlet 將 "AllStaff" 群組和權限定義為權限定義物件，然後再次為其他各群組或使用者 (其已授予除了 ANYONE 群組以外原始範本中的權限) 執行此命令。 接著使用 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/en-us/library/azure/dn727076.aspx) Cmdlet 將所有這些權限定義物件新增至範本。
+-   使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) PowerShell Cmdlet 將 "AllStaff" 群組和權限定義為權限定義物件，然後再次為其他各群組或使用者 (其已授予除了 ANYONE 群組以外原始範本中的權限) 執行此命令。 接著，使用 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) Cmdlet 將上述所有權限定義物件新增至範本。
 
 -   使用 [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) Cmdlet 將範本匯出到您可以編輯的 .XML 檔，以將 "AllStaff" 群組和權限新增到現有的群組和權限，然後使用 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) Cmdlet 將此變更匯回到 Azure RMS 中。
 
-> [!NOTE] 此 "AllStaff" 對等群組與 AD RMS 中的 ANYONE 組不完全相同："AllStaff" 群組包含您的 Azure 租用戶中的所有使用者，而 ANYONE 群組包含所有經過驗證的使用者 (有可能組織外部的使用者)。
+> [!NOTE]
+> 此 "AllStaff" 對等群組與 AD RMS 中的 ANYONE 組不完全相同："AllStaff" 群組包含您的 Azure 租用戶中的所有使用者，而 ANYONE 群組包含所有經過驗證的使用者 (有可能組織外部的使用者)。
 > 
 > 由於這兩個群組之間的差異，除了 "AllStaff" 群組以外，您可能還需要新增外部使用者。 目前不支援群組的外部電子郵件地址。
 
-從 AD RMS 匯入之範本的外觀和行為就像您可以在 Azure 傳統入口網站中建立的自訂範本一樣。 若要將匯入的範本變更為已發佈，讓使用者可以看到它們並從應用程式中選取它們，或者對範本進行其他變更，請參閱[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。
-
-> [!TIP]
-> 為了讓使用者在移轉程序期間具有更一致的經驗，除了這兩個變更以外，請不要對匯入的範本進行變更；並且不要發佈 Azure RMS 隨附的兩個預設範本，或在此時建立新的範本。 相反地，請等到完成移轉程序並解除委任 AD RMS 伺服器。
 
 ### 範例 Windows PowerShell 指令碼來識別包括 ANYONE 群組的 AD RMS 範本
 本節包含範例指令碼，以協助您識別有 ANYONE 群組定義的 AD RMS 範本，如前一節所述。
@@ -185,6 +205,7 @@ Remove-PSDrive MyRmsAdmin -force
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

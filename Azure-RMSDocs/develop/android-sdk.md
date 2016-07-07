@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Android 設定 |Azure RMS
-description: Android 應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
-keywords:
+title: "Android 設定 |Azure RMS"
+description: "Android 應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+
 
 ---
 
@@ -50,7 +45,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
     此 SDK 可以用來開發 Android 4.0.3 (API 層級 15) 和更新版本中。
 
--   驗證程式庫︰建議您使用 [Azure AD 驗證程式庫 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。 不過，也可以使用其他支援 OAuth 2.0 的驗證程式庫。
+-   驗證程式庫︰建議您使用 [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 不過，也可以使用其他支援 OAuth 2.0 的驗證程式庫。
 
     如需詳細資訊，請參閱 [Android 適用的 ADAL](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)。
 
@@ -106,7 +101,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
     ![將它匯入至工作區](../media/Android-setup-07.png)
 
--   按一下 [下一步] 。 瀏覽以選取您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 SDK 應該會以 **com.microsoft.rightsmanagement** 出現在清單中。
+-   按 **[下一步]**。 瀏覽並選取您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 SDK 應該會以 **com.microsoft.rightsmanagement** 出現在清單中。
 
     ![巡覽以選取資料夾](../media/Android-setup-08c.jpg)
 
@@ -122,7 +117,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 -   按一下 [ **確定**]。
 
-    由於 MS RMS SDK 4.2 會連接 AAD RM，所以必須授與應用程式 **INTERNET** 和 **ACCESS\_NETWORK\_STATE**。 若要這樣做，請在專案的根目錄中開啟 *AndroidManifest.xml* 檔案。
+    由於 MS RMS SDK 4.2 會連接 AAD RM，所以必須授與應用程式 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 的權限。 若要這樣做，請在專案的根目錄中開啟 *AndroidManifest.xml* 檔案。
 
     若要新增權限，請按一下 [新增]，然後選取 [使用權限]。
 
@@ -131,12 +126,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 -   您可以藉由在文字編輯器檢視中檢視資訊清單，以確認資訊清單步驟。 請確定出現下列幾行︰
 
 
-    <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **注意**  SDK 會使用 *android.support.v4*
@@ -158,6 +148,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
