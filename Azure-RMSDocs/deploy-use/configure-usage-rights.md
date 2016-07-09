@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
 ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
 
@@ -276,7 +277,8 @@ Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應�
  
 - 如果她套用 **[不要轉寄]** 選項，收件者將無法藉由將電子郵件移到另一個位置，與行銷部門中的任何人共用資訊。 在此案例中，只有原始收件者 (及電子郵件擁有者) 能夠檢視電子郵件中的資訊。
 
-> [!NOTE] 在只有寄件者選擇的收件者應該看到電子郵件中的資訊時，請使用 **[不要轉寄]**。 除了寄件者選擇的收件者以外，要將權限限制在管理員事先指定的某群人時，則對電子郵件使用範本。
+> [!NOTE] 
+> 在只有寄件者選擇的收件者應該看到電子郵件中的資訊時，請使用 **[不要轉寄]**。 除了寄件者選擇的收件者以外，要將權限限制在管理員事先指定的某群人時，則對電子郵件使用範本。
 
 
 
@@ -287,6 +289,6 @@ Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應�
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

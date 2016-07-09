@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 部署您的應用程式 | Azure RMS
-description: 本主題概要說明並引導您完成啟用權限的應用程式的部署選項
-keywords:
+title: "部署您的應用程式 | Azure RMS"
+description: "本主題概要說明並引導您完成啟用權限的應用程式的部署選項"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,19 +10,17 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
+ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+
 
 ---
 
-# 部署到生產前環境
+# 部署到生產環境
 
 
 本主題概要說明並引導您完成啟用權限的應用程式的部署選項。
@@ -84,7 +80,8 @@ RMS Client 2.1 是專為您的用戶端電腦設計的軟體，可透過使用 R
 RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下載的形式發行，可透過確認並接受其授權合約，與協力廠商軟體一起自由發佈，以啟用透過在環境中使用與部署 RMS 伺服器保護權限的用戶端存取內容。
 
 
-> [!IMPORTANT] AD RMS Client 2.1 為架構限定，必須符合目標作業系統的架構。
+> [!IMPORTANT]
+> AD RMS Client 2.1 是特定的架構，而且必須符合目標作業系統的架構。
 
 
 ## RMS Client 2.1 安裝選項
@@ -137,6 +134,7 @@ RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下�
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 
