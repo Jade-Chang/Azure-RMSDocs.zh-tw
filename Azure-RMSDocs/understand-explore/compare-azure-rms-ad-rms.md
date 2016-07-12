@@ -53,7 +53,7 @@ Azure RMS 的一些主要差異：
 > [!NOTE]
 > 為了更容易進行這項比較，這裡的部分資訊是重複取自 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md)。 如需更特定的 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 支援和版本資訊，請參考該來源。
 
-|Azure RMS|Azure RMS|
+|Azure RMS|AD RMS|
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|
 |支援 Microsoft Online Services (例如 Exchange Online 和 SharePoint Online 以及 Office 365) 中的資訊版權管理 (IRM) 功能。<br /><br />也支援內部部署 Microsoft 伺服器產品 (例如 Exchange Server、SharePoint Server 以及執行 Windows Server 和檔案分類基礎結構 (FCI) 的檔案伺服器)。|支援內部部署 Microsoft 伺服器產品 (例如 Exchange Server、SharePoint Server 以及執行 Windows Server 和檔案分類基礎結構 (FCI) 的檔案伺服器)。|
 |啟用組織之間和任何組織內使用者之間的隱含信任。 這表示受保護的內容可以在同組織的使用者之間共用，或是當使用者具有 [!INCLUDE[o365_1](../includes/o365_1_md.md)]、[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 或使用者註冊使用個人用 RMS 時，也可以跨組織共用。|必須使用信任的使用者網域 (TUD) 或您使用 Active Directory Federation Services (AD FS) 建立的同盟信任，在兩個組織之間的直接點對點關係中明確定義信任。|
