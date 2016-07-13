@@ -1,46 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cbdb969e9910142f49b078069fc578059f9d8785/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md) | InSyncHandedBackSuccess | [Details](#81541dbadabe3417299f47447384934373275e7564)
- [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/67129d6cdac124947fc07aa4d42523686227752e/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md) | OutofSyncHandedBackSuccess | [Details](#8e77298121a84f6feb16a992da81bd9c3bb7b20b353)
 
 ## Item Details
-##### <a name='81541dbadabe3417299f47447384934373275e7564'></a> Source: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/cbdb969e9910142f49b078069fc578059f9d8785/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\getting-started-with-ad-rms-2-0.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/11e28938c6f251e3e1cfd3f93bbe1ceafa21a779/Azure-RMSDocs/develop/getting-started-with-ad-rms-2-0.md)
-* Handoff File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/9d5f6d1e4e10108b819f12ce35a8f0912331f7c2/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf)
-* Handoff Datetime: 2016-06-29 00:04:03
-* Handoff Reason: Include
-* Archive File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/03d0792f3dd2f0bc277c509d8fb1c3a782ab45f0/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/archive/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf)
-* Archive Datetime: 2016-07-01 23:59:54
-* Handback File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/0590ac3cebb14ba307a26a6668c9647a559c7feb/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf)
-* Handback Datetime: 2016-07-13 18:20:03
-* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/02cbdd257ea8e2920d9835f586decc7738199917/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf)
-* Bilingual Datetime: 2016-07-07 12:14:05
-* [Back to Top](#report-top)
-
-##### <a name='8e77298121a84f6feb16a992da81bd9c3bb7b20b353'></a> Source: [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/67129d6cdac124947fc07aa4d42523686227752e/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/05bf35d433c9f29103ba7c47b49b55ac09c11250/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf)
-* Handoff Datetime: 2016-07-13 17:34:56
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/11e28938c6f251e3e1cfd3f93bbe1ceafa21a779/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md)
-* Current Handback File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/0590ac3cebb14ba307a26a6668c9647a559c7feb/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf)
-* Current Handback Datetime: 2016-07-13 18:20:03
-* Bilingual File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/02cbdd257ea8e2920d9835f586decc7738199917/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf)
-* Bilingual Datetime: 2016-07-07 12:14:05
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
