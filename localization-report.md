@@ -1373,8 +1373,8 @@
 * Archive Datetime: 2016-07-01 23:59:54
 * Handback File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/0590ac3cebb14ba307a26a6668c9647a559c7feb/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf)
 * Handback Datetime: 2016-07-13 18:20:03
-* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/02cbdd257ea8e2920d9835f586decc7738199917/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf)
-* Bilingual Datetime: 2016-07-07 12:14:05
+* Bilingual File: [getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/0590ac3cebb14ba307a26a6668c9647a559c7feb/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/getting-started-with-ad-rms-2-0.ea2db894ddfb123d7a11829d073480489c257733.zh-tw.xlf)
+* Bilingual Datetime: 2016-07-13 18:22:28
 * [Back to Top](#report-top)
 
 ##### <a name='e75ec6c04afd171552697f79deb33ad2cfe2c4e165'></a> Source: [Azure-RMSDocs\develop\how-to-build-your-first-application.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/how-to-build-your-first-application.md)
@@ -5176,8 +5176,8 @@
 * Current Target File: [Azure-RMSDocs\plan-design\generate-tenant-key-in-person.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/11e28938c6f251e3e1cfd3f93bbe1ceafa21a779/Azure-RMSDocs/plan-design/generate-tenant-key-in-person.md)
 * Current Handback File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/0590ac3cebb14ba307a26a6668c9647a559c7feb/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf)
 * Current Handback Datetime: 2016-07-13 18:20:03
-* Bilingual File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/02cbdd257ea8e2920d9835f586decc7738199917/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf)
-* Bilingual Datetime: 2016-07-07 12:14:05
+* Bilingual File: [generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/0590ac3cebb14ba307a26a6668c9647a559c7feb/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/generate-tenant-key-in-person.1049c325238d6700ffba75e9355e9d78212a983a.zh-tw.xlf)
+* Bilingual Datetime: 2016-07-13 18:22:28
 * [Back to Top](#report-top)
 
 ##### <a name='7ec87b63b31d0b41c93dab7998df63e208308811354'></a> Source: [Azure-RMSDocs\plan-design\generate-tenant-key-internet.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/67129d6cdac124947fc07aa4d42523686227752e/Azure-RMSDocs/plan-design/generate-tenant-key-internet.md)
