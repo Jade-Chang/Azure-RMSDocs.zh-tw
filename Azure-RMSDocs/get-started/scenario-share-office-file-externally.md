@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 案例 - 與其他組織的使用者共用 Office 檔案 | Azure RMS
-description:
-keywords:
+title: "案例 - 與其他組織的使用者共用 Office 檔案 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+
 
 ---
 
@@ -74,7 +68,8 @@ ms.suite: ems
 
     -   這些步驟不包含設定到期日。 如果資訊在特定日期後便失去效用，則再加另一個步驟設定適當的到期時間，例如傳送電子郵件訊息之後的 90 天。
 
-    > [!NOTE]如需使用者可以選取之每個選項的詳細資訊，請參閱 [適用於 Rights Management 共用應用程式的對話方塊選項](https://technet.microsoft.com/library/dn574738.aspx)。
+    > [!NOTE]
+    > 如需使用者可以選取之每個選項的詳細資訊，請參閱＜ [適用於 Rights Management 共用應用程式的對話方塊選項](https://technet.microsoft.com/library/dn574738.aspx)＞
 
 4.  對此指示集進行任何想要的修改，然後將它傳送給這些使用者。
 
@@ -159,6 +154,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
