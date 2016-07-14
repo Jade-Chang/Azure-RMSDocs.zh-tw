@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2016
+ms.date: 07/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 04fbac4389671ed32f64c0840d81723f8314869c
-ms.openlocfilehash: 4509126c61c4e37d9655d9bd080be3e097cd103f
+ms.sourcegitcommit: f8e23e8bcbfb25092cb31f7af76d17239f3063a7
+ms.openlocfilehash: 32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f
 
 
 ---
@@ -100,7 +100,7 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 **未經授權嘗試存取 Microsoft RMS 連接器。**
 
-當帳戶嘗試連接至 RMS 連接器但失敗時，系統即會記錄此事件。 最常見的原因是因為進行連線的帳戶不在授權帳戶清單中 (RMS 連接器會從 Azure RMS 下載這份清單)。  例如，尚未下載最新的清單 (每隔 15 分鐘) 或清單中缺漏此帳戶。 
+當帳戶嘗試連接至 RMS 連接器但失敗時，系統即會記錄此事件。 最常見的原因是因為進行連線的帳戶不在授權帳戶清單中 (RMS 連接器會從 Azure RMS 下載這份清單)。 例如，尚未下載最新的清單 (每隔 15 分鐘) 或清單中缺漏此帳戶。 
 
 另一個可能原因是，您將 RMS 連接器安裝在設為使用連接器的相同伺服器上。 例如，您在執行 Exchange Server 的伺服器上安裝 RMS 連接器，並授與 Exchange 帳戶使用連接器的權限。 系統不支援此設定，因為當帳戶嘗試連接時，RMS 連接器無法正確識別該帳戶。
 
@@ -140,6 +140,8 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 每當 RMS 連接器發生未預期的錯誤，系統即會記錄此事件，並在事件訊息中包含錯誤的詳細資料。
 
+您可以從事件訊息中的文字**要求失敗，回應空白**識別其中一個可能的原因。 如果看到這段文字，原因可能是您的網路裝置在內部部署伺服器與 RMS 連接器伺服器之間的封包進行 SSL 檢查。 但這不受支援，而且會產生失敗的通訊和此事件記錄檔訊息。
+
 ----
 
 錯誤 **3001**
@@ -147,6 +149,8 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 **下載授權資訊時發生例外狀況。**
 
 如果 RMS 連接器無法下載已獲授權使用 RMS 連接器的最新帳戶清單，系統即會記錄此事件，並在事件訊息中包含錯誤的詳細資訊。
+
+
 
 ----
 
@@ -191,6 +195,6 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

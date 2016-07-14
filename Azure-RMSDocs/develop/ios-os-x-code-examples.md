@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: acc140931b5f834ce1d70c851d90c334a03010dc
-ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
+ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
+ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
 
 
 ---
@@ -36,9 +36,9 @@ ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
 ###案例︰取用 RMS 受保護的檔案
 
 
-- **步驟 1**︰建立 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 物件
+- **第 1 步**：建立 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 物件
 
- **描述**︰透過其建立方法 (使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 實作服務驗證以取得權杖) 來具現化 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 物件，方法是將 **MSAuthenticationCallback** 的執行個體做為參數 *authenticationCallback* 傳給 MSIPC API。 請參閱下列範例程式碼區段中的 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 呼叫。
+ **描述**︰透過其建立方法 (使用 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 實作服務驗證以取得權杖) 將 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 物件具現化，方法是將 **MSAuthenticationCallback** 的執行個體作為參數 *authenticationCallback* 傳給 MSIPC API。 請參閱下列範例程式碼區段中的 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 呼叫。
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -285,6 +285,6 @@ ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
  
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 
