@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 開發人員指南 | Azure RMS
-description: 開發人員工具使用概觀；SDK、額外程式庫和程式碼範例。
-keywords:
+title: "開發人員指南 | Azure RMS"
+description: "開發人員工具使用概觀；SDK、額外程式庫和程式碼範例。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: c9d5ec961989283c5201a81f862b2da45ed64340
+
 
 ---
 
@@ -36,7 +31,7 @@ ms.suite: ems
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | 提供輕量級開發經驗之簡化、下一代工具組，可讓您的 Android、iOS、Mac OS X、Windows Phone/RT 及 Linux/C++ 裝置應用程式透過 Microsoft Rights Management 服務保護資訊 |
 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | 功能強大的 SDK 產品，適用於 Windows 桌面應用程式開發人員和伺服器架構方案提供者，以啟用版權管理其產品|
-|[AD RMS SDK](https://msdn.microsoft.com/en-us/library/cc530379(v=vs.85).aspx)|**注意** - AD RMS SDK 運用 Msdrm.dll 中的用戶端所公開的功能，適用於 Windows Server 2012、Windows 8、Windows Server 2008 R2、Windows 7、Windows Server 2008 和 Windows Vista。 它在後續版本中可能會變更或無法使用。 請改用 Microsoft Rights Management Services SDK 2.1，此版本是利用用戶端在 Msipc.dll 中公開的功能。|
+|[AD RMS SDK](https://msdn.microsoft.com/library/cc530379(v=vs.85).aspx)|**注意** - AD RMS SDK 運用 Msdrm.dll 中的用戶端所公開的功能，適用於 Windows Server 2012、Windows 8、Windows Server 2008 R2、Windows 7、Windows Server 2008 和 Windows Vista。 它在後續版本中可能會變更或無法使用。 請改用 Microsoft Rights Management Services SDK 2.1，此版本是利用用戶端在 Msipc.dll 中公開的功能。|
 |[AD RMS Scripting API](https://msdn.microsoft.com/en-us/library/bb968797(v=vs.85).aspx)| 用來建立指令碼以管理 AD RMS 安裝|
 
 ## 程式碼範例和工具
@@ -77,6 +72,7 @@ ms.suite: ems
 - [應用程式範例](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore) - Windows 市集應用程式的 Microsoft RMS SDK v4.1 範例為平台提供基本文件的使用範例。
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 
