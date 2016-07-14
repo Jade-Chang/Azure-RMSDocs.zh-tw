@@ -1,34 +1,19 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 1
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [Azure-RMSDocs\develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/developers-guide.md) | OutofSyncHandedBackSuccess | [Details](#c9d5ec961989283c5201a81f862b2da45ed6434058)
- [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0db303b01361b3220c2e9334f84594ac86c5b069/Azure-RMSDocs/information-protection/what-is-information-protection.md) | HandedOffSuccess | [Details](#bfb56fd4994a358d366d94b40f6c5fc889330303161)
+ [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ca6495e767afac32ad883d2c355bdcab97049c9b/Azure-RMSDocs/information-protection/faq.md) | HandedOffSuccess | [Details](#c7a7b6b3ec8a139a9ac52cb8d35f4c2c0ef4c352154)
 
 ## Item Details
-##### <a name='c9d5ec961989283c5201a81f862b2da45ed6434058'></a> Source: [Azure-RMSDocs\develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/developers-guide.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\developers-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr.zh-tw/blob/dd988355eac9c43b3b3f170bc6a528c343500f13/Azure-RMSDocs/develop/developers-guide.md)
-* Handoff File: [developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/51fe4788acc4e726aa4fef8c824c14591b12e5ae/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-tw.xlf)
-* Handoff Datetime: 2016-07-14 17:32:07
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/db42aab222f9421114caf800cb13bf52f455393e/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-tw.xlf)
-* Handback Datetime: 2016-07-14 17:08:59
-* Bilingual File: [developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-tw.xlf](https://github.com/Microsoft/EM.handback/blob/db42aab222f9421114caf800cb13bf52f455393e/ol-handback/Microsoft/Azure-RMSDocs-pr.zh-tw/master/developers-guide.0ccf7302c782a322ae1f0e93452446d73bcd4df3.zh-tw.xlf)
-* Bilingual Datetime: 2016-07-14 17:19:23
-* [Back to Top](#report-top)
-
-##### <a name='bfb56fd4994a358d366d94b40f6c5fc889330303161'></a> Source: [Azure-RMSDocs\information-protection\what-is-information-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0db303b01361b3220c2e9334f84594ac86c5b069/Azure-RMSDocs/information-protection/what-is-information-protection.md)
+##### <a name='c7a7b6b3ec8a139a9ac52cb8d35f4c2c0ef4c352154'></a> Source: [Azure-RMSDocs\information-protection\faq.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ca6495e767afac32ad883d2c355bdcab97049c9b/Azure-RMSDocs/information-protection/faq.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/51fe4788acc4e726aa4fef8c824c14591b12e5ae/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/what-is-information-protection.e155788fff8a55f44b54961c8468e887c253e483.zh-tw.xlf)
-* Handoff Datetime: 2016-07-14 17:32:07
+* Handoff File: [faq.b147013c6b8c2df0f18408c2316c67980bca10e5.zh-tw.xlf](https://github.com/Microsoft/EM.handoff/blob/a0b143a6c817fcca7651d2e40ac5cf4180be896e/ol-handoff/Microsoft/Azure-RMSDocs-pr.zh-tw/master/faq.b147013c6b8c2df0f18408c2316c67980bca10e5.zh-tw.xlf)
+* Handoff Datetime: 2016-07-14 23:31:17
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
