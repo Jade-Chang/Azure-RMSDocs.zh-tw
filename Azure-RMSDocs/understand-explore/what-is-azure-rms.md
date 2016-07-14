@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 什麼是 Azure Rights Management？ | Azure RMS
-description:
-keywords:
+title: "什麼是 Azure Rights Management？ | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
+ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+
 
 ---
 
@@ -43,7 +37,7 @@ Azure Rights Management (Azure RMS) 是一項資訊保護解決方案，可供�
 下圖說明 Azure RMS 如何作為 Office 365 的 Rights Management 解決方案，以及內部部署伺服器和服務使用。 並支援執行 Windows、Mac OS、iOS、Android 和 Windows Phone 的熱門使用者裝置。
 
 > [!NOTE]
-您可以使用 Azure RMS 配合不同的雲端訂用帳戶，包括 Office 365、Enterprise Mobility Suite 和 Azure RMS Premium。 如需詳細資訊，請參閱 [支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。.
+您可以使用 Azure RMS 配合不同的雲端訂用帳戶，包括 Office 365、Enterprise Mobility Suite 和 Azure RMS Premium。 如需詳細資訊，請參閱[支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。
 
 ![Azure RMS 的運作方式](../media/AzRMS_elements.png)
 
@@ -59,14 +53,15 @@ Azure Rights Management (Azure RMS) 是一項資訊保護解決方案，可供�
 
 
 
-如果您想要直接開始自行嘗試 Azure RMS，請使用 [Azure Rights Management 快速入門教學課程](../get-started/quick-start-tutorial.md)。.
+如果您想要直接開始自行嘗試 Azure RMS，請使用 [Azure Rights Management 快速入門教學課程](../get-started/quick-start-tutorial.md)。
 
 或者，如果您已準備好開始部署貴組織的 Azure RMS，請使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)作為您的部署步驟和作法指示的連結。
 
 > [!TIP]
-> 如需詳細資訊與說明，請使用 [Azure Rights Management 的資訊與支援](../get-started/information-support.md) 中的資源和連結。.
+> 如需詳細資訊與說明，請使用 [Azure Rights Management 的資訊與支援](../get-started/information-support.md)中的資源和連結。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
