@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 檔案 API 組態 | Azure RMS
-description: 可透過登錄中設定進行設定的檔案 API 的行為。
-keywords:
+title: "檔案 API 組態 | Azure RMS"
+description: "可透過登錄中設定進行設定的檔案 API 的行為。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 46b1fe5a0c4f138db65072d14489a5d588015df7
+
 
 ---
 
@@ -67,14 +63,16 @@ ms.suite: ems
 
 - **Off**︰已停用加密。
 
-> [!Note] 這項設定對解密並無任何影響。 只要使用者擁有 **EXTRACT** 權限，無論加密的檔案是使用原生或 Pfile 保護加密，都能予以解密。
+> [!Note] 
+> 這項設定對解密並無任何影響。 只要使用者擁有 **EXTRACT** 權限，無論加密的檔案是使用原生或 Pfile 保護加密，都能予以解密。
 
 - **Native**︰使用原生加密。 對於 Office 檔案，加密的檔案將具有原始檔案的相同副檔名。 例如，.docx 副檔名的檔案將會加密到副檔名為.docx 的檔案。 對於其他可能已套用原生保護的檔案，會將檔案加密成副檔名格式為 p*zzz* 的檔案，其中 *zzz* 是原始副檔名。 例如，.txt 檔案會加密為副檔名為 .ptxt 的檔案。 以下包含可能已套用原生保護的副檔名清單。
 
 - **Pfile**︰使用 PFile 加密。 加密的檔案會有附加到原始副檔名的 .pfile。 例如，加密後，.txt 檔案將具有 txt.pfile 副檔名。
 
 
-> [!Note] 此設定對 Office 檔案格式並無任何影響。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值設為 &quot;Pfile”，.docx 檔案仍會利用原生保護加密，且加密的檔案仍會具有副檔名 .docx。
+> [!Note] 
+> 此設定對 Office 檔案格式並無任何影響。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值設為 &quot;Pfile”，.docx 檔案仍會利用原生保護加密，且加密的檔案仍會具有副檔名 .docx。
 
 設定任何其他值，或不設定值以執行預設行為。
 
@@ -157,6 +155,7 @@ HKEY_LOCAL_MACHINE
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
