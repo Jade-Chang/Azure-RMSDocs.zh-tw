@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure Rights Management 的資訊與支援 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 的資訊與支援 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/13/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6052afabe4894f8129e9eebc93705b219e6ed875
+ms.openlocfilehash: a8f5852d965abe2f2654aa236bfd9ea49a62aa84
+
 
 ---
 
@@ -42,7 +36,8 @@ ms.suite: ems
 ## Rights Management 產品團隊部落格
 Rights Management 產品團隊投入了 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格)，為您提供有關 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 及相關技術的技術資訊和其他消息。 這些部落格貼文補強了產品文件和支援資訊。
 
-> [!TIP] 如果您正在開發 Azure RMS 或 AD RMS 的應用程式，您可能也會對 [Active Directory Rights Management Services (AD RMS) Developer's Corner Blog](http://blogs.msdn.com/b/rms/) (Active Directory Rights Management Services (AD RMS) 開發人員專區部落格) 感興趣。
+> [!TIP]
+> 如果您正在開發 Azure RMS 或 AD RMS 的應用程式，您可能也會對 [Active Directory Rights Management Services (AD RMS) Developer's Corner](https://blogs.msdn.microsoft.com/rms/) (Active Directory Rights Management Services (AD RMS) 開發人員專區) 部落格感興趣。
 
 ## 支援選項和社群資源
 下列章節提供支援和疑難排解選項及社群資源的相關資訊。
@@ -71,7 +66,15 @@ Rights Management 產品團隊投入了 [Enterprise Mobility and Security Blog](
 
 疑難排解：
 
-- 請下載並執行 [RMS 分析器工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 如需這項工具的詳細資訊，請參閱下載頁面上的**詳細資料**和**安裝指示** 。 
+- 如果您想了解某些功能的運作方式：請查看[常見問題集](faqs.md)頁面是否已回答過您的問題。
+
+- 如果您想了解 Azure RMS 支援陳述式的相關問題︰請參閱[需求](requirements-azure-rms.md)資訊 (這些資訊會定期更新)。
+
+- 如需支援使用者、支援人員以及針對 Azure RMS 服務與應用程式進行設定之系統管理員的相關資訊︰請參閱[協助使用者保護檔案](../deploy-use/help-users.md)。
+
+- 如果您已針對內部部署伺服器部署 RMS 連接器︰請參閱[監視](../deploy-use/monitor-rms-connector.md)資訊，其中包括事件記錄檔項目、效能計數器和記錄的詳細資料。
+
+- 如需自動檢查、自動修復以及追蹤功能：請下載並執行 [RMS Analyzer 工具](http://www.microsoft.com/en-us/download/details.aspx?id=46437)。 如需這項工具的詳細資訊，請參閱下載頁面上的**詳細資料**和**安裝指示** 。 
 
 ### 社群資源
 
@@ -83,6 +86,7 @@ Rights Management 產品團隊投入了 [Enterprise Mobility and Security Blog](
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

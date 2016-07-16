@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 記錄和分析 Azure Rights Management 使用情況 | Azure RMS
-description:
-keywords:
+title: "記錄和分析 Azure Rights Management 使用情況 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -47,7 +41,8 @@ ms.suite: ems
 
     如果發生資訊外洩，您可能會被問及誰最近存取特定的文件，以及可疑人士最近存取什麼資訊。 只要有使用 Azure Rights Management 和記錄，您就能夠回答這幾種問題，因為使用受保護內容的人一定要取得 Azure Rights Management 授權才能開啟 Azure Rights Management 所保護的文件和圖片，即使這些檔案由電子郵件移動，或複製到 USB 磁碟機或其他存放裝置也一樣。 這表示當您使用 Azure Rights Management 來保護資料時，Azure Rights Management 記錄可當做可靠的資訊來源以進行蒐證分析。
 
-> [!NOTE] 如果您只對記錄 Azure Rights Management 的管理工作有興趣，並且不想要追蹤使用者使用 Rights Management 的方式，您可以針對 Azure Rights Management 使用 Windows PowerShell Cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx)。
+> [!NOTE]
+> 如果您只對記錄 Azure Rights Management 的管理工作有興趣，並且不想要追蹤使用者使用 Rights Management 的方式，您可以針對 Azure Rights Management 使用 Windows PowerShell Cmdlet [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx)。
 > 
 > 您也可以使用 Azure 傳統入口網站，取得高階使用情況報告，其中包含 **RMS 摘要**、**RMS 活躍的使用者**、**RMS 裝置平台**，以及 **RMS 應用程式使用情況**。 若要從 Azure 傳統入口網站存取這些報告，請按一下 [Active Directory]、選取並開啟目錄，然後按一下 [報告]。
 
@@ -56,7 +51,8 @@ ms.suite: ems
 ## 如何啟用 Azure Rights Management 使用量記錄
 從 2016 年 2 月開始，Azure Rights Management 使用量記錄預設為所有客戶啟用。 這適用於在 2016 年 2 月之前啟動他們的 Azure RMS 服務的客戶，和在 2016 年 2 月之後啟動服務的客戶。 
 
-> [!NOTE] 記錄儲存體或記錄功能不需要額外成本。
+> [!NOTE]
+> 記錄儲存體或記錄功能不需要額外成本。
 > 
 > 如果您使用的 Azure RMS 的使用量記錄是在 2016年 2 月之前，您需要 Azure 的訂用帳戶以及 Azure 上足夠的儲存體，這已超出上述的情況。
 
@@ -143,17 +139,17 @@ Azure Rights Management 會以一連串 Blob 來寫入記錄。
 |--------------|-----------------|---------------|-----------------|
 |date|日期|處理要求時的 UTC 日期。<br /><br />來源是處理要求的伺服器的本機時鐘。|2013-06-25|
 |time|時間|處理要求的 UTC 時間 (24 小時制)。<br /><br />來源是處理要求的伺服器的本機時鐘。|21:59:28|
-|row-id|文字|此記錄的唯一 GUID。<br /><br />將記錄彙總或將記錄複製成另一種格式時，此值很有用。|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|文字|此記錄的唯一 GUID。 如果值不存在，請使用 correlation-id 值來識別項目。<br /><br />將記錄彙總或將記錄複製成另一種格式時，此值很有用。|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|名稱|要求的 RMS API 的名稱。|AcquireLicense|
-|user-id|字串|提出要求的使用者。<br /><br />值以單引號括住。 部分要求類型為匿名，此時值為 ”。|‘joe@contoso。com’|
-|result|字串|‘Success’ 表示成功處理要求。<br /><br />要求失敗時以單引號括住的錯誤類型。|‘Success’|
+|user-id|字串|提出要求的使用者。<br /><br />值以單引號括住。 如果呼叫是來自您管理的租用戶金鑰 (BYOK)，則該呼叫具有 **"** 值；當要求類型為匿名時也適用此情況。|‘joe@contoso。com’|
+|result|字串|'Success' 表示成功處理要求。<br /><br />要求失敗時以單引號括住的錯誤類型。|'Success'|
 |correlation-id|文字|某個特定要求在 RMS 用戶端記錄和伺服器記錄之間的共同 GUID。<br /><br />對用戶端問題進行疑難排解時，此值很有用。|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|文字|識別受保護內容 (例如文件) 的 GUID (以大括孤括住)。<br /><br />只有當 request-type 是 AcquireLicense 時，此欄位才有值，至於其他所有要求類型，此欄位會空白。|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |owner-email|字串|文件擁有者的電子郵件地址。|alice@contoso.com|
 |issuer|字串|文件簽發者的電子郵件地址。|alice@contoso.com (或) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Template-id|字串|用來保護文件的範本 ID。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|字串|受保護的文件的檔案名稱。 <br /><br />目前，某些檔案 (例如 Office 文件) 顯示為 GUID，而不是實際檔案名稱。|TopSecretDocument.docx|
-|Date-published|日期|文件受保護的日期。|2015-10-15T21:37:00|
+|template-id|字串|用來保護文件的範本 ID。|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|字串|受保護的文件的檔案名稱。 <br /><br />目前，某些檔案 (例如 Office 文件) 顯示為 GUID，而不是實際檔案名稱。|TopSecretDocument.docx|
+|date-published|日期|文件受保護的日期。|2015-10-15T21:37:00|
 |c-info|字串|提出要求的用戶端平台的相關資訊。<br /><br />具體字串隨著應用程式而不同 (例如，作業系統或瀏覽器)。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|位址|提出要求的用戶端的 IP 位址。|64.51.202.144|
 
@@ -166,7 +162,7 @@ Azure Rights Management 會以一連串 Blob 來寫入記錄。
 
 -   如果您使用 RMS 連接器，
 
-    則會以服務主體名稱來記錄來自此連接器的要求，當您安裝 RMS 連接器時，RSM 會自動產生服務主體名稱。
+    會以服務主體名稱 **Aadrm_S-1-7-0** (此名稱會在安裝 RMS 連接器時自動產生) 來記錄來自此連接器的要求。
 
 #### 一般要求類型
 Azure Rights Management 有許多要求類型，下表指出一些最常用的要求類型。
@@ -181,7 +177,7 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 |BECreateEndUserLicenseV1|從行動裝置進行呼叫，以建立使用者授權。|
 |BEGetAllTemplatesV1|從行動裝置 (後端) 進行呼叫，以取得所有範本。|
 |Certify|用戶端認證保護的內容。|
-|Decrypt|用戶端嘗試解密 RMS 保護的內容。|
+|KMSPDecrypt|用戶端嘗試解密 RMS 保護的內容。 只適用於客戶管理的租用戶金鑰 (BYOK)。|
 |DeleteTemplateById|從 Azure 傳統入口網站進行呼叫，以刪除範本 ID 的範本。|
 |ExportTemplateById|從 Azure 傳統入口網站進行呼叫，以匯出範本 ID 的範本。|
 |FECreateEndUserLicenseV1|類似於 AcquireLicense 要求，來自於行動裝置。|
@@ -199,7 +195,7 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 |ServerCertify|從已啟用 RMS 的用戶端 (如 SharePoint) 進行呼叫，以認證伺器。|
 |SetUsageLogFeatureState|進行呼叫，以啟用使用情況記錄。|
 |SetUsageLogStorageAccount|進行呼叫，以指定 Azure RMS 記錄的位置。|
-|SignDigest|當因為簽章目的而使用金鑰時，進行呼叫。 通常每個 AcquireLicence (或 FECreateEndUserLicenseV1)、Certify 及 GetClientLicensorCert (或 FECreatePublishingLicenseV1) 只會呼叫一次。|
+|KMSPSignDigest|當因為簽章目的而使用客戶管理的租用戶金鑰 (BYOK) 時，進行呼叫。 通常每個 AcquireLicence (或 FECreateEndUserLicenseV1)、Certify 及 GetClientLicensorCert (或 FECreatePublishingLicenseV1) 只會呼叫一次。|
 |UpdateTemplate|從 Azure 傳統入口網站進行呼叫，以更新現有範本。|
 
 ## Windows PowerShell 參考
@@ -229,6 +225,7 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

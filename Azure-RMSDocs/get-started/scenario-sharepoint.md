@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 案例 - 保留 SharePoint 中儲存之文件的控制 | Azure RMS
-description:
-keywords:
+title: "案例 - 保留 SharePoint 中儲存之文件的控制 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: cb028afcbfd9b59f134539c434f4f49efc5e9092
+
 
 ---
 
@@ -111,6 +105,7 @@ SharePoint **銷售預測與報表**網站現在已設有保護，可安全地�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

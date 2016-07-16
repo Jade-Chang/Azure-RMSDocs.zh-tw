@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: AD RMS 伺服器 | Azure RMS
-description: Rights Management Services (RMS) 的伺服器元件是由一組執行 Microsoft Internet Information Services 的 Web 服務實作。
-keywords:
+title: "AD RMS 伺服器 | Azure RMS"
+description: "Rights Management Services (RMS) 的伺服器元件是由一組執行 Microsoft Internet Information Services 的 Web 服務實作。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
+
 
 ---
 
@@ -30,7 +26,8 @@ ms.suite: ems
 
 **Azure RMS** - 如需使用 Azure Rights Management 服務的詳細資訊，請參閱[允許您的服務應用程式使用雲端式 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
-> [!IMPORTANT] 建議您透過 Azure RMS 開發及測試應用程式。
+> [!IMPORTANT] 
+> 建議您透過 Azure RMS 開發及測試應用程式。
 
 **Windows Server** - 若是內部部署伺服器，從 Windows Server 2008 開始，您可以將 RMS 服務新增為角色，藉此加以安裝和設定。 若要在更舊版的作業系統上安裝服務，請從 Microsoft 下載中心 [Microsoft Windows Rights Management Services 含 Service Pack 2](http://www.microsoft.com/download/en/details.aspx?id=4909) 下載。
 
@@ -60,6 +57,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

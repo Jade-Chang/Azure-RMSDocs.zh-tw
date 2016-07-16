@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 啟用 Azure Rights Management | Azure RMS
-description:
-keywords:
+title: "啟用 Azure Rights Management | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
+ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+
 
 ---
 
@@ -58,7 +52,8 @@ ms.suite: ems
 ## 設定分階段部署的登入控制項
 如果您不想要讓所有使用者能夠藉由使用 Azure RMS 以立即保護檔案，您可以設定使用者上線控制，方法是使用 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 命令。 您可以在啟動 Azure RMS 前後執行此命令。
 
-> [!IMPORTANT] 若要使用此命令，您至少必須有 **2.1.0.0** 版的 [Azure RMS Windows PowerShell 模組](http://go.microsoft.com/fwlink/?LinkId=257721)。
+> [!IMPORTANT]
+> 若要使用此命令，您至少必須有 **2.1.0.0** 版的 [Azure RMS Windows PowerShell 模組](http://go.microsoft.com/fwlink/?LinkId=257721)。
 >
 > 若要檢查已安裝的版本，請執行︰**(Get-Module aadrm –ListAvailable).Version**
 
@@ -86,6 +81,7 @@ Office 服務 (例如 Exchange Online 及and SharePoint Online) 都需要先進�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

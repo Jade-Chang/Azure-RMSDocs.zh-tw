@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: Microsoft Rights Management SDK 4.2 | Azure RMS
-description: RMS SDK 4.2 是簡化的新一代 API，可在利用資訊保護升級裝置應用程式時啟用輕量型開發體驗。
-keywords:
+description: "RMS SDK 4.2 是簡化的新一代 API，可在利用資訊保護升級裝置應用程式時啟用輕量型開發體驗。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf22d0b3c574ff1472df8428f6a39c359e0e95e1
+ms.openlocfilehash: be2774ba361c478fa20faa1490bb4e5ead90b8af
+
 
 ---
 
@@ -61,6 +57,7 @@ MS RMS SDK 4.2 API 使用每個作業系統的標準程式設計語言與模型�
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

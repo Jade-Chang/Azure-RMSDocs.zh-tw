@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 如何運作 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 如何運作 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
+ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+
 
 ---
 
@@ -77,7 +71,8 @@ ms.suite: ems
 
 初始化使用者環境之後，該使用者可接著保護文件或取用該電腦上受保護的文件。
 
-> [!NOTE] 如果此使用者移到另一部 Windows 電腦，或另一位使用者使用同一部 Windows 電腦，則會重複進行初始化程序。
+> [!NOTE]
+> 如果此使用者移到另一部 Windows 電腦，或另一位使用者使用同一部 Windows 電腦，則會重複進行初始化程序。
 
 ### 初始化使用者環境
 必須在裝置上備妥使用者環境，使用者才能保護內容或取用 Windows 電腦上受保護的內容。 這是一次性程序，而且當使用者嘗試保護或取用受保護的內容時，不需要使用者介入即自動發生：
@@ -151,9 +146,11 @@ RMS 用戶端會接著使用在初始化使用者環境時取得的組織金鑰�
 
 如果您已準備好開始部署貴組織的 Azure RMS，請使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)作為您的部署步驟和作法指示的連結。
 
-> [!TIP] 如需詳細資訊與說明，請使用 [Azure Rights Management 的資訊與支援](../get-started/information-support.md)中的資源和連結。
+> [!TIP]
+> 如需詳細資訊與說明，請使用 [Azure Rights Management 的資訊與支援](../get-started/information-support.md)中的資源和連結。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

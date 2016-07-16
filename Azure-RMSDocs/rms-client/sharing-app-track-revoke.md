@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 當您使用 RMS 共用應用程式時，追蹤及撤銷文件 | Azure RMS
-description:
-keywords:
+title: "當您使用 RMS 共用應用程式時，追蹤及撤銷文件 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+
 
 ---
 
@@ -43,11 +37,11 @@ ms.suite: ems
 
 -   如果您想要設定電子郵件通知：按一下 [設定]  並且選取如何及是否在文件被存取時寄送電子郵件。
 
--   如果您有任何疑問或想要提供有關文件追蹤網站的意見反應：按一下說明圖示來存取 [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977) (文件追蹤的常見問題集)。.
+-   如果您有任何疑問或想要提供有關文件追蹤網站的意見反應：按一下 [說明] 圖示來存取 [文件追蹤的常見問題集](http://go.microsoft.com/fwlink/?LinkId=523977)。
 
 ## 使用 Office 來存取文件追蹤網站
 
--   針對 Office 應用程式，Word、Excel 和 PowerPoint：在 **[首頁]** 索引標籤的 **[RMS]** 群組中，按一下 **[共用保護的檔案]**，然後按一下 **[追蹤使用情況]**。.
+-   針對 Office 應用程式，Word、Excel 和 PowerPoint：在 [首頁]  索引標籤的 [RMS]  群組中，按一下 [共用保護] ，然後按一下 [追蹤使用情況] ：
 
     ![使用 RMS 共用應用程式時，追蹤 Office 應用程式的使用量 ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
@@ -55,7 +49,7 @@ ms.suite: ems
 
     ![使用 RMS 共用應用程式時，選取 [Track Usage from Outlook] (追蹤 Outlook 的使用情況) ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-如果您看不到 RMS 的這些選項，可能是您的電腦上未安裝 RMS 共用應用程式、未安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱 [下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。.
+如果您看不到 RMS 的這些選項，可能是您的電腦上未安裝 RMS 共用應用程式、未安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱[下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。
 
 ### 追蹤及撤銷您的文件的其他方式
 除了使用 Office 應用程式在 Windows 電腦上追蹤您的文件之外，也可以使用以下替代方案：
@@ -68,7 +62,7 @@ ms.suite: ems
 
 #### 使用網頁瀏覽器來存取文件追蹤網站
 
--   使用支援的瀏覽器，移至 [文件追蹤網站](http://go.microsoft.com/fwlink/?LinkId=529562)。.
+-   使用支援的瀏覽器，移至 [文件追蹤網站](http://go.microsoft.com/fwlink/?LinkId=529562)。
 
     支援的瀏覽器：我們建議使用至少為第 10 版的 Internet Explorer，但是您可以使用下列任何瀏覽器來使用文件追蹤網站：
 
@@ -105,6 +99,7 @@ ms.suite: ems
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

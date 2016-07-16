@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Azure RMS 快速入門教學課程 - 步驟 4 | AZURE RMS"
-description: "教學課程的第四個步驟，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。"
-keywords:
+title: "Azure RMS 快速入門教學課程 - 步驟 4 | Azure RMS"
+description: "教學課程的第四步，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。"
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+
 
 ---
 
@@ -76,9 +74,11 @@ ms.custom:
 |關於您看到的附加至電子郵件的兩個檔案版本|[自動建立的 .ppdf 檔案是什麼？](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
 
 
->[!div class="逐步"] [« 步驟 3](tutorial-step3.md)
+>[!div class="step-by-step"]
+[步驟 3](tutorial-step3.md)
 [步驟 5 »](tutorial-step5.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

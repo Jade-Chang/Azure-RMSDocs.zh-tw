@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 快速入門教學課程 - 步驟 3 | Azure RMS
-description: 教學課程的第三步，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。
-keywords:
+title: "Azure RMS 快速入門教學課程 - 步驟 3 | Azure RMS"
+description: "教學課程的第三步，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。"
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+
 
 ---
 
@@ -83,9 +77,11 @@ ms.suite: ems
 |關於 [共用保護] 對話方塊中的選項|[Rights Management 共用應用程式的對話方塊選項](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="逐步"] [« 步驟 2](tutorial-step2.md)
+>[!div class="step-by-step"]
+[步驟 2](tutorial-step2.md)
 [步驟 4 »](tutorial-step4.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

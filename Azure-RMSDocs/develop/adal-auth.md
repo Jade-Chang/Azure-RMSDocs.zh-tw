@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 為 ADAL 驗證設定 Azure RMS | Azure RMS
-description: 概述以 Azure ADAL 為基礎的驗證設定步驟
+title: "為 ADAL 驗證設定 Azure RMS | Azure RMS"
+description: "概述以 Azure ADAL 為基礎的驗證設定步驟"
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1
+
 
 ---
 
@@ -36,7 +31,8 @@ ms.suite: ems
 - [Microsoft Azure 訂用帳戶](https://azure.microsoft.com/en-us/) (免費試用版就已足夠)。 如需詳細資訊，請參閱[使用者如何為個人註冊 RMS](../understand-explore/rms-for-individuals-user-sign-up.md)
 - Microsoft Azure Rights Management 訂用帳戶 (免費[個人版 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 帳戶就已足夠)。
 
-> [!NOTE] 請詢問 IT 管理員您是否有 Microsoft Azure Rights Management 訂用帳戶，以讓 IT 管理員執行下面步驟。 如果您的組織沒有訂用帳戶，則應該讓 IT 管理員建立訂用帳戶。 此外，您的 IT 管理員應該使用*工作或學校帳戶*來訂閱，而不是 *Microsoft 帳戶* (即 Hotmail)。
+> [!NOTE] 
+> 請詢問 IT 管理員您是否有 Microsoft Azure Rights Management 訂用帳戶，以讓 IT 管理員執行下面步驟。 如果您的組織沒有訂用帳戶，則應該讓 IT 管理員建立訂用帳戶。 此外，您的 IT 管理員應該使用*工作或學校帳戶*來訂閱，而不是 *Microsoft 帳戶* (即 Hotmail)。
 
 註冊 Microsoft Azure 之後：
 
@@ -81,11 +77,13 @@ ms.suite: ems
 
 ![選擇 [設定]](../media/ConfigYourApp.png)
 
->[!NOTE] 複製 **[用戶端識別碼]** 和 **[重新導向 URI]**，並在設定 RMS 用戶端時儲存它們以供未來使用。
+>[!NOTE] 
+> 複製 **[用戶端識別碼]** 和 **[重新導向 URI]**，並在設定 RMS 用戶端時儲存它們以供未來使用。
 
 - 瀏覽至您應用程式設定的底端，然後選擇 **[其他應用程式的權限]** 下的 **[加入應用程式]** 按鈕。
 
->[!NOTE] 根據預設，為 Windows Azure Active Directory 顯示的**委派權限**均為正確，只要選取一個選項：**[登入及讀取使用者設定檔]**。
+>[!NOTE] 
+> 根據預設，為 Windows Azure Active Directory 顯示的**委派權限**均為正確，只要選取一個選項：**[登入及讀取使用者設定檔]**。
 
 ![選取 [加入應用程式]](../media/PermissionsToOtherBtn.png)
 
@@ -110,6 +108,7 @@ ms.suite: ems
 ![選取 [儲存]](../media/SaveApplication.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

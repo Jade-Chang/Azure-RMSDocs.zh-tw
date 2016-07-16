@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 概觀 | Azure RMS
-description: AD RMS 和 Azure RMS 是可協助保護數位資訊免於未經授權使用的資訊保護技術。
-keywords:
+title: "概觀 | Azure RMS"
+description: "AD RMS 和 Azure RMS 是可協助保護數位資訊免於未經授權使用的資訊保護技術。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+
 
 ---
 
@@ -50,7 +46,7 @@ MS RMS SDK 4.2 提供一些新的酷炫功能，包括下列各項︰
 
 -   **重新設計的 API** – MS RMS SDK 4.2 API 針對最高簡易性設計，因此開發人員可以享有簡單透明的加密和解密 API，其提供最省力的一致 RMS 行為。
 -   **AD RMS 和 Azure RMS 的混合式支援** – 單一 RMS 啟用的應用程式可以取用和保護來自 AD RMS 伺服器 (使用 AD RMS 的行動裝置擴充功能) 和 Azure RMS 服務的內容。 MS RMS SDK 4.2 可以明確地探索 IT 系統管理員可以設定的相關端點。
--   **備妥您自己的驗證程式庫** – 身為應用程式開發人員，您可以選擇要搭配 MS RMS SDK 4.2 使用的驗證程式庫。 無論是 [Azure AD 驗證程式庫](https://msdn.microsoft.com/en-us/library/jj573266.aspx)或貴組織的自訂程式庫，MS RMS SDK 4.2 都會隔離驗證堆疊，因此您可以選擇最適合您需求的程式庫。
+-   **備妥您自己的驗證程式庫** – 身為應用程式開發人員，您可以選擇要搭配 MS RMS SDK 4.2 使用的驗證程式庫。 無論是 [Azure AD 驗證程式庫](https://msdn.microsoft.com/library/jj573266.aspx)或貴組織的自訂程式庫，MS RMS SDK 4.2 都會隔離驗證堆疊，因此您可以選擇最符合需求的程式庫。
 -   **備妥您自己的使用者介面** - MS RMS SDK 4.2 現在可讓您實作您的自訂使用者介面。 在取用受保護內容時，從保護內容與選擇範本到顯示和變更權限，MS RMS SDK 4.2 都不會在應用程式上強制執行任何內建的 UI。 不過，如果您想要，您可以透過我們的 [GitHub 帳戶](https://github.com/AzureAD/)，將 Microsoft RMS UI 程式庫用於所有平台。
 -   **離線存取受保護的內容** – MS RMS SDK 4.2 可讓您的應用程式使用者存取受保護的內容，即使沒有網際網路連線亦然。 MS RMS SDK 4.2 可安全地快取受保護內容的取用原則，讓使用者可以離線存取 RMS 保護的資料。
 
@@ -70,6 +66,7 @@ MS RMS SDK 4.2 提供一些新的酷炫功能，包括下列各項︰
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

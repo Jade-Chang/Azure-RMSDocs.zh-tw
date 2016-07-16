@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 檢視並使用 Rights Management 保護的檔案 | Azure RMS
-description:
-keywords:
+title: "檢視並使用 Rights Management 保護的檔案 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+
 
 ---
 
@@ -36,10 +30,10 @@ ms.suite: ems
 >
 > 如果您的組織不使用 Azure Rights Management (Azure RMS) 或 AD RMS，您可以申請免費帳戶，在接受您的認證後，您就可以開啟使用 RMS 保護的檔案：
 >
-> -   若要申請這個帳戶，請按一下連結來申請 [個人版 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。.
+> -   若要申請此帳戶，請按一下連結來申請 [個人版 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
 >     當您註冊時，使用您的公司電子郵件地址而不是個人的電子郵件地址。 如果您是因為在電子郵件中收到受保護的附加檔案而註冊，請使用電子郵件訊息寄給您時所使用的相同電子郵件地址。
-> -   如需詳細資訊，請參閱 [個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。.
+> -   如需詳細資訊，請參閱[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
 ## 檢視受保護的檔案
 使用檔案總管或含有附件的電子郵件訊息，按兩下受保護的檔案，然後輸入您的認證 (如果提示您這樣做)。
@@ -59,7 +53,7 @@ ms.suite: ems
 
     ![使用 RMS 共用應用程式時，透過電子郵件共用的 pfile 對話方塊](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **檔案的副檔名為 *.ppdf*，也可能是受保護的文字或影像檔 (例如 *.ptxt* 或* .pjpg*)。)**
+- **檔案的副檔名為 *.ppdf*，也可能是受保護的文字或影像檔 (例如 *.ptxt* 或 * .pjpg*)**
 
     檔案已受到原生保護成為唯讀複本。
 
@@ -89,9 +83,9 @@ ms.suite: ems
 
     比方說，如果檔案是以檔案名稱 document.vsdx.pfile 而受保護，請檔案總管中檢視檔案，並將檔案儲存為 document.vsdx。
 
-    新的檔案不再受到保護。 如果您想要保護檔案，則必須手動進行。 如需指示，請參閱 [使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](sharing-app-protect-in-place.md)。.
+    新的檔案不再受到保護。 如果您想要保護檔案，則必須手動進行。 如需指示，請參閱[使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](sharing-app-protect-in-place.md)。
 
-- **檔案的副檔名為 *.ppdf*，也可能是受保護的文字或影像檔 (例如 *.ptxt* 或* .pjpg*)。)**
+- **檔案的副檔名為 *.ppdf*，也可能是受保護的文字或影像檔 (例如 *.ptxt* 或 * .pjpg*)**
 
     您只能檢視檔案，如果您重新命名或移動它，檔案仍然是受到保護。
 
@@ -113,6 +107,7 @@ ms.suite: ems
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

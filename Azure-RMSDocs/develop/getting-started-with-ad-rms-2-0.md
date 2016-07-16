@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 開始使用 | Azure RMS
-description: RMS SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。
-keywords:
+title: "開始使用 | Azure RMS"
+description: "RMS SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: 81541dbadabe3417299f47447384934373275e75
+
 
 ---
 # 使用者入門
@@ -39,17 +35,17 @@ Rights Management Services SDK 2.1 平台可讓開發人員建置透過 RMS Serv
 | [安裝 SDK](install-the-rms-sdk.md) | 本主題會引導您安裝開發人員工具。|
 | [設定 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | 本主題包含如何設定 Visual Studio 專案以使用 RMS SDK 2.1 的指示。|
 | [開發您的應用程式](developing-your-application.md) | 本主題包含已啟用 RMS 應用程式的核心層面基本指導，可以當作您的專屬應用程式開發基礎。|
-| [測試您的應用程式](running-your-first-application.md) |本主題包含如何設定以進行應用程式測試的指示。|
+| [測試您的應用程式](how-to-set-up-your-test-environment.md) |本主題包含如何設定以進行應用程式測試的指示。|
 | [部署到生產環境](deploying-your-application.md) |本主題引導您完成已啟用權限應用程式的部署選項。|
-
-一旦您開始使用，請查看我們的一些其他 [RMS 範例](samples.md)。 然後，隨時注意我們的 [RMS 開發人員的專屬部落格](http://blogs.msdn.com/b/rms/)。
 
 
 請藉由遵循下列主題中的指引來嘗試使用 RMS SDK 2.1︰
 
--   [安裝 SDK](install-the-rms-sdk.md)
--   [測試具備權限的應用程式](running-your-first-application.md)
--   [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)
+- [安裝 SDK](install-the-rms-sdk.md)
+- [設定 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
+- [開發您的應用程式](developing-your-application.md)
+- [測試您的應用程式](how-to-set-up-your-test-environment.md)
+- [部署到生產環境](deploying-your-application.md)
 
 ### 為何要使用 RMS SDK 2.1 保護您的內容
 
@@ -71,17 +67,15 @@ RMS SDK 2.1 支援重要的用戶端和伺服器平台範圍。 如需詳細資�
 
 ## 相關主題
 
-* [AD RMS 範例](samples.md)
+* [RMS 開發人員指南](developers-guide.md)
 * [AD RMS 開發人員的專屬部落格](http://blogs.msdn.com/b/rms/)
-* [安裝 SDK](install-the-rms-sdk.md)
-* [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)
-* [概觀](ad-rms-overview.md)
-* [支援的平台](supported-platforms.md)
+
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

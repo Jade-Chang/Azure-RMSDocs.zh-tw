@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 共用應用程式技術概觀 | Azure RMS
-description:
-keywords:
+title: "Rights Management 共用應用程式技術概觀 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 4f63cb7911661104113d19ecd84ef7c80a874408
+
 
 ---
 
@@ -66,7 +60,8 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 受到一般保護的檔案，原始檔案的副檔名一律會變更為 .pfile。
 
-> [!WARNING] 如果您有防火牆、Web proxy 或會檢查並根據副檔名採取動作的安全性軟體，您可能需要重新設定這些安全性功能以支援這些新的副檔名。
+> [!WARNING]
+> 如果您有防火牆、Web proxy 或會檢查並根據副檔名採取動作的安全性軟體，您可能需要重新設定這些安全性功能以支援這些新的副檔名。
 
 |原始副檔名|受 RMS 保護的副檔名|
 |--------------------------------|-------------------------------------|
@@ -144,6 +139,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 最新消息和版本資訊 | Azure RMS
-description: 概述這個新版 RMS SDK 中的重要變更與功能。
-keywords:
+title: "最新消息和版本資訊 | Azure RMS"
+description: "概述這個新版 RMS SDK 中的重要變更與功能。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+
 
 ---
 
@@ -29,7 +25,8 @@ ms.suite: ems
 ## 新功能
 Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性帶入全新境界。 本主題概述這個新版 RMS SDK 中的重要變更與功能。
 
--   [我們的 2015 年 12 月更新的新功能](#new_for_our_december_2015_update)
+-   [2016 年 6 月的新功能](#new_for_June_2016)
+-   [2015 年 12 月更新](#december_2015_update)
 -   [2015 年 7 月更新 - 新增 Linux / C++ 開發的支援](#july_2015_update_-_adds_support_for_linux___c___development)
 -   [2015 年 5 月更新 - 新增記錄控制](#may_2015_update_-_adds_logging_control)
 -   [2015 年 2 月更新 - 新增 Windows 市集應用程式支援](#february_2015_update_-_adds_windows_store_application_support)
@@ -38,7 +35,15 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 -   [版本資訊](#release-notes)
 -   [常見問題集](#frequently_asked_questions)
 
-### 我們的 2015 年 12 月更新的新功能
+### 2016 年 6 月的新功能
+
+- **新式驗證支援** - 這會將 Active Directory 驗證庫 (ADAL) 登入整合到啟用 RMS 的應用程式中。 這可啟用登入功能，例如 Multi-Factor Authentication (MFA)、SAML 型協力廠商身分識別提供者與 RMS 用戶端應用程式、智慧卡和憑證型驗證，並讓啟用 RMS 的應用程式不再需要使用基本驗證通訊協定。
+- **文件追蹤支援** - 開發人員現在可以在保護應用程式中的文件時啟用文件追蹤 
+- 效能改善
+- 錯誤修正
+
+
+### 2015 年 12 月更新
 
 在此版本中，裝置的 RMS SDK 現在是 4.2 版且新增︰
 
@@ -124,7 +129,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
 -   **AD RMS 支援** - IT 系統管理員可以使用行動裝置上啟用 RMS 的應用程式，搭配新 AD RMS 伺服器的行動裝置擴充功能。
 -   **離線取用** - 使用者可以離線存取 RMS 保護的資料。
--   **隔離 Auth** - 開發人員可以將自己的驗證程式庫用於 Azure RMS 和 AD RMS (或使用建議的 [Azure AD 驗證程式庫 (ADAL)](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx))。
+-   **隔離的驗證** - 開發人員可以將自己的驗證庫用於 Azure RMS 和 AD RMS (或使用建議的 [Azure AD 驗證庫 (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx))。
 -   **隔離 UI** - 開發人員可以建置其使用者介面，以保護和取用 RMS 保護的文件。
 -   **重新設計 API** - 開發人員現在可以享有簡單透明的加密和解密 API，其提供最省力的一致 RMS 行為和使用者體驗。
 
@@ -227,6 +232,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

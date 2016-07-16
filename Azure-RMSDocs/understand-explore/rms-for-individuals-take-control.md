@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 系統管理員如何控制個人版 RMS 建立的帳戶 | Azure RMS
-description:
-keywords:
+title: "系統管理員如何控制個人版 RMS 建立的帳戶 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
+
 
 ---
 
@@ -49,9 +43,10 @@ ms.suite: ems
 
 ## 後續步驟
 
-如果使用者 (而不是系統管理員) 可以在 Azure Active Directory 中，針對個人版 RMS 建立自己的帳戶，要如何瞭解已這麼做？  請參閱 [如何找出您的使用者是否已註冊個人版 RMS](rms-for-individuals-identify-sign-up.md)。.
+如果使用者 (而不是系統管理員) 可以在 Azure Active Directory 中，針對個人版 RMS 建立自己的帳戶，要如何瞭解已這麼做？  請參閱[如何找出您的使用者是否已註冊個人版 RMS](rms-for-individuals-identify-sign-up.md)。
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

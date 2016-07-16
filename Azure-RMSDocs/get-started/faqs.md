@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure Rights Management 常見問題集 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 常見問題集 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/07/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
+ms.openlocfilehash: a3ed9e8de496741fae8904481edb1177762a12c0
+
 
 ---
 
@@ -32,7 +26,11 @@ ms.suite: ems
 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的一些常見問題集，也稱為 Azure RMS：
 
 ## 部署 Azure RMS 需要及如何執行哪些工作？
-首先，請檢查 [Azure Rights Management 的需求](requirements-azure-rms.md)，其中包含雲端訂閱選項的相關資訊、如何使用內部部署伺服器和 Azure RMS、目前不支援的部署案例、哪些裝置和應用程式支援 Azure RMS，以及當您需要防火牆或 Proxy 伺服器的 IP 位址和網域名稱清單時可用的連結。 您也可能想要檢查此**開始使用**一節以及**了解和探索**一節的其他文章，對 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 如何協助保護您組織的資料、其如何使用應用程式、其與內部部署版本的 Active Directory Rights Management 的比較結果，及 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的特定術語和縮寫的基本了解。
+首先，請檢查 [Azure Rights Management 的需求](requirements-azure-rms.md)，其中包含雲端訂閱選項的相關資訊、如何使用內部部署伺服器和 Azure RMS、目前不支援的部署案例、哪些裝置和應用程式支援 Azure RMS，以及當您需要防火牆或 Proxy 伺服器的 IP 位址和網域名稱清單時可用的連結。 
+
+您也可以參閱**開始使用**這一節以及**了解和探索**一節的其他文章，以初步了解 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 如何協助保護組織的資料、如何使用應用程式、其與內部部署版本的 Active Directory Rights Management 的比較，以及 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的特定術語和縮寫。
+
+若要開始作業，請使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)。
 
 ## 檔案必須存在於雲端中才能受到 Azure RMS 保護嗎？
 否，這是一個常見的誤解。 Azure Rights Management 服務 (和 Microsoft) 不會在資訊保護程序中查看或儲存您的資料。 您所保護的資訊永遠不會傳送至或儲存在 Azure 中，除非您明確地將它儲存在 Azure 中，或使用將它儲存在 Azure 中的另一項雲端服務。 
@@ -40,21 +38,44 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 如需詳細資訊，請參閱 [Azure RMS 如何運作？背後原理](../understand-explore/how-does-it-work.md)，以便了解在內部部署建立和儲存的可樂的機密配方如何受到 Azure RMS 保護，但是仍然在內部部署。
 
 ## 我可以整合 Azure RMS 與我的內部部署伺服器嗎？
-是。 Azure RMS 可與您的內部部署伺服器整合，例如 Exchange Server、SharePoint 和 Windows 檔案伺服器。 若要這樣做，請使用 [Rights Management 連接器](../deploy-use/deploy-rms-connector.md)。 或者，如果您只對在 Windows Server 上使用檔案分類基礎結構 (FC) 感興趣，您可以使用 [RMS 保護 Cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)。 您也可以同步處理 Active Directory 網域控制站與 Azure AD 並在兩者間建立同盟，以為使用者獲得更順暢的驗證體驗，例如使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)。
+是。 Azure RMS 可與您的內部部署伺服器整合，例如 Exchange Server、SharePoint 和 Windows 檔案伺服器。 若要這樣做，請使用 [Rights Management 連接器](../deploy-use/deploy-rms-connector.md)。 或者，如果您只想在 Windows Server 上使用檔案分類基礎結構 (FCI)，則可以使用 [Azure Rights Management Protection Cmdlets](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx) (Azure RMS 保護 Cmdlet)。 您也可以同步處理 Active Directory 網域控制站與 Azure AD 並在兩者間建立同盟，以為使用者獲得更順暢的驗證體驗，例如使用 [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)。
 
 Azure RMS 會在必要時自動產生及管理 XrML 憑證，因此它不會使用內部部署 PKI。 如需 Azure RMS 如何使用憑證的詳細資訊，請參閱 [Azure RMS 如何運作？](../understand-explore/how-does-it-work.md) 一文中的 [Azure RMS 運作方式的逐步解說：第一次使用、內容保護、內容使用](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 一節。
+
+## 在哪裡可以找到整合 Azure RMS 的協力廠商解決方案相關資訊？
+
+許多軟體廠商已經有整合 Azure RMS 的解決方案或正在實作這類解決方案，因此廠商清單正快速增加。 您可以參閱 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 並從 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 的 Twitter 帳戶取得最新更新。 不過，如果您有特定問題，請傳送電子郵件訊息給資訊保護小組：askipteam@microsoft.com。
+
+## RMS 連接器是否有管理組件或類似的監視機制？
+
+雖然 Rights Management 連接器會將資訊、警告和錯誤訊息記錄到事件記錄檔中，但並沒有包含監視這些事件之功能的管理組件。 不過，[監視 Azure Rights Management 連接器](../deploy-use/monitor-rms-connector.md)中會記錄事件及其描述的清單，包括可協助您採取更正動作的詳細資訊。
+
+## 僅有全域管理員才能設定 Azure RMS，或是我可以將此作業委派給其他系統管理員？
+
+毫無疑問，Office 365 租用戶或 Azure AD 租用戶的全域管理員可以執行 Azure RMS 的所有系統管理工作。 不過，如果您想要將系統管理權限指派給其他使用者，可以使用 [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) 這個 Azure RMS PowerShell Cmdlet，來進行此作業。 您可以依據使用者帳戶或群組，來指派此系統管理角色。 您可以使用**全域管理員**和**連接器系統管理員**這兩種角色。 
+
+如這些角色的名稱所示，第一個角色具有執行 Azure Rights Management 所有管理工作的權限 (而不需要將其設為其他雲端服務的全域管理員)，而第二個角色僅有執行 Rights Management (RMS) 連接器的權限。
+
+注意事項如下：
+
+- 只有 Office 365 全域管理員和 Azure AD 全域管理員可以使用管理入口網站 (Office 365 系統管理中心或 Azure 傳統入口網站) 來設定 Azure RMS。 若為獲 Azure RMS 全域管理員角色指派的使用者，則必須使用 Azure RMS PowerShell 命令來設定 Azure RMS。 若要找出特定工作的正確 Cmdlet，請參閱[使用 Windows PowerShell 管理 Azure Rights Management](../deploy-use/administer-powershell.md)。
+
+- 如果您已設定[登入控制項](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，這對 Azure RMS 的管理功能沒有影響，但 RMS 連接器除外。 好比說，如果您已設定登入控制項，僅限讓「IT 部門」群組來保護內容，則您必須使用屬於該群組成員的帳戶來安裝和設定 RMS 連接器。 
+
+- Azure RMS 的系統管理員 (租用戶的全域管理員或 Azure RMS 的全域管理員) 皆不能自動取消受 Azure RMS 所保護之電子郵件或文件的保護。 只有在啟用進階使用者功能時，獲指派為 Azure RMS 進階使用者的使用者可以執行這項操作。 不過，租用戶的全域管理員以及任何 Azure RMS 的全域管理員皆可將使用者指派為進階使用者，包括他們自己的帳戶。 他們也可以啟用進階使用者功能。 這些動作都會記錄在 Azure RMS 系統管理員記錄中。 如需詳細資訊，請參閱[設定 Azure Rights Management 和探索服務或資料復原的進階使用者](../deploy-use/configure-super-users.md)的安全性最佳做法一節。 
+
 
 ## 我有 Exchange 的混合式部署，有部分使用者在 Exchange Online 上，而其他的使用者在 Exchange 和其他人在 Exchange Server 上—Azure RMS 支援這個情形嗎？
 絕對支援，而且其優點在於，使用者將能夠順暢地跨兩個 Exchange 部署保護和取用受保護的電子郵件和附件。 如需此組態，請[啟用 Azure RMS](../deploy-use/activate-service.md) 並[啟用 Exchange online 的 IRM](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)，然後為 Exchange Server [部署和設定 RMS 連接器](../deploy-use/deploy-rms-connector.md)。
 
 ## 有設定 Exchange Online 以使用 Azure RMS 的逐步指示嗎？
 
-是。 請參閱 [Exchange Online：IRM 設定](../deploy-use/configure-office365.md#exchange-online-irm-configuration.md )，以查看讓 Exchange Online 使用 Azure RMS 的典型命令集，Outlook Web 應用程式為何未立即顯示 [設定權限] 功能表選項，以及當您變更或更新 Azure RMS 範本時要執行的命令。 
+是。 請參閱 [Exchange Online：資訊版權管理設定](../deploy-use/configure-office365.md#exchange-online-irm-configuration)，以了解可讓 Exchange Online 使用 Azure RMS 的典型命令集、Outlook Web 應用程式未立即顯示 [設定權限] 功能表選項的原因，以及當您變更或更新 Azure RMS 範本時要執行的命令。 
 
 ## 如果我在生產中部署 Azure RMS，我的公司會不會在解決方案中遭到「鎖定」，或無法存取我們以 Azure RMS 保護之內容的風險？
 不會，即使您決定不再使用 Azure RMS，您隨時都可以完全掌控您的資料，並且可以繼續存取它。 如需詳細資訊，請參閱[解除委任並停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)。
 
-不過，在您解除委任 Azure RMS 部署之前，我們想要聽取您的意見並了解您為什麼這樣決定。 如果 Azure RMS 無法滿足您的商務需求，請在近期規畫新功能或有替代方案時洽詢我們。 請將電子郵件訊息傳送至 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS) ，我們會很樂意與您討論技術和商務需求。
+不過，在您解除委任 Azure RMS 部署之前，我們想要聽取您的意見並了解您為什麼這樣決定。 如果 Azure RMS 無法滿足您的商務需求，請在規劃新功能期間或有替代方案時連絡我們。 請將電子郵件訊息傳送至 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS) ，我們會很樂意與您討論技術和商務需求。
 
 ## 我是否能控制哪些使用者可以使用 Azure RMS 來保護內容？
 是，Azure RMS 具有適用於這種情況的使用者上線控制功能。 如需詳細資訊，請參閱[啟用 Azure Rights Management](../deploy-use/activate-service.md) 文章的[設定分階段部署的登入控制項](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)一節。
@@ -65,7 +86,7 @@ Azure RMS 的其中一個最大優點是它支援企業對企業共同作業，�
 沒有管理選項可供用來防止使用者安全地與特定組織共用文件。 例如，您要封鎖您不信任或在業務上與您競爭的組織。 防止 Azure RMS 將受保護的文件傳送給這些組織中的使用者將是徒勞無功的舉動，因為如此一來您的使用者將會以未受保護的狀態共用文件，這大概是您最不想要在此案例中看到的結果！ 舉例來說，這樣您將無法識別誰在與這些組織中的哪些使用者共用公司的機密文件，但如果文件 (或電子郵件) 有受到 Azure RMS 保護，您就能加以識別。
 
 ## 當我與公司外部人員共用受保護的文件時，如何讓該使用者通過驗證？
-Azure RMS 一律使用 Azure Active Directory 帳戶和相關聯的電子郵件地址進行使用者驗證，讓系統管理員可以順暢進行企業對企業的共同作業。 如果其他組織使用 Azure 服務，使用者將會在 Azure Active Directory 擁有帳戶，即使這些帳戶已進行內部部署建立和管理並且同步處理至 Azure 亦然。  如果組織背後擁有 Office 365，此服務也會將 Azure Active Directory 用於使用者帳戶。  如果使用者的組織在 Azure 中沒有受管理的帳戶，使用者可以註冊 [個人版 RMS](../understand-explore/rms-for-individuals.md)，它會利用使用者的帳戶為組織建立未受管理的 Azure 租用戶及目錄，讓此使用者可以通過 Azure RMS 的驗證。
+Azure RMS 一律使用 Azure Active Directory 帳戶和相關聯的電子郵件地址進行使用者驗證，讓系統管理員可以順暢進行企業對企業的共同作業。 如果其他組織使用 Azure 服務，使用者將會在 Azure Active Directory 擁有帳戶，即使這些帳戶已進行內部部署建立和管理並且同步處理至 Azure 亦然。 如果組織背後擁有 Office 365，此服務也會將 Azure Active Directory 用於使用者帳戶。 如果使用者的組織在 Azure 中沒有受管理的帳戶，使用者可以註冊[個人版 RMS](../understand-explore/rms-for-individuals.md)，它會利用使用者的帳戶為組織建立未受管理的 Azure 租用戶及目錄，以讓該名使用者 (及後續使用者) 可以通過 Azure RMS 的驗證。
 
 這些帳戶的驗證方法可能會不同，取決於其他組織中的系統管理員對 Azure Active Directory 帳戶的設定方式。 比方說，他們可以使用為這些帳戶、多因素驗證 (MFA)、聯盟所建立的密碼，或是在 Active Directory 網域服務中建立並同步處理至 Azure Active Directory 的密碼。
 
@@ -85,7 +106,7 @@ Azure AD Premium 功能可讓您藉由指定[以屬性為基礎的規則](https:
 
 
 ## Azure RMS 支援哪些裝置和檔案類型？
-如需支援的裝置清單，請參閱[支援 Azure RMS 的用戶端裝置](../get-started/requirements-client-devices.md)。 目前並非所有支援的裝置都能支援所有 RMS 功能，因此請務必另外查看同一文章中的[用戶端裝置功能](../get-started/requirements-client-devices.md#client-device-capabilities)表格。
+如需支援的裝置清單，請參閱 [Azure Rights Management 的需求：支援 Azure RMS 的用戶端裝置](../get-started/requirements-client-devices.md)。 目前並非所有支援的裝置都能支援所有 RMS 功能，因此請務必另外查看 [Azure Rights Management 的需求：支援 Azure RMS 的應用程式](../get-started/requirements-applications.md)中的表格。
 
 Azure RMS 可支援所有檔案類型。 對於文字、影像、Microsoft Office (Word、Excel、PowerPoint) 檔案、.pdf 檔案及部分其他應用程式檔案類型，Azure RMS 提供了包含加密和增強權利 (權限) 的原生保護功能。 對於所有其他應用程式和檔案類型，一般保護提供檔案封裝及驗證來確認使用者是否獲得開啟檔案授權。
 
@@ -108,7 +129,7 @@ Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS)
 ## 我正在尋找的功能似乎不是使用 SharePoint 受保護程式庫—有規劃對我的功能的支援嗎？
 目前，SharePoint 使用 IRM 受保護程式庫支援 RMS 受保護文件，該程式庫不支援自訂範本、文件追蹤和一些其他功能。 如需詳細資訊，請參閱 [Office 應用程式和服務](../understand-explore/office-apps-services-support.md)文章的 [SharePoint Online 和 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 一節。
 
-如果您對尚不支援的特定功能有興趣，請務必留意 [RMS 小組部落格](http://blogs.technet.com/b/rms/)上的宣告。
+如果您對尚未支援的特定功能有興趣，請務必留意 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 上的公告。
 
 ## 如何在 SharePoint Online 中設定商務用 One Drive，讓使用者可以安全地與公司內外的人員共用其檔案？
 根據預設，身為 Office 365 的系統管理員，您沒有進行此設定，但使用者已設定。
@@ -144,7 +165,6 @@ Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS)
 
 除了名稱和外觀以外，**[不要轉寄]** 既不是 [轉寄] 權限的相反，也不是範本。 它其實是一組權限，包括限制複製、列印及儲存附件，以及限制轉寄電子郵件。 這些權限會透過選擇的收件者以動態方式套用到使用者，而不是由管理員以靜態方式指派。 如需詳細資訊，請參閱 [Configuring usage rights for Azure Rights Management](../deploy-use/configure-usage-rights.md) (設定 Azure Rights Management 的使用權限) 中[電子郵件的 [不要轉寄] 選項](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)一節。
 
-
 ## 哪邊可以找到法律、規範和 SLA 等方面的 Azure RMS 支援資訊？
 Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋找的資訊與 Azure RMS 有關，但與如何使用 Azure RMS 服務無關，請查看下列資源：
 
@@ -174,9 +194,13 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 -   Azure Active Directory 文件網站： [Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
 
--   Azure Active Directory 程式庫： [Azure Active Directory](http://msdn.microsoft.com/library/azure/jj673460.aspx)
+-   Azure Active Directory 程式庫：[Azure Active Directory](https://msdn.microsoft.com/library/azure/mt168838.aspx)
 
 -   Office 365 程式庫：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
+
+## 聽說 Azure RMS 很快會出新版本，何時會發行？
+
+本技術文件不包含即將發行版本的相關資訊。 如需這類資訊與版本公告，請參閱 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 並從 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 的 Twitter 帳戶取得最新更新。 如果您對 Office 版本感興趣，請務必同時參閱 [Office 部落格] (https://blogs.office.com/)。
 
 ## 我的問題不在那裏怎麼辦？
 使用 [Azure Rights Management 的資訊與支援](information-support.md)中列出的連結和資源。
@@ -189,13 +213,12 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 -   [文件追蹤的常見問題集](http://go.microsoft.com/fwlink/?LinkId=523977)
 
-此常見問題集頁面將會定期更新 [Microsoft Rights Management (RMS) 小組](http://blogs.technet.com/b/rms/) 部落格的每月文件更新宣告中所列的新增部分。
-
-> [!TIP] 您可以利用部落格上的 [文件標籤](http://blogs.technet.com/b/rms/archive/tags/docs/) 更輕鬆地找到這些文件公告。
+此常見問題集頁面將會定期更新，以收錄 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 中每月文件更新公告所列的新增內容。
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

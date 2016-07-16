@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Windows Phone 設定 | Azure RMS
-description: Windows Phone 應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
-keywords:
+title: "Windows Phone 設定 | Azure RMS"
+description: "Windows Phone 應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 90552435666b8f25c893fcffe8c8cf3355a5942d
+ms.openlocfilehash: 136d6e9d0c45a9779f87e32eed8288fe8ee3a622
+
 
 ---
 
@@ -55,7 +51,7 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 -   開啟 *Visual Studio*。
 -   按一下 [檔案]。 在 [檔案] 功能表上按一下 [新增]，然後按一下 [專案]。
--   在 [新增專案] 對話方塊中，選取 [Visual C\#]，選取 [空白應用程式 (Windows Phone)]，然後按一下 [確定]。
+-   在 [新增專案] 對話方塊中，依序選取 [Visual C\#] 和 [空白應用程式 (Windows Phone)]，然後按一下 [確定]。
 
     ![建立新專案](../media/wpsetup-newproj.png)
 
@@ -96,6 +92,7 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

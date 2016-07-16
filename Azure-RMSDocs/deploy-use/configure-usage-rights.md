@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 設定 Azure Rights Management 的使用權限 | Azure RMS
-description:
-keywords:
+title: "設定 Azure Rights Management 的使用權限 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
+ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+
 
 ---
 
@@ -65,7 +59,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱**：[儲存]
 
-**API 常數或值**：IPC_GENERIC_WRITEL"EDIT"
+**API 常數或值：**IPC_GENERIC_WRITE L"EDIT"
 
 在 Office 應用程式中，這個權限也允許使用者修改文件。
 
@@ -83,7 +77,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱**：未實作。
 
-**API 常數或值**：IPC_GENERIC_COMMENTL"COMMENT
+**API 常數或值：**IPC_GENERIC_COMMENT L"COMMENT
 
 此權限可在 SDK 中使用、在 Windows PowerShell 的 RMS 保護模組中可作為特定原則使用，而且在某些軟體廠商應用程式中已實作。 不過，尚未廣泛使用，Office 應用程式目前也不支援。
 
@@ -101,7 +95,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱：**[匯出 (另存新檔)]
 
-**API 常數或值：**IPC_GENERIC_EXPORTL"EXPORT"
+**API 常數或值：**IPC_GENERIC_EXPORT L"EXPORT"
 
 這個權限也允許使用者在應用程式中執行其他匯出選項，例如 [傳送到 OneNote]。
 
@@ -119,7 +113,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱：**[轉寄]
 
-**API 常數或值：** IPC_EMAIL_FORWARDL"FORWARD"
+**API 常數或值：**IPC_EMAIL_FORWARD L"FORWARD"
 
 不允許轉寄者在轉寄動作中授與權限給其他使用者。
 
@@ -137,7 +131,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱：**[完全控制]
 
-**API 常數或值：**IPC_GENERIC_ALLL"OWNER"
+**API 常數或值：**IPC_GENERIC_ALL L"OWNER"
 
 包括能夠移除保護。
 
@@ -155,7 +149,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱：**[列印]
 
-**API 常數或值：**IPC_GENERIC_PRINTL"PRINT
+**API 常數或值：**IPC_GENERIC_PRINT L"PRINT
 
 ---
 
@@ -187,7 +181,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱：**[全部回覆]
 
-**API 常數或值：**IPC_EMAIL_REPLYALLL"REPLYALL"
+**API 常數或值︰**IPC_EMAIL_REPLYALL L"REPLYALL"
 
 ---
 
@@ -203,7 +197,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱：**[檢視]
 
-**API 常數或值：**IPC_GENERIC_READL"VIEW"
+**API 常數或值：**IPC_GENERIC_READ L"VIEW"
 
 ---
 
@@ -219,7 +213,7 @@ ms.suite: ems
 
 **AD RMS 範本中的名稱：***擷取*
 
-**API 常數或值：**IPC_GENERIC_EXTRACTL"EXTRACT"
+**API 常數或值：**IPC_GENERIC_EXTRACT L"EXTRACT"
 
 在某些應用程式中，這也允許以未受保護的形式儲存整份文件。
 
@@ -283,7 +277,8 @@ Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應�
  
 - 如果她套用 **[不要轉寄]** 選項，收件者將無法藉由將電子郵件移到另一個位置，與行銷部門中的任何人共用資訊。 在此案例中，只有原始收件者 (及電子郵件擁有者) 能夠檢視電子郵件中的資訊。
 
-> [!NOTE] 在只有寄件者選擇的收件者應該看到電子郵件中的資訊時，請使用 **[不要轉寄]**。 除了寄件者選擇的收件者以外，要將權限限制在管理員事先指定的某群人時，則對電子郵件使用範本。
+> [!NOTE] 
+> 在只有寄件者選擇的收件者應該看到電子郵件中的資訊時，請使用 **[不要轉寄]**。 除了寄件者選擇的收件者以外，要將權限限制在管理員事先指定的某群人時，則對電子郵件使用範本。
 
 
 
@@ -293,6 +288,7 @@ Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應�
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

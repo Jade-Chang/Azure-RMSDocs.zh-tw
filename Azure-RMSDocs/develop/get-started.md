@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 開始使用 | Azure RMS
-description: 第一個應用程式的快速入門指南是透過每個作業系統 / 平台的開發環境設定指南。
-keywords:
+title: "開始使用 | Azure RMS"
+description: "第一個應用程式的快速入門指南是透過每個作業系統 / 平台的開發環境設定指南。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
+
 
 ---
 
@@ -59,6 +55,7 @@ ms.suite: ems
   |[社群資源](community-resources.md)|多個平台上逐漸成長的開發人員社群為 Active Directory Rights Management Services 提供良好的支援。|
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

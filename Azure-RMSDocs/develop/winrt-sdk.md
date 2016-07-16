@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Windows 市集設定 | Azure RMS
-description: Windows 市集應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
-keywords:
+title: "Windows 市集設定 | Azure RMS"
+description: "Windows 市集應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 0b8e0fb6d872506ac3529bd137286f0e8fa562ee
+
 
 ---
 
@@ -41,7 +37,7 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 您的開發系統必須使用下列軟體︰
 
 -   [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet) 作業系統
--   [適用於 Windows 8.1 的 Windows SDK](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)
+-   [適用於 Windows 8.1 的 Windows 軟體開發套件 (SDK)](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
 -   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 或以上版本，或 Visual Studio Express 2012 (適用於 Windows 8.0/8.1 的 Windows SDK 隨附)。
 -   適用於 Windows 市集應用程式的 MS RMS SDK 4.2 套件。 如需詳細資訊，請參閱[開始使用](get-started.md)。
 -   驗證程式庫︰建議您使用 [Azure AD 驗證程式庫](https://msdn.microsoft.com/en-us/library/jj573266.aspx)和其他可使用的驗證程式庫。
@@ -57,7 +53,7 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 -   開啟 Visual Studio。
 -   依序按一下 [檔案]、[新增]，然後按一下 [專案]。
--   在 [新增專案] 對話方塊中，按一下 [Visual C\#]，選取 [空白應用程式 (Windows)]，然後按一下 [確定]。
+-   在 [新增專案] 對話方塊中，按一下 [Visual C\#]，並選取 [空白應用程式 (Windows)]，然後按一下 [確定]。
 
     ![建立新專案](../media/winrtsetup-newproj.png)
 
@@ -89,6 +85,7 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 [Windows API 參考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

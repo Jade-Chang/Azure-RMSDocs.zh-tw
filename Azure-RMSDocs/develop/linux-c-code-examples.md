@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Linux 程式碼範例 | Azure RMS
-description: 本主題介紹 Linux 版 RMS SDK 的重要案例與程式碼元素。
-keywords:
+title: "Linux 程式碼範例 | Azure RMS"
+description: "本主題介紹 Linux 版 RMS SDK 的重要案例與程式碼元素。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: ace7103cfb44d84a7dd6bf64f57c2a47530117e0
+
 
 ---
 
@@ -101,7 +97,7 @@ ms.suite: ems
     }
 
 **建立受保護的檔案資料流**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰這個方法會透過 SDK 方法從傳入的支援資料流建立受保護的檔案資料流 *ProtectedFileStream::Aquire*，然後傳回給呼叫者。
 
@@ -205,13 +201,7 @@ ms.suite: ems
     
     AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
     }
-   catch (const rmsauth::Exception&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
-    outFile-&gt;close();
-    remove(fileOut.c_str());
-    }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
+   catch (const rmsauth::Exception&amp; e) { AddLog(&quot;ERROR: &quot;, e.error().c_str()); outFile-&gt;close(); remove(fileOut.c_str()); } catch (const rmscore::exceptions::RMSException&amp; e) { AddLog(&quot;ERROR: &quot;, e.what());
     
     outFile-&gt;close();
     remove(fileOut.c_str());
@@ -222,7 +212,7 @@ ms.suite: ems
 
 
 **使用從範本建立的原則保護檔案**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰擷取與使用者相關聯的範本清單，然後使用選取的範本建立原則，接著使用該原則保護檔案。
 
@@ -255,7 +245,7 @@ ms.suite: ems
     }
 
 **保護指定原則的檔案**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰使用指定的原則建立受保護的檔案資料流，然後保護該檔案。
 
@@ -382,7 +372,7 @@ ms.suite: ems
 
 
 **建立保護原則與提供選取的權限給使用者**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰建立原則描述元，並填入使用者的權限資訊，然後使用原則描述元建立使用者原則。 此原則可用來透過呼叫 *ConvertToPFileUsingPolicy* (請參閱本主題前一節所述的此內容) 保護選取的檔案。
 
@@ -511,7 +501,7 @@ ms.suite: ems
 ## 案例︰RMS 驗證
 
 下列範例會示範兩種不同的驗證方法；使用和不使用 UI 取得 Azure 驗證 oAuth2 權杖。
-**利用 UI 取得 oAuth2 驗證權杖**
+**使用 UI 取得 oAuth2 驗證權杖**
 **來源**：[rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
 **步驟 1**︰建立 **rmsauth::FileCache** 物件的共用點。
@@ -522,8 +512,7 @@ ms.suite: ems
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**步驟 2**︰建立 **rmsauth::AuthenticationContext** 物件
-描述︰指定 Azure *授權單位 URI* 和 *FileCache* 物件。
+**步驟 2**︰建立 **rmsauth::AuthenticationContext** 物件。描述︰指定 Azure *授權單位 URI* 和 *FileCache* 物件。
 
 **C++**︰
 
@@ -533,8 +522,7 @@ ms.suite: ems
                               FileCachePtr);
 
 
-**步驟 3**︰呼叫 **authContext** 物件的 **aquireToken** 方法，並指定下一個參數︰
-描述:
+**步驟 3**︰呼叫 **authContext** 物件的 **aquireToken** 方法，並指定下一個參數︰描述：
 
 -   *要求的資源* - 您想要存取的受保護資源
 -   *用戶端唯一識別碼* - 通常是 GUID
@@ -552,25 +540,22 @@ ms.suite: ems
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**步驟 4**︰從結果取得存取權杖
-描述︰呼叫 **result-&gt; accessToken()** 方法
+**步驟 4**︰從結果取得存取權杖。描述：呼叫 **result-&gt; accessToken()** 方法
 
 **注意**  任何驗證程式庫方法都可能會引發 **rmsauth::Exception**
 
  
-**不利用 UI 取得 oAuth2 驗證權杖**
+**不使用 UI 取得 oAuth2 驗證權杖**
 **來源**：[rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**步驟 1**︰建立 **rmsauth::FileCache** 物件的共用點
-描述︰您可以設定快取路徑或使用預設值
+**步驟 1**︰建立 **rmsauth::FileCache** 物件的共用點。描述︰您可以設定快取路徑或使用預設值
 
 **C++**︰
 
     auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
 
 
-**步驟 2**︰ 建立 **UserCredential** 物件
-描述︰指定*使用者登入*和*密碼*
+**步驟 2**︰建立 **UserCredential** 物件。描述︰指定使用者登入和密碼
 
 **C++**︰
 
@@ -578,8 +563,7 @@ ms.suite: ems
                                                  &quot;SomePass&quot;);
 
 
-**步驟 3**︰建立 **rmsauth::AuthenticationContext** 物件
-描述︰指定 Azure *授權單位 URI* 和 *FileCache* 物件
+**步驟 3**︰建立 **rmsauth::AuthenticationContext** 物件。描述︰指定 Azure 授權單位 URI 和 *FileCache* 物件
 
 **C++**︰
 
@@ -602,13 +586,13 @@ ms.suite: ems
                 userCred);
 
 
-**步驟 5**︰從結果取得存取權杖
-描述︰呼叫 **result-&gt; accessToken()** 方法
+**步驟 5**︰從結果取得存取權杖。描述：呼叫 **result-&gt; accessToken()** 方法
 
 **注意**  任何驗證程式庫方法都可能會引發 **rmsauth::Exception**
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

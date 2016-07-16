@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護 | Azure RMS
-description:
-keywords:
+title: "具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
+ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+
 
 ---
 
@@ -33,7 +27,8 @@ ms.suite: ems
 
 這個解決方案可讓您自動保護執行 Windows Server 的檔案伺服器上的資料夾中的所有檔案，或自動保護符合特定準則的檔案。 例如，已分類為包含機密或敏感資訊的檔案。 這個解決方案會使用 Azure Rights Management (Azure RMS) 來保護檔案，所以您必須在組織中部署這項技術。
 
-> [!NOTE] 雖然 Azure RMS 包含支援檔案分類基礎結構的[連接器](../deploy-use/deploy-rms-connector.md)，但是該解決方案僅支援原生保護，例如 Office 檔案。
+> [!NOTE]
+> 雖然 Azure RMS 包含支援檔案分類基礎結構的[連接器](../deploy-use/deploy-rms-connector.md)，但是該解決方案僅支援原生保護 — 例如 Office 檔案。
 > 
 > 若要支援具有檔案分類基礎結構的所有檔案類型，您必須使用 Windows PowerShell **RMS 保護** 模組，如本文所述。 RMS 保護 Cmdlet，像是 RMS 共用應用程式，支援一般保護以及原生保護，這表示可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
 
@@ -278,7 +273,8 @@ ms.suite: ems
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP] 疑難排解秘訣：
+    > [!TIP]
+    > 疑難排解秘訣：
     > 
     > -   如果您在報告中看到 **0** ，而不是資料夾中的檔案數目，這表示指令碼並未執行。 首先，檢查指令碼本身，方法是在 Windows PowerShell ISE 中載入指令碼以驗證指令碼內容，並嘗試執行以查看是否顯示任何錯誤。 不指定任何引數時，指令碼會嘗試連接和驗證至 Azure RMS。
     > 
@@ -306,6 +302,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure Rights Management 的快速部署指南 | Azure RMS
-description:
-keywords:
+title: "Azure Rights Management 的快速部署指南 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ ms.suite: ems
 
 在您制定這些解決方案之前，您可能會想要傳送廣泛的公告給使用者，讓他們知道某些變更即將推出，以協助保護公司資料，並且可能需要使用者進行一些變更。 範例通訊會包含在下表之後。
 
-> [!NOTE] 如果您有關於本指南的問題或意見，請使用本頁面上的意見反應機制，或將電子郵件訊息傳送至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
+> [!NOTE]
+> 如果您有關於本指南的問題或意見，請使用本頁面上的意見反應機制，或將電子郵件訊息傳送至 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)。
 
 ## Azure RMS 的案例
 為了協助您更快速部署 Azure RMS 來解決特定商務問題，請選擇最緊密符合商務目標的案例，並在必要時採用它們。
@@ -151,6 +146,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

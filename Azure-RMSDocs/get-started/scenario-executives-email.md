@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 案例 - 主管安全地交換機密資訊 | Azure RMS
-description:
-keywords:
+title: "案例 - 主管安全地交換機密資訊 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+
 
 ---
 
@@ -56,7 +50,7 @@ ms.suite: ems
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |下列其中一個組態：<br /><br />- Azure Rights Management 會啟用 Exchange Online<br /><br />- RMS 連接器已針對 Exchange 內部部署安裝和設定|針對 Exchange Online：請參閱 **Exchange Online：IRM 組態**一節 (位於[針對 Azure Rights Management 設定應用程式](https://technet.microsoft.com/library/jj585031.aspx))。<br /><br />針對 Exchange 內部部署：[部署 Azure Rights Management 連接器](https://technet.microsoft.com/library/dn375964.aspx)|
 |您已如下所述設定自訂範本|[設定 Azure Rights Management 的自訂範本](https://technet.microsoft.com/library/dn642472.aspx)|
-|您已如本文稍後所述設定 IRM 的傳輸保護規則|針對 Exchange Online：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />針對 Exchange 2013：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />針對 Exchange 2010：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|您已如本文稍後所述設定 IRM 的傳輸保護規則|針對 Exchange Online：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />針對 Exchange 2013：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />針對 Exchange 2010：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
 ### 設定主管的自訂範本
 
@@ -138,6 +132,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO2-->
 
 

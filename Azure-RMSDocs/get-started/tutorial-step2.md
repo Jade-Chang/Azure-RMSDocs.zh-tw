@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 快速入門教學課程 - 步驟 2 | Azure RMS
-description: 教學課程的第二步，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。
-keywords:
+title: "Azure RMS 快速入門教學課程 - 步驟 2 | Azure RMS"
+description: "教學課程的第二步，可為組織快速試用 Microsoft Azure Rights Management，只有 5 個步驟，花費時間不超過 15 分鐘。"
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+
 
 ---
 
@@ -71,9 +65,11 @@ Azure Rights Management 並不需要 Rights Management 共用應用程式 (也�
 |了解原生保護和一般保護的差異|[一般保護和內建 (原生) 保護有何差異？](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
 
 
->[!div class="逐步"] [« 步驟 1](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[步驟 1](quick-start-tutorial.md)
 [步驟 3 »](tutorial-step3.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

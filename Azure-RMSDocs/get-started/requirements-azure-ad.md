@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 需求：Azure AD 目錄 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 需求：Azure AD 目錄 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 75b2414cc360704deb6107d6c0038f5b0bf7fa70
+
 
 ---
 
@@ -42,7 +36,8 @@ ms.suite: ems
 
 若要整合 Azure AD 目錄與內部部署 AD 樹系，請參閱[整合內部部署身分識別與 Azure Active Directory](/active-directory/active-directory-aadconnect)。
 
-> [!NOTE] 如果您擁有的行動裝置或 Mac 電腦使用 AD FS 或同等的驗證提供者來驗證內部部署：
+> [!NOTE]
+> 如果您擁有的行動裝置或 Mac 電腦使用 AD FS 或同等的驗證提供者來驗證內部部署：
 > 
 > -   您必須使用在最低伺服器版本的 **Windows Server 2012 R2** 上運作的 AD FS，或使用支援 OAuth 2.0 通訊協定的替代驗證提供者。
 
@@ -80,6 +75,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

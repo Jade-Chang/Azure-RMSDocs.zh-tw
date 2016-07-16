@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: IPCHelloWorld - 範例應用程式 | Azure RMS
-description: 本主題包含建立具備權限的應用程式範例的指示。
-keywords:
+title: "IPCHelloWorld - 範例應用程式 | Azure RMS"
+description: "本主題包含建立具備權限的應用程式範例的指示。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
+ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+
 
 ---
 ** 這個 SDK 內容不是最新版本。 很快就可以在 MSDN 上找到文件的[目前版本](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)。 **
@@ -222,6 +218,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
