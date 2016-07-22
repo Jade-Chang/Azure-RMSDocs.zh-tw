@@ -86,6 +86,6 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -93,6 +93,6 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

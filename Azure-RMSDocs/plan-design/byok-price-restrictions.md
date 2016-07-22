@@ -61,6 +61,6 @@ BYOK 和記錄與整合 Azure RMS 的每個應用程式皆能完美合作。 這
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

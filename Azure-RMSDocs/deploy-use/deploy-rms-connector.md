@@ -84,6 +84,6 @@ RMS 連接器支援下列內部部署伺服器：Exchange Server、SharePoint Se
 移至[安裝和設定 Azure Rights Management 連接器](install-configure-rms-connector.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

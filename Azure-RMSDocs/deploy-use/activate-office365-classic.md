@@ -54,6 +54,6 @@ ms.openlocfilehash: 657fb47485ce0e86fab800f8ab981e6dfbd9ee11
 回到[啟用 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

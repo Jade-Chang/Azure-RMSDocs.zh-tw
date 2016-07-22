@@ -60,6 +60,6 @@ ms.openlocfilehash: 645f9ed4080e3b38fcda9afe148923c021046724
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

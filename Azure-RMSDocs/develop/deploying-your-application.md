@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
-ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: 40eb6628f5204d422bf304f44d64cdf0dcd8537d
 
 
 ---
@@ -28,10 +28,6 @@ ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
 ## 要求生產授權合約
 
  在您可以釋出使用 Rights Management Services SDK 2.1 開發的應用程式之前，您必須套用生產授權合約以取得生產憑證。
-
-> [!IMPORTANT]
-> 如果您將利用以 Azure 為基礎的 RMS 執行用戶端應用程式，必須建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS 需求：支援 Azure RMS 的雲端訂閱)。
-> 如需利用 Azure RMS 執行的詳細資訊，請參閱[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 您可以藉由套用生產授權合約來取得憑證。
 
@@ -116,7 +112,8 @@ RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下�
 
 
 > [!IMPORTANT]
-> 若要使用 Azure RMS 執行 RMS SDK 2.1 用戶端應用程式，您需要建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS 需求：支援 Azure RMS 的雲端訂閱)。
+> 如果您將利用以 Azure 為基礎的 RMS 執行用戶端應用程式，必須建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS 需求：支援 Azure RMS 的雲端訂閱)。
+> 如需利用 Azure RMS 執行的詳細資訊，請參閱[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 -   從 Microsoft 下載中心下載 [Microsoft Online Services 登入小幫手](http://www.microsoft.com/en-us/download/details.aspx?id=28177)。
 -   請確定您的權限啟用應用程式部署，包含此服務選項的必要條件檢查。
@@ -135,6 +132,6 @@ RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下�
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

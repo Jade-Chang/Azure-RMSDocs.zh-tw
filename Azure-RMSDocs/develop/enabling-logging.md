@@ -96,6 +96,6 @@ Microsoft Rights Management SDK 4.2 透過單一裝置屬性來管理診斷和�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

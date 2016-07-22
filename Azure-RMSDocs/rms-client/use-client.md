@@ -44,6 +44,6 @@ Microsoft Rights Management Services 是用戶端伺服器方案，其中 RMS �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

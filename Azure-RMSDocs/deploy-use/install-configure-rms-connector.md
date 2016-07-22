@@ -241,6 +241,6 @@ ms.openlocfilehash: 165292482349e4a233ab4030f49a297f57b041ac
 既然已安裝和設定 RMS 連接器，您已準備好設定內部部署伺服器來使用它。 移至[設定 Azure Rights Management 連接器的伺服器](configure-servers-rms-connector.md)。
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

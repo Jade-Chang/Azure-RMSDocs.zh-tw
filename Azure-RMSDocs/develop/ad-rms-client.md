@@ -43,6 +43,6 @@ Rights Management Services SDK 2.1 與 RMS Client 2.1 搭配使用。 RMS SDK 2.
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 
