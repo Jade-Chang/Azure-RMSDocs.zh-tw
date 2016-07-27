@@ -1,5 +1,5 @@
 ---
-title: "Office 365：用戶端和線上服務的組態 | Azure RMS"
+title: "Office 365&colon;用戶端和線上服務的組態 | Azure RMS"
 description: 
 keywords: 
 author: cabailey
