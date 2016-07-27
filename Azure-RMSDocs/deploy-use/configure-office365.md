@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
 
 
 ---
@@ -151,7 +151,7 @@ SharePoint 的 IRM 服務啟用後，網站擁有者可以使用 IRM 保護其 S
 此組態是由 SharePoint 網站系統管理員完成。
 
 ### 設定商務用 OneDrive 的 IRM
-SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDrive 文件庫設定 Rights Management 保護了。  使用者可以使用其 OneDrive 中的 [設定]**** 圖示，自行設定此作業。 雖然管理員無法使用 SharePoint 管理中心，為使用者的商務用 OneDrive 設定 Rights Management，但是可以使用 Windows PowerShell 來執行此設定。
+SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDrive 文件庫設定 Rights Management 保護了。  使用者可以使用其 OneDrive 中的 [設定] 圖示，自行設定此作業。 雖然管理員無法使用 SharePoint 管理中心，為使用者的商務用 OneDrive 設定 Rights Management，但是可以使用 Windows PowerShell 來執行此設定。
 
 > [!NOTE]
 > 如需設定商務用 OneDrive 的詳細資訊，請參閱 Office 文件[在 Office 365 中設定商務用 OneDrive](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb)。
@@ -559,7 +559,7 @@ SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDr
 
     3.  搜索 `$webUrls`，並將範例值取代為您使用者的商務用 OneDrive 網站 URL，然後視需要新增或刪除多個項目。
 
-        或者，請參閱指令碼中關於如何匯入 CSV 檔案來取代此陣列的註解，而此 CSV 檔案包含所有您需要設定的 URL。  我們提供了另一個範例指令碼，自動搜索和擷取 URL 來填入此。CSV 檔案。 當你準備好這樣做時，請展開緊跟在這些步驟後面的[其他要將所有商務用 OneDrive URL 輸出至 CSV 檔案的指令碼](#BKMK_Script_OD4B_URLS)一節。
+        或者，請參閱指令碼中關於如何匯入 CSV 檔案來取代此陣列的註解，而此 CSV 檔案包含所有您需要設定的 URL。  我們提供了另一個範例指令碼，自動搜索和擷取 URL 來填入此。CSV 檔案。 當你準備好這樣做時，請使用緊跟在這些步驟後面的[將所有商務用 OneDrive URL 輸出至 CSV 檔案的其他指令碼](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file)一節。
 
         使用者的商務用 OneDrive 的 Web URL 具有以下格式：https://*&lt;租用戶名稱&gt;*-my.sharepoint.com/personal/*&lt;使用者名稱&gt;*_*&lt;租用戶名稱&gt;*_com
 
@@ -569,14 +569,14 @@ SharePoint Online 的 IRM 服務啟用後，就能為使用者的商務用 OneDr
 
     5.  搜尋 `ADMIN INSTRUCTIONS`。 如果您沒有對此區段進行任何變更，將對 IRM 設定使用者的商務用 OneDrive"，原則標題為「受保護的檔案」，而描述為「此原則會限制授權使用者的存取」。  將不設定任何其他 IRM 選項，這可能適用於大多數環境。 然而，你可以變更建議的原則標題和描述，而且也可新增任何適合於您環境的任何 IRM 選項。 請參閱註解中的範例指令碼，以協助您為 IrmConfiguration 命令構建一組專屬的參數。
 
-5.  儲存指令碼並簽署它。 如果您未簽署指令碼 (更安全)，Windows PowerShell 必須在您的電腦設定為執行未簽署的指令碼。 若要這麼做，使用 [以系統管理員身分執行]**** 選項來執行 Windows PowerShell 工作階段，然後輸入：**Set-ExecutionPolicy Unrestricted**。 不過，這種組態會讓所有未簽署的指令碼執行 (較不安全)。
+5.  儲存指令碼並簽署它。 如果您未簽署指令碼 (更安全)，Windows PowerShell 必須在您的電腦設定為執行未簽署的指令碼。 若要這麼做，使用 [以系統管理員身分執行] 選項來執行 Windows PowerShell 工作階段，然後輸入：**Set-ExecutionPolicy Unrestricted**。 不過，這種組態會讓所有未簽署的指令碼執行 (較不安全)。
 
     如需有關簽署 Windows PowerShell 指令碼的詳細資訊，請參閱 PowerShell 文件庫中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
 6.  執行指令碼，如果出現提示，請提供 Office 365 管理員帳戶的密碼。 如果你修改指令碼，並在同一個 Windows PowerShell 工作階段中執行，則不會提示您輸入憑證。
 
 > [!TIP]
-> 你也可以使用此指令碼，設定 SharePoint Online 文件庫的 IRM。 對於此組態，您可能希望啟用其他選項 [不允許使用者上載不支援 IRM 的文件]****，以確保文件庫只包含受保護的文件。    若要這樣做，請將 `-IrmReject` 參數新增至指令碼中的 Set-IrmConfiguration 命令。
+> 你也可以使用此指令碼，設定 SharePoint Online 文件庫的 IRM。 對於此組態，您可能希望啟用其他選項 [不允許使用者上載不支援 IRM 的文件]，以確保文件庫只包含受保護的文件。    若要這樣做，請將 `-IrmReject` 參數新增至指令碼中的 Set-IrmConfiguration 命令。
 >
 > 你還需要修改 `$webUrls` 變數 (例如，**https://contoso.sharepoint.com**) 和 `$listTitle` 變數 (例如，**$Reports**)。
 
@@ -1106,6 +1106,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

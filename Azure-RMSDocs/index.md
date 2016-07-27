@@ -1,9 +1,9 @@
 ---
 asset_id: 78022852-1541-4194-bd6b-2f5fd5d94b77
 layout: HubPage
-title: "Azure Rights Management 文件"
+title: "Azure Rights Management 文件 - RMS 文件 | Microsoft 文件"
 description: "Azure Rights Management 的技術文件"
-keywords: rights management documentation, rms documentation, Azure RMS documentation
+keywords: "Rights Management 文件, RMS 文件, Azure RMS 文件"
 author: msmbaldwin
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -14,15 +14,15 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: 80de3ab273c090f466fc381390d84b8f7b90f6f4
-ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
+ms.sourcegitcommit: e5a1860afff2682cce093523b33c9e99b93d446d
+ms.openlocfilehash: 57b04bccfd2f650c24875d20baf89040c69ab0f6
 
 
 ---
-# Azure Rights Management 文件
+# Azure Rights Management (RMS) 文件
 <article id="main">
     <section id="hero-content">
-      <h1>Azure Rights Management 文件</h1>
+      <h1>Azure Rights Management (RMS) 文件</h1>
       <h2>了解如何部署和使用 Azure Rights Management (Azure RMS)。 快速開始使用 Rights Management，以將資訊保護套用至電子郵件、文件和其他機密性資料。</h2>
       <h3>Azure RMS 新手？ <a href="http://go.microsoft.com/fwlink/?LinkId=816857" target="_blank">請瀏覽我們的產品網站 &rarr;</a></h3>
     </section>
@@ -36,11 +36,12 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
       <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
+          <li><mark><b>新 </b></mark> <a href="./information-protection/what-is-information-protection.md">Azure Information Protection (預覽)</a></li>
           <li><a href="./understand-explore/what-is-azure-rms.md">什麼是 Azure Rights Management？</a></li>
           <li><a href="./get-started/quick-start-tutorial.md">Azure RMS 快速入門教學課程</a></li>
-          <li><a href="./get-started/rapid-deployment-guide.md">Azure RMS 快速部署指南</a></li>
         </ul>
         <ul class="column column-half">
+          <li><a href="./get-started/rapid-deployment-guide.md">Azure RMS 快速部署指南</a></li>
           <li><a href="./plan-design/deployment-roadmap.md">Azure RMS 部署藍圖</a></li>
           <li><a href="./develop/developers-guide.md">透過 Azure RMS 整合應用程式</a></li>
         </ul>
@@ -214,6 +215,39 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
                 </li>
               </ul>
             </section>
+          <li class="journey-step">
+            <header class="journey-step-header row">
+              <a href="./information-protection/what-is-information-protection.md">
+                <div class="title column-third">
+                  <span class="step-number"> 6</span>
+                  <p>Azure Information Protection (預覽)</p>
+                </div>
+                <p class="description column-two-thirds">使用目前的 Azure Information Protection 預覽來分類、標記並保護您的資料。
+                </p>
+              </a>
+            </header>
+            <section class="journey-step-elements content">
+              <ul class="row">
+                <li class="column-third">
+                  <a href="./information-protection/what-is-information-protection.md">
+                    <h3>什麼是 Azure Information Protection？</h3>
+                    <p>深入了解 Azure Information Protection，它結合了 Azure Rights Management (RMS) 和 Secure Islands 的分類和標記技術。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="./information-protection/infoprotect-quick-start-tutorial.md">
+                    <h3>Azure Information Protection 快速入門教學課程</h3>
+                    <p>只需四個步驟即可開始使用 Azure Information Protection。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="./information-protection/faq.md">
+                    <h3>Azure Information Protection 常見問題集</h3>
+                    <p>尋找您 Azure Information Protection 常見問題的解答。</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
           </li>
         </ul>
       </section>
@@ -228,6 +262,6 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
