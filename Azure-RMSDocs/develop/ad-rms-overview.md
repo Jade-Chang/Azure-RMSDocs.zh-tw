@@ -1,10 +1,10 @@
 ---
-title: "概觀 | Azure RMS"
+title: "概觀 - RMS SDK 2.1 | Azure RMS"
 description: "Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,17 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
+ms.openlocfilehash: 53571aff357bbc0cdcb44ce9b403c68719abbaff
 
 
 ---
 
 # 概觀
 
-Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。 透過具備權限的應用程式，內容擁有者將能夠定義誰可以開啟、修改、列印、轉送內容，或採取其他動作。
-
-## 概觀
+Rights Management Services SDK 2.1 是可協助保護數位資訊免於未經授權使用的資訊保護技術。 透過具備權限的應用程式，內容擁有者將能夠定義誰可以開啟、修改、列印、轉送內容，或採取其他動作。
 
 AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件。 執行於 Azure 或 Windows Server 的伺服器是由多個 Web 服務組成。
 
@@ -63,6 +61,6 @@ AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

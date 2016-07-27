@@ -10,11 +10,12 @@
 ### [適用於 Windows 的 Rights Management 共用應用程式](sharing-app-windows.md)
 #### [Rights Management 共用應用程式：版本發行記錄](sharing-app-version-release-history.md)
 #### [Rights Management 共用應用程式系統管理員指南 (英文)](sharing-app-admin-guide.md)
-##### [技術概觀](sharing-app-admin-guide-technical.md)
+##### [技術概觀和保護詳細資料](sharing-app-admin-guide-technical.md)
 #### [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 ##### [下載和安裝](install-sharing-app.md)
 ##### [保護裝置上的檔案](sharing-app-protect-in-place.md)
 ##### [保護您以電子郵件共用的檔案](sharing-app-protect-by-email.md)
+##### [變更受保護檔案的權限](sharing-app-reprotect-files.md)
 ##### [追蹤及撤銷您的文件](sharing-app-track-revoke.md)
 ##### [檢視和使用受保護的檔案](sharing-app-view-use-files.md)
 ##### [移除保護](sharing-app-remove-protection.md)
@@ -22,8 +23,9 @@
 ##### [對話方塊選項](sharing-app-dialog-box.md)
 ### [啟用 RMS 的應用程式中的 Microsoft Rights Management 隱私權聲明](privacy-statement-rms-enlightened-applications.md)
 # [開發和自訂應用程式](/rights-management/develop/developers-guide)
+# [Azure Information Protection (預覽)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

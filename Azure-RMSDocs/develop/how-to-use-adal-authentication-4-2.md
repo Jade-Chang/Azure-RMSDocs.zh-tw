@@ -1,7 +1,7 @@
 ---
 title: "使用 Azure 入口網站設定 RMS 驗證 | Azure RMS"
 description: "概述 ADAL 驗證的程序"
-keywords: authentication, RMS, ADAL
+keywords: "驗證, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -62,6 +62,6 @@ ms.openlocfilehash: cb82f0333ed17ee2994608baa3bbb50d42f19073
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
 
 
 ---
@@ -72,7 +72,7 @@ ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
 
     ![Azure RMS 的電子郵件訊息](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
-    您想知道：[自動建立的 .ppdf 檔案是什麼？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)
+    您想知道：[什麼是自動建立的 .ppdf 檔案？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
 4.  選用：您可以任意變更此電子郵件訊息中的任何項目。 例如，您可以加入或變更訊息中的主旨或文字。
 
@@ -86,13 +86,13 @@ ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

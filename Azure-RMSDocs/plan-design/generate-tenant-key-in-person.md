@@ -13,8 +13,8 @@ ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8e77298121a84f6feb16a992da81bd9c3bb7b20b
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
 *適用於︰Azure Rights Management、Office 365*
 
 
-若您決定[管理自己的租用戶金鑰](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)而且不想透過網際網路傳輸它，而是要親自轉交您的租用戶金鑰，請使用下列程序。
+若您決定[管理自己的租用戶金鑰](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)而且不想透過網際網路傳輸它，而是要親自轉交您的租用戶金鑰，請使用下列程序。
 
 ## 產生您的租用戶金鑰
 若要產生您自己的租用戶金鑰，請執行下列 3 個步驟：
@@ -151,6 +151,6 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

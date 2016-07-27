@@ -1,7 +1,7 @@
 ---
 title: "為 ADAL 驗證設定 Azure RMS | Azure RMS"
 description: "概述以 Azure ADAL 為基礎的驗證設定步驟"
-keywords: authentication, RMS, ADAL
+keywords: "驗證, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -109,6 +109,6 @@ ms.openlocfilehash: 9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

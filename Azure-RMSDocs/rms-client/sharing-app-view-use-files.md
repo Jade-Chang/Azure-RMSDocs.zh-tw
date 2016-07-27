@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
 
 
 ---
@@ -41,7 +41,7 @@ ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
 如果您看到檔案有兩個版本，但副檔名不同，只有當無法開啟其中一個檔案時，才開啟副檔名為 .ppdf 的另一個檔案。 如果您也無法開啟 .ppdf 版本，請先安裝 [RMS 共用應用程式](install-sharing-app.md)，它知道如何開啟 .ppdf 副檔名的檔案。
 
 > [!NOTE]
-> 如需詳細資訊，請參閱[自動建立的 .ppdf 檔案是什麼？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)
+> 如需詳細資訊，請參閱[什麼是自動建立的 .ppdf 檔案？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
 如何開啟檔案取決於它受保護的方式，從副檔名就可以判斷。 在各種情況下，開啟檔案時可能經過稽核，而且只要檔案受到保護，就會持續稽核。 此外，如果檔案是以電子郵件附件的形式傳送，則您每次開啟檔案時，寄件者就可能收到電子郵件通知。
 
@@ -101,13 +101,13 @@ ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
 
 ---
@@ -85,7 +85,7 @@ ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
 
 限制：
 
--   雖然移轉程序支援將伺服器授權憑證 (SLC) 金鑰移轉至 Azure RMS 的硬體安全性模組 (HSM)，但是 Exchange Online 目前不支援這項組態。 如果在移轉至 Azure RMS 之後，您想要完整 IRM 功能與 Exchange Online 搭配，則您的 Azure RMS 租用戶金鑰必須[由 Microsoft 管理](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)。 或者，當 Azure RMS 租用戶由您管理時，您可以在 Exchange Online 中執行功能精簡的 IRM (BYOK)。 如需搭配使用 Exchange Online 與 Azure RMS 的詳細資訊，請參閱這些指示的[步驟 6：設定 Exchange Online 的 IRM 整合](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)。
+-   雖然移轉程序支援將伺服器授權憑證 (SLC) 金鑰移轉至 Azure RMS 的硬體安全性模組 (HSM)，但是 Exchange Online 目前不支援這項組態。 如果在移轉至 Azure RMS 之後，您想要完整 IRM 功能與 Exchange Online 搭配，則您的 Azure RMS 租用戶金鑰必須[由 Microsoft 管理](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)。 或者，當 Azure RMS 租用戶由您管理時，您可以在 Exchange Online 中執行功能精簡的 IRM (BYOK)。 如需搭配使用 Exchange Online 與 Azure RMS 的詳細資訊，請參閱這些指示的[步驟 6：設定 Exchange Online 的 IRM 整合](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)。
 
 -   如果 Azure RMS 不支援您的軟體和用戶端，則軟體和用戶端無法保護或使用 Azure RMS 所保護的內容。 請務必檢查 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md)文件中的支援的應用程式和用戶端節。
 
@@ -180,6 +180,6 @@ ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

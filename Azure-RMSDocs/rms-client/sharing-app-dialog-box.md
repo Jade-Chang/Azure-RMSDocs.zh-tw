@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 
 ---
@@ -32,14 +32,14 @@ ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
 
 除了您可以選擇的選項，您可能也想知道：
 
--   [自動建立的 .ppdf 檔案是什麼？](#what-s-the-ppdf-file-that-s-automatically-created-)
+-   [自動建立的 .ppdf 檔案是什麼？](#what-s-the-ppdf-file-that-s-automatically-created)
 
--   [一般保護和內建 (原生) 保護有何差異？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)
+-   [一般保護和內建 (原生) 保護有何差異？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)
 
 |選項|說明|
 |----------|---------------|
 |**使用者**|如果您尚未從 Outlook 指定電子郵件地址，請輸入您允許開啟檔案的人員的電子郵件地址。<br /><br />請注意，RMS 共用應用程式不支援所有的電子郵件地址。<br /><br />如果您的組織使用 Rights Management (AD RMS) 內部部署版本，您可以指定電子郵件地址僅限於組織內的人員。 在此情況下，如果您嘗試指定外部電子郵件地址，您會看到訊息指出，您的公司設定僅允許在公司內共用受保護的內容。 <br /><br /> 如果您的組織使用 Azure RMS，您指定的電子郵件地址可以是您組織內的人或另一個組織的人。<br /><br />例如：**janetm@contoso.com; p.dover@fabrikam.com**<br /><br />RMS 共用應用程式目前不支個人電子郵件地址。|
-|**一般保護**|如果選取這個選項，就表示您選取的檔案無法受到原生保護。 如需詳細資訊，請參閱 本頁面的 [一般保護和內建 (原生) 保護有何差異？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)。|
+|**一般保護**|如果選取這個選項，就表示您選取的檔案無法受到原生保護。 如需詳細資訊，請參閱 本頁面的[一般保護和內建 (原生) 保護有何差異？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)|
 |**檢閱者 - 僅檢視**<br /><br />**檢閱者 - 檢視及編輯**<br /><br />**共同作者 - 檢視、編輯、複製及列印**<br /><br />**共同擁有者 - 所有權限**<br /><br />注意：這些選項的名稱前面全都有一個代表地球儀的圓形圖示。 使用這個圖示是因為，當您傳送附件給另一個組織中的某人時，通常會選取其中一個選項。|如果您想要定義受保護文件的權限，請選取其中一個選項。 按一下每個選項可檢視描述。<br /><br />當您選擇其中一個選項時，只有您在 [使用者]  中指定的人員，才有您指定的權限可開啟和使用文件。 例如，如果他們轉寄給別人，則別人無法開啟文件。|
 |您的系統管理員所設定的原則範本。<br /><br />例如，如果您的公司名稱是 Contoso, Ltd，您可能會看到 **Contoso, Ltd - 僅限機密檢視**<br /><br />注意：這些選項的名稱前面全都有一個代表辦公大樓的方形圖示。 使用這個圖示是因為，當您傳送附件給您組織中的某人時，通常會選取其中一個選項。|當與您組織中的人員共用文件時，您會看到系統管理員所設定的可用原則範本。 不應該在組織外共用文件時，請選擇其中一個原則範本。<br /><br />當您選擇其中一個選項時，您的系統管理員會定義文件的權限和哪些人可以開啟文件。|
 |**這些文件的到期日**|僅針對時間緊迫的檔案選取這個選項，您選取的使用者在您指定日期之後就無法開啟這些檔案。 您仍然可以開啟原始檔案，但在您指定的那天午夜過後 (您目前的時區)，其他人將無法開啟檔案。<br /><br />如果您選取系統管理員所設定的原則範本，則無法使用這個選項。|
@@ -71,7 +71,7 @@ ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
@@ -79,6 +79,6 @@ ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -34,8 +34,9 @@
 ### [針對 Azure RMS 安裝 Windows PowerShell](install-powershell.md)
 # [部署與使用用戶端](/rights-management/rms-client/use-client)
 # [開發和自訂應用程式](/rights-management/develop/developers-guide)
+# [Azure Information Protection (預覽)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

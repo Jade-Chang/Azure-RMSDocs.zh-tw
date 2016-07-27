@@ -239,6 +239,6 @@ RMS 服務探索可讓 RMS 用戶端在保護內容之前檢查哪一個 RMS 伺
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

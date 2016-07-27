@@ -13,8 +13,8 @@ ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 7ec87b63b31d0b41c93dab7998df63e208308811
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
 
 *適用於︰Azure Rights Management、Office 365*
 
-若您決定要[管理您自己的租用戶金鑰](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)，並透過網際網路傳輸金鑰，而非至 Microsoft 機構親自轉交租用戶金鑰，請使用下列程序：
+若您決定要[管理您自己的租用戶金鑰](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)，並透過網際網路傳輸金鑰，而非至 Microsoft 機構親自轉交租用戶金鑰，請使用下列程序：
 
 
 ## 準備連線網際網路的工作站
@@ -378,6 +378,6 @@ Get-AadrmKeys
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
