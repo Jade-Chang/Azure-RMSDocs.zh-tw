@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
+ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
 
 
 ---
@@ -28,6 +28,8 @@ ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
 如果您負責企業網路上的 Microsoft Rights Management 共用應用程式，或是您想獲得比 [Rights Management 共用應用程式使用者指南](sharing-app-user-guide.md)或[適用於 Windows 的 Microsoft Rights Management 共用應用程式的常見問題集](http://go.microsoft.com/fwlink/?LinkId=303971)中的更多技術資訊，請使用下列資訊。
 
 RMS 共用應用程式最適合與 Azure RMS 搭配使用，因為此部署設定支援傳送受保護的附件給組織中另一個使用者，並支援電子郵件通知和文件追蹤與撤銷等選項。  不過，遵守一些限制，它也可搭配內部部署版本 AD RMS。 如需 Azure RMS 和 AD RMS 支援的功能完整比較，請參閱[比較 Azure Rights Management 與 AD RMS](../understand-explore/compare-azure-rms-ad-rms.md)。 如果您有 AD RMS 並想要移轉至 Azure RMS，請參閱[從 AD RMS 移轉至 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
+
+如需 Rights Management 共用應用程式的技術概觀、原生和一般保護、支援的檔案類型和檔案名稱副檔名，以及如何變更預設保護層級的詳細資訊，請參閱 [Rights Management 共用應用程式的技術概觀和保護詳細資料](sharing-app-admin-guide-technical.md)。 
 
 ## 自動部署 Microsoft Rights Management 共用應用程式
 RMS 共用應用程式的 Windows 版本支援指令碼式安裝，這使得它非常適合用於企業部署。
@@ -116,13 +118,13 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
         > [!NOTE]
         > 此命令可能會提示您輸入 Azure 認證。 如果電腦未加入網域，系統會提示您。 如果電腦已加入網域，此工具可能可以使用快取的認證。
 
-2.  在您要安裝 RMS 共用應用程式的每一部電腦上，以提高的權限執行下列命令：
+2.  在您將安裝 RMS 共用應用程式的每一部電腦上，以提高的權限執行一次下列命令：
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  在您要安裝 RMS 共用應用程式的每一部電腦上，使用者必須執行下列命令 (不需使用提高的權限)。 有不同的方式可達到這個目的，包括要求使用者執行命令 (例如，電子郵件中的連結或技術支援入口網站上的連結)，或您可以將它加入使用者的登入指令碼：
+3.  在您要安裝 RMS 共用應用程式的每一部電腦上，該電腦上的每位使用者都必須執行下列命令 (不需使用提高的權限)。 有不同的方式可達到這個目的，包括要求使用者執行命令 (例如，電子郵件中的連結或技術支援入口網站上的連結)，或您可以將它加入使用者的登入指令碼：
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -367,6 +369,6 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

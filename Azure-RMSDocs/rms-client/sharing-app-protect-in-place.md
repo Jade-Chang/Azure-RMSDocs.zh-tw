@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46
+ms.sourcegitcommit: 638c2f27c8d552653dcf3f41d8fad6d44cb08887
+ms.openlocfilehash: 5150351ec6772b95d77698dc39a1f69105c02d2c
 
 
 ---
@@ -51,6 +51,8 @@ ms.openlocfilehash: 7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46
 
     ![RMS 共用應用程式之具有鎖定圖示的受保護檔案](../media/ADRMS_MSRMSApp_Pfile.png)
 
+如果您改變對權限的心意，或之後需要加以修改，只要再次保護檔案。
+
 如果您需要移除檔的保護，請參閱[透過使用 Rights Management 共用應用程式從檔案移除保護](sharing-app-remove-protection.md)。
 
 ## 範例和其他指示
@@ -58,13 +60,13 @@ ms.openlocfilehash: 7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

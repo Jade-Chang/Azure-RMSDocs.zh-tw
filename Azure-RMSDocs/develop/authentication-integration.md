@@ -4,7 +4,7 @@ description: "描述 RMS 啟用應用程式的使用者驗證基本概念。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: fbe12e339d3fb8fc62aabc34aaa9f5f043e95de9
 
 
 ---
@@ -29,6 +29,9 @@ ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
 
 ## 透過 Azure 入口網站註冊
 遵循本指南開始透過 Azure 入口網站設定應用程式的註冊，[為 ADAL 驗證設定 Azure RMS](adal-auth.md)。 請務必複製並儲存此程序中的**用戶端識別碼**及**重新導向 URI** 以供後續使用。
+
+## 完成您的 Rights Managagment 授權合約 (RMLA)
+您必須先完成與 Microsoft Rights Management 團隊的 RMLA，才可以部署應用程式。 如需完整的詳細資訊，請參閱主題的第一節：[部署到生產環境 - 要求生產授權合約](deploying-your-application.md)。
 
 ## 為應用程式實作使用者驗證
 每個 RMS API 都有必須實作才能啟用使用者驗證的回呼。 RMS SDK 4.2 接著會在您未提供存取權杖時、您的存取權杖需要重新整理時、或存取權杖過期時，使用您的回呼實作。
@@ -271,6 +274,6 @@ ADAL 需要數個資訊片段，才能成功向 Azure RMS (或 AD RMS) 驗證使
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

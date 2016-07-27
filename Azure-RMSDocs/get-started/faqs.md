@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
-ms.openlocfilehash: a3ed9e8de496741fae8904481edb1177762a12c0
+ms.sourcegitcommit: e89c59716eef7fbdea415b41b1adfa54b0c16689
+ms.openlocfilehash: bd53b73452f444ac8529a8b8b613e76d8cc234a1
 
 
 ---
@@ -198,9 +198,14 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 -   Office 365 程式庫：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## 分類和標記新功能的最新資訊為何？
+
+這項功能，在 Azure Information Protection 中，目前處於公開預覽。 若要試用，以及取得可用資源的清單，請參閱 [什麼是 Azure Information Protection 預覽？](../information-protection/what-is-information-protection.md)
+
+
 ## 聽說 Azure RMS 很快會出新版本，何時會發行？
 
-本技術文件不包含即將發行版本的相關資訊。 如需這類資訊與版本公告，請參閱 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 並從 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 的 Twitter 帳戶取得最新更新。 如果您對 Office 版本感興趣，請務必同時參閱 [Office 部落格] (https://blogs.office.com/)。
+本技術文件不包含即將發行版本的相關資訊。 如需這類資訊與版本公告，請參閱 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 並從 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 的 Twitter 帳戶取得最新更新。 如果您對 Office 版本感興趣，請務必同時參閱 [Office Blogs](https://blogs.office.com/) (Office 部落格)。
 
 ## 我的問題不在那裏怎麼辦？
 使用 [Azure Rights Management 的資訊與支援](information-support.md)中列出的連結和資源。
@@ -219,6 +224,6 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

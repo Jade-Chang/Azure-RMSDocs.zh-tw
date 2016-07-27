@@ -1,10 +1,10 @@
 ---
-title: "概觀 | Azure RMS"
+title: "概觀 - RMS SDK 4.2 | Azure RMS"
 description: "AD RMS 和 Azure RMS 是可協助保護數位資訊免於未經授權使用的資訊保護技術。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/11/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,18 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+ms.sourcegitcommit: 5afdf526fe9f8486c6a778eebf10899e0bd9f839
+ms.openlocfilehash: d55a16d7ff6f11db3c02d3494dcdd088bffc8500
 
 
 ---
 
 # 概觀
 
-
-Microsoft Rights Management Services (AD RMS 和 Azure RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。 透過具備權限的應用程式，內容擁有者將能夠定義誰可以開啟、修改、列印、轉送其內容，或採取其他動作。
-
-Microsoft Rights Management SDK 4.2 可供數個平台使用，而且可做為軟體開發人員套件 (SDK) 或架構，其設計對象為用戶端電腦與裝置，可協助保護流動通過具備權限之應用程式的資訊存取和使用。 適用於這些平台的 SDK 提供簡單的 API 應用程式給開發人員保護或取用數位內容、擷取範本並取得伺服器的原則，以及其他相關權限管理工作。
+Microsoft Rights Management SDK 4.2 是資訊保護技術，可用於數個平台。  它提供軟體開發人員套件 (SDK) 或架構，其設計對象為用戶端電腦與裝置，可協助保護流動通過具備權限之應用程式的資訊存取和使用。 適用於這些平台的 SDK 提供簡單的 API 應用程式給開發人員保護或取用數位內容、擷取範本並取得伺服器的原則，以及其他相關權限管理工作。
 
 如需目前支援平台的詳細資訊，請參閱開發人員文件入口網站的 [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)。
 
@@ -67,6 +64,6 @@ MS RMS SDK 4.2 提供一些新的酷炫功能，包括下列各項︰
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

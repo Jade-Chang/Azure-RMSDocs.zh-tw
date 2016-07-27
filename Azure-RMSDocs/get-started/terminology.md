@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7d6e1d818c8eb4f6d2e4e7d320e44c7f159eabb4
+ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
+ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 
 
 ---
@@ -31,6 +31,7 @@ ms.openlocfilehash: 7d6e1d818c8eb4f6d2e4e7d320e44c7f159eabb4
 |啟動|啟用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 服務，可讓組織將資訊保護加入文件和電子郵件中。 這個動作也會啟用 Exchange Online 和 SharePoint Online 中的版權管理。|
 |Active Directory Rights Management Services|經常縮寫為 *Azure RMS*。<br /><br />一種 Windows Server 角色，其可使用加密和原則來保護文件、檔案及電子郵件，進而提供資訊保護。|
 |Azure RMS|請參閱 *Active Directory Rights Management Services*。|
+|Azure Information Protection|目前在預覽中，它是使用分類、標記和保護以協助保護文件和電子郵件的服務。 Azure Rights Management 使用加密、識別和授權原則，以提供保護。|
 |Azure Rights Management|經常縮寫為 *Azure RMS*。<br /><br />透過使用加密和原則來保護文件、檔案及電子郵件的安全，進而提供資訊保護的一項 Azure 服務。  也稱為 *Azure Rights Management 服務*。 先前的名稱已包含：<br /><br />*Windows Azure Active Directory Rights Management*：通常縮寫為 Windows Azure AD Rights Management 服務。<br /><br />*RMS Online*：原始、建議的名稱，您有時可能會在錯誤訊息和記錄檔項目中看到。|
 |Azure RMS|請參閱 *Azure Rights Management*。|
 |BYOK|請參閱 *整合您自己的金鑰*。|
@@ -71,6 +72,6 @@ ms.openlocfilehash: 7d6e1d818c8eb4f6d2e4e7d320e44c7f159eabb4
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
