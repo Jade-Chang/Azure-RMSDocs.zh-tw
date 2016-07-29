@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
 
 
 ---
@@ -31,8 +31,8 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Manage
 
 -   [先決條件](#prerequisites)
 -   [選用](#optional)
--   [設定您的開發環境](#configuring_your_development_environment)
--   [另請參閱](#see_also)
+-   [設定您的開發環境](#configuring-your-development-environment)
+-   [另請參閱](#see-also)
 
 ## 先決條件
 
@@ -119,6 +119,6 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Manage
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

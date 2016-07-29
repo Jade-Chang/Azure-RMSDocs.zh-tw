@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 8de1886adf322439721274e23452af75b4db2e00
 
 
 ---
@@ -25,15 +25,15 @@ ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
 ## 新功能
 Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性帶入全新境界。 本主題概述這個新版 RMS SDK 中的重要變更與功能。
 
--   [2016 年 6 月的新功能](#new_for_June_2016)
--   [2015 年 12 月更新](#december_2015_update)
--   [2015 年 7 月更新 - 新增 Linux / C++ 開發的支援](#july_2015_update_-_adds_support_for_linux___c___development)
--   [2015 年 5 月更新 - 新增記錄控制](#may_2015_update_-_adds_logging_control)
--   [2015 年 2 月更新 - 新增 Windows 市集應用程式支援](#february_2015_update_-_adds_windows_store_application_support)
--   [2015 年 1 月更新 - 新增 WinPhone 平台支援](#january_2015_update_-_adds_winphone_platform_support)
--   [2014 年 10 月更新 - 升級至 Microsoft RMS SDK 4.1](#october_2014_update_-_upgrade_to_microsoft_rms_sdk_4.1)
+-   [2016 年 6 月的新功能](#new-for-June-2016)
+-   [2015 年 12 月更新](#december-2015-update)
+-   [2015 年 7 月更新 - 新增 Linux / C++ 開發的支援](#july-2015-update-adds-support-for-linux-c-developm)
+-   [2015 年 5 月更新 - 新增記錄控制](#may-2015-update-adds-logging-control)
+-   [2015 年 2 月更新 - 新增 Windows 市集應用程式支援](#february-2015-update-adds-windows-store-application-support)
+-   [2015 年 1 月更新 - 新增 WinPhone 平台支援](#january-2015-update-adds-winphone-platform-support)
+-   [2014 年 10 月更新 - 升級至 Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
 -   [版本資訊](#release-notes)
--   [常見問題集](#frequently_asked_questions)
+-   [常見問題集](#frequently-asked-questions)
 
 ### 2016 年 6 月的新功能
 
@@ -109,7 +109,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
 此版本新增 Windows Phone 作業系統的支援，並提供 Android 和 iOS/OS X 版 RMS SDK 4.1 的同等功能。
 
-## 2014 年 10 月更新 - 升級至 Microsoft RMS SDK 4.1
+### 2014 年 10 月更新 - 升級至 Microsoft RMS SDK 4.1
 
 4.1 版的 RMS SDK 會將下列新功能新增至 Google Android 和 Apple iOS / OS X。
 
@@ -233,6 +233,6 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 4ff6328c0be4cd217390ee802e53e93c90f41c99
 
 
 ---
@@ -28,8 +28,8 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 -   [先決條件](#prerequisites)
 -   [選用](#optional)
--   [設定您的開發環境](#configuring_your_development_environment_)
--   [另請參閱](#see_also)
+-   [設定您的開發環境](#configuring-your-development-environment_)
+-   [另請參閱](#see-also)
 
 ## 先決條件
 
@@ -150,6 +150,6 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
