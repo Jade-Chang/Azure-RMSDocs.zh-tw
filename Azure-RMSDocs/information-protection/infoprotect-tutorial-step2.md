@@ -3,15 +3,15 @@ title: "Azure Information Protection 快速入門教學課程步驟 2 | Azure Ri
 description: "簡介教學課程的步驟 2，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 463c0bc1fa86f73e2623faf5a624afeabcadeedb
-ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
+ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
+ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
 
 2. 在 [標籤: 機密] 刀鋒視窗中，您現在會看到每個標籤的可用設定。 進行下列變更：
 
-    a. 如果您已啟用 Azure Rights 管理，針對 [選取 RMS 範本]︰按一下下拉式方塊，然後選取預設範本 [\<您的組織名稱> - 機密]。 例如，如果您的組織名稱是 VanArsdel, Ltd，您會看到並選取 [VanArsdel, Ltd - 機密]。 如果您已停用這個預設 Azure Rights Management 範本，請選取替代範本。 不過，如果您選取部門範本，請確定您的帳戶包含在範圍內。
+    a. 若您已啟用 Azure Rights Managment，如需**設定保護文件的 RMS 範本及包含此標籤的電子郵件**：請確認已選取 **[Azure RMS]**，然後按一下下拉式方塊，並選取預設範本 **[\<您的組織名稱> - 機密]**。 例如，如果您的組織名稱是 VanArsdel, Ltd，您會看到並選取 [VanArsdel, Ltd - 機密]。 如果您已停用這個預設 Azure Rights Management 範本，請選取替代範本。 不過，如果您選取部門範本，請確定您的帳戶包含在範圍內。
 
     如果未啟用 Azure Rights Management，則您無法使用此選項。
 
@@ -82,6 +82,6 @@ ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
 [步驟 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

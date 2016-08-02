@@ -4,7 +4,7 @@ description: "當檔案已受 Rights Management 保護時，您可以藉由重�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51050497fe128d94e069d0ac010435bea5623af2
-ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
+ms.sourcegitcommit: e65fe3e6994352296cdf58d4b53de421389790f7
+ms.openlocfilehash: 492f651f9234a8428a0f39da93b332a552894993
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
 >
 > 同樣地，如果您想要新增或移除權限，無法只指定要新增或移除該權限，而是必須指定您希望讓指定的人員具有的所有權限。
 
-如果您是檔案擁有者，想要重新保護 (例如，您原本使用共用應用程式保護它)，則您會自動具有重新保護檔案的權限。 如果不是擁有者，您不一定具有重新保護檔案的權限，這視受保護檔案目前的權限而定。 
+如果您是檔案擁有者，想要重新保護 (例如，您原本使用共用應用程式保護它)，則您會自動具有重新保護檔案的權限。 如果不是擁有者，您不一定具有重新保護檔案的權限，這視受保護檔案目前的權限而定。 您需要[完整的控制使用權](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions)以重新保護檔案。
 
 例如，如果有其他人使用 Rights Management 共用應用程式來保護檔案，並且指定您所屬的群組和 [共同擁有者] 作為自訂權限，則您將能夠重新保護檔案。 不過，如果他們未指定您的名稱或您所屬的群組，或是他們選取了 [檢閱者 - 檢視及編輯]，或是不讓您移除權限的範本，那麼您將無法重新保護檔案。 要找出的最簡單方法，就是嘗試重新保護檔案。
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: 985d3d2f1151b50fcde8f8bb916e984e1de71b00
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

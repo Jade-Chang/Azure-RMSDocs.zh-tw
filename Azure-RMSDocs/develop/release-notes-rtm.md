@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 2892bc8242c3b6a90352829bf251b7044a919ed3
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
 
 ## 2015 年 5 月更新
 
--   **服務應用程式及雲端式 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 需要三項資訊：對稱金鑰、**AppPrincipalId** 和 **TenantBposId**。 這個主題已更新為提供處理此必要資訊的指引。 如需了解這項更新，請參閱更新版的[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
+-   **服務應用程式及雲端式 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 需要三項資訊：對稱金鑰、**AppPrincipalId** 和 **TenantBposId**。 這個主題已更新為提供處理此必要資訊的指引。 如需了解這項更新，請參閱更新版的[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 ## 2015 年 4 月更新
 
@@ -178,6 +178,6 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

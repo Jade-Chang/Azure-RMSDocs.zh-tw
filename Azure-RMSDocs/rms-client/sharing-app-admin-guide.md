@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
-ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
+ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
+ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
 
 
 ---
@@ -124,7 +124,7 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  在您要安裝 RMS 共用應用程式的每一部電腦上，該電腦上的每位使用者都必須執行下列命令 (不需使用提高的權限)。 有不同的方式可達到這個目的，包括要求使用者執行命令 (例如，電子郵件中的連結或技術支援入口網站上的連結)，或您可以將它加入使用者的登入指令碼：
+3.  在您要安裝 RMS 共用應用程式的每一部電腦上，使用該電腦的每位使用者都必須執行下列命令 (不需使用提高的權限)。 有不同的方式可達到這個目的，包括要求使用者執行命令 (例如，電子郵件中的連結或技術支援入口網站上的連結)，或您可以將它加入使用者的登入指令碼：
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -369,6 +369,6 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
