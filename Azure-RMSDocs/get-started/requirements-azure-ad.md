@@ -26,7 +26,7 @@ ms.openlocfilehash: 75b2414cc360704deb6107d6c0038f5b0bf7fa70
 
 您必須有 Azure AD 目錄才能使用 Azure Rights Management (Azure RMS)。 您可為此目錄使用您的組織帳戶來登入 Azure 傳統入口網站，例如，您可設定和管理 Rights Management 範本。
 
-如果您的組織尚無 Azure 訂用帳戶，您可以註冊免費試用以取得訂用帳戶：移至 [Azure 快速入門][](https://account.windowsazure.com/organization) 頁面，並依照指示進行。
+如果您的組織尚無 Azure 訂用帳戶，您可以註冊免費試用以取得訂用帳戶：移至 [Azure 快速入門](https://account.windowsazure.com/organization) 頁面，並依照指示進行。
 
 如需詳細資訊，請參閱 Azure Active Directory 文件的下列資源：
 
@@ -76,6 +76,6 @@ ms.openlocfilehash: 75b2414cc360704deb6107d6c0038f5b0bf7fa70
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
