@@ -3,22 +3,24 @@ title: "Azure Information Protection 快速入門教學課程步驟 4 | Azure Ri
 description: "簡介教學課程的步驟 4，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: e80ea074fb1f6e571b846969b15c08cf7108b11c
-ms.openlocfilehash: dcb34eb8bfee6232d32245634dc56f717257b644
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 
 ---
 
 # 步驟 4：觀看分類、標記和保護實作示範 
 
-*適用於：Azure Information Protection 預覽*
+>*適用於：Azure Information Protection 預覽*
+
+**[本資訊為初步資訊而且可能隨時變更。 ]**
 
 現在您已開啟 Word 文件並安裝 Azure Information Protection 用戶端，您已準備好看看使用我們設定的原則來開始標記並保護您的文件有多麼容易。
 
@@ -75,6 +77,6 @@ ms.openlocfilehash: dcb34eb8bfee6232d32245634dc56f717257b644
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

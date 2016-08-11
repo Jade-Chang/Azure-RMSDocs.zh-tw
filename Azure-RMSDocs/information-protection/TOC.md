@@ -13,8 +13,18 @@
 ### [步驟 3：安裝用戶端](infoprotect-tutorial-step3.md)
 ### [步驟 4：觀看實作示範](infoprotect-tutorial-step4.md)
 ## [常見問題集](faq.md)
+## [設定原則](configure-policy.md)
+### [預設原則](configure-policy-default.md)
+### [設定全域設定](configure-policy-settings.md)
+### [建立新的標籤](configure-policy-new-label.md)
+### [刪除或重新排序標籤](configure-policy-delete-reorder.md)
+### [變更標籤](configure-policy-change-label.md)
+### [套用保護](configure-policy-protection.md)
+### [設定視覺標記](configure-policy-markings.md)
+### [設定條件](configure-policy-classification.md)
+## [安裝用戶端](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

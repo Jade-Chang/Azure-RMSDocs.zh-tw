@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,15 +13,17 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e60cd910a8e995a2681d7eb87a13f815183d9124
-ms.openlocfilehash: 846578a84df383821a64d32ce6dd69290a5fdee9
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 
 ---
 
 # Azure Information Protection 預覽的常見問題集
 
-*適用於：Azure Information Protection 預覽*
+>*適用於：Azure Information Protection 預覽*
+
+**[本資訊為初步資訊而且可能隨時變更。 ]**
 
 對 Azure Information Protection 的預覽版本有疑問？  看看此處是否有解答。 
 
@@ -61,12 +63,6 @@ ms.openlocfilehash: 846578a84df383821a64d32ce6dd69290a5fdee9
 
 訂用帳戶需求的任何變更將會公告於 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格)。
 
-## 如果 Azure Information Protection 現在是公開預覽版本，為什麼我在 Azure 入口網站找不到它？
-
-目前，您必須使用此連結才能在入口網站中看到 Azure Information Protection︰https://portal.azure.com/?Microsoft_Azure_InformationProtection=true
-
-然後在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 "Information Protection"。 從結果中，選取 [Azure Information Protection]。
-
 ## 我需要是全域管理員才能嘗試 Azure Information Protection 預覽嗎？
 
 僅限預覽版本，Azure 已驗證的任何使用者都可以在 Azure 入口網站中看到及設定其租用戶的 Azure Information Protection 原則。
@@ -89,7 +85,7 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 每次使用者開啟 Office 應用程式時，Azure Information Protection 用戶端便會檢查是否有新版的 Azure Information Protection 原則。 如果有更新的版本，用戶端會使用 HTTPS 連結下載來保護資料。 
 
-如果 Azure Information Protection 原則更新時應用程式已經載入，您必須關閉再重新開啟應用程式，才能取得最新版的原則。
+如果在新的 Azure Information Protection 原則發佈時，已載入多個 Office 應用程式執行個體，您必須關閉所有執行個體以取得最新版的原則。 例如，您開啟了兩個 Word 文件，並只想要在一個文件中測試更新的 Azure Information Protection 原則：請將兩個 Word 文件都關閉，並重新開啟您想要搭配最新原則使用的文件。
 
 ## 檔案可以儲存在何處以便使用 Azure Information Protection？ 
 
@@ -113,7 +109,7 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 您會在 [Azure Information Protection 快速入門教學課程](infoprotect-quick-start-tutorial.md)中此動作的範例。 
 
-分類的精確度取決於您如何設定分類規則，分類規則是以條件為基礎。 目前，條件支援文字模式和規則運算式。 如需預覽期間提供之每項選項的說明，以及供您測試的一些建議範例，請參閱 Yammer 文章 [Description of content matching for our pre-define Information types](https://www.yammer.com/askipteam/#/Threads/show?threadId=737163344) (預先定義之資訊類型的內容比對描述)。 儲存文件或傳送電子郵件時，會執行偵測。
+分類的精確度取決於您如何設定分類規則，分類規則是以條件為基礎。 目前，條件支援文字模式和規則運算式。 如需預覽期間所提供選項的個別說明，以及一些供您測試的建議範例，請參閱[如何設定適用於 Azure Information Protection 的自動與建議分類條件](configure-policy-classification.md)。 儲存文件或傳送電子郵件時，會執行偵測。
 
 為了獲得最佳的使用者體驗，及確保業務持續性，我們建議您從使用者建議動作開始，而不要從完全自動動作開始。 這可讓您的使用者能夠接受標記或保護動作，或是覆寫這些建議。   
 
@@ -121,7 +117,7 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 可以。 使用 Azure 入口網站設定是否要使用自動分類，或對使用者提出建議，方法是將選項 [Select how this label is applied: automatically or recommended to user] (選取此標籤的套用方式︰自動或建議使用者) 設定為 [建議]。
 
-您會在 [Azure Information Protection 快速入門教學課程](infoprotect-quick-start-tutorial.md)中此動作的範例。
+您會在 [Azure Information Protection 快速入門教學課程](infoprotect-quick-start-tutorial.md)中此動作的範例。  
 
 ## 可以強制分類所有文件都？
 
@@ -140,7 +136,7 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 在 Azure 入口網站中，您可以選取 Azure Rights Management 範本來根據您指定的分類層級自動保護內容。
 
-您會在 [Azure Information Protection 快速入門教學課程](infoprotect-quick-start-tutorial.md)中此動作的範例。
+您會在 [Azure Information Protection 快速入門教學課程](infoprotect-quick-start-tutorial.md)中此動作的範例。 如需詳細資訊，請參閱[如何設定標籤以套用 Rights Management 保護](configure-policy-protection.md)。
 
 ## 檔案可以分類在兩個不同的分類中嗎？
 
@@ -188,6 +184,6 @@ Azure Information Protection 分類的檔案和電子郵件，可以供任何使
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

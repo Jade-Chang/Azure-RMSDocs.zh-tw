@@ -3,22 +3,24 @@ title: "Azure Information Protection 快速入門教學課程步驟 3 | Azure Ri
 description: "簡介教學課程的步驟 3，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 7f85c673cd1e8055d6a27dcc49b5da18a7e12f98
-ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 
 
 ---
 
 # 步驟 3：安裝 Azure Information Protection 用戶端 
 
-*適用於：Azure Information Protection 預覽*
+>*適用於：Azure Information Protection 預覽*
+
+**[本資訊為初步資訊而且可能隨時變更。 ]**
 
 在此步驟中，您將安裝 Azure Information Protection 用戶端，讓您剛才設定的原則下載至 Windows 電腦上，並在 Office 應用程式中顯示標籤。 
 
@@ -41,11 +43,16 @@ ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
 
 您已準備好進行最後一個步驟，觀看分類、標記和保護實作示範。
 
+|如果您想要更多的資訊|其他資訊|
+|--------------------------------|--------------------------|
+|關於安裝用戶端|[安裝 Azure Information Protection 用戶端](info-protect-client.md)|
+
+
 >[!div class="step-by-step"]
 [&#171; 步驟 2](infoprotect-tutorial-step2.md)
 [步驟 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

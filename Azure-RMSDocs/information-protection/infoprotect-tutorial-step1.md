@@ -3,27 +3,29 @@ title: "Azure Information Protection 快速入門教學課程步驟 1 | Azure Ri
 description: "簡介教學課程的步驟 1，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間約 10 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/291/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 78f0f07271414fb646f996e7273343f2abf8852b
-ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 
 ---
 
 # 步驟 1：啟動 Rights Management 服務
  
-*適用於：Azure Information Protection 預覽*
+>*適用於：Azure Information Protection 預覽*
+
+**[本資訊為初步資訊而且可能隨時變更。 ]**
 
 > [!NOTE]
 >如果您只想要分類資料而不想使用 Azure Rights Management 保護它，或如果您已為您的租用戶啟用 Azure Rights Management - 請直接前往[下一步](infoprotect-tutorial-step2.md)。 
 
-啟動 Azure Rights Management 時，您可以在分類最機密的文件和檔案之後保護它們。 若要啟動 Azure Rights Management，您可以使用 Office 365 系統管理中心或是 Azure 傳統入口網站：
+啟動 Azure Rights Management 時，您可以在分類最敏感的文件和檔案之後保護它們。 若要啟動 Azure Rights Management，您可以使用 Office 365 系統管理中心或是 Azure 傳統入口網站：
 
 -   如果您有包含 Azure Rights Management 的 Office 365 訂閱，或是所擁有的 Office 365 訂閱雖然沒有 Azure Rights Management，但您另外有 Azure RMS 進階版的訂閱：**使用 Office 365 系統管理中心**。
 
@@ -49,7 +51,7 @@ ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
 
 6.  在 **[RIGHTS MANAGEMENT]** 頁面上，按一下 **[啟動]**。
 
-7.  出現 **[是否要啟動 Rights Management?]**] 提示時，按一下 **[啟動]**。
+7.  出現 **[是否要啟動 Rights Management?]** 提示時，按一下 **[啟動]**。
 
 現在，您應該會看到 **[Rights Management 已啟動]** 及用來停用的選項 (您可能需要手動重新整理頁面)。
 
@@ -84,6 +86,6 @@ ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

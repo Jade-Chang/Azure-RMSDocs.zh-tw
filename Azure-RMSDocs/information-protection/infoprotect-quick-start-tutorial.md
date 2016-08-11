@@ -3,22 +3,24 @@ title: "Azure Information Protection 快速入門教學課程 | Azure Rights Man
 description: "一個簡介教學課程，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/16/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: cac95dec84f99d2e6caa3458dc8284defe2324bc
-ms.openlocfilehash: 7dc988365c1fa86827d1a7edc33c0a2eb6180f0e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 17670eadc7cbf6111ab7fd0a9322e51d401b86e1
 
 
 ---
 
 # Azure Information Protection 快速入門教學課程 
 
-*適用於：Azure Information Protection 預覽*
+>*適用於：Azure Information Protection 預覽*
+
+**[本資訊為初步資訊而且可能隨時變更。 ]**
 
 使用此教學課程，可為組織快速試用 Azure Information Protection 預覽，只有 4 個步驟，花費時間不超過 15 分鐘。 (選擇性) 啟用 Azure Rights Management 服務、查看和修改預設 Azure Information Protection 原則、安裝 Azure Information Protection 用戶端，然後使用 Word 文件以查看分類、標記和保護實作示範。
 
@@ -38,7 +40,7 @@ ms.openlocfilehash: 7dc988365c1fa86827d1a7edc33c0a2eb6180f0e
 
 - 用來登入 Office 365 系統管理中心或是 Azure 傳統入口網站的全域系統管理員帳戶，如果您需要啟動 Rights Management 服務的話。 此帳戶也必須有電子郵件地址和工作電子郵件服務 (例如 Exchange Online 或 Exchange Server)。
 
-- 執行 Windows (至少要是 Windows 7 Service Pack 1)，且已安裝 Office 2016、Office 2013 Service Pack 1 或 Office 2010 的電腦。 
+- 執行 Windows (至少為 Windows 7 Service Pack 1) 且已安裝 Office Professional Plus 2016、Office Professional Plus 2013 Service Pack 1 或 Office Professional Plus 2010 的電腦。 
 
 - 如果您的組織中部署了 Active Directory Rights Management Services (AD RMS)︰電腦必須是先前未使用 AD RMS 的工作群組電腦。 如果您要保護文件，這是必要條件，且如此可確保電腦只從 Azure Rights Management 下載範本。 不支援電腦在同一時間連接至 AD RMS 和 Azure RMS。 如果您對移轉資訊有興趣，請參閱[從 AD RMS 移轉至 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。   
 
@@ -51,6 +53,6 @@ ms.openlocfilehash: 7dc988365c1fa86827d1a7edc33c0a2eb6180f0e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 
