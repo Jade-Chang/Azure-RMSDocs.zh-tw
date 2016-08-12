@@ -3,15 +3,15 @@ title: "Azure Information Protection 快速入門教學課程步驟 3 | Azure Ri
 description: "簡介教學課程的步驟 3，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
+ms.sourcegitcommit: 264f2be6c62dc7fa670171493941332fe7ff20e5
+ms.openlocfilehash: 42649148e58a8ea1baab6317d181c24e6a21d709
 
 
 ---
@@ -37,9 +37,8 @@ ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
         按一下 [保護] > [說明與意見反應]，然後在 [Microsoft Azure Information Protection] 對話方塊中，確認您的用戶端狀態。 它應該會顯示 [已安裝 Information Protection 原則] 和最近的連線時間。 確認顯示的使用者名稱對您的租用戶而言正確。
 
     - 新的列會顯示在功能區下；Information Protection 列。 它會顯示標題 [敏感度]，以及我們設定的預設標籤 [內部]。 
-
-
-![Azure Information Protection 快速入門教學課程步驟 3 - 已安裝用戶端](../media/word2013-callouts.png)
+    
+        ![Azure Information Protection 快速入門教學課程步驟 3 - 已安裝用戶端](../media/word2013-callouts2.png)
 
 您已準備好進行最後一個步驟，觀看分類、標記和保護實作示範。
 
@@ -53,6 +52,6 @@ ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 [步驟 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
