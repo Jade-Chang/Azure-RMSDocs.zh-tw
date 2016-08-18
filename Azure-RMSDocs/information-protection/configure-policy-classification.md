@@ -3,15 +3,15 @@ title: "如何設定適用於 Azure Information Protection 的自動與建議分
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 80c201dcf316a5aa5e123645d47c6741f8b61f05
 
 
 ---
@@ -49,15 +49,15 @@ ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
 
 ## 設定標籤的建議或自動分類
 
-1. 請確定您已使用下列 Azure Information Protection 的特殊連結登入 Azure 入口網站︰https://portal.azure.com/?microsoft_azure_informationprotection=true
- 
-2. 在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 [Information]。 選取 [Azure Information Protection]。
+1. 如果您尚未這樣做，請登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure Information Protection] 刀鋒視窗。 
+    
+    例如，在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 **Information**。 選取 [Azure Information Protection]。
 
-3. 在 [Azure Information Protection] 刀鋒視窗上，選取您要設定自動或建議分類的標籤。
+2. 在 [Azure Information Protection] 刀鋒視窗上，選取您要設定自動或建議分類的標籤。
 
-4. 在 [標籤] 刀鋒視窗上的 [設定自動套用此標籤的條件] 區段中，按一下 [加入新的條件]。
+3. 在 [標籤] 刀鋒視窗上的 [設定自動套用此標籤的條件] 區段中，按一下 [加入新的條件]。
 
-5. 在 [條件] 刀鋒視窗上，如果您想要使用預先定義的條件，請選取 [內建]；如果您想要指定您自己的條件，請選取 [自訂]，然後按一下 [儲存]：
+4. 在 [條件] 刀鋒視窗上，如果您想要使用預先定義的條件，請選取 [內建]；如果您想要指定您自己的條件，請選取 [自訂]，然後按一下 [儲存]：
 
     - 針對 [內建]：從可用的條件清單中選取，然後選取發生次數的最小數目，以及發生次數是否應該具備唯一值以包含在發生計數中。
         
@@ -67,13 +67,13 @@ ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
         
     **發生次數選項的範例**：您選取了內建社會安全碼選項並將發生次數的最小數目設定為 2，以及具有列出兩次之相同社會安全碼的文件：如果您將 [僅包含唯一值的發生計數] 設定為 [開啟]，則條件將會不符；如果您將此選項設定為 [關閉]，則條件將會符合。
 
-6. 在 [標籤] 刀鋒視窗上，設定下列項目，然後按一下 [儲存]：
+5. 在 [標籤] 刀鋒視窗上，設定下列項目，然後按一下 [儲存]：
 
     - 選擇自動或建議分類︰針對 [選取此標籤的套用方式：自動或建議使用者]，選取 [自動] 或 [建議]。
 
     - 指定使用者提示或原則提示的文字：保留預設文字，或自行指定字串。
 
-7. 若要讓變更可供使用者使用，請按一下 [Azure Information Protection] 刀鋒視窗上的 [發佈]。
+6. 若要讓變更可供使用者使用，請按一下 [Azure Information Protection] 刀鋒視窗上的 [發佈]。
 
 ## 內建條件的相關資訊
 
@@ -225,6 +225,6 @@ ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

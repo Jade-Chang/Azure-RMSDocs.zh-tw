@@ -3,15 +3,15 @@ title: "Azure Information Protection 快速入門教學課程步驟 4 | Azure Ri
 description: "簡介教學課程的步驟 4，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 ### 手動變更預設標籤︰
 
-- 在 Information Protection 列上，按一下 [內部] 旁的編輯標籤圖示。 這會顯示可用的標籤。 選擇 [個人]，系統會提示您說明為何會降低分類層級。 選取 [This file no longer requires that classification] (這個檔案不再需要該分類)，然後按一下 [確認]。  
+- 在 Information Protection 列中，選取 [個人] 標籤，並於出現提示時證明為何會降低分類層級。 選取 [This file no longer requires that classification] (這個檔案不再需要該分類)，然後按一下 [確認]。  
 
     您會看到 [敏感度] 值變更為 [個人]。
 
@@ -77,6 +77,6 @@ ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

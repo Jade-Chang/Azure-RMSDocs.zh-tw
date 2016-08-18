@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/21/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ac4264f20208f999c9ad9bdd2c4759e65ae021b
-ms.openlocfilehash: 5344c38a31aa0ceb894f330f363442bd2c0d9375
+ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
+ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 
 ---
@@ -351,6 +351,33 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
 
 -   https://&#42;.microsoftonline-p.com
 
+### 為使用者追蹤及撤銷文件
+
+當使用者登入文件追蹤網站時，他們可以追蹤及撤銷他們使用 RMS 共用應用程式進行共用的文件。 當您以 Azure RMS (全域系統管理員) 的系統管理員身分登入時，您可以按一下頁面右上角的系統管理員圖示，切換到 [系統管理員] 模式，以便查看您組織中的使用者所共用的文件。
+
+您在 [系統管理員] 模式下進行的動作會受到稽核並記錄在使用量記錄檔中，而且您必須確認以繼續。 如需此記錄的詳細資訊，請參閱下一節。
+
+當您處於 [系統管理員] 模式時，即可依據使用者或文件進行搜尋。 如果您依據使用者進行搜尋，您會看到指定的使用者共用的所有文件。 如果您依據文件進行搜尋，您會看到組織中所有共用該文件的使用者。 接著您可以向內切入搜尋結果，追蹤使用者共用的文件，並視需要撤銷這些文件。 
+
+若要離開 [系統管理員] 模式，按一下 [結束系統管理員模式] 旁的 [X]。
+
+如需如何使用文件追蹤網站的相關指示，請參閱使用者指南中的[追蹤及撤銷您的文件](sharing-app-track-revoke.md)。
+
+
+
+### 文件追蹤網站的使用量記錄
+
+使用量記錄檔中有兩個欄位適用於文件追蹤︰**AdminAction** 和 **ActingAsUser**。
+
+**AdminAction** - 當系統管理員以 [系統管理員] 模式使用文件追蹤網站時，此欄位的值為 true，例如代表使用者撤銷文件，或查看文件是何時共用時。 當使用者登入文件追蹤網站時，這個欄位是空的。
+
+**ActingAsUser**當 AdminAction 欄位為 true 時，此欄位包含系統管理員代表其作為的使用者名稱，作為搜尋的使用者或文件擁有者。 當使用者登入文件追蹤網站時，這個欄位是空的。 
+
+另外還有要求類型，其記錄使用者及系統管理員使用文件追蹤網站的方式。 例如，**RevokeAccess** 是使用者或系統管理員代表使用者在文件追蹤網站中撤銷文件時的要求類型。 搭配使用 AdminAction 欄位及此要求類型，進而判斷使用者是否撤銷自己的文件 (AdminAction 欄位是空的) 或系統管理員是否代表使用者撤銷文件 (AdminAction 為 true)。
+
+
+如需更多有關使用量記錄的詳細資訊，請參閱 [Logging and analyzing Azure Rights Management usage](../deploy-use/log-analyze-usage.md) (記錄和分析 Azure Rights Management 使用量)
+
 ## 僅限 AD RMS：支援貴組織內有多個電子郵件網域
 如果您使用 AD RMS，且貴組織中的使用者有多個電子郵件網域，或許是導因於合併或收購，您就必須進行下列登錄編輯：
 
@@ -369,6 +396,6 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
