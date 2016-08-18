@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/05/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
-ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
+ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
 
 
 ---
@@ -131,7 +131,7 @@ Azure Rights Management 會以一連串 Blob 來寫入記錄。
 
 第三行列舉以 Tab 鍵分隔的欄位名稱清單：
 
-**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip**
+**#Fields: date            time            row-id        request-type           user-id       result          correlation-id          content-id                owner-email           issuer                     template-id             file-name                  date-published      c-info         c-ip            admin-action            acting-as-user**
 
 後續每一行都是記錄。 欄位的值與前一行的順序相同，以 Tab 鍵隔開。 請使用下表來解讀欄位。
 
@@ -152,6 +152,7 @@ Azure Rights Management 會以一連串 Blob 來寫入記錄。
 |date-published|日期|文件受保護的日期。|2015-10-15T21:37:00|
 |c-info|字串|提出要求的用戶端平台的相關資訊。<br /><br />具體字串隨著應用程式而不同 (例如，作業系統或瀏覽器)。|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|位址|提出要求的用戶端的 IP 位址。|64.51.202.144|
+
 
 #### user-id 欄位的例外狀況
 雖然 user-id 欄位通常指出提出要求的使用者，但有兩種例外狀況，值不會對應至真正的使用者：
@@ -174,29 +175,42 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 |AcquireTemplates|進行呼叫，以取得根據範本 ID 的範本。|
 |AcquireTemplateInformation|進行呼叫，以從服務取得範本的 ID。|
 |AddTemplate|從 Azure 傳統入口網站進行呼叫，以新增範本。|
+|AllDocsCsv|從文件追蹤網站進行呼叫，從 [所有文件] 頁面下載 CSV 檔案。|
 |BECreateEndUserLicenseV1|從行動裝置進行呼叫，以建立使用者授權。|
 |BEGetAllTemplatesV1|從行動裝置 (後端) 進行呼叫，以取得所有範本。|
 |Certify|用戶端認證保護的內容。|
 |KMSPDecrypt|用戶端嘗試解密 RMS 保護的內容。 只適用於客戶管理的租用戶金鑰 (BYOK)。|
 |DeleteTemplateById|從 Azure 傳統入口網站進行呼叫，以刪除範本 ID 的範本。|
+|DocumentEventsCsv|從文件追蹤網站進行呼叫，為單一文件下載 CSV 檔案。|
 |ExportTemplateById|從 Azure 傳統入口網站進行呼叫，以匯出範本 ID 的範本。|
 |FECreateEndUserLicenseV1|類似於 AcquireLicense 要求，來自於行動裝置。|
 |FECreatePublishingLicenseV1|與 Certify 結合 GetClientLicensorCert 相同，來自行動用戶端。|
 |FEGetAllTemplates|從行動裝置 (前端) 進行呼叫，以取得範本。|
+|GetAllDocs|從文件追蹤網站進行呼叫，為使用者載入 [所有文件] 頁面，或為租用戶搜尋所有文件。 與 admin-action 和 acting-as-admin 欄位一起使用此值：<br /><br />- admin-action 是空的︰使用者檢視 [所有文件] 頁面，以取得自己的文件。<br /><br />- admin-action 為 true，而 acting-as-user 是空的：系統管理員為租用戶檢視所有文件。<br /><br />- admin-action 為 true，而 acting-as-user 不是空的︰系統管理員為使用者檢視 [所有文件] 頁面。|
 |GetAllTemplates|從 Azure 傳統入口網站進行呼叫，以取得所有範本。|
 |GetClientLicensorCert|用戶端從 Windows 電腦要求發佈憑證 (稍後用來保護內容)|
 |GetConfiguration|呼叫 Azure PowerShell Cmdlet，以取得 Azure RMS 租用戶的組態。|
 |GetConnectorAuthorizations|從 RMS 連接器進行呼叫，以從雲端取得其組態。|
+|GetRecipients|從文件追蹤網站進行呼叫，為單一文件的瀏覽至清單檢視。|
+|GetSingle|從文件追蹤網站進行呼叫，瀏覽至 [單一文件] 頁面。|
 |GetTenantFunctionalState|Azure 傳統入口網站檢查 Azure RMS 是否啟動。|
 |GetTemplateById|從 Azure 傳統入口網站進行呼叫，以取得指定範本 ID 的範本。|
 |ExportTemplateById|從 Azure 傳統入口網站進行呼叫，以匯出指定範本 ID 的範本。|
 |FindServiceLocationsForUser|進行呼叫以查詢 URL，用呼叫 Certify 或 AcquireLicense。|
+|LoadEventsForMap|從文件追蹤網站進行呼叫，為單一文件瀏覽至地圖檢視。|
+|LoadEventsForSummary|從文件追蹤網站進行呼叫，為單一文件瀏覽至時間表檢視。|
+|LoadEventsForTimeline|從文件追蹤網站進行呼叫，為單一文件瀏覽至地圖檢視。|
 |ImportTemplate|從 Azure 傳統入口網站進行呼叫，以匯入範本。|
+|RevokeAccess|從文件追蹤網站進行呼叫，以撤銷文件。|
+|SearchUsers |從文件追蹤網站進行呼叫，以搜尋租用戶中的所有使用者。|
 |ServerCertify|從已啟用 RMS 的用戶端 (如 SharePoint) 進行呼叫，以認證伺器。|
 |SetUsageLogFeatureState|進行呼叫，以啟用使用情況記錄。|
 |SetUsageLogStorageAccount|進行呼叫，以指定 Azure RMS 記錄的位置。|
-|KMSPSignDigest|當因為簽章目的而使用客戶管理的租用戶金鑰 (BYOK) 時，進行呼叫。 通常每個 AcquireLicence (或 FECreateEndUserLicenseV1)、Certify 及 GetClientLicensorCert (或 FECreatePublishingLicenseV1) 只會呼叫一次。|
+|SignDigest|當因為簽章目的而使用金鑰時，進行呼叫。 通常每個 AcquireLicence (或 FECreateEndUserLicenseV1)、Certify 及 GetClientLicensorCert (或 FECreatePublishingLicenseV1) 只會呼叫一次。|
+|UpdateNotificationSettings|從文件追蹤網站進行呼叫，為單一文件變更通知設定。|
 |UpdateTemplate|從 Azure 傳統入口網站進行呼叫，以更新現有範本。|
+
+
 
 ## Windows PowerShell 參考
 從 2016 年 2 月開始，您針對 Azure RMS 使用量記錄所需的唯一 Windows PowerShell Cmdlet 是 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)。 
@@ -226,6 +240,6 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO1-->
 
 

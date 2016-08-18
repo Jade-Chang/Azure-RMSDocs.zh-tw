@@ -3,15 +3,15 @@ title: "Azure Information Protection 快速入門教學課程步驟 2 | Azure Ri
 description: "簡介教學課程的步驟 2，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
-ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
+ms.sourcegitcommit: 09cb56aaa0d7d97073623c518aa331d591a376e3
+ms.openlocfilehash: 65d758635b77ee7d6c423a1400a7621e8e05b14d
 
 
 ---
@@ -24,13 +24,20 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 雖然 Azure Information Protection 有預設原則，您不需設定即可使用，不過我們即將看看該原則並進行一些變更。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
+1. 登入 [Azure 入口網站](https://portal.azure.com)。 如果您想要測試保護，以及分類和標記，請以全域管理員身分登入，以便您擷取 Azure Rights Management 範本。
  
-2. 在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 [Information]。 選取 [Azure Information Protection]。
+2. 在中樞功能表︰按一下 [新增]  >  [安全性 + 身分識別]  >  [Azure Information Protection (預覽)]  >  [建立]。
 
-- 現在，您會看到主要的 [Azure Information Protection] 刀鋒視窗，其中顯示自動建立的預設 Information Protection 原則。 這個預設原則包含下列分類標籤︰[個人]、[公用]、[內部]、[機密] 和 [密碼]。 閱讀每個分類標籤的工具提示以了解要如何使用標籤。 請注意，[密碼] 有兩個子標籤︰[All-Employees] (所有員工) 和 [我的群組]，它們提供分類如何有子類別的範例。
+    這會建立 [Azure Information Protection] 刀鋒視窗，以便在下次您登入入口網站，您可以從中樞 [瀏覽] 清單選取服務。 
 
-- 根據預設設定，[內部]、[機密] 和 [密碼] 設定了視覺標記 (例如，頁尾、頁首、浮水印)，而且標籤都沒有設定保護。 此外，未設定三個全域設定，因此所有文件和電子郵件不需要有標籤，也沒有預設標籤，且使用者不需要在降低敏感度等級時提供理由。
+    > [!TIP] 
+    > 選取 [釘選到儀表板]，在儀表板上建立 [Azure Information Protection] 磚，以便您可以在下次登入入口網站時略過瀏覽步驟。
+
+3.  探索主要的 **Azure Information Protection** 刀鋒視窗，其中顯示自動建立的預設 Information Protection 原則：
+    
+    - 分類的標籤︰[個人]、[公用]、[內部]、[機密] 及 [密碼]。 閱讀每個分類標籤的工具提示以了解要如何使用標籤。 請注意，[密碼] 有兩個子標籤︰[All-Employees] (所有員工) 和 [我的群組]，它們提供分類如何有子類別的範例。
+
+    - 根據預設設定，[內部]、[機密] 及 [密碼] 標籤皆設定了視覺標記 (例如，頁尾、頁首、浮水印)，而標籤都沒有設定保護。 此外，未設定三個全域設定，因此所有文件和電子郵件不需要有標籤，也沒有預設標籤，且使用者不需要在降低敏感度等級時提供理由。
 
     ![Azure Information Protection 快速入門教學課程步驟 3 - 預設原則](../media/info-protect-policy.png)
 
@@ -42,7 +49,7 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 我們現在將會變更其中一個標籤 [機密] 的設定：
 
-1. 按一下 [機密] 標籤項目。
+1. 按一下 [機密] 標籤。
 
 2. 在 [標籤: 機密] 刀鋒視窗中，您現在會看到每個標籤的可用設定。 進行下列變更：
 
@@ -90,6 +97,6 @@ ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 [步驟 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

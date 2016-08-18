@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/10/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
-ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
+ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
+ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 
 
 ---
@@ -32,10 +32,10 @@ ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 |Active Directory Rights Management Services|經常縮寫為 *Azure RMS*。<br /><br />一種 Windows Server 角色，其可使用加密和原則來保護文件、檔案及電子郵件，進而提供資訊保護。|
 |Azure RMS|請參閱 *Active Directory Rights Management Services*。|
 |Azure Information Protection|目前在預覽中，它是使用分類、標記和保護以協助保護文件和電子郵件的服務。 Azure Rights Management 使用加密、識別和授權原則，以提供保護。|
-|Azure Rights Management|經常縮寫為 *Azure RMS*。<br /><br />透過使用加密和原則來保護文件、檔案及電子郵件的安全，進而提供資訊保護的一項 Azure 服務。  也稱為 *Azure Rights Management 服務*。 先前的名稱已包含：<br /><br />*Windows Azure Active Directory Rights Management*：通常縮寫為 Windows Azure AD Rights Management 服務。<br /><br />*RMS Online*：原始、建議的名稱，您有時可能會在錯誤訊息和記錄檔項目中看到。|
+|Azure 版權管理|經常縮寫為 *Azure RMS*。<br /><br />透過使用加密和原則來保護文件、檔案及電子郵件的安全，進而提供資訊保護的一項 Azure 服務。  也稱為 *Azure Rights Management 服務*。 先前的名稱已包含：<br /><br />- *Windows Azure Active Directory Rights Management*：通常縮寫為 Windows Azure AD Rights Management 服務。<br /><br />- *RMS Online*：原始、建議的名稱，您有時可能會在錯誤訊息和記錄檔項目中看到。|
 |Azure RMS|請參閱 *Azure Rights Management*。|
 |BYOK|請參閱 *整合您自己的金鑰*。|
-|整合您自己的金鑰|常用的縮寫為 *BYOK*。<br /><br />一種組態選項，想要產生並管理自己擁有之 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 租用戶金鑰的組織會選擇此選項。|
+|整合您自己的金鑰|常用的縮寫為 *BYOK*。<br /><br />一種組態及拓撲選項，想要產生並管理自己擁有之 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]租用戶金鑰的組織會選擇此選項。|
 |內容金鑰|受 RMS 啟發之應用程式對每個以 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 保護之文件或電子郵件建立的唯一金鑰，其有助於限制資訊洩露的風險。|
 |取用|檔案受到 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 保護的情況下，將檔案解除封鎖以進行讀取或使用。|
 |停用|停用 Rights Management Service，可讓組織不再使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]。|
@@ -44,6 +44,8 @@ ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 |企業版權管理|業界標準的通用詞彙，通常用來描述使用加密和原則授權工具的組合，協助組織保護敏感或珍貴資訊的產品和解決方案。 Microsoft Rights Management 即是企業版權管理 (ERM) 解決方案的範例之一。|
 |ERM|請參閱 *企業版權管理*。|
 |一般保護|一種保護層級，它能加密任何類型的檔案，避免未經授權的人員開啟檔案。 在開啟檔案後，檔案便已解密並可用於未以原生方式支援 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的應用程式。|
+|HYOK|請參閱 *hold your own key* (保存您自己的金鑰)。|
+|保存您自己的金鑰|常用的縮寫為 *HYOK*。<br /><br />一種組態及拓撲選項，想要於內部部署自行產生及儲存自己的金鑰的組織會選擇此選項，通常是為了法規和相容性因素。|
 |資訊保護|有時縮寫為 *IP*。<br /><br />業界標準的通用詞彙，意指保護資料和檔案以避免未經授權的人員存取 (即使當資料和檔案已藉由電子郵件或文件共用離開組織邊界)。 Microsoft Rights Management 即是資訊保護 (IP) 解決方案的範例之一。|
 |資訊版權管理|常用的縮寫為 *IRM*。<br /><br />用於 Office 服務 (如 Exchange Server、Word 及 SharePoint Online) 的詞彙，其描述 Rights Management 的支援能力。|
 |IRM|請參閱 *資訊版權管理*。|
@@ -72,6 +74,6 @@ ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

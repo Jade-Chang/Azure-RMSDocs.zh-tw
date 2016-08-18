@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 
 ---
@@ -39,11 +39,11 @@ ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 請注意，預覽可讓您試用新的 **Premium P2 服務方案**，而一些進階功能，例如自動與建議標記，在正式運作時可能無法在您目前的方案使用。 如需不同服務方案 (Azure Information Protection Premium P1 和 Azure Information Protection Premium P2) 的詳細資訊，請參閱下列部落格文章：[Introducing Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/07/introducing-enterprise-mobility-security/) (企業行動力 + 安全性簡介)。
 
-此預覽版本有下列限制。 請留意 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 上的公告，以及我們的 [Yammer 網站](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)，了解其他特性與功能的提供時機：
+此預覽版本有下列限制。 請留意 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Enterprise Mobility and Security 部落格) 上的公告，以及我們的 [Yammer 網站](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)，以了解其他特性與功能可供使用的時機：
 
 - 針對分類和標記沒有任何集中式的記錄。
 
-- 標籤名稱和工具提示僅提供英文版支援。
+- 標籤名稱和工具提示中只有一種語言支援。
 
 - 自動分類的條件必須為片語或模式。
 
@@ -61,11 +61,11 @@ ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 若要在 Azure 入口網站中設定 Azure Information Protection 原則，您必須有 Azure 訂用帳戶。 如果您的組織尚無 Azure 訂用帳戶，您可以註冊免費試用以取得訂用帳戶：移至 [Azure 快速入門](https://account.windowsazure.com/organization)頁面，並遵循指示進行。
 
-訂用帳戶需求的任何變更將會公告於 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格)。
+訂用帳戶需求的任何變更將會公告於 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Enterprise Mobility and Security 部落格)。
 
 ## 我需要是全域管理員才能嘗試 Azure Information Protection 預覽嗎？
 
-僅限預覽版本，Azure 已驗證的任何使用者都可以在 Azure 入口網站中看到及設定其租用戶的 Azure Information Protection 原則。
+僅限預覽版本，Azure 已驗證的任何使用者都可以在 Azure 入口網站中看到其租用戶的 Azure Information Protection 原則，並加以設定供分類及標記所用。 不過，若要設定標籤以套用 Azure Rights Management 範本，您必須登入為 Azure Active Directory 的全域管理員。
 
 如果您在安裝 [Azure Information Protection 用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)時選取安裝示範原則的選項，您甚至不需要登入入口網站即可嘗試預覽。 示範原則會在本機安裝 Azure Information Protection 的預設原則，因此您可以嘗試為文件和電子郵件加上標籤，但是若您不登入 Azure 入口網站將無法變更或新增標籤。 
 
@@ -74,7 +74,7 @@ ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 ## Azure Information Protection 支援內部部署與混合式案例嗎？
 
-Azure Information Protection 是以雲端為基礎的解決方案。 如果您對混合式案例有興趣，請連絡 Information Protection 團隊，請寄送電子郵件至 askipteam@microsoft.com。
+Azure Information Protection 是以雲端為基礎的解決方案。 如果您有興趣在混合式案例中部署 Azure Information Protection，請將電子郵件傳送至 askipteam@microsoft.com 來連絡 Information Protection 小組。
 
 ## Azure Information Protection 支援哪些用戶端平台和應用程式？
 
@@ -150,7 +150,11 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 ## Azure Information Protection 的文件追蹤和撤銷運作方式為何？
 
-您使用 Azure Information Protection 來分類和保護的檔案，其文件追蹤方式與目前 Azure Rights Management 的方式相同。 如需詳細資訊，請參閱[當您使用 RMS 共用應用程式時，追蹤及撤銷文件](../rms-client/sharing-app-track-revoke.md)。
+您使用 Azure Information Protection 來分類和保護的檔案，其文件追蹤方式與目前 Azure Rights Management 和 RMS 共用應用程式的方式相同。 您也可以使用 Azure Information Protection 用戶端來存取文件追蹤網站 (版本 1.0.233 或更新版本)： 
+
+- Office 應用程式中，在 [首頁] 索引標籤的 [保護] 群組中，按一下 [保護] >  [追蹤使用狀況] 。 
+
+如需詳細資訊，請參閱[當您使用 RMS 共用應用程式時，追蹤及撤銷文件](../rms-client/sharing-app-track-revoke.md)。
 
 ## Azure Information Protection 如何強制執行我所設定的原則？
 
@@ -184,6 +188,6 @@ Azure Information Protection 分類的檔案和電子郵件，可以供任何使
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

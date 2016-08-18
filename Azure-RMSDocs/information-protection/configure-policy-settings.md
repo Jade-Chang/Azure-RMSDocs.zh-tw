@@ -3,15 +3,15 @@ title: "如何設定 Azure Information Protection 的全域原則設定 | Azure 
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 3b22cf76f03a4d36281db7e705359402dcbbde0e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
 
 
 ---
@@ -29,11 +29,11 @@ Azure Information Protection 原則中有 3 個設定會套用至所有使用者
 
 若要設定這些設定：
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
- 
-2. 在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 [Information]。 選取 [Azure Information Protection]。
+1. 如果您尚未這樣做，請登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure Information Protection] 刀鋒視窗。 
+    
+    例如，在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 **Information**。 選取 [Azure Information Protection]。
 
-3. 在 [Azure Information Protection] 刀鋒視窗上，設定這些全域設定：
+2. 在 [Azure Information Protection] 刀鋒視窗上，設定這些全域設定：
 
     - [所有文件和電子郵件必須有標籤]：當您將這個選項設為 [開啟] 時，所有儲存的文件和傳送的電子郵件都必須套用標籤。 標籤可能是由使用者手動指派、因[條件](configure-policy-classification.md)自動指派，或根據預設指派 (透過設定 [選取預設標籤] 選項)。 
 
@@ -49,9 +49,9 @@ Azure Information Protection 原則中有 3 個設定會套用至所有使用者
 
     此選項不適用於子標籤。
 
-4. 若要儲存變更，請按一下 [儲存]。
+3. 若要儲存變更，請按一下 [儲存]。
 
-5. 若要讓變更可供使用者使用，請按一下 [發佈]。
+4. 若要讓變更可供使用者使用，請按一下 [發佈]。
 
 ## 後續步驟
 
@@ -68,6 +68,6 @@ Azure Information Protection 原則中有 3 個設定會套用至所有使用者
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

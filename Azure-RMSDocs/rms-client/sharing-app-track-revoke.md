@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
+ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
 
 
 ---
@@ -33,9 +33,11 @@ ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
 
 -   如果您要停止共用文件：按一下 [撤銷存取權] ，記下文件繼續可用的時間期間，並決定是否讓他人知道您要撤銷您先前共用的文件存取權，並提供自訂訊息。 當您撤銷一個文件時，它並不會刪除您共用的文件，但是經過授權的使用者將無法再開啟它。
 
--   如果您想要匯出至 Excel 中：按一下 [在 Excel 中開啟] ，如此您就可以修改資料，並且建立您自己的檢視和圖形。
+-   如果您想要匯出至 Excel 中：按一下 [匯出至 CSV]，如此您就可以修改資料，並且建立您自己的檢視和圖形。
 
 -   如果您想要設定電子郵件通知：按一下 [設定]  並且選取如何及是否在文件被存取時寄送電子郵件。
+
+- 如果您想要為其他人追蹤及撤銷共用文件︰Azure RMS 的系統管理員可以按一下管理圖示，為其他人追蹤及撤銷文件。 只有系統管理員可以看到這個圖示。
 
 -   如果您有任何疑問或想要提供有關文件追蹤網站的意見反應：按一下 [說明] 圖示來存取 [文件追蹤的常見問題集](http://go.microsoft.com/fwlink/?LinkId=523977)。
 
@@ -50,6 +52,11 @@ ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
     ![使用 RMS 共用應用程式時，選取 [Track Usage from Outlook] (追蹤 Outlook 的使用情況) ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
 如果您看不到 RMS 的這些選項，可能是您的電腦上未安裝 RMS 共用應用程式、未安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱[下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。
+
+> [!NOTE] 
+> 如果您已安裝 [Azure InformationProtection 用戶端](../information-protection/info-protect-client.md)預覽版本的 1.0.233 版或更新版本，您也可以使用 [保護]按鈕，進而存取文件追蹤網站︰ 
+> 
+> - 於 Office 應用程式中，在 [首頁] 索引標籤的 [保護] 群組中，按一下 [保護] >  [追蹤使用狀況] 。 
 
 ### 追蹤及撤銷您的文件的其他方式
 除了使用 Office 應用程式在 Windows 電腦上追蹤您的文件之外，也可以使用以下替代方案：
@@ -93,13 +100,13 @@ ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

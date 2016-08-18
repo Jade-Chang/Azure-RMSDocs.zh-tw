@@ -20,11 +20,12 @@
 ### [刪除或重新排序標籤](configure-policy-delete-reorder.md)
 ### [變更標籤](configure-policy-change-label.md)
 ### [套用保護](configure-policy-protection.md)
+#### [HYOK 限制](configure-adrms-restrictions.md)
 ### [設定視覺標記](configure-policy-markings.md)
 ### [設定條件](configure-policy-classification.md)
 ## [安裝用戶端](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 
