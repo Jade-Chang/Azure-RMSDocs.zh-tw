@@ -34,7 +34,7 @@ ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 ### 從傳統 Office 365 系統管理中心啟動 Rights Management
 
 > [!NOTE]
-> 如果您是使用 **Office 365 系統管理中心預覽**而不是 Office 365 傳統系統管理中心，則可以使用[如何從 Office 365 系統管理中心預覽啟用 Azure Rights Management](../deploy-use/activate-office365-preview.md) 的指示，或切換至傳統版本以使用這些指示。 若要切換，請在登入後按一下 [首頁] 頁面上的 [Go to the old admin center] (移至舊系統管理中心)。
+> 如果您是使用 **Office 365 系統管理中心預覽**而不是 Office 365 傳統系統管理中心，則可以使用[如何從 Office 365 系統管理中心預覽啟用 Azure Rights Management](../deploy-use/activate-office365-preview.md) 的指示，或切換至傳統版本以使用這些指示。 若要切換，請在登入後按一下 [首頁] 頁面上的 [Go to the old admin center (移至舊系統管理中心)]。
 
 1.  移至 [Office 365 入口網站](https://portal.office.com/)，並使用您的 Office 365 全域管理員帳戶登入。
 

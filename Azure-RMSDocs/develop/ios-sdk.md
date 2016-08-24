@@ -14,27 +14,27 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
+ms.sourcegitcommit: a0659fda129f6de5e7b52c89f4d1f9d73d11df45
+ms.openlocfilehash: bdc173fb9cb9b749d75b08df3cc9554acd6f6386
 
 
 ---
 
 # iOS 和 OS X 設定
 
-iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
+iOS 和 OS X 應用程式可以藉由使用 Azure Rights Management (Azure RMS)，使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 
 本主題將引導您設定您的環境，以建立您自己的新應用程式。
 
 **注意**  這個 SDK 不支援 iPod Touch。
 
 
--   [先決條件](#prerequisites)
+-   [必要條件](#prerequisites)
 -   [選用](#optional)
 -   [設定您的開發環境](#configuring-your-development-environment)
 -   [另請參閱](#see-also)
 
-## 先決條件
+## 必要條件
 
 建議您在開發系統上使用下列軟體︰
 
@@ -119,6 +119,6 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Active Directory Rights Manage
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -3,15 +3,15 @@ title: "HYOK 限制 |Azure Rights Management"
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2016
+ms.date: 08/18/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: cfab76a97034b58eec8dfdbdc82cc1037a647d11
-ms.openlocfilehash: 95f64c00c28fb52a0bd7d78a997705f7ed515557
+ms.sourcegitcommit: a80866576dc7d6400bcebc2fc1c37bc0367bcdf3
+ms.openlocfilehash: 1cbf6bd6c209a8aafd1db61422ce03b628aaec07
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 95f64c00c28fb52a0bd7d78a997705f7ed515557
 
 - 文件追蹤、撤銷並以電子郵件通知您已共用機密文件。
 
-Azure RMS 使用由 Microsoft (預設)，或您所管理的組織使用的私用金鑰 (「自備您自己的金鑰」或 BYOK 案例)，保護貴組織的文件和電子郵件。 您使用 Azure RMS 保護的資訊永遠不會傳送至雲端；受保護的文件和電子郵件不會儲存在 Azure 中，除非您明確地將其儲存於該處，或使用另一個將其儲存在 Azure 中的雲端服務。 如需有關租用戶金鑰選項的詳細資訊，請參閱[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)。 
+Azure RMS 使用由 Microsoft (預設)，或您所管理的組織使用的私用金鑰 (「自備金鑰」或 BYOK 案例)，保護貴組織的文件和電子郵件。 您使用 Azure RMS 保護的資訊永遠不會傳送至雲端；受保護的文件和電子郵件不會儲存在 Azure 中，除非您明確地將其儲存於該處，或使用另一個將其儲存在 Azure 中的雲端服務。 如需有關租用戶金鑰選項的詳細資訊，請參閱[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)。 
 
 不過，少數客戶可能需要以裝載於內部部署的金鑰保護特定的文件和電子郵件。 例如，這種需要可能來自法規和相容性因素。 
 
@@ -51,9 +51,13 @@ Azure RMS 使用由 Microsoft (預設)，或您所管理的組織使用的私用
 
 - AD RMS 設定︰
     
+    - Windows Server 2012 R2 的最低版本︰需用於生產環境但作為測試或評估用途，您可以使用的最低版本為 Windows Server 2008 R2 Service Pack 1。
+    
     - 單一 AD RMS 根叢集。
     
-    - [密碼編譯模式 2](https://technet.microsoft.com/library/hh867439.aspx)。
+    - [密碼編譯模式 2](https://technet.microsoft.com/library/hh867439.aspx)︰您可以使用 [RMS Analyzer 工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437) 確認AD RMS 叢集的密碼編譯模式版本，以及其整體健康狀態。   
+    
+    - AD RMS 伺服器設定為搭配連線的用戶端所信任的有效 x.509 憑證使用 SSL/TLS︰需用於生產環境，但作為測試或評估用途則不需要。
     
     - 設定權限範本。
 
@@ -66,7 +70,9 @@ Azure RMS 使用由 Microsoft (預設)，或您所管理的組織使用的私用
 - [Azure Information Protection 用戶端](info-protect-client.md)的版本是 **1.0.233.0** 或更新版本。
 
 > [!IMPORTANT]
-> 為了滿足這種案例所提供的高度保證，建議您 AD RMS 伺服器不要位於您的 DMZ 內，且只有完善管理的電腦可以加以使用 (例如，非行動裝置或工作群組電腦)。
+> 為了滿足這種案例所提供的高度保證，建議您 AD RMS 伺服器不要位於您的 DMZ 內，且只有完善管理的電腦可以加以使用 (例如，非行動裝置或工作群組電腦)。 
+> 
+> 同時建議您的 AD RMS 叢集應使用硬體安全性模組 (HSM)，如此在 AD RMS 部署遭到入侵或洩露時，您的伺服器授權人憑證 (SLC) 的私密金鑰便不會公開或遭竊。 
 
 如需 AD RMS 的部署資訊及指示，請參閱 Windows Server 文件庫中的 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx) (Active Directory Rights Management 服務)。 
 
@@ -89,6 +95,6 @@ Azure RMS 使用由 Microsoft (預設)，或您所管理的組織使用的私用
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 
