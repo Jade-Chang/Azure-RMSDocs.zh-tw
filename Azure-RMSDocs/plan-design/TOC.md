@@ -12,9 +12,6 @@
 ### [移轉後工作](migrate-from-ad-rms-phase4.md)
 ## [規劃及實作租用戶金鑰](plan-implement-tenant-key.md)
 ### [BYOK 定價和限制](byok-price-restrictions.md)
-### [關於 Thales HSM](thales-hsm.md)
-### [透過網際網路](generate-tenant-key-internet.md)
-### [親自轉交](generate-tenant-key-in-person.md)
 ## [Azure RMS 的準備](prepare.md)
 # [部署與使用服務](/rights-management/deploy-use/activate-service)
 # [部署與使用用戶端](/rights-management/rms-client/use-client)
@@ -22,6 +19,6 @@
 # [Azure Information Protection (預覽)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

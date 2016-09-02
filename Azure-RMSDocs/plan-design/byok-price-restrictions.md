@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: ece615912d69eda78107c60245620ed36c0affd2
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
 *適用於︰Azure Rights Management、Office 365*
 
 
-具 IT 管理之 Azure 訂閱的組織可免費使用 BYOK 並記錄其使用情況。 使用個人版 RMS 的組織無法使用 BYOK 和記錄，因為它們沒有租用戶系統管理員來設定這些功能。
+若組織的訂用帳戶包含 Azure Rights Management，即可在 Azure 金鑰保存庫中使用 客戶管理的金鑰 (BYOK)，並免費記錄其使用情況。 然而，若需使用 Azure 金鑰保存庫，您必須具備 Azure 訂用帳戶，其中後者需支援金鑰保存庫及 HSM 保護的金鑰。 在 Azure 金鑰保存庫中使用金鑰便會產生每月費用。 如需詳細資訊，請參閱 [Azure 金鑰保存庫定價頁面](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
+
+若您的使用者已透過個人版 RMS 註冊免費帳戶，您便無法使用 BYOK 及記錄使用情況，因為此設定並沒有租用戶系統管理員，無法設定這些功能。
 
 
 > [!NOTE]
@@ -32,9 +34,9 @@ ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
 
 ![BYOK 不支援 Exchange Online](../media/RMS_BYOK_noExchange.png)
 
-BYOK 和記錄與整合 Azure RMS 的每個應用程式皆能完美合作。 這包括 SharePoint Online 之類的雲端服務、使用 RMS 連接器來執行使用 Azure RMS 的 Exchange 和 SharePoint 的內部部署伺服器，以及 Office 2013 等用戶端應用程式。 無論哪個應用程式要求 Azure RMS，您都會得到金鑰使用記錄。
+BYOK 和使用情況記錄與整合 Azure RMS 的每個應用程式皆能完美合作。 這包括 SharePoint Online 之類的雲端服務、使用 RMS 連接器來執行使用 Azure RMS 的 Exchange 和 SharePoint 的內部部署伺服器，以及 Office 2016 及 Office 2013 等用戶端應用程式。 無論哪個應用程式要求 Azure RMS，您都會得到金鑰使用記錄。
 
-但有一個例外：目前， **Azure RMS BYOK 與 Exchange Online 不相容**。  如果您想要使用 Exchange Online，我們建議您立即在預設金鑰管理模式中設定 Azure RMS，Microsoft 會在此種模式下產生並管理您的金鑰。 稍後當 Exchange Online 真的支援 Azure RMS BYOK 時，您就可以選擇移至 BYOK。 不過，如果您無法等待，另一個選項為立即部署 Azure RMS 與 BYOK 搭配，如此 Exchange online 將具有精簡的 RMS 功能 (未受保護的電子郵件及未受保護的附件仍然可以完全運作)。
+但有一個例外：目前， **Azure RMS BYOK 與 Exchange Online 不相容**。 如果您想要使用 Exchange Online，我們建議您立即在預設金鑰管理模式中設定 Azure RMS，Microsoft 會在此種模式下產生並管理您的金鑰。 稍後當 Exchange Online 真的支援 Azure RMS BYOK 時，您就可以選擇移至 BYOK。 不過，如果您無法等待，另一個選項為立即部署 Azure RMS 與 BYOK 搭配，如此 Exchange online 將具有精簡的 RMS 功能 (未受保護的電子郵件及未受保護的附件仍然可以完全運作)。
 
 -   無法顯示 Outlook Web Access 中受保護的電子郵件或受保護的附件。
 
@@ -48,7 +50,7 @@ BYOK 和記錄與整合 Azure RMS 的每個應用程式皆能完美合作。 這
 
 當您使用 Azure RMS BYOK 與 Exchange online 的精簡 RMS 功能搭配時，RMS 將在 Windows 和 Mac 上使用 Outlook 中的電子郵件用戶端，以及其他未使用 Exchange ActiveSync IRM 的電子郵件用戶端。
 
-如果您是從 AD RMS 移轉至 Azure RMS，您可能已將做為信任的發佈網域 (TPD) 的金鑰匯入至 Exchange Online (在 Exchange 術語中也稱為 BYOK，其是從 Azure RMS BYOK 分開的)。 在此案例中，您必須從 Exchange Online 中移除 TPD，才能避免衝突的範本和原則。 如需詳細資訊，請參閱 Exchange Online Cmdlet 文件庫中的 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx)。
+如果您是從 AD RMS 移轉至 Azure RMS，您可能已將金鑰作為信任發行網域 (TPD) 匯入 Exchange Online (在 Exchange 術語中也稱為 BYOK，其與 Azure 金鑰保存庫 BYOK 分開)。 在此案例中，您必須從 Exchange Online 中移除 TPD，才能避免衝突的範本和原則。 如需詳細資訊，請參閱 Exchange Online Cmdlet 文件庫中的 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx)。
 
 有時候，Exchange Online 的 Azure RMS BYOK 實際上不是問題。 例如，需要 BYOK 和記錄的組織會在內部部署上執行其資料應用程式 (Exchange、SharePoint、Office)，並對無法使用內部部署 AD RMS 輕易取得的功能使用 Azure RMS (例如，與其他公司協同作業及從行動用戶端存取)。 BYOK 和記錄在此情況中皆運作正常，且可讓組織完全控制其 Azure RMS 訂閱。
 
@@ -61,6 +63,6 @@ BYOK 和記錄與整合 Azure RMS 的每個應用程式皆能完美合作。 這
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

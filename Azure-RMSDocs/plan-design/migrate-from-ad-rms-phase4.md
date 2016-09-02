@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 21fac7d684f2d544ab97f5ca6eb7faaaca3e9d26
 
 
 ---
@@ -36,25 +36,24 @@ ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
 解除委任 AD RMS 伺服器之後，您可能會想要利用這個機會在 Azure 傳統入口網站中檢閱範本並將其合併，讓使用者擁有較少的選擇，或重新設定它們，甚至加入新的範本。 這可能也是發佈預設範本的好時機。 如需詳細資訊，請參閱[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。
 
 ## 步驟 9： 重新設定 Azure RMS 租用戶金鑰
-因為重新設定金鑰會建立使用「RMS 加密模式 2」的新租用戶金鑰，所以如果 AD RMS 部署使用「RMS 加密模式 1」，則完成移轉時需要這個步驟。 只有在移轉程序期間才支援搭配使用 Azure RMS 與加密模式 1。
+此步驟僅適用於您所選的租用戶金鑰拓撲是由 Microsoft 管理，而非由客戶管理 (BYOK 搭配 Azure 金鑰保存庫) 的情形。
 
-這是選擇性步驟，但在完成移轉時建議使用，即使您執行 RMS 加密模式 2 也是一樣，因為它可以協助保護 Azure RMS 租用戶金鑰，使其沒有 AD RMS 金鑰的潛在安全性漏洞。 重新設定 Azure RMS 租用戶金鑰 (也稱為「輪換金鑰」) 時，會建立新的金鑰，並封存原始金鑰。 不過，因為並不會立即從某個金鑰移至另一個金鑰，而是需要幾週的時間，所以請在完成移轉之後立即重新設定 Azure RMS 租用戶金鑰，不要等到懷疑原始金鑰有漏洞才進行。
+此步驟雖為選用，但若您的 Azure RMS 租用戶金鑰是由 Microsoft 管理且已自 AD RMS 移轉，則建議使用。 此案例中的重設金鑰可協助保護您的 Azure RMS 租用戶金鑰，免於您 AD RMS 金鑰的潛在安全性缺口。
 
-重新設定 Azure RMS 租用戶金鑰：
+重新設定 Azure RMS 租用戶金鑰 (也稱為「輪換金鑰」) 時，會建立新的金鑰，並封存原始金鑰。 不過，因為並不會立即從某個金鑰移至另一個金鑰，而是需要幾週的時間，所以請在完成移轉之後立即重新設定 Azure RMS 租用戶金鑰，不要等到懷疑原始金鑰有漏洞才進行。
 
--   如果您的 Azure RMS 租用戶金鑰由 Microsoft 管理︰若要這樣做，請[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)，以**開啟 Azure Rights Management 支援案例，並要求重設您的 Azure RMS 租用戶金鑰**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；重設租用戶金鑰並非免費的支援服務。
+若要為您 Microsoft 管理的 Azure RMS 租用戶金鑰重設金鑰，請[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)，並開啟 **Azure Rights Management 支援案例，並要求自 AD RMS 移轉後重設您的 Azure RMS 金鑰**。 您必須證明您是 Azure RMS 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；重設租用戶金鑰並非免費的支援服務。
 
--   如果您的 Azure RMS 租用戶金鑰是由您所管理 (BYOK)：重複 BYOK 程序，以透過網際網路或親自產生及建立新的金鑰。
-
-如需管理 Azure RMS 租用戶金鑰的詳細資訊，請參閱 [Azure Rights Management 租用戶金鑰的作業](../deploy-use/operations-tenant-key.md)。
 
 ## 後續步驟
+
+如需管理 RMS 租用戶金鑰的詳細資訊，請參閱 [Azure Rights Management 租用戶金鑰的作業](../deploy-use/operations-tenant-key.md)。
 
 完成移轉之後，請檢閱[部署藍圖](deployment-roadmap.md)來識別您可能必須執行的任何其他部署工作。
 
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

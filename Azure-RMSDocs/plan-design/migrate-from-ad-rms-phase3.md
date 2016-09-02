@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
 ## 步驟 ７： 部署 RMS 連接器
 如果您已經搭配使用 Exchange Server 或 SharePoint Server 的資訊版權管理 (IRM) 功能與 AD RMS，則必須先停用這些伺服器上的 IRM，並移除 AD RMS 組態。 然後，部署 Rights Management (RMS) 連接器，它可做為內部部署伺服器與 Azure RMS 之間的通訊介面 (轉送)。
 
-最後，在這個步驟中，如果您已將用來保護電子郵件訊息的多個 TPD 匯入至 Azure RMS，則必須手動編輯 Exchange Server 電腦上的登錄，以將所有 TPD URL 重新導向至 RMS 連接器。
+最後，在這個步驟中，如果您已將用來保護電子郵件訊息的多個 AD RMS 資料設定檔 (.xml) 匯入 Azure RMS，則必須手動編輯 Exchange Server 電腦上的登錄，以將所有信任發行網域 URL 重新導向至 RMS 連接器。
 
 > [!NOTE]
 > 在您開始之前，請從[支援 Azure RMS 的內部部署伺服器](../get-started/requirements-servers.md)檢查 Azure RMS 支援的內部部署伺服器版本。
@@ -95,7 +95,7 @@ ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
 
 #### 對於僅 Exchange 和多個 TPD：編輯登錄
 
--   在每個 Exchange Server 上，針對匯入的每個額外 TPD 手動新增下列登錄機碼，以將 TPD URL 重新導向至 RMS 連接器。 這些登錄項目僅供移轉，而且不是由 Microsoft RMS 連接器的伺服器組態工具所新增。
+-   在每個 Exchange Server 上，針對匯入的每個額外設定資料檔 (.xml) 手動新增下列登錄機碼，以將信任發行網域 URL 重新導向至 RMS 連接器。 這些登錄項目僅供移轉，而且不是由 Microsoft RMS 連接器的伺服器組態工具所新增。
 
     進行這些登錄編輯時，請使用下列指示：
 
@@ -215,6 +215,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 若要繼續移轉，請移至 [階段 4 - 移轉後工作](migrate-from-ad-rms-phase4.md)。
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 
