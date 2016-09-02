@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/05/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
-ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 28fed61b674112d2ebeb30a15a6f6217647e0b5f
 
 
 ---
@@ -179,13 +179,13 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 |BECreateEndUserLicenseV1|從行動裝置進行呼叫，以建立使用者授權。|
 |BEGetAllTemplatesV1|從行動裝置 (後端) 進行呼叫，以取得所有範本。|
 |Certify|用戶端認證保護的內容。|
-|KMSPDecrypt|用戶端嘗試解密 RMS 保護的內容。 只適用於客戶管理的租用戶金鑰 (BYOK)。|
 |DeleteTemplateById|從 Azure 傳統入口網站進行呼叫，以刪除範本 ID 的範本。|
 |DocumentEventsCsv|從文件追蹤網站進行呼叫，為單一文件下載 CSV 檔案。|
 |ExportTemplateById|從 Azure 傳統入口網站進行呼叫，以匯出範本 ID 的範本。|
 |FECreateEndUserLicenseV1|類似於 AcquireLicense 要求，來自於行動裝置。|
 |FECreatePublishingLicenseV1|與 Certify 結合 GetClientLicensorCert 相同，來自行動用戶端。|
 |FEGetAllTemplates|從行動裝置 (前端) 進行呼叫，以取得範本。|
+|FindServiceLocationsForUser|進行呼叫以查詢 URL，用呼叫 Certify 或 AcquireLicense。|
 |GetAllDocs|從文件追蹤網站進行呼叫，為使用者載入 [所有文件] 頁面，或為租用戶搜尋所有文件。 與 admin-action 和 acting-as-admin 欄位一起使用此值：<br /><br />- admin-action 是空的︰使用者檢視 [所有文件] 頁面，以取得自己的文件。<br /><br />- admin-action 為 true，而 acting-as-user 是空的：系統管理員為租用戶檢視所有文件。<br /><br />- admin-action 為 true，而 acting-as-user 不是空的︰系統管理員為使用者檢視 [所有文件] 頁面。|
 |GetAllTemplates|從 Azure 傳統入口網站進行呼叫，以取得所有範本。|
 |GetClientLicensorCert|用戶端從 Windows 電腦要求發佈憑證 (稍後用來保護內容)|
@@ -195,8 +195,11 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 |GetSingle|從文件追蹤網站進行呼叫，瀏覽至 [單一文件] 頁面。|
 |GetTenantFunctionalState|Azure 傳統入口網站檢查 Azure RMS 是否啟動。|
 |GetTemplateById|從 Azure 傳統入口網站進行呼叫，以取得指定範本 ID 的範本。|
-|ExportTemplateById|從 Azure 傳統入口網站進行呼叫，以匯出指定範本 ID 的範本。|
-|FindServiceLocationsForUser|進行呼叫以查詢 URL，用呼叫 Certify 或 AcquireLicense。|
+|KeyVaultDecryptRequest|用戶端嘗試解密 RMS 保護的內容。 只適用於 Azure 金鑰保存庫中客戶管理的租用戶金鑰 (BYOK)。|
+|KeyVaultGetKeyInfoRequest|進行呼叫，以驗證替 Azure RMS 租用戶金鑰指定要在 Azure 金鑰保存庫中使用的金鑰可存取且尚未使用。|
+|KeyVaultSignDigest|當因為簽章目的而使用 Azure 金鑰保存庫中的客戶管理的租用戶金鑰 (BYOK) 時，進行呼叫。 通常每個 AcquireLicence (或 FECreateEndUserLicenseV1)、Certify 及 GetClientLicensorCert (或 FECreatePublishingLicenseV1) 只會呼叫一次。|
+|KMSPDecrypt|用戶端嘗試解密 RMS 保護的內容。 只適用於舊版客戶管理的租用戶金鑰 (BYOK)。|
+|KMSPSignDigest|當因為簽章目的而使用舊版客戶管理的租用戶金鑰 (BYOK) 時，進行呼叫。 通常每個 AcquireLicence (或 FECreateEndUserLicenseV1)、Certify 及 GetClientLicensorCert (或 FECreatePublishingLicenseV1) 只會呼叫一次。|
 |LoadEventsForMap|從文件追蹤網站進行呼叫，為單一文件瀏覽至地圖檢視。|
 |LoadEventsForSummary|從文件追蹤網站進行呼叫，為單一文件瀏覽至時間表檢視。|
 |LoadEventsForTimeline|從文件追蹤網站進行呼叫，為單一文件瀏覽至地圖檢視。|
@@ -206,10 +209,8 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 |ServerCertify|從已啟用 RMS 的用戶端 (如 SharePoint) 進行呼叫，以認證伺器。|
 |SetUsageLogFeatureState|進行呼叫，以啟用使用情況記錄。|
 |SetUsageLogStorageAccount|進行呼叫，以指定 Azure RMS 記錄的位置。|
-|SignDigest|當因為簽章目的而使用金鑰時，進行呼叫。 通常每個 AcquireLicence (或 FECreateEndUserLicenseV1)、Certify 及 GetClientLicensorCert (或 FECreatePublishingLicenseV1) 只會呼叫一次。|
 |UpdateNotificationSettings|從文件追蹤網站進行呼叫，為單一文件變更通知設定。|
 |UpdateTemplate|從 Azure 傳統入口網站進行呼叫，以更新現有範本。|
-
 
 
 ## Windows PowerShell 參考
@@ -240,6 +241,6 @@ Azure Rights Management 有許多要求類型，下表指出一些最常用的�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

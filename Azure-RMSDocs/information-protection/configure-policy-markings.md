@@ -3,15 +3,15 @@ title: "如何設定 Azure Information Protection 的視覺標記標籤 | Azure 
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
+ms.sourcegitcommit: b5e7fecca7aeb61221dc1f61aa3e202936b8c042
+ms.openlocfilehash: 2b4f464fa51e0743cb1ce0726c7feb31146b5128
 
 
 ---
@@ -60,17 +60,19 @@ ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
 
 您可以在頁首、頁尾或浮水印文字字串中使用下列變數︰
 
-- `${Item.Label}` 針對選取的標籤
+- `${Item.Label}` 適用於選取的標籤。 例如︰內部
 
-- `${Item.Name}` 針對檔案名稱或電子郵件主旨
+- `${Item.Name}` 適用於檔案名稱或電子郵件主旨。 例如︰JulySales.docx
 
-- `${Item.Location}` 針對檔案路徑
+- `${Item.Location}` 適用於文件的路徑和檔案名稱，以及電子郵件的電子郵件主旨。 例如︰\\\Sales\2016\Q3\JulyReport.docx
 
-- `${User.Name}` 針對文件或電子郵件的擁有者
+- `${User.Name}` 適用於文件或電子郵件的擁有者，依據 Windows 登入使用者名稱。 例如︰rsimone
 
-- `${Event.DateTime}` 針對選取的標籤設定的日期和時間 
+- `${User.PrincipalName}` 適用於文件或電子的郵件擁有者，依據 Azure Information Protection 用戶端登入電子郵件地址 (UPN)。 例如︰rsimone@vanarsdelltd.com
+
+- `${Event.DateTime}` 適用於所選標籤的設定日期和時間。 例如：8/16/2016 1:30 PM
     
-範例︰如果您為 [秘密] 標籤頁尾指定字串 `Document: ${item.name} Sensitivity: ${item.label}`，則套用至名為 project.docx 之文件的頁尾文字將為**project.docx 敏感度：秘密**。
+範例︰如果您為 [秘密] 標籤頁尾指定字串 `Document: ${item.name}  Classification: ${item.label}`，則套用至名為 project.docx 之文件的頁尾文字將為**文件：project.docx 類別：秘密**。
 
 ## 後續步驟
 
@@ -80,6 +82,6 @@ ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

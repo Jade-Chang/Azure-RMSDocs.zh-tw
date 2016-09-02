@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
+ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
+ms.openlocfilehash: 9cd66efad548a4ddef4e6032b0ce7fc817a95c31
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
 
 ## 將組態資料匯入至 Azure RMS
 
-1.  在連線網際網路的工作站上，下載並安裝 Azure RMS 的 Windows PowerShell 模組 (最低 2.1.0.0 版)，其中包括 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) Cmdlet。
+1.  在連線網際網路的工作站上，下載並安裝 Azure RMS 的 Windows PowerShell 模組 (最低 2.5.0.0 版)，其中包括 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) Cmdlet。
 
     > [!TIP]
     > 如果您先前已下載及安裝此模組，請執行下列命令來檢查版本號碼： `(Get-Module aadrm -ListAvailable).Version`
@@ -64,11 +64,13 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
     Disconnect-AadrmService
     ```
 
+
 您現在可以繼續進行[步驟 3：啟動您的 RMS 租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO3-->
 
 
