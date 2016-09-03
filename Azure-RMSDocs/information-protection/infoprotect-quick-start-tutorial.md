@@ -3,15 +3,15 @@ title: "Azure Information Protection 快速入門教學課程 | Azure Rights Man
 description: "一個簡介教學課程，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
-ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 6fbe4bd32f1aef57b3bf42aeedea46f618fb5540
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 ## 必要條件 
 若要完成本教學課程，您需要具備下列項目：
 
-- 包含 Azure Rights Management 的任何訂用帳戶，可讓您存取預覽版本的 Azure Information Protection。 Azure Information Protection 可用於支援 Azure Rights Management 的所有區域。 如需可用訂用帳戶和免費試用連結的詳細資訊，請參閱 [Azure RMS 需求：支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。
+- Office 365 訂閱，其中包含使用 Azure RMS 保護 Office 文件和電子郵件。 如需可用的訂閱以及免費試用版連結的詳細資訊，請參閱 Azure RMS 需求文件中的 [Office 365 訂閱](../get-started/requirements-subscriptions.md#office-365-subscription)小節。
 
 - Azure 的訂用帳戶，以便您可以存取 Azure 入口網站，設定 Azure Information Protection 原則。 如果您的組織尚無 Azure 訂用帳戶，您可以註冊免費試用以取得訂用帳戶：移至 [Azure 快速入門](https://account.windowsazure.com/organization) 頁面，並遵循指示進行。
 
@@ -51,6 +51,6 @@ ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 
