@@ -1,27 +1,26 @@
 ---
 title: "從 AD RMS 移轉至 Azure Rights Management - 階段 1 | Azure RMS"
-description: 
-keywords: 
+description: "針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 1 使用下列資訊。 這些程序涵蓋從 AD RMS 移轉至 Azure Rights Management 的步驟 1 到 4。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: efe129422348fb30ce7686a5602cb29a1b46d36d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d4e5502568147a51025434ad78cbfdede3eb3207
 
 
 ---
 
 # 移轉階段 1 - AD RMS 的伺服器端設定
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management*
 
 針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 1 使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 的步驟 1 到 4。
 
@@ -220,6 +219,6 @@ Remove-PSDrive MyRmsAdmin -force
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

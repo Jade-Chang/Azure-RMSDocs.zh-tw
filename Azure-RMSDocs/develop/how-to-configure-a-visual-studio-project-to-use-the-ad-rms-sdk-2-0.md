@@ -4,9 +4,9 @@ description: "有關如何設定 Visual Studio 專案以使用 RMS SDK 2.1 的�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
-ms.openlocfilehash: 9747c39742c66735b9619036cb77a914563ecf29
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9e73344bb1359488436463264579375b56bc72e4
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 9747c39742c66735b9619036cb77a914563ecf29
 
 本主題包含如何設定 Visual Studio 專案以使用 Rights Management Services SDK 2.1 的相關指示。
 
-## 先決條件
+## 必要條件
 
 -   [安裝 SDK](install-the-rms-sdk.md)
 
@@ -69,7 +69,7 @@ ms.openlocfilehash: 9747c39742c66735b9619036cb77a914563ecf29
 
     ![方案總管資源檔案欄位](../media/original_file_name.png)
 
-## 相關主題
+## 相關的主題
 
 * [安裝 SDK](install-the-rms-sdk.md)
  
@@ -78,6 +78,6 @@ ms.openlocfilehash: 9747c39742c66735b9619036cb77a914563ecf29
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

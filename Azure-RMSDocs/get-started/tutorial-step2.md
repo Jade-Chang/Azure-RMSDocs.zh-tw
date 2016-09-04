@@ -4,17 +4,17 @@ description: "教學課程的第二步，可為組織快速試用 Microsoft Azur
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 19eb18599d9d084b40cfe746f01eb8ce463c47ab
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
 
 # Azure RMS 快速入門步驟 2︰安裝 Rights Management 共用應用程式
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 跳至︰ 
@@ -46,15 +46,15 @@ Azure Rights Management 並不需要 Rights Management 共用應用程式 (也�
 
 ### 下載及安裝 Rights Management 共用應用程式
 
-1.  移至 Microsoft 網站上的 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 頁面。
+1.  前往 Microsoft 網站上的 [Microsoft Rights Management][](http://go.microsoft.com/fwlink/?LinkId=303970) 頁面。
 
-2.  在 **[電腦]** 區段中，按一下 **[適用於 Windows 的 RMS 應用程式]** 的圖示並儲存 **Setup.exe** 檔案，以安裝 Microsoft Rights Management 共用應用程式。
+2.  在 [電腦] 區段中，按一下 [適用於 Windows 的 RMS 應用程式] 的圖示並儲存 Setup.exe 檔案，以安裝 Microsoft Rights Management 共用應用程式。
 
-3.  若要進行本機安裝，您必須使用系統管理員帳戶來執行已下載的 Setup.exe 檔案。 如果系統提示您繼續進行，請按一下 **[是]**。
+3.  若要進行本機安裝，您必須使用系統管理員帳戶來執行已下載的 Setup.exe 檔案。 如果系統提示您繼續進行，請按一下 [是]。
 
-4.  在 [安裝 Microsoft RMS]  頁面上按 [下一步] ，並等候安裝完成。
+4.  在 [安裝 Microsoft RMS] 頁面上，按一下 [下一步]，並等候安裝完成。
 
-5.  當安裝完成時，如果系統提示您重新啟動電腦則按一下 **[重新啟動]** ，否則請按一下  **[關閉]** 以完成安裝。
+5.  當安裝完成時，如果系統提示您重新啟動電腦則按一下 [重新啟動]，否則請按一下 [關閉] 完成安裝。
 
 您現在已經可以開始保護內有想要只與所指定人員分享之資訊的檔案。
 
@@ -62,7 +62,7 @@ Azure Rights Management 並不需要 Rights Management 共用應用程式 (也�
 |--------------------------------|--------------------------|
 |關於適用於 Windows 的 Rights Management 共用應用程式的本機安裝以及使用者指示|[Rights Management 共用應用程式使用者指南 (英文)](../rms-client/sharing-app-user-guide.md)|
 |關於適用於 Windows 的 Rights Management 共用應用程式的指令碼式安裝以及更多技術資訊|[Rights Management 共用應用程式系統管理員指南 (英文)](../rms-client/sharing-app-admin-guide.md)|
-|了解原生保護和一般保護的差異|[一般保護和內建 (原生) 保護有何差異？](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
+|了解原生保護和一般保護的差異|[一般保護和內建 (原生) 保護有何差異？](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)|
 
 
 >[!div class="step-by-step"]
@@ -70,6 +70,6 @@ Azure Rights Management 並不需要 Rights Management 共用應用程式 (也�
 [步驟 3 »](tutorial-step3.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "案例 - 傳送公司機密電子郵件 | Azure RMS"
-description: 
-keywords: 
+description: "此案例和支援使用者文件會使用 Azure Rights Management，如此組織中的任何使用者都可以安全地傳送電子郵件通訊，讓組織外部的人員無法讀取。 例如，如果有人轉送電子郵件訊息給另一個組織的某個人，或個人的電子郵件帳戶。 這些電子郵件及所有附件均由 Azure Rights Management 提供保護，且使用者從電子郵件用戶端選取的範本。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: b6f3b06485dda81be2a36035fea7477f4061a8e9
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4bda209d2f66bb3a3ca1639a7ddfcfc3bccf51b1
 
 
 ---
 
 # 案例 - 傳送公司機密電子郵件
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 此案例和支援使用者文件會使用 Azure Rights Management，如此組織中的任何使用者都可以安全地傳送電子郵件通訊，讓組織外部的人員無法讀取。 例如，如果有人轉送電子郵件訊息給另一個組織的某個人，或個人的電子郵件帳戶。 這些電子郵件及所有附件均由 Azure Rights Management 提供保護，且使用者從電子郵件用戶端選取的範本。
 
@@ -158,6 +157,6 @@ ms.openlocfilehash: b6f3b06485dda81be2a36035fea7477f4061a8e9
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

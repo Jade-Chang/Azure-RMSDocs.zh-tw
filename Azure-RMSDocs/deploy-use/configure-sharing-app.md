@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 共用應用程式：用戶端的安裝和組態 | Azure RMS"
-description: 
-keywords: 
+description: "用戶端電腦需要 Rights Management (RMS) 共用應用程式才能搭配使用 Azure RMS 與 Office 2010，並建議支援 Azure RMS 的所有電腦和行動裝置使用。 RMS 共用應用程式藉由安裝 Office 增益集來整合 Office 應用程式，讓使用者得以從功能區直接且輕易地保護檔案和電子郵件。 它也會提供一般保護，來保護 Azure Rights Management 並未原生支援的檔案類型，以及提供文件追蹤網站，供使用者追蹤和撤銷他們所保護的檔案。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: bf7cd8007b5423efaa13849101af5c4688cf0975
 
 
 ---
 
 # Rights Management 共用應用程式：用戶端的安裝和設定
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 用戶端電腦需要 Rights Management (RMS) 共用應用程式才能搭配使用 Azure RMS 與 Office 2010，並建議支援 Azure RMS 的所有電腦和行動裝置使用。 RMS 共用應用程式藉由安裝 Office 增益集來整合 Office 應用程式，讓使用者得以從功能區直接且輕易地保護檔案和電子郵件。 它也會提供一般保護，來保護 Azure Rights Management 並未原生支援的檔案類型，以及提供文件追蹤網站，供使用者追蹤和撤銷他們所保護的檔案。
 
@@ -43,6 +42,6 @@ ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

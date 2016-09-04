@@ -1,27 +1,26 @@
 ---
 title: "設定 Azure Rights Management 和探索服務或資料復原的進階使用者 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Azure RMS 的進階使用者功能可確保獲得授權的人員和服務可以永遠讀取及檢查 Azure RMS 為貴組織保護的資料。 並且視需要移除保護或變更先前套用的保護。 進階使用者針對組織的 RMS 租用戶授與的所有使用授權，一律具有完整的擁有者權限。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 32da3f280b7dc8fa0655ae65d904864d80b9a035
 
 
 ---
 
 # 設定 Azure Rights Management 和探索服務或資料復原的進階使用者
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 的進階使用者功能可確保獲得授權的人員和服務可以永遠讀取及檢查 Azure RMS 為貴組織保護的資料。 並且視需要移除保護或變更先前套用的保護。 進階使用者針對組織的 RMS 租用戶授與的所有使用授權，一律具有完整的擁有者權限。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。 例如，您會對下列任何案例使用這項功能：
 
@@ -72,6 +71,6 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

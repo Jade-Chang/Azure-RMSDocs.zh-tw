@@ -4,9 +4,9 @@ description: "本主題包含建立具備權限的應用程式範例的指示。
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
-ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d5f84815a143dd28574c8742da1642cba7c96a62
 
 
 ---
@@ -219,6 +219,6 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 需求：用戶端裝置 | Azure RMS"
-description: 
-keywords: 
+description: "請使用下列各節來識別支援 Azure Rights Management 的裝置 (Azure RMS)。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 933394c943763b010ac707384918eff86ea33388
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5fe3470fd7a05d8c2c72312e73e2a773c704ad0f
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 933394c943763b010ac707384918eff86ea33388
 
 # Azure RMS 需求：支援 Azure RMS 的用戶端裝置
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 請使用下列各節來識別支援 Azure Rights Management 的裝置 (Azure RMS)。
 
@@ -57,6 +56,6 @@ ms.openlocfilehash: 933394c943763b010ac707384918eff86ea33388
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

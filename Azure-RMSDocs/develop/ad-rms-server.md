@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: 609a507335cea4a0a12e3652366961526d348c33
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
 
 在安裝的許多 Web 服務之中，以下幾個對 Windows Server 上 RMS Server 的應用程式開發很重要。
 
-| Service | 說明 |
+| Service | 描述 |
 |---------|-------------|
 | 系統管理 | 裝載可讓您管理 RMS 的管理網站。 服務會在根憑證伺服器和授權伺服器上執行。 您可以使用 Active Directory Rights Management Services Scripting API 撰寫系統管理指令碼。|
 | 帳戶憑證 |建立機器憑證，以識別在 RMS 憑證階層中的機器，以及在使用者與特定電腦間建立關聯的權限帳戶憑證。 如需詳細資訊，請參閱＜啟用電腦＞及＜啟用使用者＞。<p><p>此服務會在根憑證伺服器上執行。 |
@@ -42,7 +42,7 @@ ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
 |預先憑證 | 允許伺服器代表使用者要求*權限帳戶憑證*。 服務會在根憑證伺服器和授權伺服器上執行。|
 |服務定位器 | 向 Active Directory 提供帳戶憑證、授權及發行服務的 URL，以便 RMS 用戶端加以探索。 服務會在根憑證伺服器和授權伺服器上執行。|
 
-## 相關主題 ##
+## 相關的主題 ##
 * [概觀](ad-rms-overview.md)
 * [Microsoft Internet Information Services](http://www.iis.net/overview)
 * [啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
@@ -58,6 +58,6 @@ ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

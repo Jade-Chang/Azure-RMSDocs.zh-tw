@@ -4,17 +4,17 @@ description: "教學課程的第三步，可為組織快速試用 Microsoft Azur
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 62b2303074ccf2b23e29a5770f51b003c8f97780
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 # Azure RMS 快速入門步驟 3：以電子郵件傳送您想要保護的文件
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 跳至︰ 
@@ -45,11 +45,11 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 1.  使用 Outlook 建立新的郵件，並附加您剛才建立的檔案。
 
-2.  在 **[收件者]** 方塊中，輸入一或多個公司電子郵件地址。 請確定您指定的是公司電子郵件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**，因為 Azure Rights Management 目前並不支援您可能會在家裡使用的網際網路提供者所提供的個人電子郵件地址。 別擔心文件的收件者是否也有 Azure Rights Management。
+2.  在 [收件者] 方塊中，輸入一或多個公司電子郵件地址。 請確定您指定的是公司電子郵件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**，因為 Azure Rights Management 目前並不支援您可能會在家裡使用的網際網路提供者所提供的個人電子郵件地址。 別擔心文件的收件者是否也有 Azure Rights Management。
 
 3.  輸入主旨，例如  **機密文件** ，然後在電子郵件中輸入簡短訊息，例如 **請閱讀這份機密文件，並請勿與他人共用。**
 
-4.  然後，在 **[訊息]** 索引標籤的 **[RMS]** 群組中，按一下 **[共用保護]** ，接著再按一下 **[共用保護]** ：
+4.  然後，在 [訊息] 索引標籤的 [RMS] 群組中，按一下 [共用保護]，接著再次按一下 [共用保護]：
 
 5.  在 **[共用保護]** 對話方塊中：
 
@@ -65,7 +65,7 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
         若選取這個選項，收件者每次開啟附件時都必須要有網際網路連線，但好處是如果您稍後撤銷文件，收件者下次嘗試開啟附件時，將不會成功。 如果您沒有選取這個選項，收件者即使沒有網際網路連線也可能可以開啟附件，但壞處是如果您稍後撤銷文件，其效果可能會延遲發生。
 
-    4.  按一下 **[立即傳送]**。
+    4.  按一下 [立即傳送]。
 
         帶有附件的電子郵件就會傳送至您指定的電子郵件地址。 除了您寄送的電子郵件外，收件者還會看到相關指示，這些指示會說明如何讀取 Azure Rights Management 所保護的附加文件。
 
@@ -82,6 +82,6 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 [步驟 4 »](tutorial-step4.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

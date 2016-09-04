@@ -1,27 +1,26 @@
 ---
 title: "Office 365&colon;用戶端和線上服務的組態 | Azure RMS"
-description: 
-keywords: 
+description: "由於 Office 365 原生支援 Azure RMS，因此無需用戶端電腦設定，便能支援 Word、Excel、PowerPoint、Outlook 和 Outlook Web App 等應用程式的資訊版權管理 (IRM) 功能。 所有使用者唯一要做的便是使用其 Microsoft Office 365 認證登入其 Office 應用程式，然後他們即可保護檔案和電子郵件，並使用已接受他人保護的檔案和電子郵件。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 09f152ef910cf9c08c9a693f79c40f491263c5d3
 
 
 ---
 
 # Office 365：用戶端和線上服務的設定
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 由於 Office 365 原生支援 Azure RMS，因此無需用戶端電腦設定，便能支援 Word、Excel、PowerPoint、Outlook 和 Outlook Web App 等應用程式的資訊版權管理 (IRM) 功能。 所有使用者唯一要做的便是使用其 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 認證登入其 Office 應用程式，並可保護檔案和電子郵件，及使用已接受他人保護的檔案和電子郵件。
 
@@ -1106,6 +1105,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

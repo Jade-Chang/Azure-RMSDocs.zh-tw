@@ -4,9 +4,9 @@ description: "本主題涵蓋您可能會選擇建立為具備權限的應用程
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
-ms.openlocfilehash: a27d1921336a795df5a3c91b36b97846e74cca34
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b22ba1fc4c4599ec2ee47ce39049377a742f0c55
 
 
 ---
@@ -53,7 +53,7 @@ Microsoft 記事本是一個簡單的豐富用戶端應用程式。 Microsoft Of
 
 如需保護應用程式的詳細資訊，請參閱[了解使用限制](understanding-usage-restrictions.md)。
 
-## 相關主題
+## 相關的主題
 
 * [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)
@@ -62,6 +62,6 @@ Microsoft 記事本是一個簡單的豐富用戶端應用程式。 Microsoft Of
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

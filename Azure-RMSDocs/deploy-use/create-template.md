@@ -1,20 +1,19 @@
 ---
 title: "建立、設定及發佈自訂範本 | Azure RMS"
-description: 
-keywords: 
+description: "您可以在 Azure 傳統入口網站中建立和管理自訂範本。 您可以直接從 Azure 傳統入口網站執行這項作業，或是登入 Office 365 系統管理中心並選擇 Rights Management 的進階功能，這會將您重新導向到 Azure 傳統入口網站。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
-ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 64beb891fda54da3718a322f6628a2987ff35111
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 # 建立、設定及發佈自訂範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 您可以在 Azure 傳統入口網站中建立和管理自訂範本。 您可以直接從 Azure 傳統入口網站執行這項作業，或是登入 Office 365 系統管理中心並選擇 Rights Management 的**進階功能**，這會將您重新導向到 Azure 傳統入口網站。
@@ -167,6 +166,6 @@ ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

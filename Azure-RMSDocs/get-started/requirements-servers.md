@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 需求：支援 Azure Rights Management 的內部部署伺服器 | Azure RMS"
-description: 
-keywords: 
+description: "當您使用 Azure RMS 連接器時可搭配使用下列內部部署伺服器產品與 Azure RMS，其作為內部部署伺服器與 Azure RMS 之間的通訊介面 (轉送)。 此外，此設定需要您在 Active Directory 樹系與 Azure Active Directory 之間設定目錄同步。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: cd8b8d18e146fcc0864565a603b47b2b074af2b2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
 
 # Azure RMS 需求：支援 Azure RMS 的內部部署伺服器
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 當您使用 Azure RMS 連接器時可搭配使用下列內部部署伺服器產品與 Azure RMS，其作為內部部署伺服器與 Azure RMS 之間的通訊介面 (轉送)。 此外，此設定需要您在 Active Directory 樹系與 Azure Active Directory 之間設定目錄同步。
 
@@ -62,6 +61,6 @@ RMS 連接器在 Windows Server 2012 R2、Windows Server 2012 和 Windows Server
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

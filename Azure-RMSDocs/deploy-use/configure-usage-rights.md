@@ -1,27 +1,26 @@
 ---
 title: "設定 Azure Rights Management 的使用權限 | Azure RMS"
-description: 
-keywords: 
+description: "當您使用 Azure Rights Management (Azure RMS) 在檔案或電子郵件上設定保護，且沒有使用範本時，您必須自行設定使用權限。 此外，當您為 Azure RMS 設定自訂範本時，您會選取使用權限，而當使用者、系統管理員或設定的服務選取範本時，自動套用會您選取的使用權限。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2016
+ms.date: 08/25/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60f25cdcdabbfbb61072a95e39f84fed79cad871
-ms.openlocfilehash: e656729fa9ea926681e560f40c4f43ce320a0d5e
+ms.sourcegitcommit: e1f1bef9ce87dcffb8d3da920f19198aa253e8e6
+ms.openlocfilehash: bbfb00822a03609f5b81808e1e1c4cad8c02be0b
 
 
 ---
 
 # 設定 Azure Rights Management 的使用權限
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 當您使用 Azure Rights Management (Azure RMS) 在檔案或電子郵件上設定保護，且沒有使用範本時，您必須自行設定使用權限。 此外，當您為 Azure RMS 設定自訂範本時，您會選取使用權限，而當使用者、系統管理員或設定的服務選取範本時，自動套用會您選取的使用權限。 例如，在 Azure 傳統入口網站，您可以選取角色來設定使用權限的邏輯群組，也可以設定個別權限。
 
@@ -40,7 +39,7 @@ ms.openlocfilehash: e656729fa9ea926681e560f40c4f43ce320a0d5e
 |一般名稱：**轉寄** <br /><br />原則中的編碼：**FORWARD**|啟用這個選項可轉寄電子郵件訊息和將收件者新增到 [收件者]  和 [副本]  行。 此權限未套用至文件；僅電子郵件訊息。<br /><br />不允許轉寄者在轉寄動作中授與權限給其他使用者。|Office 自訂權限：使用 [不要轉寄] 標準原則時遭拒。<br /><br />Azure 傳統入口網站中的名稱：**轉寄**<br /><br />AD RMS 範本中的名稱：**轉寄** <br /><br />API 常數或值： `IPC_EMAIL_FORWARD L"FORWARD"`|
 |一般名稱：**完全控制** <br /><br />原則中的編碼：**OWNER**|授與文件的所有權限，可以執行所有可用的動作。<br /><br />包括能夠移除保護及重新保護文件的能力。|Office 自訂權限：作為 [完全控制] 自訂選項。<br /><br />Azure 傳統入口網站中的名稱：**完全控制**<br /><br />AD RMS 範本中的名稱：**完全控制** <br /><br />API 常數或值： `IPC_GENERIC_ALL L"OWNER"`|
 |一般名稱：**列印** <br /><br />原則中的編碼：**PRINT**|啟用列印內容的選項。|Office 自訂權限：作為自訂權限中的 [列印內容] 選項。 不是個別收件者設定。<br /><br />Azure 傳統入口網站中的名稱：**列印**<br /><br />AD RMS 範本中的名稱：**列印** <br /><br />API 常數或值： `IPC_GENERIC_PRINT L"PRINT"`|
-|一般名稱：**回覆** <br /><br />原則中的編碼：**PRINT**|啟用電子郵件用戶端中的 [回覆] 選項，同時不允許 [收件者] 或 [副本] 行的變更。|Office 自訂權限︰不適用。<br /><br />Azure 傳統入口網站中的名稱：**回覆**<br /><br />AD RMS 範本中的名稱：**回覆** <br /><br />API 常數或值： `IPC_EMAIL_REPLY`|
+|一般名稱：**回覆** <br /><br />原則中的編碼：**REPLY**|啟用電子郵件用戶端中的 [回覆] 選項，同時不允許 [收件者] 或 [副本] 行的變更。|Office 自訂權限︰不適用。<br /><br />Azure 傳統入口網站中的名稱：**回覆**<br /><br />AD RMS 範本中的名稱：**回覆** <br /><br />API 常數或值： `IPC_EMAIL_REPLY`|
 |一般名稱：**全部回覆** <br /><br />原則中的編碼：**REPLYALL**|在電子郵件用戶端中啟用 [全部回覆]  選項，但不允許使用者將收件者新增至 [收件者]  或 [副本]  行。|Office 自訂權限︰不適用。<br /><br />Azure 傳統入口網站中的名稱：**全部回覆**<br /><br />AD RMS 範本中的名稱：**全部回覆** <br /><br />API 常數或值： `IPC_EMAIL_REPLYALL L"REPLYALL"`|
 |一般名稱：**檢視，開啟，讀取** <br /><br />原則中的編碼：**VIEW**|可讓使用者開啟文件並看見內容。|Office 自訂權限：作為 [讀取] 自訂原則，[檢視] 選項。<br /><br />Azure 傳統入口網站中的名稱：**檢視**<br /><br />AD RMS 範本中的名稱：**全部回覆** <br /><br />API 常數或值： `IPC_GENERIC_READ L"VIEW"`|
 |一般名稱︰**複製** <br /><br />原則中的編碼：**EXTRACT**|啟用將文件中的資料 (包括螢幕擷取畫面) 複製到相同或不同文件的選項。<br /><br />在某些應用程式中，這也允許以未受保護的形式儲存整份文件。|Office 自訂權限：作為 [允許具有讀取存取權的使用者複製內容] 自訂原則選項。<br /><br />Azure 傳統入口網站中的名稱：**複製並擷取內容**<br /><br />AD RMS 範本中的名稱：**擷取** <br /><br />API 常數或值： `IPC_GENERIC_EXTRACT L"EXTRACT"`|
@@ -102,6 +101,6 @@ Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

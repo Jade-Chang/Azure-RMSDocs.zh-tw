@@ -1,27 +1,26 @@
 ---
 title: "解除委任並停用 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "您永遠可以藉由使用 (Azure RMS) 控制您的組織是否保護內容，而且如果您決定不再使用此資訊保護方案，也可保證您將不會被鎖定在先前受保護的內容之外。 如果您不需要繼續存取先前受保護的內容，您只需要停用服務即可讓 Azure Rights Management 的訂閱過期。 例如，此情況適用於已完成其測試，但在生產環境中進行部署之前。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 40e4997f67a078ec781f1e7800599554858777a8
 
 
 ---
 
 # 解除委任並停用 Azure Rights Management
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 您永遠可以藉由使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 控制您的組織是否保護內容，而且如果您決定不再想使用此資訊保護方案，也可保證您將不會被鎖定在先前受保護的內容之外。 如果您不需要繼續存取先前受保護的內容，您只需要停用服務即可讓 Azure Rights management 的訂用帳戶過期。 例如，此情況適用於已完成測試 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 時，但在生產環境中進行部署之前。
 
@@ -58,14 +57,14 @@ ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
 
 1.  [使用工作或學校帳戶登入 Office 365](https://portal.office.com/) ，也就是您的 Office 365 部署的系統管理員。
 
-2.  如果 Office 365 系統管理中心未自動顯示，請選取左上角的應用程式啟動器圖示，並選擇 [管理員]。 只有 Office 365 管理員才會看到 **[管理員]** 方塊。
+2.  如果 Office 365 系統管理中心未自動顯示，請選取左上角的應用程式啟動器圖示，並選擇 [管理員]。 只有 Office 365 管理員才會看到 [管理員] 磚。
 
     > [!TIP]
-    > 如需系統管理中心說明，請參閱 [關於 Office 365 系統管理中心 - 管理員說明](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)。
+    > 如需系統管理中心說明，請參閱[關於 Office 365 系統管理中心 - 管理員說明](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)。
 
-3.  展開左窗格中的 **[服務設定]**。
+3.  展開左窗格中的 [服務設定]。
 
-4.  按一下 **[Rights Management]**。
+4.  按一下 [Rights Management]。
 
 5.  在 **[RIGHTS MANAGEMENT]** 頁面上，按一下 **[管理]**。
 
@@ -79,7 +78,7 @@ ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
 
 1.  登入 [Azure 傳統入口網站](http://go.microsoft.com/fwlink/p/?LinkID=275081)。
 
-2.  在左窗格中，按一下 **[ACTIVE DIRECTORY]**。
+2.  在左窗格中，按一下 [Active Directory]。
 
 3.  從 **[active directory]** 頁面中，按一下 **[RIGHTS MANAGEMENT]**。
 
@@ -92,6 +91,6 @@ ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
