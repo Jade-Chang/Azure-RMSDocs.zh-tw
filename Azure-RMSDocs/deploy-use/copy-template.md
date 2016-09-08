@@ -1,20 +1,19 @@
 ---
 title: "複製範本 | Azure RMS"
-description: 
-keywords: 
+description: "如果您想要建立一個與現有範本的設定非常相似的新範本，請在 [範本] 頁面上選取原始範本、按一下 [複製]、指定一個唯一名稱，然後進行您所需的變更。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 87d712bbda11a4cfdfb2f3b3e9a549bca977afd6
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: e5d7fea3b0c3c9fcc3546752b5483b9c97a917e9
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 87d712bbda11a4cfdfb2f3b3e9a549bca977afd6
 
 # 複製範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 如果您想要建立一個與現有範本的設定非常相似的新範本，請在 [範本]  頁面上選取原始範本、按一下 [複製] 、指定一個唯一名稱，然後進行您所需的變更。
 
@@ -37,6 +36,6 @@ ms.openlocfilehash: 87d712bbda11a4cfdfb2f3b3e9a549bca977afd6
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

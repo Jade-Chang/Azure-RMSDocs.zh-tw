@@ -1,27 +1,26 @@
 ---
 title: "Azure Rights Management 術語 | Azure RMS"
-description: 
-keywords: 
+description: "因為單字、片語或與 Microsoft Azure RMS 有關的縮寫而感到困惑嗎？ 請在此尋找專屬於 Azure RMS 或在 Rights Management 的內容中使用時有特定意義之詞彙和縮寫的定義。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
-ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: cb30347efd062b0f1c74a029efc747d277c817f3
 
 
 ---
 
 # Azure Rights Management 術語
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 因為單字、片語或與 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 有關的縮寫而感到困惑嗎？ 請在此尋找專屬於 Azure RMS 或在 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的內容中使用時有特定意義之詞彙和縮寫的定義。
 
@@ -52,7 +51,7 @@ ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 |MSDRM|有時被視為是 RMS 用戶端 1.0 的參照；新版本的 RMS 用戶端 (MSIPC) 已取代該版本的用戶端。 舊版用戶端支援以 RMS SDK 1.0 開發的應用程式，亦支援 Office 2010 和 Office 2007、Exchange 2010 和 Exchange 2013，以及 SharePoint 2010 和 SharePoint 2007。|
 |MSIPC|有時被視為是 RMS 用戶端 2.0 的參照，其取代舊版本的 RMS 用戶端 (MSDRM)。 新版用戶端支援以 RMS SDK 2.0 開發的應用程式，亦支援 Office 2016、Office 2013、SharePoint 2013 及 RMS 共用應用程式。|
 |原生保護|所有啟發應用程式皆具備的保護層級，期可避免未經授權的人員開啟檔案，也能強制執行更嚴格的原則 (如唯讀和禁止列印)。 此外，這項保護機制會與檔案共存，即便是使用者已將檔案轉寄給其他人員或將檔案儲存在其他人員可存取的公開位置，保護機制依然可以生效。|
-|。pfile|一種副檔名，通常所有受 Rights Management 保護的檔案會有此副檔名。|
+|.pfile|一種副檔名，通常所有受 Rights Management 保護的檔案會有此副檔名。|
 |。ppdf|Rights Management 自動建立檔案 (Word、Excel、PowerPoint 或 PDF) 的 PDF 複本 (供您以電子郵件分享) 時所建立的副檔名，以便在所有裝置上都能讀取 (但不是編輯) 該檔案。|
 |權限層級|使用權限的邏輯群組，讓使用者和系統管理員可以更輕鬆地選擇以角色為基礎的組態選項。 例如，檢閱者和共同作者。|
 |保護|使用加密、身分識別和存取控制原則協助保護您的資料，以將 Rights Management 控制項套用至檔案或電子郵件訊息。|
@@ -74,6 +73,6 @@ ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

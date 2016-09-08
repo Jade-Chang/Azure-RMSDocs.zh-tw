@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 可以解決哪些問題 | Azure RMS"
-description: 
-keywords: 
+description: "使用下表來識別組織可能會有的業務需求或問題，以及 Azure RMS 如何解決這些需求或問題的方式。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
-ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: 7aec5c26acb78cd85eee614a603745f3ee5938a2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
 
 # Azure RMS 可以解決哪些問題？
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 使用下表來識別組織可能會有的業務需求或問題，以及 Azure RMS 如何解決這些需求或問題的方式。
 
@@ -73,6 +72,6 @@ Azure RMS 支援下列安全性、規範和法規要求：
 如果您對 Azure RMS 運作方式的其他技術資訊有興趣，請參閱 [Azure RMS 如何運作？](how-does-it-work.md) 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "確認 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "在啟用 Azure RMS，並執行任何其他貴組織所需的組態步驟之後，您可以使用一個使用者帳戶來保護檔案或電子郵件訊息，然後嘗試從另一個使用者帳戶開啟並使用該項受保護的內容，以驗證這項服務是否以預期的方式運作。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: afa1fb35110918b9b97f91534616e1933e13b149
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b24fa3540e4e9b9cc02ba3bcd83f5864ce8674d6
 
 
 ---
 
 # 確認 Azure Rights Management
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 在啟用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS)，並執行任何其他貴組織所需的設定步驟之後，您可以使用一個使用者帳戶來保護檔案或電子郵件訊息，然後嘗試從另一個使用者帳戶開啟並使用該項受保護的內容，以確認這項服務是否以預期的方式運作。
 
@@ -41,6 +40,6 @@ ms.openlocfilehash: afa1fb35110918b9b97f91534616e1933e13b149
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

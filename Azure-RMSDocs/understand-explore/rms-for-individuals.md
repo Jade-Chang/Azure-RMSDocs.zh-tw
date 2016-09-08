@@ -1,27 +1,26 @@
 ---
 title: "個人版 RMS 和 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "個人版 RMS 是免費自助訂閱，適用於組織中已接收受 Microsoft Azure Rights Management (Azure RMS) 保護之敏感檔案的使用者，但是他們無法通過驗證，因為其 IT 部門沒有為他們在 Azure 中管理帳戶。 例如，IT 部門不會有 Office 365 或使用 Azure 服務。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
 
 
 ---
 
 # 個人版 RMS 和 Azure Rights Management
 
-*適用於：Azure Rights Management*
+>*適用於：Azure Rights Management*
 
 個人版 RMS 是免費自助訂閱，適用於組織中已接收受 Microsoft Azure Rights Management (Azure RMS) 保護之敏感檔案的使用者，但是他們無法通過驗證，因為其 IT 部門沒有為他們在 Azure 中管理帳戶。 例如，IT 部門不會有 Office 365 或使用 Azure 服務。
 
@@ -42,6 +41,6 @@ ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

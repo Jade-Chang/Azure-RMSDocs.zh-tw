@@ -5,13 +5,13 @@ author: cabailey
 manager: mbaldwin
 ms.date: 07/291/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: b608ee307bf7388ab7c7ed70cc1286db5df176c8
 
 
 ---
@@ -38,22 +38,22 @@ ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 1.  移至 [Office 365 入口網站](https://portal.office.com/)，並使用您的 Office 365 全域管理員帳戶登入。
 
-2.  如果 Office 365 系統管理中心未自動顯示，請選取左上角的應用程式啟動器圖示，並選擇 [管理員]。 只有 Office 365 管理員才會看到 **[管理員]** 方塊。
+2.  如果 Office 365 系統管理中心未自動顯示，請選取左上角的應用程式啟動器圖示，並選擇 [管理員]。 只有 Office 365 管理員才會看到 [管理員] 磚。
 
   > [!TIP]
-  > 如需系統管理中心說明，請參閱 [關於 Office 365 系統管理中心 - 管理員說明](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)。
+  > 如需系統管理中心說明，請參閱[關於 Office 365 系統管理中心 - 管理員說明](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)。
 
-3.  展開左窗格中的 **[服務設定]**。
+3.  展開左窗格中的 [服務設定]。
 
-4.  按一下 **[Rights Management]**。
+4.  按一下 [Rights Management]。
 
-5.  在 **[RIGHTS MANAGEMENT]** 頁面上，按一下 **[管理]**。
+5.  在 [Rights Management] 頁面上，按一下 [管理]。
 
-6.  在 **[RIGHTS MANAGEMENT]** 頁面上，按一下 **[啟動]**。
+6.  在 [Rights Management] 頁面上，按一下 [啟動]。
 
-7.  出現 **[是否要啟動 Rights Management?]** 提示時，按一下 **[啟動]**。
+7.  出現 [您要啟動 Rights Management 嗎?] 提示時，按一下 [啟動]。
 
-現在，您應該會看到 **[Rights Management 已啟動]** 及用來停用的選項 (您可能需要手動重新整理頁面)。
+現在，您應該會看到 [Rights Management 已啟動] 及用來停用的選項 (您可能需要手動重新整理頁面)
 
 此時請不要按 **[進階功能]**。 這會帶您到 Azure 傳統入口網站供您設定自訂範本，但本教學課程不需要用到範本。 您反而可以關閉 Office 365 系統管理中心。
 
@@ -63,11 +63,11 @@ ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 2.  在左窗格中，按一下 **[ACTIVE DIRECTORY]**。
 
-3.  從 **[active directory]** 頁面中，按一下 **[RIGHTS MANAGEMENT]**。
+3.  從 [Active Directory] 頁面中，按一下 [Rights Management]。
 
 4.  選取要為 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理的目錄，按一下 [啟動]，然後確認您的動作。
 
-**[RIGHTS MANAGEMENT 狀態]** 現在應該會顯示為 **[作用中]** ，且 **[啟動]** 選項會取代為 **[停用]**。
+[Rights Management 狀態] 現在應顯示 [使用中]，且會以 [停用] 選項取代 [啟用] 選項。
 
 雖然您可以在入口網站設定 Rights Management 的其他選項，但本教學課程不需要用到這些選項，因此您可以關閉 Azure 傳統入口網站。
 
@@ -86,6 +86,6 @@ ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

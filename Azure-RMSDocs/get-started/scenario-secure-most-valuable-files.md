@@ -1,27 +1,26 @@
 ---
 title: "案例 - 保護您最重要的 (幾個)檔案 | Azure RMS"
-description: 
-keywords: 
+description: "此案例和支援使用者文件會使用 Azure Rights Management 來手動和自訂保護少數幾個您認為最有價值的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。 這些通常是應該只有少數人能存取的檔案。 例如，公司的特色食品配方指示或在指定日期之前不應該公開的收購計劃。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5db916bc9eef927dc7d6a628808e9af79363e480
 
 
 ---
 
 # 案例 - 保護您最重要的 (幾個)檔案
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 此案例和支援使用者文件會使用 Azure Rights Management 來手動和自訂保護少數幾個您認為最有價值的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。 這些通常是應該只有少數人能存取的檔案。 例如，公司的特色食品配方指示或在指定日期之前不應該公開的收購計劃。
 
@@ -148,6 +147,6 @@ ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

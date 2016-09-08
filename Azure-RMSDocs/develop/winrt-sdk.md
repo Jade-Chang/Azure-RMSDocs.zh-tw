@@ -4,9 +4,9 @@ description: "Windows 市集應用程式可以使用 Microsoft Rights Management
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 0b8e0fb6d872506ac3529bd137286f0e8fa562ee
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 93a804ce53eb4f13a579d7888c289c0b6bec008f
 
 
 ---
@@ -26,12 +26,12 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 本主題將引導您設定您的環境，以建立您自己的新應用程式。
 
--   [先決條件](#prerequisites)
+-   [必要條件](#prerequisites)
 -   [選用](#optional)
 -   [設定您的開發環境](#configuring-your-development-environment)
 -   [另請參閱](#see-also)
 
-## 先決條件
+## 必要條件
 
 
 您的開發系統必須使用下列軟體︰
@@ -86,6 +86,6 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

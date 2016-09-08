@@ -6,14 +6,14 @@ author: Cabailey
 manager: mbaldwin
 ms.date: 06/29/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.assetid: 7c4798e6-34a0-4c3f-a47f-505764ddf322
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fab51fefed8d3a347a52ab7c118bb40b3cc23b37
-ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: c00264e6c8b99d95e8eedf9b91781484611880c3
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
 
 # Azure RMS 快速入門步驟 1︰啟用 Rights Management 服務
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 跳至︰ 
@@ -48,7 +48,7 @@ ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
 ### 從傳統 Office 365 系統管理中心啟動 Rights Management
 
 > [!NOTE]
-> 如果您是使用 **Office 365 系統管理中心預覽**而不是 Office 365 傳統系統管理中心，則可以使用[如何從 Office 365 系統管理中心預覽啟用 Azure Rights Management](../deploy-use/activate-office365-preview.md) 的指示，或切換至傳統版本以使用這些指示。 若要切換，請在登入後按一下 [首頁] 頁面上的 [Go to the old admin center] (移至舊系統管理中心)。
+> 如果您是使用 **Office 365 系統管理中心預覽**而不是 Office 365 傳統系統管理中心，則可以使用[如何從 Office 365 系統管理中心預覽啟用 Azure Rights Management](../deploy-use/activate-office365-preview.md) 的指示，或切換至傳統版本以使用這些指示。 若要切換，請在登入後按一下 [首頁] 頁面上的 [Go to the old admin center (移至舊系統管理中心)]。
 
 1.  移至 [Office 365 入口網站](https://portal.office.com/)，並使用您的 Office 365 全域管理員帳戶登入。
 
@@ -65,11 +65,11 @@ ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
 
 6.  在 **[RIGHTS MANAGEMENT]** 頁面上，按一下 **[啟動]**。
 
-7.  出現 **[是否要啟動 Rights Management?]**] 提示時，按一下 **[啟動]**。
+7.  出現 **[是否要啟動 Rights Management?]** 提示時，按一下 **[啟動]**。
 
 現在，您應該會看到 **[Rights Management 已啟動]** 及用來停用的選項 (您可能需要手動重新整理頁面)。
 
-此時請不要按 **[進階功能]**。 這會帶您到 Azure 傳統入口網站供您設定範本，但本教學課程不需要用到範本。 您反而可以關閉 Office 365 系統管理中心。
+此時請不要按 [進階功能]。 這會帶您到 Azure 傳統入口網站供您設定範本，但本教學課程不需要用到範本。 您反而可以關閉 Office 365 系統管理中心。
 
 ### 若要從 Azure 傳統入口網站啟動 Rights Management
 
@@ -100,6 +100,6 @@ ms.openlocfilehash: 80f2742bbaab9d3252cec6f6c709012ca81218d5
 [步驟 2 »](tutorial-step2.md)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

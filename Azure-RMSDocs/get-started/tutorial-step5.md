@@ -4,9 +4,9 @@ description: "教學課程的最後一個步驟，可為組織快速試用 Micro
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5884914e2ff69c4db40d4e874541f42b9a0e7df5
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 # Azure RMS 快速入門步驟 5：追蹤受保護的文件
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 跳至︰ 
@@ -42,7 +42,7 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 ![Azure RMS 快速入門教學課程步驟 5](../media/AzRMS_QuickStartSteps5.PNG)
 
 > [!NOTE]
-> 在此步驟中，您必須有支援文件追蹤的訂閱。 若要檢查您的訂閱是否包含文件追蹤，請參閱 [比較 Rights Management Services (RMS) 所提供的功能](https://technet.microsoft.com/dn858608.aspx)。
+> 在此步驟中，您必須有支援文件追蹤的訂閱。 若要檢查您的訂閱是否包含文件追蹤，請參閱 [Comparison of Rights Management Services (RMS) Offerings](https://technet.microsoft.com/dn858608.aspx) (比較 Rights Management Services (RMS) 所提供的功能)。
 
 這是選擇性步驟，但多數人都會想要知道他們傳送給別人的附件是否已開啟、其開啟時間，甚至是從哪裡開啟的。 例如：
 
@@ -54,19 +54,19 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 ### 追蹤受保護的文件
 
-1.  使用 Outlook，在 **[首頁]** 索引標籤的 **[RMS]** 群組中，按一下 **[追蹤使用情況]**。
+1.  使用 Outlook，在 [首頁] 索引標籤的 [RMS] 群組中，按一下 [追蹤使用情況]。
 
-2.  如果您看到 **[由您保護和共用]** 頁面，按一下 **[登入]** 並再次提供您的使用者名稱和密碼。
+2.  如果您看到 [Protect and share on your terms (由您保護和共用)] 頁面，請按一下 [登入] 並再次提供您的使用者名稱和密碼。
 
-3.  在 [您共用的文件] 頁面上，您會看到您附加至電子郵件的文件 **Confidential.docx**。 此時只有顯示這個檔案，若您共用其他受保護的文件，清單將會增加。
+3.  在 [您的共用文件] 頁面上，您會看到您附加至電子郵件的文件 Confidential.docx。 此時只有顯示這個檔案，若您共用其他受保護的文件，清單將會增加。
 
     在這個頁面中，您會看到文件的共用時間 (您何時傳送有受保護附加的電子郵件)、最後一次活動的日期，以及電子郵件寄送到的目標收件者的名稱。 按一下文件名稱以獲得其他詳細資料。
 
-4.  在有您所點按之檔案名稱的新網頁上，您只會看到該文件的摘要詳細資料，以及該文件可用的其他選項清單 (**[清單]**、 **[時間表]**、 **[對應]**、 **[設定]**)。
+4.  在有您所點按之檔案名稱的新網頁上，您只會看到該文件的摘要詳細資料，以及該文件可用的其他選項清單 ([清單]、[時間表]、[對應]、[設定])。
 
-    按一下每個選項來瀏覽受保護文件的不同追蹤方式。 或是留在 **[摘要]** 頁面上，按一下 **[在 Excel 中開啟]** 將資訊匯出到試算表，或按一下 **[撤銷存取權]** 停止共用文件。
+    按一下每個選項來瀏覽受保護文件的不同追蹤方式。 或是留在 [摘要] 頁面上，按一下 [在 Excel 中開啟] 將資訊匯出到試算表，或按一下 [撤銷存取權] 停止共用文件。
 
-有必要時，您就可以回到這個網站來進一步追蹤受保護文件的活動，或撤銷其存取權。 您甚至可以從您的行動裝置或平板電腦的瀏覽器使用下列連結存取這個網站： [文件追蹤](http://go.microsoft.com/fwlink/?LinkId=529562)
+有必要時，您就可以回到這個網站來進一步追蹤受保護文件的活動，或撤銷其存取權。 您甚至可以從您的行動裝置或平板電腦的瀏覽器使用下列連結存取這個網站：[文件追蹤](http://go.microsoft.com/fwlink/?LinkId=529562)
 
 |如果您想要更多的資訊|其他資訊|
 |--------------------------------|--------------------------|
@@ -91,6 +91,6 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

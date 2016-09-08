@@ -1,27 +1,26 @@
 ---
 title: "案例 - 將工作資料夾設定為持續保護 | Azure RMS"
-description: 
-keywords: 
+description: "此案例和支援的使用者文件使用 Azure Rights Management 將保護持續套用至工作資料夾中的 Office 文件。 工作資料夾使用執行 Windows Server 的檔案伺服器角色服務，可提供一致的方式讓使用者從他們的電腦和裝置存取工作檔案。 雖然工作資料夾提供它自己的加密來保護檔案，如果將檔案移至工作資料夾環境以外的地方，便會失去這項保護。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 35ad445e229eac3feeca5522a41b9e3b25fd1180
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
 
 
 ---
 
 # 案例 - 將工作資料夾設定為持續保護
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 此案例和支援的使用者文件使用 Azure Rights Management 將保護持續套用至[工作資料夾](https://technet.microsoft.com/library/dn265974.aspx)中的 Office 文件。 工作資料夾使用執行 Windows Server 的檔案伺服器角色服務，可提供一致的方式讓使用者從他們的電腦和裝置存取工作檔案。 雖然工作資料夾提供它自己的加密來保護檔案，如果將檔案移至工作資料夾環境以外的地方，便會失去這項保護。 例如，使用者將已同步的檔案複製並將儲存到不在您 IT 部門控制下的存放裝置，或是以電子郵件傳送給其他人。
 
@@ -123,6 +122,6 @@ Azure Rights Management 提供的額外保護，可防止檔案被組織外的�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

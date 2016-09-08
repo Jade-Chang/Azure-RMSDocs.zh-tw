@@ -1,27 +1,26 @@
 ---
 title: "從 AD RMS 移轉至 Azure Rights Management - 階段 3 | Azure RMS"
-description: 
-keywords: 
+description: "針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 3 使用下列資訊。 這些程序涵蓋從 AD RMS 移轉至 Azure Rights Management 的步驟 6 到 7。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 6d3cb53fb199bb880a0e61d2b964f297e547a027
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: cc605ff22c205846186f7e3ec819ecd826dba4a6
 
 
 ---
 
 # 移轉階段 3︰支援服務組態
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management*
 
 
 針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 3 使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 的步驟 6 到 7。
@@ -215,6 +214,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 若要繼續移轉，請移至 [階段 4 - 移轉後工作](migrate-from-ad-rms-phase4.md)。
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

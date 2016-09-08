@@ -1,27 +1,26 @@
 ---
 title: "Azure Rights Management 常見問題集 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Azure Rights Management，也就是 Azure RMS 的一些常見問題的解答。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e89c59716eef7fbdea415b41b1adfa54b0c16689
-ms.openlocfilehash: bd53b73452f444ac8529a8b8b613e76d8cc234a1
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 906e544cc3c9be6ba475502e3cdb93f2e047da7f
 
 
 ---
 
 # Azure Rights Management 常見問題集
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的一些常見問題集，也稱為 Azure RMS：
 
@@ -70,7 +69,7 @@ Azure RMS 會在必要時自動產生及管理 XrML 憑證，因此它不會使�
 
 ## 有設定 Exchange Online 以使用 Azure RMS 的逐步指示嗎？
 
-是。 請參閱 [Exchange Online：資訊版權管理設定](../deploy-use/configure-office365.md#exchange-online-irm-configuration)，以了解可讓 Exchange Online 使用 Azure RMS 的典型命令集、Outlook Web 應用程式未立即顯示 [設定權限] 功能表選項的原因，以及當您變更或更新 Azure RMS 範本時要執行的命令。 
+可以。 請參閱 [Exchange Online：資訊版權管理設定](../deploy-use/configure-office365.md#exchange-online-irm-configuration)，以了解可讓 Exchange Online 使用 Azure RMS 的典型命令集、Outlook Web 應用程式未立即顯示 [設定權限] 功能表選項的原因，以及當您變更或更新 Azure RMS 範本時要執行的命令。 
 
 ## 如果我在生產中部署 Azure RMS，我的公司會不會在解決方案中遭到「鎖定」，或無法存取我們以 Azure RMS 保護之內容的風險？
 不會，即使您決定不再使用 Azure RMS，您隨時都可以完全掌控您的資料，並且可以繼續存取它。 如需詳細資訊，請參閱[解除委任並停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)。
@@ -114,7 +113,7 @@ Azure RMS 可支援所有檔案類型。 對於文字、影像、Microsoft Offic
 
 ## 當我開啟受 RMS 保護的 Office 文件時，相關聯的暫存檔案是否也會變成受 RMS 保護？
 
-不會。 在此案例中，相關聯的暫存檔案不會包含原始文件中的資料，而是只包含使用者在開啟檔案時所輸入的資料。 與原始檔案不同，暫存檔案顯然不是針對共用所設計，而且會保留在裝置上，並受本機安全性控制項 (例如 BitLocker 與 EFS) 保護。
+否。 在此案例中，相關聯的暫存檔案不會包含原始文件中的資料，而是只包含使用者在開啟檔案時所輸入的資料。 與原始檔案不同，暫存檔案顯然不是針對共用所設計，而且會保留在裝置上，並受本機安全性控制項 (例如 BitLocker 與 EFS) 保護。
 
 ## 何時會支援從 AD RMS 移轉？
 Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS) 移轉。 但現在已支援。
@@ -224,6 +223,6 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

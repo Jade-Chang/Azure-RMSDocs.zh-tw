@@ -4,9 +4,9 @@ description: "有關如何設定應用程式以供測試的指示。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b01f009ec3dffbb3fe671da8a19929e53c67fb79
-ms.openlocfilehash: cf86b07ba057d8999a156ae397ff7200b12a3f5e
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9cc96c7f4d75969ec75b1372a4a49499709b0d32
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: cf86b07ba057d8999a156ae397ff7200b12a3f5e
 
 本主題中的指引並不完整。 如需如何設定 RMS Client 2.1 的詳細資訊，請參閱 [RMS Client 2.1 Deployment Notes](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) (RMS Client 2.1 部署注意事項)。
 
-### 相關主題
+### 相關的主題
 
 * [如何安裝和設定 RMS 伺服器](how-to-install-and-configure-an-rms-server.md)
 * [如何︰使用 ADAL 驗證](how-to-use-adal-authentication.md)
@@ -56,6 +56,6 @@ ms.openlocfilehash: cf86b07ba057d8999a156ae397ff7200b12a3f5e
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

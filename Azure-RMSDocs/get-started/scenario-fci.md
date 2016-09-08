@@ -1,27 +1,26 @@
 ---
 title: "案例 - 保護檔案伺服器共用上的檔案 | Azure RMS"
-description: 
-keywords: 
+description: "此案例和支援使用者文件會使用 Azure Rights Management 來大量保護您想要在檔案伺服器上保護的所有檔案，以確保只有貴組織的員工都可以存取它們，即使檔案被複製並儲存到不在您的 IT 部門的控制下的儲存體，或以電子郵件傳送檔案給其他人。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: c16098a2d0fe41748280704716a2eeef8921a6fa
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
 
 
 ---
 
 # 案例 - 保護檔案伺服器共用上的檔案
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 此案例和支援使用者文件會使用 Azure Rights Management 來大量保護您想要在檔案伺服器上保護的所有檔案，以確保只有貴組織的員工都可以存取它們，即使檔案被複製並儲存到不在您的 IT 部門的控制下的儲存體，或以電子郵件傳送檔案給其他人。
 
@@ -156,6 +155,6 @@ ms.openlocfilehash: c16098a2d0fe41748280704716a2eeef8921a6fa
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

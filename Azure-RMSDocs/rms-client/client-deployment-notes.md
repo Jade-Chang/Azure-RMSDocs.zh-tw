@@ -1,27 +1,26 @@
 ---
 title: "RMS 用戶端部署注意事項 | Azure RMS"
-description: 
-keywords: 
+description: "Rights Management Service 用戶端 (RMS 用戶端) 第 2 版也稱為 MSIPC 用戶端。 它是 Windows 電腦軟體，可在內部部署上或雲端中與 Microsoft Rights Management Service 通訊，以在資訊流過應用程式和裝置時，在您組織的界限內或那些受管理界限外，協助保護資訊的存取和使用。 除了隨附於適用於 Windows 的 Rights Management 共用應用程式外，RMS 用戶端也可以當作選擇性下載項目提供，如此只要確認並接受其授權合約，即可搭配協力廠商軟體免費散發，讓用戶端可以保護和取用 Rights Management Service 所保護的內容。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bd8aba91b9b65777c2319baea848e8313cbccda
-ms.openlocfilehash: ffddda9a144b23b64b54df4fe4d25ec62600599d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 6d80958fe4d56458b7dee48e7475a37de8a102bd
 
 
 ---
 
 # RMS 用戶端部署注意事項
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 7 (含 SP1)、Windows 8、Windows 8.1、Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Vista*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 7 (含 SP1)、Windows 8、Windows 8.1、Windows Server 2008、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、Windows Vista*
 
 Rights Management Service 用戶端 (RMS 用戶端) 第 2 版也稱為 MSIPC 用戶端。 它是 Windows 電腦軟體，可在內部部署上或雲端中與 Microsoft Rights Management Service 通訊，以在資訊流過應用程式和裝置時，在您組織的界限內或那些受管理界限外，協助保護資訊的存取和使用。 除了隨附於[適用於 Windows 的 Rights Management 共用應用程式](sharing-app-windows.md)外，RMS 用戶端也可以[當作選擇性下載項目](http://www.microsoft.com/download/details.aspx?id=38396)提供，如此只要確認並接受其授權合約，即可搭配協力廠商軟體免費散發，讓用戶端可以保護和取用 Rights Management Service 所保護的內容。
 
@@ -57,7 +56,7 @@ RMS 用戶端包含在名為 **setup_msipc_***<arch>***.exe** 的安裝程式可
 
 |Windows Server 作業系統|Windows 用戶端作業系統|
 |-----------------------------------|-----------------------------------|
-|Windows Server 2012 R2|Windows 8。1|
+|Windows Server 2012 R2|Windows 8.1|
 |Windows Server 2012|Windows 8|
 |Windows Server 2008 R2|Windows 7 (至少含 SP1)|
 |Windows Server 2008 (僅限 AD RMS)|Windows Vista (至少含 SP2，僅限 AD RMS)|
@@ -239,6 +238,6 @@ RMS 服務探索可讓 RMS 用戶端在保護內容之前檢查哪一個 RMS 伺
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

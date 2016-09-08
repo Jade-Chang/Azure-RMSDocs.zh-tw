@@ -4,9 +4,9 @@ description: "教學課程的第四步，可為組織快速試用 Microsoft Azur
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 0287f1408c7cd22d0254d135aaa267ec77246e45
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 
 # Azure RMS 快速入門步驟 4：要求收件者開啟以電子郵件送達的文件
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 跳至︰ 
@@ -55,13 +55,13 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 
 ### 檢視受保護的文件附件
 
-1.  因為 Azure Rights Management 保護了 Word 文件，所以電子郵件內有兩個附件。 這兩個附件實際上是相同檔案的兩個版本，只是它們的副檔名不同。 開啟具有 **.ppdf** 副檔名的版本 (**Confidential.ppdf**)。
+1.  因為 Azure Rights Management 保護了 Word 文件，所以電子郵件內有兩個附件。 這兩個附件實際上是相同檔案的兩個版本，只是它們的副檔名不同。 開啟具有 .ppdf 副檔名的版本 (Confidential.ppdf)。
 
-    如果[您裝置上的 Office 版本支援 Rights Management](https://technet.microsoft.com/library/dn655136.aspx)，您就可以開啟此檔案的另一個版本 (**Confidential.docx**)，讓它在 Word 中開啟。
+    如果[您裝置上的 Office 版本支援 Rights Management](https://technet.microsoft.com/library/dn655136.aspx)，您就可以開啟此檔案的另一個版本 (Confidential.docx)，讓其在 Word 中開啟。
 
-2.  如果系統提示您輸入使用者名稱和密碼，請輸入與您用來傳送電子郵件和附件的電子郵件地址格式相同的使用者名稱。 例如，**janetm@contoso.com** 或 **p.dover@fabrikam.com**。 至於密碼，請輸入您註冊個人版 RMS 時所提供的密碼。 或者，如果貴組織擁有 Azure RMS，請輸入您平常的工作密碼。
+2.  如果系統提示您輸入使用者名稱和密碼，請輸入與您用來傳送電子郵件和附件的電子郵件地址格式相同的使用者名稱。 例如，janetm@contoso.com 或 p.dover@fabrikam.com。 至於密碼，請輸入您註冊個人版 RMS 時所提供的密碼。 或者，如果貴組織擁有 Azure RMS，請輸入您平常的工作密碼。
 
-文件隨即開啟，您現在可以讀取其內容。 例如，內容可能是說：**如果您可以從電子郵件附件讀取這份文件，表示寄件者已成功共用以 Azure RMS 保護的檔案。** 因為是唯讀文件，您並無法變更其內容。
+文件隨即開啟，您現在可以讀取其內容。 例如，內容可能是說：「如果您可以從電子郵件附件讀取這份文件，表示寄件者已成功共用以 Azure RMS 保護的檔案。」 因為是唯讀文件，您並無法變更其內容。
 
 有一個選擇性步驟是，您可以要求收件者將電子郵件轉寄給不是原始電子郵件收件者的其他人。 即使這些人所服務的組織有 Azure Rights Management 或是他們本身申請自己的個人版 RMS 訂閱，他們還是無法開啟附件。 當系統提示他們輸入使用者名稱時，他們對於文件的存取便會遭到拒絕。
 
@@ -71,7 +71,7 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 |--------------------------------|--------------------------|
 |用來檢視以 Azure Rights Management 保護之檔案的完整指示|[檢視並使用 Rights Management 保護的檔案](../rms-client/sharing-app-view-use-files.md)|
 |關於免費的個人版 RMS 訂閱|[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)|
-|關於您看到的附加至電子郵件的兩個檔案版本|[自動建立的 .ppdf 檔案是什麼？](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
+|關於您看到的附加至電子郵件的兩個檔案版本|[什麼是自動建立的 .ppdf 檔案？](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
 
 
 >[!div class="step-by-step"]
@@ -79,6 +79,6 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 [步驟 5 »](tutorial-step5.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

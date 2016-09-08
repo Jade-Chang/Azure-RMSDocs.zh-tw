@@ -1,27 +1,26 @@
 ---
 title: "準備 Azure Rights Management | Azure RMS"
-description: 
-keywords: 
+description: "在您使用 Microsoft Office 365 或 Azure Active Directory 的帳戶註冊雲端訂閱，並建立您的組織帳戶之後，您即可啟用 Rights Management 服務。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 55f092ede1f003c700cb58359bab264772702c39
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 4ebdb8a75b135f4f252d640e4f16da1ea7a1ed04
 
 
 ---
 
 # 準備 Azure Rights Management
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 在您申請雲端訂閱，並使用 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 或 Azure Active Directory 的帳戶建立您的組織後，您即準備好啟用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 服務。
 
@@ -43,6 +42,6 @@ ms.openlocfilehash: 55f092ede1f003c700cb58359bab264772702c39
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

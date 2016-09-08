@@ -1,20 +1,19 @@
 ---
 title: "移除範本 | Azure RMS"
-description: 
-keywords: 
+description: "無法刪除預設範本，但是可以封存它們，這樣使用者就看不到它們。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 22db39697dbd35b1a295f214f11e72c47fe6ca1b
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
 
 # 移除 (封存) 範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 無法刪除預設範本，但是可以封存它們，這樣使用者就看不到它們。
 
@@ -42,6 +41,6 @@ ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

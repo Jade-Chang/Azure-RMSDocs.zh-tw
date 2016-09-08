@@ -4,9 +4,9 @@ description: "示範如何設定您的開發環境，使 AD RMS SDK API 適用�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 296FC4C0-99C6-4997-AD97-5CEE01221B1A
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: 4bb013f420b02a10e306d92624683c48ceb2582f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 56e5c959fbfc0b15720de33972dc0488f35b65c3
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 4bb013f420b02a10e306d92624683c48ceb2582f
 
 下列主題示範如何設定您的開發環境，使 AD RMS SDK API 適用於您特定的作業系統。
 
-|平台 | 說明|
+|平台 | 描述|
 |------|------------|
 |[Android](android-sdk.md)| Android 應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。|
 |[Linux](linux-setup.md)|數款 Linux 作業系統現在可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 MS RMS SDK 4.2 在其應用程式中啟用整合的資訊保護。|
@@ -40,6 +40,6 @@ ms.openlocfilehash: 4bb013f420b02a10e306d92624683c48ceb2582f
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

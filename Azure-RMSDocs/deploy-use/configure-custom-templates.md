@@ -1,27 +1,26 @@
 ---
 title: "設定 Azure Rights Management 的自訂範本 | Azure RMS"
-description: 
-keywords: 
+description: "在您啟用 Azure Rights Managementt (Azure RMS) 之後，使用者自動能夠使用兩個預設範本，讓他們可以輕鬆將原則套用至敏感性檔案，以限制僅供貴組織內已獲授權的使用者存取。 這兩個範本具有下列權限原則限制。"
 author: cabailey
 manager: mbaldwin
 ms.date: 06/03/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e72b68c03ee7da58adaff96f3f4611a227214b0
-ms.openlocfilehash: 26afa04c5041d0b8c952d3d6b3da5a2215acda87
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 83db5e11a4603523d7c4a86921fbdafb5f6fbfb5
 
 
 ---
 
 # 設定 Azure Rights Management 的自訂範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 在您[啟用 Azure Rights Managementt](activate-service.md) (Azure RMS) 之後，使用者自動能夠使用兩個預設範本，讓他們可以輕鬆將原則套用至敏感性檔案，以限制僅供貴組織內已獲授權的使用者存取。 這兩個範本具有下列權限原則限制：
 
@@ -67,6 +66,6 @@ ms.openlocfilehash: 26afa04c5041d0b8c952d3d6b3da5a2215acda87
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

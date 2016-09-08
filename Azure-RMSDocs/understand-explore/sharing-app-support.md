@@ -1,20 +1,19 @@
 ---
 title: "適用於 Windows 和行動平台的 RMS 共用應用程式 | Azure RMS"
-description: 
-keywords: 
+description: "RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 Office 2010 的必要應用程式，也建議在 Windows 電腦、Mac 電腦和行動裝置上使用。 它的其中一個好處就是可以針對原本不支援 Rights Management 的應用程式和檔案套用一般保護，也就是說可以保護所有檔案。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 6304c5c29e2dab176fb9d5a617e1467af00ab504
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
 
 # 適用於 Windows 和行動平台的 RMS 共用應用程式
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 Office 2010 的必要應用程式，也建議在 Windows 電腦、Mac 電腦和行動裝置上使用。 它的其中一個好處就是可以針對原本不支援 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的應用程式和檔案套用一般保護，也就是說可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](../rms-client/sharing-app-admin-guide.md)》中的[保護層級 – 原生和一般](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
 
@@ -59,6 +58,6 @@ RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

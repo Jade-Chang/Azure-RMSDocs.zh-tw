@@ -1,27 +1,26 @@
 ---
 title: "監視 Azure Rights Management 連接器 | Azure RMS"
-description: 
-keywords: 
+description: "在您安裝並設定 RMS 連接器後，可以使用下列方法和資訊，協助您監視連接器和您組織的 Azure RMS 使用狀況。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f8e23e8bcbfb25092cb31f7af76d17239f3063a7
-ms.openlocfilehash: 32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 11079a491cf9feade86713ef02ccdce79019577a
 
 
 ---
 
 # 監視 Azure Rights Management 連接器
 
-*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
 在您安裝並設定 RMS 連接器後，可以使用下列方法和資訊，協助您監視連接器和您組織的 Azure RMS 使用狀況。
 
@@ -195,6 +194,6 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

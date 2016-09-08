@@ -1,27 +1,26 @@
 ---
 title: "協助使用者使用 Azure Rights Management 來保護檔案 | Azure RMS"
-description: 
-keywords: 
+description: "在為您的組織部署和設定 Azure Rights Management (Azure RMS) 之後，請提供說明和指引給使用者、系統管理員及服務台。"
 author: cabailey
 manager: mbaldwin
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
-ms.openlocfilehash: d48616cb638522e6cda61e7ae96db9480fc14099
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 329b9cb2fd6507638924f836eb6dffe8ffca43d1
 
 
 ---
 
 # 協助使用者使用 Azure Rights Management 來保護檔案
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 在為您的組織部署和設定 Azure Rights Management (Azure RMS) 之後，請提供說明和指引給使用者、系統管理員及服務台：
 
@@ -116,6 +115,6 @@ ms.openlocfilehash: d48616cb638522e6cda61e7ae96db9480fc14099
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

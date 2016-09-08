@@ -1,17 +1,16 @@
 ---
 title: "安裝 Azure Information Protection 用戶端 | Azure 版權管理"
-description: 
-author: cabailey
+description: "若要使用 Azure Information Protection 分類文件和電子郵件訊息，您必須安裝 Azure Information Protection 用戶端。 安裝此用戶端，除了會將 Information Protection 列新增到您的 Office 應用程式 (Word、Excel、PowerPoint、Outlook) 以顯示您組織的分類標籤之外，也會在 Word、Excel、PowerPoint 的 [常用] 索引標籤上新增新的 [保護] 群組，並具有名稱為 [保護] 的按鈕。"
 manager: mbaldwin
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: c8a7c7d7182df7b525b3425ab378126feb389d9f
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
 
 
 ---
@@ -89,6 +88,6 @@ ms.openlocfilehash: c8a7c7d7182df7b525b3425ab378126feb389d9f
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

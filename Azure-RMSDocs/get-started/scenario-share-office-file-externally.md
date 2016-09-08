@@ -1,27 +1,26 @@
 ---
 title: "案例 - 與其他組織的使用者共用 Office 檔案 | Azure RMS"
-description: 
-keywords: 
+description: "此案例和支援的使用者文件會使用 Azure Rights Management，讓使用者可以與組織外的人安全地以電子郵件傳送 Office 檔案。 例如，Office 檔案可能是 Word 文件、Excel 試算表或 PowerPoint 簡報，其中包含合作夥伴的價目表資訊、經銷商的產品清單，或具有潛在客戶的傳遞時間明細行清單。 當使用者遵循指示時，附加到電子郵件訊息的檔案將受到 Azure Rights Management 的保護。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
 
 
 ---
 
 # 案例 - 與其他組織的使用者共用 Office 檔案
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 此案例和支援的使用者文件會使用 Azure Rights Management，讓使用者可以與組織外的人安全地以電子郵件傳送 Office 檔案。 例如，Office 檔案可能是 Word 文件、Excel 試算表或 PowerPoint 簡報，其中包含合作夥伴的價目表資訊、經銷商的產品清單，或具有潛在客戶的傳遞時間明細行清單。 當使用者遵循指示時，附加到電子郵件訊息的檔案將受到 Azure Rights Management 的保護。
 
@@ -47,7 +46,7 @@ ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
 |---------------|--------------------------------|
 |您已針對 Office 365 或 Azure Active Directory 準備帳戶和群組|[準備 Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[自動部署 Microsoft Rights Management 共用應用程式](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[Microsoft Rights Management 共用應用程式的自動部署](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 |使用者具有 Office 2013 的 Outlook|如果使用者有 Office 2010，請參閱對等版本的螢幕擷取畫面，讓圖片符合使用者看到的項目。|
 |您的 Azure RMS 訂用帳戶包含文件追蹤|如果您的 Azure RMS 的訂用帳戶不包括文件追蹤和撤銷，使用者將無法完成使用者指示中的所有步驟。 在此情況下，購買確實支援這些功能的訂用帳戶，或修改使用者指示以移除使用這些功能的步驟。<br /><br />若要檢查您的訂用帳戶支援的項目： [Rights Management Services (RMS) 產品項目的比較](https://technet.microsoft.com/dn858608)|
 
@@ -95,7 +94,7 @@ ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
 
     ![[共用保護的檔案] 對話方塊 - 傳送電子郵件給我](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
-5.  按一下 **[立即傳送]**。
+5.  按一下 [立即傳送]。
 
 當 **[收件者]**、**[副本]** 或 **[密件副本]** 行上的人員收到這封電子郵件時，他們會看到訊息，指示他們如何讀取附加的 *&lt;Office 文件類型名稱&gt;*。 他們可以在許多裝置上讀取文件，包括 iPad、iPhone、Android 平板電腦和電話、Mac 電腦，以及 Windows 電腦。
 
@@ -134,7 +133,7 @@ ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
 
     ![[共用保護的檔案] 對話方塊 - 傳送電子郵件給我](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
-5.  按一下 **[立即傳送]**。
+5.  按一下 [立即傳送]。
 
 當 [ **收件者**]、[ **副本**] 或 [ **密件副本** ] 行上的人員收到這封電子郵件時，他們會看到訊息，指示他們如何讀取附加的價目表。 他們可以在許多裝置上讀取文件，包括 iPad、iPhone、Android 平板電腦和電話、Mac 電腦，以及 Windows 電腦。
 
@@ -155,6 +154,6 @@ ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

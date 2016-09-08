@@ -1,20 +1,19 @@
 ---
 title: "重新整理範本 | Azure RMS"
-description: 
-keywords: 
+description: "當您使用 Azure RMS 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
-ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
 
 # 重新整理使用者的範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 當您使用 Azure RMS 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟：
 
@@ -187,6 +186,6 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
