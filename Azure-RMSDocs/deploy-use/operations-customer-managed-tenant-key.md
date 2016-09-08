@@ -1,20 +1,19 @@
 ---
 title: "客戶管理 - 租用戶金鑰生命週期作業 |Azure RMS"
-description: 
-keywords: 
+description: "如果您自行管理 Azure Rights Management 的租用戶金鑰 (自備金鑰案例，簡稱為 BYOK)，請參閱下列各節，以了解與此拓撲有關的生命週期作業的詳細資訊。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 9bff4e1380dfa3fabab1e8cb9317f3dd31b05a77
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 500f9c0e4aff34aaf7b6836643a777a1cb1edc91
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 9bff4e1380dfa3fabab1e8cb9317f3dd31b05a77
 
 # 客戶管理：租用戶金鑰生命週期作業
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 如果您自行管理 Azure Rights Management 的租用戶金鑰 (自備金鑰案例，簡稱為 BYOK)，請參閱下列各節，以了解與此拓撲有關的生命週期作業的詳細資訊。
 
@@ -69,6 +68,6 @@ Microsoft 有專屬團隊負責對產品與服務中的安全性事件做出應�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

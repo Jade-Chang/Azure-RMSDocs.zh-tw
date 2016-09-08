@@ -4,9 +4,9 @@ description: "RMS SDK 2.1 平台可讓開發人員建置運用 RMS 或 Azure RMS
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
-ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ba0b6c3835bb5e1c67f1df3095e6e5f1f474b977
 
 
 ---
@@ -38,7 +38,7 @@ RMS SDK 2.1 可從 Microsoft 下載中心的 [RMS SDK 2.1 下載頁面](http://w
 
 如需特定程式設計元素的執行階段需求的詳細資訊，請參閱該元素的參考主題的＜需求＞一節。
 
-|主題|說明|
+|主題|描述|
 |-----|--------|
 |[概觀](ad-rms-overview.md)|Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。|
 |[使用者入門](getting-started-with-ad-rms-2-0.md)|RMS SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。|
@@ -48,7 +48,7 @@ RMS SDK 2.1 可從 Microsoft 下載中心的 [RMS SDK 2.1 下載頁面](http://w
 
  
 
-## 相關主題
+## 相關的主題
 
 * [RMS SDK 2.1 下載頁面](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
 * [RMS 開發人員的專屬部落格](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
@@ -59,6 +59,6 @@ RMS SDK 2.1 可從 Microsoft 下載中心的 [RMS SDK 2.1 下載頁面](http://w
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 

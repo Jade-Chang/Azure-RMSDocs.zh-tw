@@ -6,7 +6,7 @@ author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
 
 從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限 ([**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
 
-## 先決條件
+## 必要條件
 
 當您的應用程式正在使用 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立授權控制代碼時，它也必須明確授與擁有者完整權限 (權限)。
 
@@ -116,6 +116,6 @@ ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

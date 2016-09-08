@@ -1,27 +1,26 @@
 ---
 title: "BYOK 定價和限制 | Azure RMS"
-description: 
-keywords: 
+description: "若組織的訂用帳戶包含 Azure Rights Management，即可在 Azure 金鑰保存庫中使用 客戶管理的金鑰 (BYOK)，並免費記錄其使用情況。 然而，若需使用 Azure 金鑰保存庫，您必須具備 Azure 訂用帳戶，其中後者需支援金鑰保存庫及 HSM 保護的金鑰。 在 Azure 金鑰保存庫中使用金鑰便會產生每月費用。 如需詳細資訊，請參閱 Azure 金鑰保存庫定價頁面。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: ece615912d69eda78107c60245620ed36c0affd2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
 
 
 ---
 
 # BYOK 定價和限制
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 若組織的訂用帳戶包含 Azure Rights Management，即可在 Azure 金鑰保存庫中使用 客戶管理的金鑰 (BYOK)，並免費記錄其使用情況。 然而，若需使用 Azure 金鑰保存庫，您必須具備 Azure 訂用帳戶，其中後者需支援金鑰保存庫及 HSM 保護的金鑰。 在 Azure 金鑰保存庫中使用金鑰便會產生每月費用。 如需詳細資訊，請參閱 [Azure 金鑰保存庫定價頁面](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
@@ -63,6 +62,6 @@ BYOK 和使用情況記錄與整合 Azure RMS 的每個應用程式皆能完美�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

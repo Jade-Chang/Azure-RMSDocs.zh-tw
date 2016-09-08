@@ -1,27 +1,26 @@
 ---
 title: "步驟 2：受 HSM 保護的金鑰移轉至受 HSM 保護的金鑰 | Azure RMS"
-description: 
-keywords: 
+description: "這些指示屬於將路徑從 AD RMS 移轉至 Azure Rights Management，且只有在您的 AD RMS 金鑰是 HSM 保護的，而且您想要使用 Azure 金鑰保存庫中受 HSM 保護的租用戶金鑰移轉至 Azure Rights Management 時才適用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 437afd88efebd9719a3db98f8ab0ae07403053f7
-ms.openlocfilehash: 86f7bd025824b23c8eecdb05b62d83204ae1ccb4
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 690729d16358b7b997d9cd1fd8cabed22ce78df4
 
 
 ---
 
 # 步驟 2：HSM 保護的金鑰移轉至 HSM 保護的金鑰
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management*
 
 
 這些指示屬於[將路徑從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md)，且只有在您的 AD RMS 金鑰是 HSM 保護的，而且您想要使用 Azure 金鑰保存庫中受 HSM 保護的租用戶金鑰移轉至 Azure Rights Management 時才適用。 
@@ -95,6 +94,6 @@ ms.openlocfilehash: 86f7bd025824b23c8eecdb05b62d83204ae1ccb4
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

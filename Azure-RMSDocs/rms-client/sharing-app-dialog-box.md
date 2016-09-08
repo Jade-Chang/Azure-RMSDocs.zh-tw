@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 共用應用程式的對話方塊選項 | Azure RMS"
-description: 
-keywords: 
+description: "使用此資訊來幫助您在 RMS 共用應用程式的 [新增保護] 對話方塊或 [共用保護] 對話方塊中指定選項。 當您保護要共用的檔案或就地保護檔案並選擇自訂權限時，您會看到這個對話方塊。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: aa0f5456d17564183317e3e693ae63adb8c597c5
 
 
 ---
 
 # Rights Management 共用應用程式的對話方塊選項
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 使用此資訊來幫助您在 RMS 共用應用程式的 [新增保護]  對話方塊或 [共用保護]  對話方塊中指定選項。 當您[保護要共用的檔案](sharing-app-protect-by-email.md)或[就地保護檔案](sharing-app-protect-in-place.md)並選擇自訂權限時，您會看到這個對話方塊方塊。
 
@@ -36,7 +35,7 @@ ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 -   [一般保護和內建 (原生) 保護有何差異？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)
 
-|選項|說明|
+|選項|描述|
 |----------|---------------|
 |**使用者**|如果您尚未從 Outlook 指定電子郵件地址，請輸入您允許開啟檔案的人員的電子郵件地址。<br /><br />請注意，RMS 共用應用程式不支援所有的電子郵件地址。<br /><br />如果您的組織使用 Rights Management (AD RMS) 內部部署版本，您可以指定電子郵件地址僅限於組織內的人員。 在此情況下，如果您嘗試指定外部電子郵件地址，您會看到訊息指出，您的公司設定僅允許在公司內共用受保護的內容。 <br /><br /> 如果您的組織使用 Azure RMS，您指定的電子郵件地址可以是您組織內的人或另一個組織的人。<br /><br />例如：**janetm@contoso.com; p.dover@fabrikam.com**<br /><br />RMS 共用應用程式目前不支個人電子郵件地址。|
 |**一般保護**|如果選取這個選項，就表示您選取的檔案無法受到原生保護。 如需詳細資訊，請參閱 本頁面的[一般保護和內建 (原生) 保護有何差異？](#what-s-the-difference-between-generic-protection-and-built-in-native-protection)|
@@ -57,7 +56,7 @@ ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 如需其他技術資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)》中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
 
-## 自動建立的 .ppdf 檔案是什麼？
+## 什麼是自動建立的 .ppdf 檔案？
 
 -   當您透過電子郵件共用受保護的檔案時 (共用保護)，RMS 共用應用程式會自動為 Word、 Excel、 PowerPoint 或 PDF 建立檔案的 **.ppdf** 版本。 這是檔案的唯讀受保護版本，只有獲得授權的人員才可以開啟，也可確保收件者一定可以讀取附件，即使他們使用的行動裝置沒有原本就支援 Rights Management 的應用程式也沒問題。 如果這些人有安裝 RMS 共用應用程式，他們將能夠讀取附件。
 
@@ -79,6 +78,6 @@ ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

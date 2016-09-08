@@ -1,20 +1,19 @@
 ---
 title: "系統管理員如何控制個人版 RMS 建立的帳戶 | Azure RMS"
-description: 
-keywords: 
+description: "如果您不想將組織的個人版 RMS 訂閱轉換成付費訂閱，您仍可使用下列方法，控制您組織所建立之 Azure 目錄中的使用者帳戶。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: a900622fcce4a0a1431f47647709584e404a7f8c
 
 
 ---
@@ -23,7 +22,7 @@ ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
 
 # 系統管理員如何控制個人版 RMS 建立的帳戶
 
-*適用於：Azure Rights Management*
+>*適用於：Azure Rights Management*
 
 
 如果您不想將組織的個人版 RMS 訂閱轉換成付費訂閱，您仍可使用下列方法，控制您組織所建立之 Azure 目錄中的使用者帳戶：
@@ -47,6 +46,6 @@ ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

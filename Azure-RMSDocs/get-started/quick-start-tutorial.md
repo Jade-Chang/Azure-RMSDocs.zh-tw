@@ -4,24 +4,24 @@ description: "一個簡介教學課程，可為組織快速試用 Microsoft Azur
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1db923bf-7d19-4fdd-a413-bfeb58af5e03
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: c828ba3d4156c0115a012d10b375caee0d5e5c10
 
 
 ---
 
 # Azure Rights Management 快速入門教學課程
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 跳至︰ 
 > [!div class="op_single_selector"]
@@ -35,7 +35,7 @@ ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
 
 ![Azure RMS 快速入門教學課程全部步驟](../media/AzRMS_QuickStartStepsAll.PNG)
 
-本教學課程的目標對象是 IT 系統管理員和顧問，目的是協助他們評估 Azure Rights Management 是否能夠做為組織的資訊保護解決方案。 在生產環境中，啟動服務的指示由系統管理員來執行，傳送文件的指示則由一般使用者執行。 本教學課程囊括這兩項指示，以示範將機密文件安全傳送給別的組織的人員的端對端案例。 如果您在完成本教學課程時遇到任何問題，請寄送電子郵件到 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) ，我們會助您一臂之力。
+本教學課程的目標對象是 IT 系統管理員和顧問，目的是協助他們評估 Azure Rights Management 是否能夠做為組織的資訊保護解決方案。 在生產環境中，啟動服務的指示由系統管理員來執行，傳送文件的指示則由一般使用者執行。 本教學課程囊括這兩項指示，以示範將機密文件安全傳送給別的組織的人員的端對端案例。 如果您在完成本教學課程時遇到任何問題，請寄送電子郵件到 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial)，我們會助您一臂之力。
 
 若要完成本教學課程，您需要具備下列項目：
 
@@ -43,7 +43,7 @@ ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
 
     提示：如果您需要取得訂閱，請事先進行，因為這項程序有時可能需要一段時間才能完成。
 
--   用來登入 Office 365 系統管理中心或是 Azure 傳統入口網站的系統管理員帳戶，以便能夠啟動 Rights Management 服務。 此帳戶也必須有電子郵件地址和工作電子郵件服務 (例如 Exchange Online 或 Exchange Server)。
+-   用來登入 Office 365 系統管理中心或是 Azure 傳統入口網站的系統管理員帳戶，以便能夠啟動 Rights Management 服務。 此帳戶也必須具備電子郵件地址和工作電子郵件服務 (例如 Exchange Online 或 Exchange Server)。
 
 -   執行 Windows (至少要是 Windows 7 SP1)，且已安裝 Office 2016、Office 2013 或 Office 2010 的電腦。
 
@@ -57,6 +57,6 @@ ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

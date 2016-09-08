@@ -1,17 +1,16 @@
 ---
 title: "如何設定標籤以套用 Rights Management 保護 | Azure Rights Management"
-description: 
-author: cabailey
+description: "您可以透過使用 Rights Management 服務來保護您最敏感的文件與電子郵件，它會使用加密、身分識別與授權原則來協助防止資料遺失。 此保護會在您設定標籤以使用 Rights Management 範本時套用。"
 manager: mbaldwin
 ms.date: 08/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: e11a5a836d6a410ba49ac17cfe95d8530ecb785f
-ms.openlocfilehash: 60738c310a3e7c734bfe3e48e16535ed3be05bb4
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
 
 
 ---
@@ -79,6 +78,6 @@ ms.openlocfilehash: 60738c310a3e7c734bfe3e48e16535ed3be05bb4
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

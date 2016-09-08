@@ -4,9 +4,9 @@ description: "Android 應用程式可以使用 Microsoft Rights Management SDK 4
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: 4ff6328c0be4cd217390ee802e53e93c90f41c99
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 72196edd630a1934f2c0b6e755771039fceaa795
 
 
 ---
@@ -26,12 +26,12 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 本主題將引導您設定您的環境，以建立您自己的新應用程式。
 
--   [先決條件](#prerequisites)
+-   [必要條件](#prerequisites)
 -   [選用](#optional)
 -   [設定您的開發環境](#configuring-your-development-environment_)
 -   [另請參閱](#see-also)
 
-## 先決條件
+## 必要條件
 
 建議您在開發系統上使用下列軟體︰
 
@@ -102,7 +102,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
     ![將它匯入至工作區](../media/Android-setup-07.png)
 
--   按 **[下一步]**。 瀏覽並選取您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 SDK 應該會以 **com.microsoft.rightsmanagement** 出現在清單中。
+-   按一下 [下一步] 。 瀏覽並選取您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 SDK 應該會以 **com.microsoft.rightsmanagement** 出現在清單中。
 
     ![巡覽以選取資料夾](../media/Android-setup-08c.jpg)
 
@@ -150,6 +150,6 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

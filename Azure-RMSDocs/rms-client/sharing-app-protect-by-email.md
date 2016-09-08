@@ -1,35 +1,34 @@
 ---
 title: "保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案 | Azure RMS"
-description: 
-keywords: 
+description: "當您保護您透過電子郵件共用的檔案時，它會建立原始檔案的新版本。 原始檔案仍未受保護而新的版本為受保護且自動附加到您稍後傳送的電子郵件。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9becbab6612e49e285774e2e8742d6448b11a041
 
 
 ---
 
 # 藉由使用 Rights Management 共用應用程式，保護您透過電子郵件共用的檔案
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
-當您保護您透過電子郵件共用的檔案時，它會建立新版本的原始檔。 原始檔仍未受保護，且新版本受保護且會自動附加到您稍後要傳送的電子郵件。
+當您保護您透過電子郵件共用的檔案時，它會建立新版本的原始檔。 原始檔案仍未受保護而新的版本為受保護且自動附加到您稍後傳送的電子郵件。
 
-在某些情況下 (如 Microsoft Word、Excel 和 PowerPoint 所建立的檔案)，RMS 共用應用程式會將它附加到電子郵件訊息的檔案建立兩個版本。 檔案的第二個版本具有 **.ppdf** 副檔名，而且是檔案的 PDF 陰影複製。 即使收件者安裝的應用程式與您用來建立檔案的應用程式不同，這個版本的檔案仍可確保收件者永遠可以讀取檔案。 此案例通常適用於人員在行動裝置上讀取他們的電子郵件，並想要檢視其電子郵件附件時。 若要開啟檔案，他們只需要 RMS 共用應用程式。 然後，他們就可以讀取附加的檔案，但是在他們使用支援 RMS 的應用程式開啟其他版本的檔案之前，他們無法將其變更。
+在某些情況下 (如 Microsoft Word、Excel 和 PowerPoint 所建立的檔案)，RMS 共用應用程式會將它附加到電子郵件訊息的檔案建立兩個版本。 檔案的第二個版本具有 **.ppdf** 副檔名，而且是檔案的 PDF 陰影複製。 即使收件者安裝的應用程式與您用來建立檔案的應用程式不同，這個版本的檔案仍可確保收件者永遠可以讀取檔案。 這是使用者在行動裝置上讀取電子郵件且想要檢視其電子郵件附件時的通例。 他們開啟檔案所需要的就是 RMS 共用應用程式。 然後，他們可以讀取附加的檔案，但是無法變更它，直到他們使用支援 RMS 的應用程式開啟檔案的另一個版本。
 
-如果您的組織使用 Azure RMS，您就可以追蹤您透過共用保護的檔案：
+如果您的組織使用 Azure RMS，您可以追蹤您藉由共用來保護的檔案：
 
--   選取一個選項，以在有人嘗試開啟這些受保護的附件時收到電子郵件。 每次有人存取檔案時，您都會收到通知，了解誰在嘗試開啟檔案、何時嘗試以及是否成功 (他們是否成功通過驗證)。
+-   選取選項以在有人嘗試開啟這些受保護的附件時收到電子郵件。 每次檔案被存取時，您會收到通知，知道誰在何時嘗試開啟檔案，以及他們是否成功 (是否成功驗證)。
 
 -   使用文件追蹤網站。 您甚至可以藉由在文件追蹤網站中撤銷檔案的存取權以停止共用檔案。 如需詳細資訊，請參閱[當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。
 
@@ -66,7 +65,7 @@ ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
 
 2.  在 [共用保護](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 [ 傳送]。
 
-3.  您可能會快速看到一個對話方塊，告訴您檔案已受保護，然後您會看到為您建立的電子郵件訊息，告知您受到 Microsoft RMS 保護之附件的收件者，以及他們必須登入。 當使用者按一下連結以登入時，他們會看到指示與連結，以確保他們可以開啟您的受保護附件。
+3.  您可能會快速看到一個對話方塊，告訴您檔案已受保護，然後您會看到為您建立的電子郵件訊息，告知您受到 Microsoft RMS 保護之附件的收件者，以及他們必須登入。 當他們按一下連結登入時，他們會看到指示與連結，以確保他們可以開啟您的受保護的附件。
 
     範例：
 
@@ -93,6 +92,6 @@ ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

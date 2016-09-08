@@ -1,12 +1,11 @@
 ---
 title: "Rights Management (RMS) 用戶端 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Rights Management Services 是用戶端伺服器方案，其中 RMS 用戶端與您在電腦和行動裝置上執行的應用程式整合，而 RMS 服務位於雲端 (Azure RMS) 或內部部署 (AD RMS)。 RMS 用戶端是自動隨某些應用程式一起安裝，例如 Office 應用程式、RMS 共用應用程式和軟體廠商的 RMS 應用程式。 不過，它也可以自行安裝，支援案例如：開發人員想要將 RMS 保護整合到您的特定業務應用程式，以及系統管理員或進階使用者想要使用 RMS 保護工具大量保護檔案等等。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
@@ -14,15 +13,15 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c21202793dca90edda943082fcd718bdf7397ca
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 234095a733633462ba1a221a5ac6e1e1d47df12b
 
 
 ---
 
 # Rights Management (RMS) 用戶端
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 Microsoft Rights Management Services 是用戶端伺服器方案，其中 RMS 用戶端與您在電腦和行動裝置上執行的應用程式整合，而 RMS 服務位於雲端 (Azure RMS) 或內部部署 (AD RMS)。 RMS 用戶端是自動隨某些應用程式一起安裝，例如 Office 應用程式、RMS 共用應用程式和軟體廠商的 RMS 應用程式。 不過，它也可以自行安裝，支援案例如：開發人員想要將 RMS 保護整合到您的特定業務應用程式，以及系統管理員或進階使用者想要使用 RMS 保護工具大量保護檔案等等。
 
@@ -44,6 +43,6 @@ Microsoft Rights Management Services 是用戶端伺服器方案，其中 RMS �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

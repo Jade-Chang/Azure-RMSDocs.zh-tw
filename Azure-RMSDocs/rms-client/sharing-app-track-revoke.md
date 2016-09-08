@@ -1,27 +1,26 @@
 ---
 title: "當您使用 RMS 共用應用程式時，追蹤及撤銷文件 | Azure RMS"
-description: 
-keywords: 
+description: "您使用 RMS 共用應用程式來保護您的文件之後，如果您的組織使用 Azure Rights Management 而非 Active Directory Rights Management Services，您可以追蹤人員使用受保護文件的方式。 如有必要，您也可以在想要停止共用這些文件時，撤銷其存取權。 若要這樣做，請使用文件追蹤網站，您可以從 Windows 電腦、Mac 電腦甚至是從平板電腦和電話存取此網站。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
-ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d27a516339a9687cb5ce117b6a2aa93730863c2d
 
 
 ---
 
 # 當您使用 RMS 共用應用程式時，追蹤及撤銷文件
 
-*適用於︰Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 您使用 RMS 共用應用程式來保護您的文件之後，如果您的組織使用 Azure Rights Management 而非 Active Directory Rights Management Services，您可以追蹤人員使用受保護文件的方式。 如有必要，您也可以在想要停止共用這些文件時，撤銷其存取權。 若要這樣做，請使用**文件追蹤網站**，您可以從 Windows 電腦、Mac 電腦甚至是從平板電腦和電話存取此網站。
 
@@ -107,6 +106,6 @@ ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

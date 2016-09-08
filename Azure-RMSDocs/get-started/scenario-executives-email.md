@@ -1,27 +1,26 @@
 ---
 title: "案例 - 主管安全地交換機密資訊 | Azure RMS"
-description: 
-keywords: 
+description: "此案例和支援使用者文件使用 Azure Rights Management，可讓主管安全地互換電子郵件與電子郵件附件，並有原則會自動限制主管的存取，完全不需要他們採取任何特殊動作。 這些電子郵件及所有附件均由 Azure Rights Management 自動提供保護。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3c15175f26c5e3bc0ff824c284beedc639cf9309
 
 
 ---
 
 # 案例 - 主管安全地交換機密資訊
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 此案例和支援使用者文件使用 Azure Rights Management，可讓主管安全地互換電子郵件與電子郵件附件，並有原則會自動限制主管的存取，完全不需要他們採取任何特殊動作。 這些電子郵件及所有附件均由 Azure Rights Management 自動提供保護。
 
@@ -133,6 +132,6 @@ ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "檢視並使用 Rights Management 保護的檔案 | Azure RMS"
-description: 
-keywords: 
+description: "當您的電腦上安裝 Rights Management (RMS) 共用應用程式之後，您只要按兩下受保護的檔案即可檢視它。 檔案可能是電子郵件郵件的附件，您也可能在使用 [檔案總管] 時看見它。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
-ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 78810a639c2360707b628423bb68b2f05e8c5b56
 
 
 ---
 
 # 檢視並使用 Rights Management 保護的檔案
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 當[您的電腦上安裝 Rights Management (RMS) 共用應用程式](install-sharing-app.md)之後，您只要按兩下受保護的檔案即可檢視它。 檔案可能是電子郵件郵件的附件，您也可能在使用 [檔案總管] 時看見它。
 
@@ -108,6 +107,6 @@ ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

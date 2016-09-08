@@ -4,9 +4,9 @@ description: "檔案 API 目前的版本支援 MS Office 檔案、PDF 的原生�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b5fbbf637a34371a676a6cba169cc0268ce5e541
-ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: e41d8d697d7c35beef84277bc5b9fd497d79cc10
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
 
 系統管理員可以設定登錄機碼，設定是否以及應如何根據檔案的副檔名來保護檔案。 如需使用檔案 API 時如何設定檔案保護的詳細資訊，請參閱[檔案 API 組態](file-api-configuration.md)。
 
-## 相關主題
+## 相關的主題
 
 * [開發人員注意事項](developer-notes.md)
 * [檔案 API 組態](file-api-configuration.md)
@@ -43,6 +43,6 @@ ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

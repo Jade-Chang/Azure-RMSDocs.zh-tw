@@ -1,20 +1,19 @@
 ---
 title: "RMS 連接器的登錄設定 | Azure RMS"
-description: 
-keywords: 
+description: "只有當您想在執行 Exchange、SharePoint 或 Windows Server 的伺服器上手動新增或檢查登錄設定，也就是設定伺服器使用 RMS 連接器時，才使用下列各節的表格。 若要設定這些伺服器，建議的方法是使用 Microsoft RMS 連接器的伺服器設定工具。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 935c354f9bcd3be23a953cdeb08c7860257637d6
-ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 49fff7c2e0c06d26751136b681022f221f80d6cd
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
 
 # Rights Management 連接器的登錄設定
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 
 只有當您想在執行 Exchange、SharePoint 或 Windows Server 的伺服器上手動新增或檢查登錄設定，也就是設定伺服器使用 [RMS 連接器](deploy-rms-connector.md)時，才使用下列各節的表格。 若要設定這些伺服器，建議的方法是使用 Microsoft RMS 連接器的伺服器設定工具。
@@ -217,6 +216,6 @@ ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
 回到[部署 Azure Rights Management 連接器](deploy-rms-connector.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

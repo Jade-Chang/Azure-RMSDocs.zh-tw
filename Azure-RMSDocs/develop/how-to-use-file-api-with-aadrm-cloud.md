@@ -4,9 +4,9 @@ description: "本主題概述設定服務應用程式以使用 Azure Rights Mana
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: fce408a8c7a1114375745c3783443b87cd80ba78
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b41c7fb422689086a76c004e9f80999178590f3d
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: fce408a8c7a1114375745c3783443b87cd80ba78
 **重要**  
 若要搭配 Azure RMS 使用 Rights Management Services SDK 2.1 服務應用程式，您必須建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS 需求：支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。
 
-## 先決條件
+## 必要條件
 
 -   必須安裝與設定 RMS SDK 2.1。 如需詳細資訊，請參閱[開始使用 RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)。
 -   您必須藉由使用對稱金鑰選項，或其他方式來[透過 ACS 建立服務身分識別](https://msdn.microsoft.com/en-us/library/gg185924.aspx)，並從該程序記錄金鑰資訊。
@@ -151,7 +151,7 @@ ms.openlocfilehash: fce408a8c7a1114375745c3783443b87cd80ba78
 
 您現在已完成啟用應用程式以使用 Azure Rights Management 所需的步驟。
 
-## 相關主題
+## 相關的主題
 
 * [開始使用 Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [開始使用 RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)
@@ -173,6 +173,6 @@ ms.openlocfilehash: fce408a8c7a1114375745c3783443b87cd80ba78
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

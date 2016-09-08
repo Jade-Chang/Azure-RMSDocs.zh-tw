@@ -1,27 +1,26 @@
 ---
 title: "使用檔案伺服器資源管理員 FCI 的 Windows PowerShell Script for Azure RMS 保護 | Azure RMS"
-description: 
-keywords: 
+description: "此頁面包含複製和編輯的指令碼範例，如＜具有 Windows Server 檔案分類基礎結構的 RMS 保護＞所示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: a1771c37bffa2af60773a5befdd35c14f684c942
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 567280a3992d8964d4112e597ebda8cf65f5ec9a
 
 
 ---
 
 # 使用檔案伺服器資源管理員 FCI 的 Windows PowerShell Script for Azure RMS 保護
 
-*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
 此頁面包含複製和編輯的指令碼範例，如[具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md)所示。
 
@@ -175,6 +174,6 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

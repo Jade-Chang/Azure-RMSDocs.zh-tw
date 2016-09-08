@@ -1,27 +1,26 @@
 ---
 title: "下載並安裝 Rights Management 共用應用程式 | Azure RMS"
-description: 
-keywords: 
+description: "您不需要是本機系統管理員也能安裝 RMS 共用應用程式。 然而，如果你不是本機系統系統管理員，且使用 Office 2010，則會有一些限制。 如需詳細資訊，請參閱本頁面上的＜如果您不是本機系統管理員並使用 Office 2010＞一節。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 28c015a5c46668bd5466aa07961b05582bb9b2c2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
 
 
 ---
 
 # 下載及安裝 Rights Management 共用應用程式
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 您不需要是本機系統管理員也能安裝 RMS 共用應用程式。 然而，如果你不是本機系統系統管理員，且使用 Office 2010，則會有一些限制。 如需詳細資訊，請參閱本頁面上的[如果您不是本機系統管理員並使用 Office 2010](#if-you-are-not-a-local-administrator-and-use-office-2010) 一節。
 
@@ -70,6 +69,6 @@ ms.openlocfilehash: 28c015a5c46668bd5466aa07961b05582bb9b2c2
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

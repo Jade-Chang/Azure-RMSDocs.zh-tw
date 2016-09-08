@@ -1,20 +1,19 @@
 ---
 title: "Azure Information Protection 預覽的常見問題集 | Azure Information Protection"
-description: 
-keywords: 
+description: "對 Azure Information Protection 的預覽版本有疑問？ 看看此處是否有解答。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
-ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
 
 
 ---
@@ -57,7 +56,7 @@ ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 ## 我需要什麼訂用帳戶才能試用 Azure Information Protection？
 
-針對預覽版本，您可以使用包含 Azure Rights Management 的任何訂用帳戶。 所有地區均可使用 Azure Information Protection。 如需可用訂用帳戶和免費試用連結的詳細資訊，請參閱 [Azure RMS 需求：支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。
+針對預覽版本，您可以使用包括使用 Azure Rights Management 保護 Office 文件和電子郵件的任何 Office 365 訂閱。 所有地區均可使用 Azure Information Protection。 如需可用的訂閱以及免費試用版連結的詳細資訊，請參閱 Azure RMS 需求文件中的 [Office 365 訂閱](../get-started/requirements-subscriptions.md#office-365-subscription)小節。
 
 若要在 Azure 入口網站中設定 Azure Information Protection 原則，您必須有 Azure 訂用帳戶。 如果您的組織尚無 Azure 訂用帳戶，您可以註冊免費試用以取得訂用帳戶：移至 [Azure 快速入門](https://account.windowsazure.com/organization)頁面，並遵循指示進行。
 
@@ -188,6 +187,6 @@ Azure Information Protection 分類的檔案和電子郵件，可以供任何使
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

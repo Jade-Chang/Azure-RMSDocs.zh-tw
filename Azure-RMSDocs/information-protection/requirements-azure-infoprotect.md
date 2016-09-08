@@ -1,20 +1,19 @@
 ---
 title: "Azure Information Protection 需求 | Azure RMS"
-description: 
-keywords: 
+description: "若要評估 Azure Information Protection 的預覽版本，請確定您具備下列必要條件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aa4353e5-c5b0-47f6-a6f9-87d13e8f075f
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c0652e05576ab28d7b77380ab1b8aa0ca2d3e479
-ms.openlocfilehash: e3eb845af4e2cfec43c63c9625163f62c83cf954
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: cc1ec2b2544ac368821155b7e0c3c0e179982d1d
 
 
 ---
@@ -29,7 +28,7 @@ ms.openlocfilehash: e3eb845af4e2cfec43c63c9625163f62c83cf954
 
 |需求|詳細資訊|
 |---------------|--------------------|
-|包含 Azure RMS 的雲端訂閱|您的組織必須具有支援 Rights Management 的雲端訂閱。<br /><br />如需詳細資訊和免費試用連結，請參閱[支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。|
+|Office 365 訂閱，其中包含 Azure Rights Management|例如，Office 365 E3、E4 或 E5 訂閱。<br /><br />如需可用的訂閱以及免費試用版連結的詳細資訊，請參閱 Azure RMS 需求文件中的 [Office 365 訂閱](../get-started/requirements-subscriptions.md#office-365-subscription)小節。|
 |Azure AD 目錄|您的組織必須具備 Azure AD 目錄才能支援 Azure RMS 和 Azure Information Protection 的使用者驗證。 此外，若要從內部部署目錄 (AD DS) 使用您的使用者帳戶，您也必須設定目錄整合。<br /><br />當您有必要的用戶端軟體且正確設定 MFA 支援基礎結構時，Azure RMS 就支援 Multi-Factor Authentication (MFA)。<br /><br />如需詳細資訊，請參閱 [Azure AD 目錄](../get-started/requirements-azure-ad.md)，其中 Azure RMS 的資訊也適用於 Azure Information Protection。|
 |用戶端裝置|此預覽版本支援下列用戶端裝置︰<br /><br />- Windows 10 (x86、x64)<br /><br />- Windows 8.1 (x86、x64)<br /><br />- Windows 8 (x86、x64)<br /><br />- Windows 7 Service Pack 1 (x86、x64)<br /><br />當您保護資料時，它可由支援 Azure Rights Management 的相同裝置 (Windows、Mac、iOS、Android) 來取用。 如需這些裝置的詳細資訊以及支援的版本，請參閱 [Azure RMS 需求：支援 Azure RMS 的用戶端裝置](../get-started/requirements-client-devices.md)。|
 |應用程式|在預覽版本和公開上市 (GA) 版本中，Azure Information Protection 支援標記及保護以下列 Office 應用程式建立的檔案和電子郵件︰**Word**、**Excel**、**PowerPoint** 和 **Outlook**，來自下列 Office 套件︰<br /><br />- Office Professional Plus 2016<br /><br />- Office Professional Plus 2013 Service Pack 1<br /><br />- Office Professional Plus 2010<br /><br />在公開上市之後，請在 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格) 上尋找公告，以得知 Azure Information Protection 何時將支援其他檔案類型，例如 PDF、音訊、視訊和影像檔。|
@@ -42,6 +41,6 @@ ms.openlocfilehash: e3eb845af4e2cfec43c63c9625163f62c83cf954
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

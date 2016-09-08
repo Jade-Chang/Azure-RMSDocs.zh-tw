@@ -1,27 +1,26 @@
 ---
 title: "設定 Azure Rights Management 連接器的伺服器 | Azure RMS"
-description: 
-keywords: 
+description: "使用下列資訊可協助您設定將使用 Azure Rights Management (RMS) 連接器的內部部署伺服器。 這些程序涵蓋部署 Azure Rights Management 連接器的步驟 5。"
 author: cabailey
 manager: mbaldwin
 ms.date: 06/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0b07ecc88b1d2d344f0984d4a805cc033996cc4d
-ms.openlocfilehash: 79171b5931b69ca18d2a2cbe321d5d5887903da2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d2b15dac1f2b2163ff72d80c97ca0d5da44fd13c
 
 
 ---
 
 # 設定 Azure Rights Management 連接器的伺服器
 
-*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
 
 使用下列資訊可協助您設定將使用 Azure Rights Management (RMS) 連接器的內部部署伺服器。 這些程序涵蓋[部署 Azure Rights Management 連接器](deploy-rms-connector.md)的步驟 5。
@@ -250,6 +249,6 @@ ms.openlocfilehash: 79171b5931b69ca18d2a2cbe321d5d5887903da2
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

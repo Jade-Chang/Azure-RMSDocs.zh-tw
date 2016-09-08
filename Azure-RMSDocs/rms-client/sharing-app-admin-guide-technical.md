@@ -1,20 +1,19 @@
 ---
 title: "Rights Management 共用應用程式技術概觀 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Rights Management 共用應用程式是可選擇性下載的應用程式，適用於 Microsoft Windows 和其他提供下列功能的平台。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 09effc3dfb238370563981defdcf3c3b4cffcaae
-ms.openlocfilehash: 2f249996b9b912f744754357423a0c4f134ec094
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d5e1c7969d2125c4f66d6dcea3bde0c81a7de1f3
 
 
 ---
@@ -22,14 +21,14 @@ ms.openlocfilehash: 2f249996b9b912f744754357423a0c4f134ec094
 
 # Microsoft Rights Management 共用應用程式技術概觀與保護詳細資料
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 
 Microsoft Rights Management 共用應用程式是可選擇性下載的應用程式，適用於 Microsoft Windows 和其他提供下列功能的平台：
 
--   單一檔案的保護，或多個檔案以及選取之資料夾內所有檔案的大量保護。
+-   保護單一檔案、大量保護多個檔案、以及保護選取之資料夾內的所有檔案。
 
--   任何類型檔案的完整保護支援，以及常用文字和影像檔案類型的內建檢視器。
+-   完整支援對所有類型檔案的保護，以及對常用文字和影像檔案類型的內建檢視器。
 
 -   對不支援 RMS 保護的檔案提供一般保護。
 
@@ -48,7 +47,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 |保護類型|原生|泛型|
 |----------------------|----------|-----------|
-|說明|針對文字、影像、Microsoft Office (Word、Excel、PowerPoint) 檔案、.pdf 檔案及其他支援 AD RMS 的應用程式檔案類型，原生保護提供了包含加密和增強權利 (權限) 的強力層級保護。|針對所有其他應用程式和檔案類型，一般保護提供包含檔案封裝 (使用 .pfile 檔案類型) 和驗證 (確認使用者是否獲得開啟檔案授權) 的保護層級。|
+|描述|針對文字、影像、Microsoft Office (Word、Excel、PowerPoint) 檔案、.pdf 檔案及其他支援 Azure RMS 的應用程式檔案類型，原生保護提供了包含加密和增強權利 (權限) 的強力層級保護。|針對所有其他應用程式和檔案類型，一般保護提供包含檔案封裝 (使用 .pfile 檔案類型) 和驗證 (確認使用者是否獲得開啟檔案授權) 的保護層級。|
 |保護|完整加密檔案並以下列方式強制執行保護：<br /><br />受保護的內容轉譯之前，透過電子郵件收到檔案或是透過檔案或共用權限存取檔案的人，必須成功通過驗證。<br /><br />此外，當檔案受到保護時，若要在 IP 檢視器中 (適用於受保護的文字和影像檔) 或相關聯的應用程式中 (適用於所有其他支援的檔案類型) 轉譯內容時，將完全強制執行內容擁有者所設定的使用權限與原則。|以下列方式強制執行檔案保護：<br /><br />受保護的內容轉譯之前，獲得開啟檔案授權和獲得檔案存取權的人，必須成功通過驗證。 如果授權失敗，檔案不會開啟。<br /><br />系統會顯示內容擁有者所設定的使用權限與原則，以通知授權使用者其預定使用原則。<br /><br />不過，稽核授權的使用者開啟並存取檔案的記錄時，非支援應用程式不會強制執行使用權限。|
 |預設檔案類型|這是下列檔案類型的預設保護層級：<br /><br />- 文字和影像檔案<br /><br />- Microsoft Office (Word、Excel、PowerPoint) 檔案<br /><br />- 可攜式文件格式 (.pdf)<br /><br />如需詳細資訊，請參閱下一節的[支援的檔案類型與副檔名](#supported-file-types-and-file-name-extensions)。|這是完整保護不支援的所有其他檔案類型 (如 .vsdx、.rtf 等等) 的預設保護。|
 您可以變更 RMS 共用應用程式套用的預設保護層級。 您可以將預設的原生層級變更為一般、從一般變更為原生，甚至阻止 RMS 共用應用程式套用保護。 如需詳細資訊，請參閱本文章中的[變更檔案的預設保護層級](#changing-the-default-protection-level-of-files)一節。
@@ -65,27 +64,27 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 |原始副檔名|受 RMS 保護的副檔名|
 |--------------------------------|-------------------------------------|
-|.txt|。ptxt|
-|。xml|。pxml|
-|。jpg|。pjpg|
-|。jpeg|。ppng|
-|。pdf|。ppdf|
+|.txt|.ptxt|
+|.xml|.pxml|
+|。jpg|.pjpg|
+|.jpeg|.ppng|
+|.pdf|.ppdf|
 |。png|。ppng|
 |.tif|.ptif|
-|。tiff|。ptiff|
-|。bmp|。pbmp|
-|。gif|。pgif|
-|。giff|。pgiff|
-|。jpe|。pjpe|
-|。jfif|。pjfif|
-|。jt|。pjt|
+|。tiff|.ptiff|
+|.bmp|.pbmp|
+|.gif|.pgif|
+|。giff|.pgiff|
+|。jpe|.pjpe|
+|.jfif|.pjfif|
+|.jt|.pjt|
 ¹ PDF 轉譯由 Foxit 提供。 Copyright © 2003–2014 by Foxit C或p或ation。
 
 下表列出 Microsoft Rights Management 共用應用程式在 Microsoft Office 2016、Office 2013 和 Office 2010 中原生支援的檔案類型。 這些檔案受 RMS 保護後副檔名維持不變。
 
 |Office 支援的檔案類型|Office 支援的檔案類型|
 |----------------------------------|----------------------------------|
-|。doc<br /><br />。docm<br /><br />。docx<br /><br />。dot<br /><br />。dotm<br /><br />。dotx<br /><br />。potm<br /><br />。potx<br /><br />。pps<br /><br />。ppsm<br /><br />。ppsx<br /><br />。ppt<br /><br />。pptm|。pptx<br /><br />。thmx<br /><br />。xla<br /><br />。xlam<br /><br />。xls<br /><br />。xlsb<br /><br />。xlt<br /><br />。xlsm<br /><br />。xlsx<br /><br />。xltm<br /><br />。xltx<br /><br />.xps|
+|.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
 ### 變更檔案的預設保護層級
 您可以編輯登錄來變更 RMS 共用應用程式對檔案的保護。 例如，您可以強制支援原生保護的檔案受到 RMS 共用應用程式的一般保護。
@@ -98,7 +97,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 -   若要配合會依檔案副檔名而採取動作的安全性系統，也可以重新設定系數以配合 .pfile 副檔名，但無法重新設定以配合原生保護的多個副檔名。
 
-同樣地，您可以強制 RMS 共用應用程式對預設會套用一般保護的檔案套用原生保護。 這可能適用於您有支援 RMS API 的應用程式的情況 – 例如，內部開發人員所撰寫的企業營運應用程式或向獨立軟體廠商 (ISV) 購買的應用程式。
+同樣地，您可以強制 RMS 共用應用程式對預設會套用一般保護的檔案套用原生保護。 這可能適用於您有支援 RMS API的應用程式的情況 – 例如，內部開發人員所撰寫的企業營運應用程式或向獨立軟體廠商 (ISV) 購買的應用程式。
 
 您也可以強制 RMS 共用應用程式封鎖檔案的保護 (不套用原生保護或一般保護)。 例如，當您有必須能夠開啟特定檔案來處理其內容的自動化應用程式或服務，可能有此需要。 當您封鎖某個檔案類型的保護時，使用者無法使用 RMS 共用應用程式來保護該檔案類型的檔案。 當他們嘗試保護檔案時，會看到訊息指出管理員已防止保護，且他們必須取消其保護檔案的動作。
 
@@ -140,6 +139,6 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

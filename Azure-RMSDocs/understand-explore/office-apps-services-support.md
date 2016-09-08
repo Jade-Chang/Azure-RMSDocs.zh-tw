@@ -1,20 +1,19 @@
 ---
 title: "Office 應用程式和服務 | Azure RMS"
-description: 
-keywords: 
+description: "使用者 Office 應用程式 (例如 Word、Excel、PowerPoint 及 Outlook) 和 Office 服務 (例如 Exchange 和 SharePoint) 可使用 Microsoft Azure Rights Management 來協助保護貴組織的資料。"
 author: cabailey
 manager: mbaldwin
 ms.date: 06/30/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99eb67f6296ad1782c787aabb73a28458c02f367
-ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 93dde9494a430526ebd26e1d5123ad44901ffcbb
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
 
 # Office 應用程式和服務
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 使用者 Office 應用程式 (例如 Word、Excel、PowerPoint 及 Outlook) 和 Office 服務 (例如 Exchange 和 SharePoint) 可使用 Microsoft Azure Rights Management 來協助保護貴組織的資料。
 
@@ -73,6 +72,6 @@ ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
 若要查看其他應用程式和服務如何支援 Azure Rights Management，請參閱[應用程式如何支援 Azure Rights Management](applications-support.md)。
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 
