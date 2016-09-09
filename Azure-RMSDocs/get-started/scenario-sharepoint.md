@@ -1,9 +1,9 @@
 ---
 title: "案例 - 保留 SharePoint 中儲存之文件的控制 | Azure RMS"
-description: "此案例和支援的使用者文件使用 Azure Rights Management 來確保您能夠控制儲存在 SharePoint 中的 Office 文件。 例如，文件會自動施以保護，以避免使用者蓄意或意外洩漏，同時還能在文件下載或同步處理之後，封鎖對內容的存取。 需要保護的檔案可能會是需要內部共同作業的設計文件或計畫，也可能屬於其他交付項目。 當您設定 SharePoint 的受保護文件庫時，其中所儲存的 Office 檔案會由 Azure Rights Management 提供保護。"
+description: "此案例和支援的使用者文件使用 Azure Rights Management 來確保您能夠控制儲存在 SharePoint 中的 Office 文件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: f0dfe895820d33eab1d3a69c92e881287072f554
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
 
 
 ---

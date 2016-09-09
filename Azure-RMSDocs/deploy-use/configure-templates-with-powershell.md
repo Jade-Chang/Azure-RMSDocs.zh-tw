@@ -3,7 +3,7 @@ title: "自訂範本的 PowerShell 參考 | Azure RMS"
 description: "您在 Azure 傳統入口網站中建立和管理範本所執行的一切動作，也可以從命令列利用 PowerShell 來完成。 此外，您還可以匯出和匯入範本，以便在租用戶之間複製範本，或對範本中複雜的屬性進行整批編輯，例如多語系名稱和說明。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 4874e6061bb9b8781fc2ad02c80dba38084f4747
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 5068021b504e9f943c0d4e57f13d58fc5cb5d391
 
 
 ---

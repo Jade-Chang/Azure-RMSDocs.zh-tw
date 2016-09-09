@@ -1,9 +1,9 @@
 ---
 title: "Azure Rights Management 的概觀 | Azure RMS"
-description: "Microsoft Azure Rights Management (Azure RMS) 可協助您保護貴組織的機密性資料，防止未獲授權的存取行為，並控制這項資訊的使用方式。 Azure Rights Management 是一項雲端服務，並且已整合至 Office 365 及 Azure Active Directory 等其他 Microsoft 雲端服務和應用程式中。 它也可以搭配使用您自己的企業營運系統應用程式與軟體廠商中的資訊保護解決方案，不論這些應用程式和解決方案是在內部部署環境還是雲端中。"
+description: "Microsoft Azure Rights Management (Azure RMS) 可協助您保護貴組織的機密性資料，防止未獲授權的存取行為，並控制這項資訊的使用方式。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 9d6c68c01cbd410def904f7cf256ffe9a5a5417b
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: b6589429693854b73228b2d90de1a787f03663ff
 
 
 ---

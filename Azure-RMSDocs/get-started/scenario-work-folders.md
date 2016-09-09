@@ -1,9 +1,9 @@
 ---
 title: "案例 - 將工作資料夾設定為持續保護 | Azure RMS"
-description: "此案例和支援的使用者文件使用 Azure Rights Management 將保護持續套用至工作資料夾中的 Office 文件。 工作資料夾使用執行 Windows Server 的檔案伺服器角色服務，可提供一致的方式讓使用者從他們的電腦和裝置存取工作檔案。 雖然工作資料夾提供它自己的加密來保護檔案，如果將檔案移至工作資料夾環境以外的地方，便會失去這項保護。"
+description: "此案例和支援的使用者文件使用 Azure Rights Management 將保護持續套用至工作資料夾中的 Office 文件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 1fdb62af06a3011e1102df0df3f9b61bcdc67edd
 
 
 ---
