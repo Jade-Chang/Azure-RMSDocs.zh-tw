@@ -1,9 +1,9 @@
 ---
 title: "Azure Rights Management 部署藍圖 | Azure RMS"
-description: "使用下列步驟來為貴組織準備、實作及管理 Azure Rights Management (Azure RMS)。"
+description: "使用下列步驟來為組織準備、實作及管理 Azure Rights Management (Azure RMS)。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 13ec3a88eb1c072bf94b6c54e3e4d97e45cc8eb2
+ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
+ms.openlocfilehash: 06f07ad5c8c0f0e1f8511051a84af0b1f8e35647
 
 
 ---

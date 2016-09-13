@@ -1,9 +1,9 @@
 ---
 title: "透過使用 Rights Management 共用應用程式從檔案移除保護 | Azure RMS"
-description: "若要從先前使用 RMS 共用應用程式保護的檔案移除保護 (也就是取消保護檔案)，請從 [檔案總管] 使用 [移除保護] 選項。"
+description: "將先前使用 RMS 共用應用程式保護的檔案移除保護 (也就是將檔案解除保護) 的指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: b94cd999fef2186ddf67a0e6cebc3349a3586538
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 4400b09108851ad5776596b699db2fcb01bb0b70
 
 
 ---

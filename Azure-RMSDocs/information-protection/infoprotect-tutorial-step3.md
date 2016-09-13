@@ -3,15 +3,15 @@ title: "Azure Information Protection 快速入門教學課程步驟 3 | Azure Ri
 description: "簡介教學課程的步驟 3，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
+ms.sourcegitcommit: ba6887a5c9bab18867d07cfc98e8416bf102c211
+ms.openlocfilehash: 83ee0eef8262cc1fe4d18e9d183509847adddd97
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
 
 1. 在已安裝 Office (但目前未開啟 Word) 的電腦上，從 Microsoft 下載中心[下載 Azure Information Protection 用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)。 
 
-2. 執行 **AZInfoProtection.exe** 並遵循提示來安裝用戶端。
+2. 執行 **AzInfoProtection_v233.exe** 並遵循提示來安裝用戶端。
 
     在本教學課程中，您是否選取安裝示範原則的選項並不重要，因為我們剛才設定的原則將會從 Azure 下載，並取代示範原則，如果已安裝的話。 不過，如果您只想要體驗預設標籤而不連線到 Azure Information Protection，可以使用示範原則選項。 
 
@@ -52,6 +52,6 @@ ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
 [步驟 4 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

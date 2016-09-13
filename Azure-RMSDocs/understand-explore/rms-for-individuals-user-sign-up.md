@@ -1,9 +1,9 @@
 ---
 title: "使用者如何申請個人版 RMS | Azure RMS"
-description: "若要註冊此免費帳戶，使用者可造訪 Microsoft Rights Management 頁面來申請註冊，並提供工作或學校電子郵件地址。"
+description: "適用於此免費帳戶的註冊指示，以及此程序如何運作的技術資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: a31005f3dce927db917cb0f2851916b8946da4ee
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 89aa3a85eedadd091c5f0d596749bb6a631716c6
 
 
 ---
