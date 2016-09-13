@@ -12,8 +12,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 52a76105b182c7fe6aa9a648d1a5d7ae4e4a1a20
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: 15be32e029637321bf8e4f7c1a53f918efda7f23
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 52a76105b182c7fe6aa9a648d1a5d7ae4e4a1a20
 在 Windows 電腦上使用 Rights Management 共用應用程式時，這些使用者也能就地保護檔案或以電子郵件將受保護檔案傳送給其組織內部或外部的人員。 如果他們傳送電子郵件的收件者位於沒有在 Azure 中管理使用者帳戶的組織，他們亦可於申請個人版 RMS 帳戶後讀取受保護的電子郵件附件。
 
 > [!IMPORTANT]
-> 此免費訂閱可確保授權的人員可一律讀取受保護的檔案。 目前，您也可以使用此免費訂閱保護文件和建立新的受保護電子郵件訊息，但撰寫新的受保護內容則僅供試用，並且未來可能會將其移除。 如需詳細資訊和使用個人版 RMS 來保護內容的任何變更，請參閱 [Microsoft Rights Management 服務條款](https://portal.aadrm.com/Legal/Service)。
+> 此免費訂閱可確保授權的人員可一律讀取受保護的檔案。 目前，您也可以使用此免費訂閱保護文件和建立新的受保護電子郵件訊息，但撰寫新的受保護內容則僅供試用，並且未來可能會將其移除。 
 
 如需使用免費 Rights Management 共用應用程式來保護檔案的詳細資訊，請參閱 [Rights Management 共用應用程式使用者指南](../rms-client/sharing-app-user-guide.md)。
 
@@ -41,6 +41,6 @@ ms.openlocfilehash: 52a76105b182c7fe6aa9a648d1a5d7ae4e4a1a20
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
