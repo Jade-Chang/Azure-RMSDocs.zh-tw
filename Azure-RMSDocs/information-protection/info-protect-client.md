@@ -1,16 +1,16 @@
 ---
 title: "安裝 Azure Information Protection 用戶端 | Azure 版權管理"
-description: "若要使用 Azure Information Protection 分類文件和電子郵件訊息，您必須安裝 Azure Information Protection 用戶端。 安裝此用戶端，除了會將 Information Protection 列新增到您的 Office 應用程式 (Word、Excel、PowerPoint、Outlook) 以顯示您組織的分類標籤之外，也會在 Word、Excel、PowerPoint 的 [常用] 索引標籤上新增新的 [保護] 群組，並具有名稱為 [保護] 的按鈕。"
+description: "安裝會新增 Information Protection 列到您 Office 應用程式的用戶端，以便您可以針對文件和電子郵件選擇分類標籤的指示。"
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
+ms.sourcegitcommit: 15ca59f34847d20413fbfa7973567cf5ca66db96
+ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
 
 ## 手動安裝 Azure Information Protection 用戶端
 
-1. [下載用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)之後，請執行 **AZInfoProtection.exe**，並遵循提示以安裝用戶端。 此安裝需要本機系統管理員權限。
+1. [下載用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)之後，請執行 **AzInfoProtection_v233.exe**，並遵循提示以安裝用戶端。 此安裝需要本機系統管理員權限。
 
     如果您無法連線到 Office 365 或 Azure Active Directory，但想基於示範用途使用本機原則來查看和體驗 Azure Information Protection 的用戶端，請選取安裝示範原則的選項。 當您的用戶端連線到 Azure Information Protection 服務時，您組織的 Azure Information Protection 原則將會取代此示範原則。 
 
@@ -42,9 +42,9 @@ ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
 
 ## 為使用者安裝 Azure Information Protection 用戶端
 
-- 您可以透過將 AZInfoProtection.exe 封裝並使用標準的 [Windows Installer (msiexec) 命令列選項](https://technet.microsoft.com/library/cc759262(v=ws.10).aspx)，以撰寫指令碼並自動化 Azure Information Protection 用戶端的安裝。
+- 您可以使用命令列選項編寫指令碼並自動化 Azure Information Protection 用戶端的安裝。 若要查看安裝選項，請執行 `AzInfoProtection_v233.exe /help`。
 
-    例如，如果您建立的封裝版本名稱是 InfoProtect.msi，且您想要以無訊息方式安裝用戶端： `msiexec /qn InfoProtection.msi`
+    例如，若要以無訊息方式安裝用戶端： `AzInfoProtection_v233.exe /passive | quiet`
 
 
 ## 將 Azure Information Protection 用戶端解除安裝
@@ -88,6 +88,6 @@ ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

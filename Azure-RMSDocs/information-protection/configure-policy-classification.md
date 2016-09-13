@@ -2,15 +2,15 @@
 title: "如何設定適用於 Azure Information Protection 的自動與建議分類條件 | Azure Rights Management"
 description: "當您設定標籤的條件時，您可以自動將標籤指派給文件或電子郵件。 或者，您可以提示使用者選取您建議的標籤。"
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
+ms.sourcegitcommit: 87069b73e5f8959955b9967070bd3bcb5e7dc196
+ms.openlocfilehash: 357b012bd8679d7e24bfe3ae40c3160e4b69c01f
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
  
 - 建議分類會在檔案儲存時套用到 Word、Excel 與 PowerPoint。
 
-當您設定條件時，您可以使用預先定義的模式，例如 「信用卡號碼」或「美國社會安全碼」。 或者，您可以定義自訂字串或模式，作為自動分類的條件。 如需條件的詳細資訊，請參閱[內建條件的相關資訊](#information-about-the-built-in-conditions)一節。
+當您設定條件時，您可以使用預先定義的模式，例如 「信用卡號碼」或「美國社會安全碼」。 或者，您可以定義自訂字串或模式，作為自動分類的條件。 這些條件適用於文件和電子郵件中的本文、頁首及頁尾。 如需條件的詳細資訊，請參閱[內建條件的相關資訊](#information-about-the-built-in-conditions)一節。
 
 多個條件套用到超過一個標籤時的評估方式︰
 
@@ -224,6 +224,6 @@ ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

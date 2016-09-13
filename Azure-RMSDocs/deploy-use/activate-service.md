@@ -1,9 +1,9 @@
 ---
 title: "啟用 Azure Rights Management | Azure RMS"
-description: "當您啟用 (Azure RMS) 時，您的組織就可以開始使用支援資訊保護解決方案的應用程式與服務保護重要資料。 系統管理員也可以管理與監控您的組織所擁有的受保護檔案及電子郵件。 您必須先啟動，才能開始在 Office、SharePoint 和 Exchange 中使用資訊版權管理 (IRM) 功能，並保護任何敏感或機密檔案。"
+description: "您必須啟用 (Azure RMS)，您的組織才可以開始使用支援資訊保護解決方案的應用程式與服務來保護重要資料。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: d8ec823553934442ecb1e0a0b288eaa6d9c21ea6
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 2a0e1984e76ae355bfab099e0aced956ef93a7de
 
 
 ---

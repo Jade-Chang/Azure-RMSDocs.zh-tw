@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 需求：應用程式 | Azure RMS"
-description: "請使用下列表格來識別原生支援 Azure RMS 的應用程式，這意味 RMS 使用 RMS API 來支援使用限制，藉此嚴密整合至這些應用程式中。 這些應用程式也稱為 RMS 創新。"
+description: "識別原生支援 Azure RMS 的應用程式，這意味 RMS 使用 RMS API 來支援使用限制，藉此嚴密整合至這些應用程式中。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/19/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d3408f954381978287852dd74a38c5903f583dda
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 14eec6f0ad9c1b9abaeff1c70cfbcb66011397a0
 
 
 ---

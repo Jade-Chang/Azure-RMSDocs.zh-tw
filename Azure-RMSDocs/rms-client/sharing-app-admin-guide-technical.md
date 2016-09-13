@@ -1,9 +1,9 @@
 ---
 title: "Rights Management 共用應用程式技術概觀 | Azure RMS"
-description: "Microsoft Rights Management 共用應用程式是可選擇性下載的應用程式，適用於 Microsoft Windows 和其他提供下列功能的平台。"
+description: "適用於企業網路中負責部署適用於 Windows 的 RMS 共用應用程式之系統管理員的技術詳細資料。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d5e1c7969d2125c4f66d6dcea3bde0c81a7de1f3
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 2a3640590ca2729da71e847c03823719e92bcb0f
 
 
 ---
@@ -55,7 +55,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 ## 支援的檔案類型與副檔名
 下表列出 Microsoft Rights Management 共用應用程式原生支援的檔案類型。 當套用原生保護時，這些類型檔案的原始副檔名會變更，且這些檔案會變成唯讀。
 
-此外，當 RMS 共用應用程式原生保護使用者藉由共用保護的 Word、Excel 或 PowerPoint 檔案，這個動作會自動建立第二個檔案，它是原始檔案的副本，具有相同的檔名，但副檔名為 **.ppdf** ¹。 這個版本的檔案可確保安裝了 RMS 共用應用程式的收件者可以隨時開啟已套用原生保護的檔案。
+此外，當 RMS 共用應用程式原生保護使用者藉由共用保護的 Word、Excel 或 PowerPoint 檔案，這個動作會自動建立第二個檔案，它是原始檔案的副本，具有相同的檔案名稱，但副檔名為 **.ppdf**。 這個版本的檔案可確保安裝了 RMS 共用應用程式的收件者可以隨時開啟已套用原生保護的檔案。
 
 受到一般保護的檔案，原始檔案的副檔名一律會變更為 .pfile。
 

@@ -1,9 +1,9 @@
 ---
 title: "使用 Windows PowerShell 管理 Azure Rights Management | Azure RMS"
-description: "雖然您可以使用 Office 365 系統管理中心或是 Azure 傳統入口網站來啟用 Microsoft Azure Rights Management (Azure RMS)，但是也可以使用適用於 (AADRM) 的 Windows PowerShell 模組來執行這項操作。"
+description: "了解如何使用適用於 Azure RMS (AADRM) 的 Windows PowerShell 模組來為您的組織管理此服務。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/18/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 26988d2e9b6e2ff320e424fa94051afa0055d234
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 1660fa08af036267094784cb729215836208a9a1
 
 
 ---

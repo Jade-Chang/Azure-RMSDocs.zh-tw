@@ -1,6 +1,6 @@
 ---
 title: "設定 Azure Rights Management 的使用權限 | Azure RMS"
-description: "當您使用 Azure Rights Management (Azure RMS) 在檔案或電子郵件上設定保護，且沒有使用範本時，您必須自行設定使用權限。 此外，當您為 Azure RMS 設定自訂範本時，您會選取使用權限，而當使用者、系統管理員或設定的服務選取範本時，自動套用會您選取的使用權限。"
+description: "了解並識別當您使用 Azure Rights Management (Azure RMS) 保護檔案或電子郵件時，所使用的特定權限。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/25/2016
@@ -12,8 +12,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e1f1bef9ce87dcffb8d3da920f19198aa253e8e6
-ms.openlocfilehash: bbfb00822a03609f5b81808e1e1c4cad8c02be0b
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: ab1b2f652d34183e1d95fd0a387abb10c3aff9b1
 
 
 ---

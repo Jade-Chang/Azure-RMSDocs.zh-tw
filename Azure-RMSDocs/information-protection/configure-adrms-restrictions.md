@@ -1,16 +1,16 @@
 ---
 title: "HYOK 限制 |Azure Rights Management"
-description: "當您保護最機密的文件和電子郵件時，您通常會套用 Azure Rights Management 保護來獲取下列權益。"
+description: "識別選取 AD RMS 保護搭配 Azure Information Protection 時的限制、必要條件和建議。 此解決方案有時稱為「保存您自己的金鑰」(HYOK)。"
 manager: mbaldwin
-ms.date: 08/18/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: cb12abb4dfe96135317facf4284c0eae7ef38196
+ms.sourcegitcommit: da0145444a7d0abb6407ed2ccbb581d4dcdd10d6
+ms.openlocfilehash: 0d6a5013f953931a6bffa28e1c3c1f282a2c668b
 
 
 ---
