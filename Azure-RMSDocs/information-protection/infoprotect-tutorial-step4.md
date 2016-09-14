@@ -1,17 +1,17 @@
 ---
-title: "Azure Information Protection 快速入門教學課程步驟 4 | Azure Rights Management"
+title: "Azure Information Protection 快速入門教學課程步驟 4 | Azure Information Protection"
 description: "簡介教學課程的步驟 4，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 2c04c749ff73050dc8a15dd984c33f700e3e6ed5
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
 
     您會看到 [敏感度] 值變更為 [個人]。
 
-    ![Azure Information Protection 快速入門教學課程步驟 4 - 提示確認為何降低](../media/confirm-lowering.png)
+    ![Azure Information Protection 快速入門教學課程步驟 4 - 提示確認為何降低](../media/info-protect-lower-justification.png)
 
 ### 完全移除分類︰
 
@@ -77,6 +77,6 @@ ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "如何設定標籤以套用 Rights Management 保護 | Azure Rights Management"
+title: "如何設定標籤以套用 Rights Management 保護 | Azure Information Protection"
 description: "您可以透過使用 Rights Management 服務來保護您最敏感的文件與電子郵件，它會使用加密、身分識別與授權原則來協助防止資料遺失。 此保護會在您設定標籤以使用 Rights Management 範本時套用。"
 manager: mbaldwin
 ms.date: 08/15/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 
 ---
@@ -57,7 +57,7 @@ ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
     
     在大部分情況下，您將選取 [Azure RMS]。 請勿選取 AD RMS，除非您已閱讀並瞭解隨附於此設定的必要條件和限制，有時也稱為 「*保存您自己的金鑰*(HYOK)。 如需詳細資訊，請參閱 [Hold your own key (HYOK) requirements and restrictions for AD RMS protection](configure-adrms-restrictions.md) (AD RMS 保護的保存您自己的金鑰 (HYOK) 需求和限制)。
     
-4. 如果您選取 Azure RMS：針對 [選取 RMS 範本]，按一下下拉式方塊，然後選取您想要用來保護包含此標籤的文件與電子郵件的範本。
+4. 如果您選取 Azure RMS：針對 [選取 RMS 範本]，按一下下拉式方塊，然後選取您想要用來保護包含此標籤的文件與電子郵件的範本或版權管理選項。
 
     > [!NOTE] 
     > 如果您在開啟 [標籤] 刀鋒視窗之後建立了新的範本，請關閉此刀鋒視窗並返回步驟 2，使系統從 Azure 擷取新建立的範本以供您選取。
@@ -78,6 +78,6 @@ ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

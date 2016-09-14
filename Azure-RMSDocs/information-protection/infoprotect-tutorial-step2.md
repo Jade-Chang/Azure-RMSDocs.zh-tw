@@ -1,17 +1,17 @@
 ---
-title: "Azure Information Protection 快速入門教學課程步驟 2 | Azure Rights Management"
+title: "Azure Information Protection 快速入門教學課程步驟 2 | Azure Information Protection"
 description: "簡介教學課程的步驟 2，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
     
     - 分類的標籤︰[個人]、[公用]、[內部]、[機密] 及 [密碼]。 閱讀每個分類標籤的工具提示以了解要如何使用標籤。 請注意，[密碼] 有兩個子標籤︰[All-Employees] (所有員工) 和 [我的群組]，它們提供分類如何有子類別的範例。
 
-    - 根據預設設定，[內部]、[機密] 及 [密碼] 標籤皆設定了視覺標記 (例如，頁尾、頁首、浮水印)，而標籤都沒有設定保護。 此外，未設定三個全域設定，因此所有文件和電子郵件不需要有標籤，也沒有預設標籤，且使用者不需要在降低敏感度等級時提供理由。
+    - 根據預設設定，[內部]、[機密] 及 [密碼] 標籤皆設定了視覺標記 (例如，頁尾、頁首、浮水印)，而標籤都沒有設定保護。 另外有三個全域設定未經設定，因此所有文件和電子郵件都不需要有標籤，也沒有預設標籤，而且使用者不需要在降低分類層級時提供理由。
 
     ![Azure Information Protection 快速入門教學課程步驟 3 - 預設原則](../media/info-protect-policy.png)
 
@@ -45,7 +45,7 @@ ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
 
 -  **選取預設標籤**︰將此設為 [內部]。
 
-- **降低敏感度等級時，使用者必須提供理由**︰將此設為 [開啟]。
+- **使用者必須提供理由，才能設定較低分類標籤、移除標籤或移除保護**：將此設為 [開啟]。
 
 我們現在將會變更其中一個標籤 [機密] 的設定：
 
@@ -97,6 +97,6 @@ ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
 [步驟 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

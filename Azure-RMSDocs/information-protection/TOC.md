@@ -24,8 +24,9 @@
 ### [設定視覺標記](configure-policy-markings.md)
 ### [設定條件](configure-policy-classification.md)
 ## [安裝用戶端](info-protect-client.md)
+## [Azure Information Protection 軟體授權條款](aip-software-license-terms.md)
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO1-->
 
 

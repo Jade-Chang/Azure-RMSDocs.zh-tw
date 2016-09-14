@@ -1,5 +1,5 @@
 ---
-title: "如何設定 Azure Information Protection 的全域原則設定 | Azure Rights Management"
+title: "如何設定 Azure Information Protection 的全域原則設定 | Azure Information Protection"
 description: "Azure Information Protection 原則中有 3 個設定會套用至所有使用者及所有裝置。"
 manager: mbaldwin
 ms.date: 08/08/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: c48f5488e49a54b970f76012e0f2f17fe4158691
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 872ea7da6f3b72a355a73c8b0589beda86ded20d
 
 
 ---
@@ -42,7 +42,7 @@ Azure Information Protection 原則中有 3 個設定會套用至所有使用者
 
     - [選取預設標籤]：當您設定此選項時，請選取要指派給沒有標籤的文件與電子郵件的標籤。 如果標籤有子標籤，則您無法將該標籤設為預設值。 
 
-    - [降低敏感度等級時，使用者必須提供理由]：當您將此選項設為 [開啟]且使用者將現有文件或電子郵件的標籤變更為較低敏感度等級的標籤 (例如從 [秘密] 變更為 [公用])，系統會提示使用者提供此動作的說明。 例如，使用者可能會說明文件已不再包含敏感性資訊。 該動作和使用者的理由將會記錄在該使用者的本機 Windows 事件記錄檔中︰[應用程式]  >  [Microsoft Azure Information Protection]。  
+    - **使用者必須提供理由才能降低分類標籤、移除標籤或移除保護**：當您將此選項設為 [開啟]，而使用者執行了其中任一動作時 (例如將 [私密] 標籤變更為 [個人])，使用者就會收到提示，要求其為此動作提供說明。 例如，使用者可能會說明文件已不再包含敏感性資訊。 該動作和使用者的理由將會記錄在該使用者的本機 Windows 事件記錄檔中︰[應用程式]  >  [Microsoft Azure Information Protection]。  
 
     ![新分類敏感度等級較低時的 Azure Information Protection 提示](../media/info-protect-lower-justification.png)
 
@@ -67,6 +67,6 @@ Azure Information Protection 原則中有 3 個設定會套用至所有使用者
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

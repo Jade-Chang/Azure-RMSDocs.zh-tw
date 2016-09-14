@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 5340673beb2a6f2dd4acd96fd599c0b90b9991dd
+ms.sourcegitcommit: 99390fb78a9da3bef8a67c8595770a84fb9bb89a
+ms.openlocfilehash: a32bfc59dd72efbcb239845ddabfa9bd3a969127
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 5340673beb2a6f2dd4acd96fd599c0b90b9991dd
 Rights Management Services 的專屬詞彙定義集合。
 
 **已過時的演算法**  
-實作較舊的內容保護配置的強制回應設定，特別指電子操作手冊加密模式 (ECB)。 在此 SDK 中，設定可讓您產生與 [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx) 所使用的 MSDRM 程式庫相容的授權。
+實作較舊內容保護配置的強制回應設定，特別是指電子密碼本 Cipher 模式 (ECB)。 在此 SDK 中，設定可讓您產生與 [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx) 所使用的 MSDRM 程式庫相容的授權。
 
 此設定可能會導致您的應用程式以不符合客戶的內容保護標準的方式來保護內容。
 
@@ -46,6 +46,6 @@ PFile 格式對應用程式開發人員來說是透明的，因為它是以 Micr
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
