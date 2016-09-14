@@ -3,7 +3,7 @@ title: "Azure Rights Management 常見問題集 | Azure RMS"
 description: "Microsoft Azure Rights Management，也就是 Azure RMS 的一些常見問題的解答。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47328bc0c3cc66e99a98b7c8abc553f25d956404
-ms.openlocfilehash: e485286a0bd42bbcfb46a8aabe4d2ee66d65b4a1
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
 
 
 ---
@@ -145,7 +145,7 @@ Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS)
 
 支援 Azure RMS 的免費訂閱 (個人版 RMS) 支援取用已由 Azure RMS 所保護的內容。 如需詳細資訊，請參閱[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## 我可以在哪裡取得有關免費 Azure RMS 訂閱 (個人版 RMS) 的技術資訊 - 例如，實際運作方式、如何掌控帳戶及不能使用哪些網域？
+## 何處可以取得免費的 Azure RMS 訂閱 (個人版 RMS) 的技術資訊？例如此程序的運作方式，以及系統管理員如何控制所建立的帳戶。
 您會在[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md) 和相關文章中發現這些問題的答案。
 
 ## 我們要如何重新存取現在已離開組織的員工所保護的檔案？
@@ -223,6 +223,6 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "安裝 Azure Information Protection 用戶端 | Azure 版權管理"
+title: "安裝 Azure Information Protection 用戶端 | Azure Information Protection"
 description: "安裝會新增 Information Protection 列到您 Office 應用程式的用戶端，以便您可以針對文件和電子郵件選擇分類標籤的指示。"
 manager: mbaldwin
 ms.date: 08/29/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 15ca59f34847d20413fbfa7973567cf5ca66db96
-ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
 
 ---
@@ -34,7 +34,7 @@ ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
 
 ## 手動安裝 Azure Information Protection 用戶端
 
-1. [下載用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)之後，請執行 **AzInfoProtection_v233.exe**，並遵循提示以安裝用戶端。 此安裝需要本機系統管理員權限。
+1. [下載此用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)之後，請執行 **AZInfoProtection.exe**，並遵循提示安裝用戶端。 此安裝需要本機系統管理員權限。
 
     如果您無法連線到 Office 365 或 Azure Active Directory，但想基於示範用途使用本機原則來查看和體驗 Azure Information Protection 的用戶端，請選取安裝示範原則的選項。 當您的用戶端連線到 Azure Information Protection 服務時，您組織的 Azure Information Protection 原則將會取代此示範原則。 
 
@@ -42,14 +42,21 @@ ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
 
 ## 為使用者安裝 Azure Information Protection 用戶端
 
-- 您可以使用命令列選項編寫指令碼並自動化 Azure Information Protection 用戶端的安裝。 若要查看安裝選項，請執行 `AzInfoProtection_v233.exe /help`。
+- 您可以使用命令列選項編寫指令碼並自動化 Azure Information Protection 用戶端的安裝。 若要查看安裝選項，請執行 `AzInfoProtection.exe /help`。
 
-    例如，若要以無訊息方式安裝用戶端： `AzInfoProtection_v233.exe /passive | quiet`
+    例如，若要以無訊息方式安裝用戶端： `AzInfoProtection.exe /passive | quiet`
 
 
 ## 將 Azure Information Protection 用戶端解除安裝
 
+您可以使用下列任一選項︰
+
 - 使用 [控制台] 將程式解除安裝：按一下 [Microsoft Azure Information Protection]  >  [解除安裝]
+
+- 重新執行 **AzInfoProtection.exe**，然後在 [修改安裝] 頁面上，按一下 [解除安裝]。 
+
+- 執行 `AzInfoProtection.exe /uninstall`
+
 
 ## 驗證安裝、連線狀態或報告問題
 
@@ -88,6 +95,6 @@ ms.openlocfilehash: c245d542d237216c84941f8718cb9a0cafb44a70
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

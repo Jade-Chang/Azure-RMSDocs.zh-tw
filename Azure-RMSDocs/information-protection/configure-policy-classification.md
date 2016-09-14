@@ -1,5 +1,5 @@
 ---
-title: "如何設定適用於 Azure Information Protection 的自動與建議分類條件 | Azure Rights Management"
+title: "如何為 Azure Information Protection 設定自動分類與建議分類的條件 | Azure Information Protection"
 description: "當您設定標籤的條件時，您可以自動將標籤指派給文件或電子郵件。 或者，您可以提示使用者選取您建議的標籤。"
 manager: mbaldwin
 ms.date: 08/29/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 87069b73e5f8959955b9967070bd3bcb5e7dc196
-ms.openlocfilehash: 357b012bd8679d7e24bfe3ae40c3160e4b69c01f
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
 
 
 ---
@@ -224,6 +224,6 @@ ms.openlocfilehash: 357b012bd8679d7e24bfe3ae40c3160e4b69c01f
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
