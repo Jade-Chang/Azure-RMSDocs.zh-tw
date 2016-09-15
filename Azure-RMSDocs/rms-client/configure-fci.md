@@ -1,9 +1,9 @@
 ---
 title: "具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護 | Azure RMS"
-description: "使用這份文件作為指示，以及搭配 RMS 保護工具來使用 Rights Management (RMS) 用戶端的指令碼，以設定檔案伺服器資源管理員和檔案分類基礎結構 (FCI)。"
+description: "使用 Rights Management (RMS) 用戶端搭配 RMS 保護工具，以設定檔案伺服器資源管理員和檔案分類基礎結構 (FCI) 的指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
+ms.sourcegitcommit: b8a7a433652e76ff1069f0f0a7465483b13c065c
+ms.openlocfilehash: b350a35d44e743de94446409b1bba4256ca38728
 
 
 ---
@@ -126,7 +126,7 @@ ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
 
     如需有關簽署 Windows PowerShell 指令碼的詳細資訊，請參閱 PowerShell 文件庫中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
-4.  在其中執行具有檔案分類基礎結構的檔案資源管理員的每個檔案伺服器上，本機儲存檔案： 例如，將檔案儲存在 **C:\RMS-Protection**。 藉由使用 NTFS 權限來保護此檔案，這樣未經授權的使用者就不能修改它。
+4.  在其中執行具有檔案分類基礎結構的檔案資源管理員的每個檔案伺服器上，本機儲存檔案： 例如，將檔案儲存在 **C:\RMS-Protection**。 如果您使用不同的路徑或資料夾名稱，請選擇不包含空格的路徑和資料夾。 藉由使用 NTFS 權限來保護此檔案，這樣未經授權的使用者就不能修改它。
 
 您現在可以開始設定檔案伺服器資源管理員。
 
@@ -302,6 +302,6 @@ ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

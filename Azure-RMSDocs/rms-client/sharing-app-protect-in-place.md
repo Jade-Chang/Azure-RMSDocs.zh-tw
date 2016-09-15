@@ -1,9 +1,9 @@
 ---
 title: "使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護) | Azure RMS"
-description: "當您就地保護檔案時，它會取代原始、未受保護的檔案。 然後您就可以讓檔案留在原處，將它複製到另一個資料夾或裝置，或共用其所在的資料夾，而檔案仍然會受到保護。 雖然共用受電子郵件保護之檔案的建議方式是直接從 [檔案總管] 或 Office 應用程式，您也可以將受保護檔案附加到電子郵件訊息。"
+description: "如何安全地在您的電腦、伺服器或另一個存放裝置上儲存檔案的指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 55f5f9dd0dd90bfa98798b4fc0b4cb4bd3c90076
+ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
+ms.openlocfilehash: 1d719bcce253dea465be7250806385bca3c23a01
 
 
 ---

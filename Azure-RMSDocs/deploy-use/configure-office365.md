@@ -1,9 +1,9 @@
 ---
 title: "Office 365&colon;用戶端和線上服務的組態 | Azure RMS"
-description: "由於 Office 365 原生支援 Azure RMS，因此無需用戶端電腦設定，便能支援 Word、Excel、PowerPoint、Outlook 和 Outlook Web App 等應用程式的資訊版權管理 (IRM) 功能。 所有使用者唯一要做的便是使用其 Microsoft Office 365 認證登入其 Office 應用程式，然後他們即可保護檔案和電子郵件，並使用已接受他人保護的檔案和電子郵件。"
+description: "適用於系統管理員設定 Office 365 以搭配 Azure Rights Management (Azure RMS) 使用的資訊和指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 09f152ef910cf9c08c9a693f79c40f491263c5d3
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 5e9ecbdef4adb4995199b059903902df078471e5
 
 
 ---

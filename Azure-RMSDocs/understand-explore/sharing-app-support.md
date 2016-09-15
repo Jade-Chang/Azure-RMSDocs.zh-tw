@@ -1,6 +1,6 @@
 ---
 title: "適用於 Windows 和行動平台的 RMS 共用應用程式 | Azure RMS"
-description: "RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 Office 2010 的必要應用程式，也建議在 Windows 電腦、Mac 電腦和行動裝置上使用。 它的其中一個好處就是可以針對原本不支援 Rights Management 的應用程式和檔案套用一般保護，也就是說可以保護所有檔案。"
+description: "RMS 共用應用程式如何以免費、可下載的應用程式支援 Azure RMS，這是支援 Office 2010 的必要應用程式，但也建議在 Windows 電腦、Mac 電腦和行動裝置上使用。"
 author: cabailey
 manager: mbaldwin
 ms.date: 08/24/2016
@@ -12,8 +12,8 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 6304c5c29e2dab176fb9d5a617e1467af00ab504
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 21bdcae9432e2edbecaa6eafb35ccefbd3ca372c
 
 
 ---

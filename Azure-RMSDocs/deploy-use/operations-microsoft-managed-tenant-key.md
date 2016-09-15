@@ -1,9 +1,9 @@
 ---
 title: "Microsoft 管理 - 租用戶金鑰生命週期作業 |Azure RMS"
-description: "如果 Microsoft 為您管理 Azure Rights Management 的租用戶金鑰 (預設)，請參閱下列各節，以了解與此拓撲有關的生命週期作業的詳細資訊。"
+description: "如果 Microsoft 為您管理 Azure Rights Management 租用戶金鑰 (預設) 的相關生命週期作業詳細資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 1eafab8e36c44bfd98ae613d8094d3510f18038e
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: e2a26c25148e62f9cebf570a15478fdf041c9198
 
 
 ---

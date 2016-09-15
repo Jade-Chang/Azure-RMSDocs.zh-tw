@@ -1,9 +1,9 @@
 ---
 title: "Azure Rights Management 的需求 | Azure RMS"
-description: "若要在組織中部署 Microsoft Azure Rights Management (Azure RMS)，請確定您具備下列必要條件。 然後，您可以使用 Azure Rights Management 部署藍圖為您的組織部署 Rights Management。"
+description: "識別在組織中部署 Microsoft Azure Rights Management (Azure RMS) 的必要條件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
-ms.openlocfilehash: d56eb077ef76e1869c7d90141f1b35c1bdbfe9fa
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 9bd75b44541f51b39315a898417ebe5d3b562cf9
 
 
 ---

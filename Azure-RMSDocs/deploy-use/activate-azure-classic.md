@@ -1,9 +1,9 @@
 ---
 title: "如何從 Azure 傳統入口網站啟動 Azure Rights Management | Azure RMS"
-description: "如果您有 Azure 入口網站的存取權，請使用下列指示。 例如，當您有訂閱 Enterprise Mobility Suite 或 Azure Rights Management Premium 的情況下。"
+description: "當您可以存取 Azure 入口網站時，Azure RMS 的啟動指示。 例如，當您有訂閱 Enterprise Mobility Suite 或 Azure Rights Management Premium 的情況下。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 573aa437d8449212bd2f22b532342e4c7e3a1be6
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: ab3b5d71e8cee2ece7fad4c9c3017de7d6eca979
 
 
 ---

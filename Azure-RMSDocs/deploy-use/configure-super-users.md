@@ -1,9 +1,9 @@
 ---
 title: "設定 Azure Rights Management 和探索服務或資料復原的進階使用者 | Azure RMS"
-description: "Microsoft Azure RMS 的進階使用者功能可確保獲得授權的人員和服務可以永遠讀取及檢查 Azure RMS 為貴組織保護的資料。 並且視需要移除保護或變更先前套用的保護。 進階使用者針對組織的 RMS 租用戶授與的所有使用授權，一律具有完整的擁有者權限。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。"
+description: "了解並實作 Microsoft Azure RMS 的進階使用者功能，以便獲得授權的人員和服務可以永遠讀取及檢查 Azure RMS 為組織保護的資料。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 32da3f280b7dc8fa0655ae65d904864d80b9a035
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: ac0d2c991bdd13c31c46a9579ac1a6d2150557b6
 
 
 ---

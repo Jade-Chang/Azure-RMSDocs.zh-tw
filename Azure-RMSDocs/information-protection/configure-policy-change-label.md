@@ -1,5 +1,5 @@
 ---
-title: "如何變更或自訂 Azure Information Protection 現有的標籤 | Azure Rights Management"
+title: "如何變更或自訂 Azure Information Protection 現有的標籤 | Azure Information Protection"
 description: "透過在 Azure Information Protection 原則中設定現有標籤，您可以變更或重新定義使用者在 Information Protection 列上看到的標籤。"
 manager: mbaldwin
 ms.date: 08/10/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: dffc6608c9dba918dc26e40537c960bf554896d8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
 
 
 ---
@@ -52,6 +52,6 @@ ms.openlocfilehash: dffc6608c9dba918dc26e40537c960bf554896d8
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

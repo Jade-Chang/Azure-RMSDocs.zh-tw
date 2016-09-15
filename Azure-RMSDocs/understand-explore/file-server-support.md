@@ -1,9 +1,9 @@
 ---
 title: "執行 Windows Server 並使用檔案分類基礎結構 (FCI) 的檔案伺服器 | Azure RMS"
-description: "設定 Windows Server 使用檔案分類基礎結構時，這項檔案伺服器資源管理員功能可以掃描本機檔案，並判斷它們是否包含敏感性資料。 符合這個準則的檔案會被標記系統管理員所定義的分類屬性。 接著，檔案分類基礎結構便可根據分類採取自動動作。 其中一個動作是使用 Azure Rights Management 和 Rights Management 連接器 (又稱為 RMS 連接器) 部署來套用資訊保護。 Azure RMS 就會自動保護 Office 檔案。"
+description: "當您部署 RMS 連接器以自動保護 Office 文件時，如何使用 Windows Server 檔案基礎結構搭配 Azure RMS 。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 3ba4230674d387c100752f2e8698010afc8773b2
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: 43af3be5b9ff51a72a6382fe88440fd427aa0dbf
 
 
 ---

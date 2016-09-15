@@ -1,9 +1,9 @@
 ---
 title: "下載並安裝 Rights Management 共用應用程式 | Azure RMS"
-description: "您不需要是本機系統管理員也能安裝 RMS 共用應用程式。 然而，如果你不是本機系統系統管理員，且使用 Office 2010，則會有一些限制。 如需詳細資訊，請參閱本頁面上的＜如果您不是本機系統管理員並使用 Office 2010＞一節。"
+description: "以互動方式安裝適用於 Windows 的 RMS 共用應用程式，讓您可以與其他人安全地共用文件的指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
+ms.sourcegitcommit: 44541b6fe2567d23174b26cb42fec0731f5d3f58
+ms.openlocfilehash: b01896dc49a6c581427393f9e3fc21dbbd235238
 
 
 ---

@@ -1,9 +1,9 @@
 ---
 title: "Azure Rights Management 也稱為 | Azure RMS"
-description: "Azure Rights Management 亦稱為 Azure Rights Management 服務，但因為它在 Azure 中以服務方式執行，所以名稱中通常省略「服務」二字。 這是雲端版本的 Active Directory Rights Management Services (AD RMS)，最初發行時稱為 Windows Rights Management Services (Windows RMS)。"
+description: "Azure Rights Management 已經經歷許多次的名稱變更，您可能知道它先前的名稱。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 3e9ecf77ec3e8e5c1246f587cdb583b7631d634e
+ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
+ms.openlocfilehash: d6092d48475c70cbf25efa709c6d572584a41462
 
 
 ---
