@@ -1,9 +1,9 @@
 ---
 title: "建立、設定及發佈自訂範本 | Azure RMS"
-description: "您可以在 Azure 傳統入口網站中建立和管理自訂範本。 您可以直接從 Azure 傳統入口網站執行這項作業，或是登入 Office 365 系統管理中心並選擇 Rights Management 的進階功能，這會將您重新導向到 Azure 傳統入口網站。"
+description: "在 Azure 傳統入口網站中建立和管理自訂範本的指示。 範本可讓使用者與其他系統管理員輕鬆地套用保護文件及電子郵件的適當原則。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 64beb891fda54da3718a322f6628a2987ff35111
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
 
 
 ---

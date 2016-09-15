@@ -1,9 +1,9 @@
 ---
 title: "RMS 連接器的登錄設定 | Azure RMS"
-description: "只有當您想在執行 Exchange、SharePoint 或 Windows Server 的伺服器上手動新增或檢查登錄設定，也就是設定伺服器使用 RMS 連接器時，才使用下列各節的表格。 若要設定這些伺服器，建議的方法是使用 Microsoft RMS 連接器的伺服器設定工具。"
+description: "在使用 RMS 連接器的伺服器上，關於登錄設定的相關資訊。 若要設定這些設定，建議的方法是使用 Microsoft RMS 連接器的伺服器設定工具。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 49fff7c2e0c06d26751136b681022f221f80d6cd
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 5ff109543685049be5e89a12ea037de941736547
 
 
 ---

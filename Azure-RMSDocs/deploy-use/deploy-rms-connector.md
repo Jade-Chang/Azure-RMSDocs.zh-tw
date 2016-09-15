@@ -1,9 +1,9 @@
 ---
 title: "部署 Azure Rights Management 連接器 | Azure RMS"
-description: "使用此資訊來深入瞭解 Azure Rights Management (RMS) 連接器，以及您如何搭配使用該連接器與使用 Microsoft Exchange Server、Microsoft SharePoint Server，或執行 Windows Server 之檔案伺服器的現有內部部署，及使用檔案伺服器資源管理員的檔案分類基礎結構 (FCI) 功能，藉此提供資訊保護。"
+description: "部署 Azure Rights Management (RMS) 連接器的指示，針對使用 Microsoft Exchange Server、Microsoft SharePoint Server，或執行 Windows Server 和檔案分類基礎結構 (FCI) 之檔案伺服器的現有內部部署提供資訊保護。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 7569a53f035e3333ee7ee00cb83b83b3126a6eb1
 
 
 ---
@@ -22,21 +22,23 @@ ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
 
 >*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
 
-使用此資訊來深入瞭解 Azure Rights Management (RMS) 連接器，以及您如何搭配使用該連接器與使用 Microsoft Exchange Server、Microsoft SharePoint Server，或執行 Windows Server 之檔案伺服器的現有內部部署，及使用檔案伺服器資源管理員的檔案分類基礎結構 (FCI) 功能，藉此提供資訊保護。
+使用此資訊及指示來部署 Azure Rights Management (RMS) 連接器。 此連接器針對使用 Microsoft Exchange Server、SharePoint Server，或執行 Windows Server 和檔案分類基礎結構 (FCI) 之檔案伺服器的現有內部部署提供資料保護。
 
 > [!TIP]
 > 如需含螢幕擷取畫面的高階範例案例，請參閱 [Azure RMS 運作方式](../understand-explore/what-admins-users-see.md)文章的[在執行 Windows Server 和檔案分類基礎結構的檔案伺服器上自動保護檔案](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure)一節。
 
 ## Microsoft Rights Management 連接器概觀
-Microsoft Rights Management (RMS) 連接器可讓您快速啟用現有的內部部署伺服器，以搭配使用其資訊版權管理 (IRM) 功能與雲端架構 Microsoft Rights Management 服務 (Azure RMS)。 利用此功能，IT 和使用者可輕鬆保護您組織內部和外部的文件和圖片，無需安裝其他基礎結構或與其他組織建立信任關係。 在混合式案例中，即使某些使用者已連接到線上服務，您仍可使用此連接器。 例如，某些使用者的信箱使用 Exchange Online，而某些使用者的信箱使用 Exchange Server。 安裝 RMS 連接器之後，所有使用者皆可藉由使用 Azure RMS 保護並取用電子郵件和附件，而資訊保護會在兩個部署組態之間順暢地運作。
+Microsoft Rights Management (RMS) 連接器可讓您快速啟用現有的內部部署伺服器，以搭配使用其資訊版權管理 (IRM) 功能與雲端架構 Microsoft Rights Management 服務 (Azure RMS)。 利用此功能，IT 和使用者可輕鬆保護您組織內部和外部的文件和圖片，無需安裝其他基礎結構或與其他組織建立信任關係。 
+
+在混合式案例中，即使某些使用者已連接到線上服務，您仍可使用此連接器。 例如，某些使用者的信箱使用 Exchange Online，而某些使用者的信箱使用 Exchange Server。 安裝 RMS 連接器之後，所有使用者皆可藉由使用 Azure RMS 保護並取用電子郵件和附件，而資訊保護會在兩個部署組態之間順暢地運作。
 
 RMS 連接器是個占用資源很少的服務，您可安裝於執行 Windows Server 2012 R2、Windows Server 2012 或 Windows Server 2008 R2 之伺服器的內部部署中。 除了在實體電腦上執行連接器，您也可以在包括 Azure IaaS VM 的虛擬機器上執行它。 安裝和設定連接器後，其會成為內部部署伺服器與雲端服務之間的通訊介面 (轉送)。
 
-如果您針對 Azure RMS 管理自己的租用戶金鑰 (攜帶您自己的金鑰，即 BYOK 案例)，RMS 連接器和使用該連接器的內部部署伺服器不會存取含您租用戶金鑰的硬體安全性模組 (HSM)。 這是因為所有使用租用戶金鑰的密碼編譯作業都是在 Azure RMS 執行，而不是在內部。
+如果您針對 Azure RMS 管理自己的租用戶金鑰 (自備金鑰，即 BYOK 案例)，RMS 連接器和使用該連接器的內部部署伺服器不會存取含您租用戶金鑰的硬體安全性模組 (HSM)。 這是因為所有使用租用戶金鑰的密碼編譯作業都是在 Azure RMS 執行，而不是在內部。
 
 ![RMS 連接器架構概觀](../media/RMS_connector.png)
 
-RMS 連接器支援下列內部部署伺服器：Exchange Server、SharePoint Server，以及執行 Windows Server 的檔案伺服器，並使用檔案分類基礎結構來分類原則，且將原則套用至資料夾中的 Office 文件。 如果您想要使用檔案分類保護所有檔案類型，請勿使用 RMS 連接器，但請改用 [RMS 保護 cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
+RMS 連接器支援下列內部部署伺服器：Exchange Server、SharePoint Server，以及執行 Windows Server 的檔案伺服器，並使用檔案分類基礎結構來分類原則，且將原則套用至資料夾中的 Office 文件。 如果您想要使用檔案分類基礎結構保護所有檔案類型，請勿使用 RMS 連接器，請改用 [RMS 保護 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
 
 > [!NOTE]
 > 如需這些內部部署伺服器的支援版本，請參閱[支援 Azure RMS 的內部部署伺服器](..\get-started\requirements-servers.md)。

@@ -1,5 +1,5 @@
 ---
-title: "如何建立新的 Azure Information Protection 標籤 | Azure Rights Management"
+title: "如何建立新的 Azure Information Protection 標籤 | Azure Information Protection"
 description: "雖然 Azure Information Protection 有隨附可自訂的預設標籤，您也可以自行建立使用者可在 Information Protection 列上看見的標籤。"
 manager: mbaldwin
 ms.date: 08/10/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 96cbe6cbe823d2c90ec91cbf77ef7d96cc6a568c
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
 
 
 ---
@@ -52,6 +52,6 @@ ms.openlocfilehash: 96cbe6cbe823d2c90ec91cbf77ef7d96cc6a568c
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

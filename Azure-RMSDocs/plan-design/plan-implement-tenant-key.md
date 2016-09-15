@@ -1,9 +1,9 @@
 ---
 title: "規劃及實作 Azure Rights Management 租用戶金鑰 | Azure RMS"
-description: "請使用本文件的資訊來協助您規劃和管理 Azure RMS 的 Rights Management (RMS) 租用戶金鑰。 例如，不是 Microsoft 管理租用戶金鑰 (預設值)，而是您可能想要管理您自己的租用戶金鑰，以遵循適用於貴組織的特定法規。 管理您自己的租用戶金鑰也稱為自備金鑰或 BYOK。"
+description: "協助您規劃和管理 Azure RMS 的 Rights Management (RMS) 租用戶金鑰的資訊。 例如，不是 Microsoft 管理租用戶金鑰 (預設值)，而是您可能想要管理您自己的租用戶金鑰，以遵循適用於貴組織的特定法規。 管理您自己的租用戶金鑰也稱為自備金鑰或 BYOK。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
+ms.sourcegitcommit: eec7cc8b20435df11d7b8f89c4b9e9d0f039dc55
+ms.openlocfilehash: 25d47ab488474ed756b3139bb9d42d420cea25f7
 
 
 ---
@@ -64,7 +64,7 @@ ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
 
 ![Azure RMS 租用戶金鑰週期 - 預設由您 BYOK 管理](../media/RMS_BYOK_onprem4.png)
 
-若您決定讓 Microsoft 管理您的租用戶金鑰，則您在產生金鑰時無需採取進一步動作，並可直接前往[後續步驟](plan-implement-tenant-key.md#next-steps)。
+若您決定讓 Microsoft 管理您的租用戶金鑰，則您在產生金鑰時無需採取進一步動作，並可直接前往[後續步驟](plan-implement-tenant-key.md#next-steps)。  
 
 若您決定自行管理租用戶金鑰，請閱讀下列各節以取得詳細資訊。
 
@@ -74,7 +74,7 @@ ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
 
 
 > [!IMPORTANT]
-> 若已開始使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (服務已啟動)，且具執行 Office 2010 的使用者，請先[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)，再執行這些程序。 依據您的案例和需求，您仍可使用 BYOK，但會有一些限制或其他步驟。
+> 如果您已經透過由 Microsoft 管理的租用戶金鑰開始使用 Azure RMS，而現在您想要自行管理租用戶金鑰 (移至 BYOK)，您先前受保護的文件和電子郵件仍可使用備份金鑰存取。 不過，如果有使用者執行 Office 2010，在您執行這些程序之前，[請先連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)。 這些電腦將需要一些額外設定步驟。
 > 
 > 如果您的組織具有處理金鑰的特殊原則，亦請[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)。
 
@@ -136,6 +136,6 @@ ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

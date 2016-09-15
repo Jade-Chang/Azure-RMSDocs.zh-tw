@@ -3,7 +3,7 @@ title: "Azure Rights Management 常見問題集 | Azure RMS"
 description: "Microsoft Azure Rights Management，也就是 Azure RMS 的一些常見問題的解答。"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 906e544cc3c9be6ba475502e3cdb93f2e047da7f
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
 
 
 ---
@@ -121,7 +121,7 @@ Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS)
 如需詳細資訊，請參閱[從 AD RMS 移轉至 Azure Rights Management](../plan-design/migrate-from-ad-rms-to-azure-rms.md)。
 
 ## 我們真的想要搭配使用 BYOK和 Azure RMS，聽說這樣無法和 Exchange Online 相容 — 有什麼好建議嗎？
-請勿讓目前的限制延遲了您的 Azure RMS 部署。 如果您擁有 Exchange Online 並且想要使用整合您自己的金鑰 (BYOK)，建議您立即以 Microsoft 在其中產生並管理金鑰的預設金鑰管理模式來部署 Azure RMS。 如此一來，您就可以立即取得保護重要檔案和電子郵件的所有優點，並且可以在日後選擇移至 BYOK (例如，當 Exchange Online 可支援 BYOK 時)。
+請勿讓目前的限制延遲了您的 Azure RMS 部署。 如果您擁有 Exchange Online 並且想要使用整合您自己的金鑰 (BYOK)，建議您立即以 Microsoft 在其中產生並管理金鑰的預設金鑰管理模式來部署 Azure RMS。 如此一來，您就可以立即取得保護重要檔案和電子郵件的所有優點，並且可以在日後選擇移至 BYOK (例如，當 Exchange Online 可支援 BYOK 時)。 當您執行移至 BYOK 時，仍可使用備份金鑰存取先前所保護的文件和電子郵件。
 
 不過，如果您的公司原則要求您使用硬體安全性模組 (HSM)，這樣反而會封鎖您的 Azure RMS 部署，另一個選項是立即使用 BYOK 部署 Azure RMS，但是 RMS 對 Exchange 的功能會減少。 如需詳細資訊，請參閱[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)的 [BYOK 定價和限制](../plan-design/byok-price-restrictions.md)。
 
@@ -145,7 +145,7 @@ Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS)
 
 支援 Azure RMS 的免費訂閱 (個人版 RMS) 支援取用已由 Azure RMS 所保護的內容。 如需詳細資訊，請參閱[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## 我可以在哪裡取得有關免費 Azure RMS 訂閱 (個人版 RMS) 的技術資訊 - 例如，實際運作方式、如何掌控帳戶及不能使用哪些網域？
+## 何處可以取得免費的 Azure RMS 訂閱 (個人版 RMS) 的技術資訊？例如此程序的運作方式，以及系統管理員如何控制所建立的帳戶。
 您會在[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md) 和相關文章中發現這些問題的答案。
 
 ## 我們要如何重新存取現在已離開組織的員工所保護的檔案？
@@ -223,6 +223,6 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

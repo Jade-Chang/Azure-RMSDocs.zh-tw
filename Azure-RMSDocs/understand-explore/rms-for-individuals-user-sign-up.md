@@ -1,9 +1,9 @@
 ---
 title: "使用者如何申請個人版 RMS | Azure RMS"
-description: "若要註冊此免費帳戶，使用者可造訪 Microsoft Rights Management 頁面來申請註冊，並提供工作或學校電子郵件地址。"
+description: "註冊此免費帳戶的指示，以及此程序之運作方式的技術資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: a31005f3dce927db917cb0f2851916b8946da4ee
+ms.sourcegitcommit: 0bd53bde0bfa9b44203b9d2f0f429265a013476c
+ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
 
 
 ---
@@ -22,34 +22,30 @@ ms.openlocfilehash: a31005f3dce927db917cb0f2851916b8946da4ee
 
 >*適用於：Azure Rights Management*
 
-若要註冊此免費帳戶，使用者可造訪 [Microsoft Rights Management 頁面](https://portal.aadrm.com/)來申請註冊，並提供工作或學校電子郵件地址。 
-
-使用者將會被導向至這個註冊頁面的最常見方式是，他們收到包含註冊方式說明之受保護附件的電子郵件訊息。 他們會收到 Microsoft 的電子郵件回應，然後即可輸入詳細資料建立其帳戶以完成註冊程序。 當他們從 Microsoft 取得電子郵件確認時，此最終電子郵件訊息會傳送至一個頁面，可以在其中下載不同裝置之共用應用程式，以及使用者指南的連結。
+若要註冊此免費帳戶，請前往 [Microsoft Rights Management 頁面](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)提出申請，並請提供您的工作電子郵件地址。 常見的方式是將您從您收到內含受保護附件的電子郵件導向到此註冊頁面，而受保護的附件會提供如何註冊的指示。 您會收到 Microsoft 的電子郵件回應，然後即可輸入詳細資料建立您的帳戶以完成註冊程序。 完成此動作時，頁面中會顯示所提供不同裝置之應用程式的下載位置，並會提供使用者指南的連結，以及原生支援 Rights Management 保護的最新應用程式清單。 
 
 ## 若要申請個人版 RMS
 
-1.  使用 Windows 或 Mac 電腦時，請移至 [Microsoft Rights Management 頁面](https://portal.aadrm.com)。
+1.  若是使用 Windows 或 Mac 電腦或行動裝置，請前往 [Microsoft Azure Rights Management 頁面](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)。
 
 2.  鍵入您用於組織的電子郵件地址，例如 **janetm@contoso.com** 或 **p.dover@fabrikam.com**。
 
     > [!IMPORTANT]
     > 不支援個人電子郵件帳戶，因此請勿輸入 Microsoft 帳戶 (先前稱為 Microsoft Live ID 帳戶)，或您在家中可能使用的網際網路提供者的其他個人帳戶。
 
-3.  按一下 [開始使用] 。
+3.  按一下 [註冊]。
 
     Microsoft 會使用您的電子郵件地址來檢查您的組織是否已具有[包含 Azure RMS 的付費定用帳戶](../get-started/requirements-subscriptions.md)。 如果是這種情況，您就不需要個人版 RMS，即可立即登入並取消個人版 RMS 的自助註冊。 如果找不到 Azure RMS 的付費訂用帳戶，您將會繼續進行下一個步驟。
 
-4.  等候確認電子郵件訊息傳送至您所提供的位址。 它將來自 Microsoft (DoNotReply@microsoft.com) 且主旨為 **Microsoft RMS**。
+4.  等候確認電子郵件訊息傳送至您所提供的位址。 電子郵件會從 Office 365 小組 (support@email.microsoftonline.com) 發出，主旨為 **完成註冊 Microsoft Azure Rights Management**。
 
-5.  收到電子郵件時，請按一下指示中的連結來完成申請程序。
+5.  當您收到此電子郵件時，請按一下 [沒錯，這是我] 確認您的電子郵件地址，以完成註冊程序。
 
-6.  此連結會將您帶到新的 [Microsoft Rights Management]  頁面，可讓您在頁面中提供您帳戶的詳細資料。 輸入您的名字和姓氏、輸入並確認您選擇的密碼、從下拉式清單選取您的國家/地區 (如果為列出您的國家/地區，則選取最接近的國家/地區)，然後按一下 [建立] 。
+6.  接著會隨即顯示 [最後提醒事項] 頁面為您提供帳戶的詳細資料。 請輸入您的名字、姓氏，再輸入您選擇的密碼並加以確認，然後按一下 [開始]。
 
-7.  等候來自 Microsoft 的另一則電子郵件訊息，該訊息現在會確認您的帳戶已準備好使用。
+7. 建立您的帳戶時，會顯示新的 Microsoft Rights Management 頁面讓您下載及安裝所提供的應用程式；您也可以按一下 [[更多資訊](../rms-client/sharing-app-user-guide.md)] 連結，閱讀所提供的應用程式使用者指南。
 
-8.  接收電子郵件時，請按一下連結登入並詳閱指示以下載和安裝共用應用程式，或按一下 [說明] 連結來閱讀共用應用程式使用者指南。
-
-現在已建立您的帳戶，您可以準備好開始保護檔案和讀取其他人已保護的檔案。 系統提示您登入以保護或讀取受保護檔案時，請輸入您用來建立個人版 RMS 帳戶的電子郵件地址和密碼。
+現在已建立您的帳戶，您可以準備好開始保護檔案和讀取其他人已保護的檔案。 當提示您必須登入才能保護或讀取受保護的檔案時，請輸入您建立個人版 RMS 帳戶時所使用的電子郵件地址及密碼。
 
 ## 註冊程序的技術概觀
 個人版 RMS 會使用自助式註冊程序，其他使用 Microsoft 雲端架構技術驗證使用者的服務也會使用此程序。
@@ -59,7 +55,7 @@ ms.openlocfilehash: a31005f3dce927db917cb0f2851916b8946da4ee
 1.  當組織的第一個使用者要求個人版 RMS 訂閱時，會檢查其電子郵件地址中提供的網域名稱，查看其是否已與 Azure 租用戶相關聯。 如果沒有任何現有的租用戶，會自動為組織建立包含第一個使用者之帳戶的新租用戶與 Azure 目錄。 與 Azure 的付費訂用帳戶不同，第一個帳戶不是全域系統管理員，而是標準使用者。 新帳戶使用的是使用者提供的電子郵件地址及密碼。
 
     > [!NOTE]
-    > 有些網域名稱無法用來建立目錄，因此無法用於個人版 RMS。 可從此「JavaScript 物件標記法」檔案檢視封鎖的網域名稱清單： [http://portal.aadrm.com/content/blocked_domains.json](http://portal.aadrm.com/content/blocked_domains.json)
+    > 有些網域名稱無法用來建立目錄，因此無法用於個人版 RMS。
 
     如果找到現有的租用戶，系統會檢查它以查看是否已經有 Azure RMS 的訂用帳戶。 找不到訂用帳戶時，可以新增免費個人版 RMS 訂用帳戶。
 
@@ -101,6 +97,6 @@ ms.openlocfilehash: a31005f3dce927db917cb0f2851916b8946da4ee
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

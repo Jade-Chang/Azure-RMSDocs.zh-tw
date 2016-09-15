@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 需求：雲端訂閱 | Azure RMS"
-description: "若要使用 Azure Rights Management (Azure RMS)，您的組織必須至少有一個下列訂閱，且訂閱需具有可保護檔案和電子郵件訊息的足夠使用者和服務授權數目。 如果您有服務將對使用者 (檔案或電子郵件訊息的擁有者) 套用保護，這些使用者需要這些授權的其中一個。 只會使用 (例如讀取及編輯) 此受保護資料的使用者不需要授權。"
+description: "識別可用來在組織中部署 Azure Rights Management (Azure RMS) 的訂閱。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 6a16e890-3c3e-4f47-80ca-176a34bdf8bc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 4cac0f039e69e31943bb8773d0761f7e654cc940
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 5c0597ee3882c25fd5c04fbd89990806754bda1a
 
 
 ---

@@ -1,9 +1,9 @@
 ---
 title: "設定 Azure Rights Management 的自訂範本 | Azure RMS"
-description: "在您啟用 Azure Rights Managementt (Azure RMS) 之後，使用者自動能夠使用兩個預設範本，讓他們可以輕鬆將原則套用至敏感性檔案，以限制僅供貴組織內已獲授權的使用者存取。 這兩個範本具有下列權限原則限制。"
+description: "適用於系統管理員設定和管理使用權限範本的資訊和指示。 範本可讓使用者和其他系統管理員輕鬆地將原則套用到敏感性檔案，限制僅供已獲得授權的使用者存取。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 83db5e11a4603523d7c4a86921fbdafb5f6fbfb5
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: 4f04a8b892cfb1f1ab62d1810fae172ad8bc9747
 
 
 ---

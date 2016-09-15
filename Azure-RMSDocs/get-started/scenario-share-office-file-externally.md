@@ -1,9 +1,9 @@
 ---
 title: "案例 - 與其他組織的使用者共用 Office 檔案 | Azure RMS"
-description: "此案例和支援的使用者文件會使用 Azure Rights Management，讓使用者可以與組織外的人安全地以電子郵件傳送 Office 檔案。 例如，Office 檔案可能是 Word 文件、Excel 試算表或 PowerPoint 簡報，其中包含合作夥伴的價目表資訊、經銷商的產品清單，或具有潛在客戶的傳遞時間明細行清單。 當使用者遵循指示時，附加到電子郵件訊息的檔案將受到 Azure Rights Management 的保護。"
+description: "此案例和支援的使用者文件會使用 Azure Rights Management，讓使用者可以與組織外的人安全地以電子郵件傳送 Office 檔案。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 
 ---

@@ -3,7 +3,7 @@ title: "Azure Information Protection 預覽的常見問題集 | Azure Informatio
 description: "對 Azure Information Protection 的預覽版本有疑問？ 看看此處是否有解答。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
+ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
+ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
 
 
 ---
@@ -82,7 +82,7 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 ## 電腦如何從 Azure Information Protection 取得原則資訊，以及它多久重新整理一次？
 
-每次使用者開啟 Office 應用程式時，Azure Information Protection 用戶端便會檢查是否有新版的 Azure Information Protection 原則。 如果有更新的版本，用戶端會使用 HTTPS 連結下載來保護資料。 
+每次使用者開啟 Office 應用程式時，Azure Information Protection 用戶端便會檢查是否有新版的 Azure Information Protection 原則。 此外，Office 應用程式會每 24 小時自動檢查一次。 如果有更新的版本，用戶端會使用 HTTPS 連結下載來保護資料。 
 
 如果在新的 Azure Information Protection 原則發佈時，已載入多個 Office 應用程式執行個體，您必須關閉所有執行個體以取得最新版的原則。 例如，您開啟了兩個 Word 文件，並只想要在一個文件中測試更新的 Azure Information Protection 原則：請將兩個 Word 文件都關閉，並重新開啟您想要搭配最新原則使用的文件。
 
@@ -129,7 +129,7 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 ## 我可以提示使用者證明他們為何要變更分類層級嗎？
 
-可以。 若要確定使用者證明其分類變更，請在 Azure 入口網站中，將選項 [Users must provide justification when lowering the sensitivity level] (降低敏感度等級時，使用者必須提供理由) 設定為 [開啟]。 當他們這麼做時，其本機 Windows 事件記錄檔中會記錄動作和理由︰[應用程式] > [Microsoft Azure Information Protection]。
+可以。 若要確認使用者為變更分類提供正當理由，請在 Azure 入口網站中，將選項 [使用者必須提供理由才能降低分類標籤、移除標籤或移除保護] 設為 [開啟]。 當他們這麼做時，其本機 Windows 事件記錄檔中會記錄動作和理由︰[應用程式] > [Microsoft Azure Information Protection]。
 
 ## 如何自動保護分類之後的內容？
 
@@ -187,6 +187,6 @@ Azure Information Protection 分類的檔案和電子郵件，可以供任何使
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

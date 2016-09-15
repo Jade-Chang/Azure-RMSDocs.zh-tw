@@ -1,6 +1,6 @@
 ---
-title: "Azure Information Protection 快速入門教學課程步驟 1 | Azure Rights Management"
-description: "簡介教學課程的步驟 1，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間約 10 分鐘。"
+title: "Azure Information Protection 入門教學課程步驟 1 | Azure Information Protection"
+description: "簡介教學課程的步驟 1，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
 ms.date: 07/291/2016
@@ -10,8 +10,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: b608ee307bf7388ab7c7ed70cc1286db5df176c8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 96b5d2e53d2d1460a97a87f4037cab79b8586244
 
 
 ---
@@ -86,6 +86,6 @@ ms.openlocfilehash: b608ee307bf7388ab7c7ed70cc1286db5df176c8
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

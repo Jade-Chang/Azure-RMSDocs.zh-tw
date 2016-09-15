@@ -1,9 +1,9 @@
 ---
 title: "Azure RMS 需求：Azure AD 目錄 | Azure RMS"
-description: "您必須有 Azure AD 目錄才能使用 Azure Rights Management (Azure RMS)。 您可為此目錄使用您的組織帳戶來登入 Azure 傳統入口網站，例如，您可設定和管理 Rights Management 範本。"
+description: "識別使用 Azure Rights Management (Azure RMS) 的 Azure AD 需求，以便能順利驗證使用者。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 8083c2f7e4cfdbf65748007ae21a48a49a56599f
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: b4ac71492ba9ad883d481149a248b919973d7386
 
 
 ---

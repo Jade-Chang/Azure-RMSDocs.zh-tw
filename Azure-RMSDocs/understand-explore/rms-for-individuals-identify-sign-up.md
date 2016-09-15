@@ -1,9 +1,9 @@
 ---
 title: "如何找出使用者是否已註冊個人版 RMS | Azure RMS"
-description: "身為系統管理員，您如何得知使用者是否已申請個人版 RMS？ 您可以使用這些方法的任何一個或一組方法。"
+description: "系統管理員可以使用文章內所述之任一種方法或這些方法的組合，確認您的使用者是否已經註冊個人版的 RMS。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: dc8c0a69078ffa3be87a5fb02bf86d9afe2dc27e
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: 6a8a6ac7aae7c8e370af47e1d39a9f69acc1e12c
 
 
 ---
@@ -36,6 +36,6 @@ ms.openlocfilehash: dc8c0a69078ffa3be87a5fb02bf86d9afe2dc27e
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

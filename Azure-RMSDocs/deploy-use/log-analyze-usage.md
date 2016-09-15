@@ -1,9 +1,9 @@
 ---
 title: "記錄和分析 Azure Rights Management 使用情況 | Azure RMS"
-description: "請參閱本主題的資訊來協助您了解如何使用 Azure Rights Management (Azure RMS) 的使用情況記錄功能。 Azure Rights Management 服務可以記錄它對您的組織所做的每一個要求，包括來自使用者的要求、由組織中的 Rights Management 系統管理員所執行的動作，以及 Microsoft 操作員為了支援 Azure Rights Management 部署而執行的動作。"
+description: "如何以使用記錄搭配 Azure Rights Management (Azure RMS) 的資訊和指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
-ms.openlocfilehash: 868656f84f39db20f0aee8d148b00af15849fda5
+ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
+ms.openlocfilehash: c1727f1a5d6747977da7113b6dc0ac37ebefe386
 
 
 ---
