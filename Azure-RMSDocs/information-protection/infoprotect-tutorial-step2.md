@@ -3,15 +3,15 @@ title: "Azure Information Protection 快速入門教學課程步驟 2 | Azure In
 description: "簡介教學課程的步驟 2，可為組織快速試用 Microsoft Azure Information Protection，只有 4 個步驟，花費時間不超過 15 分鐘。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
+ms.sourcegitcommit: ba0f05619e1d13e16b8d4f6d86231b89e9326726
+ms.openlocfilehash: 9dfbeb4c887c619d07b11be0da304ac4f4e7d4a9
 
 
 ---
@@ -24,14 +24,14 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 雖然 Azure Information Protection 有預設原則，您不需設定即可使用，不過我們即將看看該原則並進行一些變更。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。 如果您想要測試保護，以及分類和標記，請以全域管理員身分登入，以便您擷取 Azure Rights Management 範本。
+1. 在新的瀏覽器視窗中登入 [Azure 入口網站](https://portal.azure.com)。 如果您想要測試保護，以及分類和標記，請以全域管理員身分登入，以便您擷取 Azure Rights Management 範本。
  
 2. 在中樞功能表︰按一下 [新增]  >  [安全性 + 身分識別]  >  [Azure Information Protection (預覽)]  >  [建立]。
 
-    這會建立 [Azure Information Protection] 刀鋒視窗，以便在下次您登入入口網站，您可以從中樞 [瀏覽] 清單選取服務。 
+    這會建立 [Azure 資訊保護] 刀鋒視窗，以便您下次登入入口網站時，從中樞 [更多服務] 清單選取服務。 
 
     > [!TIP] 
-    > 選取 [釘選到儀表板]，在儀表板上建立 [Azure Information Protection] 磚，以便您可以在下次登入入口網站時略過瀏覽步驟。
+    > 選取 [釘選到儀表板]，在儀表板上建立 [Azure 資訊保護] 磚，以便您可以在下次登入入口網站時略過瀏覽步驟。
 
 3.  探索主要的 **Azure Information Protection** 刀鋒視窗，其中顯示自動建立的預設 Information Protection 原則：
     
@@ -53,7 +53,7 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 2. 在 [標籤: 機密] 刀鋒視窗中，您現在會看到每個標籤的可用設定。 進行下列變更：
 
-    a. 如果您已啟用 Azure Rights Managment：在 [設定 RMS 範本以保護包含此標籤的文件與電子郵件] 區段中，如果您看到 [選取 RMS 範本來源]，請保留預設值 [Azure RMS]。 然後，針對 [選取 RMS 範本]，按一下下拉式方塊並選取預設範本 [\<您的組織名稱> - 機密]。 例如，如果您的組織名稱是 VanArsdel, Ltd，您會看到並選取 [VanArsdel, Ltd - 機密]。 如果您已停用這個預設 Azure Rights Management 範本，請選取替代範本。 不過，如果您選取部門範本，請確定您的帳戶包含在範圍內。
+    a. 如果您已啟用 Azure Rights Managment：在 [設定 RMS 範本以保護包含此標籤的文件與電子郵件] 區段中，針對 [選取 RMS 範本來源]保留預設 [Azure RMS]。 然後，針對 [選取 RMS 範本]，按一下下拉式方塊並選取預設範本 [\<您的組織名稱> - 機密]。 例如，如果您的組織名稱是 VanArsdel, Ltd，您會看到並選取 [VanArsdel, Ltd - 機密]。 如果您已停用這個預設 Azure Rights Management 範本，請選取替代範本。 不過，如果您選取部門範本，請確定您的帳戶包含在範圍內。
     
     如果未啟用 Azure Rights Management，則您無法使用此選項。
     
@@ -97,6 +97,6 @@ ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 [步驟 3 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

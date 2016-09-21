@@ -2,15 +2,15 @@
 title: "安裝 Azure Information Protection 用戶端 | Azure Information Protection"
 description: "安裝會新增 Information Protection 列到您 Office 應用程式的用戶端，以便您可以針對文件和電子郵件選擇分類標籤的指示。"
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
+ms.sourcegitcommit: 2ecdfe905694b3d14727abdb5e6176d24f675d2e
+ms.openlocfilehash: cd6684dd25a721272c073fcc972724a6b81c0c72
 
 
 ---
@@ -74,6 +74,15 @@ ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
     - [執行診斷] 連結：此功能目前尚未實作。
 
+## Azure 資訊保護列的鍵盤快速鍵
+
+若要使用鍵盤快速鍵存取 Azure 資訊保護列，請使用下列鍵盤組合：
+
+- 按 **Ctrl** + **Shift** + **~** 
+
+然後使用 Tab 鍵選取標籤及列上的其他控制項 (**隱藏標籤**圖示與**移除標籤**圖示)，再用 Enter 鍵加以選取。
+
+
 ## 檔案位置
 
 用戶端檔案：   
@@ -95,6 +104,6 @@ ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

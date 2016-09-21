@@ -2,15 +2,15 @@
 title: "如何建立新的 Azure Information Protection 標籤 | Azure Information Protection"
 description: "雖然 Azure Information Protection 有隨附可自訂的預設標籤，您也可以自行建立使用者可在 Information Protection 列上看見的標籤。"
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 4edbdde88444304c314251124618d563a3662477
 
 
 ---
@@ -27,9 +27,9 @@ ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
 
 使用下列指示以新增新的標籤到 Azure Information Protection 原則。
 
-1. 如果您尚未這樣做，請登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure Information Protection] 刀鋒視窗。 
+1. 如果您尚未這樣做，請在新的瀏覽器視窗中登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure 資訊保護] 刀鋒視窗。 
     
-    例如，在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 **Information**。 選取 [Azure Information Protection]。
+    例如，在中樞功能表按一下 [更多服務] 開始在 [篩選] 方塊中輸入**資訊**。 選取 [Azure Information Protection]。
 
 2. 在 [Azure Information Protection] 刀鋒視窗上，執行下列其中一個動作：
 
@@ -52,6 +52,6 @@ ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

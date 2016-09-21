@@ -2,15 +2,15 @@
 title: "如何刪除或重新排序 Azure Information Protection 標籤 | Azure Information Protection"
 description: "透過在 Azure Information Protection 原則中設定此項，您可以刪除或重新排序使用者在 Information Protection 列上看到的標籤。"
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 14863f7fcd4df2e8baaddc7837649fa3efe59019
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 0283706733a61e2ccf88552b23ec67a7f755b8da
 
 
 ---
@@ -35,9 +35,9 @@ ms.openlocfilehash: 14863f7fcd4df2e8baaddc7837649fa3efe59019
 
 使用下列指示來進行這些變更。
 
-1. 如果您尚未這樣做，請登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure Information Protection] 刀鋒視窗。 
+1. 如果您尚未這樣做，請在新的瀏覽器視窗中登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure 資訊保護] 刀鋒視窗。 
     
-    例如，在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 **Information**。 選取 [Azure Information Protection]。
+    例如，在中樞功能表按一下 [更多服務] 開始在 [篩選] 方塊中輸入**資訊**。 選取 [Azure Information Protection]。
 
 2. 在 [Azure Information Protection] 刀鋒視窗上，根據您要刪除、停用或重新排序標籤，執行下列其中一項動作：
 
@@ -57,6 +57,6 @@ ms.openlocfilehash: 14863f7fcd4df2e8baaddc7837649fa3efe59019
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
