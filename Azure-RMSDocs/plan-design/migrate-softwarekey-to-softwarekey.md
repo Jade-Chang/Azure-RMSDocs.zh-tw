@@ -1,9 +1,9 @@
 ---
 title: "步驟 2：受軟體保護的金鑰移轉至受軟體保護的金鑰 | Azure RMS"
-description: "這些指示是屬於將路徑從 AD RMS 移轉至 Azure Rights Management，且只有在您的 AD RMS 金鑰是受軟體保護的，而且您想要使用受軟體保護的租用戶金鑰移轉至 Azure Rights Management 時才適用。"
+description: "＜將路徑從 AD RMS 移轉至 Azure Rights Management＞中的指示，且只有在您的 AD RMS 金鑰是軟體保護，而且您想要使用受軟體保護的租用戶金鑰移轉至 Azure Rights Management 時才適用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 2bd9abcac99a06a29e5dacdd014e660358840adc
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
 3.  使用 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) Cmdlet 上傳第一個匯出的信任發行網域 (.xml) 檔案。 如果您因為擁有多個信任的發佈網域，而使得所擁有的 .xml 檔案不只一個，則您所選擇的檔案應包含已匯出的信任發佈網域，移轉之後您才能在 Azure RMS 使用該網域來保護內容。 使用下列命令：
 
     ```
-    Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword -Active $True -Verbose
+    Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword <secure string> -Active $True -Verbose
     ```
-    例如：**Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword -Active $true -Verbose**
-
-    系統提示時，請輸入您稍早指定的密碼，並確認您想要執行此動作。
-
-4.  當命令完成時，針對匯出信任發行網域而建立的每個 .xml 檔案重複步驟 3。 但為這些檔案執行匯入命令時，請將 **-Active** 設為 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
+    您可以使用 [ConvertTo-SecureString -AsPlaintext](https://technet.microsoft.com/library/hh849818.aspx) 或 [Read-Host](https://technet.microsoft.com/library/hh849945.aspx) 指定密碼作為安全字串。 當您使用 ConvertTo-SecureString 且密碼有特殊字元時，請在密碼前後加上單引號或逸出特殊字元。
+    
+    例如：先執行 **$TPD_Password = Read-Host -AsSecureString**，然後輸入您稍早指定的密碼。 接著執行 **Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Active $true -Verbose**。 當系統出現提示時，請確認您要執行此動作。
+    
+4.  當命令完成時，針對匯出信任發行網域而建立的每個 .xml 檔案重複步驟 3。 但為這些檔案執行匯入命令時，請將 **-Active** 設為 **false**。 例如：**Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword $TPD_Password -Active $false -Verbose**
 
 5.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) Cmdlet 來中斷 Azure RMS 服務的連線：
 
@@ -70,6 +70,6 @@ ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

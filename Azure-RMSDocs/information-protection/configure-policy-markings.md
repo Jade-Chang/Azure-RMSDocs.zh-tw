@@ -2,15 +2,15 @@
 title: "如何設定 Azure Information Protection 的視覺標記標籤 | Azure Information Protection"
 description: "當您將標籤指派給文件或電子郵件訊息時，您可以選取數個選項讓選擇的分類顯而易見。 這些視覺標記為頁首、頁尾及浮水印。"
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: d70bfbe658b1c7d9a5a91c925a554974423699a7
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 999a0937bf741514ae8ee5ef819d4ab901c3304b
 
 
 ---
@@ -39,9 +39,9 @@ ms.openlocfilehash: d70bfbe658b1c7d9a5a91c925a554974423699a7
 
 您可以使用下列指示設定標籤的視覺標記。
 
-1. 如果您尚未這樣做，請登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure Information Protection] 刀鋒視窗。 
+1. 如果您尚未這樣做，請在新的瀏覽器視窗中登入 [Azure 入口網站](https://portal.azure.com)，然後瀏覽至 [Azure 資訊保護] 刀鋒視窗。 
     
-    例如，在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 **Information**。 選取 [Azure Information Protection]。
+    例如，在中樞功能表按一下 [更多服務] 開始在 [篩選] 方塊中輸入**資訊**。 選取 [Azure Information Protection]。
 
 2. 在 [Azure Information Protection] 刀鋒視窗中，選取您要設定視覺標記的標籤。
 
@@ -81,6 +81,6 @@ ms.openlocfilehash: d70bfbe658b1c7d9a5a91c925a554974423699a7
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -3,7 +3,7 @@ title: "Azure Rights Management 常見問題集 | Azure RMS"
 description: "Microsoft Azure Rights Management，也就是 Azure RMS 的一些常見問題的解答。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
-ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
+ms.sourcegitcommit: 62b72d2debef3421fea4f0e70beed67e5364d7d3
+ms.openlocfilehash: 99b5e4ea74cd6f76a2409d89c3db5d8672b63055
 
 
 ---
@@ -165,37 +165,8 @@ Azure RMS 最初並不支援從內部部署的 Rights Management (例如 AD RMS)
 除了名稱和外觀以外，**[不要轉寄]** 既不是 [轉寄] 權限的相反，也不是範本。 它其實是一組權限，包括限制複製、列印及儲存附件，以及限制轉寄電子郵件。 這些權限會透過選擇的收件者以動態方式套用到使用者，而不是由管理員以靜態方式指派。 如需詳細資訊，請參閱 [Configuring usage rights for Azure Rights Management](../deploy-use/configure-usage-rights.md) (設定 Azure Rights Management 的使用權限) 中[電子郵件的 [不要轉寄] 選項](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails)一節。
 
 ## 哪邊可以找到法律、規範和 SLA 等方面的 Azure RMS 支援資訊？
-Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋找的資訊與 Azure RMS 有關，但與如何使用 Azure RMS 服務無關，請查看下列資源：
 
-**法律和隱私權：**
-
--   Microsoft Azure 合約資訊： [Microsoft Azure 合約](http://azure.microsoft.com/support/legal/subscription-agreement/)
-
--   Microsoft Azure 隱私權資訊： [Microsoft Azure 隱私權聲明](http://azure.microsoft.com/support/legal/privacy-statement/)
-
-**安全性、規範以及稽核：**
-
-請參閱 [Azure RMS 可以解決哪些問題？](../understand-explore/azure-rms-problems-it-solves.md) 一文中的 [安全性、規範和法規要求](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 一節。 此外：
-
--   Azure RMS 的外部憑證： [Microsoft Azure 信任中心](http://azure.microsoft.com/support/trust-center/)
-
--   如需 FIPS 140 資訊： [FIPS 140 驗證](https://technet.microsoft.com/library/security/cc750357.aspx)
-
-**服務等級協定：**
-
--   Azure RMS 的服務等級協定 (以選定的國家/地區列出)：[從產品授權搜尋頁面下載](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
-
-    - 例如，按一下 [OnlineSvcsConsolidatedSLA(WW)(English)(March2016)] 以下載北美地區的 2016 年 3 月服務等級協定。
-
--   Azure Active Directory 的服務等級協定： [服務等級協定](http://azure.microsoft.com/support/legal/sla/)
-
-**文件：**
-
--   Azure Active Directory 文件網站： [Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
-
--   Azure Active Directory 程式庫：[Azure Active Directory](https://msdn.microsoft.com/library/azure/mt168838.aspx)
-
--   Office 365 程式庫：[Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
+請參閱 [Azure Rights Management 的法遵與支援資訊](../understand-explore/compliance.md)。
 
 ## 分類和標記新功能的最新資訊為何？
 
@@ -223,6 +194,6 @@ Azure RMS 既支援其他服務，同時也仰賴其他服務。 如果您要尋
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

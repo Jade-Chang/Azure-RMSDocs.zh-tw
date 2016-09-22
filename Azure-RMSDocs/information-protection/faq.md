@@ -3,7 +3,7 @@ title: "Azure Information Protection 預覽的常見問題集 | Azure Informatio
 description: "對 Azure Information Protection 的預覽版本有疑問？ 看看此處是否有解答。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
-ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 39334a5cc18f1b45eabd7cf5b4f9b891fb10a5e6
 
 
 ---
@@ -143,6 +143,10 @@ Azure Information Protection 是以雲端為基礎的解決方案。 如果您�
 
 雖然您目前可以設定視覺標記、保護，以及兩個層級的條件，不過當您使用子層級時，請只在子層級上設定這些設定。 如果您在父標籤和其子層級上設定相同的設定，子層級設定的優先順序較高。
 
+## 標記電子郵件時，會有任何附件自動得到相同標籤嗎？
+
+否。 當您標記有附件的電子郵件訊息時，附件不會繼承相同標籤。 附件會維持沒有標籤，或保留另外套用的標籤。 不過，如果電子郵件的標籤套用了保護，保護就會套用至附件。
+
 ## DLP 方案和其他應用程式如何與 Azure Information Protection 整合？
 
 因為 Azure Information Protection 使用持續性的中繼資料來進行分類，其中包括純文字標籤，所以 DLP 方案和其他應用程式可以讀取此資訊。 在檔案中，此中繼資料會儲存在自訂屬性。在電子郵件中，這項資訊是在電子郵件標頭中。
@@ -187,6 +191,6 @@ Azure Information Protection 分類的檔案和電子郵件，可以供任何使
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
