@@ -12,8 +12,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: ba7acf835439d059874e0512997b2b591193f0c3
 
 
 ---
@@ -28,9 +28,9 @@ ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
 
 若要在 Azure Information Protection 預覽版期間設定 Azure Information Protection 原則：
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
+1. 在新的瀏覽器視窗中登入 [Azure 入口網站](https://portal.azure.com)。
 
-2. 瀏覽至 [Azure Information Protection] 刀鋒視窗︰例如，在中樞功能表中，按一下 [瀏覽]，開始在 [篩選] 方塊中輸入 **Information Protection**。 從結果中，選取 [Azure Information Protection]。 
+2. 瀏覽至 [Azure 資訊保護] 刀鋒視窗︰例如，在中樞功能表按一下 [更多服務]，然後開始在 [篩選] 方塊中輸入**資訊保護**。 從結果中，選取 [Azure Information Protection]。 
 
     然後您會看到 [Azure Information Protection] 刀鋒視窗，您可以在其中設定 Azure Information Protection 原則，該原則包含下列元素：
 
@@ -80,6 +80,6 @@ Azure Information Protection 隨附[預設原則](configure-policy-default.md)�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

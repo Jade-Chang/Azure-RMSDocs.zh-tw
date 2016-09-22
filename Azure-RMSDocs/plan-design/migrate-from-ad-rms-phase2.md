@@ -3,7 +3,7 @@ title: "從 AD RMS 移轉至 Azure Rights Management - 階段 2 | Azure RMS"
 description: "從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 2，涵蓋從 AD RMS 移轉至 Azure Rights Management 的步驟 5。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: d03c61ae5a2b0f74259e177d0f15dd2262465754
+ms.sourcegitcommit: 4184c8b78d8ca6beb88efad79e0372367c523f2f
+ms.openlocfilehash: 2d8abaec220074531724ce4e95b4aefe23d0b2d6
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: d03c61ae5a2b0f74259e177d0f15dd2262465754
 
             reg delete HKCU\Software\Microsoft\Office\16.0\Common\DRM /f
 
-    - 針對 **Redirect_Onprem.cmd** - 搜尋 `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F1` 這一行，並在其正下方加入下列兩行：
+    - 針對 **Redirect_Onprem.cmd** - 搜尋 `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F` 這一行，並在其正下方加入下列兩行：
 
             reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServerUrl" /d "https://%CloudRMS%/_wmcs/licensing" /F 
 
@@ -131,6 +131,6 @@ Redirect_OnPrem.cmd：
 若要繼續移轉，請移至[第 3 階段 - 支援服務組態](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

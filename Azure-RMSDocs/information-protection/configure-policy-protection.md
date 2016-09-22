@@ -2,15 +2,15 @@
 title: "如何設定標籤以套用 Rights Management 保護 | Azure Information Protection"
 description: "您可以透過使用 Rights Management 服務來保護您最敏感的文件與電子郵件，它會使用加密、身分識別與授權原則來協助防止資料遺失。 此保護會在您設定標籤以使用 Rights Management 範本時套用。"
 manager: mbaldwin
-ms.date: 08/15/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
+ms.sourcegitcommit: fc390680918a08405e914a858c64bb723efa5580
+ms.openlocfilehash: ca1534801facc6273d481cc99f23ec8acd5341d1
 
 
 ---
@@ -47,9 +47,9 @@ ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 ## 設定標籤以套用 Rights Management 保護
 
-1. 如果您尚未這樣做，請以全域管理員身分登入 [Azure 入口網站](https://portal.azure.com)，以便您可以擷取 Azure Rights Management 範本。 然後瀏覽至 [Azure Information Protection] 刀鋒視窗。 
+1. 如果您尚未這樣做，請在新的瀏覽器視窗以全域管理員身分登入 [Azure 入口網站](https://portal.azure.com)，以便您擷取 Azure Rights Management 範本。 然後瀏覽至 [Azure Information Protection] 刀鋒視窗。 
 
-    例如，在中樞功能表中，按一下 [瀏覽] 並開始在 [篩選] 方塊中輸入 **Information**。 選取 [Azure Information Protection]。
+    例如，在中樞功能表按一下 [更多服務] 開始在 [篩選] 方塊中輸入**資訊**。 選取 [Azure Information Protection]。
 
 2. 在 [Azure Information Protection] 刀鋒視窗上，選取您要設定以套用 Rights Management 保護的標籤。
 
@@ -57,15 +57,22 @@ ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
     
     在大部分情況下，您將選取 [Azure RMS]。 請勿選取 AD RMS，除非您已閱讀並瞭解隨附於此設定的必要條件和限制，有時也稱為 「*保存您自己的金鑰*(HYOK)。 如需詳細資訊，請參閱 [Hold your own key (HYOK) requirements and restrictions for AD RMS protection](configure-adrms-restrictions.md) (AD RMS 保護的保存您自己的金鑰 (HYOK) 需求和限制)。
     
-4. 如果您選取 Azure RMS：針對 [選取 RMS 範本]，按一下下拉式方塊，然後選取您想要用來保護包含此標籤的文件與電子郵件的範本或版權管理選項。
+4. 如果您選取 Azure RMS：針對 [選取 RMS 範本]，按一下下拉式方塊，然後選取您想要用來保護具有此標籤的文件與電子郵件的[範本](../deploy-use/configure-custom-templates.md)或版權管理選項。
+    
+    選項的詳細資訊：
+    
+    - 您在開啟 [標籤] 刀鋒視窗後曾建立新範本嗎？ 請關閉此刀鋒視窗並返回步驟 2，讓系統從 Azure 擷取新建立的範本以供您選取。
+    
+    - 如果您選取**部門範本**，或者已設定[登入控制項](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
+    
+        - 範本設定範圍外的使用者，或是排除在套用 Azure Rights Management 保護外的使用者仍會看到標籤，但無法加以套用。 這類使用者會在選取標籤時看見下列訊息︰**Azure Information Protection 無法套用此標籤。若此問題持續發生，請連絡系統管理員。**
+        
+    - 如果您選取 [移除保護]：
+        
+        - 使用者必須有權限移除 Rights Management 保護，才能套用具有此選項的標籤。 這個選項要求使用者具備**匯出** (適用於 Office 文件) 或**完整控制**的[使用權限](../deploy-use/configure-usage-rights.md)，或身為 Rights Management 擁有者 (自動授與完整控制使用權限) 或 [Azure Rights Management 的進階使用者](../deploy-use/configure-super-users.md)。 預設版權管理範本不包括可讓使用者移除保護的使用權限。 
 
-    > [!NOTE] 
-    > 如果您在開啟 [標籤] 刀鋒視窗之後建立了新的範本，請關閉此刀鋒視窗並返回步驟 2，使系統從 Azure 擷取新建立的範本以供您選取。
-    
-    請注意，若您選取部門範本，或者已設定[控制項](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)：
-    
-    - 範本設定範圍外的使用者，或是排除在套用 Azure Rights Management 保護外的使用者仍會看到標籤，但無法加以套用。 這類使用者會在選取標籤時看見下列訊息︰**Azure Information Protection 無法套用此標籤。若此問題持續發生，請連絡系統管理員。**
-    
+            如果使用者沒有權限移除 Rights Management 保護及使用 [移除保護] 選項選取這個標籤，就會看到下列訊息：**Azure 資訊保護無法套用此標籤。若此問題持續發生，請連絡系統管理員。**
+
 5. 如果您選取 AD RMS︰提供範本 GUID 和您的 AD RMS 叢集的授權 URL。 [詳細資訊](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
 6. 按一下 **[儲存]**。
@@ -78,6 +85,6 @@ ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
