@@ -3,7 +3,7 @@ title: "案例 - 主管安全地交換機密資訊 | Azure RMS"
 description: "此案例和支援使用者文件使用 Azure Rights Management，可讓主管安全地互換電子郵件與電子郵件附件，並有原則會自動限制主管的存取，完全不需要他們採取任何特殊動作。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
+ms.sourcegitcommit: 3b0b165f594da47c090f7822afed2a80541b71e8
+ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
 
 
 ---
@@ -49,7 +49,7 @@ ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |下列其中一個組態：<br /><br />- Azure Rights Management 會啟用 Exchange Online<br /><br />- RMS 連接器已針對 Exchange 內部部署安裝和設定|針對 Exchange Online：請參閱 **Exchange Online：IRM 組態**一節 (位於[針對 Azure Rights Management 設定應用程式](https://technet.microsoft.com/library/jj585031.aspx))。<br /><br />針對 Exchange 內部部署：[部署 Azure Rights Management 連接器](https://technet.microsoft.com/library/dn375964.aspx)|
 |您已如下所述設定自訂範本|[設定 Azure Rights Management 的自訂範本](https://technet.microsoft.com/library/dn642472.aspx)|
-|您已如本文稍後所述設定 IRM 的傳輸保護規則|針對 Exchange Online：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />針對 Exchange 2013：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />針對 Exchange 2010：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|您已如本文稍後所述設定 IRM 的傳輸保護規則|若為 Exchange Online：[郵件流程或傳輸規則](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />針對 Exchange 2013：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />針對 Exchange 2010：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### 設定主管的自訂範本
 
@@ -132,6 +132,6 @@ ms.openlocfilehash: 1ec54b54197471f8cccaf6ae83ae8e592da30cae
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
