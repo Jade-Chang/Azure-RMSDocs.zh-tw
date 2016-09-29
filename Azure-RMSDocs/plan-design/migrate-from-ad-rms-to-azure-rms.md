@@ -3,7 +3,7 @@ title: "從 AD RMS 移轉至 Azure Rights Management | Azure RMS"
 description: "將您的 Active Directory Rights Management Services (AD RMS) 部署移轉至 Azure Rights Management (Azure RMS) 的指示。 移轉之後，使用者仍然可以存取您組織使用 AD RMS 保護的文件及電子郵件訊息，而之後將使用 Azure RMS 重新保護內容。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
+ms.sourcegitcommit: 5c20772240961bdd3052e55a19eaca21ef7da003
+ms.openlocfilehash: 01c107979265abf0d34060eccf09ca32c0086ab8
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
         
     - 密碼編譯模式 2：
     
-        - 必須先在密碼編譯模式 2 中執行 AD RMS 伺服器及用戶端，才能開始移轉至 Azure RMS。 如需詳細資訊，請參閱 [AD RMS 密碼編譯模式](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)。
+        - 必須先在密碼編譯模式 2 中執行 AD RMS 伺服器及用戶端，才能開始移轉至 Azure RMS。 雖然目前的伺服器授權人憑證 (SLC) 金鑰必須使用密碼編譯模式 2，設定為使用密碼編譯模式 1 的先前金鑰將作為封存的金鑰受 Azure RMS 支援。 如需密碼編譯模式以及如何移至密碼編譯模式 2 的詳細資訊，請參閱 [AD RMS 密碼編譯模式](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)。
         
     - 支援所有有效的 AD RMS 拓撲：
     
@@ -184,6 +184,6 @@ ms.openlocfilehash: 6aa75f5e6b326068951b3d4d65f337c15a475029
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
