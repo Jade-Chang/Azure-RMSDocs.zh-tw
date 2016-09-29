@@ -2,15 +2,15 @@
 title: "HYOK 限制 |Azure Information Protection"
 description: Identify the limitations, prerequisites, and recommendations if you select AD RMS protection with Azure Information Protection. This solution is sometimes referred to as "hold your own key" (HYOK).
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: fe0f492b94cbcc437c722daae9c3c56820593566
+ms.sourcegitcommit: 593ec90a781a41e3b93a4c31d22a3ca547b49bc7
+ms.openlocfilehash: faf3180ca290f1668233663099b924ff199524d9
 
 
 ---
@@ -43,6 +43,16 @@ Azure RMS 使用由 Microsoft (預設)，或您所管理的組織使用的私用
 > 請只在必要的時候使用此設定，並且只針對需要的文件和電子郵件使用之。 AD RMS 保護並不提供您使用 Azure RMS 保護時所列的優點，且其目的為「不計代價的資料不透明度」。
 
 當標籤使用 AD RMS 保護，而非 Azure RMS 保護時，使用者並不會察覺。 由於 AD RMS 保護的限制，請確定您提供清楚的指南，告知使用者何時應選取套用 AD RMS 保護的標籤。
+
+## 限制
+
+透過 Azure 資訊保護使用 AD RMS 保護，除了不支援使用 Azure RMS 保護時所享的列出權益，同時具有下列限制︰
+
+- 不支援 Office 2010 及 Office 2007。
+
+- 若您同時也使用 Azure RMS 保護︰設定 Azure RMS 保護的標籤時，不要使用 [不可轉寄] 選項。 您也必須指示使用者不要在 Outlook 中手動選取此選項。 
+
+    如果經由標籤或使用者手動套用 [不可轉寄] 選項，選項可能由 AD RMS 部署套用，而不是預期的 Azure Rights Management 服務。 在此案例中，您外部共用的人員將無法開啟套用此 [不要轉寄] 選項的電子郵件訊息。
 
 ## HYOK 的需求
 
@@ -94,6 +104,6 @@ Azure RMS 使用由 Microsoft (預設)，或您所管理的組織使用的私用
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

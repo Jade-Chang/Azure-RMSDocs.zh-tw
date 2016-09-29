@@ -117,7 +117,7 @@ Redirect_OnPrem.cmd：
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    每個項目都有 **https://舊 RMS 伺服器 URL/_wmcs/licensing** 的 REG_SZ 值，而其資料格式如下：**https://&lt;您的租用戶 URL&gt;/_wmcs/licensing**。
+    每個項目都有 **https://OldRMSserverURL/_wmcs/licensing** 的 REG_SZ 值，而其資料格式如下：**https://&lt;您的租用戶 URL&gt;/_wmcs/licensing**。
 
     > [!NOTE]
     > *&lt;您的租用戶 URL&gt;* 具有下列格式：**{GUID}.rms.[區域].aadrm.com**。

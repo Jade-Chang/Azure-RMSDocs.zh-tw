@@ -3,7 +3,7 @@ title: "規劃及實作 Azure Rights Management 租用戶金鑰 | Azure RMS"
 description: "協助您規劃和管理 Azure RMS 的 Rights Management (RMS) 租用戶金鑰的資訊。 例如，不是 Microsoft 管理租用戶金鑰 (預設值)，而是您可能想要管理您自己的租用戶金鑰，以遵循適用於貴組織的特定法規。 管理您自己的租用戶金鑰也稱為自備金鑰或 BYOK。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec7cc8b20435df11d7b8f89c4b9e9d0f039dc55
-ms.openlocfilehash: 25d47ab488474ed756b3139bb9d42d420cea25f7
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 0e3e77073898e2ae9f84f555183fb6fcbc7d2d8a
 
 
 ---
@@ -96,7 +96,7 @@ ms.openlocfilehash: 25d47ab488474ed756b3139bb9d42d420cea25f7
 
 不過，Azure RMS 必須先取得授權使用您組織金鑰保存庫中的金鑰，才能使用金鑰。 為了達成此目的，Azure 金鑰保存庫系統管理員會使用金鑰保存庫 PowerShell Cmdlet [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx)，並將權限授與 Azure RMS 服務主體 **Microsoft.Azure.RMS**。 例如：
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 您現在可設定 Azure RMS 將此金鑰作為組織的 Azure RMS 租用戶金鑰使用。 使用 Azure RMS Cmdlet，先連接到 Azure RMS，然後登入︰
 
@@ -136,6 +136,6 @@ ms.openlocfilehash: 25d47ab488474ed756b3139bb9d42d420cea25f7
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
