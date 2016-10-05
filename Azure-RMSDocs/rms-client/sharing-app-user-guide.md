@@ -1,28 +1,28 @@
 ---
-title: "Rights Management 共用應用程式使用者指南 | Azure RMS"
+title: "Rights Management 共用應用程式使用者指南 | Azure Information Protection"
 description: "Windows 的 Microsoft Rights Management (RMS) 共用應用程式可協助您保護重要的文件與圖片不被不應該看到的人看到，即使您以電子郵件傳送或將它們儲存到另一個裝置。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: c39e311e8247938cf44068106a9771d2ad7a56e0
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: c89c82350768222da44c631dd88c97bcdb0db4d5
 
 
 ---
 
 # Rights Management 共用應用程式使用者指南 (英文)
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
-Windows 的 Microsoft Rights Management (RMS) 共用應用程式可協助您保護重要的文件與圖片不被不應該看到的人看到，即使您以電子郵件傳送或將它們儲存到另一個裝置。 您也可以使用此應用程式開啟及使用其他人使用相同的 Rights Management 技術保護的檔案。
+Windows 的 Microsoft Rights Management (RMS) 共用應用程式可協助您保護重要的文件與圖片不被不應該看到的人看到，即使您以電子郵件傳送或將它們儲存到另一個裝置。 您也可以使用此應用程式開啟及使用其他人以相同的 Rights Management 保護技術所保護的檔案。
 
 你只需要至少執行 Windows 7 Service Pack 1 的電腦。 然後從 Microsoft [下載並安裝](http://go.microsoft.com/fwlink/?LinkId=303970) 這個免費的應用程式。
 
@@ -36,7 +36,7 @@ Windows 的 Microsoft Rights Management (RMS) 共用應用程式可協助您保�
 |**… 與我信任的、在其他組織工作的人安全地分享財務資訊**<br /><br />您與夥伴公司合作並且想要以電子郵件傳送包含預計銷售圖表的 Excel 試算表給他們。 您想要讓他們檢視圖表但不進行變更。|您使用 Excel 中功能區上的 [共用保護]  按鈕，輸入夥伴公司中合作的兩個人員的電子郵件地址，選取 [檢閱者 - 僅檢視] ，然後按一下 [傳送] 。<br /><br />當電子郵件送達夥伴公司時，只有電子郵件中的收件者可以檢視試算表，且他們無法儲存、編輯、列印或轉寄。<br /><br />步驟：[保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案](sharing-app-protect-by-email.md)。|
 |**… 安全地透過電子郵件將文件傳送給使用 iOS 裝置的人**<br /><br />您想要以電子郵件將高度機密的 Word 文件傳送給您知道他們會定期在其 iOS 裝置上檢查電子郵件的同事。|您使用檔案總管以滑鼠右鍵按一下檔案，並選取 [受共用保護]  將檔案當作附件傳送給您的同事。<br /><br />收件者會在其 iOS 裝置上收到電子郵件。 因為她沒有 Office for iPad and iPhone，她按一下電子郵件中的連結，這會告訴她如何下載共用應用程式，安裝 iOS 裝置版本，然後檢視文件¹。<br /><br />步驟：[保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案](sharing-app-protect-by-email.md)。|
 |**… 檢查誰在何時已開啟我的受保護的文件，並且視需要撤銷存取權**<br /><br />您已安全地與潛在的供應商共用機密設計文件，現在您想要查看誰在何時從哪裡存取它。 然後，當與其中一個供應商進行業務配合時，您想要撤銷原始文件的存取權，讓原先共用的人員無法再讀取文件。|以電子郵件共用文件之後，您移至 [文件追蹤網站](http://go.microsoft.com/fwlink/?LinkId=529562) 以檢查誰已經在何時存取文件。 當您需要停止共用文件時，您選取選項以撤銷存取權。<br /><br />步驟：[當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。|
-|**… 讀取電子郵件中收到的附件，該電子郵件有安全的共用檔案附件，但是我無法讀取，因為我的公司未使用 Rights Management**<br /><br />電子郵件寄件者是您信任的人員，因為您們過去有業務上的往來，而且您懷疑他們可能會傳送給您潛在新商機的相關資訊。|您依照電子郵件中的指示並按一下連結以註冊 Microsoft Rights Management。 Microsoft 會確認您的組織沒有包含 Azure Rights Management 的訂用帳戶，傳送電子郵件給您以完成免費的註冊程序，然後您使用您的新帳戶登入。 您按一下電子郵件中的第二個連結以安裝 Rights Management 共用應用程式，然後就可以開啟電子郵件附件來了解新商機。<br /><br />步驟：[檢視並使用 Rights Management 保護的檔案](sharing-app-view-use-files.md)。|
+|**… 讀取電子郵件中收到的附件，該電子郵件有安全的共用檔案附件，但是我無法讀取，因為我的公司未使用 Rights Management**<br /><br />電子郵件寄件者是您信任的人員，因為您們過去有業務上的往來，而且您懷疑他們可能會傳送給您潛在新商機的相關資訊。|您依照電子郵件中的指示並按一下連結以註冊 Microsoft Rights Management。 Microsoft 會確認您的組織沒有包含 Azure Information Protection 的訂用帳戶，傳送電子郵件給您以完成免費的註冊程序，然後您使用您的新帳戶登入。 您按一下電子郵件中的第二個連結以安裝 Rights Management 共用應用程式，然後就可以開啟電子郵件附件來了解新商機。<br /><br />步驟：[檢視並使用 Rights Management 保護的檔案](sharing-app-view-use-files.md)。|
 |**… 保護我的膝上型電腦上的公司機密檔案，讓我的公司以外的人員無法存取**<br /><br />您經常出差並且使用您的膝上型電腦存取和更新資料夾中的檔案，該資料夾必須受到保護免於未經授權的存取。|您在您的膝上型電腦上已安裝 RMS 共用應用程式。 您可以使用 [檔案總管] 藉由使用範本來保護檔案，範本可以快速保護檔案。 如果您的膝上型電腦遭竊，您不用擔心您的公司以外的人可以存取這些文件。<br /><br />步驟：[使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](sharing-app-protect-in-place.md)。|
 ¹ PDF 轉譯由 Foxit 提供。 Copyright © 2003–2014 by Foxit Corporation.
 
@@ -67,6 +67,6 @@ Windows 的 Microsoft Rights Management (RMS) 共用應用程式可協助您保�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

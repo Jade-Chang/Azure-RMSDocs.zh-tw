@@ -1,28 +1,28 @@
 ---
-title: "案例 - 保留 SharePoint 中儲存之文件的控制 | Azure RMS"
-description: "此案例和支援的使用者文件使用 Azure Rights Management 來確保您能夠控制儲存在 SharePoint 中的 Office 文件。"
+title: "案例 - 保留 SharePoint 中儲存之文件的控制 | Azure Information Protection"
+description: "此案例和支援的使用者文件使用 Azure Rights Management 保護，確保您能夠透過受保護的文件庫來控制儲存在 SharePoint 中的 Office 文件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
+ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
+ms.openlocfilehash: e0e6442e077d6899cbbf88ae2889908e93592815
 
 
 ---
 
 # 案例 - 保留 SharePoint 中儲存之文件的控制
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-此案例和支援的使用者文件使用 Azure Rights Management 來確保您能夠控制儲存在 SharePoint 中的 Office 文件。 例如，文件會自動施以保護，以避免使用者蓄意或意外洩漏，同時還能在文件下載或同步處理之後，封鎖對內容的存取。 需要保護的檔案可能會是需要內部共同作業的設計文件或計畫，也可能屬於其他交付項目。 當您設定 SharePoint 的受保護文件庫時，其中所儲存的 Office 檔案會由 Azure Rights Management 提供保護。
+此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術，確保您能夠透過受保護的文件庫來控制儲存在 SharePoint 中的 Office 文件。 例如，文件會自動施以保護，以避免使用者蓄意或意外洩漏，同時還能在文件下載或同步處理之後，封鎖對內容的存取。 需要保護的檔案可能會是需要內部共同作業的設計文件或計畫，也可能屬於其他交付項目。 當您設定 SharePoint 的受保護文件庫時，其中所儲存的 Office 檔案會由 Azure Rights Management 提供保護。
 
 指示適用於下列一組情況：
 
@@ -42,9 +42,9 @@ ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|您已針對 Office 365 或 Azure Active Directory 準備帳戶和群組|[準備 Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|若要使用 SharePoint Server：部署 RMS 連接器，並針對 SharePoint 加以設定|[部署 Azure Rights Management 連接器](https://technet.microsoft.com/library/dn375964.aspx)|
+|您已針對 Office 365 或 Azure Active Directory 準備帳戶和群組|[準備 Azure Information Protection](../plan-design/prepare.md)|
+|Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
+|若要使用 SharePoint Server：部署 RMS 連接器，並針對 SharePoint 加以設定|[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)|
 |設定 SharePoint 網站要保護的權限|[管理清單、文件庫、資料夾、文件或清單項目的權限](https://support.office.com/en-ca/article/Manage-permissions-for-a-list-library-folder-document-or-list-item-9d13e7df-a770-4646-91ab-e3c117fcef45)<br /><br />[將資訊版權管理套用至清單或文件庫](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 |設定 SharePoint 的 IRM 及受保護文件庫|[在 SharePoint 系統管理中心設定資訊版權管理 (IRM)](https://support.office.com/en-us/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239ce6eb-4e81-42db-bf86-a01362fed65c)<br /><br />[將資訊版權管理套用至清單或文件庫](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 
@@ -105,6 +105,6 @@ SharePoint **銷售預測與報表**網站現在已設有保護，可安全地�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,19 +1,19 @@
 ---
-title: "Azure RMS 可以解決哪些問題 | Azure RMS"
-description: "識別組織可能會有的業務需求或問題，並了解 Azure RMS 如何解決這些需求或問題。"
+title: "Azure RMS 可以解決哪些問題 | Azure Information Protection"
+description: "識別組織可能會有的資訊保護需求或問題，並了解 Azure RMS 技術如何解決這些需求或問題。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: bc25d2ee7224983d70a23177666c1a72b3db1a17
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 03ada045291115a6cc47353fed36ed9db7a23668
 
 
 ---
@@ -21,13 +21,15 @@ ms.openlocfilehash: bc25d2ee7224983d70a23177666c1a72b3db1a17
 
 # Azure RMS 可以解決哪些問題？
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-使用下表來識別組織可能會有的業務需求或問題，以及 Azure RMS 如何解決這些需求或問題的方式。
+使用下表來識別組織在保護文件和電子郵件時可能會有的業務需求或問題，以及 Azure RMS 技術如何解決這些需求或問題。
+
+Azure RMS 是 [Azure Information Protection](what-is-information-protection.md) 所使用的保護技術。
 
 |需求或問題|透過 Azure RMS 解決|
 |--------------------------|-----------------------|
-|保護所有檔案類型|√ 在先前的 Rights Management 實作中，使用原生保護時只有 Office 檔案會受到保護。 現在，[一般保護](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)表示支援所有檔案類型。|
+|保護所有檔案類型|√ 在初期的 Rights Management 實作中，使用原生保護時只有 Office 檔案會受到保護。 現在，[一般保護](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)表示支援所有檔案類型。|
 |隨時隨地保護檔案|√ 當檔案儲存至位置時 ([就地保護](../rms-client/sharing-app-protect-in-place.md))，檔案便可持續受到保護，即使它複製到不受 IT 控制的儲存體中也是一樣，例如雲端儲存體服務。|
 |透過電子郵件以安全的方式共用檔案|√ 透過電子郵件共用檔案時 ([共用保護](../rms-client/sharing-app-protect-by-email.md))，檔案是以電子郵件訊息的附件形式受到保護，具有如何開啟受保護的附件的指示。 電子郵件文字不會進行加密，所以收件者一定可以讀取這些指示。 不過，因為附加的文件會受到保護，即使將該電子郵件或文件轉寄給其他人，只有授權的使用者才能夠開啟附件。|
 |稽核與監視|√ 您可以對於受保護的檔案[稽核與監視使用量](../deploy-use/log-analyze-usage.md)，即使這些檔案離開您的組織範圍也不例外。<br /><br />例如，您效力於 Contoso, Ltd。 您與 3 位來自 Fabrikam, Inc 的人員合作聯合專案。您透過電子郵件將您保護且限制為唯讀的文件傳送給這 3 位人員。 Azure RMS 稽核可提供下列資訊：<br /><br />- 您指定的 Fabrikam 人員是否已開啟文件，以及何時開啟。<br /><br />- 您未指定的其他人是否嘗試開啟文件 (且沒有成功)。這或許是因為文件轉寄或儲存到其他人可以存取的共用位置。<br /><br />- 任何指定的人員是否嘗試列印或變更文件 (且沒有成功)。|
@@ -72,6 +74,6 @@ Azure RMS 支援下列安全性、規範和法規要求：
 如果您對 Azure RMS 運作方式的其他技術資訊有興趣，請參閱 [Azure RMS 如何運作？](how-does-it-work.md) 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

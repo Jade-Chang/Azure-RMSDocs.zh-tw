@@ -1,29 +1,29 @@
 ---
-title: "如何從 Azure 傳統入口網站啟動 Azure Rights Management | Azure RMS"
-description: "當您可以存取 Azure 入口網站時，Azure RMS 的啟動指示。 例如，當您有訂閱 Enterprise Mobility Suite 或 Azure Rights Management Premium 的情況下。"
+title: "如何從 Azure 傳統入口網站啟用 Azure Rights Management | Azure Information Protection"
+description: "當您可以存取 Azure 入口網站時，適用於 Azure Rights Management Service 的啟用指示。 例如，當您有 Enterprise Mobility Suite 訂用帳戶或 Azure Information Protection Premium 訂用帳戶的情況下。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: ab3b5d71e8cee2ece7fad4c9c3017de7d6eca979
+ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
+ms.openlocfilehash: a553ea57bd4b396b7629dc24aea9f76b4a2a5e5a
 
 
 ---
 
 # 如何從 Azure 傳統入口網站啟動 Azure Rights Management
 
->*適用於：Azure Rights Management*
+>*適用於：Azure Information Protection*
 
 
-如果您有 Azure 入口網站的存取權，請使用下列指示。 例如，當您有訂閱 Enterprise Mobility Suite 或 Azure Rights Management Premium 的情況下。
+如果您有 Azure 入口網站的存取權，請使用下列指示。 例如，當您有 Enterprise Mobility Suite 訂用帳戶或 Azure Information Protection Premium 訂用帳戶的情況下。
 
 > [!TIP]
 > 觀賞 2 分鐘的影片︰[如何啟用 Azure RMS](https://channel9.msdn.com/series/pit-stop-enterprise-mobility-suite/activate-azure-rms)
@@ -37,9 +37,9 @@ ms.openlocfilehash: ab3b5d71e8cee2ece7fad4c9c3017de7d6eca979
 4.  選取要為 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理的目錄，按一下 [啟動]，然後確認您的動作。
 
     > [!NOTE]
-    >如果出現啟動錯誤，有可能是因為您的服務方案或產品版本不包含 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
+    >如果您看到啟用錯誤，有可能是因為您的服務方案或產品版本不包含 Azure Information Protection 的 Azure Rights Management Service。
     >
-    >使用[支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)中的資訊來確認 RMS 支援。 如需這個問題的說明，請將電子郵件訊息傳送至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
+    >使用[訂用帳戶資訊](https://go.microsoft.com/fwlink/?LinkId=827589)，確認您的訂用帳戶包含 Azure Rights Management。 如需這個問題的說明，請將電子郵件訊息傳送至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
 
 
 [Rights Management 狀態] 現在應顯示 [使用中]，且會以 [停用] 選項取代 [啟用] 選項。
@@ -58,6 +58,6 @@ ms.openlocfilehash: ab3b5d71e8cee2ece7fad4c9c3017de7d6eca979
 回到[啟用 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

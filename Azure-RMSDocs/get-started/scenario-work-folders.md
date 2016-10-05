@@ -1,28 +1,28 @@
 ---
-title: "案例 - 將工作資料夾設定為持續保護 | Azure RMS"
-description: "此案例和支援的使用者文件使用 Azure Rights Management 將保護持續套用至工作資料夾中的 Office 文件。"
+title: "案例 - 將工作資料夾設定為持續保護 | Azure Information Protection"
+description: "此案例和支援的使用者文件使用 Azure Rights Management 保護，將保護持續套用至工作資料夾中的 Office 文件。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 1fdb62af06a3011e1102df0df3f9b61bcdc67edd
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 966c1b109a02f8193de16eae6f2eacec757f533b
 
 
 ---
 
 # 案例 - 將工作資料夾設定為持續保護
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-此案例和支援的使用者文件使用 Azure Rights Management 將保護持續套用至[工作資料夾](https://technet.microsoft.com/library/dn265974.aspx)中的 Office 文件。 工作資料夾使用執行 Windows Server 的檔案伺服器角色服務，可提供一致的方式讓使用者從他們的電腦和裝置存取工作檔案。 雖然工作資料夾提供它自己的加密來保護檔案，如果將檔案移至工作資料夾環境以外的地方，便會失去這項保護。 例如，使用者將已同步的檔案複製並將儲存到不在您 IT 部門控制下的存放裝置，或是以電子郵件傳送給其他人。
+此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術，將保護持續套用至[工作資料夾](https://technet.microsoft.com/library/dn265974.aspx)中的 Office 文件。 工作資料夾使用執行 Windows Server 的檔案伺服器角色服務，可提供一致的方式讓使用者從他們的電腦和裝置存取工作檔案。 雖然工作資料夾提供它自己的加密來保護檔案，如果將檔案移至工作資料夾環境以外的地方，便會失去這項保護。 例如，使用者將已同步的檔案複製並將儲存到不在您 IT 部門控制下的存放裝置，或是以電子郵件傳送給其他人。
 
 Azure Rights Management 提供的額外保護，可防止檔案被組織外的人員檢視，有助於避免資料意外遺失。 若要這樣做，您可以使用內建的預設權限原則範本之一。 不過，部署本案例之前，請考慮使用者是否可能需要合法與組織外的人共用這些檔案。 例如，使用者草擬價格表之後，以電子郵件將最終版本寄給另一個組織中的客戶。 當您在工作資料夾使用預設的 Rights Management 範本時，這名在其他組織中的客戶無法讀取這份以電子郵件寄送的文件。 您可以建立自訂範本，讓使用者將新的權限原則套用至檔案 (會將針對所有員工的原始限制改為限制其電子郵件中指定的人員)，以符合這項需求。
 
@@ -51,11 +51,11 @@ Azure Rights Management 提供的額外保護，可防止檔案被組織外的�
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 這對使用工作資料夾的所有使用者為必要。|[準備 Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|發生下列情形之一：<br /><br />- 若要對不允許使用者套用新權限原則的所有使用者使用預設範本︰您沒有封存預設範本 **[&lt;組織名稱&gt; - 機密]**<br /><br />- 若要使用適合讓使用者套用新權限原則的自訂範本︰使用接下來的指示來建立自訂範本|[設定 Azure Rights Management 的自訂範本](https://technet.microsoft.com/library/dn642472.aspx)|
-|已安裝 Rights Management 連接器，且已授權其使用 Windows Server 電腦，並設定為 **FCI 伺服器**角色。|[部署 Azure Rights Management 連接器](https://technet.microsoft.com/library/dn375964.aspx)|
-|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[自動部署 Microsoft Rights Management 共用應用程式](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
+|您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 這對使用工作資料夾的所有使用者為必要。|[準備 Azure Information Protection](../plan-design/prepare.md)|
+|發生下列情形之一：<br /><br />- 若要對不允許使用者套用新權限原則的所有使用者使用預設範本︰您沒有封存預設範本 **[&lt;組織名稱&gt; - 機密]**<br /><br />- 若要使用適合讓使用者套用新權限原則的自訂範本︰使用接下來的指示來建立自訂範本|[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)|
+|已安裝 Rights Management 連接器，且已授權其使用 Windows Server 電腦，並設定為 **FCI 伺服器**角色。|[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)|
+|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[自動部署 Microsoft Rights Management 共用應用程式](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 
 ### 設定自訂權限原則範本，讓使用者可以在組織外共用工作資料夾的檔案
 
@@ -115,13 +115,13 @@ Azure Rights Management 提供的額外保護，可防止檔案被組織外的�
 如果您如本案例所述設定自訂範本，使用者會在資訊列中看到範本描述︰**此內容受到工作資料夾的保護，並只限公司員工存取。若要與組織外的人共用此內容，將文件附加到電子郵件，並使用「分享受保護的內容」功能。** 雖然這項描述會提供摘要，說明如何將檔案共用至組織外，使用者可能會需要詳細如何執行這項操作的說明，尤其是前幾次這麼做時。 若要支援此後續案例，使用[案例 - 與其他組織的使用者共用 Office 檔案](scenario-share-office-file-externally.md)中的系統管理員和使用者指示。
 
 > [!TIP]
-> 如果您決定不使用這些指示中的自訂範本，因為不想讓使用者在沒有 IT 監看的情況下與組織外部共用檔案，請讓技術支援人員知道，如此一來，如果共用的需求是合法的，便可用任何最適合您企業的機制來達成。 例如，某位[進階使用者](https://technet.microsoft.com/library/mt147272.aspx)可能會套用新範本至內容，以授予「完整控制」權限給要求的使用者，好讓這位使用者接下來可以使用「分享受保護的內容」功能。
+> 如果您決定不使用這些指示中的自訂範本，因為不想讓使用者在沒有 IT 監看的情況下與組織外部共用檔案，請讓技術支援人員知道，如此一來，如果共用的需求是合法的，便可用任何最適合您企業的機制來達成。 例如，某位[進階使用者](../deploy-use/configure-super-users.md)可能會套用新範本至內容，以授予「完整控制」權限給要求的使用者，好讓這位使用者接下來可以使用「分享受保護的內容」功能。
 > 
-> 一段時間後，如果您發現有許多這類要求，您可能會決定針對此種案例定義自己的自訂範本，以授予特定使用者 (如管理員、技術服務人員)「共同擁有者」選項，並授予標準使用者「共同作者」或任何您認為適當的[權限](https://technet.microsoft.com/library/mt169423.aspx)。
+> 一段時間後，如果您發現有許多這類要求，您可能會決定針對此種案例定義自己的自訂範本，以授予特定使用者 (如管理員、技術服務人員)「共同擁有者」選項，並授予標準使用者「共同作者」或任何您認為適當的[權限](../deploy-use/configure-usage-rights.md)。
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

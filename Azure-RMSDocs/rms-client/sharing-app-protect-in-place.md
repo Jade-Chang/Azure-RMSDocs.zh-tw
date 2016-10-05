@@ -1,26 +1,26 @@
 ---
-title: "使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護) | Azure RMS"
+title: "使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護) | Azure Information Protection"
 description: "如何安全地在您的電腦、伺服器或另一個存放裝置上儲存檔案的指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 1d719bcce253dea465be7250806385bca3c23a01
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 
 
 ---
 
 # 使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 當您就地保護檔案時，它會取代原始、未受保護的檔案。 然後您就可以讓檔案留在原處，將它複製到另一個資料夾或裝置，或共用其所在的資料夾，而檔案仍然會受到保護。 雖然共用受電子郵件保護之檔案的建議方式是直接從 [檔案總管] 或 Office 應用程式 (請參閱[保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案](sharing-app-protect-by-email.md))，您也可以將受保護檔案附加到電子郵件訊息。
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: 1d719bcce253dea465be7250806385bca3c23a01
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
