@@ -1,19 +1,19 @@
 ---
-title: "建立、設定及發佈自訂範本 | Azure RMS"
+title: "建立、設定及發佈自訂範本 | Azure Information Protection"
 description: "在 Azure 傳統入口網站中建立和管理自訂範本的指示。 範本可讓使用者與其他系統管理員輕鬆地套用保護文件及電子郵件的適當原則。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 
 
 ---
@@ -21,12 +21,12 @@ ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
 
 # 建立、設定及發佈自訂範本
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
 
 您可以在 Azure 傳統入口網站中建立和管理自訂範本。 您可以直接從 Azure 傳統入口網站執行這項作業，或是登入 Office 365 系統管理中心並選擇 Rights Management 的**進階功能**，這會將您重新導向到 Azure 傳統入口網站。
 
-您必須是全域管理員，才能在 Azure 傳統入口網站中建立和管理範本。 如果您已指派 Azure RMS 的全域管理員角色給其他使用者，他們也可以建立及管理範本，但必須使用 [PowerShell](configure-templates-with-powershell.md)。 如需詳細資訊，請參閱[僅有全域管理員才能設定 Azure RMS，或是我可以將此作業委派給其他系統管理員？](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+您必須是全域管理員，才能在 Azure 傳統入口網站中建立和管理範本。 如果您已指派 Azure Rights Management Service 的全域管理員角色給其他使用者，他們也可以建立及管理範本，但必須使用 [PowerShell](configure-templates-with-powershell.md)。 如需詳細資訊，請參閱[僅有全域管理員才能設定 Azure RMS，或是我可以將此作業委派給其他系統管理員？](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 使用下列程序可建立、設定及發佈 Rights Management 的自訂範本。
 
@@ -45,7 +45,7 @@ ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
         4.  在 [Rights Management]  區段中，按一下 [進階功能] 。
 
             > [!NOTE]
-            > 如果您尚未啟用 Rights Management，請先按一下 [啟用]，然後確認您的動作。 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
+            > 如果未啟用 Rights Management Service，請先按一下 [啟用]，然後確認您的動作。 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
             > 
             > 如果您之前沒有按一下 [進階功能]，則在 Rights Management 啟用之後，請依照畫面指示取得存取 Azure 傳統入口網站所需的免費 Azure 訂閱。
 
@@ -166,6 +166,6 @@ ms.openlocfilehash: 6875d8d4755dc791879838d1f46be87e2e043a3b
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,50 +1,48 @@
 ---
-title: "從 AD RMS 移轉至 Azure Rights Management - 階段 3 | Azure RMS"
-description: "從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 3，涵蓋從 AD RMS 移轉至 Azure Rights Management 的步驟 6 至 7。"
-author: cabailey
-manager: mbaldwin
-ms.date: 08/17/2016
+title: "從 AD RMS 移轉至 Azure Information Protection - 第 3 階段 | Azure Information Protection"
+description: "從 AD RMS 移轉至 Azure Information Protection 的第 3 階段，涵蓋從 AD RMS 移轉至 Azure Information Protection 的步驟 6 至 7。"
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ada00b6f6298e7d359c73eb38dfdac169eacb708
-ms.openlocfilehash: 5d707e1fac410e5ff959071507044420dbd8cde7
+ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
+ms.openlocfilehash: 8f7f27f3b9def4b38f5de45b9d9686208a4f5283
 
 
 ---
 
 # 移轉階段 3︰支援服務組態
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Office 365*
 
 
-針對從 AD RMS 移轉至 Azure Rights Management (Azure RMS) 的階段 3 使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure Rights Management](migrate-from-ad-rms-to-azure-rms.md) 的步驟 6 到 7。
+針對從 AD RMS 移轉至 Azure Information Protection 的第 3 階段使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) 的步驟 6 到 7。
 
 
 ## 步驟 6： 設定 Exchange Online 的 IRM 整合
 
-如果先前已將 TPD 從 AD RMS 匯入至 Exchange Online，您必須移除此 TDP，才能在移轉至 Azure RMS 之後避免衝突的範本和原則。 若要這樣做，請使用 Exchange Online 中的 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) Cmdlet。
+如果先前已將 TPD 從 AD RMS 匯入至 Exchange Online，您必須移除此 TDP，才能在移轉至 Azure Information Protection 之後避免衝突的範本和原則。 若要這樣做，請使用 Exchange Online 中的 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) Cmdlet。
 
-如果您選擇 **Microsoft 管理的**Azure RMS 租用戶金鑰拓撲：
+如果您選擇 **Microsoft 管理的** Azure Information Protection 租用戶金鑰拓撲：
 
--   請參閱 [Office 365︰用戶端和線上服務的組態](../deploy-use/configure-office365.md)一文中的 [Exchange Online：IRM 組態](../deploy-use/configure-office365.md#exchange-online-irm-configuration)一節。 本節包含一般執行的命令，可連接至 Exchange Online 服務、從 Azure RMS 匯入租用戶金鑰，以及啟用Exchange online 的 IRM 功能。 完成這些步驟之後，您將有完整的 RMS 功能與 Exchange Online 搭配。
+-   請參閱 [Office 365︰用戶端和線上服務的組態](../deploy-use/configure-office365.md)一文中的 [Exchange Online：IRM 組態](../deploy-use/configure-office365.md#exchange-online-irm-configuration)一節。 本節包含一般執行的命令，可連接至 Exchange Online 服務、從 Azure Information Protection 匯入租用戶金鑰，以及啟用 Exchange Online 的 IRM 功能。 完成這些步驟之後，您將有完整的 Azure Rights Management 保護功能與 Exchange Online 搭配。
 
-如果您選擇**客戶管理 (BYOK) 的** Azure RMS 租用戶金鑰拓撲：
+如果您選擇**客戶管理的 (BYOK)** Azure Information Protection 租用戶金鑰拓撲：
 
--   您將有精簡的 RMS 功能與 Exchange Online，如 [BYOK 定價和限制](byok-price-restrictions.md)一文所述。
+-   您將有精簡的 Rights Management 保護功能與 Exchange Online，如 [BYOK 定價和限制](byok-price-restrictions.md)一文所述。
 
 ## 步驟 ７： 部署 RMS 連接器
-如果您已經搭配使用 Exchange Server 或 SharePoint Server 的資訊版權管理 (IRM) 功能與 AD RMS，則必須先停用這些伺服器上的 IRM，並移除 AD RMS 組態。 然後，部署 Rights Management (RMS) 連接器，它可做為內部部署伺服器與 Azure RMS 之間的通訊介面 (轉送)。
+如果您已經搭配使用 Exchange Server 或 SharePoint Server 的資訊版權管理 (IRM) 功能與 AD RMS，則必須先停用這些伺服器上的 IRM，並移除 AD RMS 組態。 然後，部署 Rights Management (RMS) 連接器，它可作為內部部署伺服器與 Azure Information Protection 保護服務之間的通訊介面 (轉送)。
 
-最後，在這個步驟中，如果您已將用來保護電子郵件訊息的多個 AD RMS 資料設定檔 (.xml) 匯入 Azure RMS，則必須手動編輯 Exchange Server 電腦上的登錄，以將所有信任發行網域 URL 重新導向至 RMS 連接器。
+最後，在這個步驟中，如果您已將用來保護電子郵件訊息的多個 AD RMS 資料組態檔 (.xml) 匯入 Azure Information Protection，則必須手動編輯 Exchange Server 電腦上的登錄，以將所有信任發行網域 URL 重新導向至 RMS 連接器。
 
 > [!NOTE]
-> 在您開始之前，請從[支援 Azure RMS 的內部部署伺服器](../get-started/requirements-servers.md)檢查 Azure RMS 支援的內部部署伺服器版本。
+> 在您開始之前，請從[支援 Azure RMS 的內部部署伺服器](../get-started/requirements-servers.md)檢查 Azure Rights Management Service 支援的內部部署伺服器版本。
 
 ### 停用 Exchange Server 上的 IRM 並移除 AD RMS 組態
 
@@ -214,6 +212,6 @@ https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 若要繼續移轉，請移至 [階段 4 - 移轉後工作](migrate-from-ad-rms-phase4.md)。
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
