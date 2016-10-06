@@ -1,30 +1,30 @@
 ---
-title: "針對 Azure Rights Management 安裝 Windows PowerShell | Azure RMS"
-description: "針對 Microsoft Azure RMS 安裝 Windows PowerShell 的指示。 此模組的名稱是 AADRM。"
+title: "安裝 Windows PowerShell for Azure Rights Management | Azure Information Protection"
+description: "Azure Information Protection 的 Windows PowerShell for Azure Rights Management Service 安裝說明。 此模組的名稱是 AADRM。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 2c8ef10490d409572efb831ec8c99437e34c2047
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
 
 
 ---
 
 # 針對 Azure Rights Management 安裝 Windows PowerShell
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-使用下列資訊可協助您安裝適用於 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 的 Windows PowerShell。
+使用下列資訊以利安裝 Azure Information Protection 的 Azure Rights Management Service Windows PowerShell 模組。
 
-您可以使用此 PowerShell 模組從命令列管理 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，方法是使用任何具有網際網路連線，且符合下一節所列必要條件的電腦。 適用於 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 支援自動化的指令碼處理，或可能是進階組態案例的必要項目。 如需有關此模組支援的管理工作與組態等詳細資訊，請參閱[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)。
+您可以使用此 PowerShell 模組從命令列管理 Azure Rights Management Service，方法是使用任何具有網際網路連線，且符合下一節所列必要條件的電腦。 適用於 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 支援自動化的指令碼處理，或可能是進階組態案例的必要項目。 如需有關此模組支援的管理工作與組態等詳細資訊，請參閱[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)。
 
 ## 必要條件
 此表列出安裝及使用適用於 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之 Windows PowerShell 的必要條件。
@@ -68,13 +68,13 @@ Get-Command -Module aadrm
 若要執行任何設定 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 服務的命令，您必須先使用 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx) Cmdlet 來連線至該服務。 當您執行完想要的組態命令時，請使用 [Disconnect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629416.aspx) Cmdlet 中斷服務的連線。
 
 > [!NOTE]
-> 如果您尚未啟用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]，可以在連線至該服務之後，使用 [Enable-Aadrm](https://msdn.microsoft.com/library/windowsazure/dn629412.aspx) Cmdlet 來啟用它。
+> 如尚未啟用 Azure Rights Management Service，可以在連線至該服務之後，使用 [Enable-Aadrm](https://msdn.microsoft.com/library/windowsazure/dn629412.aspx) Cmdlet 來啟用它。
 
 ## 另請參閱
 [使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,34 +1,34 @@
 ---
-title: "案例 - 保護您最重要的 (幾個)檔案 | Azure RMS"
+title: "案例 - 保護您最重要的 (幾個) 檔案 | Azure Information Protection"
 description: "此案例和支援使用者文件會使用 Azure Rights Management 來手動和自訂保護少數幾個您認為最有價值的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 
 
 ---
 
 # 案例 - 保護您最重要的 (幾個)檔案
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-此案例和支援使用者文件會使用 Azure Rights Management 來手動和自訂保護少數幾個您認為最有價值的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。 這些通常是應該只有少數人能存取的檔案。 例如，公司的特色食品配方指示或在指定日期之前不應該公開的收購計劃。
+此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術來手動和自訂保護少數幾個您認為最重要的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。 這些通常是應該只有少數人能存取的檔案。 例如，公司的特色食品配方指示或在指定日期之前不應該公開的收購計劃。
 
 指示適用於下列一組情況：
 
 -   您已找到少部分要保護的檔案。
 
--   檔案會採用支援 Rights Management Office 的其中一種檔案格式。 如果檔案採用其他檔案格式 (例如 CAD 檔案)，確保這些格式都支援 Azure RMS，並且您將部署原生支援 Azure RMS 的應用程式。 如需詳細資訊，請參閱[應用程式如何支援 Azure Rights Management](https://technet.microsoft.com/library/jj585004.aspx)。
+-   檔案會採用支援 Rights Management Office 的其中一種檔案格式。 如果檔案採用其他檔案格式 (例如 CAD 檔案)，確保這些格式都支援 Azure RMS，並且您將部署原生支援 Azure RMS 的應用程式。 如需詳細資訊，請參閱[應用程式如何支援 Azure Rights Management Service](../understand-explore/applications-support.md)。
 
 -   檔案包含應該僅供少數人存取的高度機密、敏感性資訊。
 
@@ -48,12 +48,12 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|備妥 Office 365 或 Azure Active Directory 的帳戶與群組：<br /><br />名為 **[特殊權限存取]** 的擁有郵件功能的群組，其中包含一些應該存取這些高度機密文件的人員。<br /><br />名為 **[IT 規範管理員]** 的擁有郵件功能的群組，其中包含工作包括 eDiscovery、監視和稽核的人員。<br /><br />- 擁有郵件功能的群組 (名為 **[RMS 系統管理員]**)，所有會設定 Azure RMS 的系統管理員都是這個群組的成員|[準備 Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|您已如下所述設定自訂範本|[設定 Azure Rights Management 的自訂範本](https://technet.microsoft.com/library/dn642472.aspx)|
-|Rights Management 共用應用程式已部署到您的 Windows 電腦，使得您可以就地保護這些檔案，如下一節中所述|[下載及安裝 Rights Management 共用應用程式](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
+|備妥 Office 365 或 Azure Active Directory 的帳戶與群組：<br /><br />名為 **[特殊權限存取]** 的擁有郵件功能的群組，其中包含一些應該存取這些高度機密文件的人員。<br /><br />名為 **[IT 規範管理員]** 的擁有郵件功能的群組，其中包含工作包括 eDiscovery、監視和稽核的人員。<br /><br />- 擁有郵件功能的群組 (名為 **[RMS 系統管理員]**)，所有會設定 Azure RMS 的系統管理員都是這個群組的成員|[準備 Azure Information Protection](../plan-design/deployment-roadmap.md)|
+|Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
+|您已如下所述設定自訂範本|[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)|
+|Rights Management 共用應用程式已部署到您的 Windows 電腦，使得您可以就地保護這些檔案，如下一節中所述|[下載及安裝 Rights Management 共用應用程式](../rms-client/install-sharing-app.md)|
 |授權的使用者擁有最低版本的 Office 2013|如果使用者有 Office 2010，他們也必須安裝 Rights Management 共用應用程式。|
-|您的 Azure RMS 訂用帳戶包含文件追蹤|如果您的 Azure RMS 訂用帳戶不包含文件追蹤和撤銷，您將無法使用文件追蹤網站來查看誰正在存取這些文件，並在必要時撤銷存取。 在此情況下，請購買支援文件追蹤的訂用帳戶，或接受這項限制。 您也可以考慮 Azure RMS 的[使用量記錄](https://technet.microsoft.com/library/dn529121.aspx)功能，它可以提供資訊，例如何時、誰存取了每個檔案，來協助您偵測潛在可疑的行為。<br /><br />若要檢查您的訂用帳戶支援的項目： [Rights Management Services (RMS) 產品項目的比較](https://technet.microsoft.com/dn858608)|
+|您的 Azure RMS 訂用帳戶包含文件追蹤|如果您的 Azure RMS 訂用帳戶不包含文件追蹤和撤銷，您將無法使用文件追蹤網站來查看誰正在存取這些文件，並在必要時撤銷存取。 在此情況下，請購買支援文件追蹤的訂用帳戶，或接受這項限制。 您也可以考慮 Azure RMS 的[使用量記錄](../deploy-use/log-analyze-usage.md)功能，它可以提供資訊，例如何時、誰存取了每個檔案，來協助您偵測潛在可疑的行為。<br /><br />請查看 Azure Information Protection [定價頁面](https://go.microsoft.com/fwlink/?LinkId=827589)中的訂用帳戶資訊。|
 
 ### 設定自訂範本
 
@@ -85,7 +85,7 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 5.  如果您其他資料夾中有更多要保護的檔案，請對每個資料夾重複步驟 1 到 4。
 
-如需就地保護檔案的詳細資訊，請參閱[使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)
+如需就地保護檔案的詳細資訊，請參閱[使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)](../rms-client/sharing-app-protect-in-place.md)
 
 > [!TIP]
 > 如果要保護的檔案數目對此手動程序而言過多，請考慮使用 [RMS 保護工具](https://www.microsoft.com/en-us/download/details.aspx?id=47256)利用範本來大量保護。
@@ -147,6 +147,6 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

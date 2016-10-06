@@ -1,28 +1,28 @@
 ---
-title: "設定 Azure Rights Management 和探索服務或資料復原的進階使用者 | Azure RMS"
-description: "了解並實作 Microsoft Azure RMS 的進階使用者功能，以便獲得授權的人員和服務可以永遠讀取及檢查 Azure RMS 為組織保護的資料。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。"
+title: "設定 Azure Rights Management 和探索服務或資料復原的進階使用者 | Azure Information Protection"
+description: "了解並實作 Azure Information Protection 之 Azure Rights Management Service 的進階使用者功能，以便獲得授權的人員和服務可以永遠讀取及檢查 Azure Rights Management 為貴組織保護的資料。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: ac0d2c991bdd13c31c46a9579ac1a6d2150557b6
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: d2ae8df5895b1cf1985420be25abac36fe2689b7
 
 
 ---
 
 # 設定 Azure Rights Management 和探索服務或資料復原的進階使用者
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 的進階使用者功能可確保獲得授權的人員和服務可以永遠讀取及檢查 Azure RMS 為貴組織保護的資料。 並且視需要移除保護或變更先前套用的保護。 進階使用者針對組織的 RMS 租用戶授與的所有使用授權，一律具有完整的擁有者權限。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。 例如，您會對下列任何案例使用這項功能：
+Azure Information Protection 之 Azure Rights Management Service 的進階使用者功能可確保獲得授權的人員和服務可以永遠讀取及檢查 Azure Rights Management 為貴組織保護的資料。 並且視需要移除保護或變更先前套用的保護。 進階使用者針對組織的 Azure Information Protection 租用戶授與的所有使用授權，一律具有完整的擁有者權限。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。 例如，您會對下列任何案例使用這項功能：
 
 -   員工離職而且您需要讀取他們保護的檔案。
 
@@ -43,13 +43,13 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 進階使用者功能的安全性最佳做法：
 
--   限制和監視被指派 Office 365 或 Azure RMS 租用戶的全域系統管理員的系統管理員，或被指派 GlobalAdministrator 角色的使用者，方法是使用 [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/azure/dn629417.aspx) Cmdlet。 這些使用者可以啟用進階使用者功能並且指派使用者 (和本身) 為進階使用者，以及潛在解密您的組織保護的所有檔案。
+-   限制和監視被指派 Office 365 或 Azure Information Protection 租用戶的全域管理員的系統管理員，或被指派 GlobalAdministrator 角色的系統管理員，方法是使用 [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/azure/dn629417.aspx) Cmdlet。 這些使用者可以啟用進階使用者功能並且指派使用者 (和本身) 為進階使用者，以及潛在解密您的組織保護的所有檔案。
 
 -   若要查看哪些使用者和服務帳戶已被個別指派為進階使用者，使用 [Get-AadrmSuperUser Cmdlet](https://msdn.microsoft.com/library/azure/dn629408.aspx)。 若要查看是否已設定進階使用者群組，請使用 [Get-AadrmSuperUser](https://msdn.microsoft.com/library/azure/mt653942.aspx) Cmdlet，您的標準使用者管理工具會檢查那些使用者是此群組的成員。 像所有系統管理動作一樣，啟用或停用進階功能，以及新增或移除進階使用者可以使用 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) 命令進行記錄和稽核。 當進階使用者解密檔案時，這個動作可以使用[流量記錄](log-analyze-usage.md)進行記錄和稽核。
 
 -   如果您對於日常服務不需要進階使用者功能，則只有在需要時啟用此功能，並且使用 [Disable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629428.aspx) Cmdlet 再次停用它。
 
-下列記錄擷取顯示使用 Get-AadrmAdminLog Cmdlet 的一些範例項目。 在此範例中，Contoso Ltd 的系統管理員確認進階使用者功能已停用，新增 Richard Simone 做為進階使用者，檢查 Richard 是針對 Azure RMS 設定的唯一進階使用者，然後啟用進階使用者功能，讓 Richard 現在可以解密現在已離職之員工所保護的某些檔案。
+下列記錄擷取顯示使用 Get-AadrmAdminLog Cmdlet 的一些範例項目。 在此範例中，Contoso Ltd 的系統管理員確認進階使用者功能已停用，新增 Richard Simone 作為進階使用者，檢查 Richard 是針對 Azure Rights Management Service 設定的唯一進階使用者，然後啟用進階使用者功能，讓 Richard 現在可以解密目前已離職之員工所保護的某些檔案。
 
 `2015-08-01T18:58:20    admin@contoso.com   GetSuperUserFeatureState    Passed  Disabled`
 
@@ -65,12 +65,12 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 如需有關這些 Cmdlet 的詳細資訊，請參閱 [RMS 保護 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
 
 > [!NOTE]
-> RMS 保護工具隨附的 RMS Protection PowerShell 模組不同於主要 [Azure Rights Management 的 Windows PowerShell 模組](administer-powershell.md)的補充。 RMS 保護模組支援 Azure RMS 與 AD RMS。
+> RMS 保護工具隨附的 RMS Protection PowerShell 模組不同於主要 [Azure Rights Management 的 Windows PowerShell 模組](administer-powershell.md)的補充。 RMS 保護模組支援 Azure Information Protection 的 Azure Rights Management Service (Azure RMS) 與 Active Directory Rights Management Services (AD RMS)。
 
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

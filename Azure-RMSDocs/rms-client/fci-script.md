@@ -1,26 +1,26 @@
 ---
-title: "使用檔案伺服器資源管理員 FCI 的 Windows PowerShell Script for Azure RMS 保護 | Azure RMS"
+title: "使用檔案伺服器資源管理員 FCI 之 Azure RMS 保護的 Windows PowerShell 指令碼 | Azure Information Protection"
 description: "複製和編輯的指令碼範例，如＜具有 Windows Server 檔案分類基礎結構的 RMS 保護＞中的指示所述。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 22adb8529b46a0c2072a3f1fa220e794fa702aa3
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
 
 
 ---
 
 # 使用檔案伺服器資源管理員 FCI 的 Windows PowerShell Script for Azure RMS 保護
 
->*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*適用於︰Azure Information Protection、Windows Server 2012、Windows Server 2012 R2*
 
 此頁面包含複製和編輯的指令碼範例，如[具有 Windows Server 檔案分類基礎結構的 RMS 保護](configure-fci.md)所示。
 
@@ -30,9 +30,9 @@ ms.openlocfilehash: 22adb8529b46a0c2072a3f1fa220e794fa702aa3
 ```
 <#
 .SYNOPSIS 
-     Helper script to protect all file types with Azure RMS and FCI.
+     Helper script to protect all file types using the Azure Rights Management service and FCI.
 .DESCRIPTION
-     Protect files with Azure RMS and Windows Server FCI, using an RMS template ID.   
+     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID.   
 #>
 param(
             [Parameter(Mandatory = $false)]
@@ -174,6 +174,6 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

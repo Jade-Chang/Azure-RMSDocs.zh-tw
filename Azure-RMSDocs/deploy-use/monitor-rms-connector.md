@@ -1,28 +1,28 @@
 ---
-title: "監視 Azure Rights Management 連接器 | Azure RMS"
-description: "協助您監視連接器和組織 Azure RMS 使用的資訊。"
+title: "監視 Azure Rights Management 連接器 | Azure Information Protection"
+description: "有利於監視連接器和貴組織使用 Azure Information Protection 之 Azure Rights Management Service 的資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: 97b8107e1529271376c21837b3ac357dba9235d2
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 954d8b7b62b35f5fdd29e115681d9d5c0da69a86
 
 
 ---
 
 # 監視 Azure Rights Management 連接器
 
->*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*適用於︰Azure Information Protection、Windows Server 2012、Windows Server 2012 R2*
 
-在您安裝並設定 RMS 連接器後，可以使用下列方法和資訊，協助您監視連接器和您組織的 Azure RMS 使用狀況。
+在您安裝並設定 RMS 連接器後，可以使用下列方法和資訊，協助您監視連接器和您組織之 Azure Information Protection 的 Azure Rights Management service 使用狀況。
 
 ## 應用程式事件記錄檔項目
 
@@ -32,10 +32,10 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 如果您未設定讓連接器使用 HTTPS，應該會看見警告 ID 2002，表示用戶端使用不安全 (HTTP) 連線。
 
-如果連接器無法連線到 Azure RMS，您很可能會看到錯誤 3001。 例如，這可能是因為發生 DNS 問題，或有一或多個執行 RMS 連接器的伺服器缺少網際網路存取。 
+如果連接器無法連線到 Azure Rights Management Service，您很可能會看到錯誤 3001。 例如，這可能是因為發生 DNS 問題，或有一或多個執行 RMS 連接器的伺服器缺少網際網路存取。 
 
 > [!TIP]
-> 若 RMS 連接器伺服器無法連線到 Azure RMS，通常是因為 Web Proxy 設定的緣故。
+> 若 RMS 連接器伺服器無法連線到 Azure Rights Management Service，通常是因為 Web Proxy 組態的緣故。
 
 對於所有事件記錄檔項目，都請向內切入訊息以取得詳細資訊。
 
@@ -83,7 +83,7 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 **授權的帳戶清單已更新。**
 
-當 RMS 連接器已下載最新獲授權使用 RMS 連接器帳戶的清單 (現有的帳戶和任何變更) 時，系統即會記錄此事件。 這份清單每隔 15 分鐘會下載一次，以讓 RMS 連接器與 Azure RMS 進行通訊。
+當 RMS 連接器已下載最新獲授權使用 RMS 連接器帳戶的清單 (現有的帳戶和任何變更) 時，系統即會記錄此事件。 這份清單每隔 15 分鐘會下載一次，以讓 RMS 連接器與 Azure Rights Management Service 進行通訊。
 
 ----
 
@@ -99,9 +99,9 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 **未經授權嘗試存取 Microsoft RMS 連接器。**
 
-當帳戶嘗試連接至 RMS 連接器但失敗時，系統即會記錄此事件。 最常見的原因是因為進行連線的帳戶不在授權帳戶清單中 (RMS 連接器會從 Azure RMS 下載這份清單)。 例如，尚未下載最新的清單 (每隔 15 分鐘) 或清單中缺漏此帳戶。 
+當帳戶嘗試連接至 RMS 連接器但失敗時，系統即會記錄此事件。 最常見的原因是因為進行連線的帳戶不在授權帳戶清單中 (RMS 連接器會從 Azure Rights Management Service 下載這份清單)。 例如，尚未下載最新的清單 (每隔 15 分鐘) 或清單中缺漏此帳戶。 
 
-另一個可能原因是，您將 RMS 連接器安裝在設為使用連接器的相同伺服器上。 例如，您在執行 Exchange Server 的伺服器上安裝 RMS 連接器，並授與 Exchange 帳戶使用連接器的權限。 系統不支援此設定，因為當帳戶嘗試連接時，RMS 連接器無法正確識別該帳戶。
+另一個可能原因是，您將 RMS 連接器安裝在設為使用連接器的相同伺服器上。 例如，您在執行 Exchange Server 的伺服器上安裝 RMS 連接器，並授與 Exchange 帳戶使用連接器的權限。 系統不支援此組態，因為當帳戶嘗試連接時，RMS 連接器無法正確識別該帳戶。
 
 事件訊息包含嘗試連接至 RMS 連接器的帳戶和電腦相關資訊：
 
@@ -155,9 +155,7 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 ## 效能計數器
 
-當您安裝 RMS 連接器時，其會自動建立 **Microsoft Rights Management 連接器** 效能計數器，可協助您監控透過連接器使用 Azure RMS 的效能。 
-
-例如，如果在保護文件或電子郵件、或開啟受保護的文件或電子郵件時經常延遲，效能計數器可協助您判斷延遲是否源自於連接器上的處理時間、Azure RMS 或網路延遲的處理時間。 為了協助您識別發生延遲的位置，請尋找包含**連接器處理時間**、**服務回應時間**和**連接器回應時間**平均計數的計數器。 例如︰**Licensing Successful Batched Request Average Connector Response Time**。
+當您安裝 RMS 連接器時，其會自動建立 **Microsoft Rights Management 連接器** 效能計數器，可協助您監控透過連接器使用 Azure Rights Management Service 的效能。 例如，如果在保護文件或電子郵件、或開啟受保護的文件或電子郵件時經常延遲，效能計數器可協助您判斷延遲是否源自於連接器上的處理時間、Azure Rights Management Service 或網路延遲的處理時間。 為了協助您識別發生延遲的位置，請尋找包含**連接器處理時間**、**服務回應時間**和**連接器回應時間**平均計數的計數器。 例如︰**Licensing Successful Batched Request Average Connector Response Time**。
 
 如果您最近新增了伺服器帳戶以使用連接器，就適合檢查 **Time since last authorization policy update**，以確認連接器已在更新後下載清單，或您需要再稍候一段時間 (最多 15 分鐘)。
 
@@ -194,6 +192,6 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,28 +1,28 @@
 ---
-title: "Azure Rights Management 的法遵與支援資訊 | Azure RMS"
-description: "包括法務、法遵與 SLA 在內的 Azure RMS 支援資訊。"
+title: "法遵與支援資訊 | Azure Information Protection"
+description: "包括法務、法遵與 SLA 在內的 Azure Information Protection 支援資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 83b9aa53f0a53e8ab26543e5e4b6540061cc13bf
-ms.openlocfilehash: 2cfbae5139a82369df863feccc88f6425509ea98
+ms.sourcegitcommit: 784e8a1f53df10ee66595b1268a4d9a1f0cdc9b0
+ms.openlocfilehash: 5fbc0af13f1acdbd6b7a1a267c9d2be2b90b8a1b
 
 
 ---
 
 
 
-# Azure Rights Management 的法遵與支援資訊
+# Azure Information Protection 的法遵與支援資訊
 
-Azure Rights Management (Azure RMS) 既支援其他服務，同時也仰賴其他服務。 如果您要尋找的資訊與 Azure RMS 有關，但與如何使用 Azure RMS 服務無關，請查看下列資源：
+Azure Information Protection 既支援其他服務，同時也仰賴其他服務。 如果您要尋找的資訊與 Azure Information Protection 有關，但與如何使用 Azure Information Protection 服務無關，請查看下列資源：
 
 ## 法務和隱私權
 
@@ -34,13 +34,13 @@ Azure Rights Management (Azure RMS) 既支援其他服務，同時也仰賴其�
 
 請參閱 [Azure RMS 可以解決哪些問題？](../understand-explore/azure-rms-problems-it-solves.md) 一文中的 [安全性、規範和法規要求](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 一節。 此外：
 
-- Azure RMS 的外部憑證： [Microsoft Azure 信任中心](http://azure.microsoft.com/support/trust-center/)
+- Azure Information Protection 的外部憑證：[Microsoft Azure 信任中心](http://azure.microsoft.com/support/trust-center/)
 
 - 如需 FIPS 140 資訊： [FIPS 140 驗證](https://technet.microsoft.com/library/security/cc750357.aspx)
 
 ## 服務等級協定
 
-- Azure RMS 的服務等級協定 (以選定的國家/地區列出)：[從產品授權搜尋頁面下載](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
+- Azure Information Protection 的服務等級協定 (以選定的地區列出)：[從產品授權搜尋頁面下載](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
 
     - 例如，按一下 [OnlineSvcsConsolidatedSLA(WW)(English)(March2016)] 以下載北美地區的 2016 年 3 月服務等級協定。
 
@@ -55,6 +55,6 @@ Azure Rights Management (Azure RMS) 既支援其他服務，同時也仰賴其�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

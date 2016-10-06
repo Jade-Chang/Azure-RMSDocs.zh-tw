@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 共用應用程式的對話方塊選項 | Azure RMS"
+title: "Rights Management 共用應用程式的對話方塊選項 | Azure Information Protection"
 description: "協助您在 RMS 共用應用程式的 [新增保護] 對話方塊或 [共用保護] 對話方塊中指定選項的資訊。 當您保護要共用的檔案或就地保護檔案並選擇自訂權限時，您會看到這個對話方塊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: a3a5fc8adf725d9cca0218e788988f718bd07bab
 
 
 ---
 
 # Rights Management 共用應用程式的對話方塊選項
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 使用此資訊來幫助您在 RMS 共用應用程式的 [新增保護]  對話方塊或 [共用保護]  對話方塊中指定選項。 當您[保護要共用的檔案](sharing-app-protect-by-email.md)或[就地保護檔案](sharing-app-protect-in-place.md)並選擇自訂權限時，您會看到這個對話方塊方塊。
 
@@ -42,8 +42,8 @@ ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
 |**檢閱者 - 僅檢視**<br /><br />**檢閱者 - 檢視及編輯**<br /><br />**共同作者 - 檢視、編輯、複製及列印**<br /><br />**共同擁有者 - 所有權限**<br /><br />注意：這些選項的名稱前面全都有一個代表地球儀的圓形圖示。 使用這個圖示是因為，當您傳送附件給另一個組織中的某人時，通常會選取其中一個選項。|如果您想要定義受保護文件的權限，請選取其中一個選項。 按一下每個選項可檢視描述。<br /><br />當您選擇其中一個選項時，只有您在 [使用者]  中指定的人員，才有您指定的權限可開啟和使用文件。 例如，如果他們轉寄給別人，則別人無法開啟文件。|
 |您的系統管理員所設定的原則範本。<br /><br />例如，如果您的公司名稱是 Contoso, Ltd，您可能會看到 **Contoso, Ltd - 僅限機密檢視**<br /><br />注意：這些選項的名稱前面全都有一個代表辦公大樓的方形圖示。 使用這個圖示是因為，當您傳送附件給您組織中的某人時，通常會選取其中一個選項。|當與您組織中的人員共用文件時，您會看到系統管理員所設定的可用原則範本。 不應該在組織外共用文件時，請選擇其中一個原則範本。<br /><br />當您選擇其中一個選項時，您的系統管理員會定義文件的權限和哪些人可以開啟文件。|
 |**這些文件的到期日**|僅針對時間緊迫的檔案選取這個選項，您選取的使用者在您指定日期之後就無法開啟這些檔案。 您仍然可以開啟原始檔案，但在您指定的那天午夜過後 (您目前的時區)，其他人將無法開啟檔案。<br /><br />如果您選取系統管理員所設定的原則範本，則無法使用這個選項。|
-|**當有人嘗試開啟這些文件時傳送電子郵件給我**|注意：這個選項目前為預覽狀態。<br /><br />每當有人嘗試開啟您所保護的文件時，如果您想要收到電子郵件通知，請選取這個選項。 電子郵件訊息將告訴您是誰嘗試開啟、何時嘗試及是否成功。<br /><br />只有當您的組織使用 Azure RMS 時，才有這個選項可用。 如果您的組織使用 Rights Management (AD RMS) 內部部署版本，您不會看到這個選項。|
-|**允許我立即撤銷這些文件的存取權**|如果您稍後可能需要使用文件追蹤網站撤銷文件的存取權，且撤銷必須立即生效，請選擇這個選項。 不過，設定這個選項表示在未撤銷文件之前，使用者每次存取文件時，永遠需要網際網路連線才能讀取文件。 在某些情況下，使用者可能無法將他們的裝置連線到網際網路，使用者也就無法如您預期般地讀取文件。<br /><br />如果您沒有選擇這個選項，您稍後還是可以使用文件追蹤網站來撤銷文件。 不過，因為使用者不一定需要網際網路連線才能讀取文件，所以不會立即得知文件已被撤銷，因而能夠繼續讀取文件，直到下次再向 Azure RMS 驗證為止。 根據預設，某人最多有 30 天可以持續讀取您已撤銷的受保護文件，但是系統管理員可以將此值變更為少於或多於 30 天。<br /><br />只有當您的組織使用 Azure RMS 時，才有這個選項可用。 如果您的組織使用 Rights Management (AD RMS) 內部部署版本，您不會看到這個選項。|
+|**當有人嘗試開啟這些文件時傳送電子郵件給我**|注意：這個選項目前為預覽狀態。<br /><br />每當有人嘗試開啟您所保護的文件時，如果您想要收到電子郵件通知，請選取這個選項。 電子郵件訊息將告訴您是誰嘗試開啟、何時嘗試及是否成功。<br /><br />只有當您的組織使用 Azure Information Protection 時，才有這個選項可用。 如果您的組織使用 Rights Management (AD RMS) 內部部署版本，您不會看到這個選項。|
+|**允許我立即撤銷這些文件的存取權**|如果您稍後可能需要使用文件追蹤網站撤銷文件的存取權，且撤銷必須立即生效，請選擇這個選項。 不過，設定這個選項表示在未撤銷文件之前，使用者每次存取文件時，永遠需要網際網路連線才能讀取文件。 在某些情況下，使用者可能無法將他們的裝置連線到網際網路，使用者也就無法如您預期般地讀取文件。<br /><br />如果您沒有選擇這個選項，您稍後還是可以使用文件追蹤網站來撤銷文件。 不過，因為使用者不一定需要網際網路連線才能讀取文件，所以不會立即得知文件已被撤銷，因而能夠繼續讀取文件，直到下次再向 Azure RMS 驗證為止。 根據預設，某人最多有 30 天可以持續讀取您已撤銷的受保護文件，但是系統管理員可以將此值變更為少於或多於 30 天。<br /><br />只有當您的組織使用 Azure Information Protection 時，才有這個選項可用。 如果您的組織使用 Rights Management (AD RMS) 內部部署版本，您不會看到這個選項。|
 
 ## 一般保護和內建 (原生) 保護有何差異？
 
@@ -78,6 +78,6 @@ ms.openlocfilehash: 5f652b0e75350656f446c05d2464319ba46e06ad
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

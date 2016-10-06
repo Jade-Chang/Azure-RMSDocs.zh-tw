@@ -1,19 +1,19 @@
 ---
-title: "Rights Management 共用應用程式技術概觀 | Azure RMS"
+title: "Rights Management 共用應用程式技術概觀 | Azure Information Protection"
 description: "適用於企業網路中負責部署適用於 Windows 的 RMS 共用應用程式之系統管理員的技術詳細資料。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 2a3640590ca2729da71e847c03823719e92bcb0f
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3b4cd04732e38da31bf31d899993c912694e3ee8
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 2a3640590ca2729da71e847c03823719e92bcb0f
 
 # Microsoft Rights Management 共用應用程式技術概觀與保護詳細資料
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 
 Microsoft Rights Management 共用應用程式是可選擇性下載的應用程式，適用於 Microsoft Windows 和其他提供下列功能的平台：
@@ -36,9 +36,9 @@ Microsoft Rights Management 共用應用程式是可選擇性下載的應用程�
 
 -   與使用檔案分類基礎結構 (FCI) 和支援的 PDF 撰寫工具保護的 PDF 檔案之間有完全互通性。
 
-Microsoft Rights Management 共用應用程式使用新的 [AD RMS Client 2.1 執行階段](http://www.microsoft.com/download/details.aspx?id=38396)。 使用 AD RMS 2.1 的功能，Microsoft Rights Management 共用應用程式的功能可提供一般使用者簡單的保護和使用體驗。
+Microsoft Rights Management 共用應用程式使用 [AD RMS Client 2.1 執行階段](http://www.microsoft.com/download/details.aspx?id=38396)。 使用 AD RMS 2.1 的功能，Microsoft Rights Management 共用應用程式的功能可提供一般使用者簡單的保護和使用體驗。
 
-使用 2013 年 10 月版本的 RMS，使用 Office 2010 就可以原生保護文件，然後將它們傳送給另一家公司的人，他們再使用 Azure RMS 取用文件。 除此之外，使用此版本，如果您使用「密碼編譯模式 2」的 AD RMS，您可以使用個人版 RMS，以及向使用 Azure RMS 的其他公司中的人取用內容。 如需密碼編譯模式 2 的詳細資訊，請參閱＜ [AD RMS 密碼編譯模式](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)＞。
+在 2013 年 10 月版的 RMS 中，您可以使用 Office 2010 以原生方式保護文件，並將其傳送給其他公司的人員，再由這些人員使用 Azure Information Protection 的 Azure Rights Management Service 加以取用。 此外，在此版本中，如果您使用「密碼編譯模式 2」的 AD RMS，則可以使用個人版 RMS 向使用 Azure Rights Management Service 的其他公司人員取用內容。 如需密碼編譯模式 2 的詳細資訊，請參閱＜ [AD RMS 密碼編譯模式](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)＞。
 
 如需部署資訊，請參閱[自動部署 Microsoft Rights Management 共用應用程式](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
@@ -47,7 +47,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 |保護類型|原生|泛型|
 |----------------------|----------|-----------|
-|描述|針對文字、影像、Microsoft Office (Word、Excel、PowerPoint) 檔案、.pdf 檔案及其他支援 Azure RMS 的應用程式檔案類型，原生保護提供了包含加密和增強權利 (權限) 的強力層級保護。|針對所有其他應用程式和檔案類型，一般保護提供包含檔案封裝 (使用 .pfile 檔案類型) 和驗證 (確認使用者是否獲得開啟檔案授權) 的保護層級。|
+|說明|針對文字、影像、Microsoft Office (Word、Excel、PowerPoint) 檔案、.pdf 檔案及其他支援 Rights Management Service 的應用程式檔案類型，原生保護提供了包含加密和強制執行權限的強力層級保護。|針對所有其他應用程式和檔案類型，一般保護提供包含檔案封裝 (使用 .pfile 檔案類型) 和驗證 (確認使用者是否獲得開啟檔案授權) 的保護層級。|
 |保護|完整加密檔案並以下列方式強制執行保護：<br /><br />受保護的內容轉譯之前，透過電子郵件收到檔案或是透過檔案或共用權限存取檔案的人，必須成功通過驗證。<br /><br />此外，當檔案受到保護時，若要在 IP 檢視器中 (適用於受保護的文字和影像檔) 或相關聯的應用程式中 (適用於所有其他支援的檔案類型) 轉譯內容時，將完全強制執行內容擁有者所設定的使用權限與原則。|以下列方式強制執行檔案保護：<br /><br />受保護的內容轉譯之前，獲得開啟檔案授權和獲得檔案存取權的人，必須成功通過驗證。 如果授權失敗，檔案不會開啟。<br /><br />系統會顯示內容擁有者所設定的使用權限與原則，以通知授權使用者其預定使用原則。<br /><br />不過，稽核授權的使用者開啟並存取檔案的記錄時，非支援應用程式不會強制執行使用權限。|
 |預設檔案類型|這是下列檔案類型的預設保護層級：<br /><br />- 文字和影像檔案<br /><br />- Microsoft Office (Word、Excel、PowerPoint) 檔案<br /><br />- 可攜式文件格式 (.pdf)<br /><br />如需詳細資訊，請參閱下一節的[支援的檔案類型與副檔名](#supported-file-types-and-file-name-extensions)。|這是完整保護不支援的所有其他檔案類型 (如 .vsdx、.rtf 等等) 的預設保護。|
 您可以變更 RMS 共用應用程式套用的預設保護層級。 您可以將預設的原生層級變更為一般、從一般變更為原生，甚至阻止 RMS 共用應用程式套用保護。 如需詳細資訊，請參閱本文章中的[變更檔案的預設保護層級](#changing-the-default-protection-level-of-files)一節。
@@ -78,9 +78,9 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 |。jpe|.pjpe|
 |.jfif|.pjfif|
 |.jt|.pjt|
-¹ PDF 轉譯由 Foxit 提供。 Copyright © 2003–2014 by Foxit C或p或ation。
+¹ PDF 轉譯由 Foxit 提供。 Copyright © 2003–2014 by Foxit Corporation.
 
-下表列出 Microsoft Rights Management 共用應用程式在 Microsoft Office 2016、Office 2013 和 Office 2010 中原生支援的檔案類型。 這些檔案受 RMS 保護後副檔名維持不變。
+下表列出 Microsoft Rights Management 共用應用程式在 Microsoft Office 2016、Office 2013 和 Office 2010 中原本就支援的檔案類型。 這些檔案受 Rights Management Service 保護後副檔名維持不變。
 
 |Office 支援的檔案類型|Office 支援的檔案類型|
 |----------------------------------|----------------------------------|
@@ -139,6 +139,6 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

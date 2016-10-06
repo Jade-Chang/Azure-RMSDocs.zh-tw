@@ -1,32 +1,32 @@
 ---
-title: "保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案 | Azure RMS"
+title: "藉由使用 Rights Management 共用應用程式，保護您透過電子郵件共用的檔案 | Azure Information Protection"
 description: "如何安全地以電子郵件共用文件的指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
 
 
 ---
 
 # 藉由使用 Rights Management 共用應用程式，保護您透過電子郵件共用的檔案
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 當您保護您透過電子郵件共用的檔案時，它會建立新版本的原始檔。 原始檔案仍未受保護而新的版本為受保護且自動附加到您稍後傳送的電子郵件。
 
-在某些情況下 (如 Microsoft Word、Excel 和 PowerPoint 所建立的檔案)，RMS 共用應用程式會將它附加到電子郵件訊息的檔案建立兩個版本。 檔案的第二個版本具有 **.ppdf** 副檔名，而且是檔案的 PDF 陰影複製。 即使收件者安裝的應用程式與您用來建立檔案的應用程式不同，這個版本的檔案仍可確保收件者永遠可以讀取檔案。 這是使用者在行動裝置上讀取電子郵件且想要檢視其電子郵件附件時的通例。 他們開啟檔案所需要的就是 RMS 共用應用程式。 然後，他們可以讀取附加的檔案，但是無法變更它，直到他們使用支援 RMS 的應用程式開啟檔案的另一個版本。
+在某些情況下 (如 Microsoft Word、Excel 和 PowerPoint 所建立的檔案)，RMS 共用應用程式會將它附加到電子郵件訊息的檔案建立兩個版本。 檔案的第二個版本具有 **.ppdf** 副檔名，而且是檔案的 PDF 陰影複製。 即使收件者安裝的應用程式與您用來建立檔案的應用程式不同，這個版本的檔案仍可確保收件者永遠可以讀取檔案。 這是使用者在行動裝置上讀取電子郵件且想要檢視其電子郵件附件時的通例。 他們開啟檔案所需要的就是 RMS 共用應用程式。 然後，他們可以讀取附加的檔案，但是無法變更它，直到他們使用支援 Rights Management Service 的應用程式開啟檔案的另一個版本。
 
-如果您的組織使用 Azure RMS，您可以追蹤您藉由共用來保護的檔案：
+如果您的組織使用 Azure Information Protection，您可以追蹤您藉由共用來保護的檔案：
 
 -   選取選項以在有人嘗試開啟這些受保護的附件時收到電子郵件。 每次檔案被存取時，您會收到通知，知道誰在何時嘗試開啟檔案，以及他們是否成功 (是否成功驗證)。
 
@@ -69,7 +69,7 @@ ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
 
     範例：
 
-    ![Azure RMS 的電子郵件訊息](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
+    ![Azure Information Protection 的電子郵件訊息](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
     您想知道：[什麼是自動建立的 .ppdf 檔案？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
@@ -92,6 +92,6 @@ ms.openlocfilehash: ff5dd6afaa454c20f35c237e94947dcec9e737f6
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

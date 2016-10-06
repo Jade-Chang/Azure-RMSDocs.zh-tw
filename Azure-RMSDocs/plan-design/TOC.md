@@ -1,5 +1,5 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
-# [開始使用](/rights-management/get-started/requirements-azure-rms)
+# [了解和探索](/information-protection/understand-explore/what-is-information-protection)
+# [開始使用](/information-protection/get-started/requirements-azure-rms)
 # [計劃和設計](deployment-roadmap.md)
 ## [部署藍圖](deployment-roadmap.md)
 ## [從 AD RMS 移轉](migrate-from-ad-rms-to-azure-rms.md)
@@ -12,13 +12,12 @@
 ### [移轉後工作](migrate-from-ad-rms-phase4.md)
 ## [規劃及實作租用戶金鑰](plan-implement-tenant-key.md)
 ### [BYOK 定價和限制](byok-price-restrictions.md)
-## [Azure RMS 的準備](prepare.md)
-# [部署與使用服務](/rights-management/deploy-use/activate-service)
-# [部署與使用用戶端](/rights-management/rms-client/use-client)
-# [開發和自訂應用程式](/rights-management/develop/developers-guide)
-# [Azure Information Protection (預覽)](/rights-management/information-protection/what-is-information-protection)
+## [準備 Azure Information Protection](prepare.md)
+# [部署與使用服務](/information-protection/deploy-use/activate-service)
+# [部署與使用用戶端](/information-protection/rms-client/use-client)
+# [開發和自訂應用程式](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
