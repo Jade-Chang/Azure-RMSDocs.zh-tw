@@ -1,6 +1,6 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
-# [開始使用](/rights-management/get-started/requirements-azure-rms)
-# [計劃和設計](/rights-management/plan-design/deployment-roadmap)
+# [了解和探索](/information-protection/understand-explore/what-is-information-protection)
+# [開始使用](/information-protection/get-started/requirements-azure-rms)
+# [計劃和設計](/information-protection/plan-design/deployment-roadmap)
 # [部署與使用服務](activate-service.md)
 ## [啟動服務](activate-service.md)
 ### [Office 365 系統管理中心預覽](activate-office365-preview.md)
@@ -18,12 +18,22 @@
 ### [RMS 共用應用程式](configure-sharing-app.md)
 ## [設定使用權限](configure-usage-rights.md)
 ## [設定用於探索服務或資料復原的進階使用者](configure-super-users.md)
+## [設定資訊保護原則](configure-policy.md)
+### [預設原則](configure-policy-default.md)
+### [設定全域設定](configure-policy-settings.md)
+### [建立新的標籤](configure-policy-new-label.md)
+### [刪除或重新排序標籤](configure-policy-delete-reorder.md)
+### [變更標籤](configure-policy-change-label.md)
+### [套用保護](configure-policy-protection.md)
+#### [HYOK 限制](configure-adrms-restrictions.md)
+### [設定視覺標記](configure-policy-markings.md)
+### [設定條件](configure-policy-classification.md)
 ## [部署 RMS 連接器](deploy-rms-connector.md)
 ### [安裝和設定連接器](install-configure-rms-connector.md)
 ### [設定伺服器](configure-servers-rms-connector.md)
 #### [登錄設定](rms-connector-registry-settings.md)
 ### [監視連接器](monitor-rms-connector.md)
-## [驗證 Azure RMS](verify.md)
+## [確認 Azure Rights Management Service](verify.md)
 ## [協助使用者保護檔案](help-users.md)
 ## [記錄和分析使用方式](log-analyze-usage.md)
 ## [租用戶金鑰的作業](operations-tenant-key.md)
@@ -32,11 +42,11 @@
 ## [解除委任並停用](decommission-deactivate.md)
 ## [使用 PowerShell 管理](administer-powershell.md)
 ### [針對 Azure RMS 安裝 Windows PowerShell](install-powershell.md)
-# [部署與使用用戶端](/rights-management/rms-client/use-client)
-# [開發和自訂應用程式](/rights-management/develop/developers-guide)
-# [Azure Information Protection (預覽)](/rights-management/information-protection/what-is-information-protection)
+# [部署與使用用戶端](/information-protection/rms-client/use-client)
+# [開發和自訂應用程式](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Sep16_HO4-->
 
 

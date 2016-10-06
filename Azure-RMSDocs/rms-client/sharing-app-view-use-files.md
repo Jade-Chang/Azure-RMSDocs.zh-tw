@@ -1,33 +1,33 @@
 ---
-title: "檢視並使用 Rights Management 保護的檔案 | Azure RMS"
+title: "檢視並使用 Rights Management 保護的檔案 | Azure Information Protection"
 description: "檢視並使用受保護的檔案的指示，它會要求您安裝 Rights Management (RMS) 共用應用程式。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 035c9eb6cb630cafd5bd7fc7e2371340043ddc5e
-ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 
 
 ---
 
 # 檢視並使用 Rights Management 保護的檔案
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 當[您的電腦上安裝 Rights Management (RMS) 共用應用程式](install-sharing-app.md)之後，您只要按兩下受保護的檔案即可檢視它。 檔案可能是電子郵件郵件的附件，您也可能在使用 [檔案總管] 時看見它。
 
 > [!NOTE]
-> RMS 必須先確認您有權檢視受保護的檔案 (檢查您的使用者名稱和密碼)，您才可以檢視檔案。 在某些情況下，這可能已快取，所以不會提示您提供認證。 在其他情況下會提示您提供認證。
+> Rights Management Service 必須先確認您有權檢視受保護的檔案 (檢查您的使用者名稱和密碼)，您才可以檢視檔案。 在某些情況下，這可能已快取，所以不會提示您提供認證。 在其他情況下會提示您提供認證。
 >
-> 如果您的組織不使用 Azure Rights Management (Azure RMS) 或 AD RMS，您可以申請免費帳戶，在接受您的認證後，您就可以開啟使用 RMS 保護的檔案：
+> 如果您的組織不使用 Azure Information Protection 或 AD RMS，您可以申請免費帳戶，在接受您的認證後，您就可以開啟使用 RMS 保護的檔案：
 >
 > -   若要申請此帳戶，請按一下連結來申請 [個人版 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
@@ -68,7 +68,7 @@ ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
 
 
 
-如需Rights Management 支援的副檔名清單，請參閱《[Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)》的[支援的檔案類型和副檔名](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)一節。 如果未列出您的副檔名，請使用 Web 搜索以查看它是否為其他應用程式支援的副檔名。
+如需 Rights Management Services 支援之副檔名的完整清單，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)的[支援的檔案類型和副檔名](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions)一節。 如果未列出您的副檔名，請使用 Web 搜索以查看它是否為其他應用程式支援的副檔名。
 
 > [!NOTE]
 > 如果在確認檔案受 Rights Management 保護且未開啟之後，請下載並使用 [RMS Analyzer 工具](https://www.microsoft.com/en-us/download/details.aspx?id=46437)。 按照工具中的指示，檢查電腦上可能會使受保護的檔案無法開啟的問題。
@@ -90,7 +90,7 @@ ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
 
 - **其他副檔名**
 
-    您的裝置上必須有了解 Rights Management 的應用程式，才能使用這些檔案。 這些應用程式稱為啟用 RMS 的應用程式。 舉例來說，Office 2016、Office 2013 和 Office 2010 提供的應用程式 (例如 Word、Excel、PowerPoint 及 Outlook) 就是啟用 Rights Management 的應用程式。 但不是來自 Microsoft 的應用程式，例如其他軟體公司和自己的企業營運應用程式，也可能已啟用 Rights Management。
+    您的裝置上必須有了解 Rights Management 保護的應用程式，才能使用這些檔案。 這些應用程式稱為啟用 RMS 的應用程式。 舉例來說，Office 2016、Office 2013 和 Office 2010 提供的應用程式 (例如 Word、Excel、PowerPoint 及 Outlook) 就是啟用 Rights Management 的應用程式。 但不是來自 Microsoft 的應用程式，例如其他軟體公司和自己的企業營運應用程式，也可能已啟用 Rights Management。
 
     已啟用 Rights Management 的應用程式知道如何開啟已受其他 Rights Management 應用程式所保護的檔案。 它們也會保留已套用的保護，即使您編輯檔案或儲存為其他檔名或另存別處也一樣。 這些應用程式可讓您根據目前套用至檔案的權限來使用檔案，因此只要您有權限使用檔案，您就可以這樣做。 例如，您可能可以編輯檔案但不能列印。
 
@@ -107,6 +107,6 @@ ms.openlocfilehash: 8d93968c51ad1037e5424df4ee9b724e0c1f89a2
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

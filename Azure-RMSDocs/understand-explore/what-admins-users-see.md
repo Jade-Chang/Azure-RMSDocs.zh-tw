@@ -1,19 +1,19 @@
 ---
-title: "系統管理員和使用者看到的內容？ | Azure RMS"
-description: "查看系統管理員和使用者如何查看，以及使用 Azure Rights Management (Azure RMS) 保護敏感或機密資訊的一些常見範例。"
+title: "系統管理員和使用者看到的內容？ | Azure Information Protection"
+description: "請參閱系統管理員和使用者如何查看及使用 Azure Rights Management (Azure RMS) 技術協助保護敏感或機密資訊的一些典型範例。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 6fbe4841ca3ccd684dd78608d023f6d54735bcaf
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 6fbe4841ca3ccd684dd78608d023f6d54735bcaf
 
 # Azure RMS 運作方式：系統管理員和使用者看到的內容
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
 本文顯示系統管理員和使用者所見內容，以及使用 Azure Rights Management (Azure RMS) 保護敏感或機密資訊的一些常見例子。
 
@@ -241,6 +241,6 @@ Alice 想要限制 Bob 只能檢視和編輯此文件，而不希望他複製或
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

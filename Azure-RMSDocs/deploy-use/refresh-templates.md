@@ -1,19 +1,19 @@
 ---
-title: "重新整理範本 | Azure RMS"
-description: "當您使用 Azure RMS 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟。"
+title: "重新整理範本 | Azure Information Protection"
+description: "當您使用 Azure Rights Management Service 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 2870edc314f3ee6f6e3b8937cbe5b653092c5910
 
 
 ---
@@ -21,9 +21,9 @@ ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
 
 # 重新整理使用者的範本
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-當您使用 Azure RMS 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟：
+當您使用 Azure Information Protection 的 Azure Rights Management Service 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟：
 
 |應用程式或服務|變更範本後如何重新整理範本|
 |--------------------------|---------------------------------------------|
@@ -186,6 +186,6 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

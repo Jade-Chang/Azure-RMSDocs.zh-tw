@@ -1,27 +1,27 @@
 ---
-title: "針對使用 Rights Management 保護的檔案變更權限 | Azure RMS"
+title: "針對使用 Rights Management 保護的檔案變更權限 | Azure Information Protection"
 description: "當檔案已受 Rights Management 保護時，您可以藉由重新保護它，然後指定應該能存取它們的所有使用者以及要授與他們的權限，來變更權限。"
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/03/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 
 
 ---
 
 # 針對使用 Rights Management 保護的檔案變更權限
 
->*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 當檔案已受 Rights Management 保護時，您可以藉由重新保護它，然後指定應該能存取它們的所有使用者以及要授與他們的權限，來變更權限。
 
@@ -62,9 +62,9 @@ ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
     如果您有權限可以重新保護檔案，您可能會很快看到對話方塊，告訴您檔案正受到保護，然後焦點會返回檔案總管。 選取的檔案目前受到您的變更保護。 
 
 > [!NOTE]
-> RMS 必須先確認您有權對這個檔案進行重新保護的動作，您才可以重新保護檔案。 在某些情況下，這可能已快取，所以不會提示您提供認證。 在其他情況下會提示您提供認證。
+> Rights Management Service 必須先確認您有權對這個檔案進行重新保護的動作 (檢查您的使用者名稱和密碼)，您才可以重新保護檔案。 在某些情況下，這可能已快取，所以不會提示您提供認證。 在其他情況下會提示您提供認證。
 >
-> 如果您的組織不使用 Azure Rights Management (Azure RMS) 或 AD RMS，您可以申請免費帳戶，在接受您的認證後，您就可以使用 RMS 所保護的檔案：
+> 如果您的組織不使用 Azure Information Protection 或 AD RMS，您可以申請免費帳戶，在接受您的認證後，您就可以使用 RMS 所保護的檔案：
 >
 > -   若要申請此帳戶，請按一下連結來申請 [個人版 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)。
 >
@@ -96,6 +96,6 @@ ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

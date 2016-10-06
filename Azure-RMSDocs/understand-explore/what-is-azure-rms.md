@@ -1,33 +1,31 @@
 ---
-title: "什麼是 Azure Rights Management？ | Azure RMS"
-description: "Azure Rights Management (Azure RMS) 是一項資訊保護解決方案，可供組織保護儲存在任何位置的資料。 這項解決方案支援目前的熱門使用者裝置，包括 Windows、Mac OS、iOS、Android 和 Windows Phone。"
+title: "什麼是 Azure Rights Management？ | Azure Information Protection"
+description: "Azure Rights Management (Azure RMS) 是 Azure Information Protection 所使用的保護技術。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: c206da4a12cb7eb7bdd0386f47953284c96a33f3
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: 21e8bd7bb4b749e0f086a0108bb89778f2d3ce73
 
 
 ---
 
 # 什麼是 Azure Rights Management？
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
 
-Azure Rights Management (Azure RMS) 是一項資訊保護解決方案，可供組織在現在這個充滿挑戰的工作環境中保護資料。
+Azure Rights Management (Azure RMS) 是 [Azure Information Protection](what-is-information-protection.md) 所使用的保護技術。
 
-這些挑戰包含連上網際網路的需求，因為使用者會攜帶個人裝置到公司、在路上和從家裡存取公司資料，並與重要商業夥伴分享敏感資訊。 使用者的部分例行工作是透過使用電子郵件、檔案共用網站及雲端服務分享資訊。 在這些案例中，如果您想要保護公司資料並同時提高使用者的工作效率，則傳統安全性控制項 (例如存取控制清單和 NTFS 權限) 和防火牆的成效有限。
-
-相較之下，Azure RMS 在所有這些情況下可保護公司的敏感資訊。 它會使用加密、身分識別及授權原則來協助保護您的檔案和電子郵件安全，並且可在多個裝置 (電話、平板電腦及 PC) 中運作。 資訊在組織內外同樣都會受到保護，因為資料的保護如影隨行，即使資料離開組織範圍也不例外。
+此雲端服務使用加密、身分識別及授權原則來協助保護您的檔案和電子郵件，並且可在多個裝置 (手機、平板電腦及電腦) 中運作。 資訊在組織內外同樣都會受到保護，因為資料的保護如影隨行，即使資料離開組織範圍也不例外。
 
 例如，員工可能會透過電子郵件傳送文件到夥伴公司，或將文件儲存到其雲端磁碟。 Azure RMS 提供的持續性保護不僅可以協助您保護公司資料的安全，還可依法律規定，滿足法規遵循和法令搜尋要求，或只用作良好的資訊管理應用。
 
@@ -36,7 +34,7 @@ Azure Rights Management (Azure RMS) 是一項資訊保護解決方案，可供�
 下圖說明 Azure RMS 如何作為 Office 365 的 Rights Management 解決方案，以及內部部署伺服器和服務使用。 並支援執行 Windows、Mac OS、iOS、Android 和 Windows Phone 的熱門使用者裝置。
 
 > [!NOTE]
-您可以使用 Azure RMS 配合不同的雲端訂用帳戶，包括 Office 365、Enterprise Mobility Suite 和 Azure RMS Premium。 如需詳細資訊，請參閱[支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。
+您可以將 Azure RMS 保護用於不同的雲端訂用帳戶，而且它支援多項功能。 如需詳細資訊，請參閱 [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 行銷網站。
 
 ![Azure RMS 的運作方式](../media/AzRMS_elements.png)
 
@@ -54,13 +52,13 @@ Azure Rights Management (Azure RMS) 是一項資訊保護解決方案，可供�
 
 如果您想要直接開始自行嘗試 Azure RMS，請使用 [Azure Rights Management 快速入門教學課程](../get-started/quick-start-tutorial.md)。
 
-或者，如果您已準備好開始部署貴組織的 Azure RMS，請使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)作為您的部署步驟和作法指示的連結。
+不過，如果您已準備好開始部署貴組織的 Azure Information Protection，請使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)作為您的部署步驟和操作說明指示的連結。
 
 > [!TIP]
 > 如需詳細資訊與說明，請使用 [Azure Rights Management 的資訊與支援](../get-started/information-support.md)中的資源和連結。
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

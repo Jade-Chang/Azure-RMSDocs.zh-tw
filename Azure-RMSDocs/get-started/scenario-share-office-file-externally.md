@@ -1,28 +1,28 @@
 ---
-title: "案例 - 與其他組織的使用者共用 Office 檔案 | Azure RMS"
-description: "此案例和支援的使用者文件會使用 Azure Rights Management，讓使用者可以與組織外的人安全地以電子郵件傳送 Office 檔案。"
+title: "案例 - 與其他組織的使用者共用 Office 檔案 | Azure Information Protection"
+description: "此案例和支援的使用者文件使用 Azure Rights Management 保護，讓使用者可以安全地透過電子郵件傳送 Office 檔案給其他組織的人員。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
+ms.sourcegitcommit: 03bd68b03d423908e7fbe89efb6aac6773283f2f
+ms.openlocfilehash: 1e8ba22c5fdcf3f17b3cec0a99444975c03ec008
 
 
 ---
 
 # 案例 - 與其他組織的使用者共用 Office 檔案
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-此案例和支援的使用者文件會使用 Azure Rights Management，讓使用者可以與組織外的人安全地以電子郵件傳送 Office 檔案。 例如，Office 檔案可能是 Word 文件、Excel 試算表或 PowerPoint 簡報，其中包含合作夥伴的價目表資訊、經銷商的產品清單，或具有潛在客戶的傳遞時間明細行清單。 當使用者遵循指示時，附加到電子郵件訊息的檔案將受到 Azure Rights Management 的保護。
+此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術，讓使用者可以安全地透過電子郵件傳送 Office 檔案給其他組織的人員。 例如，Office 檔案可能是 Word 文件、Excel 試算表或 PowerPoint 簡報，其中包含合作夥伴的價目表資訊、經銷商的產品清單，或具有潛在客戶的傳遞時間明細行清單。 當使用者遵循指示時，附加到電子郵件訊息的檔案將受到 Azure Rights Management 的保護。
 
 此案例適用於下列這組情況：
 
@@ -44,11 +44,11 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|您已針對 Office 365 或 Azure Active Directory 準備帳戶和群組|[準備 Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
+|您已針對 Office 365 或 Azure Active Directory 準備帳戶和群組|[準備 Azure Information Protection](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[Microsoft Rights Management 共用應用程式的自動部署](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
-|使用者具有 Office 2013 的 Outlook|如果使用者有 Office 2010，請參閱對等版本的螢幕擷取畫面，讓圖片符合使用者看到的項目。|
-|您的 Azure RMS 訂用帳戶包含文件追蹤|如果您的 Azure RMS 的訂用帳戶不包括文件追蹤和撤銷，使用者將無法完成使用者指示中的所有步驟。 在此情況下，購買確實支援這些功能的訂用帳戶，或修改使用者指示以移除使用這些功能的步驟。<br /><br />若要檢查您的訂用帳戶支援的項目： [Rights Management Services (RMS) 產品項目的比較](https://technet.microsoft.com/dn858608)|
+|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[Microsoft Rights Management 共用應用程式的自動部署](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
+|使用者具有 Office 2013 的 Outlook|如果使用者有 Office 2016 或 Office 2010，請參閱對等版本的螢幕擷取畫面，讓圖片符合使用者看到的項目。|
+|Azure Information Protection 的訂用帳戶包括文件追蹤|如果您的訂用帳戶不包括文件追蹤和撤銷，使用者將無法完成使用者指示中的所有步驟。 在此情況下，購買確實支援這些功能的訂用帳戶，或修改使用者指示以移除使用這些功能的步驟。<br /><br />請查看 Azure Information Protection [定價頁面](https://go.microsoft.com/fwlink/?LinkId=827589)中的訂用帳戶資訊。|
 
 ## 使用者文件指示
 使用下列範本，將使用者指示複製並貼到使用者通訊上，然後進行這些修改以反映您的環境 ︰
@@ -104,9 +104,9 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 -   如需其他資訊：
 
-    -   [保護您以電子郵件共用的檔案](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [保護您以電子郵件共用的檔案](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [追蹤及撤銷您的文件](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [追蹤及撤銷您的文件](../rms-client/sharing-app-track-revoke.md)
 
 -   連絡技術支援人員：
 
@@ -143,9 +143,9 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 -   如需其他資訊：
 
-    -   [保護您以電子郵件共用的檔案](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [保護您以電子郵件共用的檔案](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [追蹤及撤銷您的文件](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [追蹤及撤銷您的文件](../rms-client/sharing-app-track-revoke.md)
 
 -   連絡技術支援人員：
 
@@ -154,6 +154,6 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

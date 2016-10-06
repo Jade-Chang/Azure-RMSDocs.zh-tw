@@ -1,19 +1,19 @@
 ---
-title: "適用於 Windows 和行動平台的 RMS 共用應用程式 | Azure RMS"
+title: "適用於 Windows 和行動平台的 RMS 共用應用程式 | Azure Information Protection"
 description: "RMS 共用應用程式如何以免費、可下載的應用程式支援 Azure RMS，這是支援 Office 2010 的必要應用程式，但也建議在 Windows 電腦、Mac 電腦和行動裝置上使用。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 43429b44c019144744f39a1f92f144d315c2024c
-ms.openlocfilehash: 21bdcae9432e2edbecaa6eafb35ccefbd3ca372c
+ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
+ms.openlocfilehash: e4b9a13ba29820cd7a19e0b8509966f5d8195353
 
 
 ---
@@ -21,9 +21,9 @@ ms.openlocfilehash: 21bdcae9432e2edbecaa6eafb35ccefbd3ca372c
 
 # 適用於 Windows 和行動平台的 RMS 共用應用程式
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 Office 2010 的必要應用程式，也建議在 Windows 電腦、Mac 電腦和行動裝置上使用。 它的其中一個好處就是可以針對原本不支援 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 的應用程式和檔案套用一般保護，也就是說可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](../rms-client/sharing-app-admin-guide.md)》中的[保護層級 – 原生和一般](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
+RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 Office 2010 的必要應用程式，也建議在 Windows 電腦、Mac 電腦和行動裝置上使用。 它的其中一個好處就是可以針對原本不支援 Azure Rights Management Service 的應用程式和檔案套用一般保護，也就是說可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](../rms-client/sharing-app-admin-guide.md)》中的[保護層級 – 原生和一般](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
 
 使用者使用 RMS 共用應用程式保護檔案時，可以同時追蹤他們所保護的文件，而且可以撤銷對檔案的存取權 (如有必要)。 使用 [文件追蹤網站](http://go.microsoft.com/fwlink/?LinkId=529562)便可以這麼做。
 
@@ -33,9 +33,9 @@ RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 
 
 -   一個新的檔案總管滑鼠右鍵選項。 這可為使用者提供 [就地保護] 選項，這個選項會叫用一個易於使用的對話方塊，其中包含用於保護儲存在磁碟上之檔案的最常用設定。
 
--   一個可開啟已受 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 保護之檔案的檢視器。 當沒有安裝任何其他可開啟受保護檔案的應用程式時，便會自動叫用這個檢視器。
+-   一個可開啟已受 Azure Rights Management Service 保護之檔案的檢視器。 當沒有安裝任何其他可開啟受保護檔案的應用程式時，便會自動叫用這個檢視器。
 
--   可讓來自 Office 2010 套件的 Word、Excel、PowerPoint 及 Outlook 與 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 一起順暢運作的 Office 2010 後端設定。
+-   可讓來自 Office 2010 套件的 Word、Excel、PowerPoint 及 Outlook 與 Azure Rights Management Service 一起順暢運作的 Office 2010 後端組態。
 
 雖然您可以使用 [Microsoft Rights Management 頁面](http://go.microsoft.com/fwlink/?LinkId=303970)來針對單一電腦下載及安裝適用於 Windows 的 RMS 共用應用程式，不過它也支援透過企業部署來進行無訊息安裝和自訂設定。 如需詳細資訊，請參閱下列資源：
 
@@ -53,11 +53,11 @@ RMS 共用應用程式是一個免費、可下載的應用程式，這是支援 
 
 
 ## 後續步驟
-若要查看其他應用程式和服務如何支援 Azure Rights Management，請參閱[應用程式如何支援 Azure Rights Management](applications-support.md)。
+若要查看其他應用程式和服務如何支援 Azure Information Protection 的 Azure Rights Management Service，請參閱[應用程式如何支援 Azure Rights Management Service](applications-support.md)。
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

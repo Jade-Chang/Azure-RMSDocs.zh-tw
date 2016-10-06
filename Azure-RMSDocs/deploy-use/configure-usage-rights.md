@@ -1,28 +1,28 @@
 ---
-title: "設定 Azure Rights Management 的使用權限 | Azure RMS"
-description: "了解並識別當您使用 Azure Rights Management (Azure RMS) 保護檔案或電子郵件時，所使用的特定權限。"
+title: "設定 Azure Rights Management 的使用權限 | Azure Information Protection"
+description: "了解並識別當您使用 Azure Information Protection 的 Azure Rights Management Service 保護檔案或電子郵件時，所使用的特定權限。"
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad32910b482ca9d92b4ac8f3f123eda195db29cd
-ms.openlocfilehash: ab1b2f652d34183e1d95fd0a387abb10c3aff9b1
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: a11d027789a63ae845812068e34f527f15a02314
 
 
 ---
 
 # 設定 Azure Rights Management 的使用權限
 
->*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-當您使用 Azure Rights Management (Azure RMS) 在檔案或電子郵件上設定保護，且沒有使用範本時，您必須自行設定使用權限。 此外，當您為 Azure RMS 設定自訂範本時，您會選取使用權限，而當使用者、系統管理員或設定的服務選取範本時，自動套用會您選取的使用權限。 例如，在 Azure 傳統入口網站，您可以選取角色來設定使用權限的邏輯群組，也可以設定個別權限。
+當您使用 Azure Information Protection 的 Azure Rights Management Service 在檔案或電子郵件上設定保護，且沒有使用範本時，您必須自行設定使用權限。 此外，當您為 Azure Rights Management 設定自訂範本時，您會選取使用權限，然後在使用者、系統管理員或設定的服務選取範本時自動套用。 例如，在 Azure 傳統入口網站，您可以選取角色來設定使用權限的邏輯群組，也可以設定個別權限。
 
 使用本文來協助您設定您使用的應用程式所需的使用權限，並了解應用程式如何解讀這些權限。
 
@@ -77,7 +77,7 @@ ms.openlocfilehash: ab1b2f652d34183e1d95fd0a387abb10c3aff9b1
 
 Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應用程式及 Exchange 傳輸規則) 有一個額外的電子郵件資訊版權保護選項︰**[不要轉寄]**。 
 
-雖然此選項在使用者 (Exchange 管理員) 看來像是可供選取的預設 Rights Management 範本，但 **[不要轉寄]** 不是範本。 這就是為什麼您在檢視及管理 Azure RMS 的範本時，不會在 Azure 傳統入口網站中看到此選項。 **[不要轉寄]** 其實是使用者會自動套用到電子郵件收件者的一組權限。
+雖然此選項在使用者 (Exchange 管理員) 看來像是可供選取的預設 Rights Management 範本，但 **[不要轉寄]** 不是範本。 這就是為什麼您在檢視及管理 Azure Rights Management 的範本時，不會在 Azure 傳統入口網站中看到此選項。 **[不要轉寄]** 其實是使用者會自動套用到電子郵件收件者的一組權限。
 
 當 **[不要轉寄]** 選項套用到電子郵件時，收件者無法加以轉寄、列印、複製、或儲存其附件或另存為其他名稱。 例如在 Outlook 用戶端中，無法使用 [轉寄] 按鈕以及 **[另存新檔]**、**[儲存附件]** 及 **[列印]** 功能表選項，您也無法新增或變更 **[收件者]**、**[副本]** 或 **[密件副本]** 方塊中的收件者。
 
@@ -101,6 +101,6 @@ Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
