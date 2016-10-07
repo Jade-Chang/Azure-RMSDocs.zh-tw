@@ -4,18 +4,18 @@ description: "簡介如何使用 RMS SDK 2.1 開發應用程式。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/06/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4141cadf67dc479116c802f9340ba222140194a3
-ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 6e2b85bc8069de7060211df4d53be7f24ae44e3e
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
 
 ## 載入 MSIPC.dll
 
-在您呼叫任何 RMS SDK 2.1 函式之前，必須先呼叫 [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函式以載入 MSIPC.dll。
+在您呼叫任何 RMS SDK 2.1 函式之前，必須先呼叫 [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 函式以載入 MSIPC.dll。
 
         C++
         hr = IpcInitialize();
@@ -58,7 +58,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
         goto exit;
       }
 
-此呼叫會擷取安裝在預設伺服器上的 RMS 範本，並將結果載入 *pcTil* 變數指向的 [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til) 結構，然後顯示範本。
+此呼叫會擷取安裝在預設伺服器上的 RMS 範本，並將結果載入 *pcTil* 變數指向的 [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til) 結構，然後顯示範本。
 
       C++
       if (0 == pcTil->cTi) {
@@ -77,9 +77,9 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 
 ## 將授權序列化
 
-在您可以保護任何資料之前，您需要序列化授權並取得內容金鑰。 內容金鑰可用來加密機密資料。 序列化的授權通常會附加至加密的資料，並且供受保護資料的取用者使用。 取用者必須使用序列化授權呼叫 [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函式取得內容金鑰，以將內容解密並取得與內容相關聯的原則。
+在您可以保護任何資料之前，您需要序列化授權並取得內容金鑰。 內容金鑰可用來加密機密資料。 序列化的授權通常會附加至加密的資料，並且供受保護資料的取用者使用。 取用者必須使用序列化授權呼叫 [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey) 函式取得內容金鑰，以將內容解密並取得與內容相關聯的原則。
 
-為了簡單起見，請使用 [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 傳回的第一個 RMS 範本將授權序列化。
+為了簡單起見，請使用 [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 傳回的第一個 RMS 範本將授權序列化。
 
 通常，您會使用使用者介面對話方塊來允許使用者選取所需的範本。
 
@@ -97,7 +97,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 
 ## 保護資料
 
-現在您已準備好使用 [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式為機密資料加密。 首先，您必須詢問 **IpcEncrypt** 函式加密資料的大小。
+現在您已準備好使用 [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式為機密資料加密。 首先，您必須詢問 **IpcEncrypt** 函式加密資料的大小。
 
       C++
       cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
@@ -109,7 +109,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
         goto exit;
       }
 
-這裡的 wszText 包含您要保護的純文字。 [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式會在 *cbEncrypted* 參數中傳回加密資料的大小。
+這裡的 wszText 包含您要保護的純文字。 [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 函式會在 *cbEncrypted* 參數中傳回加密資料的大小。
 
 現在可配置記憶體給加密的資料。
 
@@ -151,7 +151,7 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
         }
       }
 
-*DisplayError* 函式使用 [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函式，從對應的錯誤程式碼收到錯誤訊息，並將其列印為標準輸出。
+*DisplayError* 函式使用 [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 函式，從對應的錯誤程式碼收到錯誤訊息，並將其列印為標準輸出。
 
 ## 清除
 
@@ -177,16 +177,16 @@ RMS 範本會定義用來保護資料的原則，也就是定義允許存取資�
 ## 相關主題
 
 - [開發人員指導與資訊](developer-notes.md)
-- [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-- [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-- [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-- [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-- [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
+- [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
+- [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
+- [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+- [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
+- [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+- [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

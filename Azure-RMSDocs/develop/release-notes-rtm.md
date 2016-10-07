@@ -4,18 +4,18 @@ description:
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: e47a440a1cc69351baacdabb38774986f60b7443
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 703a30d1dc48856c896cc9763cbf6ea947773d2a
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: e47a440a1cc69351baacdabb38774986f60b7443
 
 ## 2015 年 5 月更新
 
--   **服務應用程式及雲端式 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 需要三項資訊：對稱金鑰、**AppPrincipalId** 和 **TenantBposId**。 這個主題已更新為提供處理此必要資訊的指引。 如需了解這項更新，請參閱更新版的[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
+-   **服務應用程式及雲端式 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 需要三項資訊：對稱金鑰、**AppPrincipalId** 和 **TenantBposId**。 這個主題已更新為提供處理此必要資訊的指引。 如需了解這項更新，請參閱更新版的[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 ## 2015 年 4 月更新
 
@@ -61,7 +61,7 @@ ms.openlocfilehash: e47a440a1cc69351baacdabb38774986f60b7443
 
     **注意**：我們將不再於 API 公開 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已建置的應用程式仍將繼續運作，因為我們將會私下以 API 程式碼採用旗標。 我們仍然可以藉由變更旗標來達成取得已被取代之舊加密演算法旗標的優點。 如需詳細資訊，請參閱[使用加密](working-with-encryption.md)。
 
--   **伺服器模式應用程式**使用 **IPC\_API\_MODE\_SERVER** 的 [**API 模式值**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)，不再需要應用程式資訊清單。 您可以對生產 RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
+-   **伺服器模式應用程式**使用 **IPC\_API\_MODE\_SERVER** 的 [**API 模式值**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)，不再需要應用程式資訊清單。 您可以對生產 RMS 伺服器測試應用程式，而且不需要在切換到生產環境時取得生產授權。 如需伺服器模式應用程式的詳細資訊，請參閱[應用程式類型](application-types.md)。
 -   **記錄**目前透過檔案和 Windows 的事件追蹤等方法實作。
 -   如果您在 **Windows 7 SP1 或 Windows Server 2008 R2 機器**上執行，請參閱「重要的開發人員注意事項」後面的注意事項。
 
@@ -91,18 +91,18 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 
     **注意**  進一步支援的資料類型和結構 (未列在這裡) 已新增至檔案 API 擴充功能。 已更新為此版本的所有主題都標示為**初步主題而且可能變更**。
 
-    -   [**IpcfOpenFileOnHandle**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonhandle)
-    -   [**IpcfOpenFileOnILockBytes**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonilockbytes)
-    -   [**IpcfGetFileProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetfileproperty)
-    -   [**IpcfLogicalFileRangeToRawFileRange**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcflogicalfilerangetorawfilerange)
-    -   [**IpcfReadFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfreadfile)
-    -   [**IpcfSetEndOfFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfsetendoffile)
-    -   [**IpcfWriteFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfwritefile)
+    -   [**IpcfOpenFileOnHandle**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfopenfileonhandle)
+    -   [**IpcfOpenFileOnILockBytes**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfopenfileonilockbytes)
+    -   [**IpcfGetFileProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfgetfileproperty)
+    -   [**IpcfLogicalFileRangeToRawFileRange**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcflogicalfilerangetorawfilerange)
+    -   [**IpcfReadFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfreadfile)
+    -   [**IpcfSetEndOfFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfsetendoffile)
+    -   [**IpcfWriteFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfwritefile)
 
 ## 2014 年 4 月更新
 
 -   **檔案 API 記憶體使用量**，特別是針對大型 PFile，已大幅改善。
--   **內容識別碼** 現在可透過 **IPC\_LI\_CONTENT\_ID** 屬性寫入。 如需詳細資訊，請參閱[**授權屬性類型**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)。
+-   **內容識別碼** 現在可透過 **IPC\_LI\_CONTENT\_ID** 屬性寫入。 如需詳細資訊，請參閱[**授權屬性類型**](/information-protection/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)。
 -   **生產資訊清單需求** - 當 RMS 啟用的應用程式/服務正在以伺服器模式執行時，我們將不再需要資訊清單。 如需詳細資訊，請參閱[應用程式類型](application-types.md)。
 -   **文件更新**
 
@@ -132,17 +132,17 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 
       - 除了系統檔案和 Office 檔案之外，所有檔案都可以使用 RMS 保護的檔案格式 (PFile) 加以保護。
 
-    檔案 API 透過下列四個新函數實作︰[IpcfDecryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)、[IpcfEncryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)、[IpcfGetSerializedLicenseFromFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile) 和 [IpcfIsFileEncrypted](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)。
+    檔案 API 透過下列四個新函數實作︰[IpcfDecryptFile](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)、[IpcfEncryptFile](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)、[IpcfGetSerializedLicenseFromFile](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile) 和 [IpcfIsFileEncrypted](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)。
 
     必須在用戶端電腦上安裝 Rights Management Service Client 2.1，且該電腦必須能連接至 RMS 伺服器，才可使用檔案 API。 如需 RMS 伺服器、RMS 用戶端及其功能的詳細資訊，請參閱 TechNet 內容以取得 [RMS 的 IT 專業人員文件](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx)。
 
 -   **問題**︰從頭開始建立授權時，必須明確授與擁有權。
 
-    **解決方案**︰使用 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 從頭開始建立授權時，您的應用程式必須明確將**擁有者**權限新增給授權擁有者。 如需詳細資訊，請參閱[新增明確的擁有者權限](add-explicit-owner-rights.md)。
+    **解決方案**︰使用 [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 從頭開始建立授權時，您的應用程式必須明確將**擁有者**權限新增給授權擁有者。 如需詳細資訊，請參閱[新增明確的擁有者權限](add-explicit-owner-rights.md)。
 
--   **問題**︰如果應用程式使用其控制代碼對相同視窗呼叫 [**IpcProtectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 或 [**IpcUnprotectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow) 兩次，RMS SDK 2.1 會在 **HRESULT** 中傳回失敗。
+-   **問題**︰如果應用程式使用其控制代碼對相同視窗呼叫 [**IpcProtectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 或 [**IpcUnprotectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow) 兩次，RMS SDK 2.1 會在 **HRESULT** 中傳回失敗。
 
-    **解決方案**︰如需此情形的特定指引，請參閱 [**IpcProtectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 和 [**IpcUnprotectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow) 中的「備註」一節。
+    **解決方案**︰如需此情形的特定指引，請參閱 [**IpcProtectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 和 [**IpcUnprotectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow) 中的「備註」一節。
 
 -   **問題**︰針對多個架構建置時，您必須使用本指引。
 
@@ -165,19 +165,19 @@ SDK 的檔案 API 元件已經擴充，並提供下列功能︰
 * [概觀](ad-rms-overview.md)
 * [新增明確的擁有者權限](add-explicit-owner-rights.md)
 * [檔案 API 組態](file-api-configuration.md)
-* [**IpcfGetSerializedLicenseFromFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile)
-* [**IpcfEncryptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)
-* [**IpcfDecryptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
-* [**IpcfIsFileEncrypted**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)
-* [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcProtectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcprotectwindow)
-* [**IpcUnprotectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)
+* [**IpcfGetSerializedLicenseFromFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile)
+* [**IpcfEncryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)
+* [**IpcfDecryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
+* [**IpcfIsFileEncrypted**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)
+* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
+* [**IpcProtectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcprotectwindow)
+* [**IpcUnprotectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)
  
 
  
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
