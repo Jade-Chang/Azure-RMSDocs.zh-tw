@@ -4,18 +4,18 @@ description: "可透過登錄中設定進行設定的檔案 API 的行為。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 8232137fb52b03a30513b132b02251f3cc01079a
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 
 
 ---
@@ -82,7 +82,7 @@ ms.openlocfilehash: 8232137fb52b03a30513b132b02251f3cc01079a
 -   **txt、xml、jpg、jpeg、pdf、png、tiff、bmp、gif、giff、jpe、jfif、jif 檔案** 啟用原生加密 (xxx 變成 pxxx)
 -   **所有其他檔案** 啟用受保護檔案 (pfile) 加密 (xxx 成為 xxx.pfile)
 
-若嘗試在封鎖的檔案類型上加密，會發生 [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes) 錯誤。
+若嘗試在封鎖的檔案類型上加密，會發生 [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes) 錯誤。
 
 ### 檔案 API- 檔案支援詳細資料
 
@@ -149,13 +149,13 @@ HKEY_LOCAL_MACHINE
 ## 相關的主題
 
 * [開發人員注意事項](developer-notes.md)
-* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/rights-management/sdk/2.1/api/win/error%20codes)
+* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes)
  
 
  
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

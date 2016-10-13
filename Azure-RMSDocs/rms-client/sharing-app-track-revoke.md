@@ -3,7 +3,7 @@ title: "當您使用 RMS 共用應用程式時，追蹤及撤銷文件 | Azure I
 description: "您使用 RMS 共用應用程式來保護您的文件之後，您可以追蹤人員如何使用受保護的文件。 如有必要，您也可以在想要停止共用這些文件時，撤銷其存取權。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: b8cc9dd2984f7853e1fbacebbb4f6934f918200e
+ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
+ms.openlocfilehash: 1cd55e9c6200876a4d9921e3b60eb8fb58845d0c
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: b8cc9dd2984f7853e1fbacebbb4f6934f918200e
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation/player" frameborder="0" allowfullscreen></iframe>
 </div>
 
-當您存取此網站時，請登入來追蹤您的文件。 假設您的組織有[可支援文件追蹤和撤銷的訂用帳戶](https://go.microsoft.com/fwlink/?LinkId=827589)，而且您已獲得此訂用帳戶的授權，則您可以看見有誰試圖開啟您所保護的檔案以及是否開啟成功 (他們已驗證成功)。 他們嘗試存取文件的時間，以及當時的位置。 此外：
+當您存取此網站時，請登入來追蹤您的文件。 假設您的組織有[可支援文件追蹤和撤銷的訂用帳戶](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)，而且您已獲得此訂用帳戶的授權，則您可以看見有誰試圖開啟您所保護的檔案以及是否開啟成功 (他們已驗證成功)。 他們嘗試存取文件的時間，以及當時的位置。 此外：
 
 -   如果您要停止共用文件：按一下 [撤銷存取權] ，記下文件繼續可用的時間期間，並決定是否讓他人知道您要撤銷您先前共用的文件存取權，並提供自訂訊息。 當您撤銷一個文件時，它並不會刪除您共用的文件，但是經過授權的使用者將無法再開啟它。
 
@@ -106,6 +106,6 @@ ms.openlocfilehash: b8cc9dd2984f7853e1fbacebbb4f6934f918200e
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
