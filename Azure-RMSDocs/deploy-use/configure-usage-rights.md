@@ -3,7 +3,7 @@ title: "設定 Azure Rights Management 的使用權限 | Azure Information Prote
 description: "了解並識別當您使用 Azure Information Protection 的 Azure Rights Management Service 保護檔案或電子郵件時，所使用的特定權限。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: a11d027789a63ae845812068e34f527f15a02314
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
 
 
 ---
@@ -96,11 +96,11 @@ Exchange 用戶端及服務 (例如 Outlook 用戶端、Outlook Web Access 應�
 
 
 ## 另請參閱
-[設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
+[設定 Azure Rights Management Service 的自訂範本](configure-custom-templates.md)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

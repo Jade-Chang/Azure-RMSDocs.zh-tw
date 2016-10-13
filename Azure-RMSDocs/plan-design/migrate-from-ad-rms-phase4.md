@@ -3,7 +3,7 @@ title: "從 AD RMS 移轉至 Azure Information Protection - 第 4 階段 | Azure
 description: "從 AD RMS 移轉至 Azure Information Protection 的第 4 階段，涵蓋從 AD RMS 移轉至 Azure Information Protection 的步驟 8 至 9。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
-ms.openlocfilehash: 78b61500cb1e596ae469ecad650ab3d5ee27566d
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: f86e712ee9d2df1e466ceaabcaa0890dca71da53
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 78b61500cb1e596ae469ecad650ab3d5ee27566d
 
 監視 AD RMS 伺服器中的活動，例如，檢查[系統健康情況報告中的要求](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx)、[ServiceRequest 資料表](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx)或[使用者存取受保護內容的稽核](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)。 確認 RMS 用戶端不再與這些伺服器進行通訊而且用戶端順利使用 Azure Information Protection 時，您可以從這些伺服器中移除 AD RMS 伺服器角色。 如果您使用專用伺服器，則可能會想要進行警告性步驟，即先關閉伺服器一段時間，確定未報告任何可能需要重新啟動這些伺服器的問題，以確保在您調查用戶端未使用 Azure Information Protection 的原因時服務不中斷。
 
-解除委任 AD RMS 伺服器之後，您可能會想要利用這個機會在 Azure 傳統入口網站中檢閱範本並將其合併，讓使用者擁有較少的選擇，或重新設定它們，甚至加入新的範本。 這可能也是發佈預設範本的好時機。 如需詳細資訊，請參閱[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。
+解除委任 AD RMS 伺服器之後，您可能會想要利用這個機會在 Azure 傳統入口網站中檢閱範本並將其合併，讓使用者擁有較少的選擇，或重新設定它們，甚至加入新的範本。 這可能也是發佈預設範本的好時機。 如需詳細資訊，請參閱[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)。
 
 ## 步驟 9： 重設 Azure Information Protection 租用戶金鑰
 此步驟僅適用於您所選的租用戶金鑰拓撲是由 Microsoft 管理，而非由客戶管理 (BYOK 搭配 Azure 金鑰保存庫) 的情形。
@@ -53,6 +53,6 @@ ms.openlocfilehash: 78b61500cb1e596ae469ecad650ab3d5ee27566d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

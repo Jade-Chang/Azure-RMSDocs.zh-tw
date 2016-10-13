@@ -1,35 +1,35 @@
 ---
 title: "如何新增明確的擁有者權限 | Azure RMS"
-description: "從頭開始建立授權時，您的應用程式應該明確地新增「擁有者」權限。"
+description: Your application should explicitly add "Owner" rights when creating a license from scratch.
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 22016f824263916f5f265d818c51975d42c35799
 
 
 ---
 
 # 如何：新增明確的擁有者權限
 
-從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限 ([**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
+從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限 ([**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
 
 ## 必要條件
 
-當您的應用程式正在使用 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立授權控制代碼時，它也必須明確授與擁有者完整權限 (權限)。
+當您的應用程式正在使用 [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立授權控制代碼時，它也必須明確授與擁有者完整權限 (權限)。
 
 >[!NOTE] 
-> 使用內含 **IPC\_LI\_OWNER** 屬性的 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 將使用者設為「擁有者」，並不會授與擁有者完整權限。
+> 使用內含 **IPC\_LI\_OWNER** 屬性的 [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 將使用者設為「擁有者」，並不會授與擁有者完整權限。
 
 下列範例程式碼僅代表涉及建立特定權限並將其加入指定授權中的步驟。
 
@@ -37,7 +37,7 @@ ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
  
 ## 步驟 1：範例案例
 
-此範例中，會在以 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立的授權中加入需要的權限。 此範例顯示透過權限清單建立權限並指派給授權。
+此範例中，會在以 [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立的授權中加入需要的權限。 此範例顯示透過權限清單建立權限並指派給授權。
 
 下列兩個權限會新增給這些使用者︰
 
@@ -108,14 +108,14 @@ ms.openlocfilehash: 3fae089850787391f95d7ea1448bd48418ad3ade
 ## 相關主題
 
 * [開發人員注意事項](developer-notes.md)
-* [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
+* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
+* [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
  
 
  
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

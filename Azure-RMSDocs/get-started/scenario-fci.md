@@ -3,7 +3,7 @@ title: "案例 - 保護檔案伺服器共用上的檔案 | Azure Information Pro
 description: "此案例和支援的使用者文件使用 Azure Rights Management 保護來大量保護您想要在檔案伺服器上保護的所有檔案，以確保只有貴組織的員工都可以存取它們，即使檔案被複製並儲存到不在您 IT 部門之控制下的儲存體，或以電子郵件傳送檔案給其他人。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
-ms.openlocfilehash: a12276bcf2072ac812ae6b68d9e1cdacbe46adaa
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 136cabfad5914fadf183e308c51b77e20f98ca4f
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: a12276bcf2072ac812ae6b68d9e1cdacbe46adaa
 |---------------|--------------------------------|
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
 |您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 所有使用者都需要此項，才能存取受到 FCI 和 Azure Rights Management 保護的檔案。|[準備 Azure Information Protection](../plan-design/prepare.md)|
-|發生下列情形之一：<br /><br />- 若要對所有使用者使用預設範本︰您尚未封存預設的 [&lt;組織名稱&gt; - 機密]<br /><br />- 若要對特定使用者使用自訂範本︰您已建立並發佈此自訂範本|[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)|
+|發生下列情形之一：<br /><br />- 若要對所有使用者使用預設範本︰您尚未封存預設的 [&lt;組織名稱&gt; - 機密]<br /><br />- 若要對特定使用者使用自訂範本︰您已建立並發佈此自訂範本|[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)|
 |Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[自動部署 Microsoft Rights Management 共用應用程式](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |您已下載 RMS 保護工具，並設定 Azure RMS 的必要條件|如需相關下載工具和必要條件的指示︰[RMS 保護 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />若要設定 Azure RMS 的其他先決條件，例如服務主體帳戶︰[about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
@@ -155,6 +155,6 @@ ms.openlocfilehash: a12276bcf2072ac812ae6b68d9e1cdacbe46adaa
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

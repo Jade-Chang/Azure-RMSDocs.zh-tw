@@ -1,6 +1,6 @@
 # [了解和探索](/information-protection/understand-explore/what-is-information-protection)
 # [開始使用](requirements-azure-rms.md)
-## [需求](requirements-azure-rms.md)
+## [需求](requirements.md)
 ### [Azure Active Directory 需求](requirements-azure-ad.md)
 ### [資料保護的用戶端裝置支援](requirements-client-devices.md)
 ### [資料保護的應用程式支援](requirements-applications.md)

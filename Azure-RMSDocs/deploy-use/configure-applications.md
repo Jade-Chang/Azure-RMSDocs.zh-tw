@@ -3,7 +3,7 @@ title: "設定 Azure Rights Management Service 的應用程式 | Azure Informati
 description: "適用於系統管理員將應用程式和服務設定為支援 Azure Information Protection 之 Azure Rights Management 保護服務的指示。 例如，Word 2013 和 Word 2010 等 Office 應用程式和 Exchange Online 等服務 (傳輸規則、資料外洩防護、不可轉寄，以及訊息加密)，以及 SharePoint Online (受保護的文件庫)。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection

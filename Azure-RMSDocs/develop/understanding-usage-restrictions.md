@@ -4,18 +4,18 @@ description: "RMS 啟用的所有應用程式必須強制使用限制。"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df210bd7aff33fda41a278e6aed1108574fe68eb
 
 RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種情況，會在使用者嘗試執行某個動作 (例如， 列印文件)，但該文件的 RMS 原則沒有授予他們執行該動作的權限 (例如 「列印」權限) 時發生。
 
-使用者對文件的權限可使用 [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck) 函式查詢。
+使用者對文件的權限可使用 [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck) 函式查詢。
 
 ## 了解使用限制
 
@@ -48,7 +48,7 @@ RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種
 
 ## 相關的主題
 
-* [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
+* [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
 * [使用限制參考](usage-restriction-reference.md)
  
 
@@ -56,6 +56,6 @@ RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

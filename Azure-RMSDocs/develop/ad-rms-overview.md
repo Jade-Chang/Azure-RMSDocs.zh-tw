@@ -4,18 +4,18 @@ description: "Rights Management Services (RMS) 是可協助保護數位資訊免
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: df0ea8669038f458bc3d8fbf1c704bc5b6815e1d
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 82441858230e179a08bfa74e0f6aaf9ed17a62fb
 
 
 ---
@@ -61,6 +61,6 @@ AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

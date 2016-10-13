@@ -3,7 +3,7 @@ title: "案例 - 主管安全地交換機密資訊 | Azure Information Protectio
 description: "此案例和支援的使用者文件使用 Azure Rights Management 保護，讓主管可以安全地互換電子郵件與電子郵件附件，並有原則會自動限制主管的存取，完全不需要他們採取任何特殊動作。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
-ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 8481c275609e74ff5e09a0397e0e3a0346aa4430
 
 
 ---
@@ -48,7 +48,7 @@ ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
 |您的 Azure Information Protection 租用戶金鑰由 Microsoft 管理；您不會使用 BYOK|[規劃及實作 Azure Information Protection 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)|
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
 |下列其中一個組態：<br /><br />- Azure Rights Management 會啟用 Exchange Online<br /><br />- RMS 連接器已針對 Exchange 內部部署安裝和設定|針對 Exchange Online︰請參閱 [Exchange Online：IRM 組態](../deploy-use/configure-office365.md#exchange-online-irm-configuration)資訊。<br /><br />針對 Exchange 內部部署：[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)|
-|您已如下所述設定自訂範本|[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)|
+|您已如下所述設定自訂範本|[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)|
 |您已如本文稍後所述設定 IRM 的傳輸保護規則|若為 Exchange Online：[郵件流程或傳輸規則](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />針對 Exchange 2013：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />針對 Exchange 2010：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### 設定主管的自訂範本
@@ -132,6 +132,6 @@ ms.openlocfilehash: fb25a5f97580e7d912016bbeb304e6470f8cbba0
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
