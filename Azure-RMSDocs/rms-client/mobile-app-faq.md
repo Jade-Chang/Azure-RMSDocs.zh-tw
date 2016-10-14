@@ -1,10 +1,10 @@
 ---
-title: "適用於 iOS 和 Android 的 Azure Information Protection 應用程式常見問題集 | Azure Information Protection"
+title: "適用於 iOS 和 Android 的 Azure 資訊保護應用程式常見問題集 | Azure 資訊保護"
 description: 
-keywords: "某些常見問題可協助您使用適用於 iOS 和 Android 的 Azure Information Protection 應用程式"
+keywords: "某些常見問題可協助您使用適用於 iOS 和 Android 的 Azure 資訊保護應用程式"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,21 +13,21 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac04af3b503bb7bb1d3c9f4bcee4aff163d73314
-ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
+ms.sourcegitcommit: fd11b55ec8ee11f594c33a5a46694d83b2db6953
+ms.openlocfilehash: ff2b28d9774682abbe77b484b097ea51709a3234
 
 
 ---
 
-# 適用於 iOS 和 Android 的 Microsoft Azure Information Protection 應用程式常見問答集
+# 適用於 iOS 和 Android 的 Microsoft Azure 資訊保護應用程式常見問答集
 
-*適用於︰Active Directory Rights Management Services、Azure Information Protection*
+*適用於︰Active Directory Rights Management Services、Azure 資訊保護*
 
-本頁回答適用於 iOS 和 Android 的 Azure Information Protection 應用程式常見問題。
+本頁回答適用於 iOS 和 Android 的 Azure 資訊保護應用程式常見問題。
 
-## Azure Information Protection 應用程式可以做什麼？
+## Azure 資訊保護應用程式可以做什麼？
 
-此應用程式可讓您檢視 (不是新建或回覆) 受權限保護的電子郵件訊息 (.rpmsg 檔案)。 此應用程式也可讓您檢視 (不是新建或編輯) 受權限保護的 PDF 檔案、圖片、文字檔案和任何其他以 .pfile 檔案格式所保護的資料。 
+此應用程式可讓您檢視受版權保護的電子郵件訊息 (.rpmsg 檔案)。 此應用程式也可讓您檢視受版權保護的 PDF 檔案、圖片、文字檔案和任何其他以 .pfile 檔案格式所保護的資料。 目前，您無法使用此應用程式來新建受保護的電子郵件訊息，亦無法回覆，或建立或編輯受保護的檔案。
 
 ## 我可以在受 SharePoint 保護的文件庫及商務用 OneDrive 中開啟 PDF 檔案嗎？
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

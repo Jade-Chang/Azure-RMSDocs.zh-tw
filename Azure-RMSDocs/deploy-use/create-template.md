@@ -1,9 +1,9 @@
 ---
-title: "建立、設定及發佈自訂範本 | Azure Information Protection"
+title: "建立、設定及發佈自訂範本 | Azure 資訊保護"
 description: "在 Azure 傳統入口網站中建立和管理自訂範本的指示。 範本可讓使用者與其他系統管理員輕鬆地套用保護文件及電子郵件的適當原則。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
+ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
+ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 
 # 建立、設定及發佈自訂範本
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
 
 您可以在 Azure 傳統入口網站中建立和管理自訂範本。 您可以直接從 Azure 傳統入口網站執行這項作業，或是登入 Office 365 系統管理中心並選擇 Rights Management 的**進階功能**，這會將您重新導向到 Azure 傳統入口網站。
@@ -70,9 +70,11 @@ ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 
         如果在遵循 Office 365 的指示後未立即看到此頁面，請使用上述的 Azure 傳統入口網站導覽指示。
 
-3.  在 [新增權限原則範本]  頁面上，選擇輸入使用者將看見的範本名稱和描述時要使用的語言 (您可以稍後新增其他語言)。 接著，輸入一個唯一的名稱和描述，然後按一下 [完成] 按鈕。
+3. 在 [新增權限原則範本]  頁面上，選擇輸入使用者將看見的範本名稱和描述時要使用的語言 (您可以稍後新增其他語言)。 接著，輸入一個唯一的名稱和描述，然後按一下 [完成] 按鈕。
 
-從 [開始使用 Rights Management]  快速入門頁面，現在按一下 [管理您的權限原則範本] 。 您將會看見新建立的範本已新增至範本清單中，其狀態為 [已封存] 。 在這個階段，範本已建立但尚未設定，使用者無法看見這個範本。
+    請不要在您的範本名稱或描述中包含冒號或分號。 因為並非所有使用 Rights Management 範本的服務和應用程式皆可在這些範本中支援上述字元。 在這種情況中，這些服務和應用程式可能無法擷取或使用相關的 Azure Rights Management 範本。
+
+4. 從 [開始使用 Rights Management]  快速入門頁面，現在按一下 [管理您的權限原則範本] 。 您將會看見新建立的範本已新增至範本清單中，其狀態為 [已封存] 。 在這個階段，範本已建立但尚未設定，使用者無法看見這個範本。
 
 ## 設定及發佈自訂範本
 
@@ -166,6 +168,6 @@ ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

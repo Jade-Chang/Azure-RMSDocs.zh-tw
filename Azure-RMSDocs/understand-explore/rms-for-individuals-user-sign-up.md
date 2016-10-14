@@ -1,9 +1,9 @@
 ---
-title: "使用者如何註冊個人版 RMS | Azure Information Protection"
+title: "使用者如何註冊個人版 RMS | Azure 資訊保護"
 description: "適用於此免費帳戶的註冊指示，以及此程序如何運作的技術資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 
 ---
 
 # 使用者如何申請個人版 RMS
 
->*適用於：Azure Information Protection*
+>*適用於：Azure 資訊保護*
 
 若要註冊此免費帳戶，請前往 [Microsoft Rights Management 頁面](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)提出申請，並請提供您的工作電子郵件地址。 常見的方式是將您從您收到內含受保護附件的電子郵件導向到此註冊頁面，而受保護的附件會提供如何註冊的指示。 您會收到 Microsoft 的電子郵件回應，然後即可輸入詳細資料建立您的帳戶以完成註冊程序。 完成此動作時，頁面中會顯示所提供不同裝置之應用程式的下載位置，並會提供使用者指南的連結，以及原生支援 Rights Management 保護的最新應用程式清單。 
 
@@ -83,7 +83,7 @@ ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
     -   在公司擁有的資料上執行 e-discovery，必要時解密使用 Rights Management 所保護的檔案。 如需詳細資訊，請參閱[設定 Azure Rights Management 和探索服務或資料復原的進階使用者](../deploy-use/configure-super-users.md)。
 
-    -   記錄組織中所使用 Rights Management 的所有活動。 這是極強大的功能，因為您不僅可監視正在保護哪些檔案，及監視正在成功存取那些受保護檔案的人員，亦可識別未授權人員正在嘗試存取受保護檔案的可疑行為。 如需詳細資訊，請參閱[記錄和分析 Azure Rights Management 使用情況](../deploy-use/log-analyze-usage.md)。
+    -   記錄組織中所使用 Rights Management 的所有活動。 這是極強大的功能，因為您不僅可監視正在保護哪些檔案，及監視正在成功存取那些受保護檔案的人員，亦可識別未授權人員正在嘗試存取受保護檔案的可疑行為。 如需詳細資訊，請參閱[記錄和分析 Azure Rights Management Service 的使用方式](../deploy-use/log-analyze-usage.md)。
 
     -   如果您的 [Azure RMS 訂用帳戶](https://technet.microsoft.com/dn858608)支援這些功能，請提供使用者此功能以追蹤及撤銷其受保護文件。 如需詳細資訊，請參閱 [RMS 共用應用程式使用者指南](../rms-client/sharing-app-user-guide.md)中的[追蹤及撤銷您的檔案](../rms-client/sharing-app-track-revoke.md)。
 
@@ -97,6 +97,6 @@ ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

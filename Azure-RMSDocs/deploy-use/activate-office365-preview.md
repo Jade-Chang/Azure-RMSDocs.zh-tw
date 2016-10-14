@@ -1,9 +1,9 @@
 ---
-title: "如何從 Office 365 系統管理中心預覽啟用 Azure Rights Management | Azure Information Protection"
+title: "如何從 Office 365 系統管理中心預覽啟用 Azure Rights Management | Azure 資訊保護"
 description: "當您可以存取新的 Office 365 系統管理中心預覽版本 (Office 365 系統管理中心預覽) 時，適用於 Azure Rights Management Service 的啟用指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
+ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
+ms.openlocfilehash: ca1547a6ff00b7100cd52c34938bf6e088085f8a
 
 
 ---
 
 # 如何從 Office 365 系統管理中心預覽啟用 Azure Rights Management
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
 
 只有在您使用新的預覽版 Office 365 系統管理中心 (**Office 365 系統管理中心預覽**) 時才使用下列指示。
@@ -41,9 +41,9 @@ ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
     - 若要搜尋：在**首頁**的搜尋方塊中輸入 **Rights Management**，然後按一下搜尋結果中的 **Microsoft Azure 權限管理設定**。
 
         > [!NOTE]
-        >如果您瀏覽到這個選項，由於顯示器的不同，您可能需要捲動才能看到這個選項。 不過，如果選項未在頁面上列出，也未在搜尋結果中傳回，有可能是因為您的服務方案或產品版本不包含 Azure Information Protection 的 Azure Rights Management Service。
+        >如果您瀏覽到這個選項，由於顯示器的不同，您可能需要捲動才能看到這個選項。 不過，如果選項未在頁面上列出，也未在搜尋結果中傳回，有可能是因為您的服務方案不包含適用於 Azure 資訊保護的 Azure Rights Management Service。
         >
-        >使用[訂用帳戶資訊](https://go.microsoft.com/fwlink/?LinkId=827589)，確認您的訂用帳戶包含 Azure Rights Management。 如需這個問題的說明，請將電子郵件訊息傳送至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
+        >若要啟用 Azure Rights Management Service，您必須採用 [Azure 資訊保護進階方案](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)或[包含 Rights Management 的 Office 365 方案](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如需這個問題的說明，請將電子郵件訊息傳送至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
 
 4. 在 [Rights Management] 頁面上，按一下 [啟動]。
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

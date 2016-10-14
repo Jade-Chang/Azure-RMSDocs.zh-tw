@@ -1,9 +1,9 @@
 ---
-title: "監視 Azure Rights Management 連接器 | Azure Information Protection"
-description: "有利於監視連接器和貴組織使用 Azure Information Protection 之 Azure Rights Management Service 的資訊。"
+title: "監視 Azure Rights Management 連接器 | Azure 資訊保護"
+description: "有利於監視連接器和貴組織使用 Azure 資訊保護之 Azure Rights Management Service 的資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 954d8b7b62b35f5fdd29e115681d9d5c0da69a86
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
 
 
 ---
 
 # 監視 Azure Rights Management 連接器
 
->*適用於︰Azure Information Protection、Windows Server 2012、Windows Server 2012 R2*
+>*適用於︰Azure 資訊保護、Windows Server 2012、Windows Server 2012 R2*
 
-在您安裝並設定 RMS 連接器後，可以使用下列方法和資訊，協助您監視連接器和您組織之 Azure Information Protection 的 Azure Rights Management service 使用狀況。
+在您安裝並設定 RMS 連接器後，可以使用下列方法和資訊，協助您監視連接器和您組織之 Azure 資訊保護的 Azure Rights Management service 使用狀況。
 
 ## 應用程式事件記錄檔項目
 
@@ -171,7 +171,7 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 使用量記錄可協助您識別電子郵件和文件是否受保護和使用。 當使用 RMS 連接器完成此動作後，記錄中的使用者識別碼欄位會包含 RMS 連接器自動產生的服務主體名稱 **Aadrm_S-1-7-0**。
 
-如需使用記錄的詳細資訊，請參閱[記錄和分析 Azure Rights Management 使用情況](log-analyze-usage.md)。
+如需使用量記錄的詳細資訊，請參閱[記錄和分析 Azure Rights Management Service 的使用方式](log-analyze-usage.md)。
 
 如果您需要更詳細的記錄以進行診斷，可以使用 Windows Sysinternals 的 [Debugview](http://go.microsoft.com/fwlink/?LinkID=309277)，並透過修改 IIS 中預設網站的 web.config 檔案，為 RMS 連接器啟用追蹤。 若要做到這一點，請執行下列動作：
 
@@ -192,6 +192,6 @@ RMS 連接器會使用應用程式事件記錄檔，記錄 **Microsoft RMS 連�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

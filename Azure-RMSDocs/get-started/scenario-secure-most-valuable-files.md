@@ -1,9 +1,9 @@
 ---
-title: "案例 - 保護您最重要的 (幾個) 檔案 | Azure Information Protection"
+title: "案例 - 保護您最重要的 (幾個) 檔案 | Azure 資訊保護"
 description: "此案例和支援使用者文件會使用 Azure Rights Management 來手動和自訂保護少數幾個您認為最有價值的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 
 ---
 
 # 案例 - 保護您最重要的 (幾個)檔案
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
-此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術來手動和自訂保護少數幾個您認為最重要的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。 這些通常是應該只有少數人能存取的檔案。 例如，公司的特色食品配方指示或在指定日期之前不應該公開的收購計劃。
+此案例和支援的使用者文件使用 Azure 資訊保護的 Azure Rights Management 技術來手動和自訂保護少數幾個您認為最重要的檔案，這可保證具備最高層級的保護，而不受未經授權的存取。 這些通常是應該只有少數人能存取的檔案。 例如，公司的特色食品配方指示或在指定日期之前不應該公開的收購計劃。
 
 指示適用於下列一組情況：
 
@@ -48,12 +48,12 @@ ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|備妥 Office 365 或 Azure Active Directory 的帳戶與群組：<br /><br />名為 **[特殊權限存取]** 的擁有郵件功能的群組，其中包含一些應該存取這些高度機密文件的人員。<br /><br />名為 **[IT 規範管理員]** 的擁有郵件功能的群組，其中包含工作包括 eDiscovery、監視和稽核的人員。<br /><br />- 擁有郵件功能的群組 (名為 **[RMS 系統管理員]**)，所有會設定 Azure RMS 的系統管理員都是這個群組的成員|[準備 Azure Information Protection](../plan-design/deployment-roadmap.md)|
+|備妥 Office 365 或 Azure Active Directory 的帳戶與群組：<br /><br />名為 **[特殊權限存取]** 的擁有郵件功能的群組，其中包含一些應該存取這些高度機密文件的人員。<br /><br />名為 **[IT 規範管理員]** 的擁有郵件功能的群組，其中包含工作包括 eDiscovery、監視和稽核的人員。<br /><br />- 擁有郵件功能的群組 (名為 **[RMS 系統管理員]**)，所有會設定 Azure RMS 的系統管理員都是這個群組的成員|[準備 Azure 資訊保護](../plan-design/deployment-roadmap.md)|
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
 |您已如下所述設定自訂範本|[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)|
 |Rights Management 共用應用程式已部署到您的 Windows 電腦，使得您可以就地保護這些檔案，如下一節中所述|[下載及安裝 Rights Management 共用應用程式](../rms-client/install-sharing-app.md)|
 |授權的使用者擁有最低版本的 Office 2013|如果使用者有 Office 2010，他們也必須安裝 Rights Management 共用應用程式。|
-|您的 Azure RMS 訂用帳戶包含文件追蹤|如果您的 Azure RMS 訂用帳戶不包含文件追蹤和撤銷，您將無法使用文件追蹤網站來查看誰正在存取這些文件，並在必要時撤銷存取。 在此情況下，請購買支援文件追蹤的訂用帳戶，或接受這項限制。 您也可以考慮 Azure RMS 的[使用量記錄](../deploy-use/log-analyze-usage.md)功能，它可以提供資訊，例如何時、誰存取了每個檔案，來協助您偵測潛在可疑的行為。<br /><br />請查看 Azure Information Protection [定價頁面](https://go.microsoft.com/fwlink/?LinkId=827589)中的訂用帳戶資訊。|
+|您的 Azure 資訊保護訂用帳戶包含文件追蹤功能|如果您的訂用帳戶不包含文件追蹤和撤銷功能，就無法使用文件追蹤網站來查看誰正在存取這些文件，並在必要時撤銷存取權。 在此情況下，請購買支援文件追蹤的訂用帳戶，或接受這項限制。 您也可以考慮 Azure Rights Management Service 的[使用量記錄](../deploy-use/log-analyze-usage.md)功能，其可提供每個檔案的存取人員與存取時間等資訊，協助您偵測潛在可疑的行為。<br /><br />請查看 Azure 資訊保護網站上的[功能清單](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 ### 設定自訂範本
 
@@ -147,6 +147,6 @@ ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

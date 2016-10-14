@@ -1,9 +1,9 @@
 ---
-title: "從 AD RMS 移轉至 Azure Rights Management - 第 2 階段 | Azure Information Protection"
-description: "從 AD RMS 移轉至 Azure Information Protection 的第 2 階段，涵蓋從 AD RMS 移轉至 Azure Information Protection 的步驟 5。"
+title: "從 AD RMS 移轉至 Azure 資訊保護 - 第 2 階段 | Azure 資訊保護"
+description: "從 AD RMS 移轉至 Azure 資訊保護的第 2 階段，涵蓋從 AD RMS 移轉至 Azure 資訊保護的步驟 5。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,19 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f9a7ceee318fee5414e02af7927256e74800a16
-ms.openlocfilehash: 113636139f0ff6e47a5b5c0467dfe8616c641e04
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: c10e8b46fae2158e561421e8e5090d0cd9edbb83
 
 
 ---
 # 移轉階段 2 - 用戶端組態
 
->*適用於︰Active Directory Rights Management Services、Azure Information Protection、Office 365*
+>*適用於︰Active Directory Rights Management Services、Azure 資訊保護、Office 365*
 
-針對從 AD RMS 移轉至 Azure Information Protection 的第 2 階段使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md) 的步驟 5。
+針對從 AD RMS 移轉至 Azure 資訊保護 的第 2 階段使用下列資訊。 這些程序涵蓋[從 AD RMS 移轉至 Azure 資訊保護](migrate-from-ad-rms-to-azure-rms.md)的步驟 5。
 
 
-## 步驟 5： 重新設定用戶端使用 Azure Information Protection
+## 步驟 5： 重新設定用戶端使用 Azure 資訊保護
 對於 Windows 用戶端：
 
 1.  [下載移轉指令碼](https://go.microsoft.com/fwlink/?LinkId=524619)：
@@ -33,9 +33,9 @@ ms.openlocfilehash: 113636139f0ff6e47a5b5c0467dfe8616c641e04
 
     -   Redirect_OnPrem.cmd
 
-    這些指令碼會重設 Windows 電腦上的組態，使其使用 Azure Information Protection 服務，而不是 AD RMS。
+    這些指令碼會重設 Windows 電腦上的組態，使其使用 Azure 資訊保護服務，而不是 AD RMS。
 
-2.  遵循重新導向指令碼 (Redirect_OnPrem.cmd) 中的指示修改指令碼，以指向新的 Azure Information Protection 租用戶。
+2.  遵循重新導向指令碼 (Redirect_OnPrem.cmd) 中的指示修改指令碼，以指向新的 Azure 資訊保護租用戶。
 
     > [!IMPORTANT]
     > 上述指示包含使用您自己的 AD RMS 伺服器位址取代 **adrms** 和 **adrms.contoso.com** 範例位址。 當您執行這項動作時，請務必確認位址之前或之後都沒有任何其他空格，以免中斷移轉指令碼並造成難以識別的問題根本原因。 有些編輯工具會自動在貼上文字之後加入一個空格。
@@ -131,6 +131,6 @@ Redirect_OnPrem.cmd：
 若要繼續移轉，請移至[第 3 階段 - 支援服務組態](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

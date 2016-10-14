@@ -1,9 +1,9 @@
 ---
-title: "案例 - 與其他組織的使用者共用 Office 檔案 | Azure Information Protection"
+title: "案例 - 與其他組織的使用者共用 Office 檔案 | Azure 資訊保護"
 description: "此案例和支援的使用者文件使用 Azure Rights Management 保護，讓使用者可以安全地透過電子郵件傳送 Office 檔案給其他組織的人員。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03bd68b03d423908e7fbe89efb6aac6773283f2f
-ms.openlocfilehash: 1e8ba22c5fdcf3f17b3cec0a99444975c03ec008
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 
 ---
 
 # 案例 - 與其他組織的使用者共用 Office 檔案
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
-此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術，讓使用者可以安全地透過電子郵件傳送 Office 檔案給其他組織的人員。 例如，Office 檔案可能是 Word 文件、Excel 試算表或 PowerPoint 簡報，其中包含合作夥伴的價目表資訊、經銷商的產品清單，或具有潛在客戶的傳遞時間明細行清單。 當使用者遵循指示時，附加到電子郵件訊息的檔案將受到 Azure Rights Management 的保護。
+此案例和支援的使用者文件使用 Azure 資訊保護的 Azure Rights Management 技術，讓使用者可以安全地透過電子郵件傳送 Office 檔案給其他組織的人員。 例如，Office 檔案可能是 Word 文件、Excel 試算表或 PowerPoint 簡報，其中包含合作夥伴的價目表資訊、經銷商的產品清單，或具有潛在客戶的傳遞時間明細行清單。 當使用者遵循指示時，附加到電子郵件訊息的檔案將受到 Azure Rights Management 的保護。
 
 此案例適用於下列這組情況：
 
@@ -44,11 +44,11 @@ ms.openlocfilehash: 1e8ba22c5fdcf3f17b3cec0a99444975c03ec008
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|您已針對 Office 365 或 Azure Active Directory 準備帳戶和群組|[準備 Azure Information Protection](https://technet.microsoft.com/library/jj585029.aspx)|
+|您已針對 Office 365 或 Azure Active Directory 準備帳戶和群組|[準備 Azure 資訊保護](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
 |Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[Microsoft Rights Management 共用應用程式的自動部署](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |使用者具有 Office 2013 的 Outlook|如果使用者有 Office 2016 或 Office 2010，請參閱對等版本的螢幕擷取畫面，讓圖片符合使用者看到的項目。|
-|Azure Information Protection 的訂用帳戶包括文件追蹤|如果您的訂用帳戶不包括文件追蹤和撤銷，使用者將無法完成使用者指示中的所有步驟。 在此情況下，購買確實支援這些功能的訂用帳戶，或修改使用者指示以移除使用這些功能的步驟。<br /><br />請查看 Azure Information Protection [定價頁面](https://go.microsoft.com/fwlink/?LinkId=827589)中的訂用帳戶資訊。|
+|Azure 資訊保護的訂用帳戶包括文件追蹤|如果您的訂用帳戶不包括文件追蹤和撤銷，使用者將無法完成使用者指示中的所有步驟。 在此情況下，購買確實支援這些功能的訂用帳戶，或修改使用者指示以移除使用這些功能的步驟。<br /><br />請查看 Azure 資訊保護網站上的[功能清單](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 ## 使用者文件指示
 使用下列範本，將使用者指示複製並貼到使用者通訊上，然後進行這些修改以反映您的環境 ︰
@@ -154,6 +154,6 @@ ms.openlocfilehash: 1e8ba22c5fdcf3f17b3cec0a99444975c03ec008
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
