@@ -51,7 +51,7 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 
 2. 在 [Azure 資訊保護] 刀鋒視窗上，選取您要設定以套用 Rights Management 保護的標籤。
 
-3. 在 [標籤] 刀鋒視窗中，請在 [Set RMS template for protecting documents and emails containing this label] (設定 RMS 範本，以保護包含此標籤的文件及電子郵件) 區段中的 [Select RMS template from] (自下列項目選取 RMS 範本) 之下，請選取 [Azure RMS] 或 [AD RMS (PREVIEW)] (AD RMS (預覽))。
+3. 在 **[標籤]** 刀鋒視窗中，請在 **[Set RMS template for protecting documents and emails containing this label]** (設定 RMS 範本，以保護包含此標籤的文件及電子郵件) 區段中的 **[Select RMS template from]** (自下列項目選取 RMS 範本) 之下，請選取 **[Azure RMS]** 或 **[AD RMS (PREVIEW)]** (AD RMS (預覽))。
     
     在大部分情況下，您將選取 [Azure RMS]。 請勿選取 AD RMS，除非您已閱讀並瞭解隨附於此設定的必要條件和限制，有時也稱為 「*保存您自己的金鑰*(HYOK)。 如需詳細資訊，請參閱 [Hold your own key (HYOK) requirements and restrictions for AD RMS protection](configure-adrms-restrictions.md) (AD RMS 保護的保存您自己的金鑰 (HYOK) 需求和限制)。
     
