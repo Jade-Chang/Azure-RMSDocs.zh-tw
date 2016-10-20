@@ -4,7 +4,7 @@ description: "Microsoft Rights Management SDK 2.1 支援啟用 Windows 用戶端
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -23,11 +23,11 @@ ms.openlocfilehash: bb20d796e5a852aa9da224cbf218b9a166a9dbd8
 # API 參考資料
 
 Microsoft Rights Management SDK 2.1 支援啟用 Windows 用戶端的 RMS。 如需特定項目的詳細資訊，請參閱[版本資訊](release-notes-rtm.md)。
-- [常數](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/constants)
-- [資料類型](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/data types)
-- [函數](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/functions)
-- [結構](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/structures)
-- [錯誤碼](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/Error codes)
+- [常數](https://msdn.microsoft.com/library/hh535291.aspx)
+- [資料類型](https://msdn.microsoft.com/library/hh535288.aspx)
+- [函數](https://msdn.microsoft.com/library/hh535289.aspx)
+- [結構](https://msdn.microsoft.com/library/hh535294.aspx)
+- [錯誤碼](https://msdn.microsoft.com/library/hh535248.aspx)
 
 
 
