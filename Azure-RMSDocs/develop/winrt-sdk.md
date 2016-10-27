@@ -82,7 +82,7 @@ Windows 市集應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
-[Windows API 參考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API 參考](https://msdn.microsoft.com/library/dn891914.aspx)
 
 
 

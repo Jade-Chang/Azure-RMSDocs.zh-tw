@@ -108,14 +108,11 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Rights Management (Azure RMS)�
 
 * [開發人員詞彙和概念](core-concepts.md)
 
-* [iOS / OS X API 參考](/information-protection/sdk/4.2/api/ios/ios)
+* [iOS / OS X API 參考](https://msdn.microsoft.com/library/dn758306.aspx)
 
  
 
  
-
-
-
 
 
 

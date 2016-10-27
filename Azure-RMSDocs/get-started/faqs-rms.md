@@ -1,9 +1,9 @@
 ---
-title: "Azure Information Protection 之資料保護服務 Azure Rights Management 的常見問題集 | Azure Information Protection"
-description: "Azure Information Protection 之資料保護服務 Azure Rights Management (Azure RMS) 的一些常見問題集。"
+title: "Azure 資訊保護之資料保護服務 Azure Rights Management 的常見問題集 | Azure 資訊保護"
+description: "Azure 資訊保護之資料保護服務 Azure Rights Management (Azure RMS) 的一些常見問題集。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ad2d3d7962ab8f8422f4682e4ecd24a7cff3b239
-ms.openlocfilehash: 1840954addbf7b3ad603c05b0c55f8bf99ccacfb
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 114dfd2a0f19205432771b5dc17ddcb60f7ec44b
 
 
 ---
 
-# Azure Information Protection 中資料保護的常見問題集
+# Azure 資訊保護中資料保護的常見問題集
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
-對 Azure Information Protection 的資料保護服務 Azure Rights Management 有疑問？ 看看此處是否有解答。 
+對 Azure 資訊保護的資料保護服務 Azure Rights Management 有疑問？ 看看此處是否有解答。 
 
 ## 檔案必須存在於雲端中才能受到 Azure Rights Management 保護嗎？
 否，這是一個常見的誤解。 Azure Rights Management Service (和 Microsoft) 不會在資訊保護程序中查看或儲存您的資料。 您所保護的資訊永遠不會傳送至或儲存在 Azure 中，除非您明確地將它儲存在 Azure 中，或使用將它儲存在 Azure 中的另一項雲端服務。 
@@ -85,7 +85,7 @@ Azure Rights Management Service 一律使用 Azure Active Directory 帳戶和相
 
 -   **使用權限定義物件來建立或更新範本**。    在您接著用來建立或更新範本的權限定義物件中，指定外部電子郵件地址及其權限。 使用 [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) Cmdlet 來建立變數，然後將此變數提供給具備 [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) Cmdlet (適用於新的範本) 或 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) Cmdlet (用以修改現有的範本) 的 -RightsDefinition 參數，可指定權限定義物件。 不過，如果您要將這些使用者新增到現有的範本，您必須為範本中的現有群組 (而不只是外部使用者) 定義權限定義物件。
 
-如需自訂範本的詳細資訊，請參閱[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。
+如需自訂範本的詳細資訊，請參閱[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)。
 
 ## Azure RMS 是否使用 Azure AD 中的動態群組？
 Azure AD Premium 功能可讓您藉由指定[以屬性為基礎的規則](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)，設定群組的動態成員資格。 當您在 Azure AD 中建立安全性群組時，此群組類型支援動態成員資格，但不支援電子郵件地址，因此無法搭配 Azure Rights Management Service 使用。 不過，您現在可以在支援這兩個動態成員資格和擁有郵件功能的 Azure AD 中建立新的群組類型。 當您在 Azure 傳統入口網站中新增群組時，您可在 [群組類型] 中選擇 [Office 365「預覽」]。 因為此群組擁有郵件功能，您可以將其與 Azure Rights Management 保護搭配使用。
@@ -104,10 +104,10 @@ Azure Rights Management Service 可支援所有檔案類型。 對於文字、�
 
 否。 在此案例中，相關聯的暫存檔案不會包含原始文件中的資料，而是只包含使用者在開啟檔案時所輸入的資料。 與原始檔案不同，暫存檔案顯然不是針對共用所設計，而且會保留在裝置上，並受本機安全性控制項 (例如 BitLocker 與 EFS) 保護。
 
-## 我們真的想要搭配使用 BYOK和 Azure Information Protection，聽說這樣無法和 Exchange Online 相容 - 有什麼好建議嗎？
-請勿讓目前的限制延遲了您使用 Azure Information Protection 的 Azure Rights Management Service。 如果您擁有 Exchange Online 並且想要使用「自備金鑰」(BYOK)，建議您立即以 Microsoft 在其中產生並管理金鑰的預設金鑰管理模式來部署 Azure Information Protection。 如此一來，您就可以立即取得保護重要檔案和電子郵件的所有優點，並且可以在日後選擇移至 BYOK (例如，當 Exchange Online 可支援 BYOK 時)。 當您執行移至 BYOK 時，仍可使用備份金鑰存取先前所保護的文件和電子郵件。
+## 我們真的想要搭配使用 BYOK 和 Azure 資訊保護，聽說這樣無法和 Exchange Online 相容 - 有什麼好建議嗎？
+請勿讓目前的限制延遲了您使用 Azure 資訊保護的 Azure Rights Management Service。 如果您擁有 Exchange Online 並且想要使用「自備金鑰」(BYOK)，建議您立即以 Microsoft 在其中產生並管理金鑰的預設金鑰管理模式來部署 Azure 資訊保護。 如此一來，您就可以立即取得保護重要檔案和電子郵件的所有優點，並且可以在日後選擇移至 BYOK (例如，當 Exchange Online 可支援 BYOK 時)。 當您執行移至 BYOK 時，仍可使用備份金鑰存取先前所保護的文件和電子郵件。
 
-不過，如果您的公司原則要求您使用硬體安全模組 (HSM)，這樣反而會封鎖您的 Azure Information Protection 部署，另一個選項是立即使用 BYOK 來部署 Azure Information Protection，但是 Rights Management 對 Exchange 的保護功能會減少。 如需詳細資訊，請參閱[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)的 [BYOK 定價和限制](../plan-design/byok-price-restrictions.md)。
+不過，如果您的公司原則要求您使用硬體安全模組 (HSM)，這樣反而會封鎖您的 Azure Information Protection 部署，另一個選項是立即使用 BYOK 來部署 Azure 資訊保護，但是 Rights Management 對 Exchange 的保護功能會減少。 如需詳細資訊，請參閱[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)的 [BYOK 定價和限制](../plan-design/byok-price-restrictions.md)。
 
 ## 我正在尋找的功能似乎不是使用 SharePoint 受保護程式庫—有規劃對我的功能的支援嗎？
 目前，SharePoint 使用 IRM 受保護文件庫支援 Rights Management 受保護文件，該文件庫不支援自訂範本、文件追蹤和一些其他功能。 如需詳細資訊，請參閱 [Office 應用程式和服務](../understand-explore/office-apps-services-support.md)文章的 [SharePoint Online 和 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 一節。
@@ -122,7 +122,7 @@ Azure Rights Management Service 可支援所有檔案類型。 對於文字、�
 ## 您是否具有成功部署的任何秘訣或訣竅？
 審視許多部署案例並傾聽我們的客戶、夥伴、顧問和支援工程師意見後，我們從經驗中可傳達的其中一個最大秘訣是： **設計和部署簡單適當的原則**。
 
-由於 Azure Information Protection 支援與任何人安全共用，因此您可確保建構完善的資料防護機制。 但請遵循適當的原則謹慎施行。 對許多組織而言，預防資料流失對企業最大的影響是，套用預設的適當原則範本來限制組織中人員的存取。 當然，您可視需要取得更精細的防護，如防止人員列印、編輯等等。但這些更精細的限制不適用於真正需要高層級安全性的文件，且不要只實作這些限制較多的原則一天，而是要將其視為階段性方案加以規劃。
+由於 Azure 資訊保護支援與任何人安全共用，因此您可確保建構完善的資料防護機制。 但請遵循適當的原則謹慎施行。 對許多組織而言，預防資料流失對企業最大的影響是，套用預設的適當原則範本來限制組織中人員的存取。 當然，您可視需要取得更精細的防護，如防止人員列印、編輯等等。但這些更精細的限制不適用於真正需要高層級安全性的文件，且不要只實作這些限制較多的原則一天，而是要將其視為階段性方案加以規劃。
 
 ## 我們要如何重新存取現在已離開組織的員工所保護的檔案？
 使用 Azure RMS 的進階使用者功能，可以讓獲得授權的使用者擁有貴組織的 RMS 租用戶所授與之所有使用授權的完整擁有權。 此相同功能可在必要時讓獲得授權的服務編製索引並檢查檔案。
@@ -145,6 +145,6 @@ Azure Rights Management Service 可支援所有檔案類型。 對於文字、�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "如何從 Office 365 傳統系統管理中心啟用 Azure Rights Management | Azure Information Protection"
+title: "如何從 Office 365 傳統系統管理中心啟用 Azure Rights Management | Azure 資訊保護"
 description: "當您可以存取 Office 365 系統管理中心的傳統 (原始) 版本時，適用於 Azure Rights Management Service 的啟用指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: 8e2b4befc9acd2f50472169b8195d2510fa22be8
+ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
+ms.openlocfilehash: 69ee78823c2a0500596dec24f44ecba8329af516
 
 
 ---
 
 # 如何從 Office 365 傳統系統管理中心啟用 Azure Rights Management
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
 
 如果您使用傳統 (原始) 版的 Office 365 系統管理中心，請使用下列指示。
@@ -37,9 +37,9 @@ ms.openlocfilehash: 8e2b4befc9acd2f50472169b8195d2510fa22be8
 4.  按一下 [Rights Management]。
 
     > [!NOTE]
-    >如果您看不到此選項，有可能是因為您的服務方案或產品版本不包含 Azure Information Protection 的 Azure Rights Management Service。
+    >如果您看不到此選項，有可能是因為您的服務方案或產品版本不包含 Azure 資訊保護的 Azure Rights Management Service。
     >
-    >使用[訂用帳戶資訊](https://go.microsoft.com/fwlink/?LinkId=827589)，確認您的訂用帳戶包含 Azure Rights Management。 如需這個問題的說明，請將電子郵件訊息傳送至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
+    >若要啟用 Azure Rights Management Service，您必須採用 [Azure 資訊保護進階方案](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)或[包含 Rights Management 的 Office 365 方案](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 如需這個問題的說明，請將電子郵件訊息傳送至 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)。
 
 5. 在 **[RIGHTS MANAGEMENT]** 頁面上，按一下 **[管理]**。
 
@@ -53,6 +53,6 @@ ms.openlocfilehash: 8e2b4befc9acd2f50472169b8195d2510fa22be8
 回到[啟用 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "設定 Azure Rights Management 連接器的伺服器 | Azure Information Protection"
+title: "設定 Azure Rights Management 連接器的伺服器 | Azure 資訊保護"
 description: "協助您設定將使用 Azure Rights Management (RMS) 連接器的內部部署伺服器資訊。 這些程序涵蓋部署 Azure Rights Management 連接器的步驟 5。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 825103c8857d2db4f0a37570d10fd88361eae274
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
 
 
 ---
 
 # 設定 Azure Rights Management 連接器的伺服器
 
->*適用於︰Azure Information Protection、Windows Server 2012、Windows Server 2012 R2*
+>*適用於︰Azure 資訊保護、Windows Server 2012、Windows Server 2012 R2*
 
 
 使用下列資訊可協助您設定將使用 Azure Rights Management (RMS) 連接器的內部部署伺服器。 這些程序涵蓋[部署 Azure Rights Management 連接器](deploy-rms-connector.md)的步驟 5。
@@ -243,12 +243,12 @@ ms.openlocfilehash: 825103c8857d2db4f0a37570d10fd88361eae274
 ## 後續步驟
 您已安裝和設定 RMS 連接器，並設定伺服器使用該連接器，現在 IT 管理員和使用者可以使用 Azure RMS 來保護及取用電子郵件訊息和文件。 為了方便使用者使用，請部署 RMS 共用應用程式；該應用程式會安裝 Office 附加元件，並將新的滑鼠右鍵選項加入至 [檔案總管]。 如需詳細資訊，請參閱[Rights Management 共用應用程式系統管理員指南](../rms-client/sharing-app-admin-guide.md)。
 
-您可以使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)來檢查將 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 轉出給使用者和系統管理員之前，是否還需要執行其他設定步驟。
+在將 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 轉出給使用者和系統管理員之前，您可以使用 [Azure 資訊保護部署藍圖](../plan-design/deployment-roadmap.md)，以檢查是否還需要執行其他設定步驟。
 
 若要監視 RMS 連接器，請參閱 [Monitor the Azure Rights Management connector](monitor-rms-connector.md) (監視 Azure Rights Management 連接器)。 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
