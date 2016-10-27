@@ -1,9 +1,9 @@
 ---
-title: "BYOK 定價和限制 | Azure Information Protection"
+title: "BYOK 定價和限制 | Azure 資訊保護"
 description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,45 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 36e392d7e9a2fc8cec0419a3e66f92b42137bc72
-ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
+ms.sourcegitcommit: d7dee4efcff4ccf76f08f9033fdaf89daf095d4e
+ms.openlocfilehash: 86e6ebac4ad8c0782fb27344c30ee1d044be33d0
 
 
 ---
 
 # BYOK 定價和限制
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
 
-若組織的訂用帳戶包含 Azure Rights Management，即可在 Azure 金鑰保存庫中使用 客戶管理的金鑰 (BYOK)，並免費記錄其使用情況。 然而，若需使用 Azure 金鑰保存庫，您必須具備 Azure 訂用帳戶，其中後者需支援金鑰保存庫及 HSM 保護的金鑰。 在 Azure 金鑰保存庫中使用金鑰便會產生每月費用。 如需詳細資訊，請參閱 [Azure 金鑰保存庫定價頁面](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
+若組織的訂用帳戶包含 Azure 資訊保護功能，即可在 Azure 金鑰保存庫中使用客戶管理的金鑰 (BYOK)，並免費[記錄其使用情況](../deploy-use/log-analyze-usage.md)。 
 
-若您的使用者已透過個人版 RMS 註冊免費帳戶，您便無法使用 BYOK 及記錄使用情況，因為此設定並沒有租用戶系統管理員，無法設定這些功能。
+然而，若需使用 Azure 金鑰保存庫，您必須具備 Azure 訂用帳戶，其中後者需支援金鑰保存庫及 HSM 保護的金鑰。 在 Azure 金鑰保存庫中使用金鑰便會產生每月費用。 如需詳細資訊，請參閱 [Azure 金鑰保存庫定價頁面](https://azure.microsoft.com/en-us/pricing/details/key-vault/)。
+
+若要針對 Azure 資訊保護租用戶金鑰使用 Azure 金鑰保存庫，建議您為這個金鑰選擇專屬訂用帳戶與專屬金鑰保存庫，以確保它僅供 Azure Rights Management Service 使用。 
+
+## 使用 Azure 金鑰保存庫的優點
+
+除了使用 Azure 資訊保護使用量記錄之外，您還可以搭配 [Azure 金鑰保存庫記錄](https://azure.microsoft.com/documentation/articles/key-vault-logging/)進行交互參照，以獨立監視並進一步確認是否只有 Azure Rights Management Service 使用這個金鑰。 如有必要，您可以立即移除金鑰保存庫的權限來撤銷金鑰的存取權。
+
+針對 Azure 資訊保護租用戶金鑰使用 Azure 金鑰保存庫，還有下列其他優點：
+
+- Azure 金鑰保存庫是一種集中式金鑰管理解決方案，可針對使用加密的各種雲端服務甚至內部部署服務，提供一致的管理解決方案。
+
+- Azure 金鑰保存庫支援多種金鑰管理的內建介面，包括 PowerShell、CLI、REST API 和 Azure 入口網站。 此外，金鑰保存庫也整合了其他服務和工具，以提供針對特定工作最佳化的功能，例如監視。 比方說，您可以透過 Operations Management Suite 的 Log Analytics 來分析金鑰使用量記錄，並設定在符合指定準則時發出警示等等。
+
+- Azure 金鑰保存庫提供角色隔離的環境，其為公認的安全性最佳做法。 Azure 資訊保護的系統管理員可以把重心放在管理資料分類和保護，而 Azure 金鑰保存庫的系統管理員則可專注於管理加密金鑰和為保障安全性或相容性可能需要的任何特殊原則。
+
+- 某些組織有限制主要金鑰的存放位置。 Azure 金鑰保存庫可針對主要金鑰的儲存位置提供高層級的控制，因為許多 Azure 區域皆可使用這項服務。 目前，您可以從 28 個 Azure 區域中進行選擇，且區域數量將會持續增加。 如需詳細資訊，請參閱 Azure 網站上的 [依區域提供的產品] (https://azure.microsoft.com/regions/services/) 頁面。
+
+除了管理金鑰之外，Azure 金鑰保存庫可讓安全性系統管理員擁有相同的管理體驗，來針對使用加密的其他服務及應用程式，儲存、存取和管理憑證與密碼。 
+
+如需 Azure 金鑰保存庫的詳細資訊，請參閱[什麼是 Azure 金鑰保存庫？](https://azure.microsoft.com/documentation/articles/key-vault-whatis/)並瀏覽 [Azure 金鑰保存庫小組部落格](https://blogs.technet.microsoft.com/kv/)以取得最新資訊，並了解其他服務如何使用這項技術。
+
+
+## 使用 BYOK 的限制
+
+若您的使用者已透過個人版 RMS 註冊免費帳戶，您便無法使用 BYOK 或使用量記錄，因為此設定並沒有租用戶系統管理員，無法設定這些功能。
 
 
 > [!NOTE]
@@ -33,7 +58,7 @@ ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
 
 ![BYOK 不支援 Exchange Online](../media/RMS_BYOK_noExchange.png)
 
-BYOK 和使用記錄與整合 Azure Information Protection 所使用之 Azure Rights Management Service (Azure RMS) 的每個應用程式皆能完美合作。 這包括 SharePoint Online 之類的雲端服務、使用 RMS 連接器來執行使用 Azure RMS 的 Exchange 和 SharePoint 的內部部署伺服器，以及 Office 2016 及 Office 2013 等用戶端應用程式。 無論哪個應用程式要求 Azure RMS，您都會得到金鑰使用記錄。
+BYOK 和使用記錄與整合 Azure 資訊保護所使用之 Azure Rights Management Service (Azure RMS) 的每個應用程式皆能完美合作。 這包括 SharePoint Online 之類的雲端服務、使用 RMS 連接器來執行使用 Azure RMS 的 Exchange 和 SharePoint 的內部部署伺服器，以及 Office 2016 及 Office 2013 等用戶端應用程式。 無論哪個應用程式要求 Azure RMS，您都會得到金鑰使用記錄。
 
 但有一個例外：目前， **Azure RMS BYOK 與 Exchange Online 不相容**。 如果您想要使用 Exchange Online，我們建議您立即在預設金鑰管理模式中設定 Azure RMS，Microsoft 會在此種模式下產生並管理您的金鑰。 稍後當 Exchange Online 真的支援 Azure RMS BYOK 時，您就可以選擇移至 BYOK。 不過，如果您無法等待，另一個選項為立即部署 Azure RMS 與 BYOK 搭配，如此 Exchange online 將具有精簡的 RMS 功能 (未受保護的電子郵件及未受保護的附件仍然可以完全運作)。
 
@@ -62,6 +87,6 @@ BYOK 和使用記錄與整合 Azure Information Protection 所使用之 Azure Ri
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

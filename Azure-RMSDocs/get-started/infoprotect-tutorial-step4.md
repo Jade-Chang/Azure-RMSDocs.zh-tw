@@ -30,7 +30,7 @@ ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
 
 ![Azure Information Protection 快速入門教學課程步驟 4 - 提示確認為何降低](../media/info-protect-lower-justification.png)
 
-選取 [The previous label no longer applies] (不再套用舊標籤)，然後按一下 [確認]。 您會看到 [敏感度] 值變更為 [個人]。
+選取 **[The previous label no longer applies]** (不再套用舊標籤)，然後按一下 **[確認]**。 您會看到 [敏感度] 值變更為 [個人]。
 
 ## 完全移除分類
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
 
 2. 儲存文件 (使用任何檔案名稱、任何位置)。 
 
-3. 您現在看到提示︰[It is recommended to label this file as Confidential] (建議將這個檔案標記為機密)。 按一下 [立即變更]。
+3. 您現在看到提示︰**[It is recommended to label this file as Confidential]** (建議將這個檔案標記為機密)。 按一下 [立即變更]。
 
     ![Azure Information Protection 快速入門教學課程步驟 4 - 建議提示](../media/change-now.png)
 

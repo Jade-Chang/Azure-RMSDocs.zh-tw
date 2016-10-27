@@ -78,7 +78,7 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 [Windows Phone 開發](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)
 
-[Windows API 參考](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API 參考](https://msdn.microsoft.com/library/dn891914.aspx)
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 

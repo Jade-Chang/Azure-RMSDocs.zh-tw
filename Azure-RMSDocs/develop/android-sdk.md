@@ -142,7 +142,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 [開發人員詞彙和概念](core-concepts.md)
 
-[Android API 參考](android-namespaces.md)
+[Android API 參考](https://msdn.microsoft.com/library/dn758245.aspx)
 
  
 

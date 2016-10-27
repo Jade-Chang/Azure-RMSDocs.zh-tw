@@ -1,8 +1,8 @@
 ---
 asset_id: 78022852-1541-4194-bd6b-2f5fd5d94b77
 layout: HubPage
-title: "Azure Information Protection 文件 | Microsoft 文件"
-description: "Azure Information Protection 的技術文件"
+title: "Azure 資訊保護文件 | Microsoft 文件"
+description: "Azure 資訊保護的技術文件"
 author: msmbaldwin
 manager: mbaldwin
 ms.date: 09/25/2016
@@ -13,17 +13,17 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: a27383017cd5df1df370d31daea7d85dca4656e8
-ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
+ms.sourcegitcommit: cd24268839fac6c42a3214e5e1bb012f61b5ffff
+ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
 
 
 ---
-# Azure Information Protection 文件
+# Azure 資訊保護文件
 <article id="main">
     <section id="hero-content">
-      <h1>Azure Information Protection 文件</h1>
-      <h2>了解如何部署和管理 Azure Information Protection (先前稱為 Azure Rights Management 或 RMS)。 快速開始使用服務，以將分類、標記和保護套用至您組織的電子郵件和文件。</h2>
-      <h3>Azure Information Protection 新手？ <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">請瀏覽我們的產品網站 &rarr;</a></h3>
+      <h1>Azure 資訊保護文件</h1>
+      <h2>了解如何部署和管理 Azure 資訊保護 (先前稱為 Azure Rights Management 或 RMS)。 快速開始使用服務，以將分類、標記和保護套用至您組織的電子郵件和文件。</h2>
+      <h3>Azure 資訊保護新手？ <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">請瀏覽我們的產品網站 &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>準備好實際操作了嗎？</p>
@@ -35,14 +35,14 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
       <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="./understand-explore/what-is-information-protection.md">什麼是 Azure Information Protection？</a></li>
-          <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Azure Information Protection 快速入門教學課程</a></li>
-          <li><a href="./get-started/faqs.md">Azure Information Protection 的常見問題集</a></li>
+          <li><a href="./understand-explore/what-is-information-protection.md">什麼是 Azure 資訊保護？</a></li>
+          <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Azure 資訊保護快速入門教學課程</a></li>
+          <li><a href="./get-started/faqs.md">Azure 資訊保護的常見問題集</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="./plan-design/deployment-roadmap.md">Azure Information Protection 部署藍圖</a></li>
-          <li><a href="./develop/developers-guide.md">Azure Information Protection 開發人員指南</a></li>
-          <li><a href="./rms-client/info-protect-client.md">安裝 Azure Information Protection 用戶端</a></li>
+          <li><a href="./plan-design/deployment-roadmap.md">Azure 資訊保護部署藍圖</a></li>
+          <li><a href="./develop/developers-guide.md">Azure 資訊保護開發人員指南</a></li>
+          <li><a href="./rms-client/info-protect-client.md">安裝 Azure 資訊保護用戶端</a></li>
         </ul>
       </div>
     </section>
@@ -56,15 +56,15 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
                   <span class="step-number">1</span>
                   <p>了解和探索</p>
                 </div>
-                <p class="description column-two-thirds">了解 Azure Information Protection 的高階概念、特性和功能。</p>
+                <p class="description column-two-thirds">了解 Azure 資訊保護的高階概念、特性和功能。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./understand-explore/what-is-information-protection.md">
-                    <h3>什麼是 Azure Information Protection？</h3>
-                    <p>了解雲端式解決方案 Azure Information Protection，其可協助您分類、標記及保護文件和電子郵件。</p>
+                    <h3>什麼是 Azure 資訊保護？</h3>
+                    <p>了解雲端式解決方案 Azure 資訊保護，其可協助您分類、標記及保護文件和電子郵件。</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -75,8 +75,8 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
                 </li>
                 <li class="column-third">
                   <a href="./understand-explore/compliance.md">
-                    <h3>Azure Information Protection 的法遵與支援資訊</h3>
-                    <p>Azure Information Protection 的相關補充資訊 (例如法律和隱私權聲明)。</p>
+                    <h3>Azure 資訊保護的法遵與支援資訊</h3>
+                    <p>Azure 資訊保護的相關補充資訊 (例如法律和隱私權聲明)。</p>
                   </a>
                 </li>
               </ul>
@@ -89,27 +89,27 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
                   <span class="step-number">2</span>
                   <p>開始使用</p>
                 </div>
-                <p class="description column-two-thirds">在幾分鐘內，開始使用 Azure Information Protection。</p>
+                <p class="description column-two-thirds">在幾分鐘內，開始使用 Azure 資訊保護。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./get-started/requirements-azure-rms.md">
-                    <h3>Azure Information Protection 需求</h3>
-                    <p>識別部署 Azure Information Protection 的必要條件。</p>
+                    <h3>Azure 資訊保護需求</h3>
+                    <p>識別部署 Azure 資訊保護的必要條件。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./get-started/terminology.md">
-                    <h3>Azure Information Protection 術語</h3>
+                    <h3>Azure 資訊保護術語</h3>
                     <p>了解 Information Protection 內容中使用的詞彙和縮寫。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./get-started/quick-start-tutorial.md">
-                    <h3>Azure Information Protection 快速入門教學課程</h3>
-                    <p>只要 5 個步驟，就可為組織快速試用 Azure Information Protection。</p>
+                    <h3>Azure 資訊保護快速入門教學課程</h3>
+                    <p>只要 5 個步驟，就可為組織快速試用 Azure 資訊保護。</p>
                   </a>
                 </li>
               </ul>
@@ -122,27 +122,27 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
                   <span class="step-number"> 3</span>
                   <p>計劃和設計</p>
                 </div>
-                <p class="description column-two-thirds">規劃和設計 Azure Information Protection。</p>
+                <p class="description column-two-thirds">規劃和設計 Azure 資訊保護。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./plan-design/deployment-roadmap.md">
-                    <h3>Azure Information Protection 部署藍圖</h3>
-                    <p>識別和遵循用來實作和管理組織之 Azure Information Protection 的步驟。</p>
+                    <h3>Azure 資訊保護部署藍圖</h3>
+                    <p>識別和遵循用來實作和管理組織之 Azure 資訊保護的步驟。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./plan-design/migrate-from-ad-rms-to-azure-rms.md">
-                    <h3>從 AD RMS 移轉至 Azure Information Protection</h3>
-                    <p>將 Active Directory Rights Management Services (AD RMS) 部署移轉至 Azure Information Protection。</p>
+                    <h3>從 AD RMS 移轉至 Azure 資訊保護</h3>
+                    <p>將 Active Directory Rights Management Services (AD RMS) 部署移轉至 Azure 資訊保護。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./plan-design/plan-implement-tenant-key.md">
-                    <h3>規劃及實作 Azure Information Protection 租用戶金鑰</h3>
-                    <p>規劃和管理 Azure Information Protection 的租用戶金鑰 (包括「自備金鑰」(BYOK) 案例)。</p>
+                    <h3>規劃及實作 Azure 資訊保護租用戶金鑰</h3>
+                    <p>規劃和管理 Azure 資訊保護的租用戶金鑰 (包括「自備金鑰」(BYOK) 案例)。</p>
                   </a>
                 </li>
               </ul>
@@ -155,7 +155,7 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
                   <span class="step-number"> 4</span>
                   <p>部署與使用</p>
                 </div>
-                <p class="description column-two-thirds">部署與使用 Azure Information Protection。</p>
+                <p class="description column-two-thirds">部署與使用 Azure 資訊保護。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
@@ -168,8 +168,8 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
                 </li>
                 <li class="column-third">
                   <a href="./deploy-use/configure-applications.md">
-                    <h3>設定 Azure Information Protection 原則</h3>
-                    <p>藉由更新 Azure Information Protection 原則來設定分類、標記和保護。</p>
+                    <h3>設定 Azure 資訊保護原則</h3>
+                    <p>藉由更新 Azure 資訊保護原則來設定分類、標記和保護。</p>
                 </li>
                 <li class="column-third">
                   <a href="./deploy-use/configure-custom-templates.md">
@@ -195,8 +195,8 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
               <ul class="row">
                 <li class="column-third">
                   <a href="./develop/developers-guide.md">
-                    <h3>Azure Information Protection 開發人員指南</h3>
-                    <p>請參閱 Microsoft 所提供且跨所有支援作業系統的 Azure Information Protection 程式碼範例和開發人員支援工具集合。</p>
+                    <h3>Azure 資訊保護開發人員指南</h3>
+                    <p>請參閱 Microsoft 所提供且跨所有支援作業系統的 Azure 資訊保護程式碼範例和開發人員支援工具集合。</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -217,8 +217,8 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
       </section>
     </div>
     <aside class="alert alert-social">
-      <p>在 Azure Information Protection 上保持最新資訊 <ol class="action-list">
-        <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">官方 Azure Information Protection 小組部落格</a></li>
+      <p>在 Azure 資訊保護上保持最新資訊 <ol class="action-list">
+        <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">官方 Azure 資訊保護小組部落格</a></li>
         <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">Twitter 上的 @TheRMSGuy</a></li>
       </ol>
     </aside>
@@ -226,6 +226,6 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 
