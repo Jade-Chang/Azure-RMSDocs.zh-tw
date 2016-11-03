@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
+ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
+ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 
 ---
@@ -63,7 +63,7 @@ ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 
 - **Off**︰已停用加密。
 
-> [!Note] 
+> [!Note]
 > 這項設定對解密並無任何影響。 只要使用者擁有 **EXTRACT** 權限，無論加密的檔案是使用原生或 Pfile 保護加密，都能予以解密。
 
 - **Native**︰使用原生加密。 對於 Office 檔案，加密的檔案將具有原始檔案的相同副檔名。 例如，.docx 副檔名的檔案將會加密到副檔名為.docx 的檔案。 對於其他可能已套用原生保護的檔案，會將檔案加密成副檔名格式為 p*zzz* 的檔案，其中 *zzz* 是原始副檔名。 例如，.txt 檔案會加密為副檔名為 .ptxt 的檔案。 以下包含可能已套用原生保護的副檔名清單。
@@ -71,7 +71,7 @@ ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 - **Pfile**︰使用 PFile 加密。 加密的檔案會有附加到原始副檔名的 .pfile。 例如，加密後，.txt 檔案將具有 txt.pfile 副檔名。
 
 
-> [!Note] 
+> [!Note]
 > 此設定對 Office 檔案格式並無任何影響。 例如，如果 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 值設為 &quot;Pfile”，.docx 檔案仍會利用原生保護加密，且加密的檔案仍會具有副檔名 .docx。
 
 設定任何其他值，或不設定值以執行預設行為。
@@ -82,7 +82,7 @@ ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 -   **txt、xml、jpg、jpeg、pdf、png、tiff、bmp、gif、giff、jpe、jfif、jif 檔案** 啟用原生加密 (xxx 變成 pxxx)
 -   **所有其他檔案** 啟用受保護檔案 (pfile) 加密 (xxx 成為 xxx.pfile)
 
-若嘗試在封鎖的檔案類型上加密，會發生 [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes) 錯誤。
+若嘗試在封鎖的檔案類型上加密，會發生 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx) 錯誤。
 
 ### 檔案 API- 檔案支援詳細資料
 
@@ -148,14 +148,14 @@ HKEY_LOCAL_MACHINE
 
 ## 相關的主題
 
-* [開發人員注意事項](developer-notes.md)
-* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes)
+- [開發人員注意事項](developer-notes.md)
+- [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

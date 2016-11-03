@@ -3,7 +3,7 @@ title: "Rights Management 共用應用程式系統管理員指南 | Azure 資訊
 description: "適用於企業網路中負責部署適用於 Windows 的 Microsoft Rights Management 共用應用程式之系統管理員的指示和資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 4a551f198b0469f82c14120c0c6f2bb7d055afe9
+ms.sourcegitcommit: e5decd2df9135317f2e0da4951a177211342d7ac
+ms.openlocfilehash: e66f0ac6e596840ad940c51db41dbc6f91139e51
 
 
 ---
@@ -170,7 +170,7 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
 
 ### 若僅安裝 RMS 共用應用程式和 Office 增益集
 
-1.  使用下列命令安裝 AD RMS Client 和 RMS 共用應用程式：
+1.  使用下列命令並指定現有的資料夾建立記錄檔，以安裝 AD RMS Client 和 RMS 共用應用程式：
 
     -   若為 64 位元 Windows：
 
@@ -185,8 +185,10 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
         ```
 
     例如： `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
+    
+    如果此命令無法順利執行，因為 **/quiet** 參數，您不會看到任何錯誤訊息。 為協助您疑難排解安裝失敗的原因，請重新執行命令不加 /quiet，以查看任何錯誤訊息。
 
-2.  使用下列命令安裝 Office 增益集：
+2.  使用下列命令並指定現有的資料夾建立記錄檔，以安裝 Office 增益集︰
 
     -   若為 64 位元版本的 Office：
 
@@ -201,6 +203,8 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
         ```
 
     例如： `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
+    
+    如果此命令無法順利執行，因為 **/quiet** 參數，您不會看到任何錯誤訊息。 為協助您疑難排解安裝失敗的原因，請重新執行命令不加 /quiet，以查看任何錯誤訊息。
 
 若要確認是否成功，請參閱本文章中的[確認安裝成功](#verifying-installation-success)一節。
 
@@ -402,6 +406,6 @@ RMS 共用應用程式的安裝程式套件支援不同的部署案例，並包�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,7 +3,7 @@ title: "資料保護的應用程式支援 | Azure 資訊保護"
 description: "找出使用 RMS API 以原生方式支援 Azure 資訊保護之 Azure Rights Management Service 的應用程式。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 10/17/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 451952f7d0c293db2c9d4f5040ef0e14aa973866
-ms.openlocfilehash: a9b0fcddf9b11a8ab2d105ca5fc778831913bb72
+ms.sourcegitcommit: b6dbbfacd072d5badd69cc6ea452a86baa99cc46
+ms.openlocfilehash: 0649b4300c1bd10ddcfc0c1432144f5eaa0b7797
 
 
 ---
@@ -42,8 +42,8 @@ ms.openlocfilehash: a9b0fcddf9b11a8ab2d105ca5fc778831913bb72
 |**裝置作業系統**|Word、Excel、PowerPoint|受保護的 PDF|電子郵件|其他檔案類型|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
 |**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 應用程式 (僅適用於 Azure RMS) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho Doc<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF 閱讀程式<br /><br />RMS 共用應用程式|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />Outlook Web App (OWA) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|適用於 Windows 的 RMS 共用應用程式：文字、影像、pfile<br /><br />Siemens JT2Go：JT 檔案 (僅限 Windows 10)|
-|**iOS**|Office for iPad and iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文件|Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br /> Foxit Reader<br /><br />TITUS 文件|Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for iPad and iPhone [[4]](#footnote-4)<br /><br />OWA for iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Azure 資訊保護應用程式 [[1]](#footnote-1)：文字、影像、pfile<br /><br />TITUS 文件︰Pfile|
-|**Android**|GigaTrust App for Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile (僅限 Azure RMS) [[1]](#footnote-1)|Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br />GigaTrust App for Android<br /><br />Foxit Reader<br /><br />RMS 共用應用程式 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br />GigaTrust App for Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[7]](#footnote-7)<br /><br />Samsung Email (S3 和更新版本) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|Azure 資訊保護應用程式 [[1]](#footnote-1)：文字、影像、pfile|
+|**iOS**|Office for iPad and iPhone [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS 文件|Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br /> Foxit Reader<br /><br />TITUS 文件|Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for iPad and iPhone [[4]](#footnote-4)<br /><br />OWA for iOS [[3]](#footnote-3)<br /><br />TITUS Mail|Azure 資訊保護應用程式 [[1]](#footnote-1)：文字、影像<br /><br />TITUS 文件︰Pfile|
+|**Android**|GigaTrust App for Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile (僅限 Azure RMS) [[1]](#footnote-1)|Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br />GigaTrust App for Android<br /><br />Foxit Reader<br /><br />RMS 共用應用程式 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />Azure 資訊保護應用程式 [[1]](#footnote-1)<br /><br />GigaTrust App for Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Outlook for Android [[4]](#footnote-4)<br /><br />OWA for Android [[3]](#footnote-3) 和 [[7]](#footnote-7)<br /><br />Samsung Email (S3 和更新版本) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|Azure 資訊保護應用程式 [[1]](#footnote-1)：文字、影像|
 |**OS X**|Office 2011 (僅適用於 AD RMS)<br /><br />Office 2016 for Mac<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 共用應用程式 [[1]](#footnote-1)|Outlook 2011 (僅適用於 AD RMS)<br /><br />Outlook 2016 for Mac<br /><br />Outlook for Mac|RMS 共用應用程式 [[1]](#footnote-1)︰文字、影像、pfile|
 |**Windows 10 Mobile**|Office Mobile 應用程式(僅適用於 Azure RMS) [[1]](#footnote-1)|不支援|Citrix WorxMail [[6]](#footnote-6)<br /><br />Outlook Mail|不支援|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|不支援|Outlook 2013 RT<br /><br />Windows 郵件應用程式<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go：JT 檔案|
@@ -152,6 +152,6 @@ Azure RMS 目前不支援下列應用程式，包括：
 如需如何設定 Azure RMS 最常使用應用程式的詳細資訊，請參閱[設定 Azure Rights Management 的應用程式](../deploy-use/configure-applications.md)。
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -14,22 +14,22 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 22016f824263916f5f265d818c51975d42c35799
+ms.sourcegitcommit: 8be965d76578c28457eee207b56e5da83f7eb468
+ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 
 ---
 
 # 如何：新增明確的擁有者權限
 
-從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限 ([**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch))。
+使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 從頭開始建立授權時，您的應用程式應該明確加入「擁有者」權限。
 
 ## 必要條件
 
-當您的應用程式正在使用 [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立授權控制代碼時，它也必須明確授與擁有者完整權限 (權限)。
+當您的應用程式正在使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 建立授權控制代碼時，它也必須明確授與擁有者完整權限 (權限)。
 
 >[!NOTE] 
-> 使用內含 **IPC\_LI\_OWNER** 屬性的 [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 將使用者設為「擁有者」，並不會授與擁有者完整權限。
+> 使用內含 **IPC\_LI\_OWNER** 屬性的 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx) 將使用者設為「擁有者」，並不會授與擁有者完整權限。
 
 下列範例程式碼僅代表涉及建立特定權限並將其加入指定授權中的步驟。
 
@@ -37,7 +37,7 @@ ms.openlocfilehash: 22016f824263916f5f265d818c51975d42c35799
  
 ## 步驟 1：範例案例
 
-此範例中，會在以 [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch) 建立的授權中加入需要的權限。 此範例顯示透過權限清單建立權限並指派給授權。
+此範例中，會在以 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 建立的授權中加入需要的權限。 此範例顯示透過權限清單建立權限並指派給授權。
 
 下列兩個權限會新增給這些使用者︰
 
@@ -107,15 +107,15 @@ ms.openlocfilehash: 22016f824263916f5f265d818c51975d42c35799
 
 ## 相關主題
 
-* [開發人員注意事項](developer-notes.md)
-* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
+- [開發人員注意事項](developer-notes.md)
+- [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
+- [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
