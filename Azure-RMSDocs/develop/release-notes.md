@@ -3,7 +3,7 @@ title: "最新消息和版本資訊 | Azure RMS"
 description: "概述這個新版 RMS SDK 中的重要變更與功能。"
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 10/20/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,28 +13,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81cbe287b67e2a1598efdd2a816913f147c7ff7b
-ms.openlocfilehash: f3d4b1ba0da3530121aa81056238533f0dcbed2f
+ms.sourcegitcommit: 60e64b1fb1184aaa51b6664ecb5288d6ff861413
+ms.openlocfilehash: 04364bc5daec881fe3c55d5cd41e7be11ac91ae7
 
 
 ---
 
-# 最新消息和版本資訊
+# <a name="whats-new-and-release-notes"></a>最新消息和版本資訊
 
-## 新功能
-Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性帶入全新境界。 本主題概述這個新版 RMS SDK 中的重要變更與功能。
+## <a name="whats-new"></a>新功能
+Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性帶入全新境界。 本主題概述此版 RMS SDK 的重要變更與功能。
 
--   [2016 年 6 月的新功能](#new-for-June-2016)
--   [2015 年 12 月更新](#december-2015-update)
--   [2015 年 7 月更新 - 新增 Linux / C++ 開發的支援](#july-2015-update-adds-support-for-linux-c-developm)
--   [2015 年 5 月更新 - 新增記錄控制](#may-2015-update-adds-logging-control)
--   [2015 年 2 月更新 - 新增 Windows 市集應用程式支援](#february-2015-update-adds-windows-store-application-support)
--   [2015 年 1 月更新 - 新增 WinPhone 平台支援](#january-2015-update-adds-winphone-platform-support)
--   [2014 年 10 月更新 - 升級至 Microsoft RMS SDK 4.1](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
--   [版本資訊](#release-notes)
--   [常見問題集](#frequently-asked-questions)
-
-### 2016 年 6 月的新功能
+### <a name="new-for-june-2016"></a>2016 年 6 月的新功能
 
 - **新式驗證支援** - 這會將 Active Directory 驗證庫 (ADAL) 登入整合到啟用 RMS 的應用程式中。 這可啟用登入功能，例如 Multi-Factor Authentication (MFA)、SAML 型協力廠商身分識別提供者與 RMS 用戶端應用程式、智慧卡和憑證型驗證，並讓啟用 RMS 的應用程式不再需要使用基本驗證通訊協定。
 - **文件追蹤支援** - 開發人員現在可以在保護應用程式中的文件時啟用文件追蹤
@@ -42,7 +32,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 - 錯誤修正
 
 
-### 2015 年 12 月更新
+### <a name="december-2015-update"></a>2015 年 12 月更新
 
 在此版本中，裝置的 RMS SDK 現在是 4.2 版且新增︰
 
@@ -74,7 +64,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 -   改善錯誤訊息和疑難排解體驗的更新。
 -   密碼編譯作業的顯著效能改善。
 
-### 2015 年 7 月更新 - 新增 Linux / C++ 開發的支援
+### <a name="july-2015-update-adds-support-for-linux-c-development"></a>2015 年 7 月更新 - 新增 Linux / C++ 開發的支援
 
 此版本新增下列各項︰
 
@@ -82,7 +72,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
     如需詳細資訊，請參閱[開始使用](get-started.md)。
 
-### 2015 年 5 月更新 - 新增記錄控制
+### <a name="may-2015-update-adds-logging-control"></a>2015 年 5 月更新 - 新增記錄控制
 
 此版本新增下列各項的支援︰
 
@@ -100,15 +90,15 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
     如需詳細資訊，請參閱 [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx)。
 
-### 2015 年 2 月更新 - 新增 Windows 市集應用程式支援
+### <a name="february-2015-update-adds-windows-store-application-support"></a>2015 年 2 月更新 - 新增 Windows 市集應用程式支援
 
 此版本新增 Windows 市集應用程式的支援，並提供 Windows Phone、Android 和 iOS/OS X 版 RMS SDK 4.1 的同等功能。
 
-### 2015 年 1 月更新 - 新增 WinPhone 平台支援
+### <a name="january-2015-update-adds-winphone-platform-support"></a>2015 年 1 月更新 - 新增 WinPhone 平台支援
 
 此版本新增 Windows Phone 作業系統的支援，並提供 Android 和 iOS/OS X 版 RMS SDK 4.1 的同等功能。
 
-### 2014 年 10 月更新 - 升級至 Microsoft RMS SDK 4.1
+### <a name="october-2014-update-upgrade-to-microsoft-rms-sdk-41"></a>2014 年 10 月更新 - 升級至 Microsoft RMS SDK 4.1
 
 4.1 版的 RMS SDK 會將下列新功能新增至 Google Android 和 Apple iOS / OS X。
 
@@ -120,11 +110,11 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
     範例；MSUserPolicy.name 變更為 [MSUserPolicy.policyName](https://msdn.microsoft.com/library/dn790799.aspx)。
 
-## 版本資訊
+## <a name="release-notes"></a>版本資訊
 
 本節概述您身為開發人員想要知道的目前和舊版本 Microsoft Rights Management SDK 4.x API 相關資訊。
 
-**AD RMS SDK 4.1 - iOS / OS X 和 Android 平台全球公開上市版本**
+**AD RMS SDK 4.1 - iOS / OS X 與 Android 平台全球公開上市版本**
 
 -   **AD RMS 支援** - IT 系統管理員可以使用行動裝置上啟用 RMS 的應用程式，搭配新 AD RMS 伺服器的行動裝置擴充功能。
 -   **離線取用** - 使用者可以離線存取 RMS 保護的資料。
@@ -146,11 +136,11 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
     **解決方案** - 確定應用程式不允許對 Android API 進行多個執行個體呼叫。
 
--   當我使用長度與 *array.length* 值不同的 [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array, int offset, int length) 方法時，我不能在稍後使用 SDK 取用內容。
+-   當我使用的 *array.length* 值長度與 [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array, int offset, int length) 方法的長度不同時，之後無法使用 SDK 取用內容。
 
-    **解決方案** - 這是已知問題。 若要減少這種情況，請一律傳遞與長度參數相同長度值的「位元組」\[\] 陣列，或使用 [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array) 方法。
+    **解決方案** - 這是已知問題。 若要減少此狀況，請一律傳遞長度值與長度參數相同 *byte\[\]* array，或使用 [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array) 方法。
 
-**iOS 和 OS X**
+**iOS 與 OS X**
 
 -   我們的 iOS 和 OS X SDK 支援兩種葡萄牙文方言。 很不幸地，因為一個錯誤，我們目前未完全支援第 1 種方言當地語系化。 由於此錯誤，未完全支援葡萄牙文。 大部分的文字會轉譯，但不包含 UI。
 
@@ -181,7 +171,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
 **注意**  我們的 iOS API 不支援 MDI 應用程式。
 
-## 常見問題集
+## <a name="frequently-asked-questions"></a>常見問題集
 
 **所有平台**
 
@@ -191,7 +181,7 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
 **問**︰如何讓新的組織租用戶試用 SDK 和範例應用程式？
 
-**答**︰若要要求 Azure AD RMS 測試組織的認證，請傳送電子郵件至 <rmcstbeta@microsoft.com>。
+**答**︰若要為 Azure AD RMS 測試組織申請認證，請傳送電子郵件到 <rmcstbeta@microsoft.com>。
 
 **問**︰我在文件中沒看到任何測試階層討論。 為什麼？
 
@@ -232,6 +222,6 @@ Microsoft Rights Management SDK 4.2 將 RMS 應用程式啟用的方便與彈性
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

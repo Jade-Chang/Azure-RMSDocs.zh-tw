@@ -12,31 +12,31 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33f1e54c21507999d30dcee2ce63c8eb2d69895
-ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 9dea728836d52249471d3dde69b63a9a2cd1467c
 
 
 ---
 
-# 記錄和分析 Azure Rights Management Service 的使用方式
+# <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>記錄和分析 Azure Rights Management Service 的使用方式
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 使用此資訊以利了解如何使用 Azure Information Protection 的 Azure Rights Management Service 的使用記錄。 此服務為貴組織的文件與電子郵件提供資料保護，並可記錄向它提出的每一項要求，包含使用者的要求、此服務系統管理員執行的動作，以及 Microsoft 運算子為支援 Azure Information Protection 部署所執行的動作。
 
 然後，您可以利用這些 Azure Rights Management Service 記錄來支援下列商務案例：
 
--   **分析商業見解**
+-   **分析商業深入解析**
 
     Azure Rights Management Service 產生的記錄可以匯入您選擇的存放庫 (例如資料庫、線上分析處理 (OLAP) 系統或 map-reduce 系統)，以分析資訊並產生報告。 例如，您可以識別誰在存取保護的資料。 您可以判斷使用者存取保護的哪些資料，以及從什麼裝置和從哪裡存取。 您可以查明使用者是否可順利讀取受保護的內容。 您也可以識別哪些使用者已讀取受保護的重要文件。
 
--   **監督濫用情形**
+-   **監視有無濫用**
 
     Azure Rights Management 記錄為您提供的幾乎都是即時資訊，所以您可以持續監視公司如何使用 Azure Rights Management Service。 99.9% 的記錄會在服務起始動作之後的 15 分鐘內產生。
 
     例如，當正常工作時段外突然有許多使用者讀取保護的資料，您可能希望獲得警示，這可能表示有惡意使用者正在收集資訊來販售給競爭對手。 或者，同一個使用者很明顯在極短的時間內從兩個不同的 IP 位址存取資料，這可能表示使用者帳戶已被盜用。
 
--   **執行取證分析**
+-   **執行鑑調查分析**
 
     如果發生資訊外洩，您可能會被問及誰最近存取特定的文件，以及可疑人士最近存取什麼資訊。 只要有使用此記錄，您就能夠回答這幾種問題，因為使用受保護內容的人一定要取得 Azure Rights Management Service 授權才能開啟 Azure Rights Management 所保護的文件和圖片，即使這些檔案由電子郵件移動，或複製到 USB 磁碟機或其他存放裝置也一樣。 這表示當您使用 Azure Rights Management Service 來保護資料時，這些記錄可當作可靠的資訊來源以進行蒐證分析。
 
@@ -47,7 +47,7 @@ ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
 
 如需 Azure Rights Management 使用情況記錄的詳細資訊，請參閱下列幾節。
 
-## 如何啟用 Azure Rights Management 使用量記錄
+## <a name="how-to-enable-azure-rights-management-usage-logging"></a>如何啟用 Azure Rights Management 使用量記錄
 從 2016 年 2 月開始，Azure Rights Management 使用量記錄預設為所有客戶啟用。 這適用於在 2016 年 2 月之前啟動他們的 Azure Rights Management Service 的客戶，和在 2016 年 2 月之後啟動服務的客戶。 
 
 > [!NOTE]
@@ -57,14 +57,14 @@ ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
 
 
 
-## 如何存取和使用 Azure Rights Management 使用情況記錄
+## <a name="how-to-access-and-use-your-azure-rights-management-usage-logs"></a>如何存取和使用 Azure Rights Management 使用情況記錄
 Azure Rights Management Service 會以一連串 Blob 將記錄寫入 Azure 儲存體帳戶。 每一個 Blob 包含一或多筆記錄 (W3C 擴充記錄格式)。 Blob 名稱是依建立順序排列的數字。 本文稍後的[如何解讀 Azure Rights Management 使用量記錄](#how-to-interpret-your-azure-rights-management-usage-logs)一節包含記錄內容及其建立方式的詳細資訊。
 
 發生 Azure Rights Management 動作之後需要一些時間，記錄才會出現在儲存體帳戶中。 大多數記錄會在 15 分鐘內出現。 建議您將記錄下載到本機儲存體，例如本機資料夾、資料庫或 map-reduce 儲存機制。
 
-若要下載您的使用量記錄，您將會使用適用於 Windows PowerShell 的 Azure Rights Management 管理模組。 如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](install-powershell.md)。 如果您先前已下載此 Windows PowerShell 模組，請執行下列命令來檢查版本號碼至少為 **2.4.0.0**： `(Get-Module aadrm -ListAvailable).Version` 
+若要下載您的使用量記錄，您將會使用適用於 Windows PowerShell 的 Azure Rights Management 管理模組。 如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](install-powershell.md)。 若您先前已經下載此 Windows PowerShell 模組，請執行下列命令，確認版本號碼至少為 **2.4.0.0**：`(Get-Module aadrm -ListAvailable).Version` 
 
-### 使用 PowerShell 下載使用情況記錄
+### <a name="to-download-your-usage-logs-by-using-powershell"></a>使用 PowerShell 下載使用情況記錄
 
 1.  使用 [以系統管理員身分執行] 選項啟動 Windows PowerShell，然後使用 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) Cmdlet 來連接 Azure RMS 服務：
 
@@ -80,30 +80,30 @@ Azure Rights Management Service 會以一連串 Blob 將記錄寫入 Azure 儲�
 
     例如，在您的 E 磁碟機上建立一個名為 [記錄] 的資料夾：
     
-    * 若要下載特定日期 (例如 2016/2/1) 的記錄，請執行以下命令： `Get-AadrmUserLog -Path E:\Logs -fordate 2/1/2016`
+    * 若要下載特定日期 (例如 2016/2/1) 的記錄，請執行下列命令：`Get-AadrmUserLog -Path E:\Logs -fordate 2/1/2016`
     
-    * 若要下載日期範圍 (例如從 2016/2/1 到 2016/2/14) 的記錄，請執行以下命令： `Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016` 
+    * 若要下載某個日期範圍 (例如從 2016/2/1 到 2016/2/14) 內的記錄，請執行下列命令：`Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016` 
 
 當您只指定一天，如同我們的範例，時間會假設為您的當地時間的 00:00:00，然後轉換為 UTC。 當您以 -fromdate 或 -todate 參數指定時間時 (例如，-fordate "2/1/2016 15:00:00")，該日期和時間會轉換為 UTC。 然後 Get-AadrmUserLog 命令會取得該 UTC 期間的記錄。
 
 您不能指定要下載少於一整天的時間。
 
-預設情況下，此 Cmdlet 使用三個執行緒來下載記錄。 如果您有足夠的網路頻寬，並且想要減少下載記錄所需的時間，使用 -NumberOfThreads 參數，該參數支援從 1 到 32 的值。 例如，如果您執行以下命令，Cmdlet 會產生 10 個執行緒以下載記錄： `Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016 -numberofthreads 10`
+預設情況下，此 Cmdlet 使用三個執行緒來下載記錄。 如果您有足夠的網路頻寬，並且想要減少下載記錄所需的時間，使用 -NumberOfThreads 參數，該參數支援從 1 到 32 的值。 例如，若您執行下列命令，Cmdlet 會產生 10 個執行緒來下載記錄：`Get-AadrmUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016 -numberofthreads 10`
 
 
 > [!TIP]
 > 您可以使用 [Microsoft 的記錄檔剖析器](https://www.microsoft.com/download/details.aspx?id=24659) (這是用來在各種已知的記錄檔格式之間轉換的工具)，將您的所有已下載記錄檔彙總為 CSV 格式。 您也可以利用此工具將資料轉換成 SYSLOG 格式，或匯入到資料庫中。 安裝此工具之後，請執行 `LogParser.exe /?`，以取得使用此工具的說明和資訊。 
 >
-> 例如，您可以執行下列命令將所有資訊匯入到 .log 檔案格式： `logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
+> 例如，您可以執行下列命令，將所有資訊匯入 .log 檔案格式：`logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
 
-#### 如果您手動啟用 2016 年 2 月 22 日記錄變更之前的 Azure Rights Management 使用量記錄
+#### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>如果您手動啟用 2016 年 2 月 22 日記錄變更之前的 Azure Rights Management 使用量記錄
 
 
 如果您使用記錄變更之前的使用量記錄，會在設定的 Azure 儲存體帳戶中具有使用量記錄。 Microsoft 不會從您的儲存體帳戶將這些記錄複製到新的 Azure Rights Management 受管理的儲存體帳戶，作為此記錄變更的一部分。 您負責管理先前產生的記錄的生命週期，並且可以使用 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) Cmdlet 來下載你舊的記錄。 例如：
 
-- 若要將所有可用的記錄下載到 E:\logs 資料夾： `Get-AadrmUsageLog -Path "E:\Logs"`
+- 若要將所有可用的記錄下載到您的 E:\logs 資料夾：`Get-AadrmUsageLog -Path "E:\Logs"`
     
-- 若要下載特定範圍的 Blob： `Get-AadrmUsageLog –Path "E:\Logs" –FromCounter 1024 –ToCounter 2047`
+- 若要下載特定範圍的 Blob：`Get-AadrmUsageLog –Path "E:\Logs" –FromCounter 1024 –ToCounter 2047`
 
 請注意，如果有下列其中一個情形，您不需要使用 Get-AadrmUsageLog Cmdlet 來下載記錄：
 
@@ -111,20 +111,20 @@ Azure Rights Management Service 會以一連串 Blob 將記錄寫入 Azure 儲�
 
 - 您在 2016 年 2 月 22 日之後啟動 Azure Rights Management Service。
 
-## 如何解讀 Azure Rights Management 使用量記錄
+## <a name="how-to-interpret-your-azure-rights-management-usage-logs"></a>如何解讀 Azure Rights Management 使用量記錄
 使用下列資訊來協助您解讀 Azure Rights Management 使用量記錄。
 
-### 記錄順序
+### <a name="the-log-sequence"></a>記錄順序
 Azure Rights Management Service 會以一連串 Blob 來寫入記錄。 
 
 記錄中的每個項目都有一個 UTC 時間戳記。 因為 Azure Rights Management Service 是跨多個資料中心而在多個伺服器上執行，即使記錄依時間戳記排序，有時也可能不按照順序。 不過，差異很小，通常只在一分鐘內。 在大部分情況下，這不會對記錄分析造成問題。
 
-### Blob 格式
+### <a name="the-blob-format"></a>Blob 格式
 每一個 Blob 都是 W3C 擴充記錄格式。 開頭為下列兩行：
 
-**#軟體：RMS**
+**#Software: RMS**
 
-**#版本︰1.1**
+**#Version: 1.1**
 
 第一行識別這些是 Azure Rights Management 的記錄。 第二行識別 Blob 的其餘部分都遵循 1.1 版規格。 建議任何可剖析這些記錄的應用程式在繼續剖析 Blob 的其餘部分之前，先驗證這兩行。
 
@@ -140,7 +140,7 @@ Azure Rights Management Service 會以一連串 Blob 來寫入記錄。
 |time|時間|處理要求的 UTC 時間 (24 小時制)。<br /><br />來源是處理要求的伺服器的本機時鐘。|21:59:28|
 |row-id|文字|此記錄的唯一 GUID。 如果值不存在，請使用 correlation-id 值來識別項目。<br /><br />將記錄彙總或將記錄複製成另一種格式時，此值很有用。|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|名稱|要求的 RMS API 的名稱。|AcquireLicense|
-|user-id|字串|提出要求的使用者。<br /><br />值以單引號括住。 如果呼叫是來自您管理的租用戶金鑰 (BYOK)，則該呼叫具有 **"** 值；當要求類型為匿名時也適用此情況。|‘joe@contoso。com’|
+|user-id|字串|提出要求的使用者。<br /><br />值以單引號括住。 如果呼叫是來自您管理的租用戶金鑰 (BYOK)，則該呼叫具有 **"** 值；當要求類型為匿名時也適用此情況。|‘joe@contoso.com’|
 |result|字串|'Success' 表示成功處理要求。<br /><br />要求失敗時以單引號括住的錯誤類型。|'Success'|
 |correlation-id|文字|某個特定要求在 RMS 用戶端記錄和伺服器記錄之間的共同 GUID。<br /><br />對用戶端問題進行疑難排解時，此值很有用。|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|文字|識別受保護內容 (例如文件) 的 GUID (以大括孤括住)。<br /><br />只有當 request-type 是 AcquireLicense 時，此欄位才有值，至於其他所有要求類型，此欄位會空白。|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
@@ -153,10 +153,10 @@ Azure Rights Management Service 會以一連串 Blob 來寫入記錄。
 |c-ip|位址|提出要求的用戶端的 IP 位址。|64.51.202.144|
 
 
-#### user-id 欄位的例外狀況
+#### <a name="exceptions-for-the-userid-field"></a>user-id 欄位的例外狀況
 雖然 user-id 欄位通常指出提出要求的使用者，但有兩種例外狀況，值不會對應至真正的使用者：
 
--   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
+-   值 **'microsoftrmsonline@&lt;您的租用戶識別碼&gt;.rms.&lt;region&gt;.aadrm.com'**。
 
     這指出 Office 365 服務 (例如 Exchange Online 或 SharePoint Online) 正提出要求。 在字串中，*&lt;YourTenantID&gt;* 是租用戶的 GUID，*&lt;region&gt;* 是租用戶註冊的地區。 例如， **na** 代表北美洲、 **eu** 代表歐洲， **ap** 代表亞洲。
 
@@ -164,7 +164,7 @@ Azure Rights Management Service 會以一連串 Blob 來寫入記錄。
 
     會以服務主體名稱 **Aadrm_S-1-7-0** (此名稱會在安裝 RMS 連接器時自動產生) 來記錄來自此連接器的要求。
 
-#### 一般要求類型
+#### <a name="typical-request-types"></a>一般要求類型
 Azure Rights Management Service 有許多要求類型，下表指出一些最常用的要求類型。
 
 |要求類型|說明|
@@ -212,7 +212,7 @@ Azure Rights Management Service 有許多要求類型，下表指出一些最常
 |UpdateTemplate|從 Azure 傳統入口網站進行呼叫，以更新現有範本。|
 
 
-## Windows PowerShell 參考
+## <a name="windows-powershell-reference"></a>Windows PowerShell 參考
 從 2016 年 2 月開始，您針對 Azure Rights Management 使用量記錄所需的唯一 Windows PowerShell Cmdlet 是 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)。 
 
 在此變更之前，Azure Rights Management 使用量記錄需要的下列 Cmdlet，現在已被取代：  
@@ -240,6 +240,6 @@ Azure Rights Management Service 有許多要求類型，下表指出一些最常
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

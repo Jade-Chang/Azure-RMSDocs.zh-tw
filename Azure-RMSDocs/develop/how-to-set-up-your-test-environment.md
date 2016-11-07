@@ -20,13 +20,13 @@ ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
 ---
 
-# 測試您的應用程式
+# <a name="testing-your-application"></a>測試您的應用程式
 
 本主題包含如何進行應用程式測試設定的指示。
 
-## 指示
+## <a name="instructions"></a>指示
 
-### 步驟 1︰安裝以進行測試
+### <a name="step-1-setup-for-testing"></a>步驟 1︰安裝以進行測試
 
 您可以使用在 Windows Server 上執行的 Azure RMS 或 RMS 伺服器進行測試，建議您先在 Azure RMS 上進行測試，若您的部署需要 RMS 伺服器，才使用 RMS 伺服器進行測試。
 
@@ -40,22 +40,22 @@ ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
     如需如何安裝 RMS SDK 2.1 的資訊，請參閱[安裝 SDK](install-the-rms-sdk.md)。
 
-## 備註
+## <a name="remarks"></a>備註
 
 本主題中的指引並不完整。 如需如何設定 RMS Client 2.1 的詳細資訊，請參閱 [RMS Client 2.1 Deployment Notes](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) (RMS Client 2.1 部署注意事項)。
 
-### 相關的主題
+### <a name="related-topics"></a>相關的主題
 
-* [如何安裝和設定 RMS 伺服器](how-to-install-and-configure-an-rms-server.md)
+* [如何安裝及設定 RMS 伺服器](how-to-install-and-configure-an-rms-server.md)
 * [如何︰使用 ADAL 驗證](how-to-use-adal-authentication.md)
 * [安裝 SDK](install-the-rms-sdk.md)
-* [RMS Client 2.1 部署注意事項](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
+* [RMS Client 2.1 部署的注意事項](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

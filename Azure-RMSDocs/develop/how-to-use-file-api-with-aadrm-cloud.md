@@ -20,19 +20,19 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 ---
 
-# 如何允許您的服務應用程式使用雲端式 RMS
+# <a name="howto-enable-your-service-application-to-work-with-cloud-based-rms"></a>如何允許您的服務應用程式使用雲端式 RMS
 
 本主題概述設定服務應用程式以使用 Azure Rights Management 的步驟。 如需詳細資訊，請參閱[開始使用 Azure Rights Management](https://technet.microsoft.com/library/jj585016.aspx)。
 
 **重要**  
 若要搭配 Azure RMS 使用 Rights Management Services SDK 2.1 服務應用程式，您必須建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS 需求：支援 Azure RMS 的雲端訂閱](../get-started/requirements-subscriptions.md)。
 
-## 必要條件
+## <a name="prerequisites"></a>必要條件
 
 -   必須安裝與設定 RMS SDK 2.1。 如需詳細資訊，請參閱[開始使用 RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)。
 -   您必須藉由使用對稱金鑰選項，或其他方式來[透過 ACS 建立服務身分識別](https://msdn.microsoft.com/en-us/library/gg185924.aspx)，並從該程序記錄金鑰資訊。
 
-## 連接到 Azure Rights Management 服務
+## <a name="connecting-to-the-azure-rights-management-service"></a>連接到 Azure Rights Management 服務
 
 -   呼叫 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)。
 -   設定 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)。
@@ -50,9 +50,9 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 **注意**：由於探索服務的現有條件，如果您不在北美洲，因為不接受其他地區的對稱金鑰認證，所以您必須直接指定您的租用戶 URL。 這可透過 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) 或 [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx) 函數的 [IPC\_CONNECTION\_INFO](https://msdn.microsoft.com/library/hh535274.aspx) 類型的 *pConnectionInfo* 參數完成。
 
-## 產生對稱金鑰，並收集所需的資訊
+## <a name="generate-a-symmetric-key-and-collect-the-needed-information"></a>產生對稱金鑰，並收集所需的資訊
 
-### 產生對稱金鑰的指示
+### <a name="instructions-to-generate-a-symmetric-key"></a>產生對稱金鑰的指示
 
 -   安裝 [Microsoft Online 登入小幫手](http://go.microsoft.com/fwlink/p/?LinkID=286152)
 -   安裝 [Azure AD PowerShell 模組](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi)。
@@ -63,9 +63,9 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
     `Import-Module MSOnline`
 
-    `Connect-MsolService` (輸入您的系統管理員認證)
+    `Connect-MsolService`(請輸入您的系統管理員認證)
 
-    `New-MsolServicePrincipal` (輸入顯示名稱)
+    `New-MsolServicePrincipal`(請輸入顯示名稱)
 
 - 在它產生對稱金鑰之後，它會輸出金鑰相關資訊，包含金鑰本身和 *AppPrincipalId*。
 
@@ -78,14 +78,14 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
       AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
-### 找出 **TenantBposId** 和 **Urls** 的指示
+### <a name="instructions-to-find-out-tenantbposid-and-urls"></a>找出 **TenantBposId** 和 **Urls** 的指示
 
 -   安裝 [Azure RMS PowerShell 模組](https://technet.microsoft.com/en-us/library/jj585012.aspx)。
 -   啟動 Powershell 並執行下列命令來取得租用戶的 RMS 組態。
 
     `Import-Module aadrm`
 
-    `Connect-AadrmService` (輸入您的系統管理員認證)
+    `Connect-AadrmService`(請輸入您的系統管理員認證)
 
     `Get-AadrmConfiguration`
 
@@ -128,7 +128,7 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
     promptCtx.hCancelEvent = NULL;
     promptCtx.pcCredential = &cred;
 
-### 找出範本，然後加密
+### <a name="identify-a-template-and-then-encrypt"></a>找出範本，然後加密
 
 -   選取用於加密的範本
     呼叫傳入相同 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 執行個體的 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)。
@@ -162,11 +162,11 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 您現在已完成啟用應用程式以使用 Azure Rights Management 所需的步驟。
 
-## 相關的主題
+## <a name="related-topics"></a>相關的主題
 
 * [開始使用 Azure Rights Management](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [開始使用 RMS SDK 2.1](getting-started-with-ad-rms-2-0.md)
-* [透過 ACS 建立服務身分識別](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
+* [透過 ACS 建立服務識別](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
 * [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
 * [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
 * [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
@@ -184,6 +184,6 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
