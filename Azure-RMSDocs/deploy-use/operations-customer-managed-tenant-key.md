@@ -3,7 +3,7 @@ title: "客戶管理的租用戶金鑰生命週期作業 | Azure Information Pro
 description: "與您自行管理 Azure Information Protection 的租用戶金鑰 (「自備金鑰」(BYOK)) 的相關生命週期作業資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: c879d4de6b8b99c401b36e03dd3b16dc8b722344
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 
 
 ---
@@ -45,7 +45,7 @@ ms.openlocfilehash: c879d4de6b8b99c401b36e03dd3b16dc8b722344
 ## <a name="backup-and-recover-your-tenant-key"></a>備份和復原租用戶金鑰
 您負責備份租用戶金鑰。 如果是在 Thales HSM 中產生租用戶金鑰，若要備份金鑰，只需要備份信號化金鑰檔案、園地檔案及系統管理員卡。
 
-由於您藉由遵循[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)一文的[實作自備金鑰 (BYOK)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 一節中的程序來傳輸金鑰，金鑰保存庫會保留 Token 化金鑰檔案，以防止任何服務節點失敗。 這個檔案會繫結至特定 Azure 區域或執行個體的安全範圍。 然而，這並不算是完整備份。 例如，若您還是可能需要在 Thales HSM 以外使用金鑰的純文字副本，則 Azure 金鑰保存庫無法加以擷取，因為其只有無法復原的複本。
+由於您藉由遵循[規劃及實作 Azure Rights Management 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)一文的[實作自備金鑰 (BYOK)](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key) 一節中的程序來傳輸金鑰，金鑰保存庫會保留 Token 化金鑰檔案，以防止任何服務節點失敗。 這個檔案會繫結至特定 Azure 區域或執行個體的安全範圍。 然而，這並不算是完整備份。 例如，若您還是可能需要在 Thales HSM 以外使用金鑰的純文字副本，則 Azure 金鑰保存庫無法加以擷取，因為其只有無法復原的複本。
 
 ## <a name="export-your-tenant-key"></a>匯出租用戶金鑰
 如果您使用 BYOK，您無法從 Azure Information Protection 上的 Azure 金鑰保存庫匯出租用戶金鑰。 Azure 金鑰保存庫中是無法復原的複本。 

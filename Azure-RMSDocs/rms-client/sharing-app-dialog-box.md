@@ -3,7 +3,7 @@ title: "Rights Management 共用應用程式的對話方塊選項 | Azure Inform
 description: "協助您在 RMS 共用應用程式的 [新增保護] 對話方塊或 [共用保護] 對話方塊中指定選項的資訊。 當您保護要共用的檔案或就地保護檔案並選擇自訂權限時，您會看到這個對話方塊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 25e93f993ef76d0bce61f925c58cc667ccacf7b8
-ms.openlocfilehash: c28651342c3048b783880f8ea3b12acd56d973a2
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 97766046526db5148f03873343a2fb3840392c6a
 
 
 ---
@@ -54,7 +54,7 @@ ms.openlocfilehash: c28651342c3048b783880f8ea3b12acd56d973a2
 
 -   相較之下，當您使用 Rights Management 的**內建 (原生) 保護**來保護支援此選項的應用程式時 (例如 Office 檔案)，檔案保護即生效，即使檔案後來傳送給別人或另存他處也一樣。 當您保護這些檔案時，您可以使用嚴格的權限，例如唯讀，或可編輯但不可列印或複製的權限。 例如，您可以選取 [檢閱者 - 僅檢視] ，以禁止編輯、列印或複製內容。
 
-如需其他技術資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)》中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
+如需其他技術資訊，請參閱《[Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)》中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic)一節。
 
 ## <a name="whats-the-ppdf-file-thats-automatically-created"></a>什麼是自動建立的 .ppdf 檔案？
 
