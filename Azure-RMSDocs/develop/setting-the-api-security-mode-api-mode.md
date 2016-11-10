@@ -14,17 +14,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: f10129cb907cafa0e0c717b02153bbcdea012959
+ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
+ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
 
 
 ---
 
 # 如何：設定 API 安全性模式
 
-您可以使用 [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函式選擇檔案 API 應用程式執行的安全性模式。
+您可以使用 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 函數選擇檔案 API 應用程式執行的安全性模式。
 
-若要將您的應用程式初始化，以在*伺服器模式*中執行，請呼叫 [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 函式，並將安全性模式設為 [**IPC\_API\_MODE\_SERVER**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)。 根據預設，應用程式會以*用戶端模式*執行 (**IPC\_API\_MODE\_CLIENT**)。
+若要將您的應用程式初始化，以在*伺服器模式*中執行，請呼叫 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 函數，並將安全性模式設為 [IPC\_API\_MODE\_SERVER](https://msdn.microsoft.com/library/hh535236.aspx)。 根據預設，應用程式會以*用戶端模式*執行 (**IPC\_API\_MODE\_CLIENT**)。
 
 如需*伺服器模式*的詳細資訊，請參閱[應用程式類型](application-types.md)。
 
@@ -33,14 +33,14 @@ ms.openlocfilehash: f10129cb907cafa0e0c717b02153bbcdea012959
 ## 相關的主題
 
 * [應用程式類型](application-types.md)
-* [**API 模式值**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
-* [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
+* [API 模式值](https://msdn.microsoft.com/library/hh535236.aspx)
+* [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
  
 
  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

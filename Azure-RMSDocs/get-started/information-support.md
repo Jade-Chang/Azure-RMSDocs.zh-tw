@@ -3,7 +3,7 @@ title: "Azure 資訊保護的管理資訊與支援 | Azure 資訊保護"
 description: "系統管理員資源，包括新版本、支援選項，和如何連絡 Microsoft 以回報問題的資訊。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 10/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
-ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
+ms.sourcegitcommit: 263c4109ac5dec435bbb0b126594eeafc974ff47
+ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 
 
 ---
@@ -26,10 +26,10 @@ ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
 
 |欲執行的動作...|.. 做法：|
 |----------------|---------------|
-|… 請參閱服務的建議文件 →|使用 [Azure 資訊保護文件](https://docs.microsoft.com/information-protection/)開始頁面。|
-|… 提供文件的相關意見反應或提出文件的相關問題 →|電子郵件 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
-|… 接收來自產品小組的 Information Protection 相關推文和文件更新相關公告 →|關注 Microsoft Information Protection 小組的領導者 Dan Plastina。 請參閱 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
-|… 檢查訂用帳戶資訊和支援的功能 →|請使用 Azure 資訊保護網站上的[訂用帳戶資訊](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能清單](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
+|請參閱服務的建議文件 →|使用 [Azure 資訊保護文件](https://docs.microsoft.com/information-protection/)開始頁面。|
+|提供文件的相關意見反應或提出文件的相關問題 →|電子郵件 [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)|
+|接收來自產品小組的資訊保護相關推文和文件更新相關公告 →|關注 Microsoft 資訊保護小組的領導者 Dan Plastina。 請參閱 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)|
+|檢查訂用帳戶資訊和支援的功能 →|請使用 Azure 資訊保護網站上的[訂用帳戶資訊](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)和[功能清單](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|
 
 
 ## 新版本資訊
@@ -61,7 +61,9 @@ Information Protection 產品小組會在[企業行動力和安全性部落格](
 
 ### 自助
 
-學習核心技能︰
+隨選影片：
+
+- [Azure 資訊保護與 Azure Rights Management](https://myignite.microsoft.com/videos?f=%5B%7B%22name%22:%22Azure%20Rights%20Management%22,%22facetName%22:%22products%22%7D,%7B%22name%22:%22Azure%20Information%20Protection%22,%22facetName%22:%22products%22%7D%5D) 的 Microsoft Ignite 2016 工作階段
 
 - Microsoft Virtual Academy [Azure Rights Management Services Core Skills](https://mva.microsoft.com/en-us/training-courses/azure-rights-management-services-core-skills-10500?l=QLoxMwuCB_1805094681) (Azure Rights Management Services 的核心技能)
 
@@ -88,6 +90,6 @@ Information Protection 產品小組會在[企業行動力和安全性部落格](
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

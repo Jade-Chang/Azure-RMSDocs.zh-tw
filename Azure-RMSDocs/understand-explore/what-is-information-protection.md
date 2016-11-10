@@ -3,15 +3,15 @@ title: "什麼是 Azure 資訊保護？ | Azure 資訊保護"
 description: "Azure 資訊保護服務概觀。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 590f12e0c6c6122a6bc0a559940870c18f0e2d39
-ms.openlocfilehash: 350a3cb877674208b4c560bb841135904aee1136
+ms.sourcegitcommit: 0098fa28313561e99f39e2539e20c8a6bc0207f7
+ms.openlocfilehash: eaaa08a99b3c065422dd8b0bc01d89ead15e9d49
 
 
 ---
@@ -63,11 +63,11 @@ Azure 資訊保護是雲端式解決方案，可協助組織分類、標記及�
 
 ## 與使用者工作流程整合
 
-安裝 Azure 資訊保護用戶端之後，Azure 資訊保護會與使用者的現有工作流程整合。 此用戶端會將 Information Protection 列安裝到 Office 應用程式，如第一張圖片中所示。 Excel、PowerPoint 和 Outlook 中會加入相同的列。 例如：
+安裝 Azure 資訊保護用戶端之後，Azure 資訊保護會與使用者的現有工作流程整合。 此用戶端會將資訊保護列安裝到 Office 應用程式，如第一張圖片中所示。 Excel、PowerPoint 和 Outlook 中會加入相同的列。 例如：
 
 ![Excel 中的 Azure 資訊保護列範例](../media/excel2013-infoprotect-bar2.png)
 
-此 Information Protection 列可讓使用者輕鬆選取正確分類的標籤，而且在必要情況下，這些標籤也可以自動保護其文件和電子郵件。
+此資訊保護列可讓使用者輕鬆選取正確分類的標籤，而且在必要情況下，這些標籤也可以自動保護其文件和電子郵件。
 
 當使用者透過電子郵件共用其受保護的文件時，可以使用文件追蹤網站來監視存取這些文件的人員和時間。 如果他們懷疑誤用，也可以撤銷這些文件的存取權。
 
@@ -84,9 +84,21 @@ Azure 資訊保護是雲端式解決方案，可協助組織分類、標記及�
 
 - Yammer：[Azure 資訊保護](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
 
-- 視訊簡報：
+- 影片概觀
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/N9Ip0m6d3G0" frameborder="0" allowfullscreen></iframe>
+
+    此外，Microsoft Ignite 2016 提供多種 Azure 資訊保護的隨選工作階段︰
+
+    - [BRK2127︰採用完整的身分識別導向解決方案，來保護及安全地共用資料](https://myignite.microsoft.com/videos?q=BRK2127)
+    
+    - [THR2107：使用 Azure 資訊保護安全地共同作業](https://myignite.microsoft.com/videos?q=THR2107)
+    
+    - [THR2108︰使用 Azure 資訊保護確保完整的資料保護](https://myignite.microsoft.com/videos?q=THR2108)
+    
+    - [BRK3095︰了解分類、標籤及保護如何提供永續性資料保護](https://myignite.microsoft.com/videos?q=BRK3095)
+    
+    - [BRK2128︰傳送安全的電子郵件給所有使用 Microsoft Office 365 和 Azure 資訊保護的人](https://myignite.microsoft.com/videos?q=BRK2128)
 
 
 ## 後續步驟
@@ -96,6 +108,6 @@ Azure 資訊保護是雲端式解決方案，可協助組織分類、標記及�
 想要知道 Azure 資訊保護或 Azure Rights Management 的其他名稱嗎？ 請參閱[服務的替代詞彙清單](azure-rms-aka.md)。
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

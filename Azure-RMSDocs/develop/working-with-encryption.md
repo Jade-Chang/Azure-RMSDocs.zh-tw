@@ -4,7 +4,7 @@ description: "Azure RMS 加密套件入門指南及其使用的程式碼片段�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
+ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
+ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 
 ---
@@ -40,13 +40,13 @@ ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (也就是已過時的演算法)
 
-加密封裝旗標 (請參閱[**慣用的加密**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption)) 可搭配我們新的授權內容旗標 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 使用。
+加密封裝旗標 (請參閱[慣用的加密](https://msdn.microsoft.com/library/dn974065.aspx)) 可搭配授權內容旗標 *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE* 使用。
 
 以下是一些簡單的程式碼片段，示範如何使用新的授權屬性。
 
 ## 已過時的演算法
 
-我們將不再於 API 公開 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已使用它建置的應用程式仍將繼續運作，因為我們將會私下在 API 程式碼中採用旗標。
+我們將不再於 API 公開 *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已使用它建置的應用程式仍將繼續運作，因為我們將會私下在 API 程式碼中採用旗標。
 
 我們仍然可以藉由變更一個旗標來達成取得已被取代之舊加密演算法旗標的優點。 如需範例，請參閱下列程式碼片段。
 
@@ -84,7 +84,7 @@ ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 這個範例也示範支援*已過時的演算法*的新方式。
 
     C++
-    
+
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
                                     0,
                                     NULL,
@@ -103,6 +103,6 @@ ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
+ms.sourcegitcommit: 4e96ba043584c5d8c140d6804c72cf63362f58c5
+ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
 
 
 ---
@@ -43,9 +43,9 @@ Rights Management Services SDK 2.1 包含下列檔案，皆安裝在您電腦上
 |Ipcerror.h|\inc|包含 RMS SDK 2.1 匯出的公用錯誤碼。|
 |Ipcfile.h|\inc|包含 RMS SDK 2.1 匯出的檔案 API 介面。|
 |Msipc.lib|\lib|當使用 RMS SDK 2.1 建置 x86 應用程式時要連結的程式庫。|
-|Msipc_s.lib|\lib|提供 x86 應用程式的 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 進入點。|
+|Msipc_s.lib|\lib|提供 x86 應用程式的 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 進入點。|
 |Msipc.lib|\lib\x64|當使用 RMS SDK 2.1 建置 x64 應用程式時要連結的程式庫。|
-|Msipc_s.lib|\lib\x64|提供 x64 應用程式的 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 進入點。|
+|Msipc_s.lib|\lib\x64|提供 x64 應用程式的 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 進入點。|
 |Genmanifest.exe|\tools|產生「具 RMS 功能的應用程式」開發期間所使用的資訊清單。|
  
 
@@ -55,6 +55,6 @@ Rights Management Services SDK 2.1 包含下列檔案，皆安裝在您電腦上
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
