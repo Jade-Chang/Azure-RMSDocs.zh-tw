@@ -18,9 +18,9 @@ ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
 
 ---
 
-# 啟用 Azure Rights Management
+# <a name="activating-azure-rights-management"></a>啟用 Azure Rights Management
 
->*適用於︰Azure 資訊保護、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 啟用 Azure 資訊保護的 Azure Rights Management Service 之後，您的組織就可以開始使用支援此資訊保護解決方案的應用程式與服務保護重要資料。 系統管理員也可以管理與監控您的組織所擁有的受保護檔案及電子郵件。 您必須先啟用此服務，才能開始在 Office、SharePoint 和 Exchange 中使用資訊版權管理 (IRM) 功能，並保護任何敏感或機密檔案。
 
@@ -48,7 +48,7 @@ ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
 
 3. 執行可啟用 Azure Rights Management Service 的 [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx)。
 
-## 設定分階段部署的登入控制項
+## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>設定分階段部署的登入控制項
 如果您不想要讓所有使用者能夠藉由使用 Azure Rights Management 以立即保護檔案，您可以設定使用者上線控制，方法是使用 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 命令。 您可以在啟用 Azure Rights Management Service 前後執行此命令。
 
 > [!IMPORTANT]
@@ -71,7 +71,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 當您使用這些登入控制項時，組織中的所有使用者一律可以使用受部分使用者保護的受保護內容，但他們無法從用戶端應用程式中自行套用資訊保護。 例如，他們無法在 Office 用戶端中看到啟用 Azure Rights Management Service 時會自動發佈的預設範本，或您可能設定的自訂範本。  伺服器端應用程式 (例如 Exchange) 可針對 Rights Management 整合實作個別使用者的控制，以達成相同結果。
 
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 現在您已為組織啟用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，在將 Azure 資訊保護轉出給使用者和系統管理員之前，請使用 [Azure 資訊保護部署藍圖](../plan-design/deployment-roadmap.md)，檢查是否需要執行其他設定步驟。 
 
 例如，您可能想要使用[自訂範本](configure-custom-templates.md)讓使用者更容易將資訊保護套用至檔案，藉由安裝 [ 連接器](deploy-rms-connector.md)來連接您的內部部署伺服器以使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，並且部署 [Rights Management 共用應用程式](../rms-client/sharing-app-windows.md)，支援保護所有裝置上的所有檔案類型。 
@@ -81,6 +81,6 @@ Office 服務 (例如 Exchange Online 及and SharePoint Online) 都需要先進�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

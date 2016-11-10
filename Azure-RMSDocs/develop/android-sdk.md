@@ -14,24 +14,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 90c8c97c720c624ba8f1ca7703b6c79a66f77d08
+ms.sourcegitcommit: ff3b1ce2ec5984c1e79bc9d10c5fc913b4fd3291
+ms.openlocfilehash: 1925eb3a630f61e995886989ad351a8263c9779f
 
 
 ---
 
-# Android 設定
+# <a name="android-setup"></a>Android 設定
 
 Android 應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 
 本主題將引導您設定您的環境，以建立您自己的新應用程式。
 
 -   [必要條件](#prerequisites)
--   [選用](#optional)
+-   [選擇性](#optional)
 -   [設定您的開發環境](#configuring-your-development-environment)
 -   [另請參閱](#see-also)
 
-## 必要條件
+## <a name="prerequisites"></a>必要條件
 
 建議您在開發系統上使用下列軟體︰
 
@@ -56,11 +56,11 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 如需 API 更新、版本資訊和常見問題集 (FAQ) 等相關資訊，請參閱[最新消息](release-notes.md)。
 
-## 選用
+## <a name="optional"></a>選用
 
 我們的 UI 程式庫提供可重複使用的 UI，適用於不想要建立其自己的自訂 UI 之開發人員的耗用和保護作業 - [Android 的 UI 程式庫與範例應用程式](https://github.com/AzureAD/rms-sdk-ui-for-android)。
 
-## 設定您的開發環境
+## <a name="configuring-your-development-environment"></a>設定您的開發環境
 
 **注意**  MS RMS SDK 4.2 預覽版本︰在此預覽版本中，尚未更新螢幕擷取畫面來顯示從 com/microsoft/protection 到 com/microsoft/rightsmanagment 之路徑名稱中的變更。 不過已更新文字。
 
@@ -134,13 +134,13 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 -   您現在已準備好建立您自己的新 Android 應用程式。
 
-### 另請參閱
+### <a name="see-also"></a>另請參閱
 
 [開始使用](get-started.md)
 
 [新功能](release-notes.md)
 
-[開發人員詞彙和概念](core-concepts.md)
+[開發人員詞彙及概念](core-concepts.md)
 
 [Android API 參考](https://msdn.microsoft.com/library/dn758245.aspx)
 
@@ -150,6 +150,6 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

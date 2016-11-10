@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3d5d920f628bc39c4c280afa53be0b7199433803
+ms.sourcegitcommit: 04234755fabb10794f5be7c4fc658573bebf6e70
+ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 
 ---
@@ -32,38 +32,33 @@ ms.openlocfilehash: 3d5d920f628bc39c4c280afa53be0b7199433803
 
 您用來設定特定內容之文件追蹤的步驟順序如下︰
 
--   建立**授權中繼資料**物件。
+-   建立**授權中繼資料**物件，然後設定**內容名稱**和**通知類型**。 這些是唯一的必要的屬性。
+   - Android - [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx)
+   -  iOS - [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx)
 
-    如需詳細資訊，請參閱 [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) 或 [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc)。
+選擇原則類型；範本或臨機操作︰
+- 針對以文件追蹤為基礎的範本，請建立傳遞授權中繼資料做為參數的**使用者原則**。
+  - Android - [UserPolicy.create](https://msdn.microsoft.com/library/dn790887.aspx)
+  - iOS - [MSUserPolicy.userPolicyWithTemplateDescriptor](https://msdn.microsoft.com/library/dn790808.aspx)
 
--   設定**內容名稱**和**通知類型**。 這些是唯一的必要的屬性。
-
-    如需詳細資訊，請參閱平台適當授權中繼資料類別的屬性存取方法，[**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) 或 [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc)。
-
--   根據原則類型；範本或臨機操作︰
-
-    -   針對以文件追蹤為基礎的範本，請建立傳遞授權中繼資料做為參數的**使用者原則**。
-
-        如需詳細資訊，請參閱 [**UserPolicy.create**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_class_java) 和 [**MSUserPolicy.userPolicyWithTemplateDescriptor**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_templatedescriptor_property_objc)。
-
-    -   針對以臨機操作為基礎的文件追蹤，請在**原則描述元**物件上設定**授權中繼資料**屬性。
-
-        如需詳細資訊，請參閱 [**PolicyDescriptor.getLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)、[**PolicyDescriptor.setLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) 和 [**MSPolicyDescriptor.licenseMetadata**](/information-protection/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc)。
+- 針對以臨機操作為基礎的文件追蹤，請在**原則描述元**物件上設定**授權中繼資料**屬性。
+  - Android - [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
+  - iOS - [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx)。
 
     **注意**  只有在針對指定使用者原則設定文件追蹤的過程期間，才能直接存取授權中繼資料物件。 建立使用者原則物件之後，無法存取相關聯的授權中繼資料，也就是變更授權中繼資料的值沒有任何作用。
 
      
 
--   文件追蹤的呼叫平台註冊方法。
-
-    請參閱 [**MSUserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc) 或 [**UserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc)。
-
- 
+-   最後，呼叫平台註冊方法以追蹤文件。
+  - Android - [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) 或 [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)
+  - iOS - [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)
 
  
 
+ 
 
 
-<!--HONumber=Oct16_HO1-->
+
+<!--HONumber=Oct16_HO3-->
 
 

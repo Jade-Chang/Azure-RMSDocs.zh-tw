@@ -3,7 +3,7 @@ title: "從 AD RMS 移轉至 Azure 資訊保護 - 第 2 階段 | Azure 資訊保
 description: "從 AD RMS 移轉至 Azure 資訊保護的第 2 階段，涵蓋從 AD RMS 移轉至 Azure 資訊保護的步驟 5。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: c10e8b46fae2158e561421e8e5090d0cd9edbb83
+ms.sourcegitcommit: 25f7c2e5eb226fcf7c30026a37a767e559a522ad
+ms.openlocfilehash: 810e540e02db0b4a142471dd89e30663bd61f22c
 
 
 ---
@@ -39,6 +39,8 @@ ms.openlocfilehash: c10e8b46fae2158e561421e8e5090d0cd9edbb83
 
     > [!IMPORTANT]
     > 上述指示包含使用您自己的 AD RMS 伺服器位址取代 **adrms** 和 **adrms.contoso.com** 範例位址。 當您執行這項動作時，請務必確認位址之前或之後都沒有任何其他空格，以免中斷移轉指令碼並造成難以識別的問題根本原因。 有些編輯工具會自動在貼上文字之後加入一個空格。
+    >
+    > 此外，如果 AD RMS 伺服器使用 SSL/TLS 伺服器憑證，請檢查授權 URL 值在字串中是否包含通訊埠編號 **443**。 例如：https:// rms.treyresearch.net:443/_wmcs/licensing。 當您按一下叢集名稱並檢視 [叢集詳細資料] 資訊時，您會在 Active Directory Rights Management Services 主控台中找到此資訊。 如果 URL 中有連接埠號碼 443，修改指令碼請包含此值。 例如：https://rms.treyresearch.net**:443**。
 
 3. 如果使用者擁有 Office 2016︰指令碼尚未更新為包含 Office 2016 的設定，因此如果使用者具有這個版本的 Office，就必須手動更新指令碼︰
 
@@ -131,6 +133,6 @@ Redirect_OnPrem.cmd：
 若要繼續移轉，請移至[第 3 階段 - 支援服務組態](migrate-from-ad-rms-phase3.md)。
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

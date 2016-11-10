@@ -12,16 +12,16 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3b4cd04732e38da31bf31d899993c912694e3ee8
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 88b03e5e844e78db5dc8ac5f116d19899c5f354f
 
 
 ---
 
 
-# Microsoft Rights Management 共用應用程式技術概觀與保護詳細資料
+# <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 共用應用程式技術概觀與保護詳細資料
 
->*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用對象︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 
 Microsoft Rights Management 共用應用程式是可選擇性下載的應用程式，適用於 Microsoft Windows 和其他提供下列功能的平台：
@@ -42,7 +42,7 @@ Microsoft Rights Management 共用應用程式使用 [AD RMS Client 2.1 執行�
 
 如需部署資訊，請參閱[自動部署 Microsoft Rights Management 共用應用程式](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)
 
-## 保護的層級 – 原生和一般
+## <a name="levels-of-protection-native-and-generic"></a>保護的層級 – 原生和一般
 Microsoft Rights Management 共用應用程式支援兩個不同的層級的保護，如下表所述。
 
 |保護類型|原生|泛型|
@@ -52,7 +52,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 |預設檔案類型|這是下列檔案類型的預設保護層級：<br /><br />- 文字和影像檔案<br /><br />- Microsoft Office (Word、Excel、PowerPoint) 檔案<br /><br />- 可攜式文件格式 (.pdf)<br /><br />如需詳細資訊，請參閱下一節的[支援的檔案類型與副檔名](#supported-file-types-and-file-name-extensions)。|這是完整保護不支援的所有其他檔案類型 (如 .vsdx、.rtf 等等) 的預設保護。|
 您可以變更 RMS 共用應用程式套用的預設保護層級。 您可以將預設的原生層級變更為一般、從一般變更為原生，甚至阻止 RMS 共用應用程式套用保護。 如需詳細資訊，請參閱本文章中的[變更檔案的預設保護層級](#changing-the-default-protection-level-of-files)一節。
 
-## 支援的檔案類型與副檔名
+## <a name="supported-file-types-and-file-name-extensions"></a>支援的檔案類型與副檔名
 下表列出 Microsoft Rights Management 共用應用程式原生支援的檔案類型。 當套用原生保護時，這些類型檔案的原始副檔名會變更，且這些檔案會變成唯讀。
 
 此外，當 RMS 共用應用程式原生保護使用者藉由共用保護的 Word、Excel 或 PowerPoint 檔案，這個動作會自動建立第二個檔案，它是原始檔案的副本，具有相同的檔案名稱，但副檔名為 **.ppdf**。 這個版本的檔案可確保安裝了 RMS 共用應用程式的收件者可以隨時開啟已套用原生保護的檔案。
@@ -86,7 +86,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
-### 變更檔案的預設保護層級
+### <a name="changing-the-default-protection-level-of-files"></a>變更檔案的預設保護層級
 您可以編輯登錄來變更 RMS 共用應用程式對檔案的保護。 例如，您可以強制支援原生保護的檔案受到 RMS 共用應用程式的一般保護。
 
 您會這樣做的可能原因有：
@@ -107,7 +107,7 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
     此設定表示具有任何副檔名的檔案。
 
-2.  在新增的金鑰 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\* 中，建立 (REG_SZ) 名為 **Encryption** 的新字串值，且其資料值為 **Pfile**。
+2.  在新增的金鑰 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\* 中，建立 (REG_SZ) 名為 **Encryption** 的新字串值，並將其資料值設為 **Pfile**。
 
     這項設定會導致 RMS 共用應用程式套用一般保護。
 
@@ -133,12 +133,12 @@ Microsoft Rights Management 共用應用程式支援兩個不同的層級的保�
 
 -   **Off**：封鎖保護
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

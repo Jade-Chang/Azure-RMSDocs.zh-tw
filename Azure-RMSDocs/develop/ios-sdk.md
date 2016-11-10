@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
+ms.sourcegitcommit: 7c0b885c35dcac0237788a69486d8f736c97c0c4
+ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
 
 
 ---
 
-# iOS 和 OS X 設定
+# <a name="ios-and-os-x-setup"></a>iOS 和 OS X 設定
 
 iOS 和 OS X 應用程式可以藉由使用 Azure Rights Management (Azure RMS)，使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 
@@ -30,11 +30,11 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Rights Management (Azure RMS)�
 
 
 -   [必要條件](#prerequisites)
--   [選用](#optional)
+-   [選擇性](#optional)
 -   [設定您的開發環境](#configuring-your-development-environment)
 -   [另請參閱](#see-also)
 
-## 必要條件
+## <a name="prerequisites"></a>必要條件
 
 建議您在開發系統上使用下列軟體︰
 
@@ -53,11 +53,11 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Rights Management (Azure RMS)�
 
 如需 API 更新、版本資訊和常見問題集 (FAQ) 等相關資訊，請參閱[最新消息](release-notes.md)。
 
-## 選用
+## <a name="optional"></a>選用
 
 我們的 UI 程式庫提供可重複使用的 UI，適用於不想要建立其自己的自訂 UI 之開發人員的耗用和保護作業 - [iOS 的 UI 程式庫與範例應用程式](https://github.com/AzureAD/rms-sdk-ui-for-ios)。
 
-## 設定您的開發環境
+## <a name="configuring-your-development-environment"></a>設定您的開發環境
 
 -   若要建立新專案，請在 [檔案] 功能表上按一下 [新增]，然後按一下 [專案]。
 -   選取 [單一檢視應用程式]。
@@ -100,13 +100,13 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Rights Management (Azure RMS)�
 
 -   您現在已準備好建立您自己的新 iOS/OS X 應用程式。
 
-### 另請參閱
+### <a name="see-also"></a>另請參閱
 
 * [開始使用](get-started.md)
 
 * [新功能](release-notes.md)
 
-* [開發人員詞彙和概念](core-concepts.md)
+* [開發人員詞彙及概念](core-concepts.md)
 
 * [iOS / OS X API 參考](https://msdn.microsoft.com/library/dn758306.aspx)
 
@@ -116,6 +116,6 @@ iOS 和 OS X 應用程式可以藉由使用 Azure Rights Management (Azure RMS)�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

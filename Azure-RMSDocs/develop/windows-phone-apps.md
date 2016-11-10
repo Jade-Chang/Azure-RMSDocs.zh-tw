@@ -14,24 +14,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 148cefbe973eadebf942c826ac19c0ee34823c89
+ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
+ms.openlocfilehash: 790f0d847c57b9e13d9074298b3e89584dc24760
 
 
 ---
 
-# Windows Phone 設定
+# <a name="windows-phone-setup"></a>Windows Phone 設定
 
 
 Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 
 本主題將引導您設定您的環境，以建立您自己的新應用程式。
 
--   [先決條件](#prerequisites)
+-   [必要條件](#prerequisites)
 -   [設定您的開發環境](#configuring-your-development-environment)
 -   [另請參閱](#see-also)
 
-## 必要條件
+## <a name="prerequisites"></a>必要條件
 
 
 您的開發系統必須使用下列軟體︰
@@ -46,7 +46,7 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 檢閱 Windows Phone 開發人員中心的 [Windows Phone 開發](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)指南中的資訊。
 
-## 設定您的開發環境
+## <a name="configuring-your-development-environment"></a>設定您的開發環境
 
 
 -   開啟 *Visual Studio*。
@@ -60,7 +60,7 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
     ![新增參考](../media/wpsetup-addref.png)
 
 -   按一下 [加入參考] 對話方塊左側的 [瀏覽]，然後選取位於您解壓縮封裝的資料夾中的 *Microsoft.RightsManagment.dll* 檔案。
--   **受管理應用程式** - 若要建置受管理應用程式，您必須新增此參考；選取 **[Windows 8.1]**-&gt;**[擴充功能]** 以及 **[適用於 Windows 的 Windows Visual C++ 執行階段封裝]** 核取方塊。
+-   **受管理的應用程式** - 若要建置受管理的應用程式，必須新增此參考，並依序選取 [Windows 8.1] -&gt; [延伸模組] 及 [Windows Visual C++ Runtime Package for Windows] 核取方塊
 
     ![新增擴充功能](../media/wpsetup-refmngr.png)
 
@@ -68,7 +68,7 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 您現在已準備好建立您自己的新 Windows Phone 應用程式。
 
-### 另請參閱
+### <a name="see-also"></a>另請參閱
 
 [開始使用](get-started.md)
 
@@ -93,6 +93,6 @@ Windows Phone 應用程式可以藉由使用 Azure Active Directory Rights Manag
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

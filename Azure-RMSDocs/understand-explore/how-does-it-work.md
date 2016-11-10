@@ -19,9 +19,9 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 ---
 
 
-# Azure RMS 如何運作？ 背後原理
+# <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 如何運作？ 背後原理
 
->*適用於︰Azure 資訊保護、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 了解 Azure RMS 運作方式的一大要點就是 Rights Management 服務 (和 Microsoft) 不會在資訊保護程序中查看或儲存您的資料。 您所保護的資訊永遠不會傳送至或儲存在 Azure 中，除非您明確地將它儲存在 Azure 中，或使用將它儲存在 Azure 中的另一項雲端服務。 Azure RMS 只是讓授權使用者和服務以外的任何人都無法讀取文件中的資料：
 
@@ -39,7 +39,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 如需 Azure RMS 使用的演算法和金鑰長度技術詳細資訊，請參閱下一節。
 
-## Azure RMS 使用的密碼編譯控制項：演算法和金鑰長度
+## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS 使用的密碼編譯控制項：演算法和金鑰長度
 即使您本身不需要知道 RMS 運作方式，但系統可能會詢問您有關它所使用的密碼編譯控制項，以確定安全性保護符合業界標準。
 
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 |演算法：RSA<br /><br />金鑰長度：2048 位元|金鑰保護|
 |SHA-256|憑證簽署|
 
-###### 註腳 1 
+###### <a name="footnote-1"></a>註腳 1 
 
 當檔案的副檔名為 .ppdf，或檔案為受保護的文字檔或影像檔時 (例如 .ptxt 或 .pjpg)，Rights Management 共用應用程式會使用 256 位元進行一般保護與原生保護。
 
@@ -65,7 +65,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 
 
-## Azure RMS 運作方式的逐步解說：第一次使用、內容保護、內容取用
+## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 運作方式的逐步解說：第一次使用、內容保護、內容取用
 為了進一步了解 Azure RMS 運作方式，讓我們逐步執行在[啟用 Azure Rights Management Service](../deploy-use/activate-service.md) 之後，以及當使用者第一次在其 Windows 電腦上使用 Rights Management Service (有時候也稱為**初始化使用者環境**或啟動載入程序)、**保護內容** (文件或電子郵件)，然後**取用** (開啟並使用) 其他人所保護之內容的一般流程。
 
 初始化使用者環境之後，該使用者可接著保護文件或取用該電腦上受保護的文件。
@@ -73,7 +73,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 > [!NOTE]
 > 如果此使用者移到另一部 Windows 電腦，或另一位使用者使用同一部 Windows 電腦，則會重複進行初始化程序。
 
-### 初始化使用者環境
+### <a name="initializing-the-user-environment"></a>初始化使用者環境
 必須在裝置上備妥使用者環境，使用者才能保護內容或取用 Windows 電腦上受保護的內容。 這是一次性程序，而且當使用者嘗試保護或取用受保護的內容時，不需要使用者介入即自動發生：
 
 ![RMS 用戶端啟用 - 步驟 1](../media/AzRMS.png)
@@ -88,7 +88,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 
 Azure 會儲存一份使用者的憑證，如果使用者移至另一個裝置，即可使用相同的金鑰建立憑證。
 
-### 內容保護
+### <a name="content-protection"></a>內容保護
 當使用者保護文件時，RMS 用戶端會對未受保護的文件採取下列動作：
 
 ![RMS 文件保護 - 步驟 1](../media/AzRMS_documentprotection1.png)
@@ -107,7 +107,7 @@ RMS 用戶端會接著使用在初始化使用者環境時取得的組織金鑰�
 
 這份文件可以儲存在任何地方或使用任何方法進行共用，而且原則永遠與加密的文件並存。
 
-### 內容取用
+### <a name="content-consumption"></a>內容取用
 當使用者想要取用受保護的文件時，RMS 用戶端會先要求 Azure Rights Management Service 的存取權以開始作業：
 
 ![RMS 文件使用 - 步驟 1](../media/AzRMS_documentconsumption1.png)
@@ -126,7 +126,7 @@ RMS 用戶端會接著使用在初始化使用者環境時取得的組織金鑰�
 
 用戶端也會解密權限清單並將其傳遞至應用程式，以在應用程式的使用者介面中強制執行這些權限。
 
-### 變化
+### <a name="variations"></a>變化
 先前的逐步解說內容涵蓋了標準案例，但另外有一些變化案例：
 
 -   **行動裝置**：當行動裝置透過 Azure Rights Management Service 保護或取用檔案時，程序流程會簡單許多。 行動裝置不會先經過使用者初始化程序，因為每項交易 (用以保護或取用內容) 都是獨立的。 在 Windows 電腦中，行動裝置會連接至 Azure Rights Management Service 並進行驗證。 若要保護內容，行動裝置會提交一個原則，Azure Rights Management Service 即可將用以保護文件的發佈授權和對稱金鑰傳送給行動裝置。 若要取用內容，行動裝置會在連接至 Azure Rights Management Service 並進行驗證時，將此文件原則傳送給 Azure Rights Management Service 並要求取用文件的使用授權。 Azure Rights Management Service 會將必要的金鑰和限制傳送給行動裝置，作為回應。 這兩個程序都使用 TLS 來保護金鑰交換和其他通訊。
@@ -137,7 +137,7 @@ RMS 用戶端會接著使用在初始化使用者環境時取得的組織金鑰�
 
 -   **受保護的 PDF (.ppdf)**：當 Azure Rights Management Service 以原生方式保護 Office 檔案時，也會建立該檔案的複本並以同樣的方式予以保護。 唯一的差別在於檔案複本為 PPDF 檔案格式，而 RMS 共用應用程式知道如何開啟該種檔案格式僅供檢視。 這種情況下，您可透過電子郵件傳送受保護的附件，而且即使行動裝置沒有原本支援受保護 Office 檔案的應用程式，行動裝置上的收件者仍舊可以讀取附件。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
 若要深入了解 Azure Rights Management Service，請參閱**了解和探索**一節中的其他文章 (例如[應用程式如何支援 Azure Rights Management Service](applications-support.md))，了解現有應用程式如何與 Azure Rights Management Service 整合，以提供資訊保護解決方案。 
 
@@ -150,6 +150,6 @@ RMS 用戶端會接著使用在初始化使用者環境時取得的組織金鑰�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
