@@ -2,6 +2,7 @@
 title: "Rights Management 共用應用程式技術概觀 | Azure Information Protection"
 description: "適用於企業網路中負責部署適用於 Windows 的 RMS 共用應用程式之系統管理員的技術詳細資料。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

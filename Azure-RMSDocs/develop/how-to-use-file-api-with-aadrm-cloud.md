@@ -3,6 +3,7 @@ title: "如何允許您的服務應用程式使用雲端式 RMS | Azure RMS"
 description: "本主題概述設定服務應用程式以使用 Azure Rights Management 的步驟。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

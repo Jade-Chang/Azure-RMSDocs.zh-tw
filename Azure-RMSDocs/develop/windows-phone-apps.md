@@ -3,6 +3,7 @@ title: "Windows Phone 設定 | Azure RMS"
 description: "Windows Phone 應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

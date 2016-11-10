@@ -2,6 +2,7 @@
 title: "最新消息和版本資訊 | Azure RMS"
 description: "概述這個新版 RMS SDK 中的重要變更與功能。"
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/31/2016
 ms.topic: article

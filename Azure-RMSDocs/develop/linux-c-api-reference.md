@@ -3,6 +3,7 @@ title: "Linux API 參考 | Azure RMS"
 description: "Linux 式作業系統支援的 API 參考裝載於 Github 上。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: 12d7f276a489284586f45d34407ecc48b1b4b2ce
 
 ---
 
-# Linux API 參考
+# <a name="linux-api-reference"></a>Linux API 參考
 
 Linux 式作業系統支援的 API 參考裝載於 Github 上 - [RMS SDK for C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)。 如需詳細資訊，請參閱[開始使用](get-started.md)。
 

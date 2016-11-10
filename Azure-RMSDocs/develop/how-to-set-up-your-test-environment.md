@@ -3,6 +3,7 @@ title: "測試您的應用程式 | Azure RMS"
 description: "有關如何設定應用程式以供測試的指示。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
