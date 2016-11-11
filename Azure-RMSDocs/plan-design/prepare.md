@@ -2,6 +2,7 @@
 title: "準備 Azure Rights Management 保護 | Azure Information Protection"
 description: "檢查使用 Azure Rights Management Service 的所有項目皆已就緒，讓貴組織可以保護文件和電子郵件。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 46db6ef6f65a06c42909252cf99884cc5eaaefe4
-ms.openlocfilehash: 5a3df821c70b8cd308f8fb8cc94ee0cff069a3d9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: facb9bd0d21551e9170cd9be6e9abda24766f9fd
 
 
 ---
 
-# 準備 Azure Information Protection
+# <a name="preparing-for-azure-information-protection"></a>準備 Azure 資訊保護
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 為貴組織部署 Azure Information Protection 之前，請確定下列事項皆已就緒︰
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: 5a3df821c70b8cd308f8fb8cc94ee0cff069a3d9
 
     如果您有 Exchange Online，您可以使用 Exchange 系統管理中心，建立和使用擁有郵件功能的群組。 如果您有 AD DS 且正在同步處理至 Azure AD，您可以建立和使用屬於安全性群組或通訊群組之擁有郵件功能的群組。
 
-## 啟用 Rights Management Service 來保護資料
+## <a name="activate-the-rights-management-service-for-data-protection"></a>啟用 Rights Management Service 來保護資料
 當您準備好開始保護文件和電子郵件時，請啟動 Rights Management Service 以啟用這項技術。 如需詳細資訊，請參閱[啟用 Azure Rights Management](../deploy-use/activate-service.md)。
 
 
@@ -40,6 +41,6 @@ ms.openlocfilehash: 5a3df821c70b8cd308f8fb8cc94ee0cff069a3d9
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
