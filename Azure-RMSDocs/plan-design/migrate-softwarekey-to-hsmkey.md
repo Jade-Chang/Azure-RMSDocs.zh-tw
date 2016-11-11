@@ -2,8 +2,9 @@
 title: "步驟 2：軟體保護的金鑰移轉至 HSM 保護的金鑰 | Azure Information Protection"
 description: "這些指示屬於將路徑從 AD RMS 移轉至 Azure Information Protection，且只有在您的 AD RMS 金鑰是受軟體所保護，而且您想要使用 Azure 金鑰保存庫中受 HSM 保護的租用戶金鑰來移轉至 Azure Information Protection 時才適用。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +13,20 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 54e759108ecca7a049190823c3874451d7104fc4
 
 
 ---
 
-# 步驟 2：軟體保護的金鑰移轉至 HSM 保護的金鑰
+# <a name="step-2-softwareprotected-key-to-hsmprotected-key-migration"></a>步驟 2：軟體保護的金鑰移轉至 HSM 保護的金鑰
 
->*適用於︰Active Directory Rights Management Services、Azure Information Protection*
+>*適用於︰Active Directory Rights Management Services、Azure 資訊保護*
 
 
 這些指示屬於[將路徑從 AD RMS 移轉至 Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md)，且只有在您的 AD RMS 金鑰是受軟體所保護，而且您想要使用 Azure 金鑰保存庫中受 HSM 保護的租用戶金鑰來移轉至 Azure Information Protection 時才適用。 
 
-如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出設定資料，並將它匯入 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)，然後選擇不同的設定。
+如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出設定資料，並將它匯入 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)，然後選擇不同的設定。
 
 其為四部分的程序，可將 AD RMS 組態匯入 Azure Information Protection，以產生由您在 Azure 金鑰保存庫中管理的 Azure Information Protection 租用戶金鑰 (BYOK)。
 
@@ -40,7 +41,7 @@ ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
 > 若您將進行 Azure 金鑰保存庫的設定步驟，但不熟悉這項 Azure 服務，建議您先檢閱[開始使用 Azure 金鑰保存庫](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)。 
 
 
-## 第 1 篇：從設定資料中擷取 SLC 金鑰，並將金鑰匯入內部部署 HSM
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-onpremises-hsm"></a>第 1 篇：從設定資料中擷取 SLC 金鑰，並將金鑰匯入內部部署 HSM
 
 1.  Azure 金鑰保存庫系統管理員︰使用 Azure 金鑰保存庫文件[實作 Azure 金鑰保存庫的自備金鑰 (BYOK)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 章節中的下列步驟︰
 
@@ -83,25 +84,25 @@ ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
 
     這將會產生類似下列的輸出顯示︰
 
-    **金鑰產生參數︰**
+    **金鑰產生參數:**
 
-    **作業 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要執行的作業 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 匯入**
+    **operation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 要執行的作業 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; import**
 
-    **應用程式 &nbsp;&nbsp;&nbsp;&nbsp;應用程式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 簡易**
+    **application &nbsp;&nbsp;&nbsp;&nbsp;應用程式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; simple**
 
-    **驗證 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 驗證設定金鑰的安全性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 是**
+    **verify &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 證設定金鑰的安全性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yes**
 
-    **類型 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 金鑰類型 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSA**
+    **type &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 金鑰類型 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RSA**
 
     **pemreadfile &nbsp;&nbsp; PEM 檔案，其中內含 RSA 金鑰 &nbsp;&nbsp; e:\ContosoTPD.pem**
 
-    **ident &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 金鑰識別碼 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contosobyok**
+    **ident &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 金鑰識別元 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contosobyok**
 
     **plainname &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 金鑰名稱 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ContosoBYOK**
 
     **已成功匯入金鑰。**
 
-    **金鑰路徑︰C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
+    **金鑰路徑: C:\ProgramData\nCipher\Key Management Data\local\key_simple_contosobyok**
 
 此輸出確認私密金鑰現已移轉至內部部署 Thales HSM 裝置，且加密複本已儲存至金鑰 (在本例中為 "key_simple_contosobyok")。 
 
@@ -110,7 +111,7 @@ ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
 > [!IMPORTANT]
 > 完成此步驟後，請安全地從中斷連線的工作站清除這些 PEM 檔案，以確保未經授權的人員無法加以存取。 例如，執行 "cipher /w:E" 以便安全地從 E: 磁碟機刪除所有檔案。
 
-## 第 2 篇：將 HSM 金鑰封裝並傳輸至 Azure 金鑰保存庫
+## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>第 2 篇：將 HSM 金鑰封裝並傳輸至 Azure 金鑰保存庫
 
 1.  Azure 金鑰保存庫系統管理員︰使用 Azure 金鑰保存庫文件[實作 Azure 金鑰保存庫的自備金鑰 (BYOK)](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 章節中的下列步驟︰
 
@@ -126,7 +127,7 @@ ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
 
     現在您已將 HSM 金鑰傳輸至 Azure 金鑰保存庫，可開始匯入您的 AD RMS 設定資料。
 
-## 第 3 篇：將組態資料匯入 Azure Information Protection
+## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>第 3 篇：將組態資料匯入 Azure Information Protection
 
 1.  Azure Information Protection 系統管理員：在網際網路連線的工作站上及 PowerShell 工作階段中，複製在執行 TpdUtil 工具後移除 SLC 金鑰的新組態資料檔 (.xml)。
 
@@ -146,23 +147,23 @@ ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
 
 
 
-3.  使用 [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) Cmdlet 來中斷 Azure Rights Management Service 的連線：
+3.  使用 [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) Cmdlet 來中斷 Azure Rights Management Service 的連線：
 
     ```
     Disconnect-AadrmService
     ```
 
     > [!NOTE]
-    > 若您稍後需要確認 Azure Information Protection 租用戶金鑰在 Azure 金鑰保存庫中使用哪個金鑰，請使用 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS Cmdlet。
+    > 若您稍後需要確認 Azure 資訊保護租用戶金鑰在 Azure 金鑰保存庫中使用哪個金鑰，請使用 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS Cmdlet。
 
 
-您現在可以繼續進行[步驟 3：啟用 Azure Information Protection 租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
-
-
-
+您現在可以繼續進行[步驟 3：啟用 Azure 資訊保護租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+
+<!--HONumber=Nov16_HO1-->
 
 

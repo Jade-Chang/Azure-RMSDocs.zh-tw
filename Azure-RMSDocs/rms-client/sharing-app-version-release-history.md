@@ -2,8 +2,9 @@
 title: "Rights Management 共用應用程式：版本發行記錄 | Azure Information Protection"
 description: "查看適用於 Windows 的 Rights Management 共用應用程式版本有哪些新功能或變更。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +13,15 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 31b9ad27e1fc640f8fec29067794f952aa6031b6
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 08ca0de6802aa001e5e2bcf7637592c2ad68864d
 
 
 ---
 
-# Rights Management 共用應用程式：版本發行記錄
+# <a name="rights-management-sharing-application-version-release-history"></a>Rights Management 共用應用程式：版本發行記錄
 
->*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure 資訊保護、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 Azure Information Protection 小組會定期更新 Rights Management 共用應用程式以進行修正和新增功能。 使用下列資訊查看版本的新功能或變更。 最新的版本會先列出。
 
@@ -29,7 +30,7 @@ Azure Information Protection 小組會定期更新 Rights Management 共用應�
 > [!NOTE]
 > 如果您有任何與 RMS 共用應用程式相關的意見反應或疑問，請將電子郵件訊息傳送至 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)。
 
-## 1.0.2217.0 版
+## <a name="version-1022170"></a>1.0.2217.0 版
 
 **發行日期**：2016 年 7 月 13 日
 
@@ -39,7 +40,7 @@ Azure Information Protection 小組會定期更新 Rights Management 共用應�
 
 
 
-## 1.0.2191.0 版
+## <a name="version-1021910"></a>1.0.2191.0 版
 **發行日期**：2016 年 6 月 16 日
 
 **修正**：
@@ -53,7 +54,7 @@ Azure Information Protection 小組會定期更新 Rights Management 共用應�
 - 錯誤訊息的少量輕微錯誤與改進。
 
 
-## 版本 1.0.2004.0
+## <a name="version-1020040"></a>版本 1.0.2004.0
 **發行日期**：2015 年 12 月 11 日
 
 **修正**：
@@ -72,16 +73,16 @@ Azure Information Protection 小組會定期更新 Rights Management 共用應�
 
     執行 Office 2010 的標準使用者會有一些限制。 如需詳細資訊，請參閱[下載並安裝 Rights Management 共用應用程式](install-sharing-app.md)使用者指示中的[如果不是本機系統管理員，而且使用 Office 2010](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010)一節。
 
-## 1.0.1908.0 版
+## <a name="version-1019080"></a>1.0.1908.0 版
 **發行日期**：2015 年 9 月 16 日
 
 **修正**：
 
 -   支援 Azure RMS 的多因素驗證 (MFA)，該驗證也會移除使用新式驗證之應用程式對 Microsoft 登入小幫手的相依性。
 
-    如需詳細資訊，請參閱 [Azure Rights Management 的需求](../get-started/requirements-azure-rms.md)主題中的[多因素驗證 (MFA) 與 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 一節。
+    如需詳細資訊，請參閱 [Azure 資訊保護的 Azure Active Directory 需求](../get-started/requirements-azure-ad.md)中的[多重要素驗證 (MFA) 與 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) 一節。
 
-## 1.0.1784.0 版
+## <a name="version-1017840"></a>1.0.1784.0 版
 **發行日期**：2015 年 7 月 30 日
 
 **修正**：
@@ -90,7 +91,7 @@ Azure Information Protection 小組會定期更新 Rights Management 共用應�
 
 -   少數回復和次要的 bug。
 
-## 1.0.1770.0 版
+## <a name="version-1017700"></a>1.0.1770.0 版
 **發行日期**：2015 年 4 月 25 日
 
 **修正**：
@@ -113,7 +114,7 @@ Azure Information Protection 小組會定期更新 Rights Management 共用應�
 
     如需詳細資訊，請參閱 [Rights Management 共用應用程式的對話方塊選項](sharing-app-dialog-box.md)。
 
-## 1.0.1667.0 版
+## <a name="version-1016670"></a>1.0.1667.0 版
 **發行日期**：2015 年 1 月 19 日
 
 **修正**：
@@ -131,6 +132,6 @@ Azure Information Protection 小組會定期更新 Rights Management 共用應�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
