@@ -3,6 +3,7 @@ title: "開發人員指南 | Azure RMS"
 description: "開發人員工具使用概觀；SDK、額外程式庫和程式碼範例。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c50775c43aea8950ca9c560c61712ffbbede8599
-ms.openlocfilehash: 442dd2e6b3487964d5740c533894aa4de30f00ab
+ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
+ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
 
 
 ---
@@ -63,12 +64,12 @@ ms.openlocfilehash: 442dd2e6b3487964d5740c533894aa4de30f00ab
 [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 和更新版 2.x SDK 支援 Windows 桌面上執行的下列元件。
 
 - [讀取 PFILE 保護的 PDF](https://blogs.msdn.microsoft.com/rms/2015/11/09/reading-a-pfile-protected-pdf/) 是我們的 RMS 開發人員的專屬部落格上的簡單程式碼範例，其使用 MSIPC 檔案 API 來解密並開啟 PFILE 保護的 PDF 文件。
-- [IpcManagedAPI](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是為了方便受管理應用程式啟用 RMS 的 RMS SDK 2.1 的 .NET (C#) 表示法。
-- [IPCNotepad](https://code.msdn.microsoft.com/ipcnotepad-sample-f67dae80) 是啟用 RMS 的應用程式範例，會帶領您完成每個啟用 RMS 的應用程式在保護和取用受限制的內容時應執行的基本步驟。
-- [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是啟用 RMS 的資料流失防護 (DLP) 應用程式範例，會帶領您使用檔案 API 來保護和取用受限制的內容時，啟用 DLP RMS 的應用程式應執行的基本步驟。
-- [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是示範如何在 Azure 應用程式中使用 RMS SDK，以保護 Azure Blob 儲存體中資料的範例。
-- [RmsDocumentInspector](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是可提供任何 RMS 保護檔案相關資訊的工具，例如內容識別碼或使用者權限。
-- [RmsFileWatcher](https://github.com/Azure-Samples/active-directory-dotnet-rms) 是範例，示範如何建置 Windows 應用程式，在檔案系統中監看目錄，並在每次變更 RMS 保護原則，例如新增檔案或修改檔案。
+- [IpcManagedAPI](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcManagedAPI) 是為了方便受管理應用程式啟用 RMS 的 RMS SDK 2.1 的 .NET (C#) 表示法。
+- [IPCNotepad](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcNotepad) 是啟用 RMS 的應用程式範例，會帶領您完成每個啟用 RMS 的應用程式在保護和取用受限制的內容時應執行的基本步驟。
+- [IpcDlp](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcDlpApp) 是啟用 RMS 的資料流失防護 (DLP) 應用程式範例，會帶領您使用檔案 API 來保護和取用受限制的內容時，啟用 DLP RMS 的應用程式應執行的基本步驟。
+- [IpcAzureApp](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcAzureApp) 是示範如何在 Azure 應用程式中使用 RMS SDK，以保護 Azure Blob 儲存體中資料的範例。
+- [RmsDocumentInspector](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/RmsDocumentInspector) 是可提供任何 RMS 保護檔案相關資訊的工具，例如內容識別碼或使用者權限。
+- [RmsFileWatcher](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/RmsFileWatcher) 是範例，示範如何建置 Windows 應用程式，在檔案系統中監看目錄，並在每次變更 RMS 保護原則，例如新增檔案或修改檔案。
 
 ### <a name="windows-store-and-phone"></a>Windows 市集和 Phone
 
@@ -80,6 +81,6 @@ ms.openlocfilehash: 442dd2e6b3487964d5740c533894aa4de30f00ab
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
