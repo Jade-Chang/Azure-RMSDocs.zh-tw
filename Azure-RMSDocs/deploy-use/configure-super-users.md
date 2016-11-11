@@ -2,6 +2,7 @@
 title: "設定 Azure Rights Management 和探索服務或資料復原的進階使用者 | Azure Information Protection"
 description: "了解並實作 Azure Information Protection 之 Azure Rights Management Service 的進階使用者功能，以便獲得授權的人員和服務可以永遠讀取及檢查 Azure Rights Management 為貴組織保護的資料。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d2ae8df5895b1cf1985420be25abac36fe2689b7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 70c74678ec0ef0b583b2784177520d0ea8a5b7e8
 
 
 ---
 
-# 設定 Azure Rights Management 和探索服務或資料復原的進階使用者
+# <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>設定 Azure Rights Management 和探索服務或資料復原的進階使用者
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 Azure Information Protection 之 Azure Rights Management Service 的進階使用者功能可確保獲得授權的人員和服務可以永遠讀取及檢查 Azure Rights Management 為貴組織保護的資料。 並且視需要移除保護或變更先前套用的保護。 進階使用者針對組織的 Azure Information Protection 租用戶授與的所有使用授權，一律具有完整的擁有者權限。 這個功能有時又稱為「資料的推理」，是維護組織資料控制權的一個關鍵要素。 例如，您會對下列任何案例使用這項功能：
 
@@ -59,7 +60,7 @@ Azure Information Protection 之 Azure Rights Management Service 的進階使用
 
 `2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
 
-## 適用於進階使用者的指令碼選項
+## <a name="scripting-options-for-super-users"></a>適用於進階使用者的指令碼選項
 通常，指派為 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之進階使用者的人必須從多個位置中的多個檔案移除保護。 雖然可以手動執行這項操作，但是使用指令碼會更有效率 (且通常更可靠)。 若要這樣做，請 [下載 RMS 保護工具](http://www.microsoft.com/en-us/download/details.aspx?id=47256)。 然後，視需要使用 [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) Cmdlet 和 [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) Cmdlet。
 
 如需有關這些 Cmdlet 的詳細資訊，請參閱 [RMS 保護 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
@@ -71,6 +72,6 @@ Azure Information Protection 之 Azure Rights Management Service 的進階使用
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
