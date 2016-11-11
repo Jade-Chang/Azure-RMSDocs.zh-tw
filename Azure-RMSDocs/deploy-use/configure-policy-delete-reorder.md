@@ -1,23 +1,25 @@
 ---
 title: "如何刪除或重新排序標籤 | Azure Information Protection"
 description: "透過在 Azure Information Protection 原則中設定此項，您可以刪除或重新排序使用者在 Information Protection 列上看到的標籤。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 3e73e928c8a0189c275e02c189db5c872993d9dd
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: 0ecc8f58179ea71f3faf4d4816ca7dbf4087826a
 
 
 ---
 
-# 如何刪除或重新排序 Azure Information Protection 標籤
+# <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何刪除或重新排序 Azure Information Protection 標籤
 
->*適用於：Azure Information Protection*
+>*適用於：Azure 資訊保護*
 
 透過在 Azure Information Protection 原則中設定此項，您可以刪除或重新排序使用者在 Information Protection 列上看到的標籤。
 
@@ -47,14 +49,14 @@ ms.openlocfilehash: 3e73e928c8a0189c275e02c189db5c872993d9dd
 
 3. 若要讓變更可供使用者使用，請按一下 [Azure Information Protection] 刀鋒視窗上的 [發佈]。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
-如需關於設定 Azure Information Protection 原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organization-s-policy)一節中的連結。  
-
-
+如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organizations-policy)一節中的連結。  
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

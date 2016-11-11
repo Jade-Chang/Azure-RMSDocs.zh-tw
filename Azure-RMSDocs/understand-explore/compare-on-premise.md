@@ -2,8 +2,9 @@
 title: "比較 Azure 資訊保護與 AD RMS | Azure 資訊保護"
 description: "如果您知道或先前已部署 Active Directory Rights Management Services (AD RMS)，您可能會想要知道 Azure 資訊保護在功能和需求方面與其比較起來如何。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4591d5c45104108ccf151bb1d7a9382652e585a6
-ms.openlocfilehash: 36adf768bdb5a0937af3563665bbe139c86ff250
+ms.sourcegitcommit: cf9dba0e6e194e4613f715496f79aa9fdb2fe597
+ms.openlocfilehash: c649534dc43742d46de4d9044495c85ce734aa80
 
 
 ---
 
-# 比較 Azure 資訊保護與 AD RMS
+# <a name="comparing-azure-information-protection-and-ad-rms"></a>比較 Azure 資訊保護與 AD RMS
 
 >*適用於︰Active Directory Rights Management Services、Azure 資訊保護、Office 365*
 
@@ -43,40 +44,40 @@ Azure 資訊保護的一些主要差異：
 
 此外，Azure 資訊保護是雲端服務，因此提供新功能和修正程式的速度會比內部部署伺服器解決方案還要快。 Windows Server 2016 中未規劃 AD RMS 的新功能。
 
-如需詳細資訊和其他差異，請使用下表並排比較 Azure 資訊保護與 AD RMS 的功能和優點。 如果您有安全性特定的比較問題，請參閱本文的[進簽署和加密的密碼編譯控制](compare-azure-rms-ad-rms.md#cryptographic-controls-for-signing-and-encryption)一節。
+如需詳細資訊和其他差異，請使用下表並排比較 Azure 資訊保護與 AD RMS 的功能和優點。 如果您有安全性特定的比較問題，請參閱本文的[進簽署和加密的密碼編譯控制](#cryptographic-controls-for-signing-and-encryption)一節。
 
 > [!NOTE]
 > 為了更容易進行這項比較，這裡的部分資訊是重複取自 [Azure Information Protecion 的需求](../get-started/requirements-azure-rms.md)。 如需更特定的 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 支援和版本資訊，請參考該來源。
 
-|Azure 資訊保護|Azure RMS|
+|Azure 資訊保護|AD RMS|
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------|
 |支援 Microsoft Online Services (例如 Exchange Online 和 SharePoint Online 以及 Office 365) 中的資訊版權管理 (IRM) 功能。<br /><br />也支援內部部署 Microsoft 伺服器產品 (例如 Exchange Server、SharePoint Server 以及執行 Windows Server 和檔案分類基礎結構 (FCI) 的檔案伺服器)。|支援內部部署 Microsoft 伺服器產品 (例如 Exchange Server、SharePoint Server 以及執行 Windows Server 和檔案分類基礎結構 (FCI) 的檔案伺服器)。|
 |啟用組織之間和任何組織內使用者之間的隱含信任。 這表示受保護的內容可以在同組織的使用者之間共用，或是當使用者具有 [!INCLUDE[o365_1](../includes/o365_1_md.md)]、[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 或使用者註冊使用個人用 RMS 時，也可以跨組織共用。|必須使用信任的使用者網域 (TUD) 或您使用 Active Directory Federation Services (AD FS) 建立的同盟信任，在兩個組織之間的直接點對點關係中明確定義信任。|
 |提供兩個將內容存取限制在您自己組織的預設權限原則範本；一個範本提供受保護內容的唯讀檢視，另一個範本提供受保護內容的寫入或修改權限。<br /><br />您也可以建立自己的自訂範本， 其中包括只有部份使用者可以看到的部門範本。 如需詳細資訊，請參閱[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)。<br /><br />此外，如果範本無法滿足使用目的，使用者也可以定義自己的一組權限。|沒有預設權限原則範本，您必須建立範本再散佈範本。 如需詳細資訊，請參閱＜ [AD RMS 原則範本考量](http://go.microsoft.com/fwlink/?LinkId=154765)＞。<br /><br />此外，如果範本無法滿足使用目的，使用者也可以定義自己的一組權限。|
 |支援的 Microsoft Office 最低版本是 Office 2010，其需要 [RMS 共用應用程式](../rms-client/sharing-app-windows.md)。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：支援<br /><br />- Microsoft Office for Mac 2011：不支援|支援的 Microsoft Office 最低版本是 Office 2007。<br /><br />Microsoft Office for Mac：<br /><br />- Microsoft Office for Mac 2016：支援<br /><br />- Microsoft Office for Mac 2011：支援|
 |支援適用於 Windows、Mac 電腦和行動裝置的 [RMS 共用應用程式](../rms-client/sharing-app-windows.md)。<br /><br />此外，RMS 共用應用程式支援以下功能：<br /><br />- 與另一個組織中的人員共用。<br /><br />- 電子郵件通知，可讓寄件者知道有人嘗試開啟受保護的附件。<br /><br />- 使用者的文件追蹤網站，包括能夠撤銷文件。|支援適用於 Windows、Mac 電腦和行動裝置的 [RMS 共用應用程式](../rms-client/sharing-app-windows.md)。 不過，共用並不支援與另一個組織中的人員共用、電子郵件通知，或文件追蹤網站和可讓使用者撤銷文件。|
-|當您使用 RMS 共用應用程式時，所有檔案類型都可以受到 [原生或一般保護](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)。<br /><br />若是其他應用程式，請查看[支援 Azure Rights Management 資料保護的應用程式](../get-started/requirements-applications.md)中的表格。|當您使用 RMS 共用應用程式時，所有檔案類型都可以受到 [原生或一般保護](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)。<br /><br />若是其他應用程式，請查看[支援 Azure Rights Management 資料保護的應用程式](../get-started/requirements-applications.md)中的表格。|
+|當您使用 RMS 共用應用程式時，所有檔案類型都可以受到 [原生或一般保護](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic)。<br /><br />若是其他應用程式，請查看[支援 Azure Rights Management 資料保護的應用程式](../get-started/requirements-applications.md)中的表格。|當您使用 RMS 共用應用程式時，所有檔案類型都可以受到 [原生或一般保護](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic)。<br /><br />若是其他應用程式，請查看[支援 Azure Rights Management 資料保護的應用程式](../get-started/requirements-applications.md)中的表格。|
 |支援的 Windows 用戶端最低版本是 Windows 7。|支援的 Windows 用戶端最低版本是 Windows Vista Service Pack 2。|
 |行動服務支援包括 Windows Phone、Android、iOS 及 Windows RT。<br /><br />在支援 Exchange ActiveSync IRM 的所有行動裝置平台上，也支援使用此通訊協定提供電子郵件支援。|行動裝置支援包括 Windows Phone、Android、iOS 和 Windows RT，而且需要 [Active Directory 權限管理服務行動裝置延伸模組](http://technet.microsoft.com/library/dn673574.aspx)。<br /><br />透過使用 Exchange ActiveSync IRM 所提供的電子郵件支援，在支援這個通訊協定的所有行動裝置平台上也支援。|
-|支援電腦和行動裝置使用 Multi-Factor Authentication (MFA)。<br /><br />如需詳細資訊，請參閱 [Multi-Factor Authentication (MFA) 和 Azure 資訊保護](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms)。|如果 IIS 設定為要求憑證，支援智慧卡驗證。|
+|支援電腦和行動裝置使用 Multi-Factor Authentication (MFA)。<br /><br />如需詳細資訊，請參閱 [Multi-Factor Authentication (MFA) 和 Azure 資訊保護](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection)。|如果 IIS 設定為要求憑證，支援智慧卡驗證。|
 |不須額外的組態設定即可支援密碼編譯模式 2，這個模式針對金鑰長度和加密演算法提供更強的安全性。<br /><br />如需詳細資訊，請參閱本文的[簽署和加密的密碼編譯控制](#cryptographic-controls-for-signing-and-encryption)一節，和 [AD RMS 密碼編譯模式](http://go.microsoft.com/fwlink/?LinkId=266659)。|預設支援密碼編譯模式 1，並且需要額外的組態設定才能支援密碼編譯模式 2 以獲得更強的安全性。<br /><br />如需詳細資訊，請參閱本文的[簽署和加密的密碼編譯控制](#cryptographic-controls-for-signing-and-encryption)一節，和 [AD RMS 密碼編譯模式](http://go.microsoft.com/fwlink/?LinkId=266659)。|
 |支援從 AD RMS 移轉和移轉至 AD RMS (如有需要)：<br /><br />- [從 AD RMS 移轉至 Azure 資訊保護](../plan-design/migrate-from-ad-rms-to-azure-rms.md)<br /><br />- [解除委任並停用 Azure 資訊保護](../deploy-use/decommission-deactivate.md)|支援從 Azure 資訊保護移轉和移轉至 Azure 資訊保護：<br /><br />- [解除委任並停用 Azure Rights Management](../deploy-use/decommission-deactivate.md)<br /><br />- [從 AD RMS 移轉至 Azure 資訊保護](../plan-design/migrate-from-ad-rms-to-azure-rms.md)|
 |需要 Azure 資訊保護授權來保護內容。 不需要 Azure 資訊保護授權，即可取用受到 Azure 資訊保護保護的內容(包括來自另一個組織的使用者)。<br /><br />如需詳細資訊，請參閱 Azure 資訊保護網站上的[功能清單](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。|需有 RMS 授權才能保護內容，並取用受到 AD RMS 保護的內容。<br /><br />如需 AD RMS 授權的詳細資訊，請參閱 [用戶端存取授權和管理授權](https://www.microsoft.com/en-us/Licensing/product-licensing/client-access-license.aspx) ，以取得一般資訊，但連絡您的 Microsoft 合作夥伴或微軟代表，以取得特定資訊。|
 
-## 簽署和加密的密碼編譯控制
+## <a name="cryptographic-controls-for-signing-and-encryption"></a>簽署和加密的密碼編譯控制
 Azure 資訊保護一律使用 RSA 2048 進行所有公開金鑰加密，以及使用 SHA 256 進行簽署操作。 相較之下，AD RMS 則支援 RSA 1024 和 RSA 2048，以及 SHA 1 或 SHA 256 進行簽署操作。
 
 Azure 資訊保護和 AD RMS 都使用 AES 128 進行對稱式加密。
 
 當您的租用戶金鑰是由 Microsoft 所建立並管理 (預設) 時，或是如果您自行管理租用戶金鑰 (稱為 BYOK)，Azure 資訊保護會符合 FIPS 140-2 規範。 如需管理租用戶金鑰的詳細資訊，請參閱[規劃及實作 Azure 資訊保護租用戶金鑰](../plan-design/plan-implement-tenant-key.md)。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 如果您想要從 AD RMS 移轉至 Azure 資訊保護，請參閱[從 AD RMS 移轉至 Azure 資訊保護](../plan-design/migrate-from-ad-rms-to-azure-rms.md)
 
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

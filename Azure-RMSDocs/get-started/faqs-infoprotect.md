@@ -3,7 +3,7 @@ title: "分類和標記的常見問題集 | Azure Information Protection"
 description: "對 Azure Information Protection 的預覽版本有疑問？ 看看此處是否有解答。"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce4fc256cf80fdd2e4a8212e2f64ffc6ca6a3964
-ms.openlocfilehash: 9b341a53a85242839d737bc36c90a8f94637bae1
+ms.sourcegitcommit: b23466ee412f3e705f49083c11c2099c0cdcd2d6
+ms.openlocfilehash: b9e0a154b67bc54b7868021fb46f7d52c8b7e3bd
 
 
 ---
@@ -34,13 +34,17 @@ Azure Information Protection 用戶端新增 Information Protection 列到 Micro
 
 目前版本有下列限制。 請留意 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) (Enterprise Mobility and Security 部落格) 上的公告，以及我們的 [Yammer 網站](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)，以了解其他特性與功能可供使用的時機：
 
-- 針對分類和標記沒有任何集中式的記錄。
+- 您可以只將標籤套用至 Office 檔案類型及 Outlook 電子郵件訊息。
+
+- 所有已安裝 Azure 資訊保護用戶端的使用者皆可看見 Office 增益集的標籤。
 
 - 標籤名稱和工具提示中只有一種語言支援。
 
-- 自動分類的條件必須為片語或模式。
-
 - 無法從 Windows 檔案總管分類檔案。
+
+- 針對分類和標記沒有任何集中式的記錄。
+
+- 自動分類的條件必須為片語或模式。
 
 - 目前尚不支援行動裝置 (iOS 和 Android) 和 Mac 電腦的 Office 應用程式和 Office Web 應用程式 (Office Online)。
 
@@ -53,6 +57,10 @@ Azure Information Protection 用戶端新增 Information Protection 列到 Micro
 若要設定 Azure Information Protection 原則，您必須以 Azure Active Directory 的全域管理員身分登入 Azure 入口網站。
 
 不過，如果您在安裝 [Azure Information Protection 用戶端](https://www.microsoft.com/en-us/download/details.aspx?id=53018)時選取安裝示範原則的選項，您不需要登入入口網站，就能查看及試用標記功能。 示範原則會在本機安裝 Azure Information Protection 的預設原則，因此您可以嘗試為文件和電子郵件加上標籤，但是若您不登入 Azure 入口網站將無法變更或新增標籤。 
+
+## Azure 入口網站中哪個選項是 P1 或 P2？
+
+如需查看 **Azure 資訊保護 Premium 1** (P1) 訂用帳戶與 **Azure 資訊保護 Premium 2** (P2) 訂用帳戶分別包含哪些功能，請參閱 Azure 資訊保護網站的[功能清單](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)。
 
 ## Azure Information Protection 支援內部部署與混合式案例嗎？
 
@@ -150,6 +158,6 @@ Azure Information Protection 分類的檔案和電子郵件，可以供任何使
 如果您有任何問題或意見，請使用 [Azure Information Protection Yammer 網站](https://www.yammer.com/askipteam/)。 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

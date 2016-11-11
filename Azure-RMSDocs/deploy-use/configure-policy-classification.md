@@ -1,23 +1,25 @@
 ---
 title: "如何設定自動與建議分類的條件 | Azure Information Protection"
 description: "當您設定標籤的條件時，您可以自動將標籤指派給文件或電子郵件。 或者，您可以提示使用者選取您建議的標籤。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
 
 
 ---
 
-# 如何設定適用於 Azure Information Protection 的自動與建議分類條件
+# <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何設定適用於 Azure Information Protection 的自動與建議分類條件
 
->*適用於：Azure Information Protection*
+>*適用於：Azure 資訊保護*
 
 當您設定標籤的條件時，您可以自動將標籤指派給文件或電子郵件。 或者，您可以提示使用者選取您建議的標籤︰ 
 
@@ -44,7 +46,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 在此範例中，使用者可以按一下 [立即變更] 以套用建議的標籤，或者將列關閉來覆寫建議。
 
-## 設定標籤的建議或自動分類
+## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>設定標籤的建議或自動分類
 
 1. 如果您尚未這樣做，請在新的瀏覽器視窗以全域管理員身分登入 [Azure 入口網站](https://portal.azure.com)，然後巡覽至 [Azure Information Protection] 刀鋒視窗。 
     
@@ -72,7 +74,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 6. 若要讓變更可供使用者使用，請按一下 [Azure Information Protection] 刀鋒視窗上的 [發佈]。
 
-## 內建條件的相關資訊
+## <a name="information-about-the-builtin-conditions"></a>內建條件的相關資訊
 
 在預覽期間，您可以選取下列條件︰
 
@@ -82,12 +84,12 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 - [ABA 銀行代號](#aba-routing-number )
 
-- [美國社會安全碼 (SSN)](#usa-social-security-number-ssn)
+- [美國社會安全號碼 (SSN)](#usa-social-security-number-ssn)
 
 - [國際銀行帳戶號碼 (IBAN)](#international-banking-account-number-iban)
 
 
-### SWIFT 代碼
+### <a name="swift-code"></a>SWIFT 代碼
 
 在內容包含下列項目時符合此資訊類型︰  
 
@@ -113,7 +115,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 ----
 
 
-### 信用卡號碼
+### <a name="credit-card-number"></a>信用卡號碼
 
 在內容包含下列項目時符合此資訊類型︰  
 
@@ -136,7 +138,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### ABA 銀行代號
+### <a name="aba-routing-number"></a>ABA 銀行代號
 
 在內容包含下列項目時符合此資訊類型︰  
 
@@ -173,7 +175,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### 美國社會安全碼 (SSN)
+### <a name="usa-social-security-number-ssn"></a>美國社會安全碼 (SSN)
 
 在內容包含下列項目時符合此資訊類型︰  
 
@@ -199,7 +201,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### 國際銀行帳戶號碼 (IBAN)
+### <a name="international-banking-account-number-iban"></a>國際銀行帳戶號碼 (IBAN)
 
 在內容包含下列項目時符合此資訊類型︰  
 
@@ -213,15 +215,15 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 - **GB29 NWBK 6016 1331 9268 19 IBAN**
 
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
-如需關於設定 Azure Information Protection 原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organization-s-policy)一節中的連結。  
-
-
+如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organizations-policy)一節中的連結。  
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

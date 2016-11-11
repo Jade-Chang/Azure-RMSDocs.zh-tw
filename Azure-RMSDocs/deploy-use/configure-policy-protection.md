@@ -1,21 +1,23 @@
 ---
 title: "如何設定標籤以套用 Rights Management 保護 | Azure 資訊保護"
 description: "您可以透過使用 Rights Management 服務來保護您最敏感的文件與電子郵件，它會使用加密、身分識別與授權原則來協助防止資料遺失。 此保護會在您設定標籤以使用 Rights Management 範本時套用。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 4f3c77df23207c3a76a768a1fe428484339de18f
 
 
 ---
 
-# 如何設定標籤以套用 Rights Management 保護
+# <a name="how-to-configure-a-label-to-apply-rights-management-protection"></a>如何設定標籤以套用 Rights Management 保護
 
 >*適用於：Azure 資訊保護*
 
@@ -23,7 +25,7 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 
 此範本可以是您啟用 Azure Rights Management 或自訂範本時，會自動建立的其中一個預設範本。 Azure Rights Management 的部門範本受到支援，但只在文件或電子郵件作者位於範本設定的範圍內時才套用保護。 如果使用者不在範圍內，他們會看到一則顯示 Azure 資訊保護無法套用標籤的訊息。
 
-## 保護的運作方式
+## <a name="how-the-protection-works"></a>保護的運作方式
 
 當文件或電子郵件受 Azure Rights Management 保護時，它會在靜止狀態和傳輸過程中加密，且只能由授權的使用者進行解密。 即使文件或電子郵件已重新命名，仍然會保持此加密。 此外，您可以設定使用權限與限制，如下列範例︰
 
@@ -43,7 +45,7 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 > Azure Rights Management 服務必須已針對您的組織啟用，才能設定標籤以套用 Azure Rights Management 保護。 如果您尚未這樣做，請參閱[啟用 Azure Rights Management](../deploy-use/activate-service.md)。
 
 
-## 設定標籤以套用 Rights Management 保護
+## <a name="to-configure-a-label-to-apply-rights-management-protection"></a>設定標籤以套用 Rights Management 保護
 
 1. 如果您尚未這樣做，請開啟新的瀏覽器視窗並以全域管理員身分登入 [Azure 入口網站](https://portal.azure.com)，然後巡覽至 [Azure 資訊保護] 刀鋒視窗。 
 
@@ -77,12 +79,12 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 
 7. 若要讓變更可供使用者使用，請按一下 [Azure 資訊保護] 刀鋒視窗上的 [發佈]。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
-如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organization-s-policy)一節中的連結。  
+如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organizations-policy)一節中的連結。  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
