@@ -65,7 +65,7 @@ ms.openlocfilehash: f1553ebd64f174128e41f55b66582e8791ce9133
 -   [您想要做什麼？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="see-also"></a>另請參閱
-[Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
+[Rights Management 共用應用程式使用者指南](sharing-app-user-guide.md)
 
 
 
