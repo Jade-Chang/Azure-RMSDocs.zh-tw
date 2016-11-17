@@ -3,6 +3,7 @@ title: "針對使用 Rights Management 保護的檔案變更權限 | Azure Infor
 description: "當檔案已受 Rights Management 保護時，您可以藉由重新保護它，然後指定應該能存取它們的所有使用者以及要授與他們的權限，來變更權限。"
 keywords: 
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 
 
 ---
 
-# 針對使用 Rights Management 保護的檔案變更權限
+# <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>針對使用 Rights Management 保護的檔案變更權限
 
->*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用對象︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 當檔案已受 Rights Management 保護時，您可以藉由重新保護它，然後指定應該能存取它們的所有使用者以及要授與他們的權限，來變更權限。
 
@@ -38,7 +39,7 @@ ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 
 如果您想要完全移除所有權限，讓該檔案不再受到保護，請參閱[移除檔案的保護](sharing-app-remove-protection.md)。
 
-## 就地重新保護檔案
+## <a name="to-reprotect-a-file-inplace"></a>就地重新保護檔案
 
 1.  在 [檔案總管] 中，選取要保護的檔案。 以滑鼠右鍵按一下，選取 [利用 RMS 保護]，然後選取 [就地保護]。 例如：
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 >     當您註冊時，使用您的公司電子郵件地址而不是個人的電子郵件地址。 如果您是因為在電子郵件中收到受保護的附加檔案而註冊，請使用電子郵件訊息寄給您時所使用的相同電子郵件地址。
 > -   如需詳細資訊，請參閱[個人版 RMS 和 Azure Rights Management](../understand-explore/rms-for-individuals.md)。
 
-## 重新保護您以電子郵件傳送的檔案
+## <a name="to-reprotect-a-file-that-you-have-emailed"></a>重新保護您以電子郵件傳送的檔案
 
 如果您想要變更您以電子郵件傳送之檔案的權限︰
 
@@ -84,18 +85,18 @@ ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
     若要撤銷以電子郵件傳送的檔案，請參閱[追蹤及撤銷您的文件](sharing-app-track-revoke.md)。
 
 
-## 範例和其他指示
+## <a name="examples-and-other-instructions"></a>範例和其他指示
 如需 Rights Management 共用應用程式的使用範例及作法指示，請參閱 Rights Management 共用應用程式使用者指南中下列各節：
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [您想要做什麼？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,9 @@
 title: "建立、設定及發佈自訂範本 | Azure 資訊保護"
 description: "在 Azure 傳統入口網站中建立和管理自訂範本的指示。 範本可讓使用者與其他系統管理員輕鬆地套用保護文件及電子郵件的適當原則。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +13,25 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
-ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
+ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
+ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
 
 
 ---
 
 
-# 建立、設定及發佈自訂範本
+# <a name="create-configure-and-publish-a-custom-template"></a>建立、設定及發佈自訂範本
 
->*適用於︰Azure 資訊保護、Office 365*
+>*適用對象︰Azure 資訊保護、Office 365*
 
 
 您可以在 Azure 傳統入口網站中建立和管理自訂範本。 您可以直接從 Azure 傳統入口網站執行這項作業，或是登入 Office 365 系統管理中心並選擇 Rights Management 的**進階功能**，這會將您重新導向到 Azure 傳統入口網站。
 
-您必須是全域管理員，才能在 Azure 傳統入口網站中建立和管理範本。 如果您已指派 Azure Rights Management Service 的全域管理員角色給其他使用者，他們也可以建立及管理範本，但必須使用 [PowerShell](configure-templates-with-powershell.md)。 如需詳細資訊，請參閱[僅有全域管理員才能設定 Azure RMS，或是我可以將此作業委派給其他系統管理員？](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+您必須是全域管理員，才能在 Azure 傳統入口網站中建立和管理範本。 如果您已指派 Azure Rights Management Service 的全域管理員角色給其他使用者，他們也可以建立及管理範本，但必須使用 [PowerShell](configure-templates-with-powershell.md)。 如需詳細資訊，請參閱[僅有全域管理員才能設定 Azure RMS，或是我可以將此作業委派給其他系統管理員？](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
 
 使用下列程序可建立、設定及發佈 Rights Management 的自訂範本。
 
-## 建立自訂範本
+## <a name="to-create-a-custom-template"></a>建立自訂範本
 
 1.  依據您登入的是 Office 365 系統管理中心或是 Azure 傳統入口網站，執行下列其中一個動作：
 
@@ -76,7 +77,7 @@ ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 4. 從 [開始使用 Rights Management]  快速入門頁面，現在按一下 [管理您的權限原則範本] 。 您將會看見新建立的範本已新增至範本清單中，其狀態為 [已封存] 。 在這個階段，範本已建立但尚未設定，使用者無法看見這個範本。
 
-## 設定及發佈自訂範本
+## <a name="to-configure-and-publish-a-custom-template"></a>設定及發佈自訂範本
 
 1.  在 Azure 傳統入口網站的 [範本] 頁面中，選取您新建立的範本。
 
@@ -164,10 +165,10 @@ ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 > [!WARNING]
 > 當您對先前儲存的範本進行變更時，用戶端必須等到他們電腦上的範本重新整理之後，才會看到您對範本所做的那些變更。 如需詳細資訊，請參閱[重新整理使用者的範本](refresh-templates.md)。
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

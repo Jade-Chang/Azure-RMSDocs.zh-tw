@@ -3,7 +3,7 @@ title: "Azure 資訊保護之資料保護服務 Azure Rights Management 的常�
 description: "Azure 資訊保護之資料保護服務 Azure Rights Management (Azure RMS) 的一些常見問題集。"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ec8609217db42a2cf0b3f89367cf4dee6ccb77de
-ms.openlocfilehash: ae25f5af9784b0de92626dbfe65d4358359b4bd9
+ms.sourcegitcommit: 6566e0ce901097bcf5f30d76be67522d3464f100
+ms.openlocfilehash: c92e35b0cb9f892f7859511365027c241d0f1ef6
 
 
 ---
@@ -78,7 +78,7 @@ Azure Rights Management Service 一律使用 Azure Active Directory 帳戶和相
 
 這些帳戶的驗證方法可能會不同，取決於其他組織中的系統管理員對 Azure Active Directory 帳戶的設定方式。 比方說，他們可以使用為這些帳戶、多因素驗證 (MFA)、聯盟所建立的密碼，或是在 Active Directory 網域服務中建立並同步處理至 Azure Active Directory 的密碼。
 
-## 我可以從公司外部將使用者新增至自訂範本嗎？
+## 我可以將外部使用者 (我公司以外的人員) 新增至自訂範本嗎？
 可以。 建立使用者 (和系統管理員) 可以從應用程式中選取的自訂範本，可讓使用者快速並輕鬆地使用您指定的預先定義原則套用資訊保護。 範本中的其中一個設定是誰能夠存取內容，而且您可以從組織內指定使用者和群組，從組織外指定使用者。
 
 若要指定來自組織外的使用者，請在設定範本時將他們以連絡人的身分加入您在 Azure 傳統入口網站選取的群組中。 或使用[適用於 Azure Rights Management 的 Windows PowerShell 模組](../deploy-use/install-powershell.md)：
@@ -157,6 +157,6 @@ Azure Rights Management Service 可支援所有檔案類型。 對於文字、�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,6 +2,7 @@
 title: "使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護) | Azure Information Protection"
 description: "如何安全地在您的電腦、伺服器或另一個存放裝置上儲存檔案的指示。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,22 +13,22 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
 
 
 ---
 
-# 使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)
+# <a name="protect-a-file-on-a-device-protect-inplace-by-using-the-rights-management-sharing-application"></a>使用 Rights Management 共用應用程式保護裝置上的檔案 (就地保護)
 
->*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用對象︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
 當您就地保護檔案時，它會取代原始、未受保護的檔案。 然後您就可以讓檔案留在原處，將它複製到另一個資料夾或裝置，或共用其所在的資料夾，而檔案仍然會受到保護。 雖然共用受電子郵件保護之檔案的建議方式是直接從 [檔案總管] 或 Office 應用程式 (請參閱[保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案](sharing-app-protect-by-email.md))，您也可以將受保護檔案附加到電子郵件訊息。
 
 > [!TIP]
 > 如果您在嘗試保護檔案時看到任何錯誤，請參考 [Windows 的 Microsoft Rights Management 共用應用程式常見問題集](http://go.microsoft.com/fwlink/?LinkId=303971)。
 
-## 保護裝置上的檔案 (就地保護)
+## <a name="to-protect-a-file-on-a-device-protect-inplace"></a>保護裝置上的檔案 (就地保護)
 
 1.  在 [檔案總管] 中，選取要保護的檔案。 以滑鼠右鍵按一下，選取 [利用 RMS 保護]，然後選取 [就地保護]。 例如：
 
@@ -54,18 +55,18 @@ ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 
 如果您需要移除檔的保護，請參閱[透過使用 Rights Management 共用應用程式從檔案移除保護](sharing-app-remove-protection.md)。
 
-## 範例和其他指示
+## <a name="examples-and-other-instructions"></a>範例和其他指示
 如需 Rights Management 共用應用程式的使用範例及作法指示，請參閱 Rights Management 共用應用程式使用者指南中下列各節：
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [您想要做什麼？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

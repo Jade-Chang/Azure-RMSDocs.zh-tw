@@ -1,23 +1,25 @@
 ---
 title: "如何建立新標籤 | Azure Information Protection"
 description: "雖然 Azure Information Protection 有隨附可自訂的預設標籤，您也可以自行建立使用者可在 Information Protection 列上看見的標籤。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 5cf6237f33d0818c8411cbb5126fc825c3c411d7
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: bedf1cb43be9a70c2b3252fa730f46d83574e954
 
 
 ---
 
-# 如何建立新的 Azure Information Protection 標籤
+# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>如何建立新的 Azure Information Protection 標籤
 
->*適用於：Azure Information Protection*
+>*適用於：Azure 資訊保護*
 
 雖然 Azure Information Protection 有隨附可自訂的預設標籤，您也可以自行建立使用者可在 Information Protection 列上看見的標籤。
 
@@ -42,14 +44,14 @@ ms.openlocfilehash: 5cf6237f33d0818c8411cbb5126fc825c3c411d7
 
 4. 若要讓變更可供使用者使用，請按一下 [Azure Information Protection] 刀鋒視窗上的 [發佈]。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
-如需關於設定 Azure Information Protection 原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organization-s-policy)一節中的連結。  
-
-
+如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organizations-policy)一節中的連結。  
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

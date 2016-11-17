@@ -3,6 +3,7 @@ title: "如何使用文件追蹤 | Azure RMS"
 description: "文件追蹤功能需要稍微了解如何管理相關聯的中繼資料並註冊服務。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 ---
 
-# 作法：使用文件追蹤
+# <a name="how-to-use-document-tracking"></a>作法：使用文件追蹤
 
 使用文件追蹤功能需要稍微了解如何管理相關聯的中繼資料並註冊服務。
 
-## 管理文件追蹤中繼資料
+## <a name="managing-document-tracking-metadata"></a>管理文件追蹤中繼資料
 
 支援文件追蹤的每個作業系統都有類似的實作。 這些實作包括代表中繼資料的一組屬性，新增至使用者原則建立方法的新參數，以及登錄要利用文件追蹤服務來追蹤之原則的方法。
 

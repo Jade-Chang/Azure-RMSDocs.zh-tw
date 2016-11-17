@@ -1,23 +1,25 @@
 ---
 title: "如何設定全域原則設定 | Azure Information Protection"
 description: "Azure Information Protection 原則中有 3 個設定會套用至所有使用者及所有裝置。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: e1d0c25995c45d72c1467aa1ff8043ca225a8156
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 970a42e89d09af34e9ff16714682d1de250175f6
 
 
 ---
 
-# 如何設定 Azure Information Protection 的全域原則設定
+# <a name="how-to-configure-the-global-policy-settings-for-azure-information-protection"></a>如何設定 Azure Information Protection 的全域原則設定
 
->*適用於：Azure Information Protection*
+>*適用於：Azure 資訊保護*
 
 Azure Information Protection 原則中有 3 個設定會套用至所有使用者及所有裝置：
 
@@ -50,11 +52,9 @@ Azure Information Protection 原則中有 3 個設定會套用至所有使用者
 
 4. 若要讓變更可供使用者使用，請按一下 [發佈]。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
-如需關於設定 Azure Information Protection 原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organization-s-policy)一節中的連結。  
-
-
+如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organizations-policy)一節中的連結。  
 
 
 
@@ -65,6 +65,8 @@ Azure Information Protection 原則中有 3 個設定會套用至所有使用者
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

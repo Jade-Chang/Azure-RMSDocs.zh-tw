@@ -2,6 +2,7 @@
 title: "客戶管理的租用戶金鑰生命週期作業 | Azure Information Protection"
 description: "與您自行管理 Azure Information Protection 的租用戶金鑰 (「自備金鑰」(BYOK)) 的相關生命週期作業資訊。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

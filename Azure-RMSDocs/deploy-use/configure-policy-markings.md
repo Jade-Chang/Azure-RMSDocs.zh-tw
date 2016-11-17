@@ -1,23 +1,25 @@
 ---
 title: "如何設定視覺標記的標籤 | Azure Information Protection"
 description: "當您將標籤指派給文件或電子郵件訊息時，您可以選取數個選項讓選擇的分類顯而易見。 這些視覺標記為頁首、頁尾及浮水印。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 5b00975e3e435ec3ab122c3a015a3daf93db3daf
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
 
 
 ---
 
-# 如何設定 Azure Information Protection 的視覺標記標籤
+# <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何設定 Azure Information Protection 的視覺標記標籤
 
->*適用於：Azure Information Protection*
+>*適用於：Azure 資訊保護*
 
 當您將標籤指派給文件或電子郵件訊息時，您可以選取數個選項讓選擇的分類顯而易見。 這些視覺標記為頁首、頁尾及浮水印：
 
@@ -53,32 +55,32 @@ ms.openlocfilehash: 5b00975e3e435ec3ab122c3a015a3daf93db3daf
 
 4. 若要讓變更可供使用者使用，請按一下 [Azure Information Protection] 刀鋒視窗上的 [發佈]。
 
-## 在文字字串中使用變數
+## <a name="using-variables-in-the-text-string"></a>在文字字串中使用變數
 
 您可以在頁首、頁尾或浮水印文字字串中使用下列變數︰
 
-- `${Item.Label}` 適用於選取的標籤。 例如︰內部
+- `${Item.Label}`適用於選取的標籤。 例如︰內部
 
-- `${Item.Name}` 適用於檔案名稱或電子郵件主旨。 例如︰JulySales.docx
+- `${Item.Name}`適用於檔案名稱或電子郵件主旨。 例如︰JulySales.docx
 
-- `${Item.Location}` 適用於文件的路徑和檔案名稱，以及電子郵件的電子郵件主旨。 例如︰\\\Sales\2016\Q3\JulyReport.docx
+- `${Item.Location}`適用於文件的路徑和檔案名稱，以及電子郵件的電子郵件主旨。 例如︰\\\Sales\2016\Q3\JulyReport.docx
 
-- `${User.Name}` 適用於文件或電子郵件的擁有者，依據 Windows 登入使用者名稱。 例如︰rsimone
+- `${User.Name}`適用於文件或電子郵件的擁有者，依據 Windows 登入使用者名稱。 例如︰rsimone
 
-- `${User.PrincipalName}` 適用於文件或電子的郵件擁有者，依據 Azure Information Protection 用戶端登入電子郵件地址 (UPN)。 例如︰rsimone@vanarsdelltd.com
+- `${User.PrincipalName}`適用於文件或電子的郵件擁有者，依據 Azure 資訊保護用戶端登入電子郵件地址 (UPN)。 例如：rsimone@vanarsdelltd.com
 
-- `${Event.DateTime}` 適用於所選標籤的設定日期和時間。 例如：8/16/2016 1:30 PM
+- `${Event.DateTime}`適用於所選標籤的設定日期和時間。 例如：8/16/2016 1:30 PM
     
 範例︰如果您為 [秘密] 標籤頁尾指定字串 `Document: ${item.name}  Classification: ${item.label}`，則套用至名為 project.docx 之文件的頁尾文字將為**文件：project.docx 類別：秘密**。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
-如需關於設定 Azure Information Protection 原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organization-s-policy)一節中的連結。  
-
-
+如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organizations-policy)一節中的連結。  
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,6 +3,7 @@ title: "開發環境檔案 | Azure RMS"
 description: "本主題說明開發環境檔案和其在您電腦上的相對安裝位置。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
 
 ---
 
-# 開發環境檔案
+# <a name="development-environment-files"></a>開發環境檔案
 
 本主題說明開發環境檔案和其在您電腦上的相對安裝位置。
 

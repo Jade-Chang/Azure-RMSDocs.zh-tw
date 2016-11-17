@@ -13,17 +13,17 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: cd24268839fac6c42a3214e5e1bb012f61b5ffff
-ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
+ms.sourcegitcommit: 197e1b2d40ce21032b933625feb050807086ce57
+ms.openlocfilehash: cc4465eb7b1374673a50fc8bbe1d6e5be9d1ff84
 
 
 ---
-# Azure 資訊保護文件
+# <a name="azure-information-protection-documentation"></a>Azure 資訊保護文件
 <article id="main">
     <section id="hero-content">
       <h1>Azure 資訊保護文件</h1>
       <h2>了解如何部署和管理 Azure 資訊保護 (先前稱為 Azure Rights Management 或 RMS)。 快速開始使用服務，以將分類、標記和保護套用至您組織的電子郵件和文件。</h2>
-      <h3>Azure 資訊保護新手？ <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">請瀏覽我們的產品網站 &rarr;</a></h3>
+      <h3>Azure 資訊保護新手？ <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">前往產品網站&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>準備好實際操作了嗎？</p>
@@ -35,12 +35,13 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
       <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="./understand-explore/what-is-information-protection.md">什麼是 Azure 資訊保護？</a></li>
+          <li><mark><b>全新</b></mark> <a href="./understand-explore/what-is-information-protection.md#resources-for-azure-information-protection">Azure 資訊保護工作階段，來自 Microsoft Ignite 2016</a></li>
+          <li><a href="./understand-explore/what-is-information-protection.md">什麼是 Azure Information Protection？</a></li>
           <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Azure 資訊保護快速入門教學課程</a></li>
-          <li><a href="./get-started/faqs.md">Azure 資訊保護的常見問題集</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="./plan-design/deployment-roadmap.md">Azure 資訊保護部署藍圖</a></li>
+          <li><a href="./get-started/faqs.md">Azure 資訊保護的常見問題集</a></li>
+      <li><a href="./plan-design/deployment-roadmap.md">Azure 資訊保護部署藍圖</a></li>
           <li><a href="./develop/developers-guide.md">Azure 資訊保護開發人員指南</a></li>
           <li><a href="./rms-client/info-protect-client.md">安裝 Azure 資訊保護用戶端</a></li>
         </ul>
@@ -226,6 +227,6 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

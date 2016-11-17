@@ -3,6 +3,7 @@ title: "iOS/OS X 程式碼範例 | Azure RMS"
 description: "本主題將介紹 iOS/OS X 版本的 RMS SDK 的重要程式碼元素。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
 
 ---
 
-# iOS/OS X 程式碼範例
+# <a name="iosos-x-code-examples"></a>iOS/OS X 程式碼範例
 
 本主題將介紹 iOS/OS X 版本的 RMS SDK 的重要程式碼元素。
 
@@ -28,12 +29,12 @@ ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
 
 
 
-## 使用 Microsoft Rights Management SDK 4.2 - 重要案例
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要案例
 
 
 以下是來自較大範例應用程式的 **Objective C** 程式碼範例，表示導向此 SDK 的重要開發案例。 這些示範了參考受保護檔案的 Microsoft 受保護的檔案格式的用法、自訂受保護的檔案格式的使用，和自訂 UI 控制項的使用。
 
-### 案例︰取用 RMS 受保護的檔案
+### <a name="scenario-consume-an-rms-protected-file"></a>案例︰取用 RMS 受保護的檔案
 
 
 - **步驟 1**：建立 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 物件
@@ -109,7 +110,7 @@ ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
             }
         }
 
-### 案例︰使用範本建立新的受保護檔案
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>案例︰使用範本建立新的受保護檔案
 
 此案例開始會取得範本清單，[MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx)，選取第一個項目來建立原則，然後建立並寫入至新的受保護檔案。
 
@@ -154,7 +155,7 @@ ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
             }];
         }
 
-### 案例︰開啟自訂受保護的檔案
+### <a name="scenario-open-a-custom-protected-file"></a>案例︰開啟自訂受保護的檔案
 
 
 -   **步驟 1**︰從 *serializedContentPolicy* 建立 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
@@ -212,7 +213,7 @@ ms.openlocfilehash: ef311877b1deb71a62d3554e513ef6fdab443c28
             }];
          }
 
-### 案例︰使用自訂 (臨機操作) 原則建立自訂受保護的檔案
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>案例︰使用自訂 (臨機操作) 原則建立自訂受保護的檔案
 
 
 -   **步驟 1**︰使用使用者所提供的電子郵件地址來建立原則描述元。
