@@ -2,6 +2,7 @@
 title: "如何從 Office 365 傳統系統管理中心啟用 Azure Rights Management | Azure 資訊保護"
 description: "當您可以存取 Office 365 系統管理中心的傳統 (原始) 版本時，適用於 Azure Rights Management Service 的啟用指示。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/04/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
-ms.openlocfilehash: 69ee78823c2a0500596dec24f44ecba8329af516
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 0a0741e01b6ff446b16383dbaa26b31327427237
 
 
 ---
 
-# 如何從 Office 365 傳統系統管理中心啟用 Azure Rights Management
+# <a name="how-to-activate-azure-rights-management-from-the-office-365-classic-admin-center"></a>如何從 Office 365 傳統系統管理中心啟用 Azure Rights Management
 
->*適用於︰Azure 資訊保護、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 
 如果您使用傳統 (原始) 版的 Office 365 系統管理中心，請使用下列指示。
@@ -49,10 +50,10 @@ ms.openlocfilehash: 69ee78823c2a0500596dec24f44ecba8329af516
 
 現在應該會顯示 **[Rights Management 已啟動]** 及用來停用的選項。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 回到[啟用 Azure Rights Management](activate-service.md)。
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

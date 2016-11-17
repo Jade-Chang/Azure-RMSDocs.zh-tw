@@ -1,34 +1,36 @@
 ---
 title: "預設原則 | Azure Information Protection"
 description: "了解設定 Azure Information Protection 預設原則的方式。 如果您修改了預設原則，您可以參考這些值來將原則還原為預設值。"
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 531d7a474daeea752fc8cd63b8b39e9fec373a24
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
 
 
 ---
 
-# 預設 Azure Information Protection 原則
+# <a name="the-default-azure-information-protection-policy"></a>預設 Azure Information Protection 原則
 
->*適用於：Azure Information Protection*
+>*適用於：Azure 資訊保護*
 
 請使用下列資訊以了解設定 Azure Information Protection 預設原則的方式。 如果您修改了預設原則，您可以參考這些值來將原則還原為預設值。
 
-## Information Protection 列
+## <a name="information-protection-bar"></a>Information Protection 列
 
 |設定|值|
 |-------------------------------|---------------------------|
 |標題|敏感度|
 |工具提示|資訊敏感度由四個不同等級組成 (公用、內部、機密、秘密)，可讓使用者識別將資訊公開給企業內部或外部未經授權之使用者的風險。|
 
-## 標籤
+## <a name="labels"></a>標籤
 
 |Label|工具提示|設定|
 |-------------------------------|---------------------------|-----------------|
@@ -38,14 +40,14 @@ ms.openlocfilehash: 531d7a474daeea752fc8cd63b8b39e9fec373a24
 |機密|此資料包含敏感性商務資訊。 向未經授權的使用者公開此資料可能會對組織造成損害。 機密資訊的範例，包括員工資訊、個別客戶專案或合約，以及銷售帳戶資料。|**啟用**︰開啟 <br /><br />**色彩**：橙色<br /><br />**視覺標記**：頁尾 (文件和電子郵件)<br /><br />**條件**：無<br /><br />**保護**︰無|
 |秘密|此資料包含必須加以保護的公司高度敏感性資訊。 向未經授權的使用者公開秘密資料可能會對組織造成嚴重損害。 秘密資訊的範例，包括個人識別資訊、客戶記錄、原始程式碼，以及宣布前的財務報告。|**啟用**︰開啟 <br /><br />**色彩**：紅色<br /><br />**視覺標記**：頁尾 (文件和電子郵件)<br /><br />**條件**：無<br /><br />**保護**︰無|
 
-## 子標籤
+## <a name="sublabels"></a>子標籤
 
 |Label|工具提示|設定|
 |-------------------------------|---------------------------|-----------------|
 |密碼\所有公司|此資料包含敏感性商務資訊 - 允許所有公司員工存取。|**啟用**︰開啟 <br /><br />**視覺標記**：關閉<br /><br />**條件**：無<br /><br />**保護**︰無|
 |密碼\我的群組|此資料包含敏感性商務資訊 - 只允許員工群組存取。|**啟用**︰開啟 <br /><br />**視覺標記**：關閉<br /><br />**條件**：無<br /><br />**保護**︰無|
 
-## 全域設定
+## <a name="global-settings"></a>全域設定
 
 |設定|值|
 |-------------------------------|---------------------------|
@@ -54,12 +56,12 @@ ms.openlocfilehash: 531d7a474daeea752fc8cd63b8b39e9fec373a24
 |使用者必須提供合理的理由，才能設定較低的分類標籤、移除標籤，或是移除保護|關閉|
 
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 
-如需關於設定 Azure Information Protection 原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organization-s-policy)一節中的連結。 
+如需關於設定 Azure 資訊保護原則的詳細資訊，請使用[設定組織的原則](configure-policy.md#configuring-your-organizations-policy)一節中的連結。 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,6 +2,7 @@
 title: "部署 Azure Rights Management 連接器 | Azure Information Protection"
 description: "部署 RMS 連接器的指示，針對使用 Exchange Server、SharePoint Server 或 Windows Server 和檔案分類基礎結構 (FCI) 的現有內部部署提供資料保護服務。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

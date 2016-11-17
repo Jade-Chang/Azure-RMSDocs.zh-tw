@@ -2,6 +2,7 @@
 title: "執行 Windows Server 並使用檔案分類基礎結構 (FCI) 的檔案伺服器 | Azure Information Protection"
 description: "當您部署 RMS 連接器以自動保護 Office 文件時，如何使用 Windows Server 檔案基礎結構搭配 Azure RMS 。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,16 +13,16 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 64c718f91d1d2f516bcac6dd949eef5ef379a306
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1d9213aa6be382510558020411d1667fd2866ca7
 
 
 ---
 
 
-# 執行 Windows Server 並使用檔案分類基礎結構 (FCI) 的檔案伺服器
+# <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>執行 Windows Server 並使用檔案分類基礎結構 (FCI) 的檔案伺服器
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 
 設定 Windows Server 使用檔案分類基礎結構時，這項檔案伺服器資源管理員功能可以掃描本機檔案，並判斷它們是否包含敏感性資料。 符合這個準則的檔案會被標記系統管理員所定義的分類屬性。 接著，檔案分類基礎結構便可根據分類採取自動動作。 其中一個動作是使用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 和 Rights Management 連接器 (又稱為 RMS 連接器) 部署來套用資訊保護。 Azure RMS 就會自動保護 Office 檔案。
@@ -36,13 +37,13 @@ ms.openlocfilehash: 64c718f91d1d2f516bcac6dd949eef5ef379a306
 
 
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 現在您瞭解應用程式和服務如何支援 Azure RMS，您可能想要比較 Azure RMS 與內部部署版本的 Rights Management、Active Directory Rights Management Services (AD RMS)。 如需功能、需求和安全性控制項的比較，請參閱[比較 Azure Rights Management 與 AD RMS](compare-azure-rms-ad-rms.md)。
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "iOS 和 OS X 設定 | Azure RMS"
 description: "iOS 和 OS X 應用程式可以藉由使用 AAD RM，以使用 RMS SDK 4.2 在其應用程式中啟用整合的資訊保護。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

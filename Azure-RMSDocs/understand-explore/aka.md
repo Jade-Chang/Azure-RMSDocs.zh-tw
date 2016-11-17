@@ -2,6 +2,7 @@
 title: "Azure Information Protection 也稱為 | Azure Information Protection"
 description: "Azure Information Protection 已經經歷許多次的名稱變更，您可能知道它先前的名稱。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,16 +13,16 @@ ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4591d5c45104108ccf151bb1d7a9382652e585a6
-ms.openlocfilehash: 8d597b0acf0a197b2ee12d250672c9572eb6072a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1b5268a13538df1537dbf3ea6f66eeda2b5e2292
 
 
 ---
 
 
-# Azure Information Protection - 也稱為...
+# <a name="azure-information-protection-also-known-as-"></a>Azure Information Protection - 也稱為...
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 Azure Information Protection 是 Azure Rights Management (也稱為 *Azure Rights Management Service*) 之重新命名的雲端式解決方案。 因為 RMS 在其先前版本中已是慣用縮寫，所以您通常會看到 Azure Rights Management 縮寫為 ***Azure RMS***。
 
@@ -46,6 +47,6 @@ Azure Rights Management 的其他名稱：此服務最初稱為 *Windows Azure A
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

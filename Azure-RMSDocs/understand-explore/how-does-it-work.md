@@ -2,6 +2,7 @@
 title: "Azure RMS 如何運作 | Azure 資訊保護"
 description: "細分 Azure RMS 的運作方式、它所使用的密碼編譯控制控制項，以及此程序如何運作的逐步圖表。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

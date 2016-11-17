@@ -3,6 +3,7 @@ title: "Android 程式碼範例 | Azure RMS"
 description: "本主題將介紹 Android 版本的 RMS SDK 的重要程式碼元素。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,14 +21,14 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 ---
 
-# Android 程式碼範例
+# <a name="android-code-examples"></a>Android 程式碼範例
 
 本主題將介紹 Android 版本的 RMS SDK 的重要程式碼元素。
 
 **注意**：在範例程式碼和後續的說明中，我們使用詞彙 MSIPC (Microsoft 資訊保護與控制) 來參考用戶端程序。
 
 
-## 使用 Microsoft Rights Management SDK 4.2 - 重要案例
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>使用 Microsoft Rights Management SDK 4.2 - 重要案例
 
 以下是來自較大範例應用程式的程式碼範例，表示導向此 SDK 的重要開發案例。 這些示範了參考受保護檔案的 Microsoft 受保護的檔案格式的用法、自訂受保護的檔案格式的使用，和自訂 UI 控制項的使用。
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 範例應用程式 *MSIPCSampleApp* 可搭配 SDK 用於 Android 作業系統。 請參閱 GitHub 上的 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android) 以存取此範例應用程式。
 
-### 案例︰取用 RMS 受保護的檔案
+### <a name="scenario-consume-an-rms-protected-file"></a>案例︰取用 RMS 受保護的檔案
 
 -   **步驟 1**︰建立 [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx)
 
@@ -197,7 +198,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
                 }
 
 
-### 案例︰使用範本建立新的受保護檔案
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>案例︰使用範本建立新的受保護檔案
 
 此案例一開始會取得範本清單，選取第一個範本以建立原則，然後建立並寫入至新的受保護檔案。
 
@@ -321,7 +322,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 
 
-### 案例︰開啟自訂受保護的檔案
+### <a name="scenario-open-a-custom-protected-file"></a>案例︰開啟自訂受保護的檔案
 
 -   **步驟 1**︰從 *serializedContentPolicy* 建立 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)。
 
@@ -436,7 +437,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### 案例︰使用自訂 (臨機操作) 原則建立自訂受保護的檔案
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>案例︰使用自訂 (臨機操作) 原則建立自訂受保護的檔案
 
 -   **步驟 1**︰使用使用者所提供的電子郵件地址來建立原則描述元。
 

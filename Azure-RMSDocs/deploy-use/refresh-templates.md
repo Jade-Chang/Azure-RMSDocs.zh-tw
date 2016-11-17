@@ -2,6 +2,7 @@
 title: "重新整理範本 | Azure Information Protection"
 description: "當您使用 Azure Rights Management Service 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/12/2016
 ms.topic: article

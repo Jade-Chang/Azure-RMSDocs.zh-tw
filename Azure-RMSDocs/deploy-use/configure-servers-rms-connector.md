@@ -2,6 +2,7 @@
 title: "設定 Azure Rights Management 連接器的伺服器 | Azure 資訊保護"
 description: "協助您設定將使用 Azure Rights Management (RMS) 連接器的內部部署伺服器資訊。 這些程序涵蓋部署 Azure Rights Management 連接器的步驟 5。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

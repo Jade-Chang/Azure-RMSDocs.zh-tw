@@ -2,6 +2,7 @@
 title: "解除委任並停用 Azure Rights Management Service| Azure Information Protection"
 description: "您決定不想再使用 Azure Information Protection 之資訊保護服務時的資訊和指示。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
 
 
 ---
 
-# 解除委任並停用 Azure Rights Management
+# <a name="decommissioning-and-deactivating-azure-rights-management"></a>解除委任並停用 Azure Rights Management
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 您永遠可以藉由使用 Azure Information Protection 的 Azure Rights Management Service 控制您的組織是否保護內容，而且如果您決定不想再使用此資訊保護服務，也可保證您將不會被鎖定在先前受保護的內容之外。 如果您不需要繼續存取先前受保護的內容，您只需要停用服務即可讓 Azure Information Protection 的訂用帳戶過期。 例如，此情況適用於已完成測試 Azure Information Protection 時，但在生產環境中進行部署之前。
 
@@ -47,13 +48,13 @@ ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
 
 當您準備好停用組織的 Azure Rights Management Service 時，請使用下列指示。
 
-## 停用 Rights Management
+## <a name="deactivating-rights-management"></a>停用 Rights Management
 使用下列其中一個程序來停用 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]。
 
 > [!TIP]
 > 您也可以使用 Windows PowerShell Cmdlet [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx) 來停用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]。
 
-#### 若要從 Office 365 系統管理中心停用 Rights Management
+#### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>若要從 Office 365 系統管理中心停用 Rights Management
 
 1.  [使用工作或學校帳戶登入 Office 365](https://portal.office.com/) ，也就是您的 Office 365 部署的系統管理員。
 
@@ -74,7 +75,7 @@ ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
 
 現在應該會顯示 [Rights Management 未啟動]  及要啟動的選項。
 
-#### 若要從 Azure 傳統入口網站停用 Rights Management
+#### <a name="to-deactivate-rights-management-from-the-azure-classic-portal"></a>若要從 Azure 傳統入口網站停用 Rights Management
 
 1.  登入 [Azure 傳統入口網站](http://go.microsoft.com/fwlink/p/?LinkID=275081)。
 
@@ -91,6 +92,6 @@ ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

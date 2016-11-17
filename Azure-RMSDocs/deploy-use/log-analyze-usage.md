@@ -2,6 +2,7 @@
 title: "記錄和分析 Azure Rights Management Service 的使用方式 | Azure Information Protection"
 description: "如何以使用記錄搭配 Azure Rights Management (Azure RMS) 的資訊和指示。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

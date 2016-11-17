@@ -2,6 +2,7 @@
 title: "Rights Management 共用應用程式的對話方塊選項 | Azure Information Protection"
 description: "協助您在 RMS 共用應用程式的 [新增保護] 對話方塊或 [共用保護] 對話方塊中指定選項的資訊。 當您保護要共用的檔案或就地保護檔案並選擇自訂權限時，您會看到這個對話方塊。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

@@ -2,8 +2,9 @@
 title: "步驟 2：軟體保護的金鑰移轉至軟體保護的金鑰 | Azure Information Protection"
 description: "這些指示屬於將路徑從 AD RMS 移轉至 Azure Information Protection，且只有在您的 AD RMS 金鑰是受軟體所保護，而且您想要使用受軟體保護的租用戶金鑰來移轉至 Azure Information Protection 時才適用。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,30 +13,30 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
 
 
 ---
 
 
-# 步驟 2：軟體保護的金鑰移轉至軟體保護的金鑰
+# <a name="step-2-softwareprotected-key-to-softwareprotected-key-migration"></a>步驟 2：軟體保護的金鑰移轉至軟體保護的金鑰
 
->*適用於︰Active Directory Rights Management Services、Azure Information Protection、Office 365*
+>*適用於︰Active Directory Rights Management Services、Azure 資訊保護、Office 365*
 
 
 這些指示屬於[將路徑從 AD RMS 移轉至 Azure Information Protection](migrate-from-ad-rms-to-azure-rms.md)，且只有在您的 AD RMS 金鑰是受軟體所保護，而且您想要使用受軟體保護的租用戶金鑰來移轉至 Azure Information Protection 時才適用。 
 
-如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出設定資料，並將它匯入 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)，然後選擇不同的設定。
+如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出設定資料，並將它匯入 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)，然後選擇不同的設定。
 
 使用下列程序將 AD RMS 組態匯入 Azure Information Protection，以產生由您在 Azure 金鑰保存庫中管理的 Azure Information Protection 租用戶金鑰 (BYOK)。
 
-## 將組態資料匯入 Azure Information Protection
+## <a name="to-import-the-configuration-data-to-azure-information-protection"></a>將組態資料匯入 Azure Information Protection
 
 1.  在連線網際網路的工作站上，下載並安裝 Azure Rights Management 的 Windows PowerShell 模組 (最低 2.5.0.0 版)，其中包括 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) Cmdlet。 Azure Rights Management Service (Azure RMS) 提供 Azure Information Protection 的保護服務。
 
     > [!TIP]
-    > 如果您先前已下載及安裝此模組，請執行下列命令來檢查版本號碼： `(Get-Module aadrm -ListAvailable).Version`
+    > 如果您先前已下載及安裝此模組，請執行 `(Get-Module aadrm -ListAvailable).Version`來檢查版本號碼
 
     如需安裝指示，請參閱[安裝 Windows PowerShell for Azure Rights Management](../deploy-use/install-powershell.md)。
 
@@ -64,12 +65,12 @@ ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
     ```
 
 
-您現在可以繼續進行[步驟 3：啟用 Azure Information Protection 租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
+您現在可以繼續進行[步驟 3：啟用 Azure 資訊保護租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

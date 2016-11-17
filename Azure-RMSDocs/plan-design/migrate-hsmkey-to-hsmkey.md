@@ -2,8 +2,9 @@
 title: "步驟 2：HSM 保護的金鑰移轉至 HSM 保護的金鑰 | Azure 資訊保護"
 description: "這些指示屬於將路徑從 AD RMS 移轉至 Azure 資訊保護，且只有在您的 AD RMS 金鑰是受 HSM 所保護，而且您想要使用 Azure 金鑰保存庫中受 HSM 保護的租用戶金鑰來移轉至 Azure 資訊保護時才適用。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/14/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +13,20 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
-ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 3f5982b94f1de83ec66860946c46b9acbf45f479
 
 
 ---
 
-# 步驟 2：HSM 保護的金鑰移轉至 HSM 保護的金鑰
+# <a name="step-2-hsmprotected-key-to-hsmprotected-key-migration"></a>步驟 2：HSM 保護的金鑰移轉至 HSM 保護的金鑰
 
 >*適用於︰Active Directory Rights Management Services、Azure 資訊保護*
 
 
 這些指示屬於[將路徑從 AD RMS 移轉至 Azure 資訊保護](migrate-from-ad-rms-to-azure-rms.md)，且只有在您的 AD RMS 金鑰是受 HSM 所保護，而且您想要使用 Azure 金鑰保存庫中受 HSM 保護的租用戶金鑰來移轉至 Azure 資訊保護時才適用。 
 
-如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出設定資料，並將它匯入 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)，然後選擇不同的設定。
+如果這不是所選的設定案例，請回到[步驟 2.從 AD RMS 匯出設定資料，並將它匯入 Azure RMS](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)，然後選擇不同的設定。
 
 > [!NOTE]
 > 這些指示假設您的 AD RMS 金鑰是模組保護的。 這是最典型的情況。 
@@ -41,7 +42,7 @@ ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
 > 若您將進行 Azure 金鑰保存庫的設定步驟，但不熟悉這項 Azure 服務，建議您先檢閱[開始使用 Azure 金鑰保存庫](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)。 
 
 
-## 第 1 篇：將您的 HSM 金鑰傳輸至 Azure 金鑰保存庫
+## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>第 1 篇：將您的 HSM 金鑰傳輸至 Azure 金鑰保存庫
 
 這些程序由 Azure 金鑰保存庫的系統管理員完成。
 
@@ -60,7 +61,7 @@ ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
 
 現在您已在 Azure 資訊保護的 Azure Rights Management Service 的 Azure 金鑰保存庫中備妥 HSM 金鑰，可開始匯入您的 AD RMS 組態資料。
 
-## 第 2 篇：將組態資料匯入 Azure 資訊保護
+## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>第 2 篇：將組態資料匯入 Azure 資訊保護
 
 這些程序由 Azure 資訊保護的系統管理員完成。
 
@@ -89,11 +90,11 @@ ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
     > [!NOTE]
     > 若您稍後需要確認 Azure 資訊保護租用戶金鑰在 Azure 金鑰保存庫中使用哪個金鑰，請使用 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS Cmdlet。
 
-您現在可以繼續進行[步驟 3：啟用 Azure 資訊保護租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)。
+您現在可以繼續進行[步驟 3：啟用 Azure 資訊保護租用戶](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant)。
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

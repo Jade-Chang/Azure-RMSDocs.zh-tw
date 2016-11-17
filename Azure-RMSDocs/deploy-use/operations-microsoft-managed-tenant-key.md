@@ -2,6 +2,7 @@
 title: "Microsoft 管理的租用戶金鑰生命週期作業 | Azure Information Protection"
 description: "與 Microsoft 為您管理 Azure Information Protection 租用戶金鑰 (預設) 的相關生命週期作業詳細資訊。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,23 +13,23 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 9c2a7d9e65dc860e0bd90789a412a8ef46f946ad
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 49df2de156d5859d9192d8b179e4ba7ef2d653ea
 
 
 ---
 
 
-# Microsoft 管理：租用戶金鑰生命週期作業
+# <a name="microsoftmanaged-tenant-key-lifecycle-operations"></a>Microsoft 管理：租用戶金鑰生命週期作業
 
->*適用於︰Azure Information Protection、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 如果 Microsoft 為您管理 Azure Information Protection 的租用戶金鑰 (預設)，請參閱下列各節，以了解與此拓撲相關的生命週期作業詳細資訊。
 
-## 撤銷租用戶金鑰
+## <a name="revoke-your-tenant-key"></a>撤銷租用戶金鑰
 當您取消 Azure Information Protection 訂用帳戶時，Azure Information Protection 即會停止使用您的租用戶金鑰，您不必採取任何動作。
 
-## 更換租用戶金鑰
+## <a name="rekey-your-tenant-key"></a>更換租用戶金鑰
 更換金鑰又稱為輪換金鑰。 除非真有必要，請不要更換租用戶金鑰。 舊版的用戶端 (例如 Office 2010) 無法正確處理金鑰變更。 在此情況下，您必須使用群組原則或同等的機制來清除電腦上的 Rights Management 狀態。 不過，有些法律事件可能迫使您不得不更換租用戶金鑰。 例如：
 
 -   您的公司分拆成兩家以上的公司。 當您更換租用戶金鑰時，新公司將無法存取您的員工所發佈的新內容。 只要他們有一份舊的租用戶金鑰，就可以存取舊的內容。
@@ -39,21 +40,21 @@ ms.openlocfilehash: 9c2a7d9e65dc860e0bd90789a412a8ef46f946ad
 
 當您更換租用戶金鑰時，新的內容會以新的租用戶金鑰來保護。 這是分階段逐步進行，所以在一段期間內，有些新的內容會持續以舊的租用戶金鑰來保護。 先前保護的內容仍然是以舊的租用戶金鑰來保護。 為了支援此案例，Azure Information Protection 會保留舊的租用戶金鑰，所以可以為舊的內容發出授權。
 
-## 備份和復原租用戶金鑰
+## <a name="backup-and-recover-your-tenant-key"></a>備份和復原租用戶金鑰
 Microsoft 會負責備份您的租用戶金鑰，您不必採取任何動作。
 
-## 匯出租用戶金鑰
+## <a name="export-your-tenant-key"></a>匯出租用戶金鑰
 您可以依照下列這三個步驟的指示，匯出您的 Azure Information Protection 組態及租用戶金鑰：
 
-### 步驟 1：起始匯出
+### <a name="step-1-initiate-export"></a>步驟 1：起始匯出
 
 -   若要這樣做，請[連絡 Microsoft 支援服務](../get-started/information-support.md#to-contact-microsoft-support)以開啟 **Azure Information Protection 支援案例，並要求匯出您的 Azure Information Protection 租用戶金鑰**。 您必須證明您是 Azure Information Protection 租用戶的管理員，且應了解此程序將需要數天的時間。 標準支援費用適用；匯出租用戶金鑰並非免費的支援服務。
 
-### 步驟 2：等待驗證
+### <a name="step-2-wait-for-verification"></a>步驟 2：等待驗證
 
 -   Microsoft 會驗證您的 Azure Information Protection 租用戶金鑰發行要求是否合法。 此程序最多需要 3 週的時間。
 
-### 步驟 3：從 CSS 取得金鑰指示
+### <a name="step-3-receive-key-instructions-from-css"></a>步驟 3：從 CSS 取得金鑰指示
 
 -   Microsoft 客戶支援服務 (CSS) 會在密碼保護的檔案 (副檔名為 .tpd) 中將 Azure Information Protection 組態及租用戶金鑰加密，然後傳送給您。 為了這樣做，CSS 會先透過電子郵件傳送工具給您 (也就是起始匯出的人)。 您必須從命令提示字元中執行此工具，如下所示：
 
@@ -75,13 +76,13 @@ Microsoft 會負責備份您的租用戶金鑰，您不必採取任何動作。
 
     請備份這些檔案並妥善保管，以確保您能夠繼續解密以這個租用戶金鑰所保護的內容。 此外，如果是要移轉至 AD RMS，您可以將此 TPD 檔案 (以 **ExportedTDP** 開頭的檔案) 匯入到 AD RMS 伺服器。
 
-### 步驟 4：繼續：保護租用戶金鑰
+### <a name="step-4-ongoing-protect-your-tenant-key"></a>步驟 4：繼續：保護租用戶金鑰
 
 -   收到租用戶金鑰之後，請安全地保管，因為如果某人取得金鑰，他就可以將所有使用此金鑰保護的文件解密。
 
     如果您是因為不想再使用 Azure Information Protection 而匯出租用戶金鑰，最佳做法是立即停用 Azure Information Protection 租用戶的 Azure Rights Management Service。 收到租用戶金鑰之後，請立即這樣做，切勿拖延，因為這項預防措施可將租用戶金鑰誤入他人之手的後果降到最低。 如需指示，請參閱[解除委任並停用 Azure Rights Management](decommission-deactivate.md)。
 
-## 漏洞應變
+## <a name="respond-to-a-breach"></a>漏洞應變
 安全性系統不論多麼堅固，不可能完美到沒有任何漏洞應變程序。 租用戶金鑰可能已外洩或遭竊。 即使受到嚴密保護，最新一代 HSM 技術或目前的金鑰長度和演算法仍可能有弱點。
 
 Microsoft 有專屬團隊負責對產品與服務中的安全性事件做出應變。 每當有可靠的報告指出有事件發生，此團隊就會立即介入來調查範圍、根本原因及防護措施。 如果此事件影響到您的資產，Microsoft 會以您訂閱時所提供的地址，以電子郵件來通知您的 Azure Information Protection 租用戶管理員。
@@ -98,6 +99,6 @@ Microsoft 有專屬團隊負責對產品與服務中的安全性事件做出應�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

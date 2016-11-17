@@ -3,6 +3,7 @@ title: "開始使用 | Azure RMS"
 description: "RMS SDK 2.1 平台可讓開發人員建置運用 RMS 資訊保護的應用程式。"
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
