@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: 複製範本 | Azure RMS
-description:
-keywords:
+title: "複製範本 | Azure Information Protection"
+description: "複製範本的指示，可讓您以輕鬆的方式建立具有與現有範本設定非常相似的新範本。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e0945e9ab719fd4b686c3fb7932891ed92fa31c6
+
 
 ---
 
 
-# 複製範本
+# <a name="copy-a-template"></a>複製範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
 如果您想要建立一個與現有範本的設定非常相似的新範本，請在 [範本]  頁面上選取原始範本、按一下 [複製] 、指定一個唯一名稱，然後進行您所需的變更。
 
@@ -39,9 +33,10 @@ ms.suite: ems
 
 
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Nov16_HO2-->
 
 

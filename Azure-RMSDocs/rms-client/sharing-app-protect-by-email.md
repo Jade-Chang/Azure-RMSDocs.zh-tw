@@ -1,43 +1,36 @@
 ---
-# required metadata
-
-title: 保護使用 Rights Management 共用應用程式，透過電子郵件共用的檔案 | Azure RMS
-description:
-keywords:
+title: "藉由使用 Rights Management 共用應用程式，保護您透過電子郵件共用的檔案 | Azure Information Protection"
+description: "如何安全地以電子郵件共用文件的指示。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: b4467f73dd9d107681961f99ee038ed889e25b2d
+
 
 ---
 
 # 藉由使用 Rights Management 共用應用程式，保護您透過電子郵件共用的檔案
 
-*適用於︰Active Directory Rights Management Services、Azure Rights Management、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
+>*適用於︰Active Directory Rights Management Services、Azure Information Protection、Windows 10、Windows 7 SP1、Windows 8、Windows 8.1*
 
-當您保護您透過電子郵件共用的檔案時，它會建立新版本的原始檔。 原始檔仍未受保護，且新版本受保護且會自動附加到您稍後要傳送的電子郵件。
+當您保護您透過電子郵件共用的檔案時，它會建立新版本的原始檔。 原始檔案仍未受保護而新的版本為受保護且自動附加到您稍後傳送的電子郵件。
 
-在某些情況下 (如 Microsoft Word、Excel 和 PowerPoint 所建立的檔案)，RMS 共用應用程式會將它附加到電子郵件訊息的檔案建立兩個版本。 檔案的第二個版本具有 **.ppdf** 副檔名，而且是檔案的 PDF 陰影複製。 即使收件者安裝的應用程式與您用來建立檔案的應用程式不同，這個版本的檔案仍可確保收件者永遠可以讀取檔案。 此案例通常適用於人員在行動裝置上讀取他們的電子郵件，並想要檢視其電子郵件附件時。 若要開啟檔案，他們只需要 RMS 共用應用程式。 然後，他們就可以讀取附加的檔案，但是在他們使用支援 RMS 的應用程式開啟其他版本的檔案之前，他們無法將其變更。
+在某些情況下 (如 Microsoft Word、Excel 和 PowerPoint 所建立的檔案)，RMS 共用應用程式會將它附加到電子郵件訊息的檔案建立兩個版本。 檔案的第二個版本具有 **.ppdf** 副檔名，而且是檔案的 PDF 陰影複製。 即使收件者安裝的應用程式與您用來建立檔案的應用程式不同，這個版本的檔案仍可確保收件者永遠可以讀取檔案。 這是使用者在行動裝置上讀取電子郵件且想要檢視其電子郵件附件時的通例。 他們開啟檔案所需要的就是 RMS 共用應用程式。 然後，他們可以讀取附加的檔案，但是無法變更它，直到他們使用支援 Rights Management Service 的應用程式開啟檔案的另一個版本。
 
-如果您的組織使用 Azure RMS，您就可以追蹤您透過共用保護的檔案：
+如果您的組織使用 Azure Information Protection，您可以追蹤您藉由共用來保護的檔案：
 
--   選取一個選項，以在有人嘗試開啟這些受保護的附件時收到電子郵件。 每次有人存取檔案時，您都會收到通知，了解誰在嘗試開啟檔案、何時嘗試以及是否成功 (他們是否成功通過驗證)。
+-   選取選項以在有人嘗試開啟這些受保護的附件時收到電子郵件。 每次檔案被存取時，您會收到通知，知道誰在何時嘗試開啟檔案，以及他們是否成功 (是否成功驗證)。
 
--   使用文件追蹤網站。 您甚至可以藉由在文件追蹤網站中撤銷檔案的存取權以停止共用檔案。 如需詳細資訊，請參閱 [當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。.
+-   使用文件追蹤網站。 您甚至可以藉由在文件追蹤網站中撤銷檔案的存取權以停止共用檔案。 如需詳細資訊，請參閱[當您使用 RMS 共用應用程式時，追蹤及撤銷文件](sharing-app-track-revoke.md)。
 
 ## 使用 Outlook：保護您以電子郵件共用的檔案
 
@@ -45,9 +38,9 @@ ms.suite: ems
 
     ![適用於 RMS 共用應用程式的 Outlook 增益集](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    如果看不到這個按鈕，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱 [下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。.
+    如果看不到這個按鈕，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱[下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。
 
-2.  在 [[共用保護的檔案]](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 **[立即傳送]**。.
+2.  在 [共用保護](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 [立即傳送]。
 
 ### 保護您透過電子郵件共用之檔案的其他方式
 除了使用 Outlook 共用受保護的檔案，您也可以使用這些替代方案：
@@ -68,17 +61,17 @@ ms.suite: ems
 
         ![Office 工具列增益集](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    如果看不到保護的這些選項，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱 [下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。.
+    如果看不到保護的這些選項，很可能您的電腦上未安裝 RMS 共用應用程式、沒有安裝最新版本，或您的電腦必須重新啟動以完成安裝。 如需如何安裝共用應用程式的詳細資訊，請參閱[下載及安裝 Rights Management 共用應用程式](install-sharing-app.md)。
 
-2.  在 [[共用受保護的檔案]](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 **[傳送]**。.
+2.  在 [共用保護](sharing-app-dialog-box.md) 對話方塊中，為此檔案指定您想要的選項，然後按一下 [ 傳送]。
 
-3.  您可能會快速看到一個對話方塊，告訴您檔案已受保護，然後您會看到為您建立的電子郵件訊息，告知您受到 Microsoft RMS 保護之附件的收件者，以及他們必須登入。 當使用者按一下連結以登入時，他們會看到指示與連結，以確保他們可以開啟您的受保護附件。
+3.  您可能會快速看到一個對話方塊，告訴您檔案已受保護，然後您會看到為您建立的電子郵件訊息，告知您受到 Microsoft RMS 保護之附件的收件者，以及他們必須登入。 當他們按一下連結登入時，他們會看到指示與連結，以確保他們可以開啟您的受保護的附件。
 
     範例：
 
-    ![Azure RMS 的電子郵件訊息](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
+    ![Azure Information Protection 的電子郵件訊息](../media/ADRMS_MSRMSApp_EmailMessage.PNG)
 
-    您想知道：[自動建立的 .ppdf 檔案是什麼？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)
+    您想知道：[什麼是自動建立的 .ppdf 檔案？](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)
 
 4.  選用：您可以任意變更此電子郵件訊息中的任何項目。 例如，您可以加入或變更訊息中的主旨或文字。
 
@@ -92,12 +85,13 @@ ms.suite: ems
 
 -   [使用 RMS 共用應用程式的範例](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [您想要做什麼事？](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 另請參閱
 [Rights Management 共用應用程式使用者指南 (英文)](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Sep16_HO4-->
 
 

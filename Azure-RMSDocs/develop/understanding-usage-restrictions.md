@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 了解使用限制 | Azure RMS
-description: RMS 啟用的所有應用程式必須強制使用限制。
-keywords:
+title: "了解使用限制 | Azure RMS"
+description: "RMS 啟用的所有應用程式必須強制使用限制。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: E388B16C-ECDA-4696-A040-D457D3C96766
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cb33a6c784a9b7efca0780771e764b984b51fedd
+ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
+
 
 ---
 
@@ -28,7 +24,7 @@ ms.suite: ems
 
 RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種情況，會在使用者嘗試執行某個動作 (例如， 列印文件)，但該文件的 RMS 原則沒有授予他們執行該動作的權限 (例如 「列印」權限) 時發生。
 
-使用者對文件的權限可使用 [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck) 函式查詢。
+使用者對文件的權限可使用 [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx) 函數查詢。
 
 ## 了解使用限制
 
@@ -50,15 +46,16 @@ RMS 啟用的所有應用程式必須強制使用限制。 使用限制是一種
 
     如需有關如何強制特定權限的指引，請參閱[使用限制參考](usage-restriction-reference.md)。
 
-## 相關主題
+## 相關的主題
 
-* [**IpcAccessCheck**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
+* [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 * [使用限制參考](usage-restriction-reference.md)
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

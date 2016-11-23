@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: RMS 應用程式的 ADAL 驗證 | Azure RMS
-description: 概述 ADAL 驗證的程序
-keywords: authentication, RMS, ADAL
+title: "RMS 應用程式的 ADAL 驗證 | Azure RMS"
+description: "概述 ADAL 驗證的程序"
+keywords: "驗證, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 3ed49cf7dddb72783ecd3bf1e89454d805552743
+
 
 ---
 
@@ -43,20 +38,22 @@ ms.suite: ems
 
   如果您想要 RMS 用戶端在需要驗證時顯示 ADAL 驗證提示，請使用此方法。 如需如何設定您應用程式的詳細資訊，請參閱＜內部驗證＞一節。
 
-  > [!Note] 如果您的應用程式目前搭配使用 AD RMS SDK 2.1 與登入小幫手，則建議您使用內部驗證方法作為您的應用程式移轉路徑。
+  > [!Note] 
+  > 如果您的應用程式目前搭配使用 AD RMS SDK 2.1 與登入小幫手，則建議您使用內部驗證方法作為您的應用程式移轉路徑。
 
 - **外部驗證** - 您應用程式所管理的 OAuth 驗證。
 
   如果您想要您的應用程式管理它自己的 OAuth 驗證，請使用此方法。 使用這個方法，RMS 用戶端只有在需要驗證時才會執行應用程式所定義的回呼。 如需詳細範例，請參閱本主題結尾的＜外部驗證＞。
 
-  > [!Note] 外部驗證並不代表可以變更使用者；RMS 用戶端一律會使用所指定 RMS 租用戶的預設使用者。
+  > [!Note] 
+  > 外部驗證並不代表可以變更使用者；RMS 用戶端一律會使用所指定 RMS 租用戶的預設使用者。
 
 ## 內部驗證
 
 1. 遵循[為 ADAL 驗證設定 Azure RMS](adal-auth.md) 中的 Azure 設定步驟，然後回到下列應用程式初始化步驟。
 2. 您現在已經準備好設定應用程式使用 RMS SDK 2.1 所提供的內部 ADAL 驗證。
 
-若要設定 RMS 用戶端，請在呼叫 [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 設定 RMS 用戶端之後，立即將呼叫加入 [IpcSetGlobalProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 中。 請使用下列程式碼片段作為範例。
+若要設定 RMS 用戶端，請在呼叫 [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 設定 RMS 用戶端之後，立即將呼叫加入 [IpcSetGlobalProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 中。 請使用下列程式碼片段作為範例。
 
       C++
       IpcInitialize();
@@ -114,18 +111,19 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 ## 相關主題
 
-* [資料類型](/rights-management/sdk/2.1/api/win/datatypes)
-* [環境屬性](/rights-management/sdk/2.1/api/win/environmentproperties)
-* [IpcCreateOAuth2Token](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
-* [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [IPC_CREDENTIAL](/rights-management/sdk/2.1/api/win/IPC_CREDENTIAL)
-* [IPC_NAME_VALUE_LIST](/rights-management/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
-* [IPC_OAUTH2_CALLBACK_INFO](/rights-management/sdk/2.1/api/win/IIPC_OAUTH2_CALLBACK_INFO)
-* [IPC_PROMPT_CTX](/rights-management/sdk/2.1/api/win/IPC_PROMPT_CTX)
-* [IPC_AAD_APPLICATION_ID](/rights-management/sdk/2.1/api/win/IIPC_AAD_APPLICATION_ID)
+* [資料類型](/information-protection/sdk/2.1/api/win/data%20types)
+* [環境屬性](/information-protection/sdk/2.1/api/win/environment%20properties#msipc_environment_properties)
+* [IpcCreateOAuth2Token](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreateoauth2token)
+* [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+* [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [IPC_CREDENTIAL](/information-protection/sdk/2.1/api/win/IPC_CREDENTIAL)
+* [IPC_NAME_VALUE_LIST](/information-protection/sdk/2.1/api/win/IPC_NAME_VALUE_LIST)
+* [IPC_OAUTH2_CALLBACK_INFO](/information-protection/sdk/2.1/api/win/ipc_oauth2_callback_info#msipc_ipc_oath2_callback_info)
+* [IPC_PROMPT_CTX](/information-protection/sdk/2.1/api/win/IPC_PROMPT_CTX)
+* [IPC_AAD_APPLICATION_ID](/information-protection/sdk/2.1/api/win/ipc_aad_application_id#msipc_ipc_aad_application_id)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

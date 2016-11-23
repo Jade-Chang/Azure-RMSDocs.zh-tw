@@ -1,42 +1,36 @@
 ---
-# required metadata
-
-title: 系統管理員和使用者看到的內容？ | Azure RMS
-description:
-keywords:
+title: "系統管理員和使用者看到的內容？ | Azure 資訊保護"
+description: "請參閱系統管理員和使用者如何查看及使用 Azure Rights Management (Azure RMS) 技術協助保護敏感或機密資訊的一些典型範例。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 10/05/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
+
 
 ---
 
 
 # Azure RMS 運作方式：系統管理員和使用者看到的內容
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure 資訊保護、Office 365*
 
 本文顯示系統管理員和使用者所見內容，以及使用 Azure Rights Management (Azure RMS) 保護敏感或機密資訊的一些常見例子。
 
-> [!NOTE] 在這所有 Azure RMS 保護資料的例子中，內容擁有者持續擁有資料 (檔案或電子郵件) 的完整存取權，即使套用的保護將權限授與擁有者未隸屬的群組，或套用的保護包含到期日也一樣。
+> [!NOTE]
+> 在 Azure RMS 保護資料的所有這些例子中，內容擁有者持續擁有資料 (檔案或電子郵件) 的完整存取權，即使套用的保護授與權限給擁有者未隸屬的群組，或套用的保護包含到期日也一樣。
 >
 > 同樣地，利用 Rights Management 的進階使用者功能，將委派存取權授與您指定的獲授權使用者或服務，IT 即可毫無限制地存取受保護的資料。 此外，IT 可以追蹤和監視受保護資料的使用情況 - 例如，誰在存取資料和何時存取。
 
-如需顯示作用中 RMS 的其他螢幕擷取畫面和影片，請參閱 [Microsoft Rights Management Services 入口網站](http://www.microsoft.com/rms)和 [Microsoft Rights Management (RMS) 小組部落格](http://blogs.technet.com/b/rms)。
+如需其他螢幕擷取畫面和實作示範 RMS 的影片，請參閱 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services) (Enterprise Mobility and Security 部落格)。
 
 ## 啟用及設定 Rights Management
 雖然您可以使用 Windows PowerShell 來啟用及設定 Azure RMS，但從管理入口網站來做最簡單。 啟用此服務之後，隨即就有兩個預設範本供系統管理員和使用者選擇，可快速又輕鬆地將資訊保護套用至檔案。 但是，您也可以建立自己的自訂範本以進行其他選項和設定。
@@ -79,9 +73,9 @@ ms.suite: ems
 
 **如需此案例的詳細資訊：**
 
-- 如需逐步指示，請參閱[啟用 Azure Rights Management](../deploy-use/activate-service.md) 和[設定 Azure Rights Management 的自訂範本](../deploy-use/configure-custom-templates.md)。
+- 如需逐步指示，請參閱[啟用 Azure Rights Management](../deploy-use/activate-service.md) 和[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)。
 
-- 若要協助使用者保護重要的公司檔案，請參閱[協助使用者使用 Azure Rights Management 來保護檔案](../deploy-use/help-users.md)。
+- 若要協助使用者保護重要的公司檔案，請參閱[協助使用者使用 Azure Rights Management Service 來保護檔案](../deploy-use/help-users.md)。
 
 接下來，請參閱系統管理員如何套用範本來自動為檔案和電子郵件設定資訊保護的一些範例。
 
@@ -155,7 +149,7 @@ ms.suite: ems
 
 **如需此案例的詳細資訊：**
 
--   如需 Azure RMS 與 Exchange Online 如何搭配運作的詳細資訊，請參閱[應用程式如何支援 Azure Rights Management](applications-support.md) 中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 一節。
+-   如需 Azure RMS 與 Exchange Online 如何搭配運作的詳細資訊，請參閱[應用程式如何支援 Azure Rights Management Service](applications-support.md) 中的 [Exchange Online 和 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 一節。
 
 -   如需 Exchange Online for Azure RMS 的設定逐步指示，請參閱[設定 Azure Rights Management 的應用程式](../deploy-use/configure-applications.md)中的 [Exchange Online：IRM 設定](../deploy-use/configure-office365.md#exchange-online-irm-configuration)。
 
@@ -189,7 +183,7 @@ ms.suite: ems
 
 **如需此案例的詳細資訊：**
 
--   如需 Azure RMS 與 SharePoint 如何搭配運作的詳細資訊，請參閱[應用程式如何支援 Azure Rights Management](applications-support.md) 中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 一節。
+-   如需 Azure RMS 與 SharePoint 如何搭配運作的詳細資訊，請參閱[應用程式如何支援 Azure Rights Management Service](applications-support.md) 中的 [SharePoint Online 和 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 一節。
 
 -   如需 SharePoint for Azure RMS 的設定逐步指示，請參閱[設定 Azure Rights Management 的應用程式](../deploy-use/configure-applications.md)中的 [SharePoint Online 和 OneDrive for Business：IRM 設定](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)。
 
@@ -246,6 +240,7 @@ Alice 想要限制 Bob 只能檢視和編輯此文件，而不希望他複製或
 現在您已看過 Azure RMS 用途的一些範例，您可能想要了解其運作方式。 如需 Azure RMS 運作方式的技術資訊，請參閱 [Azure RMS 如何運作？](how-does-it-work.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

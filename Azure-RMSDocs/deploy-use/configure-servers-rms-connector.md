@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: 設定 Azure Rights Management 連接器的伺服器 | Azure RMS
-description:
-keywords:
+title: "設定 Azure Rights Management 連接器的伺服器 | Azure 資訊保護"
+description: "協助您設定將使用 Azure Rights Management (RMS) 連接器的內部部署伺服器資訊。 這些程序涵蓋部署 Azure Rights Management 連接器的步驟 5。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 10/05/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
+
 
 ---
 
-# 設定 Azure Rights Management 連接器的伺服器
+# <a name="configuring-servers-for-the-azure-rights-management-connector"></a>設定 Azure Rights Management 連接器的伺服器
 
-*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*適用對象︰Azure 資訊保護、Windows Server 2012、Windows Server 2012 R2*
 
 
 使用下列資訊可協助您設定將使用 Azure Rights Management (RMS) 連接器的內部部署伺服器。 這些程序涵蓋[部署 Azure Rights Management 連接器](deploy-rms-connector.md)的步驟 5。
@@ -35,8 +29,8 @@ ms.suite: ems
 開始之前，請確定已安裝並設定 RMS 連接器，並檢查將使用連接器之伺服器所適用的任何[必要條件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)。
 
 
-## 設定伺服器使用 RMS 連接器
-安裝並設定好 RMS 連接器之後，即準備好要設定將會使用 Rights Management 並以該連接器連線至 Azure RMS 的內部部署伺服器。 這表示要設定下列伺服器：
+## <a name="configuring-servers-to-use-the-rms-connector"></a>設定伺服器使用 RMS 連接器
+安裝並設定好 RMS 連接器之後，即準備好要設定將會以該連接器連接至 Azure Rights Management Service 並使用此保護技術的內部部署伺服器。 這表示要設定下列伺服器：
 
 -   **若為 Exchange 2016 和 Exchange 2013**：用戶端存取伺服器和信箱伺服器
 
@@ -66,7 +60,7 @@ ms.suite: ems
 
 ---
 
-**藉由編輯登錄手動執行：**
+**編輯登錄以手動執行：**
 
 - 優點：
 
@@ -83,13 +77,14 @@ ms.suite: ems
 
 ---
 
-> [!IMPORTANT] 在這兩種情況下，您都必須手動安裝任何必要條件，並設定 Exchange、SharePoint 和檔案分類基礎結構來使用 Rights Management。
+> [!IMPORTANT]
+> 在這兩種情況下，您都必須手動安裝任何必要條件，並設定 Exchange、SharePoint 和檔案分類基礎結構來使用 Rights Management。
 
 對大多數組織而言，使用 Microsoft RMS 連接器的伺服器設定工具以自動設定是較好的選項，因為相較於手動設定，自動設定提供更好的效率和可靠性。
 
 在這些伺服器上進行設定變更後，如果這些伺服器是執行 Exchange 或 SharePoint，而先前已設定為使用 AD RMS，則您必須重新啟動這些伺服器。 如果您是首次設定這些伺服器使用 Rights Management，則不需要重新啟動這些伺服器。 但對於使用檔案分類基礎結構的檔案伺服器，則在這些檔案伺服器上進行設定變更後，務必要重新啟動檔案伺服器。
 
-### 如何使用 Microsoft RMS 連接器的伺服器設定工具
+### <a name="how-to-use-the-server-configuration-tool-for-microsoft-rms-connector"></a>如何使用 Microsoft RMS 連接器的伺服器設定工具
 
 1.  如果尚未下載 Microsoft RMS 連接器 (GenConnectorConfig.ps1) 的伺服器設定工具的指令碼，請從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkId=314106)取得。
 
@@ -114,15 +109,16 @@ ms.suite: ems
 
 當執行指令碼時，您必須為組織輸入 RMS 連接器的 URL。 輸入通訊協定首碼 (HTTP:// 或 HTTPS://)，及您在 DNS 中為連接器的負載平衡位址所定義的連接器名稱。 例如，https://connector.contoso.com。 工具接著會使用該 URL 來連線執行 RMS 連接器的伺服器，並取得用來建立必要設定的其他參數。
 
-> [!IMPORTANT] 當您執行這項工具時，請確定您指定的是貴組織之負載平衡型 RMS 連接器的名稱，而不是執行 RMS 連接器服務之單一伺服器的名稱。
+> [!IMPORTANT]
+> 當您執行這項工具時，請確定您指定的是貴組織之負載平衡型 RMS 連接器的名稱，而不是執行 RMS 連接器服務之單一伺服器的名稱。
 
 如需每種服務類型的特定資訊，請使用下列各節：
 
--   [設定 Exchange 伺服器使用連接器](#configuring-an-exchange-server-to-use-the-connector)
+-   [設定 Exchange 伺服器以使用連接器](#configuring-an-exchange-server-to-use-the-connector)
 
--   [設定 SharePoint 伺服器使用連接器](#configuring-a-sharepoint-server-to-use-the-connector)
+-   [設定 SharePoint 伺服器以使用連接器](#configuring-a-sharepoint-server-to-use-the-connector)
 
--   [設定檔案分類基礎結構的檔案伺服器以使用連接器](#configuring-a-file-server-for-file-classification-infrastructure-to-use-the-connector)
+-   [為檔案分類基礎結構設定檔案伺服器以使用連接器](#configuring-a-file-server-for-file-classification-infrastructure-to-use-the-connector)
 
 > [!NOTE]
 > 設定這些伺服器來使用連接器後，這些伺服器上本機安裝的用戶端應用程式可能無法使用 RMS。 發生這種情況時，可能是因為應用程式嘗試使用連接器而非直接使用 RMS，而這是不受支援的作法。
@@ -131,7 +127,7 @@ ms.suite: ems
 >
 > 在兩種情況下，您必須在未設定使用連接器的不同電腦上安裝用戶端應用程式。 接著它們會正確且直接使用 RMS。
 
-## 設定 Exchange 伺服器使用連接器
+## <a name="configuring-an-exchange-server-to-use-the-connector"></a>設定 Exchange 伺服器使用連接器
 下列 Exchange 角色會與 RMS 連接器通訊：
 
 -   若為 Exchange 2016 和 Exchange 2013：用戶端存取伺服器和信箱伺服器
@@ -151,7 +147,7 @@ ms.suite: ems
 > [!IMPORTANT]
 > 若未安裝這些版本或更新版的 Exchange 和 RMS 用戶端，您將無法設定 Exchange 使用連接器。 先確定已安裝這些版本再繼續。
 
-### 若要設定 Exchange 伺服器使用連接器
+### <a name="to-configure-exchange-servers-to-use-the-connector"></a>若要設定 Exchange 伺服器使用連接器
 
 1. 確定 Exchange 伺服器有權使用 RMS 連接器，方法是使用 RMS 連接器系統管理工具和[授授權伺服器使用 RMS 連接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)一節的資訊。 若要讓 Exchange 使用 RMS 連接器，需要此設定。
 
@@ -173,7 +169,7 @@ ms.suite: ems
     > 根據預設，當您執行 **Set-IRMConfiguration -InternalLicensingEnabled $true** 之後，會針對 Outlook Web App 和行動裝置自動啟用 IRM，以及針對信箱啟用 IRM。 不過，系統管理員可以在不同的層級停用 IRM，例如，對於 Client Access Server、Outlook Web App 虛擬目錄或 Outlook Web App 信箱原則，以及行動裝置信箱原則。 如果使用者可以在 Outlook 用戶端中看到任何 Azure RMS 範本，但在 Outlook Web App (等候一天之後) 中或行動裝置上看不到這些範本，請檢查相關設定以確定未停用 IRM。 如需詳細資訊，請參閱 Exchange 文件中的 [啟用或停用 Client Access Server 上的資訊版權管理](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx)。 
 
 
-## 設定 SharePoint 伺服器使用連接器
+## <a name="configuring-a-sharepoint-server-to-use-the-connector"></a>設定 SharePoint 伺服器使用連接器
 下列 SharePoint 角色會與 RMS 連接器通訊：
 
 -   前端 SharePoint 網頁伺服器，包括裝載中央管理伺服器者
@@ -188,13 +184,14 @@ ms.suite: ems
 
 執行 SharePoint 2016 或 SharePoint 2013 的伺服器也必須執行支援 RMS 連接器的 MSIPC 用戶端 2.1 版本。 若要確保您具有受支援的版本，請從 [Microsoft 下載中心](http://www.microsoft.com/download/details.aspx?id=38396)下載最新的用戶端。
 
-> [!WARNING] MSIPC 2.1 用戶端有多個版本，因此請確定您具有 1.0.2004.0 版本或更新版本。
+> [!WARNING]
+> 有多個 MSIPC 2.1 用戶端版本，因此請確定您具有 1.0.2004.0 版本或更新版本。
 >
 > 您可以檢查位於 **\Program Files\Active Directory Rights Management Services Client 2.1** 中 MSIPC.dll 的版本號碼來確認用戶端版本。 屬性對話方塊中會顯示 MSIPC 2.1 用戶端的版本號碼。
 
 執行 SharePoint 2010 的伺服器必須安裝包含 RMS 密碼編譯模式 2 的 MSDRM 用戶端版本。 Windows Server 2008 所支援的最低版本內含於 Hotfix 中，該 hotfix 可從 [Windows Server 2008 R2 和 Windows Server 2008 中之 AD RMS 的 RSA 金鑰長度會增加至 2048 位元](http://support.microsoft.com/kb/2627272)下載取得，並可從 [Windows 7 或 Windows Server 2008 R2 中 AD RMS 的 RSA 金鑰長度增加為 2048 位元](http://support.microsoft.com/kb/2627273)下載 Windows Server 2008 R2 的最低版本。 Windows Server 2012 和 Windows Server 2012 R2 原生支援密碼編譯模式 2。
 
-### 若要設定 SharePoint 伺服器使用連接器
+### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>若要設定 SharePoint 伺服器使用連接器
 
 1. 確定 SharePoint 伺服器有權使用 RMS 連接器，方法是使用 RMS 連接器系統管理工具和[授授權伺服器使用 RMS 連接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)一節的資訊。 若要讓 Exchange 使用 RMS 連接器，需要此設定。
 
@@ -219,14 +216,14 @@ ms.suite: ems
     在 SharePoint 伺服器陣列上啟用 IRM 後，您可對每個程式庫，使用 [程式庫設定]  頁面的 [資訊版權管理]  選項在個別程式庫上啟用 IRM。
 
 
-## 設定檔案分類基礎結構的檔案伺服器以使用連接器
+## <a name="configuring-a-file-server-for-file-classification-infrastructure-to-use-the-connector"></a>設定檔案分類基礎結構的檔案伺服器以使用連接器
 若要使用 RMS 連接器和檔案分類基礎結構來保護 Office 文件，檔案伺服器必須正在執行下列其中一種作業系統：
 
 -   Windows Server 2012 R2
 
 -   Windows Server 2012
 
-### 若要設定檔案伺服器使用連接器
+### <a name="to-configure-file-servers-to-use-the-connector"></a>若要設定檔案伺服器使用連接器
 
 1.  確定檔案伺服器有權使用 RMS 連接器，方法是使用 RMS 連接器系統管理工具和[授授權伺服器使用 RMS 連接器](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector)一節的資訊。 若要讓 Exchange 使用 RMS 連接器，需要此設定。
 
@@ -244,14 +241,15 @@ ms.suite: ems
 
 3.  建立分類規則和檔案管理工作來對文件加上 RMS 加密保護，然後指定 RMS 範本來自動套用 RMS 原則。 如需詳細資訊，請參閱 Windows Server 文件庫的 [檔案伺服器資源管理員概觀](http://technet.microsoft.com/library/hh831701.aspx) 。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 您已安裝和設定 RMS 連接器，並設定伺服器使用該連接器，現在 IT 管理員和使用者可以使用 Azure RMS 來保護及取用電子郵件訊息和文件。 為了方便使用者使用，請部署 RMS 共用應用程式；該應用程式會安裝 Office 附加元件，並將新的滑鼠右鍵選項加入至 [檔案總管]。 如需詳細資訊，請參閱[Rights Management 共用應用程式系統管理員指南](../rms-client/sharing-app-admin-guide.md)。
 
-您可以使用 [Azure Rights Management 部署藍圖](../plan-design/deployment-roadmap.md)來檢查將 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 轉出給使用者和系統管理員之前，是否還需要執行其他設定步驟。
+在將 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 轉出給使用者和系統管理員之前，您可以使用 [Azure 資訊保護部署藍圖](../plan-design/deployment-roadmap.md)，以檢查是否還需要執行其他設定步驟。
 
 若要監視 RMS 連接器，請參閱 [Monitor the Azure Rights Management connector](monitor-rms-connector.md) (監視 Azure Rights Management 連接器)。 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Nov16_HO1-->
 
 

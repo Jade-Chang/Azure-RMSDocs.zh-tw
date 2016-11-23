@@ -1,35 +1,28 @@
 ---
-# required metadata
-
-title: 案例 - 主管安全地交換機密資訊 | Azure RMS
-description:
-keywords:
+title: "案例 - 主管安全地交換機密資訊 | Azure Information Protection"
+description: "此案例和支援的使用者文件使用 Azure Rights Management 保護，讓主管可以安全地互換電子郵件與電子郵件附件，並有原則會自動限制主管的存取，完全不需要他們採取任何特殊動作。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 8481c275609e74ff5e09a0397e0e3a0346aa4430
+
 
 ---
 
 # 案例 - 主管安全地交換機密資訊
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-此案例和支援使用者文件使用 Azure Rights Management，可讓主管安全地互換電子郵件與電子郵件附件，並有原則會自動限制主管的存取，完全不需要他們採取任何特殊動作。 這些電子郵件及所有附件均由 Azure Rights Management 自動提供保護。
+此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術，讓主管可以安全地互換電子郵件與電子郵件附件，並有原則會自動限制主管的存取，完全不需要他們採取任何特殊動作。 這些電子郵件及所有附件均由 Azure Rights Management 自動提供保護。
 
 如有需要，您可以在電子郵件訊息主旨中加入規則的例外狀況，例如 DNP (「不保護」) 的縮寫，以便在主管需要將未受保護的電子郵件傳送至其他主管 (例如，用來先檢閱再轉寄給其他人) 時，讓該主管指定此選項。
 
@@ -51,12 +44,12 @@ ms.suite: ems
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|備妥 Office 365 或 Azure Active Directory 的帳戶與群組：<br /><br />- 擁有郵件功能的群組 (名為 **[主管]**)，所有主管都是這個群組的成員<br /><br />- 擁有郵件功能的群組 (名為 **[RMS 系統管理員]**)，所有會設定 Azure RMS 的系統管理員都是這個群組的成員|[準備 Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|您的 Azure Rights Management 租用戶金鑰由 Microsoft 管理；您不會使用 BYOK|[規劃及實作 Azure Rights Management 租用戶金鑰](https://technet.microsoft.com/library/dn440580.aspx)|
-|Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|下列其中一個組態：<br /><br />- Azure Rights Management 會啟用 Exchange Online<br /><br />- RMS 連接器已針對 Exchange 內部部署安裝和設定|針對 Exchange Online：請參閱 **Exchange Online：IRM 組態**一節 (位於[針對 Azure Rights Management 設定應用程式](https://technet.microsoft.com/library/jj585031.aspx))。<br /><br />針對 Exchange 內部部署：[部署 Azure Rights Management 連接器](https://technet.microsoft.com/library/dn375964.aspx)|
-|您已如下所述設定自訂範本|[設定 Azure Rights Management 的自訂範本](https://technet.microsoft.com/library/dn642472.aspx)|
-|您已如本文稍後所述設定 IRM 的傳輸保護規則|針對 Exchange Online：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />針對 Exchange 2013：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />針對 Exchange 2010：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|備妥 Office 365 或 Azure Active Directory 的帳戶與群組：<br /><br />- 擁有郵件功能的群組 (名為 **[主管]**)，所有主管都是這個群組的成員<br /><br />- 擁有郵件功能的群組 (名為 **[RMS 系統管理員]**)，所有會設定 Azure RMS 的系統管理員都是這個群組的成員|[準備 Azure Information Protection](../plan-design/prepare.md)|
+|您的 Azure Information Protection 租用戶金鑰由 Microsoft 管理；您不會使用 BYOK|[規劃及實作 Azure Information Protection 租用戶金鑰](../plan-design/plan-implement-tenant-key.md)|
+|Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
+|下列其中一個組態：<br /><br />- Azure Rights Management 會啟用 Exchange Online<br /><br />- RMS 連接器已針對 Exchange 內部部署安裝和設定|針對 Exchange Online︰請參閱 [Exchange Online：IRM 組態](../deploy-use/configure-office365.md#exchange-online-irm-configuration)資訊。<br /><br />針對 Exchange 內部部署：[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)|
+|您已如下所述設定自訂範本|[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)|
+|您已如本文稍後所述設定 IRM 的傳輸保護規則|若為 Exchange Online：[郵件流程或傳輸規則](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)<br /><br />針對 Exchange 2013：[建立傳輸保護規則](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />針對 Exchange 2010：[建立傳輸保護規則](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### 設定主管的自訂範本
 
@@ -138,6 +131,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Oct16_HO1-->
 
 

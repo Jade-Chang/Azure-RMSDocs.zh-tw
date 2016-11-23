@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 如何安裝和設定 RMS 伺服器以進行測試 |Azure RMS
-description: 安裝和設定 RMS 伺服器以測試具備權限的應用程式。
-keywords:
+title: "如何安裝和設定 RMS 伺服器以進行測試 |Azure RMS"
+description: "安裝和設定 RMS 伺服器以測試具備權限的應用程式。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7ee098ceaa8ac6b1e0d5d6cbe090042510aa89b
+ms.openlocfilehash: ac7dd8592d6e11905744c4f4e0171fd5b5945c51
+
 
 ---
 
@@ -65,24 +61,41 @@ ms.suite: ems
 
     若要使用 RMS 伺服器進行測試，請設定伺服器端或用戶端探索，讓 Rights Management Service Client 2.1 能夠探索並建立與 RMS 伺服器間的通訊。
 
-    > [!Note] 不需要探索設定，就能使用 Azure RMS 進行測試。
+    > [!Note]
+    > 不需要探索設定，就能使用 Azure RMS 進行測試。
 
   - 在伺服器端探索中，管理員會向 Active Directory 登錄 RMS 根叢集的服務連接點 (SCP)，而用戶端會查詢 Active Directory 以探索 SCP，並建立與伺服器之間的連線。
   - 在用戶端探索中，您可以在執行 RMS Client 2.1 的電腦上設定登錄中的 RMS 服務探索設定。 這些設定會將 RMS Client 2.1 指向要使用的 RMS 伺服器。 當其存在時，不會執行伺服器端探索。
 
-  若要設定用戶端探索，您可以設定下列登錄機碼，以指向您的 RMS 伺服器。 如需如何設定服務端探索的相關資訊，請參閱 [RMS Client 2.0 部署注意事項](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)。
+  若要設定用戶端探索，您可以設定下列登錄機碼，以指向您的 RMS 伺服器。 如需如何設定服務端探索的資訊，請參閱 [RMS 用戶端部署注意事項](https://technet.microsoft.com/library/jj159267(WS.10).aspx)。
 
 1. **EnterpriseCertification**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
 
-  **值**：(預設)：[**http|https**]://RMSClusterName/**_wmcs/Certification**
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterpriseCertification
+
+   **值**：(預設)：[**http|https**]://RMSClusterName/**_wmcs/Certification**
 
 2. **EnterprisePublishing**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **值**：(預設)：[**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
->[!NOTE] 根據預設，登錄中沒有這些機碼，必須加以建立。
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterprisePublishing
+                  
+   **值**：(預設)：[**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
->[!IMPORTANT] 如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須在下列機碼位置中設定這些機碼︰<p>
+>[!NOTE] 
+> 根據預設，登錄中沒有這些機碼，必須加以建立。
+
+>[!IMPORTANT] 
+> 如果您在 64 位元版 Windows 上執行 32 位元應用程式，您必須在下列機碼位置中設定這些機碼︰<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +109,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

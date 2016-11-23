@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 如何對已啟用權限的應用程式偵錯 | Azure RMS
-description: 下列主題說明如何偵錯應用程式及使用 Windows 事件記錄檔。
-keywords:
+title: "如何對已啟用權限的應用程式偵錯 | Azure RMS"
+description: "下列主題說明如何偵錯應用程式及使用 Windows 事件記錄檔。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: cab6839a1911bb61185f2ef361b2040ac0d38a6e
+
 
 ---
 
@@ -71,13 +67,14 @@ HKEY_LOCAL_MACHINE
 
  
 
-## 相關主題
+## 相關的主題
 
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

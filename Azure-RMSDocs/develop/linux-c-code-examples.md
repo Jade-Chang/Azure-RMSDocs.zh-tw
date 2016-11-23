@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Linux 程式碼範例 | Azure RMS
-description: 本主題介紹 Linux 版 RMS SDK 的重要案例與程式碼元素。
-keywords:
+title: "Linux 程式碼範例 | Azure RMS"
+description: "本主題介紹 Linux 版 RMS SDK 的重要案例與程式碼元素。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
+
 
 ---
 
@@ -39,38 +35,38 @@ ms.suite: ems
 
 **C++**︰
 
-    void MainWindow::ConvertFromPFILE(const string&amp; fileIn,
-        const string&amp; clientId,
-        const string&amp; redirectUrl,
-        const string&amp; clientEmail) 
+    void MainWindow::ConvertFromPFILE(const string& fileIn,
+        const string& clientId,
+        const string& redirectUrl,
+        const string& clientEmail) 
     {
     // add trusted certificates using HttpHelpers of RMS and Auth SDKs
     addCertificates();
     
     // create shared in/out streams
-    auto inFile = make_shared&lt;ifstream&gt;(
+    auto inFile = make_shared<ifstream>(
     fileIn, ios_base::in | ios_base::binary);
     
-    if (!inFile-&gt;is_open()) {
-     AddLog(&quot;ERROR: Failed to open &quot;, fileIn.c_str());
+    if (!inFile->is_open()) {
+     AddLog("ERROR: Failed to open ", fileIn.c_str());
     return;
     }
     
     string fileOut;
     
     // generate output filename
-    auto pos = fileIn.find_last_of(&#39;.&#39;);
+    auto pos = fileIn.find_last_of('.');
     
     if (pos != string::npos) {
      fileOut = fileIn.substr(0, pos);
     }
     
      // create streams
-    auto outFile = make_shared&lt;fstream&gt;(
+    auto outFile = make_shared<fstream>(
     fileOut, ios_base::in | ios_base::out | ios_base::trunc | ios_base::binary);
     
-    if (!outFile-&gt;is_open()) {
-     AddLog(&quot;ERROR: Failed to open &quot;, fileOut.c_str());
+    if (!outFile->is_open()) {
+     AddLog("ERROR: Failed to open ", fileOut.c_str());
      return;
       }
     
@@ -85,34 +81,34 @@ ms.suite: ems
       inFile,
       outFile,
       auth,
-      this-&gt;consent);
+      this->consent);
     
-    AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
+    AddLog("Successfully converted to ", fileOut.c_str());
     }
-    catch (const rmsauth::Exception&amp; e)
+    catch (const rmsauth::Exception& e)
     {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
+    AddLog("ERROR: ", e.error().c_str());
     }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
+    catch (const rmscore::exceptions::RMSException& e) {
+    AddLog("ERROR: ", e.what());
     }
-    inFile-&gt;close();
-    outFile-&gt;close();
+    inFile->close();
+    outFile->close();
     }
 
 **建立受保護的檔案資料流**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰這個方法會透過 SDK 方法從傳入的支援資料流建立受保護的檔案資料流 *ProtectedFileStream::Aquire*，然後傳回給呼叫者。
 
 **C++**︰
 
-    shared_ptr&lt;GetProtectedFileStreamResult&gt;PFileConverter::ConvertFromPFile(
-    const string           &amp; userId,
-    shared_ptr&lt;istream&gt;      inStream,
-    shared_ptr&lt;iostream&gt;     outStream,
-    IAuthenticationCallback&amp; auth,
-    IConsentCallback       &amp; consent)
+    shared_ptr<GetProtectedFileStreamResult>PFileConverter::ConvertFromPFile(
+    const string           & userId,
+    shared_ptr<istream>      inStream,
+    shared_ptr<iostream>     outStream,
+    IAuthenticationCallback& auth,
+    IConsentCallback       & consent)
     {
     auto inIStream = rmscrypto::api::CreateStreamFromStdStream(inStream);
     
@@ -122,26 +118,26 @@ ms.suite: ems
     auth,
     consent,
     POL_None,
-    static_cast&lt;ResponseCacheFlags&gt;(RESPONSE_CACHE_INMEMORY
+    static_cast<ResponseCacheFlags>(RESPONSE_CACHE_INMEMORY
                                     | RESPONSE_CACHE_ONDISK));
     
-    if ((fsResult.get() != nullptr) &amp;&amp; (fsResult-&gt;m_status == Success) &amp;&amp;
-      (fsResult-&gt;m_stream != nullptr)) {
-    auto pfs = fsResult-&gt;m_stream;
+    if ((fsResult.get() != nullptr) && (fsResult->m_status == Success) &&
+      (fsResult->m_stream != nullptr)) {
+    auto pfs = fsResult->m_stream;
     
     // preparing
     readPosition  = 0;
     writePosition = 0;
-    totalSize     = pfs-&gt;Size();
+    totalSize     = pfs->Size();
     
     // start threads
-    for (size_t i = 0; i &lt; THREADS_NUM; ++i) {
+    for (size_t i = 0; i < THREADS_NUM; ++i) {
       threadPool.push_back(thread(WorkerThread,
-                                  static_pointer_cast&lt;iostream&gt;(outStream), pfs,
+                                  static_pointer_cast<iostream>(outStream), pfs,
                                   false));
     }
     
-    for (thread&amp; t: threadPool) {
+    for (thread& t: threadPool) {
       if (t.joinable()) {
         t.join();
       }
@@ -159,36 +155,36 @@ ms.suite: ems
 
 **C++**︰
 
-    void MainWindow::ConvertToPFILEUsingTemplates(const string&amp; fileIn,
-                                              const string&amp; clientId,
-                                              const string&amp; redirectUrl,
-                                              const string&amp; clientEmail) 
+    void MainWindow::ConvertToPFILEUsingTemplates(const string& fileIn,
+                                              const string& clientId,
+                                              const string& redirectUrl,
+                                              const string& clientEmail) 
     {
     // generate output filename
-    string fileOut = fileIn + &quot;.pfile&quot;;
+    string fileOut = fileIn + ".pfile";
     
     // add trusted certificates using HttpHelpers of RMS and Auth SDKs
     addCertificates();
     
     // create shared in/out streams
-    auto inFile = make_shared&lt;ifstream&gt;(
+    auto inFile = make_shared<ifstream>(
     fileIn, ios_base::in | ios_base::binary);
-    auto outFile = make_shared&lt;fstream&gt;(
+    auto outFile = make_shared<fstream>(
     fileOut, ios_base::in | ios_base::out | ios_base::trunc | ios_base::binary);
     
-    if (!inFile-&gt;is_open()) {
-    AddLog(&quot;ERROR: Failed to open &quot;, fileIn.c_str());
+    if (!inFile->is_open()) {
+    AddLog("ERROR: Failed to open ", fileIn.c_str());
     return;
     }
     
-    if (!outFile-&gt;is_open()) {
-    AddLog(&quot;ERROR: Failed to open &quot;, fileOut.c_str());
+    if (!outFile->is_open()) {
+    AddLog("ERROR: Failed to open ", fileOut.c_str());
     return;
     }
     
     // find file extension
     string fileExt;
-    auto   pos = fileIn.find_last_of(&#39;.&#39;);
+    auto   pos = fileIn.find_last_of('.');
     
     if (pos != string::npos) {
     fileExt = fileIn.substr(pos);
@@ -201,40 +197,34 @@ ms.suite: ems
     // process convertion
     PFileConverter::ConvertToPFileTemplates(
       clientEmail, inFile, fileExt, outFile, auth,
-      this-&gt;consent, this-&gt;templates);
+      this->consent, this->templates);
     
-    AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
+    AddLog("Successfully converted to ", fileOut.c_str());
     }
-   catch (const rmsauth::Exception&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
-    outFile-&gt;close();
+   catch (const rmsauth::Exception& e) { AddLog("ERROR: ", e.error().c_str()); outFile->close(); remove(fileOut.c_str()); } catch (const rmscore::exceptions::RMSException& e) { AddLog("ERROR: ", e.what());
+    
+    outFile->close();
     remove(fileOut.c_str());
     }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
-    
-    outFile-&gt;close();
-    remove(fileOut.c_str());
-    }
-    inFile-&gt;close();
-    outFile-&gt;close();
+    inFile->close();
+    outFile->close();
     }
 
 
 **使用從範本建立的原則保護檔案**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰擷取與使用者相關聯的範本清單，然後使用選取的範本建立原則，接著使用該原則保護檔案。
 
 **C++**︰
 
-    void PFileConverter::ConvertToPFileTemplates(const string           &amp; userId,
-                                             shared_ptr&lt;istream&gt;      inStream,
-                                             const string           &amp; fileExt,
-                                             std::shared_ptr&lt;iostream&gt;outStream,
-                                             IAuthenticationCallback&amp; auth,
-                                             IConsentCallback&amp; /*consent*/,
-                                             ITemplatesCallback     &amp; templ)
+    void PFileConverter::ConvertToPFileTemplates(const string           & userId,
+                                             shared_ptr<istream>      inStream,
+                                             const string           & fileExt,
+                                             std::shared_ptr<iostream>outStream,
+                                             IAuthenticationCallback& auth,
+                                             IConsentCallback& /*consent*/,
+                                             ITemplatesCallback     & templ)
     {
     auto templates = TemplateDescriptor::GetTemplateList(userId, auth);
     
@@ -242,7 +232,7 @@ ms.suite: ems
     
     size_t pos = templ.SelectTemplate(templates);
     
-    if (pos &lt; templates.size()) {
+    if (pos < templates.size()) {
     auto policy = UserPolicy::CreateFromTemplateDescriptor(
       templates[pos],
       userId,
@@ -255,16 +245,16 @@ ms.suite: ems
     }
 
 **保護指定原則的檔案**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰使用指定的原則建立受保護的檔案資料流，然後保護該檔案。
 
 **C++**︰
 
-    void PFileConverter::ConvertToPFileUsingPolicy(shared_ptr&lt;UserPolicy&gt;   policy,
-                                               shared_ptr&lt;istream&gt;      inStream,
-                                               const string           &amp; fileExt,
-                                               std::shared_ptr&lt;iostream&gt;outStream)
+    void PFileConverter::ConvertToPFileUsingPolicy(shared_ptr<UserPolicy>   policy,
+                                               shared_ptr<istream>      inStream,
+                                               const string           & fileExt,
+                                               std::shared_ptr<iostream>outStream)
     {
     if (policy.get() != nullptr) {
     auto outIStream = rmscrypto::api::CreateStreamFromStdStream(outStream);
@@ -272,26 +262,26 @@ ms.suite: ems
     
     // preparing
     readPosition  = 0;
-    writePosition = pStream-&gt;Size();
+    writePosition = pStream->Size();
     
-    inStream-&gt;seekg(0, ios::end);
-    totalSize = inStream-&gt;tellg();
+    inStream->seekg(0, ios::end);
+    totalSize = inStream->tellg();
     
     // start threads
-    for (size_t i = 0; i &lt; THREADS_NUM; ++i) {
+    for (size_t i = 0; i < THREADS_NUM; ++i) {
       threadPool.push_back(thread(WorkerThread,
-                                  static_pointer_cast&lt;iostream&gt;(inStream),
+                                  static_pointer_cast<iostream>(inStream),
                                   pStream,
                                   true));
     }
     
-    for (thread&amp; t: threadPool) {
+    for (thread& t: threadPool) {
       if (t.joinable()) {
         t.join();
       }
     }
     
-    pStream-&gt;Flush();
+    pStream->Flush();
     }
     
 
@@ -305,37 +295,37 @@ ms.suite: ems
 
 **C++**︰
 
-    void MainWindow::ConvertToPFILEUsingRights(const string            &amp; fileIn,
-                                           const vector&lt;UserRights&gt;&amp; userRights,
-                                           const string            &amp; clientId,
-                                           const string            &amp; redirectUrl,
-                                           const string            &amp; clientEmail)
+    void MainWindow::ConvertToPFILEUsingRights(const string            & fileIn,
+                                           const vector<UserRights>& userRights,
+                                           const string            & clientId,
+                                           const string            & redirectUrl,
+                                           const string            & clientEmail)
     {
     // generate output filename
-    string fileOut = fileIn + &quot;.pfile&quot;;
+    string fileOut = fileIn + ".pfile";
     
     // add trusted certificates using HttpHelpers of RMS and Auth SDKs
     addCertificates();
     
     // create shared in/out streams
-    auto inFile = make_shared&lt;ifstream&gt;(
+    auto inFile = make_shared<ifstream>(
     fileIn, ios_base::in | ios_base::binary);
-    auto outFile = make_shared&lt;fstream&gt;(
+    auto outFile = make_shared<fstream>(
     fileOut, ios_base::in | ios_base::out | ios_base::trunc | ios_base::binary);
     
-    if (!inFile-&gt;is_open()) {
-    AddLog(&quot;ERROR: Failed to open &quot;, fileIn.c_str());
+    if (!inFile->is_open()) {
+    AddLog("ERROR: Failed to open ", fileIn.c_str());
     return;
     }
     
-    if (!outFile-&gt;is_open()) {
-    AddLog(&quot;ERROR: Failed to open &quot;, fileOut.c_str());
+    if (!outFile->is_open()) {
+    AddLog("ERROR: Failed to open ", fileOut.c_str());
     return;
     }
     
     // find file extension
     string fileExt;
-    auto   pos = fileIn.find_last_of(&#39;.&#39;);
+    auto   pos = fileIn.find_last_of('.');
     
     if (pos != string::npos) {
     fileExt = fileIn.substr(pos);
@@ -343,7 +333,7 @@ ms.suite: ems
     
     // is anything to add
     if (userRights.size() == 0) {
-    AddLog(&quot;ERROR: &quot;, &quot;Please fill email and check rights&quot;);
+    AddLog("ERROR: ", "Please fill email and check rights");
     return;
     }
     
@@ -359,54 +349,54 @@ ms.suite: ems
       fileExt,
       outFile,
       auth,
-      this-&gt;consent,
+      this->consent,
       userRights);
     
-    AddLog(&quot;Successfully converted to &quot;, fileOut.c_str());
+    AddLog("Successfully converted to ", fileOut.c_str());
     }
-    catch (const rmsauth::Exception&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.error().c_str());
+    catch (const rmsauth::Exception& e) {
+    AddLog("ERROR: ", e.error().c_str());
     
-    outFile-&gt;close();
+    outFile->close();
     remove(fileOut.c_str());
     }
-    catch (const rmscore::exceptions::RMSException&amp; e) {
-    AddLog(&quot;ERROR: &quot;, e.what());
+    catch (const rmscore::exceptions::RMSException& e) {
+    AddLog("ERROR: ", e.what());
     
-    outFile-&gt;close();
+    outFile->close();
     remove(fileOut.c_str());
     }
-    inFile-&gt;close();
-    outFile-&gt;close();
+    inFile->close();
+    outFile->close();
     }
 
 
 **建立保護原則與提供選取的權限給使用者**
-**來源**︰[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+**來源**：[rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **描述**︰建立原則描述元，並填入使用者的權限資訊，然後使用原則描述元建立使用者原則。 此原則可用來透過呼叫 *ConvertToPFileUsingPolicy* (請參閱本主題前一節所述的此內容) 保護選取的檔案。
 
 **C++**︰
 
     void PFileConverter::ConvertToPFilePredefinedRights(
-    const string            &amp; userId,
-    shared_ptr&lt;istream&gt;       inStream,
-    const string            &amp; fileExt,
-    shared_ptr&lt;iostream&gt;      outStream,
-    IAuthenticationCallback &amp; auth,
-    IConsentCallback&amp; /*consent*/,
-    const vector&lt;UserRights&gt;&amp; userRights)
+    const string            & userId,
+    shared_ptr<istream>       inStream,
+    const string            & fileExt,
+    shared_ptr<iostream>      outStream,
+    IAuthenticationCallback & auth,
+    IConsentCallback& /*consent*/,
+    const vector<UserRights>& userRights)
     {
     auto endValidation = chrono::system_clock::now() + chrono::hours(48);
     
     
     PolicyDescriptor desc(userRights);
     
-    desc.Referrer(make_shared&lt;string&gt;(&quot;https://client.test.app&quot;));
+    desc.Referrer(make_shared<string>("https://client.test.app"));
     desc.ContentValidUntil(endValidation);
     desc.AllowOfflineAccess(false);
-    desc.Name(&quot;Test Name&quot;);
-    desc.Description(&quot;Test Description&quot;);
+    desc.Name("Test Name");
+    desc.Description("Test Description");
     
     auto policy = UserPolicy::Create(desc, userId, auth,
                                    USER_AllowAuditedExtraction);
@@ -421,7 +411,7 @@ ms.suite: ems
 **C++**︰
 
     threadPool.push_back(thread(WorkerThread,
-                                  static_pointer_cast&lt;iostream&gt;(outStream), pfs,
+                                  static_pointer_cast<iostream>(outStream), pfs,
                                   false));
 
 
@@ -433,20 +423,20 @@ ms.suite: ems
     static int64_t totalSize     = 0;
     static int64_t readPosition  = 0;
     static int64_t writePosition = 0;
-    static vector&lt;thread&gt; threadPool;
+    static vector<thread> threadPool;
     
-    static void WorkerThread(shared_ptr&lt;iostream&gt;           stdStream,
-                         shared_ptr&lt;ProtectedFileStream&gt;pStream,
+    static void WorkerThread(shared_ptr<iostream>           stdStream,
+                         shared_ptr<ProtectedFileStream>pStream,
                          bool                           modeWrite) {
-    vector&lt;uint8_t&gt; buffer(4096);
-    int64_t bufferSize = static_cast&lt;int64_t&gt;(buffer.size());
+    vector<uint8_t> buffer(4096);
+    int64_t bufferSize = static_cast<int64_t>(buffer.size());
     
-    while (totalSize - readPosition &gt; 0) {
+    while (totalSize - readPosition > 0) {
     // lock
     threadLocker.lock();
     
     // check remain
-    if (totalSize - readPosition &lt;= 0) {
+    if (totalSize - readPosition <= 0) {
       threadLocker.unlock();
       return;
     }
@@ -466,23 +456,23 @@ ms.suite: ems
       try {
         threadLocker.lock();
     
-        stdStream-&gt;seekg(offsetRead);
-        stdStream-&gt;read(reinterpret_cast&lt;char *&gt;(&amp;buffer[0]), toProcess);
+        stdStream->seekg(offsetRead);
+        stdStream->read(reinterpret_cast<char *>(&buffer[0]), toProcess);
         threadLocker.unlock();
         auto written =
-          pStream-&gt;WriteAsync(
+          pStream->WriteAsync(
             buffer.data(), toProcess, offsetWrite, std::launch::deferred).get();
     
         if (written != toProcess) {
-          throw rmscore::exceptions::RMSStreamException(&quot;Error while writing data&quot;);
+          throw rmscore::exceptions::RMSStreamException("Error while writing data");
         }
       }
-      catch (exception&amp; e) {
-        qDebug() &lt;&lt; &quot;Exception: &quot; &lt;&lt; e.what();
+      catch (exception& e) {
+        qDebug() << "Exception: " << e.what();
       }
     } else {
       auto read =
-        pStream-&gt;ReadAsync(&amp;buffer[0],
+        pStream->ReadAsync(&buffer[0],
                            toProcess,
                            offsetRead,
                            std::launch::deferred).get();
@@ -496,12 +486,12 @@ ms.suite: ems
         threadLocker.lock();
     
         // seek to write
-        stdStream-&gt;seekp(offsetWrite);
-        stdStream-&gt;write(reinterpret_cast&lt;const char *&gt;(buffer.data()), read);
+        stdStream->seekp(offsetWrite);
+        stdStream->write(reinterpret_cast<const char *>(buffer.data()), read);
         threadLocker.unlock();
       }
-      catch (exception&amp; e) {
-        qDebug() &lt;&lt; &quot;Exception: &quot; &lt;&lt; e.what();
+      catch (exception& e) {
+        qDebug() << "Exception: " << e.what();
       }
     }
     }
@@ -511,7 +501,7 @@ ms.suite: ems
 ## 案例︰RMS 驗證
 
 下列範例會示範兩種不同的驗證方法；使用和不使用 UI 取得 Azure 驗證 oAuth2 權杖。
-**利用 UI 取得 oAuth2 驗證權杖**
+**使用 UI 取得 oAuth2 驗證權杖**
 **來源**：[rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
 **步驟 1**︰建立 **rmsauth::FileCache** 物件的共用點。
@@ -519,11 +509,10 @@ ms.suite: ems
 
 **C++**︰
 
-    auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
+    auto FileCachePtr = std::make_shared< rmsauth::FileCache>();
 
 
-**步驟 2**︰建立 **rmsauth::AuthenticationContext** 物件
-描述︰指定 Azure *授權單位 URI* 和 *FileCache* 物件。
+**步驟 2**︰建立 **rmsauth::AuthenticationContext** 物件。描述︰指定 Azure *授權單位 URI* 和 *FileCache* 物件。
 
 **C++**︰
 
@@ -533,8 +522,7 @@ ms.suite: ems
                               FileCachePtr);
 
 
-**步驟 3**︰呼叫 **authContext** 物件的 **aquireToken** 方法，並指定下一個參數︰
-描述:
+**步驟 3**︰呼叫 **authContext** 物件的 **aquireToken** 方法，並指定下一個參數︰描述：
 
 -   *要求的資源* - 您想要存取的受保護資源
 -   *用戶端唯一識別碼* - 通常是 GUID
@@ -552,34 +540,30 @@ ms.suite: ems
                 std::string(“john.smith@msopentechtest01.onmicrosoft.com”));
 
 
-**步驟 4**︰從結果取得存取權杖
-描述︰呼叫 **result-&gt; accessToken()** 方法
+**步驟 4**︰從結果取得存取權杖。描述：呼叫 **result-> accessToken()** 方法
 
 **注意**  任何驗證程式庫方法都可能會引發 **rmsauth::Exception**
 
  
-**不利用 UI 取得 oAuth2 驗證權杖**
+**不使用 UI 取得 oAuth2 驗證權杖**
 **來源**：[rmsauth\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**步驟 1**︰建立 **rmsauth::FileCache** 物件的共用點
-描述︰您可以設定快取路徑或使用預設值
+**步驟 1**︰建立 **rmsauth::FileCache** 物件的共用點。描述︰您可以設定快取路徑或使用預設值
 
 **C++**︰
 
-    auto FileCachePtr = std::make_shared&lt; rmsauth::FileCache&gt;();
+    auto FileCachePtr = std::make_shared< rmsauth::FileCache>();
 
 
-**步驟 2**︰ 建立 **UserCredential** 物件
-描述︰指定*使用者登入*和*密碼*
+**步驟 2**︰建立 **UserCredential** 物件。描述︰指定使用者登入和密碼
 
 **C++**︰
 
-    auto userCred = std::make_shared&lt;UserCredential&gt;(&quot;john.smith@msopentechtest01.onmicrosoft.com&quot;,
-                                                 &quot;SomePass&quot;);
+    auto userCred = std::make_shared<UserCredential>("john.smith@msopentechtest01.onmicrosoft.com",
+                                                 "SomePass");
 
 
-**步驟 3**︰建立 **rmsauth::AuthenticationContext** 物件
-描述︰指定 Azure *授權單位 URI* 和 *FileCache* 物件
+**步驟 3**︰建立 **rmsauth::AuthenticationContext** 物件。描述︰指定 Azure 授權單位 URI 和 *FileCache* 物件
 
 **C++**︰
 
@@ -602,13 +586,13 @@ ms.suite: ems
                 userCred);
 
 
-**步驟 5**︰從結果取得存取權杖
-描述︰呼叫 **result-&gt; accessToken()** 方法
+**步驟 5**︰從結果取得存取權杖。描述：呼叫 **result-> accessToken()** 方法
 
 **注意**  任何驗證程式庫方法都可能會引發 **rmsauth::Exception**
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Oct16_HO1-->
 
 

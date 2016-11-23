@@ -1,8 +1,8 @@
-# [了解和探索](/rights-management/understand-explore/azure-rights-management)
-# [開始使用](/rights-management/get-started/requirements-azure-rms)
-# [計劃和設計](/rights-management/plan-design/deployment-roadmap)
-# [部署與使用服務](/rights-management/deploy-use/activate-service)
-# [部署與使用用戶端](/rights-management/rms-client/use-client)
+# [了解和探索](/information-protection/understand-explore/what-is-information-protection)
+# [開始使用](/information-protection/get-started/requirements-azure-rms)
+# [計劃和設計](/information-protection/plan-design/deployment-roadmap)
+# [部署與使用服務](/information-protection/deploy-use/activate-service)
+# [部署與使用用戶端](/information-protection/rms-client/use-client)
 # [開發和自訂應用程式](developers-guide.md)
 ## [開發人員指南](developers-guide.md)
 ## [Rights Management SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
@@ -27,10 +27,10 @@
 #### [如何使用文件追蹤](how-to-use-document-tracking.md)
 #### [術語](terms.md)
 ### [API 參考資料](api-reference-4-2.md)
-#### [Android API 參考](android-namespaces.md)
+#### [Android API 參考](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Linux API 參考](linux-c-api-reference.md)
-#### [iOS / OS X API 參考](/rights-management/sdk/4.2/api/iOS/iOS)
-#### [Windows API 參考](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+#### [iOS / OS X API 參考](https://msdn.microsoft.com/library/dn758306.aspx)
+#### [Windows API 參考](https://msdn.microsoft.com/library/dn891914.aspx)
 ## [Rights Management SDK 2.1](microsoft-information-protection-and-control-client-portal.md)
 ### [概觀](ad-rms-overview.md)
 #### [用戶端](ad-rms-client.md)
@@ -60,13 +60,13 @@
 #### [了解使用限制](understanding-usage-restrictions.md)
 #### [使用限制參考](usage-restriction-reference.md)
 ### [API 參考](api-reference-2-1.md)
-#### [常數](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/constants)
-#### [資料類型](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/data types)
-#### [函數](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
-#### [結構](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
-#### [錯誤碼](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
+#### [常數](https://msdn.microsoft.com/library/hh535291.aspx)
+#### [資料類型](https://msdn.microsoft.com/library/hh535288.aspx)
+#### [函數](https://msdn.microsoft.com/library/hh535289.aspx)
+#### [結構](https://msdn.microsoft.com/library/hh535294.aspx)
+#### [錯誤碼](https://msdn.microsoft.com/library/hh535248.aspx)
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

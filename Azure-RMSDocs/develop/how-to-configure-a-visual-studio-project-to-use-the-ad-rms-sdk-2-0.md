@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 設定 Visual Studio | Azure RMS
-description: 有關如何設定 Visual Studio 專案以使用 RMS SDK 2.1 的指示。
-keywords:
+title: "設定 Visual Studio | Azure RMS"
+description: "有關如何設定 Visual Studio 專案以使用 RMS SDK 2.1 的指示。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 28286a4c8a5fcc602afba5975cfe5133e8b6c55b
+
 
 ---
 
@@ -28,7 +24,7 @@ ms.suite: ems
 
 本主題包含如何設定 Visual Studio 專案以使用 Rights Management Services SDK 2.1 的相關指示。
 
-## 先決條件
+## 必要條件
 
 -   [安裝 SDK](install-the-rms-sdk.md)
 
@@ -73,7 +69,7 @@ ms.suite: ems
 
     ![方案總管資源檔案欄位](../media/original_file_name.png)
 
-## 相關主題
+## 相關的主題
 
 * [安裝 SDK](install-the-rms-sdk.md)
  
@@ -81,6 +77,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

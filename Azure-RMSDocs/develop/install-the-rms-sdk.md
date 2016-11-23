@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 安裝 SDK | Azure RMS
-description: 本主題會引導您安裝開發人員工具。
-keywords:
+title: "安裝 SDK | Azure RMS"
+description: "本主題會引導您安裝開發人員工具。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
+
 
 ---
 
@@ -41,7 +37,7 @@ ms.suite: ems
 
 如需 "setup\_sdk.exe" 在您的系統上安裝之檔案的詳細資訊，請參閱[開發環境檔案](sdk-elements.md)
 
-## 相關主題
+## 相關的主題
 
 * [開發環境檔案](sdk-elements.md)
  
@@ -49,6 +45,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

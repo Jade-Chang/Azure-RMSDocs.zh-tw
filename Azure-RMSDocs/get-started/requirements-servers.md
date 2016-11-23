@@ -1,36 +1,32 @@
 ---
-# required metadata
-
-title: Azure RMS 需求：支援 Azure Rights Management 的內部部署伺服器 | Azure RMS
-description:
-keywords:
+title: "資料保護的內部部署伺服器支援 | Azure Information Protection"
+description: "利用 Rights Management 連接器找出可以使用 Azure Information Protection 之 Azure Rights Management Service 的內部部署伺服器產品。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e4bf159cea6298e5a5577a2fa4de3dd3beeb47d9
+
 
 ---
 
 
-# Azure RMS 需求：支援 Azure RMS 的內部部署伺服器
+# <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>支援 Azure Rights Management 資料保護的內部部署伺服器
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
-當您使用 Azure RMS 連接器時可搭配使用下列內部部署伺服器產品與 Azure RMS，其作為內部部署伺服器與 Azure RMS 之間的通訊介面 (轉送)。 此外，此設定需要您在 Active Directory 樹系與 Azure Active Directory 之間設定目錄同步。
+當您使用 Azure Rights Management 連接器時，下列內部部署伺服器產品支援 Azure Information Protection。 此連接器作用如同內部部署伺服器與 Azure Information Protection 用以保護 Office 文件和電子郵件的 Azure Rights Management Service 之間的通訊介面 (轉送)。 
+
+若要使用此連接器，您必須設定 Active Directory 樹系與 Azure Active Directory 之間的目錄同步處理。
 
 -   **Exchange Server**：
 
@@ -55,18 +51,19 @@ ms.suite: ems
     -   Windows Server 2012
 
     > [!NOTE]
-    > 因為執行 Windows Server 2008 R2 的檔案伺服器沒有內建的檔案管理工作動作可套用 RMS 保護，您在此情況下無法使用 RMS 連接器。 不過，若您設定自訂檔案管理工作來執行可執行檔或指令檔，而這些檔案可使用 Azure RMS 來保護檔案，則您可以在這些作業系統上使用檔案分類基礎結構和 Azure RMS。 例如，使用 [RMS 保護 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx) 的 Windows PowerShell 指令碼。
+    > 因為執行 Windows Server 2008 R2 的檔案伺服器沒有內建的檔案管理工作動作可套用 Rights Management 保護，所以您在此情況下無法使用 Rights Management 連接器。 不過，若您設定自訂檔案管理工作來執行可執行檔或指令檔，而這些檔案可使用 Azure RMS 來保護檔案，則您可以在這些作業系統上使用檔案分類基礎結構和 Azure RMS。 例如，使用 [RMS 保護 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx) 的 Windows PowerShell 指令碼。
     > 
     > 您也可以對執行較新版本 Windows Server 的伺服器使用這些 Cmdlet，好處是這些 Cmdlet 可以保護所有檔案類型。 RMS 連接器只保護 Office 檔案。 如需做法指示，請參閱[具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護](../rms-client/configure-fci.md)。
 
-RMS 連接器在 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 上受到支援。
+Rights Management 連接器在 Windows Server 2012 R2、Windows Server 2012 和 Windows Server 2008 R2 上受到支援。
 
-如需有關如何為這些內部部署伺服器設定 RMS 連接器的詳細資訊，請參閱[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)。
+如需如何為這些內部部署伺服器設定 Rights Management 連接器的詳細資訊，請參閱[部署 Azure Rights Management 連接器](../deploy-use/deploy-rms-connector.md)。
 
-## 後續步驟
+## <a name="next-steps"></a>後續步驟
 若要檢查其他需求，請參閱 [Azure Rights Management 的需求](requirements-azure-rms.md)。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Nov16_HO2-->
 
 

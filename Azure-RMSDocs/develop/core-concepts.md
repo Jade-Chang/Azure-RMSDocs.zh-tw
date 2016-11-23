@@ -1,30 +1,27 @@
 ---
-# required metadata
-
-title: 開發人員指引和詞彙 | Azure RMS
-description: RMS SDK 4.2 的重點是協助您建置 AD RMS 啟用應用程式，盡可能簡單地利用 AD RMS 資訊保護。
-keywords:
+title: "開發人員指引和詞彙 | Azure RMS"
+description: "RMS SDK 4.2 的重點是協助您建置 AD RMS 啟用應用程式，盡可能簡單地利用 AD RMS 資訊保護。"
+keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
+
 
 ---
 
-# 開發人員指引和詞彙
+# <a name="developer-guidance-and-terms"></a>開發人員指引和詞彙
 Microsoft Rights Management SDK 4.2 的重點是協助您建置 AD RMS 啟用應用程式，以盡可能簡單地利用 Active Directory Right Management Services (AD RMS)。
 
 下列主題支援 RMS 啟用應用程式的開發設計程序。
@@ -42,6 +39,7 @@ Microsoft Rights Management SDK 4.2 的重點是協助您建置 AD RMS 啟用應
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Oct16_HO1-->
 
 

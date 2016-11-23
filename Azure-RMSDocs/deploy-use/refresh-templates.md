@@ -1,54 +1,48 @@
 ---
-# required metadata
-
-title: 重新整理範本 | Azure RMS
-description:
-keywords:
+title: "重新整理範本 | Azure Information Protection"
+description: "當您使用 Azure Rights Management Service 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 10/12/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 67c2f47e1cc8e02c2bb4430421952a146e583e87
+ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
+
 
 ---
 
 
-# 重新整理使用者的範本
+# <a name="refreshing-templates-for-users"></a>重新整理使用者的範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用對象︰Azure Information Protection、Office 365*
 
-當您使用 Azure RMS 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟：
+當您使用 Azure Information Protection 的 Azure Rights Management Service 時，範本會自動下載到用戶端電腦，讓使用者可以從他們的應用程式中選取這些範本。 不過，如果您對這些範本做了變更，可能就需要採取一些其他步驟：
 
 |應用程式或服務|變更範本後如何重新整理範本|
 |--------------------------|---------------------------------------------|
-|Exchange Online|需要手動設定組態來重新整理範本。<br /><br />如需設定步驟，請參閱下列章節：[僅適用於 Exchange Online：如何設定 Exchange 下載已變更的自訂範本](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)。.|
+|Exchange Online|需要手動設定組態來重新整理範本。<br /><br />如需設定步驟，請參閱下列章節，[僅適用於 Exchange Online：如何設定 Exchange 下載已變更的自訂範本](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates)。|
 |Office 365|自動重新整理 - 不需要其他步驟。|
-|Office 2016 和 Office 2013<br /><br />適用於 Windows 的 RMS 共用應用程式|自動重新整理 - 透過排程：<br /><br />若為這些更新版本的 Office︰預設重新整理間隔是每 7 天。<br /><br />若為適用於 Windows 的 RMS 共用應用程式：從 1.0.1784.0 版開始，預設重新整理間隔是每 1 天。 舊版的預設值重新整理間隔是每 7 天。<br /><br />若要強制進行比這個排程更快的重新整理，請參閱下列章節：[適用於 Windows 的 Office 2016、Office 2013 及 RMS 共用應用程式︰如何強制重新整理已變更的自訂範本](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。.|
-|Office 2010|在使用者登入時重新整理。<br /><br />若要強制重新整理，請要求或強制使用者登出後再重新登入。 或者，請參閱下列章節：[僅適用於 Office 2010：如何強制重新整理已變更的自訂範本](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)。.|
+|Office 2016 和 Office 2013<br /><br />適用於 Windows 的 RMS 共用應用程式|自動重新整理 - 透過排程：<br /><br />若為這些更新版本的 Office︰預設重新整理間隔是每 7 天。<br /><br />若為適用於 Windows 的 RMS 共用應用程式：從 1.0.1784.0 版開始，預設重新整理間隔是每 1 天。 舊版的預設值重新整理間隔是每 7 天。<br /><br />若要強制進行比這個排程更快的重新整理，請參閱下列章節，[適用於 Windows 的 Office 2016、Office 2013 及 RMS 共用應用程式︰如何強制重新整理已變更的自訂範本](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template)。|
+|Office 2010|在使用者登入時重新整理。<br /><br />若要強制重新整理，請要求或強制使用者登出後再重新登入。 或者，請參閱下一節：[僅適用於 Office 2010：如何強制重新整理已變更的自訂範本](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)。|
 對於使用 RMS 共用應用程式的行動裝置，不需要設定其他組態，系統就會自動下載範本 (並在必要時重新整理)。
 
-## 僅適用於 Exchange Online：如何設定 Exchange 下載已變更的自訂範本
+## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>僅適用於 Exchange Online：如何設定 Exchange 下載已變更的自訂範本
 如果您已經為 Exchange Online 設定資訊版權管理 (IRM)，在您於 Exchange Online 中使用 Windows PowerShell 進行下列變更之前，系統將不會為使用者下載自訂範本。
 
 > [!NOTE]
-> 如需如何在 Exchange Online 中使用 Windows PowerShell 的詳細資訊，請參閱 [搭配 Exchange Online 使用 PowerShell](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)。.
+> 如需關於如何在 Exchange Online 中使用 Windows PowerShell 的詳細資訊，請參閱[搭配 Exchange Online 使用 PowerShell](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)。
 
 您必須在每次變更範本時都執行這個程序。
 
-### 更新 Exchange Online 的範本
+### <a name="to-update-templates-for-exchange-online"></a>更新 Exchange Online 的範本
 
 1.  在 Exchange Online 中使用 Windows PowerShell，連線至服務：
 
@@ -101,13 +95,13 @@ ms.suite: ems
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## Office 2016、Office 2013 及 Windows 的 RMS 共用應用程式：如何強制重新整理已變更的自訂範本
+## <a name="office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016、Office 2013 及 Windows 的 RMS 共用應用程式：如何強制重新整理已變更的自訂範本
 藉由在執行 Office 2016、Office 2013 或 Windows 的 Rights Management (RMS) 共用應用程式的電腦上編輯登錄，您可以變更自動排程，使變更的範本在電腦上的重新整理頻率比它們的預設值更頻繁。 您也可以刪除登錄值中的現有資料來強制立即重新整理。
 
 > [!WARNING]
 > 如果您使用登錄編輯程式的方式不正確，可能會發生嚴重的問題而導致可能需要重新安裝作業系統。 Microsoft 無法保證您可以解決因不正確使用登錄編輯程式而導致的問題。 您需自行承擔使用登錄編輯程式的風險。
 
-### 變更自動排程
+### <a name="to-change-the-automatic-schedule"></a>變更自動排程
 
 1.  使用登錄編輯程式，建立並設定下列其中一個登錄值：
 
@@ -131,11 +125,11 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 
 2.  如果您想要強制立即重新整理範本，請移至下一個程序。 否則，立即重新啟動您的 Office 應用程式和 [檔案總管] 的執行個體。
 
-### 強制立即重新整理
+### <a name="to-force-an-immediate-refresh"></a>強制立即重新整理
 
 1.  使用登錄編輯程式，刪除 **LastUpdatedTime** 值的資料。 例如，資料可能會顯示 **2015-04-20T15:52**，請刪除 2015-04-20T15:52，就不會顯示任何資料。 使用下列資訊來尋找登錄路徑以刪除這個登錄值資料。
 
-    **登錄路徑︰**HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
+    **登錄路徑︰** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
 
     **類型：**REG_SZ
 
@@ -144,7 +138,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
     > [!TIP]
         > 在登錄路徑中，<*MicrosoftRMS_FQDN*> 指的是您的 Microsoft RMS 服務 FQDN。 如果您想要確認此值：
 
-    > 1.  執行 Azure RMS 的 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) Cmdlet。 如果您尚未針對 Azure RMS 安裝 Windows PowerShell 模組，請參閱 [針對 Azure Rights Management 安裝 Windows PowerShell](install-powershell.md)。.
+    > 1.  執行 Azure RMS 的 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) Cmdlet。 如果您尚未針對 Azure RMS 安裝 Windows PowerShell 模組，請參閱[針對 Azure Rights Management 安裝 Windows PowerShell](install-powershell.md)。
     > 2.  從輸出中找出 **LicensingIntranetDistributionPointUrl** 值。
     > 
     >     例如：**LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -156,13 +150,13 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 
 3.  重新啟動您的 Office 應用程式和 [檔案總管] 的執行個體。
 
-## 僅適用於 Office 2010：如何強制重新整理已變更的自訂範本
+## <a name="office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template"></a>僅適用於 Office 2010：如何強制重新整理已變更的自訂範本
 藉由在執行 Office 2010 的電腦上編輯登錄，您可以設定一個值，讓變更的範本在電腦上重新整理，而不需要等待使用者登出與登入。 您也可以刪除登錄值中的現有資料來強制立即重新整理。
 
 > [!WARNING]
 > 如果您使用登錄編輯程式的方式不正確，可能會發生嚴重的問題而導致可能需要重新安裝作業系統。 Microsoft 無法保證您可以解決因不正確使用登錄編輯程式而導致的問題。 您需自行承擔使用登錄編輯程式的風險。
 
-### 變更更新頻率
+### <a name="to-change-the-update-frequency"></a>變更更新頻率
 
 1.  始用登錄編輯程式，建立名為 **UpdateFrequency** 的新登錄值並為資料定義整數值，該值可指定下載任何已下載範本之變更的頻率，以天為單位。 使用下表來尋找登錄路徑以建立這個新的登錄值。
 
@@ -174,7 +168,7 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 
 2.  如果您想要強制立即重新整理範本，請移至下一個程序。 否則，立即重新啟動您的 Office 應用程式。
 
-### 強制立即重新整理
+### <a name="to-force-an-immediate-refresh"></a>強制立即重新整理
 
 1.  使用登錄編輯程式，刪除 **LastUpdatedTime** 值的資料。 例如，資料可能會顯示 **2015-04-20T15:52**，請刪除 2015-04-20T15:52，就不會顯示任何資料。 使用下表來尋找登錄路徑以刪除這個登錄值資料。
 
@@ -189,9 +183,10 @@ Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 
 3.  重新啟動您的 Office 應用程式。
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Nov16_HO1-->
 
 

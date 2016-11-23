@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 如何向 Azure AD 註冊應用程式並為其啟用 RMS | Azure RMS
-description: 描述 RMS 啟用應用程式的使用者驗證基本概念。
-keywords:
+title: "如何向 Azure AD 註冊應用程式並為其啟用 RMS | Azure RMS"
+description: "描述 RMS 啟用應用程式的使用者驗證基本概念。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/15/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 2f4e0d1990362ab50d90b1a31c3b5db45d2fcdd1
+
 
 ---
 
@@ -34,12 +30,15 @@ ms.suite: ems
 ## 透過 Azure 入口網站註冊
 遵循本指南開始透過 Azure 入口網站設定應用程式的註冊，[為 ADAL 驗證設定 Azure RMS](adal-auth.md)。 請務必複製並儲存此程序中的**用戶端識別碼**及**重新導向 URI** 以供後續使用。
 
+## 完成您的 Rights Managagment 授權合約 (RMLA)
+您必須先完成與 Microsoft Rights Management 團隊的 RMLA，才可以部署應用程式。 如需完整的詳細資訊，請參閱主題的第一節：[部署到生產環境 - 要求生產授權合約](deploying-your-application.md)。
+
 ## 為應用程式實作使用者驗證
 每個 RMS API 都有必須實作才能啟用使用者驗證的回呼。 RMS SDK 4.2 接著會在您未提供存取權杖時、您的存取權杖需要重新整理時、或存取權杖過期時，使用您的回呼實作。
 
-- Android -  [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 及 [AuthenticationCompletionCallback](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 介面。
-- iOS / OS X -  [MSAuthenticationCallback](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 通訊協定。
--  Windows Phone / Window RT -  [IAuthenticationCallback](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 介面。
+- Android -  [AuthenticationRequestCallback](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 及 [AuthenticationCompletionCallback](/information-protection/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 介面。
+- iOS / OS X -  [MSAuthenticationCallback](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 通訊協定。
+-  Windows Phone / Window RT -  [IAuthenticationCallback](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 介面。
 - Linux -  [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 介面。
 
 ### 哪個程式庫用於驗證
@@ -53,7 +52,8 @@ ms.suite: ems
 -   [dotnet 適用的 Windows Azure Active Directory 驗證程式庫 (ADAL)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   若為 Linux SDK，ADAL 程式庫會利用 SDK 來源封裝，可透過 [Github](https://github.com/AzureAD/rms-sdk-for-cpp) 使用。
 
->[!NOTE]  雖然您可能會使用其他驗證程式庫，但仍建議您使用上述其中一個 ADAL。
+>[!NOTE]  
+> 雖然您可能會使用其他驗證程式庫，但仍建議您使用上述其中一個 ADAL。
 
 ### 驗證參數
 
@@ -66,13 +66,15 @@ ADAL 需要數個資訊片段，才能成功向 Azure RMS (或 AD RMS) 驗證使
 而且來自前一個透過 Azure 入口網站註冊的步驟。
 - **重新導向 Uri** – 提供內含 URI 目標的驗證程式庫給驗證碼。 iOS 及 Android 需要特定格式。 ADAL 對應的 GitHub 儲存機制中的讀我檔案說明了這些格式。 此值來自前一個透過 Azure 入口網站註冊的步驟。
 
->[!NOTE] 目前未使用**範圍**，但可能會也因此會保留供日後使用。
+>[!NOTE] 
+> 目前未使用**範圍**，但可能會也因此會保留供日後使用。
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 如果您的應用程式未遵循這些指導方針，Azure RMS 和 Azure AD 工作流程可能會失敗，而且不受 Microsoft.com 支援。 此外，如果在生產應用程式中使用無效的用戶端識別碼，可能會違反 Rights Management 授權合約 (RMLA)。
+>[!NOTE] 
+> 如果您的應用程式未遵循這些指導方針，Azure RMS 和 Azure AD 工作流程可能會失敗，而且不受 Microsoft.com 支援。 此外，如果在生產應用程式中使用無效的用戶端識別碼，可能會違反 Rights Management 授權合約 (RMLA)。
 
 ### 驗證回呼實作的外觀為何
 **驗證碼範例** - 此 SDK 有範例程式碼示範驗證回呼的使用。 為了方便起見，這些程式碼範例會在這裡以及後續的每個連結主題出現。
@@ -271,6 +273,7 @@ ADAL 需要數個資訊片段，才能成功向 Azure RMS (或 AD RMS) 驗證使
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Oct16_HO1-->
 
 

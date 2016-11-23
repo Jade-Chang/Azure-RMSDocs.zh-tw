@@ -1,30 +1,26 @@
 ---
-# required metadata
-
-title: 部署您的應用程式 | Azure RMS
-description: 本主題概要說明並引導您完成啟用權限的應用程式的部署選項
-keywords:
+title: "部署您的應用程式 | Azure RMS"
+description: "本主題概要說明並引導您完成啟用權限的應用程式的部署選項"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: e47c5331f49c62a00617f40b1af7ffdc4a89dcfd
+
 
 ---
 
-# 部署到生產前環境
+# 部署到生產環境
 
 
 本主題概要說明並引導您完成啟用權限的應用程式的部署選項。
@@ -32,10 +28,6 @@ ms.suite: ems
 ## 要求生產授權合約
 
  在您可以釋出使用 Rights Management Services SDK 2.1 開發的應用程式之前，您必須套用生產授權合約以取得生產憑證。
-
-> [!IMPORTANT]
-> 如果您將利用以 Azure 為基礎的 RMS 執行用戶端應用程式，必須建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS 需求：支援 Azure RMS 的雲端訂閱)。
-> 如需利用 Azure RMS 執行的詳細資訊，請參閱[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 您可以藉由套用生產授權合約來取得憑證。
 
@@ -84,7 +76,8 @@ RMS Client 2.1 是專為您的用戶端電腦設計的軟體，可透過使用 R
 RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下載的形式發行，可透過確認並接受其授權合約，與協力廠商軟體一起自由發佈，以啟用透過在環境中使用與部署 RMS 伺服器保護權限的用戶端存取內容。
 
 
-> [!IMPORTANT] AD RMS Client 2.1 為架構限定，必須符合目標作業系統的架構。
+> [!IMPORTANT]
+> AD RMS Client 2.1 是特定的架構，而且必須符合目標作業系統的架構。
 
 
 ## RMS Client 2.1 安裝選項
@@ -119,7 +112,8 @@ RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下�
 
 
 > [!IMPORTANT]
-> 若要使用 Azure RMS 執行 RMS SDK 2.1 用戶端應用程式，您需要建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS 需求：支援 Azure RMS 的雲端訂閱)。
+> 如果您將利用以 Azure 為基礎的 RMS 執行用戶端應用程式，必須建立自己的租用戶。 如需詳細資訊，請參閱 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md) (Azure RMS 需求：支援 Azure RMS 的雲端訂閱)。
+> 如需利用 Azure RMS 執行的詳細資訊，請參閱[啟用您的服務應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
 -   從 Microsoft 下載中心下載 [Microsoft Online Services 登入小幫手](http://www.microsoft.com/en-us/download/details.aspx?id=28177)。
 -   請確定您的權限啟用應用程式部署，包含此服務選項的必要條件檢查。
@@ -127,7 +121,7 @@ RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下�
 
 如需有關啟用應用程式以使用 Azure Rights Management 服務的 RMS，請參閱[啟用您的應用程式以使用以雲端為基礎的 RMS](how-to-use-file-api-with-aadrm-cloud.md)。
 
-## 相關主題
+## 相關的主題
 
 * [Microsoft Online Services 登入小幫手](http://www.microsoft.com/en-us/download/details.aspx?id=28177)
 * [設定 Rights Management](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
@@ -137,6 +131,7 @@ RMS Client 2.1 不是 Windows 作業系統元件。 RMS Client 2.1 以選用下�
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

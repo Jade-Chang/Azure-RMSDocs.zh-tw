@@ -1,34 +1,27 @@
 ---
-# required metadata
-
-title: RMS 連接器的登錄設定 | Azure RMS
-description:
-keywords:
+title: "RMS 連接器的登錄設定 | Azure Information Protection"
+description: "在使用 RMS 連接器的伺服器上，關於登錄設定的相關資訊。 若要設定這些設定，建議的方法是使用 Microsoft RMS 連接器的伺服器設定工具。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
+
 
 ---
 
 
 # Rights Management 連接器的登錄設定
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
 
 只有當您想在執行 Exchange、SharePoint 或 Windows Server 的伺服器上手動新增或檢查登錄設定，也就是設定伺服器使用 [RMS 連接器](deploy-rms-connector.md)時，才使用下列各節的表格。 若要設定這些伺服器，建議的方法是使用 Microsoft RMS 連接器的伺服器設定工具。
@@ -37,7 +30,7 @@ ms.suite: ems
 
 -   *MicrosoftRMSURL* 是您組織的 Microsoft RMS 服務 URL。 若要尋找此值：
 
-    1.  執行 Azure RMS 的 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) Cmdlet。 如果您尚未針對 Azure RMS 安裝 Windows PowerShell 模組，請參閱 [針對 Azure Rights Management 安裝 Windows PowerShell](install-powershell.md)。.
+    1.  執行 Azure RMS 的 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) Cmdlet。 如果您尚未針對 Azure RMS 安裝 Windows PowerShell 模組，請參閱[針對 Azure Rights Management 安裝 Windows PowerShell](install-powershell.md)。
 
     2.  從輸出中找出 **LicensingIntranetDistributionPointUrl** 值。
 
@@ -47,9 +40,9 @@ ms.suite: ems
 
         **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
--   *ConnectorFQDN* 是您於 DNS 中為連接器定義的負載平衡名稱。 例如，**rmsconnector.contoso.com**。.
+-   *ConnectorFQDN* 是您於 DNS 中為連接器定義的負載平衡名稱。 例如， **rmsconnector.contoso.com**。
 
--   若已設定連接器，讓連接器使用 HTTPS 與您的內部部署伺服器通訊，請為連接器 URL 使用 HTTPS 首碼。 如需詳細資訊，請參閱本主題中的 [設定 RMS 連接器使用 HTTPS](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) 一節。 Microsoft RMS URL 一律使用 HTTPS。
+-   若已設定連接器，讓連接器使用 HTTPS 與您的內部部署伺服器通訊，請為連接器 URL 使用 HTTPS 首碼。 如需詳細資訊，請參閱主要指示中的 [設定 RMS 連接器使用 HTTPS](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https) 一節。 Microsoft RMS URL 一律使用 HTTPS。
 
 
 ## Exchange 2016 或 Exchange 2013 登錄設定
@@ -222,6 +215,7 @@ ms.suite: ems
 
 回到[部署 Azure Rights Management 連接器](deploy-rms-connector.md)
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Sep16_HO4-->
 
 

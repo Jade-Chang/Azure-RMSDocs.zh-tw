@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 啟用電子郵件通知 |Azure RMS
-description: 可存取受保護的內容時，用來通知其擁有者的電子郵件。
-keywords:
+title: "啟用電子郵件通知 |Azure RMS"
+description: "可存取受保護的內容時，用來通知其擁有者的電子郵件。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
+ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
+
 
 ---
 
@@ -28,7 +24,7 @@ ms.suite: ems
 
 可存取受保護的內容時，用來通知其擁有者的電子郵件。
 
-若要設定針對指定授權的電子郵件通知，請使用 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty) 搭配屬性型別參數 *dwPropID* 作為 [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA) 以及應用程式資料欄位，格式如 [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list)。
+若要設定針對指定授權的電子郵件通知，請使用 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx) 搭配屬性型別參數 *dwPropID* 作為 [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx) 以及應用程式資料欄位，格式如 [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx)。
 
     C++
 
@@ -38,14 +34,14 @@ ms.suite: ems
 
     // lcid field set to 0 causes the default lcid to be used
 
-    propertyValuePairs[0] = {&quot;MS.Conetent.Name&quot;, 0, &quot;FinancialReport.docx&quot;};
-    propertyValuePairs[1] = {&quot;MS.Notify.Enabled&quot;,0 , &quot;true&quot;};
-    propertyValuePairs[2] = {&quot;MS.Notify.Culture&quot;,0 , “en-US”};
+    propertyValuePairs[0] = {"MS.Conetent.Name", 0, "FinancialReport.docx"};
+    propertyValuePairs[1] = {"MS.Notify.Enabled",0 , "true"};
+    propertyValuePairs[2] = {"MS.Notify.Culture",0 , “en-US”};
 
     IPC_NAME_VALUE_LIST emailNotificationAppData = {numDataPairs, propertyValuePairs};
 
     result = IpcSetLicenseProperty( licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, emailNotificationAppData);
-        
+
 
 下表包含 RMS 電子郵件通知的應用程式資料欄位、屬性名稱/值組。
 
@@ -60,16 +56,17 @@ ms.suite: ems
 |MS.Notify.TZSN|字串|“Pacific Standard Time”|**來源：** TimeZoneInfo.Local.StandardName - Standard Time Zone name.<br><br>這應該是時區的標準時區名稱的當地語系化名稱。|
 |MS.Notify.TZDN|字串|“Pacific Daylight Time”|**來源：** TimeZoneInfo.Local.DaylightName - Daylight Time Zone name.<br><br>這應該是時區的日光節約名稱的當地語系化名稱。 如果時區不支援日光節約時間，它可能和標準名稱相同。|
 
-## 相關主題
+## 相關的主題
 
-* [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
-* [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)
-* [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list)
+- [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
+- [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)
+- [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx)。
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

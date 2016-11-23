@@ -1,34 +1,31 @@
 ---
-# required metadata
-
-title: 社群資源 | Azure RMS
-description: 多個平台上逐漸成長的開發人員社群為 AD RMS 提供良好的支援。
-keywords:
+title: "社群資源 | Azure RMS"
+description: "多個平台上逐漸成長的開發人員社群為 AD RMS 提供良好的支援。"
+keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cd203a651362564e2f2275051f61f86b3bee6703
+
 
 ---
 
-# 社群資源
+# <a name="community-resources"></a>社群資源
 
 多個平台上逐漸成長的開發人員社群為 Active Directory Rights Management Services 提供良好的支援。
 
-## AD RMS 社群資源
+## <a name="ad-rms-community-resources"></a>AD RMS 社群資源
 
 [RMS 開發人員的專屬 (部落格)](http://blogs.msdn.com/b/rms/) 是資訊保護開發人員的活躍園地。
 
@@ -53,6 +50,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Nov16_HO2-->
 
 

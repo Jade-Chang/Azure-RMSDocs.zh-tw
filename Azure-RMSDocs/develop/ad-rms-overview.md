@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: 概觀 | Azure RMS
-description: Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。
-keywords:
+title: "概觀 - RMS SDK 2.1 | Azure RMS"
+description: "Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 82441858230e179a08bfa74e0f6aaf9ed17a62fb
+
 
 ---
 
 # 概觀
 
-Rights Management Services (RMS) 是可協助保護數位資訊免於未經授權使用的資訊保護技術。 透過具備權限的應用程式，內容擁有者將能夠定義誰可以開啟、修改、列印、轉送內容，或採取其他動作。
-
-## 概觀
+Rights Management Services SDK 2.1 是可協助保護數位資訊免於未經授權使用的資訊保護技術。 透過具備權限的應用程式，內容擁有者將能夠定義誰可以開啟、修改、列印、轉送內容，或採取其他動作。
 
 AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件。 執行於 Azure 或 Windows Server 的伺服器是由多個 Web 服務組成。
 
@@ -44,7 +38,7 @@ AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件
 -   線上文件庫的擁有者想要根據使用者的身分識別啟用檢視、列印或編輯文件的權限。
 -   公司想要將敏感的員工資訊發佈至內部網站，針對特定使用者限制檢視和編輯的權限。
 
-如需 AD RMS 伺服器、AD RMS 用戶端和其功能的詳細資訊，請參閱 [AD RMS 的 IT 專業人員文件](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)的 TechNet 內容。
+如需 AD RMS 伺服器、AD RMS 用戶端和其功能的詳細資訊，請參閱 TechNet 的 [Active Directory Rights Management Services](https://TechNet.Microsoft.Com/library/cc771234.aspx) 內容。
 
 本節中的其他主題涵蓋 RMS 架構及其實作。
 
@@ -66,6 +60,7 @@ AD RMS 包含[伺服器](ad-rms-server.md)和[用戶端](ad-rms-client.md)元件
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

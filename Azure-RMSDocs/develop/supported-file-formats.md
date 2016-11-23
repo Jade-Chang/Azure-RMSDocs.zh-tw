@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 支援的檔案格式 | Azure RMS
-description: 檔案 API 目前的版本支援 MS Office 檔案、PDF 的原生保護，以及所有其他檔案格式版本的 PFile 保護。
-keywords:
+title: "支援的檔案格式 | Azure RMS"
+description: "檔案 API 目前的版本支援 MS Office 檔案、PDF 的原生保護，以及所有其他檔案格式版本的 PFile 保護。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
+
 
 ---
 
@@ -37,7 +33,7 @@ ms.suite: ems
 
 系統管理員可以設定登錄機碼，設定是否以及應如何根據檔案的副檔名來保護檔案。 如需使用檔案 API 時如何設定檔案保護的詳細資訊，請參閱[檔案 API 組態](file-api-configuration.md)。
 
-## 相關主題
+## 相關的主題
 
 * [開發人員注意事項](developer-notes.md)
 * [檔案 API 組態](file-api-configuration.md)
@@ -46,6 +42,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

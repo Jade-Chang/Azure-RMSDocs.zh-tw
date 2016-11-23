@@ -1,41 +1,37 @@
 ---
-# required metadata
-
-title: 建立、設定及發佈自訂範本 | Azure RMS
-description:
-keywords:
+title: "建立、設定及發佈自訂範本 | Azure 資訊保護"
+description: "在 Azure 傳統入口網站中建立和管理自訂範本的指示。 範本可讓使用者與其他系統管理員輕鬆地套用保護文件及電子郵件的適當原則。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2016
+ms.date: 11/03/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
+ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
+
 
 ---
 
 
-# 建立、設定及發佈自訂範本
+# <a name="create-configure-and-publish-a-custom-template"></a>建立、設定及發佈自訂範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用對象︰Azure 資訊保護、Office 365*
 
 
 您可以在 Azure 傳統入口網站中建立和管理自訂範本。 您可以直接從 Azure 傳統入口網站執行這項作業，或是登入 Office 365 系統管理中心並選擇 Rights Management 的**進階功能**，這會將您重新導向到 Azure 傳統入口網站。
 
+您必須是全域管理員，才能在 Azure 傳統入口網站中建立和管理範本。 如果您已指派 Azure Rights Management Service 的全域管理員角色給其他使用者，他們也可以建立及管理範本，但必須使用 [PowerShell](configure-templates-with-powershell.md)。 如需詳細資訊，請參閱[僅有全域管理員才能設定 Azure RMS，或是我可以將此作業委派給其他系統管理員？](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators) 
+
 使用下列程序可建立、設定及發佈 Rights Management 的自訂範本。
 
-## 建立自訂範本
+## <a name="to-create-a-custom-template"></a>建立自訂範本
 
 1.  依據您登入的是 Office 365 系統管理中心或是 Azure 傳統入口網站，執行下列其中一個動作：
 
@@ -50,7 +46,7 @@ ms.suite: ems
         4.  在 [Rights Management]  區段中，按一下 [進階功能] 。
 
             > [!NOTE]
-            > 如果您尚未啟用 Rights Management，請先按一下 [啟用]，然後確認您的動作。 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
+            > 如果未啟用 Rights Management Service，請先按一下 [啟用]，然後確認您的動作。 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
             > 
             > 如果您之前沒有按一下 [進階功能]，則在 Rights Management 啟用之後，請依照畫面指示取得存取 Azure 傳統入口網站所需的免費 Azure 訂閱。
 
@@ -66,7 +62,8 @@ ms.suite: ems
 
         4.  如果您尚未啟用 Rights Management，請按一下 [啟用]  ，然後確認您的動作。
 
-            > [!NOTE] 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
+            > [!NOTE]
+            > 如需詳細資訊，請參閱[啟用 Azure Rights Management](activate-service.md)。
 
 2.  建立新的範本：
 
@@ -74,11 +71,13 @@ ms.suite: ems
 
         如果在遵循 Office 365 的指示後未立即看到此頁面，請使用上述的 Azure 傳統入口網站導覽指示。
 
-3.  在 [新增權限原則範本]  頁面上，選擇輸入使用者將看見的範本名稱和描述時要使用的語言 (您可以稍後新增其他語言)。 接著，輸入一個唯一的名稱和描述，然後按一下 [完成] 按鈕。
+3. 在 [新增權限原則範本]  頁面上，選擇輸入使用者將看見的範本名稱和描述時要使用的語言 (您可以稍後新增其他語言)。 接著，輸入一個唯一的名稱和描述，然後按一下 [完成] 按鈕。
 
-從 [開始使用 Rights Management]  快速入門頁面，現在按一下 [管理您的權限原則範本] 。 您將會看見新建立的範本已新增至範本清單中，其狀態為 [已封存] 。 在這個階段，範本已建立但尚未設定，使用者無法看見這個範本。
+    請不要在您的範本名稱或描述中包含冒號或分號。 因為並非所有使用 Rights Management 範本的服務和應用程式皆可在這些範本中支援上述字元。 在這種情況中，這些服務和應用程式可能無法擷取或使用相關的 Azure Rights Management 範本。
 
-## 設定及發佈自訂範本
+4. 從 [開始使用 Rights Management]  快速入門頁面，現在按一下 [管理您的權限原則範本] 。 您將會看見新建立的範本已新增至範本清單中，其狀態為 [已封存] 。 在這個階段，範本已建立但尚未設定，使用者無法看見這個範本。
+
+## <a name="to-configure-and-publish-a-custom-template"></a>設定及發佈自訂範本
 
 1.  在 Azure 傳統入口網站的 [範本] 頁面中，選取您新建立的範本。
 
@@ -166,9 +165,10 @@ ms.suite: ems
 > [!WARNING]
 > 當您對先前儲存的範本進行變更時，用戶端必須等到他們電腦上的範本重新整理之後，才會看到您對範本所做的那些變更。 如需詳細資訊，請參閱[重新整理使用者的範本](refresh-templates.md)。
 
-## 另請參閱
+## <a name="see-also"></a>另請參閱
 [設定 Azure Rights Management 的自訂範本](configure-custom-templates.md)
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,34 +1,31 @@
 ---
-# required metadata
-
-title: 如何使用加密設定 | Azure RMS
-description: 這篇文章會將您導向我們的加密封裝
-keywords:
+title: "如何使用加密設定 | Azure RMS"
+description: "Azure RMS 加密套件入門指南及其使用的程式碼片段。"
+keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 10/19/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
+ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
+
 
 ---
 
-# 如何：使用加密設定
+# <a name="howto-work-with-encryption-settings"></a>如何：使用加密設定
 
 本主題會將您導向我們的加密套件，並顯示其部分程式碼使用片段。
 
-## 支援 AES 256，新的預設值
+## <a name="support-for-aes-256-the-new-default"></a>支援 AES 256，新的預設值
 
 假設您是對 RMS SDK 2.1 2015 年 3 月更新或更新版本進行建置，則使用 *AES 256* 式加密不需額外的程式碼，因為它是新的預設值。 我們鼓勵您慎重考慮將您的應用程式更新為此版本，以獲得額外的 *AES 256* 安全性優勢。
 
@@ -36,7 +33,7 @@ ms.suite: ems
 > 自 [2014 年 10 月版本](release-notes-rtm.md)起已提供 *AES 256* 受保護檔案的支援。 如果您正在執行使用早於 2014 年 10 月的 SDK 版本建置的應用程式，此更新會中斷您的應用程式。 請確定您要建置之應用程式的客戶正使用更新後的 SDK，或願意立即更新為您的應用程式的最新版本。
 
  
-## API 加密支援
+## <a name="api-encryption-support"></a>API 加密支援
 
 從 [2015 年 3 月更新](release-notes-rtm.md)開始，我們已經在我們的 API 和其相關聯的加密封裝中納入下列三個旗標︰
 
@@ -44,17 +41,17 @@ ms.suite: ems
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB (也就是已過時的演算法)
 
-加密封裝旗標 (請參閱[**慣用的加密**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption)) 可搭配我們新的授權內容旗標 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE** 使用。
+加密封裝旗標 (請參閱[慣用的加密](https://msdn.microsoft.com/library/dn974065.aspx)) 可搭配授權內容旗標 *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE* 使用。
 
 以下是一些簡單的程式碼片段，示範如何使用新的授權屬性。
 
-## 已過時的演算法
+## <a name="deprecated-algorithms"></a>已過時的演算法
 
-我們將不再於 API 公開 **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已使用它建置的應用程式仍將繼續運作，因為我們將會私下在 API 程式碼中採用旗標。
+我們將不再於 API 公開 *IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* 旗標。 這表示如果未來的應用程式參考這個旗標，它們將不再編譯，但已使用它建置的應用程式仍將繼續運作，因為我們將會私下在 API 程式碼中採用旗標。
 
 我們仍然可以藉由變更一個旗標來達成取得已被取代之舊加密演算法旗標的優點。 如需範例，請參閱下列程式碼片段。
 
-## 使用 AES 256 CBC4K 保護檔案
+## <a name="protect-files-with-aes-256-cbc4k"></a>使用 AES 256 CBC4K 保護檔案
 
 不需要變更程式碼，*AES 256* CBC4K 是預設值。
 
@@ -66,7 +63,7 @@ ms.suite: ems
                                     &amp;pLicenseHandle);
 
 
-## 使用 AES-128 CBC4K 保護檔案
+## <a name="protect-files-with-aes128-cbc4k"></a>使用 AES-128 CBC4K 保護檔案
 
     C++
 
@@ -83,12 +80,12 @@ ms.suite: ems
                            &amp;dwEncryptionMode);
 
 
-## 使用 AES 128 ECB 保護檔案 (已過時的演算法)
+## <a name="protect-files-with-aes128-ecb-deprecated-algorithms"></a>使用 AES 128 ECB 保護檔案 (已過時的演算法)
 
 這個範例也示範支援*已過時的演算法*的新方式。
 
     C++
-    
+
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
                                     0,
                                     NULL,
@@ -106,6 +103,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

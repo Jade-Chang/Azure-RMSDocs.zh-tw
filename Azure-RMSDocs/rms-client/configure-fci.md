@@ -1,45 +1,40 @@
 ---
-# required metadata
-
-title: 具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護 | Azure RMS
-description:
-keywords:
+title: "具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護 | Azure Information Protection"
+description: "使用 Rights Management (RMS) 用戶端搭配 RMS 保護工具，以設定檔案伺服器資源管理員和檔案分類基礎結構 (FCI) 的指示。"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 11/03/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 88b6c5fffb1be59563c2b93c8db244edc3201f3c
+ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
+
 
 ---
 
-# 具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護
+# <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護
 
-*適用於︰Azure Rights Management、Windows Server 2012、Windows Server 2012 R2*
+>*適用對象︰Azure 資訊保護、Windows Server 2012、Windows Server 2012 R2*
 
 使用這份文件作為指示，以及搭配 RMS 保護工具來使用 Rights Management (RMS) 用戶端的指令碼，以設定檔案伺服器資源管理員和檔案分類基礎結構 (FCI)。
 
-這個解決方案可讓您自動保護執行 Windows Server 的檔案伺服器上的資料夾中的所有檔案，或自動保護符合特定準則的檔案。 例如，已分類為包含機密或敏感資訊的檔案。 這個解決方案會使用 Azure Rights Management (Azure RMS) 來保護檔案，所以您必須在組織中部署這項技術。
+這個解決方案可讓您自動保護執行 Windows Server 的檔案伺服器上的資料夾中的所有檔案，或自動保護符合特定準則的檔案。 例如，已分類為包含機密或敏感資訊的檔案。 這個解決方案會使用 Azure Information Protection 的 Azure Rights Management Service 來保護檔案，所以您必須在組織中部署這項技術。
 
-> [!NOTE] 雖然 Azure RMS 包含支援檔案分類基礎結構的[連接器](../deploy-use/deploy-rms-connector.md)，但是該解決方案僅支援原生保護，例如 Office 檔案。
+> [!NOTE]
+> 雖然 Azure Information Protection 包含支援檔案分類基礎結構的[連接器](../deploy-use/deploy-rms-connector.md)，但是該解決方案僅支援原生保護 - 例如 Office 檔案。
 > 
-> 若要支援具有檔案分類基礎結構的所有檔案類型，您必須使用 Windows PowerShell **RMS 保護** 模組，如本文所述。 RMS 保護 Cmdlet，像是 RMS 共用應用程式，支援一般保護以及原生保護，這表示可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)一節。
+> 若要支援具有檔案分類基礎結構的所有檔案類型，您必須使用 Windows PowerShell **RMS 保護** 模組，如本文所述。 RMS 保護 Cmdlet，像是 RMS 共用應用程式，支援一般保護以及原生保護，這表示可以保護所有檔案。 如需不同保護層級的詳細資訊，請參閱 [Rights Management 共用應用程式系統管理員指南](sharing-app-admin-guide.md)中的[保護層級 – 原生和一般](sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic)一節。
 
 接下來的指示適用於 Windows Server 2012 R2 或 Windows Server 2012。 如果您執行其他支援的 Windows 版本，您可能需要針對您的作業系統版本和本文所述版本之間的差異，調整一些步驟。
 
-## 具有 Windows Server FCI 之 Azure RMS 保護的必要條件
+## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>具有 Windows Server FCI 之 Azure Rights Management 保護的必要條件
 這些指示的必要條件：
 
 -   在您於其中執行具有檔案分類基礎結構的檔案資源管理員的每個檔案伺服器：
@@ -50,11 +45,11 @@ ms.suite: ems
 
     -   您已安裝 RMS 保護工具，包括工具 (例如 RMS 用戶端) 和 Azure RMS (例如服務主體帳戶) 的必要條件。 如需詳細資訊，請參閱 [RMS 保護 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)。
 
-    -   如果您想要針對特定副檔名變更 RMS 保護的預設層級 (原生或一般)，則編輯登錄，如[檔案 API 組態](https://msdn.microsoft.com/library/dn197834%28v=vs.85%29.aspx)頁面所述。
+    -   如果您想要針對特定副檔名變更 RMS 保護的預設層級 (原生或一般)，則編輯登錄，如[檔案 API 組態](../develop/file-api-configuration.md)頁面所述。
 
     -   您有網際網路連接，如果 Proxy 伺服器需要，電腦設定也已進行設定。 例如： `netsh winhttp import proxy source=ie`
 
--   您已經為您的 Azure Rights Management 部署設定額外必要條件，如 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)中所述。 具體而言，您使用服務主體時有下列值來連接至 Azure RMS：
+-   您已經為您的 Azure Information Protection 部署設定額外必要條件，如 [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx) 中所述。 具體而言，您使用服務主體時有下列值來連接至 Azure Rights Management Service：
 
     -   BposTenantId
 
@@ -62,11 +57,11 @@ ms.suite: ems
 
     -   對稱金鑰
 
--   您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 所有使用者都需要此項，才能存取受到 FCI 和 Azure RMS 保護的檔案。 如果你未執行此步驟 (例如，在測試環境中)，使用者可能會被阻止存取這些檔案。 如果您需要此帳戶組態的詳細資訊，請參閱[準備 Azure Rights Management](../plan-design/prepare.md)。
+-   您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 所有使用者都需要此項，才能存取受到 FCI 和 Azure Rights Management Service 保護的檔案。 如果你未執行此步驟 (例如在測試環境中)，使用者可能會被阻止存取這些檔案。 如果您需要此帳戶組態的詳細資訊，請參閱[準備 Azure Rights Management Service](../plan-design/prepare.md)。
 
 -   您已識別要使用的 Rights Management 範本，它會保護檔案。 請確定您知道此範本的識別碼，方法是使用 [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) Cmdlet。
 
-## 設定 Azure RMS 保護的檔案伺服器資源管理員 FCI 的指示
+## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rms-protection"></a>設定 Azure RMS 保護的檔案伺服器資源管理員 FCI 的指示
 請遵循這些指示以使用 Windows PowerShell 指令碼做為自訂工作，來自動保護資料夾中的所有檔案。 以下列順序執行這些程序：
 
 1.  儲存 Windows PowerShell 指令碼
@@ -83,13 +78,13 @@ ms.suite: ems
 
 在這些指示的結尾，您選取的資料夾中的所有檔案會分類為 RMS 的自訂屬性，然後這些檔案會受到 Rights Management 的保護。 對於選擇性保護某些檔案而不保護其他檔案的較複雜設定，您可以建立或使用不同的分類屬性和規則，具有僅保護這些檔案的檔案管理工作。
 
-### 儲存 Windows PowerShell 指令碼
+### <a name="save-the-windows-powershell-script"></a>儲存 Windows PowerShell 指令碼
 
 1.  使用檔案伺服器資源管理員來複製 [Windows PowerShell Script](fci-script.md) for Azure RMS 保護的內容。 將指令碼的內容貼上至您自己的電腦，並且將檔案命名為 **RMS-Protect-FCI.ps1**。
 
 2.  檢閱指令碼並且進行下列變更：
 
-    -   搜尋下列字串並且以您用於 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) Cmdlet 的 AppPrincipalId 取代，以連線至 Azure RMS：
+    -   搜尋下列字串並且以您用於 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) Cmdlet 的 AppPrincipalId 取代，以連接至 Azure Rights Management Service：
 
         ```
         <enter your AppPrincipalId here>
@@ -100,7 +95,7 @@ ms.suite: ems
 
         `[Parameter(Mandatory = $false)]             [string]$AppPrincipalId = "b5e3f76a-b5c2-4c96-a594-a0807f65bba4",`
 
-    -   搜尋下列字串並且以您用於 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) Cmdlet 的對稱金鑰取代，以連線至 Azure RMS：
+    -   搜尋下列字串並且以您用於 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) Cmdlet 的對稱金鑰取代，以連接至 Azure Rights Management Service：
 
         ```
         <enter your key here>
@@ -111,7 +106,7 @@ ms.suite: ems
 
         `[string]$SymmetricKey = "zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA="`
 
-    -   搜尋下列字串並且以您用於 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) Cmdlet 的 BposTenantId (租用戶 ID) 取代，以連線至 Azure RMS：
+    -   搜尋下列字串並且以您用於 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) Cmdlet 的 BposTenantId (租用戶識別碼) 取代，以連接至 Azure Rights Management Service：
 
         ```
         <enter your BposTenantId here>
@@ -132,11 +127,11 @@ ms.suite: ems
 
     如需有關簽署 Windows PowerShell 指令碼的詳細資訊，請參閱 PowerShell 文件庫中的 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 。
 
-4.  在其中執行具有檔案分類基礎結構的檔案資源管理員的每個檔案伺服器上，本機儲存檔案： 例如，將檔案儲存在 **C:\RMS-Protection**。 藉由使用 NTFS 權限來保護此檔案，這樣未經授權的使用者就不能修改它。
+4.  在其中執行具有檔案分類基礎結構的檔案資源管理員的每個檔案伺服器上，本機儲存檔案： 例如，將檔案儲存在 **C:\RMS-Protection**。 如果您使用不同的路徑或資料夾名稱，請選擇不包含空格的路徑和資料夾。 藉由使用 NTFS 權限來保護此檔案，這樣未經授權的使用者就不能修改它。
 
 您現在可以開始設定檔案伺服器資源管理員。
 
-### 建立 Rights Management (RMS) 的分類屬性
+### <a name="create-a-classification-property-for-rights-management-rms"></a>建立 Rights Management (RMS) 的分類屬性
 
 -   在 [檔案伺服器資源管理員]、[分類管理] 中，建立新的本機屬性：
 
@@ -150,7 +145,7 @@ ms.suite: ems
 
 我們現在可以建立使用這個屬性的分類規則。
 
-### 建立分類規則 (針對 RMS 分類)
+### <a name="create-a-classification-rule-classify-for-rms"></a>建立分類規則 (針對 RMS 分類)
 
 -   建立新的分類規則：
 
@@ -178,7 +173,7 @@ ms.suite: ems
 
 雖然您可以手動執行分類規則，但是對於進行中的作業，您會想要排程執行此規則，讓新的檔案以 RMS 屬性進行分類。
 
-### 設定分類排程
+### <a name="configure-the-classification-schedule"></a>設定分類排程
 
 -   在 [自動分類]  索引標籤上：
 
@@ -192,7 +187,7 @@ ms.suite: ems
 
 現在您已經完成分類設定，您可以設定管理工作以將 RMS 保護套用至檔案。
 
-### 建立自訂檔案管理工作 (使用 RMS 保護檔案)
+### <a name="create-a-custom-file-management-task-protect-files-with-rms"></a>建立自訂檔案管理工作 (使用 RMS 保護檔案)
 
 -   在 [檔案管理工作] 中，建立新的檔案管理工作：
 
@@ -257,7 +252,7 @@ ms.suite: ems
 
         -   **持續在新檔案上執行**：選取此核取方塊。
 
-### 以手動方式執行規則和工作來測試組態
+### <a name="test-the-configuration-by-manually-running-the-rule-and-task"></a>以手動方式執行規則和工作來測試組態
 
 1.  執行分類規則：
 
@@ -278,7 +273,8 @@ ms.suite: ems
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP] 疑難排解秘訣：
+    > [!TIP]
+    > 疑難排解秘訣：
     > 
     > -   如果您在報告中看到 **0** ，而不是資料夾中的檔案數目，這表示指令碼並未執行。 首先，檢查指令碼本身，方法是在 Windows PowerShell ISE 中載入指令碼以驗證指令碼內容，並嘗試執行以查看是否顯示任何錯誤。 不指定任何引數時，指令碼會嘗試連接和驗證至 Azure RMS。
     > 
@@ -297,7 +293,7 @@ ms.suite: ems
 當你確認這些工作已成功執行時，您可以關閉 [檔案資源管理器]。 新檔案將自動受到保護，而且所有檔案將在排程執行時再次受到保護。 重新保護檔案可確保對範本所做的任何變更都會套用至檔案。
 
 
-## 修改指示以選擇性保護檔案
+## <a name="modifying-the-instructions-to-selectively-protect-files"></a>修改指示以選擇性保護檔案
 當前述的指示運作時，很容易就能加以修改，以便設定更複雜的組態。 例如，使用相同指令碼但是只針對包含個人識別資訊的檔案來保護檔案，並且也許選取具有更嚴格權限的範本。
 
 若要這樣做，請使用其中一個內建分類屬性 (例如，**個人識別資訊**) 或建立您自己的新屬性。 然後建立使用這個屬性的新規則。 例如，您可能會選取 [內容分類器] ，選擇 [個人識別資訊]  屬性，其值是 [高] ，並且設定字串或運算式模式，識別要針對此屬性設定的檔案 (例如字串「**出生日期**」)。
@@ -306,6 +302,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Nov16_HO1-->
 
 

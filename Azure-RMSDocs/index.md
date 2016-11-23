@@ -1,45 +1,49 @@
 ---
 asset_id: 78022852-1541-4194-bd6b-2f5fd5d94b77
 layout: HubPage
-
-title: Azure Rights Management 文件
-description: Azure Rights Management 的技術文件
-keywords: rights management documentation, rms documentation, Azure RMS documentation
+title: "Azure 資訊保護文件 | Microsoft 文件"
+description: "Azure 資訊保護的技術文件"
 author: msmbaldwin
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: hubpage
 ms.prod: azure
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
+translationtype: Human Translation
+ms.sourcegitcommit: 197e1b2d40ce21032b933625feb050807086ce57
+ms.openlocfilehash: cc4465eb7b1374673a50fc8bbe1d6e5be9d1ff84
+
 
 ---
-# Azure Rights Management 文件
+# <a name="azure-information-protection-documentation"></a>Azure 資訊保護文件
 <article id="main">
     <section id="hero-content">
-      <h1>Azure Rights Management 文件</h1>
-      <h2>了解如何部署和使用 Azure Rights Management (Azure RMS)。 快速開始使用 Rights Management，以將資訊保護套用至電子郵件、文件和其他機密性資料。</h2>
-      <h3>Azure RMS 新手？ <a href="http://go.microsoft.com/fwlink/?LinkId=816857" target="_blank">請瀏覽我們的產品網站 &rarr;</a></h3>
+      <h1>Azure 資訊保護文件</h1>
+      <h2>了解如何部署和管理 Azure 資訊保護 (先前稱為 Azure Rights Management 或 RMS)。 快速開始使用服務，以將分類、標記和保護套用至您組織的電子郵件和文件。</h2>
+      <h3>Azure 資訊保護新手？ <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">前往產品網站&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>準備好實際操作了嗎？</p>
         <ol class="action-list">
-            <li><a href="https://portal.office.com/Signup/Signup.aspx?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=RIGHTSMANAGEMENT&ali=1#0" target="_blank" class="button-bordered button-translucent">立即試用</a></li>
+            <li><a href="https://portal.office.com/Signup?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=INFORMATIONPROTECTION&ali=1#0" target="_blank" class="button-bordered button-translucent">立即試用</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="./understand-explore/what-is-azure-rms.md">什麼是 Azure Rights Management？</a></li>
-          <li><a href="./get-started/quick-start-tutorial.md">Azure RMS 快速入門教學課程</a></li>
-          <li><a href="./get-started/rapid-deployment-guide.md">Azure RMS 快速部署指南</a></li>
+          <li><mark><b>全新</b></mark> <a href="./understand-explore/what-is-information-protection.md#resources-for-azure-information-protection">Azure 資訊保護工作階段，來自 Microsoft Ignite 2016</a></li>
+          <li><a href="./understand-explore/what-is-information-protection.md">什麼是 Azure Information Protection？</a></li>
+          <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Azure 資訊保護快速入門教學課程</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="./plan-design/deployment-roadmap.md">Azure RMS 部署藍圖</a></li>
-          <li><a href="./develop/developers-guide.md">透過 Azure RMS 整合應用程式</a></li>
+          <li><a href="./get-started/faqs.md">Azure 資訊保護的常見問題集</a></li>
+      <li><a href="./plan-design/deployment-roadmap.md">Azure 資訊保護部署藍圖</a></li>
+          <li><a href="./develop/developers-guide.md">Azure 資訊保護開發人員指南</a></li>
+          <li><a href="./rms-client/info-protect-client.md">安裝 Azure 資訊保護用戶端</a></li>
         </ul>
       </div>
     </section>
@@ -53,27 +57,27 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
                   <span class="step-number">1</span>
                   <p>了解和探索</p>
                 </div>
-                <p class="description column-two-thirds">了解 Azure RMS 的高階概念、特性和功能。</p>
+                <p class="description column-two-thirds">了解 Azure 資訊保護的高階概念、特性和功能。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./understand-explore/azure-rights-management.md">
-                    <h3>Azure Rights Management 的概觀</h3>
-                    <p>了解 Azure RMS，其可保護貴組織的機密性資料，防止未獲授權的存取行為，並控制這項資訊的使用方式。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./understand-explore/rms-for-individuals.md">
-                    <h3>個人版 RMS 和 Azure Rights Management</h3>
-                    <p>探索對於已傳送受 Azure RMS 保護之機密檔案的使用者所適用的免費自助訂閱。</p>
+                  <a href="./understand-explore/what-is-information-protection.md">
+                    <h3>什麼是 Azure 資訊保護？</h3>
+                    <p>了解雲端式解決方案 Azure 資訊保護，其可協助您分類、標記及保護文件和電子郵件。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./understand-explore/applications-support.md">
-                    <h3>應用程式如何支援 Azure Rights Management</h3>
-                    <p>了解使用者應用程式和服務如何使用 Microsoft Azure Rights Management 來保護貴組織的資料 </p>
+                    <h3>應用程式如何支援 Azure Rights Management 保護</h3>
+                    <p>了解使用者應用程式和服務如何使用 Microsoft Azure Rights Management 來保護貴組織的資料。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="./understand-explore/compliance.md">
+                    <h3>Azure 資訊保護的法遵與支援資訊</h3>
+                    <p>Azure 資訊保護的相關補充資訊 (例如法律和隱私權聲明)。</p>
                   </a>
                 </li>
               </ul>
@@ -86,27 +90,27 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
                   <span class="step-number">2</span>
                   <p>開始使用</p>
                 </div>
-                <p class="description column-two-thirds">在幾分鐘內，開始使用 Azure RMS。</p>
+                <p class="description column-two-thirds">在幾分鐘內，開始使用 Azure 資訊保護。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./get-started/requirements-azure-rms.md">
-                    <h3>Azure Rights Management 的需求</h3>
-                    <p>識別部署 Azure RMS 的必要條件。</p>
+                    <h3>Azure 資訊保護需求</h3>
+                    <p>識別部署 Azure 資訊保護的必要條件。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./get-started/terminology.md">
-                    <h3>Azure Rights Management 術語</h3>
-                    <p>了解 Rights Management 內容中使用的術語和縮寫。</p>
+                    <h3>Azure 資訊保護術語</h3>
+                    <p>了解 Information Protection 內容中使用的詞彙和縮寫。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./get-started/quick-start-tutorial.md">
-                    <h3>Azure RMS 快速入門教學課程</h3>
-                    <p>只要 5 個步驟，就可為組織快速試用 Azure Rights Management。</p>
+                    <h3>Azure 資訊保護快速入門教學課程</h3>
+                    <p>只要 5 個步驟，就可為組織快速試用 Azure 資訊保護。</p>
                   </a>
                 </li>
               </ul>
@@ -119,27 +123,27 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
                   <span class="step-number"> 3</span>
                   <p>計劃和設計</p>
                 </div>
-                <p class="description column-two-thirds">規劃和設計 Azure RMS。</p>
+                <p class="description column-two-thirds">規劃和設計 Azure 資訊保護。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./plan-design/deployment-roadmap.md">
-                    <h3>Azure Rights Management 部署藍圖</h3>
-                    <p>識別和遵循用來實作和管理組織之 Azure RMS 的步驟。</p>
+                    <h3>Azure 資訊保護部署藍圖</h3>
+                    <p>識別和遵循用來實作和管理組織之 Azure 資訊保護的步驟。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./plan-design/migrate-from-ad-rms-to-azure-rms.md">
-                    <h3>從 AD RMS 移轉至 Azure Rights Management</h3>
-                    <p>將您的 Active Directory Rights Management Services (AD RMS) 部署移轉至 Azure RMS。</p>
+                    <h3>從 AD RMS 移轉至 Azure 資訊保護</h3>
+                    <p>將 Active Directory Rights Management Services (AD RMS) 部署移轉至 Azure 資訊保護。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./plan-design/plan-implement-tenant-key.md">
-                    <h3>規劃及實作 Azure Rights Management 租用戶金鑰</h3>
-                    <p>規劃和管理 Azure RMS 的租用戶金鑰 (包括「自帶金鑰 (BYOK)」案例)。</p>
+                    <h3>規劃及實作 Azure 資訊保護租用戶金鑰</h3>
+                    <p>規劃和管理 Azure 資訊保護的租用戶金鑰 (包括「自備金鑰」(BYOK) 案例)。</p>
                   </a>
                 </li>
               </ul>
@@ -152,27 +156,27 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
                   <span class="step-number"> 4</span>
                   <p>部署與使用</p>
                 </div>
-                <p class="description column-two-thirds">部署與使用 Azure RMS。</p>
+                <p class="description column-two-thirds">部署與使用 Azure 資訊保護。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                  <li class="column-third">
                  <a href="./deploy-use/activate-service.md">
-                    <h3>啟用 Azure Rights Management</h3>
+                    <h3>啟用 Azure Rights Management Service</h3>
                     <p>使用支援此資訊保護解決方案的應用程式與服務，以開始保護重要資料。</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./deploy-use/configure-custom-templates.md">
-                    <h3>設定 Azure Rights Management 的自訂範本</h3>
-                    <p>使用範本，即可輕鬆地將原則套用至敏感性檔案，其僅限您組織中授權使用者進行存取。</p>
-                 </a>
+                  <a href="./deploy-use/configure-applications.md">
+                    <h3>設定 Azure 資訊保護原則</h3>
+                    <p>藉由更新 Azure 資訊保護原則來設定分類、標記和保護。</p>
                 </li>
                 <li class="column-third">
-                  <a href="./deploy-use/configure-applications.md">
-                    <h3>設定 Azure Rights Management 的應用程式</h3>
-                    <p>將應用程式和服務設定為支援 Azure RMS。 例如，RMS 共用應用程式、Office 應用程式和 Office 365 服務。</p>
+                  <a href="./deploy-use/configure-custom-templates.md">
+                    <h3>設定自訂範本</h3>
+                    <p>使用範本，即可輕鬆地將原則套用至敏感性檔案，其僅限您組織中授權使用者進行存取。</p>
+                 </a>
                  </a>
                 </li>
               </ul>
@@ -185,16 +189,15 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
                   <span class="step-number"> 5</span>
                   <p>開發和自訂應用程式</p>
                 </div>
-                <p class="description column-two-thirds">整合 Azure RMS 與您的應用程式。
-                </p>
+                <p class="description column-two-thirds">使用 Microsoft Rights Management SDK 來整合應用程式。</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="./develop/developers-guide.md">
-                    <h3>Azure RMS 開發人員指南</h3>
-                    <p>請參閱 Microsoft 所提供且跨所有支援作業系統的 RMS 程式碼範例和開發人員支援工具集合。</p>
+                    <h3>Azure 資訊保護開發人員指南</h3>
+                    <p>請參閱 Microsoft 所提供且跨所有支援作業系統的 Azure 資訊保護程式碼範例和開發人員支援工具集合。</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -211,19 +214,19 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
                 </li>
               </ul>
             </section>
-          </li>
-        </ul>
+         </ul>
       </section>
     </div>
     <aside class="alert alert-social">
-      <p>在 Azure RMS 上保持最新資訊 <ol class="action-list">
-        <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">官方 RMS 小組部落格</a></li>
+      <p>在 Azure 資訊保護上保持最新資訊 <ol class="action-list">
+        <li><a href="http://blogs.technet.com/b/rms/" target="_blank" class="button-bordered button-translucent">官方 Azure 資訊保護小組部落格</a></li>
         <li><a href="https://twitter.com/TheRMSGuy" target="_blank" class="button-bordered button-translucent">Twitter 上的 @TheRMSGuy</a></li>
       </ol>
     </aside>
 </article>
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Nov16_HO1-->
 
 

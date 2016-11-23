@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 應用程式類型 | Azure RMS
-description: 本主題涵蓋您可能會選擇建立為具備權限的應用程式類型。
-keywords:
+title: "應用程式類型 | Azure RMS"
+description: "本主題涵蓋您可能會選擇建立為具備權限的應用程式類型。"
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 10/20/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1ab93dc8f770e2e49b5846dd6c31f649a55175b0
+ms.openlocfilehash: 77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28
+
 
 ---
 
@@ -33,7 +29,7 @@ Rights Management Services SDK 2.1 目前支援下列應用程式類型
 
 ## 簡單的應用程式
 
-簡單的應用程式可能是建置來加密提供之檔案的命令列工具。 如需簡單具備權限應用程式的範例，請參閱 [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)。
+簡單的應用程式可能是建置來加密提供之檔案的命令列工具。 如需簡單的啟用權限應用程式範例，請參閱我們在[開發您的應用程式](developing-your-application.md)中描述的 *IPCHelloWorld* 實作。
 
 ### 伺服器模式應用程式
 
@@ -57,14 +53,15 @@ Microsoft 記事本是一個簡單的豐富用戶端應用程式。 Microsoft Of
 
 如需保護應用程式的詳細資訊，請參閱[了解使用限制](understanding-usage-restrictions.md)。
 
-## 相關主題
+## 相關的主題
 
-* [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld - 範例應用程式](how-to-build-your-first-application.md)
-* [設定 API 安全性模式](setting-the-api-security-mode-api-mode.md)
-* [了解使用限制](understanding-usage-restrictions.md)
+- [IpcDlp 範例](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
+- [開發您的應用程式](developing-your-application.md)
+- [設定 API 安全性模式](setting-the-api-security-mode-api-mode.md)
+- [了解使用限制](understanding-usage-restrictions.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 

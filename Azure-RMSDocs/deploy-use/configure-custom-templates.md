@@ -1,35 +1,28 @@
 ---
-# required metadata
-
-title: 設定 Azure Rights Management 的自訂範本 | Azure RMS
-description:
-keywords:
+title: "設定 Azure Rights Management Service 的自訂範本| Azure Information Protection"
+description: "適用於系統管理員設定和管理使用權限範本的資訊和指示。 範本可讓使用者和其他系統管理員輕鬆地將原則套用到敏感性檔案，限制僅供已獲得授權的使用者存取。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/03/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
+
 
 ---
 
-# 設定 Azure Rights Management 的自訂範本
+# 設定 Azure Rights Management Service 的自訂範本
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-在您[啟用 Azure Rights Managementt](activate-service.md) (Azure RMS) 之後，使用者自動能夠使用兩個預設範本，讓他們可以輕鬆將原則套用至敏感性檔案，以限制僅供貴組織內已獲授權的使用者存取。 這兩個範本具有下列權限原則限制：
+[啟用](activate-service.md) Azure Rights Management Service 之後，使用者就能夠自動使用兩個預設範本，讓他們可以輕鬆地將 Rights Management 原則套用至敏感性檔案，其僅限您組織中授權使用者進行存取。 這兩個範本具有下列權限原則限制：
 
 -   受保護內容的唯讀檢視
 
@@ -72,6 +65,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,35 +1,28 @@
 ---
-# required metadata
-
-title: 案例 - 保護檔案伺服器共用上的檔案 | Azure RMS
-description:
-keywords:
+title: "案例 - 保護檔案伺服器共用上的檔案 | Azure Information Protection"
+description: "此案例和支援的使用者文件使用 Azure Rights Management 保護來大量保護您想要在檔案伺服器上保護的所有檔案，以確保只有貴組織的員工都可以存取它們，即使檔案被複製並儲存到不在您 IT 部門之控制下的儲存體，或以電子郵件傳送檔案給其他人。"
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 136cabfad5914fadf183e308c51b77e20f98ca4f
+
 
 ---
 
 # 案例 - 保護檔案伺服器共用上的檔案
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-此案例和支援使用者文件會使用 Azure Rights Management 來大量保護您想要在檔案伺服器上保護的所有檔案，以確保只有貴組織的員工都可以存取它們，即使檔案被複製並儲存到不在您的 IT 部門的控制下的儲存體，或以電子郵件傳送檔案給其他人。
+此案例和支援的使用者文件使用 Azure Information Protection 的 Azure Rights Management 技術來大量保護您想要在檔案伺服器上保護的所有檔案，以確保只有貴組織的員工可以存取它們，即使檔案被複製並儲存到不在您 IT 部門之控制下的儲存體，或以電子郵件傳送檔案給其他人。
 
 這些指示會使用其中一個預設範本，它會對具有所有使用權限的所有員工限制存取。 但如有需要，您可以藉由設定自訂的範本，而不是使用預設範本，進一步限制存取和使用權限。
 
@@ -51,10 +44,10 @@ ms.suite: ems
 
 |需求|如果需要更多資訊|
 |---------------|--------------------------------|
-|Azure Rights Management 已啟動|[啟用 Azure Rights Management](https://technet.microsoft.com/library/jj658941.aspx)|
-|您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 所有使用者都需要此項，才能存取受到 FCI 和 Azure Rights Management 保護的檔案。|[準備 Azure Rights Management](https://technet.microsoft.com/library/jj585029.aspx)|
-|發生下列情形之一：<br /><br />- 若要對所有使用者使用預設範本︰您尚未封存預設的 [&lt;組織名稱&gt; - 機密]<br /><br />- 若要對特定使用者使用自訂範本︰您已建立並發佈此自訂範本|[設定 Azure Rights Management 的自訂範本](https://technet.microsoft.com/library/dn642472.aspx)|
-|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[自動部署 Microsoft Rights Management 共用應用程式](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Azure Rights Management 已啟動|[啟用 Azure Rights Management](../deploy-use/activate-service.md)|
+|您已同步處理您的內部部署 Active Directory 使用者帳戶與 Azure Active Directory 或 Office 365，包括其電子郵件地址。 所有使用者都需要此項，才能存取受到 FCI 和 Azure Rights Management 保護的檔案。|[準備 Azure Information Protection](../plan-design/prepare.md)|
+|發生下列情形之一：<br /><br />- 若要對所有使用者使用預設範本︰您尚未封存預設的 [&lt;組織名稱&gt; - 機密]<br /><br />- 若要對特定使用者使用自訂範本︰您已建立並發佈此自訂範本|[設定 Azure Rights Management Service 的自訂範本](../deploy-use/configure-custom-templates.md)|
+|Rights Management 共用應用程式已部署至執行 Windows 的使用者電腦|[自動部署 Microsoft Rights Management 共用應用程式](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |您已下載 RMS 保護工具，並設定 Azure RMS 的必要條件|如需相關下載工具和必要條件的指示︰[RMS 保護 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />若要設定 Azure RMS 的其他先決條件，例如服務主體帳戶︰[about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
 ### 使用 Azure RMS 與具有檔案分類基礎結構的檔案伺服器資源管理員來設定檔案伺服器，以保護所有檔案
@@ -75,7 +68,7 @@ ms.suite: ems
     ```
     若要使用會對具有所有使用權限之所有員工限制存取的預設範本，請尋找範本名稱 [**&lt;組織名稱&gt; - 機密**]。 例如，**VanArsdel, Ltd - 機密**。
 
-4.  請遵循[具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)中的逐步指示。
+4.  請遵循[具有 Windows Server 檔案分類基礎結構 (FCI) 的 RMS 保護](../rms-client/configure-fci.md)中的逐步指示。
 
     這些指示包含一個 Windows PowerShell 指令碼，您會指定在檔案伺服器資源管理員中以自訂可執行檔形式執行。 指示中也包含如何驗證這些檔案受到 Azure Rights Management 保護。
 
@@ -124,7 +117,7 @@ ms.suite: ems
 
 -   如需其他資訊：
 
-    -   [檢視及使用受保護的檔案](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [檢視及使用受保護的檔案](../rms-client/sharing-app-view-use-files.md)
 
 -   連絡技術支援人員：
 
@@ -155,12 +148,13 @@ ms.suite: ems
 
 -   如需其他資訊：
 
-    -   [檢視及使用受保護的檔案](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [檢視及使用受保護的檔案](../rms-client/sharing-app-view-use-files.md)
 
 -   請連絡技術支援人員：helpdesk@vanarsdelltd.com
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Oct16_HO1-->
 
 

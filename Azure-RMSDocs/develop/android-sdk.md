@@ -1,41 +1,38 @@
 ---
-# required metadata
-
-title: Android 設定 |Azure RMS
-description: Android 應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
-keywords:
+title: "Android 設定 |Azure RMS"
+description: "Android 應用程式可以使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。"
+keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ff3b1ce2ec5984c1e79bc9d10c5fc913b4fd3291
+ms.openlocfilehash: 1925eb3a630f61e995886989ad351a8263c9779f
+
 
 ---
 
-# Android 設定
+# <a name="android-setup"></a>Android 設定
 
 Android 應用程式可以藉由使用 Azure Active Directory Rights Management (AAD RM)，來使用 Microsoft Rights Management SDK 4.2 在其應用程式中啟用整合的資訊保護。
 
 本主題將引導您設定您的環境，以建立您自己的新應用程式。
 
--   [先決條件](#prerequisites)
--   [選用](#optional)
--   [設定您的開發環境](#configuring_your_development_environment_)
--   [另請參閱](#see_also)
+-   [必要條件](#prerequisites)
+-   [選擇性](#optional)
+-   [設定您的開發環境](#configuring-your-development-environment)
+-   [另請參閱](#see-also)
 
-## 先決條件
+## <a name="prerequisites"></a>必要條件
 
 建議您在開發系統上使用下列軟體︰
 
@@ -50,7 +47,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
     此 SDK 可以用來開發 Android 4.0.3 (API 層級 15) 和更新版本中。
 
--   驗證程式庫︰建議您使用 [Azure AD 驗證程式庫 (ADAL)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)。 不過，也可以使用其他支援 OAuth 2.0 的驗證程式庫。
+-   驗證程式庫︰建議您使用 [Azure AD Authentication Library (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 不過，也可以使用其他支援 OAuth 2.0 的驗證程式庫。
 
     如需詳細資訊，請參閱 [Android 適用的 ADAL](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)。
 
@@ -60,11 +57,11 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 如需 API 更新、版本資訊和常見問題集 (FAQ) 等相關資訊，請參閱[最新消息](release-notes.md)。
 
-## 選用
+## <a name="optional"></a>選用
 
 我們的 UI 程式庫提供可重複使用的 UI，適用於不想要建立其自己的自訂 UI 之開發人員的耗用和保護作業 - [Android 的 UI 程式庫與範例應用程式](https://github.com/AzureAD/rms-sdk-ui-for-android)。
 
-## 設定您的開發環境
+## <a name="configuring-your-development-environment"></a>設定您的開發環境
 
 **注意**  MS RMS SDK 4.2 預覽版本︰在此預覽版本中，尚未更新螢幕擷取畫面來顯示從 com/microsoft/protection 到 com/microsoft/rightsmanagment 之路徑名稱中的變更。 不過已更新文字。
 
@@ -106,7 +103,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
     ![將它匯入至工作區](../media/Android-setup-07.png)
 
--   按一下 [下一步] 。 瀏覽以選取您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 SDK 應該會以 **com.microsoft.rightsmanagement** 出現在清單中。
+-   按一下 [下一步] 。 瀏覽並選取您在其中解壓縮 *adrms\_android\_sdk.zip* 的資料夾。 SDK 應該會以 **com.microsoft.rightsmanagement** 出現在清單中。
 
     ![巡覽以選取資料夾](../media/Android-setup-08c.jpg)
 
@@ -122,7 +119,7 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 
 -   按一下 [ **確定**]。
 
-    由於 MS RMS SDK 4.2 會連接 AAD RM，所以必須授與應用程式 **INTERNET** 和 **ACCESS\_NETWORK\_STATE**。 若要這樣做，請在專案的根目錄中開啟 *AndroidManifest.xml* 檔案。
+    由於 MS RMS SDK 4.2 會連接 AAD RM，所以必須授與應用程式 **INTERNET** 和 **ACCESS\_NETWORK\_STATE** 的權限。 若要這樣做，請在專案的根目錄中開啟 *AndroidManifest.xml* 檔案。
 
     若要新增權限，請按一下 [新增]，然後選取 [使用權限]。
 
@@ -131,33 +128,29 @@ Android 應用程式可以藉由使用 Azure Active Directory Rights Management 
 -   您可以藉由在文字編輯器檢視中檢視資訊清單，以確認資訊清單步驟。 請確定出現下列幾行︰
 
 
-    <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **注意**  SDK 會使用 *android.support.v4*
 
 -   您現在已準備好建立您自己的新 Android 應用程式。
 
-### 另請參閱
+### <a name="see-also"></a>另請參閱
 
 [開始使用](get-started.md)
 
 [新功能](release-notes.md)
 
-[開發人員詞彙和概念](core-concepts.md)
+[開發人員詞彙及概念](core-concepts.md)
 
-[Android API 參考](android-namespaces.md)
-
- 
+[Android API 參考](https://msdn.microsoft.com/library/dn758245.aspx)
 
  
 
+ 
 
-<!--HONumber=May16_HO2-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

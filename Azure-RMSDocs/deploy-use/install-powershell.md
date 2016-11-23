@@ -1,47 +1,45 @@
 ---
-# required metadata
-
-title: 針對 Azure Rights Management 安裝 Windows PowerShell | Azure RMS
-description:
-keywords:
+title: "安裝 Windows PowerShell for Azure Rights Management | Azure Information Protection"
+description: "Azure Information Protection 的 Windows PowerShell for Azure Rights Management Service 安裝說明。 此模組的名稱是 AADRM。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
+
 
 ---
 
 # 針對 Azure Rights Management 安裝 Windows PowerShell
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
-使用下列資訊可協助您安裝適用於 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] (Azure RMS) 的 Windows PowerShell。
+使用下列資訊以利安裝 Azure Information Protection 的 Azure Rights Management Service Windows PowerShell 模組。
 
-您可以使用此 Windows PowerShell 模組來從命令列管理 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]，方法是使用任何具有網際網路連線，且符合下一節所列必要條件的電腦。 適用於 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 支援自動化的指令碼處理，或可能是進階組態案例的必要項目。 如需此模組所支援之管理工作和組態的詳細資訊，請參閱 [使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md).
+您可以使用此 PowerShell 模組從命令列管理 Azure Rights Management Service，方法是使用任何具有網際網路連線，且符合下一節所列必要條件的電腦。 適用於 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 的 Windows PowerShell 支援自動化的指令碼處理，或可能是進階組態案例的必要項目。 如需有關此模組支援的管理工作與組態等詳細資訊，請參閱[使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)。
 
 ## 必要條件
-此表列出安裝和使用適用於下者之 Windows PowerShell 的必要條件： [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
+此表列出安裝及使用適用於 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 之 Windows PowerShell 的必要條件。
 
 |需求|詳細資訊|
 |---------------|--------------------|
-|一個支援 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理模組的 Windows 版本|檢查 [Azure Rights Management 管理工具下載頁面](http://go.microsoft.com/fwlink/?LinkId=257721) 的**系統必要條件**一節中所支援的作業系統清單.|
-|Windows PowerShell 最低版本：2.0|Windows PowerShell 2.0 中導入了 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理模組支援。<br /><br />大多數 Windows 作業系統預設都至少附帶安裝 2.0 版的 Windows PowerShell。 如果您需要安裝 Windows PowerShell 2.0，請參閱 [安裝 Windows PowerShell 2.0](http://msdn.microsoft.com/library/ff637750.aspx).<br /><br />提示︰您可以在 Windows PowerShell 工作階段中輸入 **$PSVersionTable** 來確認您正在執行的 Windows PowerShell 版本。|
-|Microsoft .NET Framework 最低版本：4.5<br /><br />注意：較新版的作業系統會隨附此版 Microsoft .NET Framework，因此只有在用戶端作業系統比 Windows 8.0 還舊或伺服器作業系統比 Windows Server 2012 還舊時，才需要以手動方式加以安裝。|如果尚未安裝 Microsoft .NET Framework 的最低版本，您可以下載 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653).<br /><br />[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理模組使用的一些類別需要這個最低版本的 Microsoft .NET Framework。|
-|Microsoft Online Services 登入小幫手 7.0|需要使用 Microsoft Online Services 登入小幫手來執行 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 驗證。<br /><br />如需詳細資訊，請參閱[下載中心：適用於 IT 專業人員的 Microsoft Online Services 小幫手 RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950).|
+|一個支援 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理模組的 Windows 版本|檢查 Azure Rights Management 系統管理工具下載頁面的 **系統必要條件** 章節 [中，支援的作業系統清單](http://go.microsoft.com/fwlink/?LinkId=257721)。|
+|Windows PowerShell 最低版本：2.0|Windows PowerShell 2.0 中導入了 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理模組支援。<br /><br />大多數 Windows 作業系統預設都至少附帶安裝 2.0 版的 Windows PowerShell。 如果您需要安裝 Windows PowerShell 2.0，請參閱 [安裝 Windows PowerShell 2.0](http://msdn.microsoft.com/library/ff637750.aspx)。<br /><br />提示：您可以在 PowerShell 工作階段中輸入 `$PSVersionTable` 來確認您正在執行的 Windows PowerShell 版本。|
+|Microsoft .NET Framework 最低版本：4.5<br /><br />注意：較新版的作業系統會隨附此版 Microsoft .NET Framework，因此只有在用戶端作業系統比 Windows 8.0 還舊或伺服器作業系統比 Windows Server 2012 還舊時，才需要以手動方式加以安裝。|如果尚未安裝 Microsoft .NET Framework 的最低版本，您可以下載 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)。<br /><br />[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 管理模組使用的一些類別需要這個最低版本的 Microsoft .NET Framework。|
+
+> [!NOTE]
+> 自 Rights Management 管理模組版本 2.5.0.0 起，不再需要 Microsoft Online Services 登入小幫手。
+> 
+> 如果您安裝的 Rights Management 管理模組為先前版本，請先使用 [程式和功能] 將 **Windows Azure AD Rights Management 管理**解除安裝後，再安裝最新版本。
+
 
 ## 如何安裝 Rights Management 管理模組
 
@@ -70,12 +68,13 @@ Get-Command -Module aadrm
 若要執行任何設定 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 服務的命令，您必須先使用 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx) Cmdlet 來連線至該服務。 當您執行完想要的組態命令時，請使用 [Disconnect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629416.aspx) Cmdlet 中斷服務的連線。
 
 > [!NOTE]
-> 如果您尚未啟用 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]，可以在連線至該服務之後，使用 [Enable-Aadrm](https://msdn.microsoft.com/library/windowsazure/dn629412.aspx) Cmdlet 來啟用它。
+> 如尚未啟用 Azure Rights Management Service，可以在連線至該服務之後，使用 [Enable-Aadrm](https://msdn.microsoft.com/library/windowsazure/dn629412.aspx) Cmdlet 來啟用它。
 
 ## 另請參閱
 [使用 Windows PowerShell 管理 Azure Rights Management](administer-powershell.md)
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 使用 Azure 入口網站設定 RMS 驗證 | Azure RMS
-description: 概述 ADAL 驗證的程序
-keywords: authentication, RMS, ADAL
+title: "使用 Azure 入口網站設定 RMS 驗證 | Azure RMS"
+description: "概述 ADAL 驗證的程序"
+keywords: "驗證, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 09/25/2016
 ms.topic: article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2680b399-febb-4bd6-b844-ac3d1e69aca4
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: eb9cea79d9e5a7902839d34d9b4f13bdefe5a5d3
+
 
 ---
 
@@ -60,12 +55,13 @@ ms.suite: ems
        }
 
 
-## 相關主題
+## 相關的主題
 
 - [MSIPCSampleApp](https://github.com/AzureAD/rms-sdk-ui-for-android/tree/master/samples/MsipcSampleApp)
 - [為 ADAL 驗證設定 Azure RMS](adal-auth.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 

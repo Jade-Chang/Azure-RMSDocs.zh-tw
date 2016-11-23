@@ -1,38 +1,30 @@
 ---
-# required metadata
-
-title: Azure RMS 需求：Azure AD 目錄 | Azure RMS
-description:
-keywords:
+title: "Azure Active Directory 需求 | Azure Information Protection"
+description: "識別使用 Azure Information Protection 的 Azure AD 需求，以便能順利驗證使用者。"
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 09/29/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
+ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
+
 
 ---
 
-# Azure RMS 需求：Azure AD 目錄
+# Azure Information Protection 的 Azure Active Directory 需求
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Information Protection、Office 365*
 
+您必須有 Azure AD 目錄才能使用 Azure Information Protection。 您可為此目錄使用您的組織帳戶來登入 Azure 傳統入口網站，例如，您可設定和管理 Rights Management 範本。
 
-您必須有 Azure AD 目錄才能使用 Azure Rights Management (Azure RMS)。 您可為此目錄使用您的組織帳戶來登入 Azure 傳統入口網站，例如，您可設定和管理 Rights Management 範本。
-
-如果您的組織尚無 Azure 訂用帳戶，您可以註冊免費試用以取得訂用帳戶：移至 [Azure 快速入門][](https://account.windowsazure.com/organization) 頁面，並依照指示進行。
+如果您的組織尚無 Azure 訂用帳戶，您可以註冊免費試用以取得訂用帳戶：移至 [Azure 快速入門](https://account.windowsazure.com/organization) 頁面，並依照指示進行。
 
 如需詳細資訊，請參閱 Azure Active Directory 文件的下列資源：
 
@@ -42,12 +34,13 @@ ms.suite: ems
 
 若要整合 Azure AD 目錄與內部部署 AD 樹系，請參閱[整合內部部署身分識別與 Azure Active Directory](/active-directory/active-directory-aadconnect)。
 
-> [!NOTE] 如果您擁有的行動裝置或 Mac 電腦使用 AD FS 或同等的驗證提供者來驗證內部部署：
+> [!NOTE]
+> 如果您擁有的行動裝置或 Mac 電腦使用 AD FS 或同等的驗證提供者來驗證內部部署：
 > 
 > -   您必須使用在最低伺服器版本的 **Windows Server 2012 R2** 上運作的 AD FS，或使用支援 OAuth 2.0 通訊協定的替代驗證提供者。
 
-## Multi-Factor Authentication (MFA) 和 Azure RMS
-若要使用 Multi-Factor Authentication (MFA) 與 Azure RMS，至少需要下列其中一項：
+## Multi-Factor Authentication (MFA) 和 Azure Information Protection
+若要使用 Multi-Factor Authentication (MFA) 與 Azure Information Protection，至少需要下列其中一項：
 
 -   Office 2013 (最低版本)：
 
@@ -76,10 +69,11 @@ ms.suite: ems
         如需此案例的詳細資訊，請參閱 Office 部落格上的[使用 Office 365 – 身分識別計畫現在已簡化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。
 
 ## 後續步驟
-若要檢查其他需求，請參閱 [Azure Rights Management 的需求](requirements-azure-rms.md)。
+若要檢查其他需求，請參閱 [Azure Information Protection 的需求](requirements-azure-rms.md)。
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Sep16_HO5-->
 
 

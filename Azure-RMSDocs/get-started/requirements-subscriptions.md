@@ -1,38 +1,31 @@
 ---
-# required metadata
-
-title: Azure RMS 需求：雲端訂閱 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 需求：雲端訂閱 | Azure RMS"
+description: "識別可用來在組織中部署 Azure Rights Management (Azure RMS) 的訂閱。"
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
+ms.prod: 
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6a16e890-3c3e-4f47-80ca-176a34bdf8bc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: e0c6c9300096a3130cc59406208d51bbafc9e35b
+
 
 ---
 
 
 # Azure RMS 需求：支援 Azure RMS 的雲端訂閱
 
-*適用於︰Azure Rights Management、Office 365*
+>*適用於︰Azure Rights Management、Office 365*
 
 若要使用 Azure Rights Management (Azure RMS)，您的組織必須至少有一個下列訂閱，且訂閱需具有可保護檔案和電子郵件訊息的足夠使用者和服務授權數目。 如果您有服務將對使用者 (檔案或電子郵件訊息的擁有者) 套用保護，這些使用者需要這些授權的其中一個。 只會使用 (例如讀取及編輯) 此受保護資料的使用者不需要授權。
 
--   Office 365
+-   Office 365 (特定訂閱)
 
 -   Azure Rights Management Premium (先前稱為 Azure RMS Standalone)
 
@@ -100,6 +93,7 @@ Exchange Online 方案 1 <br /><br /> Exchange Online 方案 2|否 <br /><br /> 
 ## 後續步驟
 若要檢查其他需求，請參閱 [Azure Rights Management 的需求](requirements-azure-rms.md)。
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Oct16_HO1-->
 
 
